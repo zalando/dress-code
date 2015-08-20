@@ -1,0 +1,19 @@
+# Gem Files
+*.gem
+tests/**/*.map
+
+# Bundler Files
+.bundle
+/vendor
+/node_modules
+Gemfile.lock
+
+# Testing Files
+test/test
+
+# Sass Files
+.sass-cache
+
+
+/tests/output/
+tests/diff

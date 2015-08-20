@@ -47,6 +47,16 @@ gulp.task('clean', function (cb) {
 	del([config.dest], cb);
 });
 
+// compass
+gulp.task('compass', function() {
+  gulp.src('./src/*.scss')
+    .pipe(compass({
+      config_file: './config.rb',
+      css: 'stylesheets',
+      sass: 'sass'
+    }))
+    .pipe(gulp.dest('app/assets/temp'));
+});
 
 // styles
 gulp.task('styles:fabricator', function () {

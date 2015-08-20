@@ -1,0 +1,240 @@
+
+//  ---------------------------------------------------------------------------
+//
+//  Defines all BASIC variables.
+//
+//  ---------------------------------------------------------------------------
+
+
+
+//  = GRAYS
+//  ---------------------------------------------------------------------------
+
+	$white:										#fff;
+
+	$gray70:									#edeced;
+	$gray60:									#d1d1d1;
+	$gray50:									#b6b6b6;
+	$gray40:									#9b9b9b;
+	$gray30:									#807f80;
+	$gray20:									#646464;
+	$gray10:									#4a4a4a;
+
+	$black: 									#000;
+
+
+
+//  = ACCENT COLORS
+//  ---------------------------------------------------------------------------
+
+	// BLUE
+	$blue70:									#b1dcfe;
+	$blue60:									#88ccfe;
+	$blue50:									#5cbbfe;
+	$blue40:									#26aafe; // Base color
+	$blue30:									#1e87cb;
+	$blue20:									#186698;
+	$blue10:									#124365;
+
+	// CYAN
+	$cyan70:									#b5f2ff;
+	$cyan60:									#8decff;
+	$cyan50:									#61e6fe;
+	$cyan40:									#24e0fe; // Base color
+	$cyan30:									#1fb3cb;
+	$cyan20:									#1a8699;
+	$cyan10:									#145966;
+
+	// GREEN
+	$green70:									#ceff9e;
+	$green60:									#b4ff70;
+	$green50:									#9aff44;
+	$green40:									#7fff25; // Base color
+	$green30:									#65cb1c;
+	$green20:									#4c9913;
+	$green10:									#32650a;
+
+	// YELLOW
+	$yellow70:								#fff49b;
+	$yellow60:								#ffef6a;
+	$yellow50:								#ffe93d;
+	$yellow40:								#ffe41f; // Base color
+	$yellow30:								#ccb616;
+	$yellow20:								#99880e;
+	$yellow10:								#665b05;
+
+	// ORANGE
+	$orange70:								#ffd2a6;
+	$orange60:								#ffbc7a;
+	$orange50:								#ffa54e;
+	$orange40:								#ff8e25; // Base color
+	$orange30:								#cc611d;
+	$orange20:								#995516;
+	$orange10:								#66380e;
+
+	// RED
+	$red70:										#FFB7A6;
+	$red60:										#ff937b;
+	$red50:										#ff6e4f;
+	$red40:										#ff4a25; // Base color
+	$red30:										#cc3a1d;
+	$red20:										#982c15;
+	$red10:										#661d0e;
+
+	// MAGENTA
+	$magenta70:								#f7c8f5;
+	$magenta60:								#f3acf1;
+	$magenta50:								#ef8fed;
+	$magenta40:								#eb74e9; // Base color
+	$magenta30:								#bb5cba;
+	$magenta20:								#8d458b;
+	$magenta10:								#5d2e5c;
+
+	// PURPLE
+	$purple70:								#d5bdfe;
+	$purple60:								#c19cfe;
+	$purple50:								#ac7afd;
+	$purple40:								#9757fd; // Base color
+	$purple30:								#7845cb;
+	$purple20:								#5a3498;
+	$purple10:								#3c2365;
+
+	$primaryAccent:						$blue40;
+	$secondaryAccent:					$orange40;
+
+
+
+//  = SCAFFOLDING
+//  ---------------------------------------------------------------------------
+
+	$bodyBackgroundColor:			$gray70;
+	$textColor:								$gray10;
+
+
+
+//  = LINKS
+//  ---------------------------------------------------------------------------
+
+	$linkColor:								$primaryAccent;
+	$linkColorHover:					$blue30;
+
+
+
+//  = SPACING
+//  ---------------------------------------------------------------------------
+
+	$space50:									.4;
+	$space75:									.8;
+	$space100:								1.2;
+	$space125:								$space75 * 2;
+	$space150:								$space100 * 2;
+	$space200:								$space100 * 3;
+	$space250:								$space100 * 4;
+	$space300:								$space100 * 5;
+	$space350:								$space100 * 6;
+
+	$touchSize:								$space200;
+
+
+
+//  = TYPOGRAPHY
+//  ---------------------------------------------------------------------------
+
+	$sansFontFamily:        	"Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	$serifFontFamily:       	"Georgia", "Geneva", "Times New Roman", serif;
+	$monoFontFamily:        	"Menlo", "Monaco", "Consolas", "Courier New", monospace;
+
+	$htmlFontSize:          	62.5%;
+	$htmlLineHeight:        	1;
+	$bodyFontSize:          	1.4;//px
+	$bodyLineHeight:        	$space150;
+	$baseFontFamily:        	$sansFontFamily;
+	$altFontFamily:         	$sansFontFamily;
+
+	$font50:									1.1;
+	$font100:									1.4;
+	$font150:									1.8;
+	$font200:									2.2;
+	$font250:									2.7;
+	$font300:									3.4;
+
+	$normalFontWeight:				300;
+	$boldFontWeight:					500;
+
+	$headingsFontFamily:    	$sansFontFamily;
+	$headingsFontWeight:    	$normalFontWeight;
+	$headingsColor:         	$textColor;
+
+	$h1Size:									$font300;
+	$h2Size:									$font250;
+	$h3Size:									$font200;
+	$h4Size:									$font150;
+
+	$h1LineHeight:						4.8;
+	$h2LineHeight:						3.6;
+	$h3LineHeight:						3.6;
+	$h4LineHeight:						2.4;
+
+
+
+//  = BORDERS & RADII
+//  ---------------------------------------------------------------------------
+
+	$radius100:								2px;
+	$border50:								1px;
+	$border100:								2px;
+	$border150:								4px;
+
+
+
+//  = GRID SETTINGS
+//  ---------------------------------------------------------------------------
+
+	// Base is 10px at this point
+
+	// Relative column & gutter width
+	$r-column-width:				 	6;
+	$r-gutter-width:				 	4;
+	$r-grid-padding:				 	8;
+	$r-grid-padding-large:		4;
+	$r-grid-padding-huge:			5;
+
+	// Columns for smallest screen
+	$total-columns:						2;
+
+	$container-style:				 	fluid;
+
+
+
+//  = BREAKPOINTS
+//  ---------------------------------------------------------------------------
+
+	// Base is 16px at this point
+
+	// Feature phone: 				0px		 	 2 columns	-->	   0-UP
+	$tiny-width: 							0;
+	$tiny-cols: 							2;
+
+	// Smartphone: 						320px		 4 columns 	-->  320-UP
+	$small-width: 						20em;
+	$small-cols: 							4;
+
+	// Smartphone landscape: 	480px 	 6 columns 	-->  480-UP
+	$medium-width: 						30em;
+	$medium-cols: 						6;
+
+	// Tablet: 								600px, 	 8 columns 	-->  600-UP
+	$large-width: 						37.5em;
+	$large-cols: 							8;
+
+	// Tablet landscape: 			1024px 	12 columns 	--> 1024-UP
+	$huge-width: 							64em;
+	$huge-cols: 							12;
+
+	// Desktop: 							1280px 	16 columns 	--> 1280-UP
+	$giant-width: 						80em;
+	$giant-cols: 							16;
+
+	// Desktop large: 				1600px 	20 columns 	--> 1600-UP
+	$monstrous-width: 				100em;
+	$monstrous-cols: 					20;

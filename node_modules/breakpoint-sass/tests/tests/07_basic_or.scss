@@ -1,0 +1,43 @@
+@import 'variables';
+/*
+ * 'OR' mediaqueries.
+ * tests separated by commas
+ * $basic-or : #{$basic-or};
+ * $basic-or-media : #{$basic-or-media};
+ */
+.basic-or {
+  @include breakpoint($basic-or) {
+    content: '$basic-or';
+    content: '@media (max-width: 350px), (min-width: 500px) and (max-width: 600px)';
+  }
+  @include respond-to('basic or') {
+    content: '$basic-or';
+    content: '@media (max-width: 350px), (min-width: 500px) and (max-width: 600px)';
+  }
+}
+.basic-or-media {
+  @include breakpoint($basic-or-media) {
+    content: '$basic-or';
+    content: '@media (min-width: 500px), tv and (min-width: 700px) and (color)';
+  }
+  @include mq($basic-or) {
+    content: '$basic-or';
+    content: '@media (min-width: 500px), tv and (min-width: 700px) and (color)';
+  }
+  @include respond-to('basic or') {
+    content: '$basic-or';
+    content: '@media (min-width: 500px), tv and (min-width: 700px) and (color)';
+  }
+}
+/* @include breakpoint-set('to ems', true); */
+@include breakpoint-set('to ems', true);
+.basic-or-to-ems {
+  @include breakpoint($basic-or) {
+    content: '$basic-or';
+    content: '@media (min-width: 31.25em), tv and (min-width: 43.75em) and (color)';
+  }
+  @include mq($basic-or) {
+    content: '$basic-or';
+    content: '@media (min-width: 31.25em), tv and (min-width: 43.75em) and (color)';
+  }
+}

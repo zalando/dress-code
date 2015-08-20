@@ -1,0 +1,17 @@
+@import 'variables';
+/*
+ * Legacy syntax
+ */
+@include breakpoint-set('legacy syntax', true);
+
+.legacy {
+  @include breakpoint($legacy) {
+    content: '$legacy';
+    content: '@media not screen and (min-width: 500px)';
+  }
+
+  @include mq($legacy) {
+    content: '$legacy';
+    content: '@media not screen and (min-width: 500px)';
+  }
+}
