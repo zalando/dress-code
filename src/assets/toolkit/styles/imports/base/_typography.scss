@@ -1,0 +1,237 @@
+//  ---------------------------------------------------------------------------
+//
+//  TYPOGRAPHY
+//
+//	Headings, body text, lists, code, and more
+//	for a versatile and durable typography system.
+//
+//	It is IMPORTANT to only apply margins on LEFT and BOTTOM of elements.
+//	The method of single direction margins helps keeping modules
+//	location-independent.
+//
+//  ---------------------------------------------------------------------------
+
+
+
+//  = BOX SIZING
+//  ---------------------------------------------------------------------------
+
+	*
+	{
+		@include box-sizing(border-box);
+	}
+
+
+
+//  = VERTICAL RHYTHM
+//  ---------------------------------------------------------------------------
+
+	h1,h2,h3,h4,h5,h6,hgroup,
+	ul,ol,dd,
+	p,figure,
+	pre,table,fieldset,hr
+	{
+		margin:0;
+		@include rem(margin-bottom, $bodyLineHeight);
+	}
+
+
+
+//  = BODY TEXT
+//  ---------------------------------------------------------------------------
+
+
+	html
+	{
+		height:100%;
+		background:$htmlBackground;
+		font-family:$baseFontFamily;
+		font-size:$htmlFontSize;
+		line-height:$htmlLineHeight;
+		font-weight:$normalFontWeight;
+	}
+
+	body
+	{
+		@include setType($bodyFontSize, $bodyLineHeight);
+		background:$bodyBackground;
+		color:$textColor;
+	}
+
+
+	p
+	{
+		small
+		{
+			font-size:$bodyFontSize - 2;
+		}
+	}
+
+	pre
+	{
+		// undo reset
+		word-wrap:normal;
+	}
+
+	::-webkit-selection
+	{
+	    background-color:$primaryAccent;
+	    color:$white;
+	}
+
+	::-moz-selection
+	{
+	    background-color:$primaryAccent;
+	    color:$white;
+	}
+
+	::selection
+	{
+	    background-color:$primaryAccent;
+	    color:$white;
+	}
+
+	strong
+	{
+		font-weight:$boldFontWeight;
+	}
+
+
+
+//  = LINKS
+//  ---------------------------------------------------------------------------
+
+	a
+	{
+		padding:0 1px;
+
+		text-decoration:none;
+		color:$linkColor;
+		cursor:pointer;
+
+		transition: color .1s;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+
+	.no-touch a:hover,
+	.touch a:active
+	{
+		background-color:$linkColor;
+		text-decoration:none;
+		color:$white;
+	}
+
+
+
+//  = LISTS
+//  ---------------------------------------------------------------------------
+
+	ul, ol
+	{
+		@include rem(padding, 0 0 0 $doubleSpace);
+		@include rem(margin-left, -.5);
+	}
+
+	dt
+	{
+		font-family:$baseFontFamily;
+	}
+
+
+
+//  = HEADINGS
+//  ---------------------------------------------------------------------------
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6,
+	%h1, %h2, %h3, %h4, %h5, %h6
+	{
+		font-family:$headingsFontFamily;
+		font-weight:$headingsFontWeight;
+		color:$headingsColor;
+		text-rendering:optimizelegibility;
+
+		small
+		{
+			display:block;
+			font-family:$baseFontFamily;
+			font-size:60%;
+			color:$gray;
+		}
+	}
+
+	h1, .h1, %h1
+	{
+		@include setType($h1Size, $h1LineHeight);
+	}
+
+	h2, .h2, %h2
+	{
+		@include setType($h2Size, $h2LineHeight);
+	}
+
+	h3, .h3, %h3
+	{
+		@include setType($h3Size, $h3LineHeight);
+	}
+
+	h4, .h4, %h4
+	{
+		@include setType($h4Size, $h4LineHeight);
+	}
+
+	.h--emphasized,
+	%h--emphasized
+	{
+		@extend %bottom-separator;
+	}
+
+
+
+//	= STRONG HEADINGS
+//	---------------------------------------------------------------------------
+
+	.h--strong
+	{
+		border-bottom:0 solid $separatorColor;
+		@include rem(border-bottom-width, $borderThick);
+
+		@include rem(padding-bottom, $singleSpace - $borderThick);
+		@include rem(margin-bottom, $singleSpace * 2);
+
+		height: $singleSpace;
+		@include rem(font-size, 4.2);
+
+		@include breakpoint($large-width)
+		{
+			@include rem(padding-bottom, $singleSpace * 2 - $borderThick);
+			@include rem(margin-bottom, $singleSpace * 4);
+			@include rem(font-size, 7.2);
+			@include rem(line-height, $singleSpace * 4);
+		}
+	}
+
+
+
+//  = CODE
+//  ---------------------------------------------------------------------------
+
+	code
+	{
+		padding:0 1px;
+
+		@include background($whiteSmoke);
+		border-radius:50%;
+	}
+
+
+
+// 	= BLOCKQUOTE
+//	----------------------------------------------------------------------------
+
+	blockquote,
+	.is-emphasized
+	{
+		@include rem(margin, 0 0 $doubleSpace);
+		@extend %left-separator;
+	}

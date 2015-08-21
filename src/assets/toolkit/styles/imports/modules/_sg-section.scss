@@ -1,0 +1,50 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines a styleguide section
+//
+//  ---------------------------------------------------------------------------
+
+
+
+
+//  = BASE
+//  ---------------------------------------------------------------------------
+
+		.sg-section
+		{
+			@include rem(padding-top, $space350);
+			@include rem(margin-bottom, $space350);
+
+			@include breakpoint(huge-width)
+			{
+				@include rem(padding-top, $space250);
+			}
+		}
+
+			.sg-section__title
+			{
+				@extend .h1;
+
+				font-weight:500;
+				text-transform:uppercase;
+			}
+
+			.sg-section__sub-title
+			{
+				@extend .h3;
+
+				@include rem(margin-top, $space350);
+				text-transform:uppercase;
+				color:$gray50;
+				border-bottom:1px solid $gray60;
+
+				.sg-section__title + &
+				{
+					@include rem(margin-top, $space250);
+				}
+			}
+
+			.sg-section__sub-section
+			{
+				@include rem(margin-bottom, $space100);
+			}

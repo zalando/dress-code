@@ -1,0 +1,87 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines alerts
+//
+//  ---------------------------------------------------------------------------
+
+
+//  = BASE
+//  ---------------------------------------------------------------------------
+
+		.alert
+		{
+			@include display-flex(flex);
+			@include align-items(center);
+			@include rem(margin-bottom, $space75);
+			@include rem(padding, $space100);
+			@include rem(max-width, 46);
+			background:$gray70;
+			border-radius:2px;
+		}
+
+		.alert--info
+		{
+			background:lighten($blue70, 10%);
+		}
+
+		.alert--error
+		{
+			background:lighten($red70, 10%);
+
+			.touch & a,
+			.no-touch & a
+			{
+				color:$red40;
+
+				&:hover,
+				&:active
+				{
+					color:$red30;
+				}
+			}
+		}
+
+		.alert--warning
+		{
+			background:lighten($yellow70, 10%);
+
+			.touch & a,
+			.no-touch & a
+			{
+				color:$yellow30;
+
+				&:hover,
+				&:active
+				{
+					color:$yellow20;
+				}
+			}
+		}
+
+		.alert--success
+		{
+			background:lighten($green70, 10%);
+
+			.touch & a,
+			.no-touch & a
+			{
+				color:$green30;
+
+				&:hover,
+				&:active
+				{
+					color:$green20;
+				}
+			}
+		}
+
+			.alert__icon
+			{
+				@include flex(0 0 auto);
+			}
+
+				.alert__img
+				{
+					display:block;
+					@include rem(margin, 0 $space100 0 0);
+				}

@@ -1,0 +1,117 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines dialogs
+//
+//  ---------------------------------------------------------------------------
+
+
+//  = DIM
+//  ---------------------------------------------------------------------------
+
+		.dim-dialog
+		{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position:fixed;
+			top:0;
+			right:0;
+			bottom:0;
+			left:0;
+			z-index:999;
+			@include rem(padding, $space100);
+			background:rgba($black, .6);
+			opacity:0;
+			pointer-events:none;
+			transition: opacity .2s .2s cubic-bezier(0.39, 0.58, 0.57, 1);
+			perspective: 600px;
+		}
+
+		.is-dimmed-dialog
+		{
+			.dim-dialog
+			{
+				opacity:1;
+				pointer-events:auto;
+				transition: opacity .2s cubic-bezier(0.39, 0.58, 0.57, 1);
+			}
+
+			.dialog
+			{
+				box-shadow:0 1px 1px rgba(0,0,0,.2);
+				opacity:1;
+				transform: rotateX(0) translateY(0) translateZ(0);
+				transition: transform .3s .2s cubic-bezier(0.24, 1.01, 0.43, 1.18), opacity .2s .2s cubic-bezier(0.39, 0.58, 0.57, 1);
+			}
+		}
+
+
+//  = BASE
+//  ---------------------------------------------------------------------------
+
+		.dialog
+		{
+			background:$white;
+			border-radius:2px;
+			box-shadow:0 5px 10px rgba(0,0,0,.2);
+			opacity:0;
+			transform: rotateX(-30deg) translateY(50px) translateZ(-100px);
+			transition: transform 2s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity .2s cubic-bezier(0.39, 0.58, 0.57, 1);
+		}
+
+		.dialog__close
+		{
+			display:block;
+			float:right;
+			@include rem(margin, -1.4 -1.4 0 0);
+
+			.touch &:active,
+			.no-touch &:hover
+			{
+				[fill^='#']
+				{
+					fill:$blue30;
+				}
+			}
+
+			.touch &:active,
+			.no-touch &:active
+			{
+				transform: scale(.85);
+			}
+		}
+
+		.dialog__title
+		{
+			@extend .h3;
+		}
+
+		.dialog__bd,
+		.dialog__actions
+		{
+			@include rem(padding, $space150 $space150 0);
+		}
+
+
+//  = ACTIONS
+//  ---------------------------------------------------------------------------
+
+		.dialog__actions
+		{
+			display: flex;
+			justify-content: flex-end;
+			background:$gray70;
+			border-top:1px solid $gray60;
+			border-radius:0 0 2px 2px;
+		}
+
+		.dialog__primary
+		{
+			@include rem(margin-bottom, $space150);
+		}
+
+		.dialog__secondary
+		{
+			@include rem(margin-right, $space150);
+			@include rem(line-height, $touchSize);
+		}

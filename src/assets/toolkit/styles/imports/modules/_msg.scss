@@ -1,0 +1,223 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines the brand portal messages
+//
+//  ---------------------------------------------------------------------------
+
+		.dim
+		{
+			position:absolute;
+			@include rem(top, $space200);
+			right:0;
+			bottom:0;
+			left:0;
+			background:rgba($black, .6);
+			opacity:0;
+			pointer-events:none;
+			transition: opacity .1s linear;
+		}
+
+		.is-dimmed
+		{
+			.dim
+			{
+				opacity:1;
+				pointer-events:auto;
+			}
+		}
+
+		.msg
+		{
+			position:absolute;
+			top:0;
+			right:0;
+			bottom:0;
+			left:0;
+			z-index:999;
+			background:rgba($white, .5);
+			border-bottom:1px solid $gray60;
+			@include rem(font-size, $font50);
+			@include rem(line-height, $space200);
+			font-weight:$boldFontWeight;
+			text-transform:uppercase;
+			text-align:center;
+			white-space:nowrap;
+			transform: translateY(-100%);
+			transition: transform .2s ease-out;
+		}
+
+		.top-area--is-in-back
+		{
+			> a,
+			> h1,
+			> div
+			{
+				animation: toparea 1.6s linear 1;
+			}
+
+			@include breakpoint($huge-width)
+			{
+				> .nav-main
+				{
+					animation: toparea 1.6s linear 1;
+				}
+			}
+		}
+
+		.top-area--is-in-back-long
+		{
+			> a,
+			> h1,
+			> div
+			{
+				animation: toparea-long 6s linear 1;
+			}
+
+			@include breakpoint($huge-width)
+			{
+				> .nav-main
+				{
+					animation: toparea-long 6s linear 1;
+				}
+			}
+		}
+
+		.top-area *:not(nav)
+		{
+			transition: -webkit-filter .2s linear;
+		}
+
+
+
+//  = SUCCESS
+//  ---------------------------------------------------------------------------
+
+		.msg--success
+		{
+			background:rgba(desaturate($green70, 10%), .5);
+			border-color:darken($green70, 35%);
+			color:$green20;
+		}
+
+
+
+//  = ERROR
+//  ---------------------------------------------------------------------------
+
+		.msg--error
+		{
+			background:rgba(desaturate($red70, 10%), .5);
+			border-color:darken($red70, 5%);
+			color:$red20;
+		}
+
+
+
+//  = WARNING
+//  ---------------------------------------------------------------------------
+
+		.msg--warning
+		{
+			background:rgba($yellow70, .5);
+			border-color:darken($yellow70, 35%);
+			color:$yellow20;
+		}
+
+
+
+//  = INFO
+//  ---------------------------------------------------------------------------
+
+		.msg--info
+		{
+			background:rgba($blue70, .5);
+			border-color:darken($blue70, 5%);
+			color:$blue20;
+		}
+
+
+
+//  = ANIMATION
+//  ---------------------------------------------------------------------------
+
+		.msg--is-animating
+		{
+			animation: notify 1.6s linear 1;
+		}
+
+		.msg--is-animating-long
+		{
+			animation: notify-long 6s linear 1;
+		}
+
+		@include keyframes(notify)
+		{
+			0%
+			{
+				transform: translateY(-100%);
+			}
+
+			10%
+			{
+				transform: translateY(0);
+			}
+
+			90%
+			{
+				transform: translateY(0);
+			}
+
+			100%
+			{
+				transform:translateY(-100%);
+			}
+		}
+
+		@include keyframes(toparea)
+		{
+			10%
+			{
+				-webkit-filter:blur(4px);
+			}
+
+			90%
+			{
+				-webkit-filter:blur(4px);
+			}
+		}
+
+		@include keyframes(notify-long)
+		{
+			0%
+			{
+				transform: translateY(-100%);
+			}
+
+			1%
+			{
+				transform: translateY(0);
+			}
+
+			99%
+			{
+				transform: translateY(0);
+			}
+
+			100%
+			{
+				transform: translateY(-100%);
+			}
+		}
+
+		@include keyframes(toparea-long)
+		{
+			1%
+			{
+				-webkit-filter:blur(4px);
+			}
+
+			99%
+			{
+				-webkit-filter:blur(4px);
+			}
+		}

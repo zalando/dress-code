@@ -1,0 +1,26 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines icon grids for the styleguide
+//
+//  ---------------------------------------------------------------------------
+
+
+
+
+//  = BASE
+//  ---------------------------------------------------------------------------
+
+		.sg-icon
+		{
+			display:inline-block;
+			@include rem(margin-bottom, $font250);
+			@include rem(padding, $space100);
+			text-align:center;
+
+			svg
+			{
+				@include rem(margin-bottom, $font50);
+				border:1px solid $gray70;
+				vertical-align:middle;
+			}
+		}

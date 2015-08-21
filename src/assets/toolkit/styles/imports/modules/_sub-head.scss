@@ -1,0 +1,35 @@
+//  ---------------------------------------------------------------------------
+//
+//  Header for sub-pages
+//
+//  ---------------------------------------------------------------------------
+
+
+
+
+//  = BASE
+//  ---------------------------------------------------------------------------
+
+.sub-head
+{
+	width:100%;
+	@include rem(margin-bottom, $doubleSpace);
+	border-bottom:2px solid $grayLightest;
+}
+
+.sub-head__back
+{
+	@include rem(margin-right, $singleSpace * 3);
+	@include rem(font-size, 1.6);
+}
+
+.sub-head__title
+{
+	@extend .h3;
+}
+
+.sub-head__back,
+.sub-head__title
+{
+	@include rem(line-height, 3.6);
+}

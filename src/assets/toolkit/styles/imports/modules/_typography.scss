@@ -1,0 +1,310 @@
+//  ---------------------------------------------------------------------------
+//
+//  TYPOGRAPHY
+//
+//  ---------------------------------------------------------------------------
+
+
+
+//  = BOX SIZING
+//  ---------------------------------------------------------------------------
+
+	*
+	{
+		box-sizing:border-box;
+	}
+
+
+
+//  = VERTICAL RHYTHM
+//  ---------------------------------------------------------------------------
+
+	h1,h2,h3,h4,h5,h6,hgroup,
+	ul,ol,dd,
+	p,figure,object,
+	pre,table,fieldset,hr
+	{
+		margin:0;
+		@include rem(margin-bottom, $space150);
+	}
+
+
+
+//  = BODY TEXT
+//  ---------------------------------------------------------------------------
+
+
+	html
+	{
+		height:100%;
+		font-family:$baseFontFamily;
+		font-size:$htmlFontSize;
+		line-height:$htmlLineHeight;
+		font-weight:$normalFontWeight;
+	}
+
+	body
+	{
+		@include setType($bodyFontSize, $bodyLineHeight);
+		background:$bodyBackgroundColor;
+		color:$textColor;
+	}
+
+	pre
+	{
+		// undo reset
+		word-wrap:normal;
+	}
+
+	::-webkit-selection
+	{
+	    background-color:$secondaryAccent;
+	    color:$white;
+	}
+
+	::-moz-selection
+	{
+	    background-color:$secondaryAccent;
+	    color:$white;
+	}
+
+	::selection
+	{
+	    background-color:$secondaryAccent;
+	    color:$white;
+	}
+
+	strong
+	{
+		font-weight:$boldFontWeight;
+	}
+
+	em
+	{
+		font-style:italic;
+	}
+
+
+	.nowrap
+	{
+		white-space:nowrap;
+	}
+
+	.styleguide p
+	{
+		@include rem(max-width, 45);
+	}
+
+
+//  = LINKS
+//  ---------------------------------------------------------------------------
+
+	a
+	{
+		text-decoration:none;
+		color:$linkColor;
+		cursor:pointer;
+
+		transition: color .1s linear;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+
+	input
+	{
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
+	}
+
+	.no-touch a:hover,
+	.touch a:active
+	{
+		text-decoration:none;
+		color:$linkColorHover;
+	}
+
+	.no-touch .link--success:hover,
+	.touch .link--success:active
+	{
+		color:$green30;
+	}
+
+	.no-touch .link--destroy:hover,
+	.touch .link--destroy:active
+	{
+		color:$red40;
+	}
+
+	.link--disabled,
+	.touch .link--disabled:active,
+	.no-touch .link--disabled:hover
+	{
+		color:$gray50;
+		cursor:default;
+	}
+
+
+
+//  = LISTS
+//  ---------------------------------------------------------------------------
+
+	ul, ol
+	{
+		padding:0;
+		list-style-type:none;
+	}
+
+	dt
+	{
+		font-family:$baseFontFamily;
+	}
+
+
+
+//  = HEADINGS
+//  ---------------------------------------------------------------------------
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6,
+	%h1, %h2, %h3, %h4, %h5, %h6
+	{
+		@include rem(margin-bottom, $space150);
+		font-family:$headingsFontFamily;
+		font-weight:$headingsFontWeight;
+		color:$headingsColor;
+
+		small
+		{
+			display:block;
+			font-family:$baseFontFamily;
+			font-size:60%;
+			color:$gray50;
+		}
+	}
+
+	h1, .h1
+	{
+		@include rem(font-size, $h1Size);
+		@include rem(line-height, $h1LineHeight);
+	}
+
+	h2, .h2
+	{
+		@include rem(font-size, $h2Size);
+		@include rem(line-height, $h2LineHeight);
+	}
+
+	h3, .h3
+	{
+		@include rem(font-size, $h3Size);
+		@include rem(line-height, $h3LineHeight);
+	}
+
+	h4, .h4
+	{
+		@include rem(font-size, $h4Size);
+		@include rem(line-height, $h4LineHeight);
+	}
+
+
+
+	//  = TEXT
+	//  ---------------------------------------------------------------------------
+
+	.text--center
+	{
+		text-align:center;
+	}
+
+	.text--small
+	{
+		@include rem(font-size, $font50);
+		@include rem(line-height, 1.8);
+	}
+
+	.less-important
+	{
+		@include rem(font-size, $font50);
+		line-height:1;
+		color:$gray60;
+	}
+
+	.text--error
+	{
+		color:$red40;
+	}
+
+
+
+//  = ICONS
+//  ---------------------------------------------------------------------------
+
+		.icon
+		{
+			display:inline-block;
+			vertical-align:middle;
+			cursor:pointer;
+			transform-origin: 50%;
+
+			&:hover
+			{
+				[stroke^='#']
+				{
+					stroke:$blue20;
+				}
+
+				[fill^='#']
+				{
+					fill:$blue20;
+				}
+			}
+
+			&:active
+			{
+				transform: scale(.85);
+			}
+		}
+
+		.icon--destroy:hover
+		{
+			[stroke^='#']
+			{
+				stroke:$red40;
+			}
+
+			[fill^='#']
+			{
+				fill:$red40;
+			}
+		}
+
+		body:not(.is-admin) .icon--is-admin-only,
+		body:not(.is-admin) .icon--is-admin-only:hover,
+		body:not(.is-admin) .icon--is-admin-only:active,
+		.icon--disabled,
+		.icon--disabled:hover,
+		.icon--disabled:active
+		{
+			transform: none;
+
+			[stroke^='#']
+			{
+				stroke:$gray60;
+			}
+
+			[fill^='#']
+			{
+				fill:$gray60;
+			}
+		}
+
+		:checked + .table__actions-label
+		{
+			[fill^='#']
+			{
+				fill:$blue20;
+			}
+		}
+
+		.is-admin .icon--lock
+		{
+			display:none;
+		}

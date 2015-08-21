@@ -1,0 +1,127 @@
+//  ---------------------------------------------------------------------------
+//
+//  Different kinds of brand logos
+//
+//  ---------------------------------------------------------------------------
+
+
+
+
+//  = BASE
+//  ---------------------------------------------------------------------------
+
+		.brand-logo
+		{
+			margin:0 auto;
+			@include rem(margin, $space150 auto $space200);
+		}
+
+
+//  = SIZES
+//  ---------------------------------------------------------------------------
+
+		.brand-logo--medium
+		{
+			@include rem(max-width, 7.2);
+		}
+
+
+//  = GRID
+//  ---------------------------------------------------------------------------
+
+		.brands
+		{
+			@include display-flex(flex);
+			@include flex-wrap(wrap);
+			@include align-items(stretch);
+			@include rem(margin-left, -$space100);
+		}
+
+			.brand
+			{
+				@include display-flex(flex);
+				@include align-items(stretch);
+				width:50%;
+				@include rem(margin-bottom, $space150);
+				@include rem(padding-left, $space100);
+
+				> a
+				{
+					@include display-flex(flex);
+					@include flex-direction(column);
+					@include justify-content(center);
+
+					@include rem(padding, $space150 $space150 $space100);
+					border:1px solid transparent;
+					border-radius: 2px;
+
+					.no-touch &:hover
+					{
+						border-color:$gray70;
+					}
+				}
+
+				&:active
+				{
+					@include transform(scale(.85));
+				}
+
+				@include breakpoint(27em) // 432px
+				{
+					width:33.33%;
+				}
+
+				@include breakpoint($large-width)
+				{
+					width:25%;
+				}
+
+				@include breakpoint(54em) // 866px
+				{
+					width:20%;
+				}
+
+				@include breakpoint($huge-width)
+				{
+					> a
+					{
+						@include rem(padding, $space150 $space200 $space100);
+					}
+				}
+
+				@include breakpoint($giant-width)
+				{
+					> a
+					{
+						@include rem(padding, $space150 $space250 $space100);
+					}
+				}
+			}
+
+				.brand__img
+				{
+					// @include rem(max-width, 13);
+					@include rem(margin-bottom, $space150);
+					@include flex(1 0 auto);
+				}
+
+				.brand__title
+				{
+					@include rem(font-size, $font50);
+					line-height:1;
+					text-align:center;
+					text-transform:capitalize;
+					color:$gray50;
+
+					.no-touch &
+					{
+						opacity:0;
+						transition: opacity .1s linear;
+					}
+
+					.no-touch a:hover &
+					{
+						color:$gray50;
+						opacity:1;
+					}
+				}

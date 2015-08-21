@@ -16,7 +16,7 @@ var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var webpack = require('webpack');
-
+var gulp = require('gulp');
 
 // configuration
 var config = {

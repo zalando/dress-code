@@ -1,0 +1,64 @@
+//  ---------------------------------------------------------------------------
+//
+//  The media object
+//	For the purpose of putting an image left and some
+//	arbitrary content on the right. Also vice versa.
+//
+//	Developed by Nicole Sullivan
+//	http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+//
+// 	Example:
+//	 ___________
+//	|		    | Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+//	|		    | sed do eiusmod tempor incididunt ut labore et dolore magna
+//	|	Image   | aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+//	|		    | ullamco laboris nisi ut aliquip ex ea commodo consequat.
+//	|___________| Duis aute irure dolor in reprehenderit in voluptate velit.
+//
+//
+//	Code example:
+//
+//	<div class="media attribution">
+//
+//	  <a href="http://twitter.com/stubbornella" class="img">
+//	    <img src="http://stubbornella.com/profile_image.jpg" alt="me" />
+//	  </a>
+//
+//	  <div class="bd">
+//	    @Stubbornella 14 minutes ago
+//	  </div>
+//
+//	</div>
+//
+//  ---------------------------------------------------------------------------
+
+
+
+	.media
+	{
+		margin:0;
+
+		.media__bd
+		{
+			overflow:hidden;
+			_overflow:visible;
+			zoom:1;
+		}
+
+		.media__img
+		{
+			float:left;
+			@include rem(margin-right, $space100);
+
+			img
+			{
+				display:block;
+			}
+		}
+
+		.media__img--rev
+		{
+			float:right;
+			@include rem(margin-left, $space100);
+		}
+	}

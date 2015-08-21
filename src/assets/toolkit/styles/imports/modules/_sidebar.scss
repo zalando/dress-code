@@ -1,0 +1,37 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines the brand shop edit page sidebar
+//
+//  ---------------------------------------------------------------------------
+
+
+//  = SIDEBAR
+//  ---------------------------------------------------------------------------
+
+.sidebar
+{
+	position:relative;
+	width:0;
+
+	&:before
+	{
+		content:"Modules";
+		position:absolute;
+		top:0;
+		right:100%;
+		background:$primaryAccent;
+		color:$white;
+	}
+
+	&:hover
+	{
+		@include rem(padding-right, $space100);
+		@include rem(width, 20);
+	}
+}
+
+.sidebar__inner
+{
+	@include rem(padding, $space200 $space100);
+	overflow:hidden;
+}

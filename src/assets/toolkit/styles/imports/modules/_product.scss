@@ -1,0 +1,46 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines a page section
+//
+//  ---------------------------------------------------------------------------
+
+
+
+
+//  = BASE
+//  ---------------------------------------------------------------------------
+
+		.products
+		{
+			@include rem(margin-bottom, $space150);
+
+			li
+			{
+				display:inline-block;
+			}
+		}
+
+			.product
+			{
+				display:block;
+				@include rem(padding, $space50);
+				@include rem(margin-top, $space50);
+				@include rem(margin-right, $space150);
+				border:1px solid transparent;
+				border-radius:2px;
+				text-align:center;
+				color:$blue40;
+
+				transition: border-color .1s linear, box-shadow .1s linear;
+
+				&:hover
+				{
+					box-shadow:0 1px 1px rgba($black, .2);
+					border-color:$gray70;
+				}
+
+				&:active
+				{
+					transform: scale(.85);
+				}
+			}

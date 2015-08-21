@@ -1,0 +1,408 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines all table styles
+//
+//  ---------------------------------------------------------------------------
+
+		.table__item-title
+		{
+			font-weight:$boldFontWeight;
+		}
+
+		.status
+		{
+			&:before
+			{
+				content:" ";
+				display:inline-block;
+				@include rem(width, 1);
+				@include rem(height, 1);
+				@include rem(margin-right, $space50);
+				border-radius:2px;
+			}
+		}
+
+		.status--online:before
+		{
+			background:$green30;
+		}
+
+		.status--offline:before
+		{
+			background:$gray50;
+		}
+
+		// .draft--approved
+		// {
+		// 	color:$green30;
+		// }
+		//
+		// .draft--in-review
+		// {
+		// 	color:$orange40;
+		// }
+		//
+		// .draft--rejected
+		// {
+		// 	color:$red40;
+		// }
+
+
+//  = TABLE
+//  ---------------------------------------------------------------------------
+
+		.table__tr
+		{
+			@extend .cf;
+			cursor:pointer;
+		}
+
+		.table__actions-wrapper
+		{
+			display:none;
+		}
+
+		@include breakpoint(0 $huge-width - .1)
+		{
+			.table,
+			.table__thead,
+			.table__tbody,
+			.table__tr,
+			.table__th,
+			.table__td
+			{
+				display:block;
+				width:100%;
+				font-weight:$normalFontWeight;
+			}
+
+			.table__thead > tr
+			{
+				display:none;
+			}
+
+			.table__tr
+			{
+				position:relative;
+				@include rem(padding, $space100 0);
+				border-bottom:1px solid $gray70;
+
+				&:last-child
+				{
+					border-bottom:0 none;
+				}
+			}
+
+			.table__td
+			{
+				padding-left:calc(30% + 12px);
+				text-align:left;
+
+				&:before
+				{
+					content:attr(data-col);
+					display:block;
+					position:absolute;
+					left:0;
+					right:70%;
+					@include rem(font-size, $font50);
+					@include rem(line-height, 2.6);
+					font-weight:$boldFontWeight;
+					text-transform:uppercase;
+					text-align:right;
+				}
+
+				&:last-child
+				{
+					padding:0;
+
+					&:before
+					{
+						content:none;
+					}
+				}
+			}
+
+			.page--dashboard .table__td:last-child
+			{
+				padding-left:calc(30% + 12px);
+
+				&::before
+				{
+					content:attr(data-col);
+				}
+			}
+		}
+
+
+		.table
+		{
+			width:100%;
+			text-align:left;
+		}
+
+		.table__th
+		{
+			text-transform:uppercase;
+		}
+
+		.table__td
+		{
+			font-weight:$normalFontWeight;
+		}
+
+		.table__actions-toggle
+		{
+			display:none;
+		}
+
+		.table__actions-label
+		{
+			display:inline;
+			color:$linkColor;
+			cursor:pointer;
+
+			&:hover
+			{
+				color:$linkColorHover;
+			}
+		}
+
+		:checked + .table__actions-label
+		{
+			color:$linkColorHover;
+		}
+
+		.table__actions
+		{
+			display:none;
+			position:absolute;
+			top:100%;
+			@include rem(right, -1);
+			background:$white;
+			border:1px solid $gray60;
+			border-radius:2px;
+			box-shadow:0 1px 2px rgba($black, .2);
+			@include rem(line-height, $touchSize);
+			z-index:900;
+
+			&:after,
+			&:before
+			{
+				content: " ";
+				position: absolute;
+				bottom: 100%;
+				@include rem(right, $space100);
+				height: 0;
+				width: 0;
+				border: solid transparent;
+				pointer-events: none;
+			}
+
+			&:after
+			{
+				border-color: rgba(255, 255, 255, 0);
+				border-bottom-color: #ffffff;
+				border-width: 6px;
+			}
+
+			&:before
+			{
+				border-color: rgba(209, 209, 209, 0);
+				border-bottom-color: #d1d1d1;
+				border-width: 7px;
+				margin-right:-1px;
+			}
+		}
+
+		.table__actions-toggle:checked ~ .table__actions
+		{
+			display:inline-block;
+		}
+
+		.table__action
+		{
+			@include rem(padding, 0 $space100);
+		}
+
+		.table__action--disabled,
+		.table__action--disabled a,
+		.touch .table__action--disabled a:active,
+		.no-touch .table__action--disabled a:hover
+		{
+			cursor:default;
+			color:$gray60;
+			text-decoration:none;
+		}
+
+		@include breakpoint($large-width $huge-width - .1)
+		{
+			.table__td
+			{
+				position:relative;
+				float:left;
+				width:50%;
+				padding-left: calc(16% + 12px);
+
+				&:before
+				{
+					right:69%;
+				}
+
+				&:nth-child(2)
+				{
+					clear:left;
+				}
+
+				&:first-child
+				{
+					@include rem(margin-bottom, $space50);
+					width:100%;
+
+					&:before
+					{
+						right:84.5%;
+					}
+				}
+			}
+		}
+
+		@include breakpoint($huge-width)
+		{
+			.table__actions-wrapper
+			{
+				display:block;
+				position:relative;
+				@include rem(padding, .4 0);
+			}
+
+			.table__actions
+			{
+				@include rem(padding, $space50 $space50 $space50 0);
+				line-height:1;
+			}
+
+			.table__action
+			{
+				display:inline-block;
+				padding:0;
+				@include rem(margin-left, $space50);
+			}
+
+			.table__action-group-start
+			{
+				@include rem(padding-left, $space100);
+			}
+
+			.table__action-group-end
+			{
+				@include rem(padding-right, $space100);
+			}
+
+			[title='Preview']
+			{
+				@include rem(margin-left, $space100);
+
+				.styleguide &
+				{
+					margin-left:0;
+				}
+			}
+
+			.table__tr
+			{
+				border-bottom:1px solid $gray70;
+			}
+
+			.table__tbody > .table__tr
+			{
+				&:hover
+				{
+					background:desaturate(lighten($blue70, 12%), 10%);
+				}
+			}
+
+			body:not(.is-admin) .table__tbody > .table__tr--is-in-review
+			{
+				&:hover
+				{
+					background:transparent;
+					cursor:default;
+				}
+			}
+
+			.table__th,
+			.table__td
+			{
+				@include rem(padding, $space50 $space50 / 2);
+				line-height:1.5;
+
+				&:first-child
+				{
+					@include rem(padding-left, $space100 / 2);
+				}
+
+				&:last-child
+				{
+					padding-right:0;
+					text-align:right;
+				}
+
+				@include breakpoint(1150px)
+				{
+					@include rem(padding, 0 $space100);
+				}
+			}
+
+			.page--dashboard .table__th:last-child,
+			.page--dashboard .table__td:last-child
+			{
+				text-align:left;
+			}
+
+			.table__th
+			{
+				@include breakpoint(1150px)
+				{
+					@include rem(padding, $space50 $space100);
+				}
+			}
+
+			.table__td
+			{
+				@include rem(padding-top, $space75);
+				@include rem(padding-bottom, $space75);
+				white-space:nowrap;
+
+				@include breakpoint(1280px)
+				{
+					&:nth-child(5)
+					{
+						@include rem(padding-right, 10);
+					}
+				}
+			}
+
+			.table__item-title
+			{
+				font-weight:$normalFontWeight;
+				white-space:normal;
+			}
+		}
+
+		.touch .page--dashboard .table__tr
+		{
+			position:relative;
+
+			&::after
+			{
+				content:" ";
+				position:absolute;
+				top:50%;
+				right:0;
+				@include rem(margin-top, -1.8);
+				@include rem(width, 3.6);
+				@include rem(height, 3.6);
+				background:url(../img/i-arrow-right.min.svg);
+			}
+		}

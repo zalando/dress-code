@@ -1,0 +1,570 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines the layout side flyout nav
+//
+//  ---------------------------------------------------------------------------
+
+$navHeightHuge:3;
+$navAccentColor:$orange40;
+
+
+
+
+//  = HEADER
+//  ---------------------------------------------------------------------------
+
+.p-header
+{
+	position:relative;
+	@include rem(margin-bottom, $space150);
+
+	a
+	{
+		color:$textColor;
+		transition: color .2s linear, background-color .2s linear;
+	}
+
+	svg
+	{
+		transform-origin: 50% 50%;
+
+		&:active
+		{
+			transform: scale(.85);
+		}
+	}
+
+	svg:hover,
+	svg:active
+	{
+		[fill^='#']
+		{
+			fill:$orange40;
+		}
+
+		[stroke^='#']
+		{
+			stroke:$orange40;
+		}
+	}
+}
+
+.p-header--styleguide
+{
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	z-index:999;
+}
+
+.touch .p-header a:active,
+.no-touch .p-header a:hover
+{
+	text-decoration:none;
+}
+
+
+
+//  = TOP AREA INSIDE HEADER
+//  ---------------------------------------------------------------------------
+
+	.top-area
+	{
+		position:relative;
+		display: flex;
+		justify-content: space-between;
+		@include rem(height, $touchSize);
+		background-color:$white;
+		border-bottom:1px solid $gray60;
+
+		@include breakpoint($huge-width)
+		{
+			@include rem(padding-left, $space100);
+		}
+	}
+
+	.nav-main-toggle
+	{
+		@include breakpoint($huge-width)
+		{
+			display:none;
+		}
+	}
+
+	.is-admin .l-logo
+	{
+		display:none;
+
+		@include breakpoint($large-width)
+		{
+			display:block;
+		}
+	}
+
+	.l-logo
+	{
+		display:none;
+		order: 2;
+		flex: 1 0 auto;
+		@include rem(margin, 0 $space100);
+		@include rem(font-size, $font150);
+		@include rem(line-height, $touchSize);
+		font-weight:$normalFontWeight;
+
+		img { vertical-align:top; }
+
+		@include breakpoint($large-width)
+		{
+			@include rem(margin-left, $space100);
+		}
+
+		@include breakpoint($huge-width)
+		{
+			display:block;
+			flex-grow: 0;
+			margin-left:0;
+		}
+	}
+
+	.logo
+	{
+		display:inline-block;
+		@include rem(width, 1.8);
+		@include rem(margin, .8 -.4 0 1.2);
+		vertical-align: top;
+
+		@include breakpoint($huge-width)
+		{
+			display:none;
+
+			& + .product
+			{
+				display:none;
+			}
+		}
+	}
+
+	.logo--with-text
+	{
+		display:none;
+		@include rem(margin-top, $space75);
+		@include rem(margin-left, $space75);
+		@include rem(height, $space100 + .6);
+
+		@include breakpoint($huge-width)
+		{
+			display:inline-block;
+		}
+	}
+
+	.logo--with-text--brands
+	{
+		display:inline-block;
+	}
+
+
+
+//  = BRAND SWITCHER
+//  ---------------------------------------------------------------------------
+
+	.nav-brand
+	{
+		order: 3;
+		flex: 1 0 auto;
+		position:relative;
+		// @include rem(font-size, $font150);
+		@include rem(line-height, $touchSize);
+		text-transform: uppercase;
+		font-weight: $boldFontWeight;
+		text-align: center;
+		cursor:default;
+		pointer-events:none;
+
+		.is-admin &
+		{
+			cursor:pointer;
+			pointer-events:auto;
+		}
+
+		@include breakpoint($huge-width)
+		{
+			// @include order(2);
+			flex: 0 0 auto;
+			@include rem(margin-right, $space150);
+			@include rem(font-size, $font100);
+		}
+	}
+
+	.touch .nav-brand:active,
+	.no-touch .nav-brand:hover
+	{
+		color:$textColor;
+
+		& .nav-brand__inner::after
+		{
+			opacity:1;
+		}
+	}
+
+	.touch .nav-brand:active,
+	.no-touch .nav-brand:active
+	{
+		transform: scale(.85);
+	}
+
+	.nav-brand__inner
+	{
+		display:inline-block;
+		position: relative;
+		@include rem(line-height, $touchSize);
+
+		&::after
+		{
+			content:" ";
+			position:absolute;
+			right:0;
+			bottom:1px;
+			left: 0;
+			@include rem(height, $space50/2);
+			background:$orange40;
+			opacity:0;
+			transition: opacity .1s linear;
+		}
+	}
+
+
+
+//  = MAIN NAVIGATION ELEMENTS
+//  ---------------------------------------------------------------------------
+
+.nav-main,
+.nav-user
+{
+	position:absolute;
+	top:100%;
+	right:0;
+	left:0;
+	z-index:998;
+	overflow-x:scroll;
+	overflow-y:hidden;
+	-webkit-overflow-scrolling:touch;
+	border-top:$border50 solid $gray60;
+	border-bottom:$border50 solid $gray60;
+	transform-origin: 0 0 0;
+	transform: scaleY(0);
+	background:rgba($white, .85);
+	opacity:0;
+	pointer-events:none;
+
+	transition: transform .2s .2s ease-in-out, opacity .1s .2s linear;
+}
+
+.nav-main
+{
+	order: 2;
+
+	.nav-main__items
+	{
+		transform: translateX(-100%);
+		transition: transform .2s ease-in-out, opacity .1s linear;
+		opacity:0;
+	}
+
+	@include breakpoint($huge-width)
+	{
+		position:static;
+		order: 3;
+		flex-grow: 1;
+		@include rem(margin-left, $space100);
+		border:0 none;
+		overflow-x:hidden;
+		transform: scaleY(1);
+		opacity:1;
+		pointer-events:auto;
+
+		.nav-main__items
+		{
+			transform: translateX(0);
+			opacity:1;
+		}
+	}
+}
+
+.nav-user
+{
+	.nav-user__items
+	{
+		float:right;
+		@include rem(margin-right, $space100);
+		transform: translateX(100%);
+		transition: transform .2s ease-in-out, opacity .1s;
+	}
+
+	@include breakpoint($huge-width)
+	{
+		overflow-x:hidden;
+	}
+}
+
+.nav-main-toggle
+{
+	order: 1;
+
+	&:hover
+	{
+		svg
+		{
+			[fill^='#']
+			{
+				fill:$orange40;
+			}
+
+			[stroke^='#']
+			{
+				stroke:$orange40;
+			}
+		}
+	}
+
+	&:active
+	{
+		transform: scale(.85);
+	}
+}
+
+.nav-user-toggle
+{
+	order: 4;
+
+	svg
+	{
+		vertical-align:middle;
+	}
+
+	&:hover
+	{
+		.user-name
+		{
+			color:$orange40;
+		}
+
+		[fill^='#']
+		{
+			fill:$orange40;
+		}
+
+		[stroke^='#']
+		{
+			stroke:$orange40;
+		}
+	}
+
+	&:active
+	{
+		transform: scale(.85);
+	}
+}
+
+.nav-user-toggle--styleguide
+{
+	visibility:hidden;
+}
+
+.nav-main--is-shown
+{
+	.nav-main-toggle svg
+	{
+		[fill^='#']
+		{
+			fill:$orange40;
+		}
+
+		[stroke^='#']
+		{
+			stroke:$orange40;
+		}
+	}
+}
+
+.page--dashboard .nav-user--is-shown
+{
+	// ~ .nav-user-toggle svg
+	// {
+	// 	[fill^='#']
+	// 	{
+	// 		fill:$orange40;
+	// 	}
+	//
+	// 	[stroke^='#']
+	// 	{
+	// 		stroke:$orange40;
+	// 	}
+	// }
+	//
+	// ~ .nav-user-toggle .user-name
+	// {
+	// 	color:$orange40;
+	// }
+
+		li:first-child
+		{
+			position:relative;
+
+			&::after
+			{
+				content:" ";
+				position:absolute;
+				right:0;
+				bottom:0;
+				left:0;
+				height:2px;
+				background:$orange40;
+			}
+		}
+}
+
+.page--help [href='help.html']
+{
+	[fill^='#']
+	{
+		fill:$orange40;
+	}
+
+	[stroke^='#']
+	{
+		stroke:$orange40;
+	}
+}
+
+[href='help.html']
+{
+	@include rem(margin-left, $space100);
+	order: 6;
+}
+
+.user-name
+{
+	display:none;
+
+	@include breakpoint($large-width)
+	{
+		display:inline;
+		order: 4;
+		@include rem(line-height, $touchSize);
+		@include rem(margin-left, $space100);
+		@include rem(margin-right, -.6);
+	}
+}
+
+.nav-main--is-shown,
+.nav-user--is-shown
+{
+	transition: transform .2s ease-in-out, opacity .1s .1s linear;
+	transform: scaleY(1);
+	opacity:1;
+	pointer-events:auto;
+
+	.nav-main__items,
+	.nav-user__items
+	{
+	  transition: transform .2s .2s ease-in-out, opacity .1s .2s linear;
+		transform: translateX(0);
+		opacity:1;
+	}
+}
+
+.nav-main__items,
+.nav-user__items
+{
+	@include rem(height, $touchSize);
+	white-space:nowrap;
+}
+
+.nav-main__items--never-seen,
+.nav-user__items--never-seen
+{
+	transform: translateX(-100%);
+	transition: transform .6s .1s cubic-bezier(0.055, 0.865, 0.475, 0.990);
+}
+
+.nav-user__items--never-seen
+{
+	transform: translateX(100%);
+}
+
+.nav-main__item,
+.nav-user__item
+{
+	display:inline-block;
+	@include rem(margin-left, $space150);
+
+	&:first-child
+	{
+		@include rem(margin-left, $space100);
+	}
+
+	&:active
+	{
+		transform: scale(.85);
+	}
+}
+
+.is-admin .is-admin-only.nav-main__item,
+.is-admin .is-admin-only.nav-user__item
+{
+	display:inline-block!important;
+}
+
+.nav-main__items,
+.nav-user__items
+{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+.nav-main__link,
+.nav-user__link
+{
+	display:block;
+	position:relative;
+	@include rem(height, $touchSize);
+	@include rem(line-height, $touchSize);
+
+	&:after
+	{
+		content:" ";
+		position:absolute;
+		right:0;
+		bottom:0;
+		left:0;
+		height:$border100;
+		background-color:$navAccentColor;
+		opacity:0;
+		transition: opacity .1s linear;
+	}
+}
+
+.nav-main__link:after
+{
+	@include breakpoint($huge-width)
+	{
+		bottom:1px;
+	}
+}
+
+.touch .p-header .nav-main__link:active,
+.no-touch .p-header .nav-main__link:hover,
+.touch .p-header .nav-user__link:active,
+.no-touch .p-header .nav-user__link:hover,
+.p-header .nav-main__link--is-active,
+.p-header .nav-user__link--is-active
+{
+	color:$textColor;
+
+	&:after
+	{
+		opacity:1;
+	}
+}
