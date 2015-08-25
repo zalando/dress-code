@@ -7,7 +7,7 @@
 		.dim
 		{
 			position:absolute;
-			@include rem(top, $space200);
+			top: $space200;
 			right:0;
 			bottom:0;
 			left:0;
@@ -36,8 +36,8 @@
 			z-index:999;
 			background:rgba($white, .5);
 			border-bottom:1px solid $gray60;
-			@include rem(font-size, $font50);
-			@include rem(line-height, $space200);
+			font-size: $font50;
+			line-height: $space200;
 			font-weight:$boldFontWeight;
 			text-transform:uppercase;
 			text-align:center;

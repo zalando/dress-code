@@ -12,6 +12,6 @@
 
 .time
 {
-	@include rem(margin-bottom, $doubleSpace);
+	margin-bottom: $doubleSpace;
 	text-align:center;
 }

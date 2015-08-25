@@ -13,13 +13,13 @@
 		.sg-icon
 		{
 			display:inline-block;
-			@include rem(margin-bottom, $font250);
-			@include rem(padding, $space100);
+			margin-bottom: $font250;
+			padding: $space100;
 			text-align:center;
 
 			svg
 			{
-				@include rem(margin-bottom, $font50);
+				margin-bottom: $font50;
 				border:1px solid $gray70;
 				vertical-align:middle;
 			}

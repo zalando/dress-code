@@ -25,13 +25,13 @@
 
 	&:hover
 	{
-		@include rem(padding-right, $space100);
-		@include rem(width, 20);
+		padding-right: $space100;
+		width: 20;
 	}
 }
 
 .sidebar__inner
 {
-	@include rem(padding, $space200 $space100);
+	padding: $space200 $space100;
 	overflow:hidden;
 }

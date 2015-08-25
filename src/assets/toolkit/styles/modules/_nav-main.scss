@@ -16,7 +16,7 @@ $navAccentColor:$orange40;
 .p-header
 {
 	position:relative;
-	@include rem(margin-bottom, $space150);
+	margin-bottom: $space150;
 
 	a
 	{
@@ -74,13 +74,13 @@ $navAccentColor:$orange40;
 		position:relative;
 		display: flex;
 		justify-content: space-between;
-		@include rem(height, $touchSize);
+		height: $touchSize;
 		background-color:$white;
 		border-bottom:1px solid $gray60;
 
 		@include breakpoint($huge-width)
 		{
-			@include rem(padding-left, $space100);
+			padding-left: $space100;
 		}
 	}
 
@@ -107,16 +107,16 @@ $navAccentColor:$orange40;
 		display:none;
 		order: 2;
 		flex: 1 0 auto;
-		@include rem(margin, 0 $space100);
-		@include rem(font-size, $font150);
-		@include rem(line-height, $touchSize);
+		margin: 0 $space100;
+		font-size: $font150;
+		line-height: $touchSize;
 		font-weight:$normalFontWeight;
 
 		img { vertical-align:top; }
 
 		@include breakpoint($large-width)
 		{
-			@include rem(margin-left, $space100);
+			margin-left: $space100;
 		}
 
 		@include breakpoint($huge-width)
@@ -130,8 +130,8 @@ $navAccentColor:$orange40;
 	.logo
 	{
 		display:inline-block;
-		@include rem(width, 1.8);
-		@include rem(margin, .8 -.4 0 1.2);
+		width: 1.8;
+		margin: .8 -.4 0 1.2;
 		vertical-align: top;
 
 		@include breakpoint($huge-width)
@@ -148,9 +148,9 @@ $navAccentColor:$orange40;
 	.logo--with-text
 	{
 		display:none;
-		@include rem(margin-top, $space75);
-		@include rem(margin-left, $space75);
-		@include rem(height, $space100 + .6);
+		margin-top: $space75;
+		margin-left: $space75;
+		height: $space100 + .6;
 
 		@include breakpoint($huge-width)
 		{
@@ -173,8 +173,8 @@ $navAccentColor:$orange40;
 		order: 3;
 		flex: 1 0 auto;
 		position:relative;
-		// @include rem(font-size, $font150);
-		@include rem(line-height, $touchSize);
+		// font-size: $font150;
+		line-height: $touchSize;
 		text-transform: uppercase;
 		font-weight: $boldFontWeight;
 		text-align: center;
@@ -191,8 +191,8 @@ $navAccentColor:$orange40;
 		{
 			// @include order(2);
 			flex: 0 0 auto;
-			@include rem(margin-right, $space150);
-			@include rem(font-size, $font100);
+			margin-right: $space150;
+			font-size: $font100;
 		}
 	}
 
@@ -217,7 +217,7 @@ $navAccentColor:$orange40;
 	{
 		display:inline-block;
 		position: relative;
-		@include rem(line-height, $touchSize);
+		line-height: $touchSize;
 
 		&::after
 		{
@@ -226,7 +226,7 @@ $navAccentColor:$orange40;
 			right:0;
 			bottom:1px;
 			left: 0;
-			@include rem(height, $space50/2);
+			height: $space50/2;
 			background:$orange40;
 			opacity:0;
 			transition: opacity .1s linear;
@@ -276,7 +276,7 @@ $navAccentColor:$orange40;
 		position:static;
 		order: 3;
 		flex-grow: 1;
-		@include rem(margin-left, $space100);
+		margin-left: $space100;
 		border:0 none;
 		overflow-x:hidden;
 		transform: scaleY(1);
@@ -296,7 +296,7 @@ $navAccentColor:$orange40;
 	.nav-user__items
 	{
 		float:right;
-		@include rem(margin-right, $space100);
+		margin-right: $space100;
 		transform: translateX(100%);
 		transition: transform .2s ease-in-out, opacity .1s;
 	}
@@ -439,7 +439,7 @@ $navAccentColor:$orange40;
 
 [href='help.html']
 {
-	@include rem(margin-left, $space100);
+	margin-left: $space100;
 	order: 6;
 }
 
@@ -451,9 +451,9 @@ $navAccentColor:$orange40;
 	{
 		display:inline;
 		order: 4;
-		@include rem(line-height, $touchSize);
-		@include rem(margin-left, $space100);
-		@include rem(margin-right, -.6);
+		line-height: $touchSize;
+		margin-left: $space100;
+		margin-right: -.6;
 	}
 }
 
@@ -477,7 +477,7 @@ $navAccentColor:$orange40;
 .nav-main__items,
 .nav-user__items
 {
-	@include rem(height, $touchSize);
+	height: $touchSize;
 	white-space:nowrap;
 }
 
@@ -497,11 +497,11 @@ $navAccentColor:$orange40;
 .nav-user__item
 {
 	display:inline-block;
-	@include rem(margin-left, $space150);
+	margin-left: $space150;
 
 	&:first-child
 	{
-		@include rem(margin-left, $space100);
+		margin-left: $space100;
 	}
 
 	&:active
@@ -529,8 +529,8 @@ $navAccentColor:$orange40;
 {
 	display:block;
 	position:relative;
-	@include rem(height, $touchSize);
-	@include rem(line-height, $touchSize);
+	height: $touchSize;
+	line-height: $touchSize;
 
 	&:after
 	{

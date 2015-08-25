@@ -12,7 +12,7 @@
 
 		.products
 		{
-			@include rem(margin-bottom, $space150);
+			margin-bottom: $space150;
 
 			li
 			{
@@ -23,9 +23,9 @@
 			.product
 			{
 				display:block;
-				@include rem(padding, $space50);
-				@include rem(margin-top, $space50);
-				@include rem(margin-right, $space150);
+				padding: $space50;
+				margin-top: $space50;
+				margin-right: $space150;
 				border:1px solid transparent;
 				border-radius:2px;
 				text-align:center;

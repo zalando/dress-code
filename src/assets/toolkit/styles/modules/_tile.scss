@@ -12,7 +12,7 @@
 
 .tile
 {
-	@include rem(margin-bottom, $doubleSpace);
+	margin-bottom: $doubleSpace;
 	background:$white;
 	border:2px solid $grayLightest;
 	box-shadow:2px 2px 0 rgba($black, .2);
@@ -22,7 +22,7 @@
 .tile__link
 {
 	display:block;
-	@include rem(padding, $doubleSpace $doubleSpace * 2);
+	padding: $doubleSpace $doubleSpace * 2;
 	color:$textColor;
 }
 
@@ -47,8 +47,8 @@
 
 .tile__title
 {
-	@include rem(margin-bottom, $singleSpace);
-	@include rem(font-size, 2.4);
+	margin-bottom: $singleSpace;
+	font-size: 2.4;
 	line-height:1.2;
 	text-transform:uppercase;
 	color:$grayLight;
@@ -57,15 +57,15 @@
 
 .tile__text
 {
-	@include rem(margin-bottom, $singleSpace);
-	@include rem(font-size, 1.6);
+	margin-bottom: $singleSpace;
+	font-size: 1.6;
 	line-height:1.5;
 }
 
 .tile__kpi
 {
 	display:block;
-	@include rem(font-size, 4.8);
+	font-size: 4.8;
 	line-height:1.5;
 	font-weight:bold;
 }

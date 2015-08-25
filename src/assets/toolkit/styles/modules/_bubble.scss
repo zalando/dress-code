@@ -20,7 +20,7 @@
 			.bubble-wrap__inner
 			{
 				position:absolute;
-				@include rem(left, 6.5);
+				left: 6.5;
 				z-index:999;
 			}
 		}
@@ -28,9 +28,9 @@
 		.bubble
 		{
 			position:absolute;
-			@include rem(top, $space150);
-			@include rem(left, -17.2);
-			@include rem(padding, $space50 $space75);
+			top: $space150;
+			left: -17.2;
+			padding: $space50 $space75;
 			background:rgba(lighten($black, 5%), .85);
 			border-radius:2px;
 			color:$gray70;

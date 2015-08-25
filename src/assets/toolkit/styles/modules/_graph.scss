@@ -18,6 +18,6 @@
 .graph__img
 {
 	width:100%;
-	@include rem(max-width, 40);
-	@include rem(margin-bottom, $doubleSpace);
+	max-width: 40;
+	margin-bottom: $doubleSpace;
 }

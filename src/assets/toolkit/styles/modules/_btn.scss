@@ -14,9 +14,9 @@
 		button
 		{
 			display:inline-block;
-		  @include rem(margin-bottom, $space100);
-			@include rem(padding, $space100 - .1 $space100);
-			@include rem(line-height, $space100);
+		  margin-bottom: $space100;
+			padding: $space100 - .1 $space100;
+			line-height: $space100;
 		  background: linear-gradient($white, darken($white, 7%));
 		  border:1px solid $gray50;
 			border-radius:$radius100;
@@ -67,8 +67,8 @@
 		.btn--icon
 		{
 			padding:0;
-			@include rem(width, $touchSize);
-			@include rem(height, $touchSize);
+			width: $touchSize;
+			height: $touchSize;
 
 			svg
 			{
@@ -242,8 +242,8 @@
 
 		.btn--small
 		{
-			@include rem(padding, $space50 $space75);
-			@include rem(font-size, $font50);
+			padding: $space50 $space75;
+			font-size: $font50;
 			text-transform:uppercase;
 		}
 
@@ -253,6 +253,6 @@
 
 			+ .btn--inline
 			{
-				@include rem(margin-left, .2); // Account for 4px inline margin
+				margin-left: .2; // Account for 4px inline margin
 			}
 		}

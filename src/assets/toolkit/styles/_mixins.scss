@@ -9,26 +9,26 @@
 //  ---------------------------------------------------------------------------
 
 	@mixin debugmessage($message, $color: rgba(255,255,0, 0.9))
-	{ 
-		@include rem(margin-top, $bodyLineHeight);
+	{
+		margin-top: $bodyLineHeight;
 
 		&::before
-		{ 
-			content:$message; 
+		{
+			content:$message;
 
-			display: block; 
-			position:absolute; 
+			display: block;
+			position:absolute;
 			top:0;
-			right:0; 
-			@include rem(height, $bodyLineHeight);
-			left:0; 
-			z-index:999; 
-			
-			background:#{$color}; 
+			right:0;
+			height: $bodyLineHeight;
+			left:0;
+			z-index:999;
 
-			font-weight:bold; 
-			text-align:center; 
-		} 
+			background:#{$color};
+
+			font-weight:bold;
+			text-align:center;
+		}
 	}
 
 
@@ -36,10 +36,10 @@
 //  = FONT SIZE & LINE HEIGHT
 //  ---------------------------------------------------------------------------
 
-	@mixin setType($font-size, $line-height) 
+	@mixin setType($font-size, $line-height)
 	{
-		@include rem(font-size, $font-size);
-		@include rem(line-height, $line-height);
+		font-size: $font-size;
+		line-height: $line-height;
 	}
 
 
@@ -52,7 +52,7 @@
 	// Shorthand assignments are supported too!
 	$base_line: 10;
 
-	@mixin rem($property, $values, $important:"") 
+	@mixin rem($property, $values, $important:"")
 	{
 		// Placeholder variables
 		$shorthand_px:  "";
@@ -95,23 +95,23 @@
 
 	// Mixin that allows left/rightbleeding with absolute values in rem
 
-	@mixin absbleed($width, $sides: left right) 
+	@mixin absbleed($width, $sides: left right)
 	{
-		@if $sides == 'all' 
+		@if $sides == 'all'
 		{
-    		@include rem(margin, 0 - $width);
-    		@include rem(padding, 0 $width);
+    		margin: 0 - $width;
+    		padding: 0 $width;
   		}
   		@else
   		{
-    		@each $side in $sides 
+    		@each $side in $sides
     		{
-      			@include rem(margin-#{$side}, - $width);
-      			@include rem(padding-#{$side}, $width);
+      			margin-#{$side}: - $width;
+      			padding-#{$side}: $width;
     		}
     	}
 	}
-	
+
 
 //  = FORM FIELD SIZING
 //  ---------------------------------------------------------------------------
@@ -120,42 +120,42 @@
 	// unitless numbers. The output has rem unit with pixel fallback.
 	// Shorthand assignments are supported too!
 
-	@mixin calc-input-widths($context, $min-width:$r-column-width, $gutter-width:$r-gutter-width) 
+	@mixin calc-input-widths($context, $min-width:$r-column-width, $gutter-width:$r-gutter-width)
 	{
-		
+
 		$widths: mini small medium large xlarge;
 		@for $i from 1 through length($widths) * 2 {
   			@if $i % 2 == 0 {
-  				.input--#{nth($widths, $i / 2)} 
-  				{  
+  				.input--#{nth($widths, $i / 2)}
+  				{
                 	$width:	$min-width * $i / 2 + $r-gutter-width * ($i - 1);
                 	@if $width <= $context
                 	{
-                		@include rem(width, $width); 
+                		width: $width;
                 	}
-                	@else 
+                	@else
                 	{
                 		width:100%;
                 	}
-  					
+
             	}
   			}
 		}
-		
+
 	}
 
 //  = WEBKIT-STYLE TAB-FOCUS SIZING
 //  ---------------------------------------------------------------------------
 
-	@mixin tab-focus() 
+	@mixin tab-focus()
 	{
 	  // Default
 	  outline: thin dotted #333;
-	 
+
 	  // Webkit
 	  outline: 5px auto -webkit-focus-ring-color;
 	  outline-offset: -2px;
-	
+
 	}
 
 
@@ -163,19 +163,19 @@
 //  ---------------------------------------------------------------------------
 
 	@mixin calc($property, $expression)
-	{ 
-		#{$property}: -moz-calc(#{$expression}); 
-		#{$property}: -o-calc(#{$expression}); 
-		#{$property}: -webkit-calc(#{$expression}); 
-		#{$property}: calc(#{$expression}); 
-	} 
+	{
+		#{$property}: -moz-calc(#{$expression});
+		#{$property}: -o-calc(#{$expression});
+		#{$property}: -webkit-calc(#{$expression});
+		#{$property}: calc(#{$expression});
+	}
 
 
 
 //  = GRADIENTS
 //  ---------------------------------------------------------------------------
 
-	@mixin gradient-horizontal($startColor: #555, $endColor: #333) 
+	@mixin gradient-horizontal($startColor: #555, $endColor: #333)
 	{
 	  background-color: $endColor;
 	  background-image: -moz-linear-gradient(left, $startColor, $endColor); // FF 3.6+
@@ -187,8 +187,8 @@
 	  background-repeat: repeat-x;
 	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{darken($startColor, 1%)}', endColorstr='#{darken($endColor, 1%)}', GradientType=1); // IE9 and down
 	}
-	
-	@mixin gradient-vertical($startColor: #555, $endColor: #333) 
+
+	@mixin gradient-vertical($startColor: #555, $endColor: #333)
 	{
 	  background-color: mix($startColor, $endColor, 60%);
 	  background-image: -moz-linear-gradient(top, $startColor, $endColor); // FF 3.6+
@@ -200,8 +200,8 @@
 	  background-repeat: repeat-x;
 	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{darken($startColor, 1%)}', endColorstr='#{darken($endColor, 1%)}', GradientType=0); // IE9 and down
 	}
-	
-	@mixin gradient-directional($startColor: #555, $endColor: #333, $deg: 45deg) 
+
+	@mixin gradient-directional($startColor: #555, $endColor: #333, $deg: 45deg)
 	{
 	  background-color: $endColor;
 	  background-repeat: repeat-x;
@@ -211,8 +211,8 @@
 	  // background-image: -o-linear-gradient($deg, $startColor, $endColor); // Opera 11.10
 	  background-image: linear-gradient($deg, $startColor, $endColor); // The standard
 	}
-	
-	@mixin gradient-vertical-three-colors($startColor: #00b3ee, $midColor: #7a43b6, $colorStop: 50%, $endColor: #c3325f) 
+
+	@mixin gradient-vertical-three-colors($startColor: #00b3ee, $midColor: #7a43b6, $colorStop: 50%, $endColor: #c3325f)
 	{
 	  background-color: mix($midColor, $endColor, 80%);
 	  // background-image: -webkit-gradient(linear, 0 0, 0 100%, from($startColor), color-stop($colorStop, $midColor), to($endColor));
@@ -224,8 +224,8 @@
 	  background-repeat: no-repeat;
 	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{darken($startColor, 1%)}', endColorstr='#{darken($endColor, 1%)}', GradientType=0); // IE9 and down, gets no color-stop at all for proper fallback
 	}
-	
-	@mixin gradient-vertical-four-colors($startColor: #00b3ee, $midColor: #7a43b6, $colorStop: 51%, $anotherMidColor: #7a43b6, $anotherColorStop: 50%, $endColor: #c3325f) 
+
+	@mixin gradient-vertical-four-colors($startColor: #00b3ee, $midColor: #7a43b6, $colorStop: 51%, $anotherMidColor: #7a43b6, $anotherColorStop: 50%, $endColor: #c3325f)
 	{
 	  background-color: mix($midColor, $endColor, 80%);
 	  // background-image: -webkit-gradient(linear, 0 0, 0 100%, from($startColor), color-stop($colorStop, $midColor), to($endColor));
@@ -237,8 +237,8 @@
 	  background-repeat: no-repeat;
 	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{darken($startColor, 1%)}', endColorstr='#{darken($endColor, 1%)}', GradientType=0); // IE9 and down, gets no color-stop at all for proper fallback
 	}
-	
-	@mixin gradient-radial($innerColor: #555, $outerColor: #333)  
+
+	@mixin gradient-radial($innerColor: #555, $outerColor: #333)
 	{
 	  background-color: $outerColor;
 	  // background-image: -webkit-gradient(radial, center center, 0, center center, 460, from($innerColor), to($outerColor));
@@ -248,8 +248,8 @@
 	  // background-image: -o-radial-gradient(circle, $innerColor, $outerColor);
 	  background-repeat: no-repeat;
 	}
-	
-	@mixin gradient-striped($color, $angle: -45deg) 
+
+	@mixin gradient-striped($color, $angle: -45deg)
 	{
 	  background-color: $color;
 	  // background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255,255,255,.15)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255,255,255,.15)), color-stop(.75, rgba(255,255,255,.15)), color-stop(.75, transparent), to(transparent));
@@ -275,24 +275,24 @@
 //  = ANIMATIONS
 //  ---------------------------------------------------------------------------
 
-	@mixin keyframe ($animation-name) 
+	@mixin keyframe ($animation-name)
 	{
-		@-webkit-keyframes $animation-name 
+		@-webkit-keyframes $animation-name
 		{
 			@content;
 		}
-		 
-		@-moz-keyframes $animation-name 
+
+		@-moz-keyframes $animation-name
 		{
 			@content;
 		}
-		 
-		@-o-keyframes $animation-name 
+
+		@-o-keyframes $animation-name
 		{
 			@content;
 		}
-		 
-		@keyframes $animation-name 
+
+		@keyframes $animation-name
 		{
 			@content;
 		}
@@ -304,7 +304,7 @@
 //  ---------------------------------------------------------------------------
 
     // Need to remove the units to do some math.
-    @function strip-units($number) 
+    @function strip-units($number)
     {
         @return $number / ($number * 0 + 1);
     }
@@ -312,14 +312,14 @@
 
     @mixin spinner($spinner-hole-color:transparent)
     {
-        .spinner 
+        .spinner
         {
            	position: relative;
         	border-radius: 100%;
             width: $spinner-size;
             height: $spinner-size;
             background: $spinner-background;
-            @include rem(margin-bottom, $doubleSpace);
+            margin-bottom: $doubleSpace;
 
             .spinner__side
             {
@@ -328,7 +328,7 @@
             	overflow: hidden;
             	position: absolute;
 
-            	.spinner__fill 
+            	.spinner__fill
             	{
 	                border-radius: 999px;
                 	position: absolute;
@@ -344,20 +344,20 @@
             	&.spinner--left
             	{
             		left: 0;
-		            .spinner__fill 
+		            .spinner__fill
 		            {
 		                left: 100%;
 		                border-top-left-radius: 0;
 		                border-bottom-left-radius: 0;
 		                @include experimental(animation-name, $spinner-rotate-left);
 		                @include experimental(transform-origin, 0 50%);
-		            }	
+		            }
             	}
 
-            	&.spinner--right 
+            	&.spinner--right
 		        {
 		            left: 50%;
-		            .spinner__fill 
+		            .spinner__fill
 		            {
 		                left: -100%;
 		                border-top-right-radius: 0;
@@ -368,11 +368,11 @@
 		        }
             }
 
- 
+
 
             // This is the 'hole' that creates the ring. It's size is determined by the
             // size of the spinner.
-            &:after 
+            &:after
             {
                 $hole-size: round((strip-units($spinner-size)*.6)) + px;
                 $hole-position: round((strip-units($spinner-size)*.2)) + px;
@@ -399,7 +399,7 @@
 
         {
 
-            @for $i from 1 through $slideCount 
+            @for $i from 1 through $slideCount
             {
 
                 .#{$slidesClass + "-" + $i}
@@ -410,7 +410,7 @@
             }
         }
 
-        @else 
+        @else
 
         {
             .#{$slidesClass + "-" + $slideCount}
@@ -430,11 +430,11 @@
             position: relative;
             float:left;
             width: #{100 / $slideCount + "%"};
-            @include rem(padding, $singleSpace/2);	
+            padding: $singleSpace/2;
 
             @include breakpoint($large-width)
             {
-                @include rem(padding, $singleSpace);	
+                padding: $singleSpace;
             }
         }
     }
@@ -461,12 +461,12 @@
 
     @mixin set-background-image($url, $width, $height)
     {
-        @include rem(max-height, $height/10);
+        max-height: $height/10;
 
         > .responsive-image__inner
         {
             background-image: url($url);
             padding-bottom: ($height / $width) * 100%;
-            @include rem(max-width, $width/10);
+            max-width: $width/10;
         }
     }

@@ -31,11 +31,11 @@
 	$total-columns		: 2 !default;
 
 	// Column & gutter width in em (susy needs em)
-	$column-width 		: convert-length($r-column-width*10px,em,$bodyFontSize*10px) !default; // convert to em
-	$gutter-width		: convert-length($r-gutter-width*10px,em,$bodyFontSize*10px) !default; // convert to em
-	$grid-padding		: convert-length($r-grid-padding*10px,em,$bodyFontSize*10px) !default; // convert to em
-	$grid-padding-large	: convert-length($r-grid-padding-large*10px,em,$bodyFontSize*10px) !default; // convert to em
-	$grid-padding-huge	: convert-length($r-grid-padding-huge*10px,em,$bodyFontSize*10px) !default; // convert to em
+	$column-width 		: convert-length($r-column-width,em,$bodyFontSize) !default; // convert to em
+	$gutter-width		: convert-length($r-gutter-width,em,$bodyFontSize) !default; // convert to em
+	$grid-padding		: convert-length($r-grid-padding,em,$bodyFontSize) !default; // convert to em
+	$grid-padding-large	: convert-length($r-grid-padding-large,em,$bodyFontSize) !default; // convert to em
+	$grid-padding-huge	: convert-length($r-grid-padding-huge,em,$bodyFontSize) !default; // convert to em
 
 	$container-style	: fluid !default;
 

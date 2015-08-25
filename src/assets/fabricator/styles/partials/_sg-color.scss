@@ -416,5 +416,5 @@
 					right:0;
 					bottom:0;
 					left:0;
-					@include rem(padding, $space100);
+					padding: $space100;
 				}

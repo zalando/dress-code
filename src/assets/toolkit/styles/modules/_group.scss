@@ -14,11 +14,11 @@
 {
 	@include display-flex(flex);
 	@include justify-content(space-between);
-	@include rem(font-size, 1.2);
+	font-size: 1.2;
 	color:$gray;
 }
 
 .group__label
 {
-	@include rem(line-height, 3.6);
+	line-height: 3.6;
 }

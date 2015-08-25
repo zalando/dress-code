@@ -23,7 +23,7 @@
 		.table-of-contents ol
 		{
 			margin-bottom:0;
-			@include rem(padding-left, $space150);
+			padding-left: $space150;
 		}
 
 		.table-of-contents

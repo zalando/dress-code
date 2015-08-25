@@ -123,9 +123,9 @@
 //  = SPACING
 //  ---------------------------------------------------------------------------
 
-	$space50:									.4;
-	$space75:									.8;
-	$space100:								1.2;
+	$space50:									.4rem;
+	$space75:									.8rem;
+	$space100:								1.2rem;
 	$space125:								$space75 * 2;
 	$space150:								$space100 * 2;
 	$space200:								$space100 * 3;
@@ -146,17 +146,17 @@
 
 	$htmlFontSize:          	62.5%;
 	$htmlLineHeight:        	1;
-	$bodyFontSize:          	1.4;//px
+	$bodyFontSize:          	1.4rem;
 	$bodyLineHeight:        	$space150;
 	$baseFontFamily:        	$sansFontFamily;
 	$altFontFamily:         	$sansFontFamily;
 
-	$font50:									1.1;
-	$font100:									1.4;
-	$font150:									1.8;
-	$font200:									2.2;
-	$font250:									2.7;
-	$font300:									3.4;
+	$font50:									1.1rem;
+	$font100:									1.4rem;
+	$font150:									1.8rem;
+	$font200:									2.2rem;
+	$font250:									2.7rem;
+	$font300:									3.4rem;
 
 	$normalFontWeight:				300;
 	$boldFontWeight:					500;
@@ -170,10 +170,10 @@
 	$h3Size:									$font200;
 	$h4Size:									$font150;
 
-	$h1LineHeight:						4.8;
-	$h2LineHeight:						3.6;
-	$h3LineHeight:						3.6;
-	$h4LineHeight:						2.4;
+	$h1LineHeight:						4.8rem;
+	$h2LineHeight:						3.6rem;
+	$h3LineHeight:						3.6rem;
+	$h4LineHeight:						2.4rem;
 
 
 

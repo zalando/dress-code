@@ -19,7 +19,7 @@
 			bottom:0;
 			left:0;
 			z-index:999;
-			@include rem(padding, $space100);
+			padding: $space100;
 			background:rgba($black, .6);
 			opacity:0;
 			pointer-events:none;
@@ -63,7 +63,7 @@
 		{
 			display:block;
 			float:right;
-			@include rem(margin, -1.4 -1.4 0 0);
+			margin: -1.4 -1.4 0 0;
 
 			.touch &:active,
 			.no-touch &:hover
@@ -89,7 +89,7 @@
 		.dialog__bd,
 		.dialog__actions
 		{
-			@include rem(padding, $space150 $space150 0);
+			padding: $space150 $space150 0;
 		}
 
 
@@ -107,11 +107,11 @@
 
 		.dialog__primary
 		{
-			@include rem(margin-bottom, $space150);
+			margin-bottom: $space150;
 		}
 
 		.dialog__secondary
 		{
-			@include rem(margin-right, $space150);
-			@include rem(line-height, $touchSize);
+			margin-right: $space150;
+			line-height: $touchSize;
 		}

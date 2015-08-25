@@ -12,14 +12,14 @@
 	// bottom margin than the default
 	.space-lover
 	{
-		@include rem(margin-bottom, $space100 * 2, !important);
+		margin-bottom: $space100 * 2 !important;
 	}
 
 	// Use this class to set an EVEN LARGER
 	// bottom margin than the default
 	.space-lover--huge
 	{
-		@include rem(margin-bottom, $space100 * 4, !important);
+		margin-bottom: $space100 * 4 !important;
 	}
 
 
@@ -32,7 +32,7 @@
 	// like an island.
 	.island
 	{
-		@include rem(padding, $space50, !important);
+		padding: $space50 !important;
 	}
 
 	// Use this class to give an element
@@ -40,5 +40,5 @@
 	// just like a far away island.
 	.island--far-away
 	{
-		@include rem(padding, $space100, !important);
+		padding: $space100 !important;
 	}

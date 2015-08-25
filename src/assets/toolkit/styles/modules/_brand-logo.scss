@@ -13,7 +13,7 @@
 		.brand-logo
 		{
 			margin:0 auto;
-			@include rem(margin, $space150 auto $space200);
+			margin: $space150 auto $space200;
 		}
 
 
@@ -22,7 +22,7 @@
 
 		.brand-logo--medium
 		{
-			@include rem(max-width, 7.2);
+			max-width: 7.2;
 		}
 
 
@@ -34,7 +34,7 @@
 			@include display-flex(flex);
 			@include flex-wrap(wrap);
 			@include align-items(stretch);
-			@include rem(margin-left, -$space100);
+			margin-left: -$space100;
 		}
 
 			.brand
@@ -42,8 +42,8 @@
 				@include display-flex(flex);
 				@include align-items(stretch);
 				width:50%;
-				@include rem(margin-bottom, $space150);
-				@include rem(padding-left, $space100);
+				margin-bottom: $space150;
+				padding-left: $space100;
 
 				> a
 				{
@@ -51,7 +51,7 @@
 					@include flex-direction(column);
 					@include justify-content(center);
 
-					@include rem(padding, $space150 $space150 $space100);
+					padding: $space150 $space150 $space100;
 					border:1px solid transparent;
 					border-radius: 2px;
 
@@ -85,7 +85,7 @@
 				{
 					> a
 					{
-						@include rem(padding, $space150 $space200 $space100);
+						padding: $space150 $space200 $space100;
 					}
 				}
 
@@ -93,21 +93,21 @@
 				{
 					> a
 					{
-						@include rem(padding, $space150 $space250 $space100);
+						padding: $space150 $space250 $space100;
 					}
 				}
 			}
 
 				.brand__img
 				{
-					// @include rem(max-width, 13);
-					@include rem(margin-bottom, $space150);
+					// max-width: 13;
+					margin-bottom: $space150;
 					@include flex(1 0 auto);
 				}
 
 				.brand__title
 				{
-					@include rem(font-size, $font50);
+					font-size: $font50;
 					line-height:1;
 					text-align:center;
 					text-transform:capitalize;

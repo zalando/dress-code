@@ -25,7 +25,7 @@
 	pre,table,fieldset,hr
 	{
 		margin:0;
-		@include rem(margin-bottom, $space150);
+		margin-bottom: $space150;
 	}
 
 
@@ -92,7 +92,7 @@
 
 	.styleguide p
 	{
-		@include rem(max-width, 45);
+		max-width: 45;
 	}
 
 
@@ -170,7 +170,7 @@
 	.h1, .h2, .h3, .h4, .h5, .h6,
 	%h1, %h2, %h3, %h4, %h5, %h6
 	{
-		@include rem(margin-bottom, $space150);
+		margin-bottom: $space150;
 		font-family:$headingsFontFamily;
 		font-weight:$headingsFontWeight;
 		color:$headingsColor;
@@ -186,26 +186,26 @@
 
 	h1, .h1
 	{
-		@include rem(font-size, $h1Size);
-		@include rem(line-height, $h1LineHeight);
+		font-size: $h1Size;
+		line-height: $h1LineHeight;
 	}
 
 	h2, .h2
 	{
-		@include rem(font-size, $h2Size);
-		@include rem(line-height, $h2LineHeight);
+		font-size: $h2Size;
+		line-height: $h2LineHeight;
 	}
 
 	h3, .h3
 	{
-		@include rem(font-size, $h3Size);
-		@include rem(line-height, $h3LineHeight);
+		font-size: $h3Size;
+		line-height: $h3LineHeight;
 	}
 
 	h4, .h4
 	{
-		@include rem(font-size, $h4Size);
-		@include rem(line-height, $h4LineHeight);
+		font-size: $h4Size;
+		line-height: $h4LineHeight;
 	}
 
 
@@ -220,13 +220,13 @@
 
 	.text--small
 	{
-		@include rem(font-size, $font50);
-		@include rem(line-height, 1.8);
+		font-size: $font50;
+		line-height: 1.8;
 	}
 
 	.less-important
 	{
-		@include rem(font-size, $font50);
+		font-size: $font50;
 		line-height:1;
 		color:$gray60;
 	}

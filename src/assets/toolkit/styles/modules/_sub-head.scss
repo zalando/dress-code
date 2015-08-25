@@ -13,14 +13,14 @@
 .sub-head
 {
 	width:100%;
-	@include rem(margin-bottom, $doubleSpace);
+	margin-bottom: $doubleSpace;
 	border-bottom:2px solid $grayLightest;
 }
 
 .sub-head__back
 {
-	@include rem(margin-right, $singleSpace * 3);
-	@include rem(font-size, 1.6);
+	margin-right: $singleSpace * 3;
+	font-size: 1.6;
 }
 
 .sub-head__title
@@ -31,5 +31,5 @@
 .sub-head__back,
 .sub-head__title
 {
-	@include rem(line-height, 3.6);
+	line-height: 3.6;
 }

@@ -55,9 +55,9 @@
 
 		.m__action
 		{
-			@include rem(padding, 0 $space50);
+			padding: 0 $space50;
 			background:$mColor;
-			@include rem(font-size, $font50);
+			font-size: $font50;
 			font-weight:$boldFontWeight;
 			text-transform:uppercase;
 			color:$white;

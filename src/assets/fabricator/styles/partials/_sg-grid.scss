@@ -15,7 +15,7 @@
 			@include display-flex(flex);
 			@include flex-wrap(wrap);
 		  position:relative;
-			@include rem(margin-bottom, $space250);
+			margin-bottom: $space250;
 		}
 
 			.sg-grid__element
