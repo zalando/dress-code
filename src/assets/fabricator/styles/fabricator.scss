@@ -4,14 +4,6 @@
  * Class selectors are namespaced with "f-"
  */
 
-@import 'partials/variables';
-@import 'partials/code';
-@import 'partials/color-chips';
-@import 'partials/controls';
-@import 'partials/item';
-@import 'partials/layout';
-@import 'partials/menu';
-
 // Reset
 @import "../../../../node_modules/normalize.css/normalize";
 
@@ -30,3 +22,11 @@
 // Custom Styleguide components
 @import 'partials/sg-section';
 // @import 'partials/icon';
+
+@import 'partials/variables';
+@import 'partials/code';
+@import 'partials/color-chips';
+@import 'partials/controls';
+@import 'partials/item';
+@import 'partials/layout';
+@import 'partials/menu';

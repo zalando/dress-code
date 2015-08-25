@@ -1,6 +1,5 @@
 .f-item-group {
 	@include clearfix;
-	margin-top: 3rem;
 	margin-bottom: 3rem;
 	padding-bottom: 3rem;
 	border-bottom: 1px solid map-get($colors, light);
@@ -44,16 +43,28 @@
 
 .f-item-heading-group {
 	@include clearfix;
-	margin-bottom: 2rem;
 	vertical-align: middle;
 }
 
-.f-item-heading {
-	margin-top: 0;
-	margin-bottom: 0;
-	display: inline-block;
-	vertical-align: middle;
-	line-height: 1;
+h2.f-item-heading {
+	@extend .h2;
+
+	font-weight:500;
+	text-transform:uppercase;
+}
+
+h3.f-item-heading {
+	@extend .h3;
+
+	// @include rem(margin-top, $space350);
+	text-transform:uppercase;
+	color:$gray50;
+	border-bottom:1px solid $gray60;
+
+	.sg-section__title + &
+	{
+		@include rem(margin-top, $space250);
+	}
 }
 
 
