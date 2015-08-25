@@ -7,11 +7,15 @@
 
 	<title></title>
 
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic|Ubuntu+Mono" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="/assets/fabricator/styles/f.css">
 
 	<!-- toolkit styles -->
 	<link rel="stylesheet" href="/assets/toolkit/styles/toolkit.css">
 	<!-- /toolkit styles -->
+	<!-- <script src="/assets/toolkit/scripts/modernizr-custom.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
 
 </head>
 <body>
@@ -59,7 +63,7 @@
 			<ul>
 		
 				<li>
-					<a href="index.html" class="f-menu__heading">Overview</a>
+					<a href="index.html" class="f-menu__heading">The Holy Bible</a>
 				</li>
 		
 				<li>
@@ -68,42 +72,59 @@
 						<li>
 							<a href="atoms.html#button">Button</a>
 						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="components.html" class="f-menu__heading">Components</a>
-					<ul>
 						<li>
-							<a href="components.html#checkbox">Checkbox</a>
+							<a href="atoms.html#checkbox">Checkbox</a>
 						</li>
 						<li>
-							<a href="components.html#lists">Lists</a>
+							<a href="atoms.html#lists">Lists</a>
 						</li>
 						<li>
-							<a href="components.html#paragraph">Paragraph</a>
+							<a href="atoms.html#paragraph">Paragraph</a>
 						</li>
 						<li>
-							<a href="components.html#radio">Radio</a>
+							<a href="atoms.html#radio">Radio</a>
 						</li>
 						<li>
-							<a href="components.html#select">Select</a>
+							<a href="atoms.html#select">Select</a>
 						</li>
 						<li>
-							<a href="components.html#table">Table</a>
+							<a href="atoms.html#table">Table</a>
 						</li>
 						<li>
-							<a href="components.html#text-input">Text Input</a>
+							<a href="atoms.html#text-input">Text Input</a>
 						</li>
 						<li>
-							<a href="components.html#textarea">Textarea</a>
+							<a href="atoms.html#textarea">Textarea</a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="structures.html" class="f-menu__heading">Structures</a>
+					<a href="environment.html" class="f-menu__heading">Environment</a>
 					<ul>
 						<li>
-							<a href="structures.html#form">Form</a>
+							<a href="environment.html#colors">Colors</a>
+						</li>
+						<li>
+							<a href="environment.html#typography">Typography</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="molecules.html" class="f-menu__heading">Molecules</a>
+					<ul>
+						<li>
+							<a href="molecules.html#search-form">Search Form</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="organisms.html" class="f-menu__heading">Organisms</a>
+					<ul>
+						<li>
+							<a href="organisms.html#dialog">Dialog</a>
+						</li>
+						<li>
+							<a href="organisms.html#form">Form</a>
 						</li>
 					</ul>
 				</li>
@@ -113,6 +134,14 @@
 					<ul>
 						<li>
 							<a href="pages/home.html">Home</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="templates.html" class="f-menu__heading">Templates</a>
+					<ul>
+						<li>
+							<a href="templates/overview-page.html">Overview Page</a>
 						</li>
 					</ul>
 				</li>
@@ -166,10 +195,565 @@
 
 </div>
 <div class="f-item-preview">
-	<button class="button">Submit</button>
+	<h1 class="sg-section__title">Buttons</h1>
+
+<h2 class="sg-section__sub-title">Default</h2>
+<button>Button Tag</button>
+<a href class="btn">Anchor Tag</a>
+<br>
+
+<a href class="btn btn--primary">Primary button</a>
+<a href class="btn btn--destroy">Negative button</a>
+<a href class="btn btn--disabled">disabled button</a>
+
+<h2 class="sg-section__sub-title">Small</h2>
+<button class="btn--small">button tag</button>
+<a href class="btn btn--small">anchor tag</a>
+<br>
+
+<a href class="btn btn--small btn--primary">primary</a>
+<a href class="btn btn--small btn--destroy">negative</a>
+<a href class="btn btn--small btn--disabled">disabled</a>
+
+<h2 class="sg-section__sub-title">Button Groups</h2>
+
+<div class="btn-group">
+    <button>First</button>
+    <button>Second</button>
+    <button>Third</button>
+    <button>Fourth</button>
+</div>
+
+<div class="btn-group">
+    <a href class="btn btn--primary">Primary</a>
+    <a href class="btn">Secondary</a>
+    <a href class="btn">Secondary</a>
+    <a href class="btn btn--destroy">Attention</a>
+</div>
+
+<div class="btn-group">
+    <a href class="btn btn--small btn--primary">Primary</a>
+    <a href class="btn btn--small">Secondary</a>
+    <a href class="btn btn--small">Secondary</a>
+    <a href class="btn btn--small btn--destroy">Attention</a>
+</div>
+
+<h2 class="sg-section__sub-title">Icon Buttons</h2>
+
+<div class="btn-group">
+    <button class="btn--icon">
+
+        <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+            <title>
+                Undo
+            </title>
+            <g fill="none" fill-rule="evenodd">
+                <path fill="none" d="M0 0h36v36H0z" />
+                <path d="M18 14.552c5.116.865 9 5.11 9 10.216 0 .246-.01.49-.027.732-1.744-3.176-5.065-5.44-8.973-5.853v3.824l-9-6.485 9-6.485v4.052z" fill="#4A4A4A" />
+            </g>
+        </svg>
+
+    </button>
+
+    <button class="btn--icon btn--disabled">
+
+        <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+            <title>
+                Redo
+            </title>
+            <g fill="none" fill-rule="evenodd">
+                <path fill="none" d="M0 0h36v36H0z" />
+                <path d="M18 14.552c-5.116.865-9 5.11-9 10.216 0 .246.01.49.027.732 1.744-3.176 5.065-5.44 8.973-5.853v3.824l9-6.485-9-6.485v4.052z" fill="#4A4A4A" />
+            </g>
+        </svg>
+
+    </button>
+</div>
+
+<button class="btn--icon">
+
+    <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+        <title>
+            History
+        </title>
+        <g fill="none" fill-rule="evenodd">
+            <path fill="none" d="M0 0h36v36H0z" />
+            <path d="M18 26c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2.286c3.156 0 5.714-2.558 5.714-5.714 0-3.156-2.558-5.714-5.714-5.714-3.156 0-5.714 2.558-5.714 5.714 0 3.156 2.558 5.714 5.714 5.714z" fill="#4A4A4A" />
+            <path d="M18 18v-3M18 18h2" stroke="#4A4A4A" stroke-width="2" stroke-linecap="square" />
+        </g>
+    </svg>
+
+</button>
+
+<button class="btn--icon btn--destroy">
+
+    <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+        <title>
+            Delete
+        </title>
+        <g fill="none" fill-rule="evenodd">
+            <path fill="none" d="M0 0h36v36H0z" />
+            <path d="M11 12h1l1 14h-1l-1-14z" id="Rectangle-28" fill="#25AAFF" />
+            <path fill="#25AAFF" d="M15 15h1v8h-1zM10 13v-1h15v1zM14 10h7v1h-7zM12 25h11v1H12zM17 15h1v8.01h-1zM19 15h1v8.01h-1z" />
+            <path d="M23 12h1l-1 14h-1l1-14zM20 10h1v3h-1zM14 10h1v3h-1z" fill="#25AAFF" />
+        </g>
+    </svg>
+
+</button>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;button&quot;&gt;Submit&lt;/button&gt;</code></pre>
+	<pre><code class="language-markup">&lt;h1 class=&quot;sg-section__title&quot;&gt;Buttons&lt;/h1&gt;
+
+&lt;h2 class=&quot;sg-section__sub-title&quot;&gt;Default&lt;/h2&gt;
+&lt;button&gt;Button Tag&lt;/button&gt;
+&lt;a href class=&quot;btn&quot;&gt;Anchor Tag&lt;/a&gt;
+&lt;br&gt;
+
+&lt;a href class=&quot;btn btn--primary&quot;&gt;Primary button&lt;/a&gt;
+&lt;a href class=&quot;btn btn--destroy&quot;&gt;Negative button&lt;/a&gt;
+&lt;a href class=&quot;btn btn--disabled&quot;&gt;disabled button&lt;/a&gt;
+
+&lt;h2 class=&quot;sg-section__sub-title&quot;&gt;Small&lt;/h2&gt;
+&lt;button class=&quot;btn--small&quot;&gt;button tag&lt;/button&gt;
+&lt;a href class=&quot;btn btn--small&quot;&gt;anchor tag&lt;/a&gt;
+&lt;br&gt;
+
+&lt;a href class=&quot;btn btn--small btn--primary&quot;&gt;primary&lt;/a&gt;
+&lt;a href class=&quot;btn btn--small btn--destroy&quot;&gt;negative&lt;/a&gt;
+&lt;a href class=&quot;btn btn--small btn--disabled&quot;&gt;disabled&lt;/a&gt;
+
+&lt;h2 class=&quot;sg-section__sub-title&quot;&gt;Button Groups&lt;/h2&gt;
+
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button&gt;First&lt;/button&gt;
+    &lt;button&gt;Second&lt;/button&gt;
+    &lt;button&gt;Third&lt;/button&gt;
+    &lt;button&gt;Fourth&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;a href class=&quot;btn btn--primary&quot;&gt;Primary&lt;/a&gt;
+    &lt;a href class=&quot;btn&quot;&gt;Secondary&lt;/a&gt;
+    &lt;a href class=&quot;btn&quot;&gt;Secondary&lt;/a&gt;
+    &lt;a href class=&quot;btn btn--destroy&quot;&gt;Attention&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;a href class=&quot;btn btn--small btn--primary&quot;&gt;Primary&lt;/a&gt;
+    &lt;a href class=&quot;btn btn--small&quot;&gt;Secondary&lt;/a&gt;
+    &lt;a href class=&quot;btn btn--small&quot;&gt;Secondary&lt;/a&gt;
+    &lt;a href class=&quot;btn btn--small btn--destroy&quot;&gt;Attention&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h2 class=&quot;sg-section__sub-title&quot;&gt;Icon Buttons&lt;/h2&gt;
+
+&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button class=&quot;btn--icon&quot;&gt;
+
+        &lt;svg width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 36 36&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+            &lt;title&gt;
+                Undo
+            &lt;/title&gt;
+            &lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
+                &lt;path fill=&quot;none&quot; d=&quot;M0 0h36v36H0z&quot; /&gt;
+                &lt;path d=&quot;M18 14.552c5.116.865 9 5.11 9 10.216 0 .246-.01.49-.027.732-1.744-3.176-5.065-5.44-8.973-5.853v3.824l-9-6.485 9-6.485v4.052z&quot; fill=&quot;#4A4A4A&quot; /&gt;
+            &lt;/g&gt;
+        &lt;/svg&gt;
+
+    &lt;/button&gt;
+
+    &lt;button class=&quot;btn--icon btn--disabled&quot;&gt;
+
+        &lt;svg width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 36 36&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+            &lt;title&gt;
+                Redo
+            &lt;/title&gt;
+            &lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
+                &lt;path fill=&quot;none&quot; d=&quot;M0 0h36v36H0z&quot; /&gt;
+                &lt;path d=&quot;M18 14.552c-5.116.865-9 5.11-9 10.216 0 .246.01.49.027.732 1.744-3.176 5.065-5.44 8.973-5.853v3.824l9-6.485-9-6.485v4.052z&quot; fill=&quot;#4A4A4A&quot; /&gt;
+            &lt;/g&gt;
+        &lt;/svg&gt;
+
+    &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;button class=&quot;btn--icon&quot;&gt;
+
+    &lt;svg width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 36 36&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;title&gt;
+            History
+        &lt;/title&gt;
+        &lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
+            &lt;path fill=&quot;none&quot; d=&quot;M0 0h36v36H0z&quot; /&gt;
+            &lt;path d=&quot;M18 26c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2.286c3.156 0 5.714-2.558 5.714-5.714 0-3.156-2.558-5.714-5.714-5.714-3.156 0-5.714 2.558-5.714 5.714 0 3.156 2.558 5.714 5.714 5.714z&quot; fill=&quot;#4A4A4A&quot; /&gt;
+            &lt;path d=&quot;M18 18v-3M18 18h2&quot; stroke=&quot;#4A4A4A&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;square&quot; /&gt;
+        &lt;/g&gt;
+    &lt;/svg&gt;
+
+&lt;/button&gt;
+
+&lt;button class=&quot;btn--icon btn--destroy&quot;&gt;
+
+    &lt;svg width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 36 36&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;title&gt;
+            Delete
+        &lt;/title&gt;
+        &lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
+            &lt;path fill=&quot;none&quot; d=&quot;M0 0h36v36H0z&quot; /&gt;
+            &lt;path d=&quot;M11 12h1l1 14h-1l-1-14z&quot; id=&quot;Rectangle-28&quot; fill=&quot;#25AAFF&quot; /&gt;
+            &lt;path fill=&quot;#25AAFF&quot; d=&quot;M15 15h1v8h-1zM10 13v-1h15v1zM14 10h7v1h-7zM12 25h11v1H12zM17 15h1v8.01h-1zM19 15h1v8.01h-1z&quot; /&gt;
+            &lt;path d=&quot;M23 12h1l-1 14h-1l1-14zM20 10h1v3h-1zM14 10h1v3h-1z&quot; fill=&quot;#25AAFF&quot; /&gt;
+        &lt;/g&gt;
+    &lt;/svg&gt;
+
+&lt;/button&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="checkbox">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Checkbox</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<label>
+    <input type="checkbox" /> Checkbox
+</label>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;label&gt;
+    &lt;input type=&quot;checkbox&quot; /&gt; Checkbox
+&lt;/label&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="lists">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Lists</h2>
+	</div>
+		<div class="f-item-group" id="lists.ordered">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Ordered</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<ol>
+    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+    <li>Aliquam tincidunt mauris eu risus.</li>
+    <li>Vestibulum auctor dapibus neque.</li>
+</ol>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;ol&gt;
+    &lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+    &lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+    &lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="lists.unordered">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Unordered</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<ul>
+    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+    <li>Aliquam tincidunt mauris eu risus.</li>
+    <li>Vestibulum auctor dapibus neque.</li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;ul&gt;
+    &lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+    &lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+    &lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="paragraph">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Paragraph</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+    nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;p&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+    nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="radio">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Radio</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<label>
+    <input type="radio" name="groupName" id="radio1" /> Radio 1
+</label>
+
+<label>
+    <input type="radio" name="groupName" id="radio2" /> Radio 2
+</label>
+
+<label>
+    <input type="radio" name="groupName" id="radio3" /> Radio 3
+</label>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;label&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;groupName&quot; id=&quot;radio1&quot; /&gt; Radio 1
+&lt;/label&gt;
+
+&lt;label&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;groupName&quot; id=&quot;radio2&quot; /&gt; Radio 2
+&lt;/label&gt;
+
+&lt;label&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;groupName&quot; id=&quot;radio3&quot; /&gt; Radio 3
+&lt;/label&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="select">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Select</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<select name="" id="">
+    <option value="">Option 1</option>
+    <option value="">Option 2</option>
+    <option value="">Option 3</option>
+    <option value="">Option 4</option>
+    <option value="">Option 5</option>
+</select>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;select name=&quot;&quot; id=&quot;&quot;&gt;
+    &lt;option value=&quot;&quot;&gt;Option 1&lt;/option&gt;
+    &lt;option value=&quot;&quot;&gt;Option 2&lt;/option&gt;
+    &lt;option value=&quot;&quot;&gt;Option 3&lt;/option&gt;
+    &lt;option value=&quot;&quot;&gt;Option 4&lt;/option&gt;
+    &lt;option value=&quot;&quot;&gt;Option 5&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="table">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Table</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<table>
+    <thead>
+        <tr>
+            <th>Table Heading 1</th>
+            <th>Table Heading 2</th>
+            <th>Table Heading 3</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Table Footer 1</th>
+            <th>Table Footer 2</th>
+            <th>Table Footer 3</th>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Table Cell 1</td>
+            <td>Table Cell 2</td>
+            <td>Table Cell 3</td>
+        </tr>
+        <tr>
+            <td>Table Cell 1</td>
+            <td>Table Cell 2</td>
+            <td>Table Cell 3</td>
+        </tr>
+        <tr>
+            <td>Table Cell 1</td>
+            <td>Table Cell 2</td>
+            <td>Table Cell 3</td>
+        </tr>
+        <tr>
+            <td>Table Cell 1</td>
+            <td>Table Cell 2</td>
+            <td>Table Cell 3</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Table Heading 1&lt;/th&gt;
+            &lt;th&gt;Table Heading 2&lt;/th&gt;
+            &lt;th&gt;Table Heading 3&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Table Footer 1&lt;/th&gt;
+            &lt;th&gt;Table Footer 2&lt;/th&gt;
+            &lt;th&gt;Table Footer 3&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Table Cell 1&lt;/td&gt;
+            &lt;td&gt;Table Cell 2&lt;/td&gt;
+            &lt;td&gt;Table Cell 3&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Table Cell 1&lt;/td&gt;
+            &lt;td&gt;Table Cell 2&lt;/td&gt;
+            &lt;td&gt;Table Cell 3&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Table Cell 1&lt;/td&gt;
+            &lt;td&gt;Table Cell 2&lt;/td&gt;
+            &lt;td&gt;Table Cell 3&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Table Cell 1&lt;/td&gt;
+            &lt;td&gt;Table Cell 2&lt;/td&gt;
+            &lt;td&gt;Table Cell 3&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="text-input">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Text Input</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<label for="textInput">Text input</label>
+<input type="text" id="textInput" />
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;label for=&quot;textInput&quot;&gt;Text input&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;textInput&quot; /&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="textarea">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Textarea</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<textarea name="" id="" cols="30" rows="10"></textarea>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;textarea name=&quot;&quot; id=&quot;&quot; cols=&quot;30&quot; rows=&quot;10&quot;&gt;&lt;/textarea&gt;</code></pre>
 </div>
 
 

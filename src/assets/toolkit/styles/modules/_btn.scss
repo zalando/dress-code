@@ -17,7 +17,7 @@
 		  @include rem(margin-bottom, $space100);
 			@include rem(padding, $space100 - .1 $space100);
 			@include rem(line-height, $space100);
-		  @include background(linear-gradient($white, darken($white, 7%)));
+		  background: linear-gradient($white, darken($white, 7%));
 		  border:1px solid $gray50;
 			border-radius:$radius100;
 			text-transform:capitalize;
@@ -42,7 +42,7 @@
 		.no-touch button:hover
 		{
 			box-shadow:0 1px 1px rgba($black,.2);
-			@include background(linear-gradient($white, darken($white, 5%)));
+			background: linear-gradient($white, darken($white, 5%));
 			color:$gray10;
 			text-decoration:none;
 			outline:0;
@@ -134,7 +134,7 @@
 
 		.btn--primary
 		{
-			@include background(linear-gradient($blue40, darken($blue40, 7%)));
+			background: linear-gradient($blue40, darken($blue40, 7%));
 		  border-color:darken($blue40, 7%);
 		  color:$white;
 
