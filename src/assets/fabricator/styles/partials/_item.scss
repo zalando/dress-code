@@ -69,24 +69,31 @@ h3.f-item-heading {
 
 
 .f-item-controls {
+	float: right;
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 0.5rem;
 
 	.f-control {
-		width: 14px;
-		height: 14px;
+		width: 36px;
+		height: 36px;
 		display: block;
 		float: left;
 
+		use {
+			fill: $primaryAccent;
+		}
+
 		&:hover {
 			use {
-				fill: map-get($colors, normal);
+				// fill: map-get($colors, normal);
+				fill: darken($primaryAccent, 20%);
 			}
 		}
 
-		use {
-			fill: map-get($colors, light);
+		svg {
+			width: 22px;
+			height: 22px;
 		}
 	}
 }
