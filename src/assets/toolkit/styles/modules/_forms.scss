@@ -6,16 +6,15 @@
 
 
 
-//  = LABELS
+//  = LABEL
 //  ---------------------------------------------------------------------------
 
-		label,
 		.label
 		{
 			display:block;
 			margin-bottom: $space50;
 			font-size: $font50;
-			line-height: 1.8;
+			line-height: 1.8rem;
 			font-weight:500;
 			text-transform:uppercase;
 		}
@@ -57,11 +56,11 @@
 		textarea
 		{
 			margin-bottom: $space150;
-		  padding: .8 $space75;
-		  border-radius:$radius100;
+		  padding: $space75;
+		  border-radius: $radius100;
 		  border:1px solid $gray60;
 		  box-shadow:inset 0 1px 1px rgba(0,0,0,0);
-			font-size: 1.6;
+			font-size: 1.6rem;
 			box-sizing: border-box;
 			-webkit-appearance:none;
 
@@ -92,7 +91,7 @@
 
 			.no-touch &
 			{
-			  padding: .9 $space75;
+			  padding: $space75;
 				font-size: $font100;
 			}
 		}
@@ -152,7 +151,7 @@
 
 
 
-//  = PLACEHOLDERS
+//  = PLACEHOLDER
 //  ---------------------------------------------------------------------------
 
 		::-webkit-input-placeholder { color:$gray50; }
@@ -162,157 +161,153 @@
 
 
 
-//  = RADIO BUTTONS
+//  = RADIO BUTTON
 //  ---------------------------------------------------------------------------
 
 		input[type='radio'],
-		input[type='checkbox']
-		{
-		  display:none;
+		input[type='checkbox'] {
+			display: none;
 
-		  & + label
-		  {
-		    display:inline-block;
-		    position:relative;
-		    padding-left:$space150;
-		    margin-bottom:$space50;
+			& + label {
+				display: inline-block;
+		    position: relative;
+		    padding-left: $space200 - $space75;
+		    margin-right: $space150;
+		    margin-bottom: $space50;
 
-		    &:before,
-		    &:after
-		    {
-		      content:" ";
-		      position:absolute;
-		      left:0;
-		      width:#{$space100 - 2px};
-		      height:#{$space100 - 2px};
-		      background:white;
-		      border:1px solid $gray50;
-		      border-radius:$radius100;
-		    }
+				&:before,
+				&:after {
+					content: " ";
+					position: absolute;
 
-		    &:after
-		    {
-		      top:5px;
-		      left:5px;
-		      width:#{$space100 - 12px};
-		      height:#{$space100 - 12px};
-		      opacity:0;
+					left: 0;
+					width: 2rem;
+					height: 2rem;
+					background: white;
+					border:1px solid $gray60;
+					border-radius: $radius100;
+				}
 
-		      transform-origin: 50% 50% 0;
-		      transform: scale3d(.5, .5, 1);
+				&:after {
+					top: .5rem;
+					left: .5rem;
+					width: 1rem;
+					height: 1rem;
+					opacity: 0;
 
-		      transition: transform .1s ease-in-out, opacity .2s linear;
-		    }
+					transform: scale3d(.5, .5, 1);
+					transition: transform .1s ease-in-out, opacity .2s linear;
+				}
+			}
 
-
-		  }
-
-		  &:checked + label:after
-		  {
-		    opacity:1;
+			&:checked + label:after {
+		    opacity: 1;
 		    transform: scale3d(1, 1, 1);
 		  }
 
-		  &[disabled] + label
-		    {
-		      color:$gray50;
+		  &[disabled] + label {
+	      color: $gray50;
 
-		      &:before,
-		      &:after
-		      {
-		        border-color:$gray50;
-		      }
+	      &:before,
+	      &:after
+	      {
+	        border-color: $gray70;
+	      }
 
-		      &:after
-		      {
-		        background:$gray50!important;
-		      }
-		    }
+	      &:after
+	      {
+	        background: $gray60 !important;
+	      }
+	    }
 		}
 
-		input[type='radio']
-		{
-		  & + label:before,
-		  & + label:after
-		  {
-		    border-radius:50%;
-		  }
+		input[type='radio'] {
 
-		  & + label:after
-		  {
-		    border-color:darken($blue40, 5%);
-		  }
+			& + label:before,
+			& + label:after {
+				border-radius: 50%;
+			}
 
-		  &:checked + label:after
-		  {
-		    background:$blue40;
-		  }
+			& + label:after {
+				border-color: darken($blue40, 5%);
+			}
+
+			&:checked + label:after {
+				background: $blue40;
+			}
 		}
 
 
 
-//  = CHECKBOXES
+//  = CHECKBOX
 //  ---------------------------------------------------------------------------
 
 		input[type='checkbox']
 		{
-		  & + label:after
-		  {
-		   top:2px;
-		   left:2px;
-		   width:#{$space100 - 4px};
-		   height:#{$space100 - 4px};
-		   border:0 none;
-		    background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iMThweCIgaGVpZ2h0PSIxOHB4IiB2aWV3Qm94PSIwIDAgMTggMTgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiPiAgICAgICAgPHRpdGxlPkNoZWNrYm94PC90aXRsZT4gICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+ICAgIDxkZWZzPjwvZGVmcz4gICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+ICAgICAgICA8ZyBpZD0iQ2hlY2tib3giIHNrZXRjaDp0eXBlPSJNU0FydGJvYXJkR3JvdXAiIHN0cm9rZT0iIzI2QUFGRSIgc3Ryb2tlLXdpZHRoPSIzIj4gICAgICAgICAgICA8cGF0aCBkPSJNMyw5LjMyNjk5ODQ5IEw2LjY0OTA5ODM2LDEzLjUwOTQxNTQgTDE1LjAyNzgzMiwzLjUiIGlkPSJQYXRoLTE2IiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIj48L3BhdGg+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=);
+			& + label:after {
+				top: .2rem;
+				left: .2rem;
+				width: 2rem;
+				height: 2rem;
+				border: 0 none;
+				background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iMThweCIgaGVpZ2h0PSIxOHB4IiB2aWV3Qm94PSIwIDAgMTggMTgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiPiAgICAgICAgPHRpdGxlPkNoZWNrYm94PC90aXRsZT4gICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+ICAgIDxkZWZzPjwvZGVmcz4gICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+ICAgICAgICA8ZyBpZD0iQ2hlY2tib3giIHNrZXRjaDp0eXBlPSJNU0FydGJvYXJkR3JvdXAiIHN0cm9rZT0iIzI2QUFGRSIgc3Ryb2tlLXdpZHRoPSIzIj4gICAgICAgICAgICA8cGF0aCBkPSJNMyw5LjMyNjk5ODQ5IEw2LjY0OTA5ODM2LDEzLjUwOTQxNTQgTDE1LjAyNzgzMiwzLjUiIGlkPSJQYXRoLTE2IiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIj48L3BhdGg+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=);
+			}
 
-		  }
+		  &[disabled] + label {
+	      color:$gray50;
 
-		  &[disabled] + label
-		    {
-		      color:$gray50;
+	      &:before,
+	      &:after
+	      {
+	        border-color:$gray60;
+	      }
 
-		      &:before,
-		      &:after
-		      {
-		        border-color:$gray50;
-		      }
-
-		      &:after
-		      {
-		        background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iMThweCIgaGVpZ2h0PSIxOHB4IiB2aWV3Qm94PSIwIDAgMTggMTgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiPiAgICAgICAgPHRpdGxlPkNoZWNrYm94IGRpc2FibGVkPC90aXRsZT4gICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+ICAgIDxkZWZzPjwvZGVmcz4gICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+ICAgICAgICA8ZyBpZD0iQ2hlY2tib3gtZGlzYWJsZWQiIHNrZXRjaDp0eXBlPSJNU0FydGJvYXJkR3JvdXAiIHN0cm9rZT0iI0VERUNFRCIgc3Ryb2tlLXdpZHRoPSIzIj4gICAgICAgICAgICA8cGF0aCBkPSJNMyw5LjMyNjk5ODQ5IEw2LjY0OTA5ODM2LDEzLjUwOTQxNTQgTDE1LjAyNzgzMiwzLjUiIGlkPSJQYXRoLTE2IiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIj48L3BhdGg+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=)!important;
-		      }
-		    }
+	      &:after
+	      {
+	        background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iMThweCIgaGVpZ2h0PSIxOHB4IiB2aWV3Qm94PSIwIDAgMTggMTgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiPiAgICAgICAgPHRpdGxlPkNoZWNrYm94IGRpc2FibGVkPC90aXRsZT4gICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+ICAgIDxkZWZzPjwvZGVmcz4gICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+ICAgICAgICA8ZyBpZD0iQ2hlY2tib3gtZGlzYWJsZWQiIHNrZXRjaDp0eXBlPSJNU0FydGJvYXJkR3JvdXAiIHN0cm9rZT0iI0VERUNFRCIgc3Ryb2tlLXdpZHRoPSIzIj4gICAgICAgICAgICA8cGF0aCBkPSJNMyw5LjMyNjk5ODQ5IEw2LjY0OTA5ODM2LDEzLjUwOTQxNTQgTDE1LjAyNzgzMiwzLjUiIGlkPSJQYXRoLTE2IiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIj48L3BhdGg+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=)!important;
+	      }
+	    }
 		}
+
+
+
+//  = CHECKBOX SWITCH
+//  ---------------------------------------------------------------------------
 
 		.checkbox--alt.checkbox--alt + label
 		{
-		    &:before,
-		    &:after
-		    {
-		      margin-top: 5px;
-		      width:#{2 * $space50 + 4px};
-		      height:#{$space50 + 2px};
-		      transition: background-color .3s linear, transform .1s cubic-bezier(0.105, 0.420, 0.425, 1);
-		    }
+			padding-left: $space200;
 
-		    &:after
-		    {
-		      background:$gray50;
-		      width:$space50;
-		      height:$space50;
-		      opacity:1;
-		      transform: scale3d(1, 1, 1);
-		    }
+	    &:before,
+	    &:after
+			{
+	      margin-top: .5rem;
+	      width: 2.6rem;
+	      height: 1.3rem;
+	      transition: background-color .3s linear,
+										transform .1s cubic-bezier(0.105, 0.420, 0.425, 1);
+	    }
+
+	    &:after
+			{
+	      width: 1.1rem;
+	      height: 1.1rem;
+	      background: $gray50;
+				border-radius: 1px;
+	      opacity: 1;
+	      transform: scale3d(1, 1, 1);
+	    }
 		}
 
 		.checkbox--alt.checkbox--alt:checked + label
 		{
 		    &:after
 		    {
-		      background:none;
-		      background-color:$green40;
-		      transform: translateX(#{$space50 + 2px});
-		      transition: background-color .1s linear, transform .1s cubic-bezier(0.105, 0.420, 0.425, 1);
+		      background: none;
+		      background-color: $green30;
+		      transform: translateX(1.3rem);
+		      transition: background-color .1s linear,
+											transform .1s cubic-bezier(0.105, 0.420, 0.425, 1);
 		    }
 		}
 
@@ -320,8 +315,8 @@
 		{
 		    &:after
 		    {
-		      background:none!important;
-		      background-color:$gray50!important;
+		      background: none !important;
+		      background-color: $gray60 !important;
 		    }
 		}
 
