@@ -45,9 +45,10 @@
 
 	body
 	{
-		@include setType($bodyFontSize, $bodyLineHeight);
-		background:$bodyBackgroundColor;
-		color:$textColor;
+		font-size: $bodyFontSize;
+		line-height: $bodyLineHeight;
+		background: $bodyBackgroundColor;
+		color: $textColor;
 	}
 
 	pre
