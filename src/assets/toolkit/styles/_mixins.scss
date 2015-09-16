@@ -10,24 +10,27 @@
 
 	@mixin debugmessage($message, $color: rgba(255,255,0, 0.9))
 	{
-		margin-top: $bodyLineHeight;
+		// margin-top: $bodyLineHeight;
 
 		&::before
 		{
 			content:$message;
 
 			display: block;
-			position:absolute;
-			top:0;
+			position:fixed;
 			right:0;
-			height: $bodyLineHeight;
+			bottom:0;
 			left:0;
-			z-index:999;
+			z-index:910;
+			height: $bodyLineHeight;
 
 			background:#{$color};
 
-			font-weight:bold;
+			font-weight:$boldFontWeight;
 			text-align:center;
+			transition: transform .2s ease-out, opacity .2s;
+			transform: translateY(-100vh);
+			opacity: 0;
 		}
 	}
 

@@ -76,17 +76,42 @@
 	$monstrous-cols			: 20 !default;
 
 
-//  = CONTAINER
+//  = BREAKPOINTS
 //  ---------------------------------------------------------------------------
-	.container
-	{
-		@include container;
-	}
 
-	.container--padded
+	.is-show-breakpoints body
 	{
-		padding: 0 1.5rem;
-		@include breakpoint($large-width) {
-			padding: 0 $grid-padding;
+		@include debugmessage("Tiny \2014 0-320px", $red60);
+		transform: translateY(0);
+		opacity: 1;
+
+		@include breakpoint($small-width)
+		{
+			@include debugmessage("Small \2014 320-480px", $orange60);
+		}
+
+		@include breakpoint($medium-width)
+		{
+			@include debugmessage("Medium \2014 480-600px", $yellow60);
+		}
+
+		@include breakpoint($large-width)
+		{
+			@include debugmessage("Large \2014 600-1024px", $green60);
+		}
+
+		@include breakpoint($huge-width)
+		{
+			@include debugmessage("Huge \2014 1024-1280px", $cyan60);
+		}
+
+		@include breakpoint($giant-width)
+		{
+			@include debugmessage("Giant \2014 1280-1600px", $blue60);
+		}
+
+		@include breakpoint($monstrous-width)
+		{
+			@include debugmessage("Monstrous \2014 1600px and up", $purple60);
 		}
 	}
