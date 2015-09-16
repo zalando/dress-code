@@ -27,11 +27,11 @@ var config = {
 			toolkit: './src/assets/toolkit/scripts/toolkit.js'
 		},
 		styles: {
-			fabricator: 'src/assets/fabricator/styles/fabricator.scss',
-			toolkit: 'src/assets/toolkit/styles/toolkit.scss'
+			fabricator: './src/assets/fabricator/styles/fabricator.scss',
+			toolkit: './src/assets/toolkit/styles/toolkit.scss'
 		},
-		images: 'src/assets/toolkit/img/**/*',
-		views: 'src/toolkit/views/*.html'
+		images: './src/assets/toolkit/img/**/*',
+		views: './src/toolkit/views/*.html'
 	},
 	dest: 'dist'
 };
