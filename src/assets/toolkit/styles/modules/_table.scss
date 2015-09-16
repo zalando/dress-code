@@ -4,6 +4,12 @@
 //
 //  ---------------------------------------------------------------------------
 
+		.table
+		{
+			background: $white;
+			border-radius: 2px;
+		}
+
 		.table__item-title
 		{
 			font-weight:$boldFontWeight;
@@ -15,9 +21,9 @@
 			{
 				content:" ";
 				display:inline-block;
-				width: 1;
-				height: 1;
-				margin-right: $space50;
+				width: $space75;
+				height: $space75;
+				margin-right: $space75;
 				border-radius:2px;
 			}
 		}
@@ -31,21 +37,6 @@
 		{
 			background:$gray50;
 		}
-
-		// .draft--approved
-		// {
-		// 	color:$green30;
-		// }
-		//
-		// .draft--in-review
-		// {
-		// 	color:$orange40;
-		// }
-		//
-		// .draft--rejected
-		// {
-		// 	color:$red40;
-		// }
 
 
 //  = TABLE
@@ -112,15 +103,15 @@
 					text-align:right;
 				}
 
-				&:last-child
-				{
-					padding:0;
-
-					&:before
-					{
-						content:none;
-					}
-				}
+				// &:last-child
+				// {
+				// 	padding:0;
+				//
+				// 	&:before
+				// 	{
+				// 		content:none;
+				// 	}
+				// }
 			}
 
 			.page--dashboard .table__td:last-child
@@ -342,11 +333,11 @@
 					padding-left: $space100 / 2;
 				}
 
-				&:last-child
-				{
-					padding-right:0;
-					text-align:right;
-				}
+				// &:last-child
+				// {
+				// 	// padding-right:0;
+				// 	// text-align:right;
+				// }
 
 				@include breakpoint(1150px)
 				{

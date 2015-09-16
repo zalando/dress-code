@@ -59,7 +59,7 @@
 		:checked + label .bubble
 		{
 			opacity:1;
-			@include transform(translateY(0));
+			transform: translateY(0);
 		}
 
 		.bubble__bd
