@@ -29,15 +29,17 @@ body {
 	@include clearfix;
 	@include border-box;
 	position: relative;
-	padding: 0 1em;
+	padding: $touchSize $space100;
 	z-index: 0;
-	min-height: 100vh;
+	min-height: calc(100vh - 3.6rem);
+	transition: transform .2s ease-out;
 
 	.f-menu-active & {
 		transform: translate($menu-width, 0);
 
 		@media (min-width: 60em) {
 			margin-left: $menu-width;
+			padding: $touchSize $space200;
 			transform: translate(0, 0);
 		}
 	}

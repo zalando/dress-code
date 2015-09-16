@@ -1,6 +1,8 @@
 .f-controls {
 	@include clearfix;
 	@include border-box;
+		margin-bottom: $space125;
+		border-bottom: 1px solid $gray70;
 
 	.f-control {
 		display: block;
@@ -11,10 +13,16 @@
 		padding: 1rem 0;
 
 		&.f-active {
-			box-shadow: inset 0 3px 0 0 map-get($colors, accent);
+			box-shadow: inset 0 -3px 0 0 map-get($colors, accent);
 
 			use {
-				fill: map-get($colors, menu-text);
+				fill: $orange40;
+			}
+
+			&:hover {
+				use {
+					fill: darken($orange40, 10%);
+				}
 			}
 		}
 
@@ -22,7 +30,13 @@
 			vertical-align: middle;
 
 			use {
-				fill: if($theme == $theme-dark, map-get($colors, normal), map-get($colors, light) );
+				fill: $gray40;
+			}
+
+			&:hover {
+				use {
+					fill: darken($orange40, 10%);
+				}
 			}
 		}
 	}
@@ -39,11 +53,16 @@
 	}
 
 	svg {
-		width: 14px;
-		height: 14px;
+		width: $space125;
+		height: $space125;
 
 		use {
 			fill: map-get($colors, light);
+		}
+
+		&:active
+		{
+			transform: scale(.85);
 		}
 	}
 }
@@ -61,5 +80,15 @@
 		display: block;
 		float: left;
 		margin-bottom: -1px;
+
+		use {
+			fill: $gray40;
+		}
+
+		&:hover {
+			use {
+				fill: darken($orange40, 10%);
+			}
+		}
 	}
 }

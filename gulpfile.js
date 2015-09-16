@@ -30,7 +30,7 @@ var config = {
 			fabricator: 'src/assets/fabricator/styles/fabricator.scss',
 			toolkit: 'src/assets/toolkit/styles/toolkit.scss'
 		},
-		images: 'src/assets/toolkit/images/**/*',
+		images: 'src/assets/toolkit/img/**/*',
 		views: 'src/toolkit/views/*.html'
 	},
 	dest: 'dist'
@@ -106,7 +106,7 @@ gulp.task('scripts', function (done) {
 gulp.task('images', ['favicon'], function () {
 	return gulp.src(config.src.images)
 		.pipe(imagemin())
-		.pipe(gulp.dest(config.dest + '/assets/toolkit/images'));
+		.pipe(gulp.dest(config.dest + '/assets/toolkit/img'));
 });
 
 gulp.task('favicon', function () {

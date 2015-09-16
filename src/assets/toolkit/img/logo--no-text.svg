@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="84.2855408%" y1="108.994338%" x2="15.6975835%" y2="-9.0017333%" id="linearGradient-1">
+            <stop stop-color="#F47026" offset="0%"></stop>
+            <stop stop-color="#F47026" offset="37.533599%"></stop>
+            <stop stop-color="#FBC195" offset="94.923401%"></stop>
+            <stop stop-color="#FBC195" offset="94.923401%"></stop>
+            <stop stop-color="#FBC195" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.000444619387%" y1="0.000541381104%" x2="99.9997836%" y2="0.000541381104%" id="linearGradient-2">
+            <stop stop-color="#F57D34" offset="0%"></stop>
+            <stop stop-color="#F47026" offset="53.379798%"></stop>
+            <stop stop-color="#F47026" offset="53.379798%"></stop>
+            <stop stop-color="#F47026" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Logo" sketch:type="MSArtboardGroup">
+            <g id="path6315-+-path6315-1-+-path6339" sketch:type="MSLayerGroup">
+                <path d="M2.11893657,0.0932904412 C0.672705255,0.0932904412 -0.0709141791,3.98408088 0.00652985075,7.63694853 C0.00445640896,7.63643382 0.00207330075,7.63746324 0,7.63694853 C0.0773134328,10.8431801 0.796903016,13.9163603 2.22341418,13.9163603 C7.69764925,13.9163603 13.9347015,8.82977941 13.9347015,7.00643382 C13.9347015,6.55027574 13.4631157,5.67257353 12.8311567,4.97977941 C12.8303209,4.98025294 12.8287015,4.97930588 12.827897,4.97977941 C12.7849254,4.930625 12.739347,4.88159926 12.6940299,4.83180147 C10.7439552,2.68805147 6.6983209,0.0932904412 2.11893657,0.0932904412 L2.11893657,0.0932904412 Z" id="path6315" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup"></path>
+                <path d="M0.00118042149,7.63591912 C0.0784938543,10.8421507 0.798344599,13.916489 2.22485576,13.916489 L2.22485576,13.916489 C7.69909084,13.916489 13.9356209,8.83132353 13.9356209,7.00797804 L13.9356209,7.00797804 C13.9356209,6.55181996 13.4623373,5.67244496 12.8303784,4.97965084 L12.8303784,4.97965084 C8.55424009,7.50672804 4.13718785,8.59430147 0.00118042149,7.63591912" id="path6339" fill="url(#linearGradient-2)" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

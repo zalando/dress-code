@@ -1,0 +1,9 @@
+<svg width="8" height="10" viewBox="0 0 8 10" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        i-lock
+    </title>
+    <g fill="#4A4A4A" fill-rule="evenodd">
+        <rect y="4" width="8" height="6" rx="1"/>
+        <path d="M7 3c0-1.657-1.343-3-3-3S1 1.343 1 3h1c0-1.105.895-2 2-2s2 .895 2 2h1zM1 3h1v2H1zM6 3h1v2H6z"/>
+    </g>
+</svg>

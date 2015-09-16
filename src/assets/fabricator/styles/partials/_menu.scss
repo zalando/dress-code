@@ -2,20 +2,22 @@
 .f-menu {
 	@include border-box;
 	position: fixed;
-	top: 0;
+	top: $touchSize;
 	left: 0;
-	transform: translate(-$menu-width, 0);
+	z-index: 1;
 	width: $menu-width;
 	height: 100%;
-	z-index: 1;
+	padding-bottom: $touchSize;
 	background-color: map-get($colors, menu-background);
+	border-right: 1px solid $gray60;
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: scroll;
+	transition: transform .2s ease-out;
+	transform: translate(-$menu-width, 0);
 	-webkit-overflow-scrolling: touch;
 
 	.f-menu-active & {
 		transform: translate(0, 0);
-
 	}
 
 	ul {
@@ -26,10 +28,12 @@
 
 	> ul {
 		margin-top: 0;
-		margin-bottom: 1rem;
+		margin-bottom: $space150;
 
 		> li {
-			margin-top: 1rem;
+			margin-bottom: $space125;
+			padding-bottom: $space125;
+			border-bottom: 1px solid $gray70;
 		}
 	}
 
@@ -41,15 +45,14 @@
 
 	a {
 		display: block;
-		padding: 0.5rem 2rem;
-		color: map-get($colors, menu-text) !important;
+		padding: $space50 $space125;
+		color: $gray20;
 		text-decoration: none;
-		font-size: 0.75rem;
-		line-height: 1;
+		font-size: $font100;
+		line-height: 1.2;
 
 		&:hover {
-			color: map-get($colors, menu-text) !important;
-			text-decoration: underline;
+			color: $orange40;
 		}
 
 		&.f-active {
@@ -59,12 +62,19 @@
 
 	.f-menu__heading {
 		padding-left: 1.5rem;
-		font-weight: 700;
-		font-size: .6875rem;
+		font-weight: 500;
+		font-size: $font100;
 		text-transform: uppercase;
 
 		&:hover {
 			color: map-get($colors, normal);
 		}
 	}
+}
+
+.touch .f-menu a:active,
+.no-touch .f-menu a:hover
+{
+	background-color: lighten($orange70, 12%);
+	color: $orange40;
 }

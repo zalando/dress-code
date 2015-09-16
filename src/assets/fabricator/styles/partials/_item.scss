@@ -86,7 +86,6 @@ h3.f-item-heading {
 
 		&:hover {
 			use {
-				// fill: map-get($colors, normal);
 				fill: darken($primaryAccent, 20%);
 			}
 		}
@@ -94,6 +93,11 @@ h3.f-item-heading {
 		svg {
 			width: 22px;
 			height: 22px;
+
+			&:active
+			{
+				transform: scale(.85);
+			}
 		}
 	}
 }

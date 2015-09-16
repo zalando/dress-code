@@ -1,0 +1,31 @@
+//  ---------------------------------------------------------------------------
+//
+//  Simple header
+//
+//  ---------------------------------------------------------------------------
+
+$headerHeight: $touchSize;
+$headerAccentColor: $orange40;
+
+
+
+//  = HEADER
+//  ---------------------------------------------------------------------------
+
+		.header
+		{
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: 900;
+			height: $headerHeight;
+			padding: $space75 $space100;
+			background: $white;
+			border-bottom: 1px solid $gray60;
+
+			.logo
+			{
+				max-height: $touchSize - 1.6rem;
+			}
+		}

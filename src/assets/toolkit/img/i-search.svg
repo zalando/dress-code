@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="CMS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Search" sketch:type="MSArtboardGroup">
+            <rect id="Rectangle-18" fill-opacity="0" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="36" height="36"></rect>
+            <g id="Magnifying-Glass" sketch:type="MSLayerGroup" transform="translate(10.000000, 10.000000)" stroke="#9B9B9B">
+                <path d="M10.75,10.75 L15.6997475,15.6997475" id="Line" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+                <circle id="Oval-18" sketch:type="MSShapeGroup" cx="6" cy="6" r="6"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -19,10 +19,10 @@
 
 </head>
 <body>
-	<header class="header">
-		
-	</header>
 	{{#if fabricator}}
+		<header class="header">
+			<img class="logo" src="{{baseurl}}/assets/toolkit/img/logo.svg" alt="Zalando Logo">
+		</header>
 		{{> f-icons}}
 		{{> f-menu}}
 		<div class="f-container">
@@ -35,7 +35,7 @@
 
 	{{#if fabricator}}
 		</div>
-	<script src="{{baseurl}}/assets/fabricator/scripts/f.js"></script>
+		<script src="{{baseurl}}/assets/fabricator/scripts/f.js"></script>
 	{{/if}}
 
 	<!-- toolkit scripts -->

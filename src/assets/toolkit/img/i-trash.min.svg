@@ -1,0 +1,11 @@
+<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        Trash
+    </title>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="none" d="M0 0h36v36H0z"/>
+        <path d="M11 12h1l1 14h-1l-1-14z" id="Rectangle-28" fill="#25AAFF"/>
+        <path fill="#25AAFF" d="M15 15h1v8h-1zM10 13v-1h15v1zM14 10h7v1h-7zM12 25h11v1H12zM17 15h1v8.01h-1zM19 15h1v8.01h-1z"/>
+        <path d="M23 12h1l-1 14h-1l1-14zM20 10h1v3h-1zM14 10h1v3h-1z" fill="#25AAFF"/>
+    </g>
+</svg>

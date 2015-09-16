@@ -5,14 +5,15 @@
 
 // color vars
 $code-colors: (
-	blue: #183691,
-	teal: #0086b3,
-	black: #333,
-	purple: #a71d5d,
-	maroon: #a71d5d,
-	green: #63a35c,
-	light-gray: #f7f7f7,
-	dark-gray: #969896
+	blue: #26aafe,
+	teal: #24e0fe,
+	black: #4a4a4a,
+	purple: #9757fd,
+	maroon: #eb74e9,
+	green: #65cb1c,
+	orange: #ff8e25,
+	light-gray: #fff,
+	dark-gray: #807f80
 );
 
 
@@ -80,14 +81,17 @@ pre[class*='language-'] {
 
 	&.punctuation,
 	&.string,
-	&.atrule,
+	&.atrule {
+		color: map-get($code-colors, dark-gray);
+	}
+
 	&.attr-value {
-		color: map-get($code-colors, blue);
+		color: map-get($code-colors, orange);
 	}
 
 	&.property,
 	&.tag {
-		color: map-get($code-colors, green);
+		color: map-get($code-colors, blue);
 	}
 
 	&.boolean,
@@ -101,7 +105,7 @@ pre[class*='language-'] {
 	&.keyword,
 	&.regex,
 	&.important {
-		color: map-get($code-colors, maroon);
+		color: map-get($code-colors, purple);
 	}
 
 

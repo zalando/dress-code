@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="73px" height="55px" viewBox="0 0 73 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon Analytics</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="User-Management-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="All-Brands---Small-Copy-4" sketch:type="MSArtboardGroup" transform="translate(-152.000000, -466.000000)">
+            <g id="Icon-Analytics-+-Analytics" sketch:type="MSLayerGroup" transform="translate(153.000000, 469.000000)">
+                <g id="Icon-Analytics" sketch:type="MSShapeGroup">
+                    <g id="Group">
+                        <path d="M8.43270011,28.4533835 L27.0250521,21.0816217 L45.8408416,26.1536458 L64.4279016,10.5482409" id="Path-5" stroke="#26AAFE" stroke-width="2.93333333"></path>
+                        <circle id="Oval-42" fill="#FFFFFF" cx="8.24807018" cy="28.6073333" r="3.95083333"></circle>
+                        <path d="M69.7380702,48.9866667 L2.00122807,48.9866667" id="Line-8" stroke="#D1D1D1" stroke-width="4.10666667" stroke-linecap="square"></path>
+                        <path d="M2.05333333,0 L2.05333333,47.9325" id="Line-7" stroke="#D1D1D1" stroke-width="4.10666667" stroke-linecap="square"></path>
+                        <ellipse id="Oval-33" fill="#26AAFE" cx="8.24807018" cy="28.6073333" rx="2.55894737" ry="2.58683333"></ellipse>
+                        <circle id="Oval-43" fill="#FFFFFF" cx="26.9133333" cy="21.4555" r="3.744125"></circle>
+                        <circle id="Oval-44" fill="#FFFFFF" cx="45.5785965" cy="25.7161667" r="3.67858333"></circle>
+                        <circle id="Oval-45" fill="#FFFFFF" cx="64.2438596" cy="10.956" r="3.8225"></circle>
+                        <ellipse id="Oval-38" fill="#26AAFE" cx="26.9133333" cy="21.4555" rx="2.55894737" ry="2.58683333"></ellipse>
+                        <ellipse id="Oval-40" fill="#26AAFE" cx="45.5785965" cy="25.7161667" rx="2.55894737" ry="2.58683333"></ellipse>
+                        <ellipse id="Oval-41" fill="#26AAFE" cx="64.2438596" cy="10.956" rx="2.55894737" ry="2.58683333"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

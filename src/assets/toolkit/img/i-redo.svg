@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>Redo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Redo" sketch:type="MSArtboardGroup">
+            <rect id="Rectangle-18" fill-opacity="0" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="36" height="36"></rect>
+            <path d="M18,14.552354 C12.8841218,15.4172477 9,19.6619661 9,24.7680647 C9,25.0141376 9.00902074,25.25821 9.02676535,25.5 L9.02676535,25.5 C10.7711449,22.3241065 14.0923491,20.0585497 18,19.6469673 L18,23.4709679 L27,16.985484 L18,10.5 L18,14.552354 Z" id="Arrow-left-3" fill="#4A4A4A" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="72px" height="57px" viewBox="0 0 72 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 2 + Drop Area + Image + Rectangle 89</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="2.93333333" y="2.93333333" width="48.6933333" height="31.68"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="User-Management-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="All-Brands---Small-Copy-4" sketch:type="MSArtboardGroup" transform="translate(-32.000000, -465.000000)">
+            <g id="CMS-+-Rectangle-2-+-Drop-Area-+-Image-+-Rectangle-89" sketch:type="MSLayerGroup" transform="translate(32.000000, 465.500000)">
+                <g id="Rectangle-2-+-Drop-Area-+-Image-+-Rectangle-89">
+                    <g id="Drop-Area-+-Image-+-Rectangle-89" transform="translate(0.800000, 0.013333)">
+                        <rect id="Drop-Area" stroke="#B6B6B6" stroke-width="1.76" stroke-dasharray="8" sketch:type="MSShapeGroup" x="0" y="0" width="54.56" height="37.5466667" rx="1.17333333"></rect>
+                        <g id="Image" transform="translate(16.133333, 16.720000)">
+                            <rect id="Rectangle-87" stroke="#B6B6B6" stroke-width="2.93333333" fill="#FFF49B" sketch:type="MSShapeGroup" x="0" y="0" width="54.56" height="37.5466667" rx="1.17333333"></rect>
+                            <mask id="mask-2" sketch:name="Rectangle 88" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Rectangle-88" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                            <polygon id="Triangle-1" fill="#9B9B9B" sketch:type="MSShapeGroup" mask="url(#mask-2)" points="18.48 21.7066667 32.2666667 34.6133333 4.69333333 34.6133333 "></polygon>
+                            <circle id="Oval-43" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)" cx="32.56" cy="13.7866667" r="6.16"></circle>
+                            <polygon id="Triangle-2" fill="#9B9B9B" sketch:type="MSShapeGroup" mask="url(#mask-2)" points="41.0666667 13.4933333 63.9466667 34.6133333 18.1866667 34.6133333 "></polygon>
+                        </g>
+                        <path d="M61.1699929,48.2383134 L61.1699929,53.2509865 L59.4099929,53.2509865 L59.4099929,48.2638004 C58.1677258,48.577486 56.6692357,49.2925475 56.6692357,49.2925475 L60.2899929,41.9560922 L63.91075,49.2925475 C63.91075,49.2925475 62.384786,48.5367031 61.1699929,48.2383134 Z" id="Rectangle-89" stroke="#FFFFFF" stroke-width="0.611111111" fill="#4A4A4A" filter="url(#filter-3)" sketch:type="MSShapeGroup" transform="translate(60.289993, 47.603539) rotate(-26.000000) translate(-60.289993, -47.603539) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
