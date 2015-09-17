@@ -17,6 +17,7 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var webpack = require('webpack');
 var gulp = require('gulp');
+var ghPages = require('gulp-gh-pages');
 
 // configuration
 var config = {
@@ -190,4 +191,9 @@ gulp.task('default', ['clean'], function () {
 		}
 	});
 
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages({remoteUrl: 'git@github.bus.zalan.do:codebrewers/the-holy-bible.git'}));
 });
