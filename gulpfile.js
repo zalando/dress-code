@@ -195,5 +195,5 @@ gulp.task('default', ['clean'], function () {
 
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages({remoteUrl: 'git@github.bus.zalan.do:codebrewers/the-holy-bible.git'}));
+    .pipe(ghPages({remoteUrl: 'https://github.com/zalando/the-holy-bible.git'}));
 });
