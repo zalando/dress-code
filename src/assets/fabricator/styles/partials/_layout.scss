@@ -29,9 +29,10 @@ body {
 	@include clearfix;
 	@include border-box;
 	position: relative;
-	padding: $touchSize $space100;
+	margin-top: $touchSize;
+	padding: $space100;
 	z-index: 0;
-	min-height: calc(100vh - 3.6rem);
+	min-height: calc(100vh - 4.4rem);
 	transition: transform .2s ease-out;
 
 	.f-menu-active & {
@@ -39,7 +40,10 @@ body {
 
 		@media (min-width: 60em) {
 			margin-left: $menu-width;
-			padding: $touchSize $space200;
+			padding: $space200;
+			height: calc(100vh - 4.4rem);
+			overflow-y: scroll;
+			-webkit-overflow-scrolling: touch;
 			transform: translate(0, 0);
 		}
 	}

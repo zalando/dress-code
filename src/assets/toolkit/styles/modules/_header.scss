@@ -14,6 +14,8 @@ $headerAccentColor: $orange40;
 
 		.header
 		{
+			display: flex;
+			align-items: center;
 			position: fixed;
 			top: 0;
 			right: 0;
@@ -26,6 +28,8 @@ $headerAccentColor: $orange40;
 
 			.logo
 			{
-				max-height: $touchSize - 1.6rem;
+				margin-right: $space100;
+				padding-bottom: 2px;
+				max-height: $touchSize - $space150;
 			}
 		}

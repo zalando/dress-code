@@ -82,8 +82,12 @@
 	.is-show-breakpoints body
 	{
 		@include debugmessage("Tiny \2014 0-320px", $red60);
-		transform: translateY(0);
-		opacity: 1;
+
+		&::before
+		{
+			transform: translateY(0);
+			opacity: 1;
+		}
 
 		@include breakpoint($small-width)
 		{
