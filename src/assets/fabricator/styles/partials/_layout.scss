@@ -2,10 +2,10 @@ html {
 	height: 100%;
 
 	&.f-menu-active {
-		overflow: hidden;
+		overflow-x: hidden;
 
 		@media (min-width: 60em) {
-			overflow: auto;
+			overflow-x: auto;
 		}
 	}
 }
