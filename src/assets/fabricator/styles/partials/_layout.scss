@@ -4,9 +4,9 @@ html {
 	&.f-menu-active {
 		overflow-x: hidden;
 
-		@media (min-width: 60em) {
-			overflow-x: auto;
-		}
+		// @media (min-width: 60em) {
+		// 	overflow-x: auto;
+		// }
 	}
 }
 
@@ -19,9 +19,9 @@ body {
 		height: 100%;
 		// overflow: hidden;
 
-		@media (min-width: 60em) {
-			overflow: auto;
-		}
+		// @media (min-width: 60em) {
+		// 	overflow: auto;
+		// }
 	}
 }
 
