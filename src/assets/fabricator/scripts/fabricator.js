@@ -323,6 +323,7 @@ fabricator.bindCodeAutoSelect = function () {
 		codeBlocks[i].addEventListener('click', select.bind(this, codeBlocks[i]));
 	}
 
+	return this;
 };
 
 
@@ -359,6 +360,45 @@ fabricator.setInitialMenuState = function () {
 
 
 /**
+ * Show/hide breakpoints based on previous state.
+ * Also bind the event listeners to handle changes
+ */
+fabricator.setBreakpointsState = function ()
+{
+	var root = document.querySelector('html');
+
+	// Set initial state
+	if(localStorage.getItem("breakpoints") !== "shown")
+	{
+		root.classList.remove('is-show-breakpoints');
+	}
+
+	// Breakpoint toggle
+	var bpToggle = document.querySelectorAll('.js-toggle-breakpoints');
+
+	for(var i = 0; i < bpToggle.length; i++)
+	{
+		bpToggle[i].addEventListener('click', function(e)
+		{
+			e.preventDefault();
+
+			if(root.classList.contains("is-show-breakpoints"))
+			{
+				localStorage.removeItem("breakpoints");
+				root.classList.remove('is-show-breakpoints');
+			}
+			else
+			{
+				localStorage.setItem("breakpoints", "shown");
+				root.classList.add('is-show-breakpoints');
+			}
+		});
+	}
+	return this;
+};
+
+
+/**
  * Initialization
  */
 (function () {
@@ -371,6 +411,7 @@ fabricator.setInitialMenuState = function () {
 		.singleItemToggle()
 		.buildColorChips()
 		.setActiveItem()
-		.bindCodeAutoSelect();
+		.bindCodeAutoSelect()
+		.setBreakpointsState();
 
 }());

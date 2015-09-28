@@ -46,7 +46,7 @@
 	@include border-box;
 	display: inline-block;
 	cursor: pointer;
-	margin-left: 0.618rem;
+	margin-left: $space150;
 
 	&:first-child {
 		margin-left: 0;

@@ -79,15 +79,9 @@
 //  = BREAKPOINTS
 //  ---------------------------------------------------------------------------
 
-	.is-show-breakpoints body
+	body
 	{
 		@include debugmessage("Tiny \2014 0-320px", $red60);
-
-		&::before
-		{
-			transform: translateY(0);
-			opacity: 1;
-		}
 
 		@include breakpoint($small-width)
 		{
@@ -117,5 +111,14 @@
 		@include breakpoint($monstrous-width)
 		{
 			@include debugmessage("Monstrous \2014 1600px and up", $purple60);
+		}
+	}
+
+	.is-show-breakpoints body
+	{
+		&::before
+		{
+			transform: translateY(0);
+			opacity: 1;
 		}
 	}
