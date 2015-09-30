@@ -399,6 +399,45 @@ fabricator.setBreakpointsState = function ()
 
 
 /**
+ * Show/hide grid based on previous state.
+ * Also bind the event listeners to handle changes
+ */
+fabricator.setGridState = function ()
+{
+	var root = document.querySelector('html');
+
+	// Set initial state
+	if(localStorage.getItem("grid") !== "shown")
+	{
+		root.classList.remove('is-show-grid');
+	}
+
+	// Breakpoint toggle
+	var bpToggle = document.querySelectorAll('.js-toggle-grid');
+
+	for(var i = 0; i < bpToggle.length; i++)
+	{
+		bpToggle[i].addEventListener('click', function(e)
+		{
+			e.preventDefault();
+
+			if(root.classList.contains("is-show-grid"))
+			{
+				localStorage.removeItem("grid");
+				root.classList.remove('is-show-grid');
+			}
+			else
+			{
+				localStorage.setItem("grid", "shown");
+				root.classList.add('is-show-grid');
+			}
+		});
+	}
+	return this;
+};
+
+
+/**
  * Initialization
  */
 (function () {
@@ -412,6 +451,7 @@ fabricator.setBreakpointsState = function ()
 		.buildColorChips()
 		.setActiveItem()
 		.bindCodeAutoSelect()
-		.setBreakpointsState();
+		.setBreakpointsState()
+		.setGridState();
 
 }());

@@ -33,10 +33,11 @@ body {
 	padding: $space100;
 	z-index: 0;
 	min-height: calc(100vh - 4.4rem);
-	transition: transform .2s ease-out;
+	transition: transform .2s ease-out, padding .2s ease-out;
 
 	.f-menu-active & {
 		transform: translate(calc(#{span(1 of 2)} + #{$space75} + #{gutter(4)}), 0);
+		padding-left: 0;
 
 		@include breakpoint($small-width)
 		{
@@ -50,7 +51,6 @@ body {
 
 		@include breakpoint($large-width)
 		{
-			transform: translate(span(2 of 8) + gutter(8), 0);
 			transform: translate(calc(#{span(2 of 8)} + #{$space100} + #{gutter(8)}), 0);
 		}
 
@@ -67,6 +67,7 @@ body {
 		@include breakpoint($giant-width)
 		{
 			margin-left: calc(#{span(2 of 16)} + #{$space150} + #{gutter(16)});
+			padding: $space150 $space200 0 0;
 		}
 
 		@include breakpoint($monstrous-width)
