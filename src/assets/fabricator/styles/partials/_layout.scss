@@ -76,14 +76,14 @@ body {
 		}
 	}
 
-	@include breakpoint($huge-width)
+	@include breakpoint($large-width)
 	{
-		padding: 0 $space150;
+		padding: $space100 $space150;
 	}
 
 	@include breakpoint($monstrous-width)
 	{
-		padding: 0 $space250;
+		padding: $space100 $space250;
 	}
 
 }
