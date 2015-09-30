@@ -22,7 +22,7 @@ $headerAccentColor: $orange40;
 			left: 0;
 			z-index: 900;
 			height: $headerHeight;
-			padding: $space75 $space100;
+			padding: $space75 $space75;
 			background: $white;
 			border-bottom: 1px solid $gray60;
 
@@ -30,5 +30,23 @@ $headerAccentColor: $orange40;
 			{
 				padding-bottom: 2px;
 				max-height: $touchSize - $space150;
+			}
+
+			@include breakpoint($small-width)
+			{
+				padding-right: $space100;
+				padding-left: $space100;
+			}
+
+			@include breakpoint($large-width)
+			{
+				padding-right: $space150;
+				padding-left: $space150;
+			}
+
+			@include breakpoint($monstrous-width)
+			{
+				padding-right: $space250;
+				padding-left: $space250;
 			}
 		}

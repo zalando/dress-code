@@ -45,35 +45,70 @@
 //  = BREAKPOINTS
 //  ---------------------------------------------------------------------------
 
-	// Base is 16px at this point
+		// Feature phone		: 0px		 2 columns	-->	   0-UP
+		$tiny-width				: 0px;
+		$tiny-cols				: 2;
+		$tiny-layout			: (
+													container: calc(100% - 16px),
+													columns: 2,
+													gutters: .1
+												);
 
-	// Feature phone		: 0px		 2 columns	-->	   0-UP
-	$tiny-width				: 0 !default;
-	$tiny-cols				: 2 !default;
+		// Smartphone			: 320px		 4 columns 	-->  320-UP
+		$small-width			: 20em;
+		$small-cols				: 4;
+		$small-layout			: (
+													container: calc(100% - 24px),
+													columns: 4,
+													gutters: .25
+												);
 
-	// Smartphone			: 320px		 4 columns 	-->  320-UP
-	$small-width			: 20em !default;
-	$small-cols				: 4 !default;
+		// Smartphone landscape	: 480px 	 6 columns 	-->  480-UP
+		$medium-width			: 30em;
+		$medium-cols			: 6;
+		$medium-layout			: (
+													container: calc(100% - 24px),
+													columns: 6,
+													gutters: .25
+												);
 
-	// Smartphone landscape	: 480px 	 6 columns 	-->  480-UP
-	$medium-width			: 30em !default;
-	$medium-cols			: 6 !default;
+		// From large: fluid, max-width 700px 80px grid-padding
+		// Font size maybe 22px or perhaps micro breakpoint with 22px from 768px
+		// Tablet 				: 600px, 	 8 columns 	-->  600-UP
+		$large-width			: 37.5em;
+		$large-cols 			: 8;
+		$large-layout			: (
+													container: calc(100% - 48px),
+													columns: 8,
+													gutters: .25
+												);
 
-	// Tablet 				: 600px, 	 8 columns 	-->  600-UP
-	$large-width			: 37.5em !default;
-	$large-cols 			: 8 !default;
+		// Tablet landscape		: 1024px 	12 columns 	--> 1024-UP
+		$huge-width				: 64em;
+		$huge-cols				: 12;
+		$huge-layout			: (
+													container: calc(100% - 48px),
+													columns: 12,
+													gutters: .25
+												);
 
-	// Tablet landscape		: 1024px 	12 columns 	--> 1024-UP
-	$huge-width				: 64em !default;
-	$huge-cols				: 12 !default;
+		// Desktop 				: 1280px 	16 columns 	--> 1280-UP
+		$giant-width			: 80em;
+		$giant-cols				: 16;
+		$giant-layout			: (
+													container: calc(100% - 48px),
+													columns: 16,
+													gutters: .25
+												);
 
-	// Desktop 				: 1280px 	16 columns 	--> 1280-UP
-	$giant-width			: 80em !default;
-	$giant-cols				: 16 !default;
-
-	// Desktop large 		: 1600px 	20 columns 	--> 1600-UP
-	$monstrous-width		: 100em !default;
-	$monstrous-cols			: 20 !default;
+		// Desktop large 		: 1600px 	20 columns 	--> 1600-UP
+		$monstrous-width		: 100em;
+		$monstrous-cols			: 20;
+		$monstrous-layout			: (
+													container: calc(100% - 96px),
+													columns: 20,
+													gutters: .25
+												);
 
 
 //  = BREAKPOINTS
@@ -120,5 +155,77 @@
 		{
 			transform: translateY(0);
 			opacity: 1;
+		}
+	}
+
+	.is-show-grid .grid
+	{
+		position: fixed;
+		top: $touchSize;
+		right: 0;
+		bottom : 0;
+		left: 0;
+		z-index: 909;
+		pointer-events: none;
+
+		@include container($tiny-layout debug image show );
+
+
+	//  = 320-UP
+	//  ---------------------------------------------------------------------------
+
+		@include breakpoint($small-width)
+		{
+			@include container($small-layout debug image show);
+		}
+
+
+
+	//  = 480-UP
+	//  ---------------------------------------------------------------------------
+
+		@include breakpoint($medium-width)
+		{
+			@include container($medium-layout debug image show);
+		}
+
+
+
+	//  = 600-UP
+	//  ---------------------------------------------------------------------------
+
+		@include breakpoint($large-width)
+		{
+			@include container($large-layout debug image show);
+		}
+
+
+
+	//  = 1024-UP
+	//  ---------------------------------------------------------------------------
+
+		@include breakpoint($huge-width)
+		{
+			@include container($huge-layout debug image show);
+		}
+
+
+
+	//  = 1280-UP
+	//  ---------------------------------------------------------------------------
+
+		@include breakpoint($giant-width)
+		{
+			@include container($giant-layout debug image show);
+		}
+
+
+
+	//  = 1600-UP
+	//  ---------------------------------------------------------------------------
+
+		@include breakpoint($monstrous-width)
+		{
+			@include container($monstrous-layout debug image show);
 		}
 	}

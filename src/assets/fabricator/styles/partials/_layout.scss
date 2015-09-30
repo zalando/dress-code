@@ -36,16 +36,54 @@ body {
 	transition: transform .2s ease-out;
 
 	.f-menu-active & {
-		transform: translate($menu-width, 0);
+		transform: translate(calc(#{span(1 of 2)} + #{$space75} + #{gutter(4)}), 0);
 
-		@media (min-width: 60em) {
-			margin-left: $menu-width;
-			padding: $space200;
-			height: calc(100vh - 4.4rem);
+		@include breakpoint($small-width)
+		{
+			transform: translate(calc(#{span(2 of 4)} + #{gutter(4)}), 0);
+		}
+
+		@include breakpoint($medium-width)
+		{
+			transform: translate(calc(#{span(2 of 6)} + #{$space75} + #{gutter(6)}), 0);
+		}
+
+		@include breakpoint($large-width)
+		{
+			transform: translate(span(2 of 8) + gutter(8), 0);
+			transform: translate(calc(#{span(2 of 8)} + #{$space100} + #{gutter(8)}), 0);
+		}
+
+		@include breakpoint($huge-width)
+		{
+			margin-left: calc(#{span(2 of 12)} + #{$space100} + #{gutter(12)});
+			padding: $space150 $space150 0 0;
+			height: calc(100vh - #{$touchSize};
 			overflow-y: scroll;
 			-webkit-overflow-scrolling: touch;
 			transform: translate(0, 0);
 		}
+
+		@include breakpoint($giant-width)
+		{
+			margin-left: calc(#{span(2 of 16)} + #{$space150} + #{gutter(16)});
+		}
+
+		@include breakpoint($monstrous-width)
+		{
+			margin-left: calc(#{span(2 of 20)} + #{$space200} + #{gutter(20)});
+			padding: $space150 $space250 0 0;
+		}
+	}
+
+	@include breakpoint($huge-width)
+	{
+		padding: 0 $space150;
+	}
+
+	@include breakpoint($monstrous-width)
+	{
+		padding: 0 $space250;
 	}
 
 }

@@ -5,7 +5,7 @@
 	top: $touchSize;
 	left: 0;
 	z-index: 1;
-	width: $menu-width;
+	width: calc(#{span(1 of 2)} + #{$space75});
 	height: 100%;
 	padding-bottom: $touchSize;
 	background-color: map-get($colors, menu-background);
@@ -13,8 +13,38 @@
 	overflow-x: hidden;
 	overflow-y: scroll;
 	transition: transform .2s ease-out;
-	transform: translate(-$menu-width, 0);
+	transform: translate(-100%, 0);
 	-webkit-overflow-scrolling: touch;
+
+	@include breakpoint($small-width)
+	{
+		width: span(2 of 4);
+	}
+
+	@include breakpoint($medium-width)
+	{
+		width: calc(#{span(2 of 6)} + #{$space75});
+	}
+
+	@include breakpoint($large-width)
+	{
+		width: calc(#{span(2 of 8)} + #{$space100});
+	}
+
+	@include breakpoint($huge-width)
+	{
+		width: calc(#{span(2 of 12)} + #{$space100});
+	}
+
+	@include breakpoint($giant-width)
+	{
+		width: calc(#{span(2 of 16)} + #{$space150});
+	}
+
+	@include breakpoint($monstrous-width)
+	{
+		width: calc(#{span(2 of 20)} + #{$space200});
+	}
 
 	.f-menu-active & {
 		transform: translate(0, 0);
