@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>Contact Optimized</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feMorphology radius="1" in="SourceAlpha" operator="dilate" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Contact-Optimized" sketch:type="MSArtboardGroup" stroke="#9B9B9B">
+            <g id="Feedback" sketch:type="MSLayerGroup" transform="translate(6.000000, 9.000000)">
+                <path d="M16.1492702,15.715308 C14.7713604,17.7386732 11.8638774,19.1333333 8.5,19.1333333 C7.53055171,19.1333333 6.59900953,19.017499 5.73106119,18.8041643 L5.73106119,18.8041643 C4.40652897,19.5510147 2.70540159,20 0.85,20 C0.719873719,20 0.590506274,19.9977916 0.461974358,19.9934268 L0.461974358,19.9934268 C1.24683402,19.1477604 1.89222883,18.2363019 2.37620522,17.2739741 C0.904777121,16.1832503 0,14.7003715 0,13.0666667 C0,11.2061004 1.17350444,9.54115673 3.02106168,8.42830707 C3.3753602,12.5791996 8.15536163,15.8666667 14,15.8666667 C14.7355168,15.8666667 15.454173,15.8146034 16.1492702,15.715308 L16.1492702,15.715308 Z" id="Oval-1" sketch:type="MSShapeGroup"></path>
+                <path d="M17.5833326,15.4362148 C16.4601053,15.715191 15.2545801,15.8666667 14,15.8666667 C7.92486775,15.8666667 3,12.3147923 3,7.93333333 C3,3.55187432 7.92486775,0 14,0 C20.0751322,0 25,3.55187432 25,7.93333333 C25,10.0697165 23.829112,12.0088658 21.9249109,13.4351968 C22.5512333,14.6936256 23.3864501,15.8855329 24.4021508,16.9914043 L24.4021508,16.9914043 C24.2358154,16.997112 24.0683987,17 23.9,17 C21.4988921,17 19.2974331,16.4128654 17.5833326,15.4362148 L17.5833326,15.4362148 Z" id="Oval-1" filter="url(#filter-1)" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

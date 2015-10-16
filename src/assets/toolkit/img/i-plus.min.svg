@@ -4,9 +4,6 @@
     </title>
     <g fill="none" fill-rule="evenodd">
         <path fill="none" d="M0 0h36v36H0z"/>
-        <g transform="translate(10 10)" fill="#25AAFF">
-            <rect x="7.5" width="1" height="16" rx="1"/>
-            <rect y="7.5" width="16" height="1" rx="1"/>
-        </g>
+        <path d="M19 17v-7h-2v7h-7v2h7v7h2v-7h7v-2h-7z" fill="#25AAFF"/>
     </g>
 </svg>

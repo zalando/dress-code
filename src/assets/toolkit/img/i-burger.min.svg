@@ -2,7 +2,8 @@
     <title>
         Menu
     </title>
-    <g stroke="#979797" stroke-linecap="square" fill="none" fill-rule="evenodd">
-        <path d="M10.5 10.5h15M10.5 17.5h15M10.5 24.5h15"/>
+    <g fill="#979797" fill-rule="evenodd">
+        <path d="M10.5 11H26v-1H10v1h.5zM10.5 18H26v-1H10v1h.5z" id="Shape"/>
+        <path d="M10.5 25H26v-1H10v1h.5z"/>
     </g>
 </svg>

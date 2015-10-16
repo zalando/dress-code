@@ -15,12 +15,52 @@
 			display:inline-block;
 			margin-bottom: $font250;
 			padding: $space100;
+			background-color: $white;
+			border:1px solid $gray60;
 			text-align:center;
 
 			svg
 			{
 				margin-bottom: $font50;
-				border:1px solid $gray70;
 				vertical-align:middle;
+			}
+
+			.i--interactive
+			{
+				&:hover
+				{
+					[fill^='#']
+					{
+						fill:$blue30;
+					}
+
+					[stroke^='#']
+					{
+						stroke:$blue30;
+					}
+				}
+
+				&:active
+				{
+					transform: scale(.85);
+					shape-rendering: optimizeSpeed;
+					-webkit-tap-highlight-color: transparent;
+				}
+			}
+
+			.i--portal
+			{
+				&:hover
+				{
+					[fill^='#']
+					{
+						fill:$orange40;
+					}
+
+					[stroke^='#']
+					{
+						stroke:$orange40;
+					}
+				}
 			}
 		}

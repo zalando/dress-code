@@ -1,9 +1,12 @@
-<svg width="8" height="10" viewBox="0 0 8 10" xmlns="http://www.w3.org/2000/svg">
+<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
     <title>
-        i-lock
+        Lock
     </title>
-    <g fill="#4A4A4A" fill-rule="evenodd">
-        <rect y="4" width="8" height="6" rx="1"/>
-        <path d="M7 3c0-1.657-1.343-3-3-3S1 1.343 1 3h1c0-1.105.895-2 2-2s2 .895 2 2h1zM1 3h1v2H1zM6 3h1v2H6z"/>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="none" d="M0 0h36v36H0z"/>
+        <g transform="translate(13 12)" fill="#4A4A4A">
+            <rect y="5" width="10" height="7" rx="1"/>
+            <path d="M9 4c0-2.21-1.79-4-4-4S1 1.79 1 4h1c0-1.657 1.343-3 3-3s3 1.343 3 3h1zM1 4h1v2H1zM8 4h1v2H8z"/>
+        </g>
     </g>
 </svg>
