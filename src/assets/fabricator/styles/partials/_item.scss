@@ -58,7 +58,7 @@ h3.f-item-heading {
 
 	// margin-top: $space350;
 	text-transform:uppercase;
-	color:$gray50;
+	color:$gray40;
 	border-bottom:1px solid $gray60;
 
 	.sg-section__title + &
@@ -107,5 +107,17 @@ h3.f-item-heading {
 }
 
 .f-item-notes {
-	font-size: 0.875rem;
+	margin-bottom: $space150;
+	font-size: $font100;
+	color: $gray40;
+
+	> * {
+		margin-bottom: 0;
+
+		&:before
+		{
+			content: "//";
+			margin-right: $space75;
+		}
+	}
 }
