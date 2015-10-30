@@ -28,64 +28,137 @@
 
 		.msg
 		{
-			position:absolute;
-			top:0;
-			right:0;
-			bottom:0;
-			left:0;
-			z-index:999;
-			background:rgba($white, .5);
-			border-bottom:1px solid $gray60;
+			// position:absolute;
+			// top:0;
+			// right:0;
+			// bottom:0;
+			// left:0;
+			// z-index:999;
+			margin-bottom: $space150;
+			padding: $space100 0;
+			background:rgba(#CCE9FF, .95);
+			border:1px solid #55B6FE;
 			font-size: $font50;
-			line-height: $space200;
-			font-weight:$boldFontWeight;
-			text-transform:uppercase;
-			text-align:center;
-			white-space:nowrap;
-			transform: translateY(-100%);
+			line-height: $font100 + .2;
+			color: $blue20;
+			// transform: translateY(-100%);
 			transition: transform .2s ease-out;
+
+			@include breakpoint($medium-width)
+			{
+				padding: $space100;
+			}
 		}
 
-		.top-area--is-in-back
+		.msg__inner
 		{
-			> a,
-			> h1,
-			> div
-			{
-				animation: toparea 1.6s linear 1;
-			}
+			display: flex;
+			flex: 0 1 auto;
+			// max-width: 600px;
+			// margin: 0 auto;
+		}
 
-			@include breakpoint($huge-width)
+		.msg__icon
+		{
+			@include breakpoint($medium-width)
 			{
-				> .nav-main
+				margin-right: $space100;
+			}
+		}
+
+		.msg__bd
+		{
+			flex: 1 1 auto;
+
+			a
+			{
+				border-bottom: 1px solid currentColor;
+				color: currentColor;
+
+				&:hover
 				{
-					animation: toparea 1.6s linear 1;
+					border-bottom: 1px dashed currentColor;
+					color: currentColor;
 				}
 			}
 		}
 
-		.top-area--is-in-back-long
+		.msg__title
 		{
-			> a,
-			> h1,
-			> div
+			margin-bottom: 0;
+			font-size: $font100;
+			line-height: $bodyLineHeight;
+			color: $blue20;
+		}
+
+		.msg__text
+		{
+			margin-bottom: 0;
+		}
+
+		.msg__close svg
+		{
+			cursor: pointer;
+
+			[fill^='#']
 			{
-				animation: toparea-long 6s linear 1;
+				fill:$blue30;
 			}
 
-			@include breakpoint($huge-width)
+			&:hover
 			{
-				> .nav-main
+				[fill^='#']
 				{
-					animation: toparea-long 6s linear 1;
+					fill:$blue20;
 				}
 			}
+
+			@include breakpoint($medium-width)
+			{
+				margin-left: $space100;
+			}
 		}
 
-		.top-area *:not(nav)
-		{
-			transition: -webkit-filter .2s linear;
-		}
+		// .top-area--is-in-back
+		// {
+		// 	> a,
+		// 	> h1,
+		// 	> div
+		// 	{
+		// 		animation: toparea 1.6s linear 1;
+		// 	}
+		//
+		// 	@include breakpoint($huge-width)
+		// 	{
+		// 		> .nav-main
+		// 		{
+		// 			animation: toparea 1.6s linear 1;
+		// 		}
+		// 	}
+		// }
+		//
+		// .top-area--is-in-back-long
+		// {
+		// 	> a,
+		// 	> h1,
+		// 	> div
+		// 	{
+		// 		animation: toparea-long 6s linear 1;
+		// 	}
+		//
+		// 	@include breakpoint($huge-width)
+		// 	{
+		// 		> .nav-main
+		// 		{
+		// 			animation: toparea-long 6s linear 1;
+		// 		}
+		// 	}
+		// }
+		//
+		// .top-area *:not(nav)
+		// {
+		// 	transition: -webkit-filter .2s linear;
+		// }
 
 
 
@@ -94,9 +167,32 @@
 
 		.msg--success
 		{
-			background:rgba(desaturate($green70, 10%), .5);
-			border-color:darken($green70, 35%);
-			color:$green20;
+			background: rgba(#E3FFC7, .95);
+			border-color: #84E440;
+			color: $green20;
+
+			.msg__title
+			{
+				color:$green20;
+			}
+
+			.msg__close svg
+			{
+				cursor: pointer;
+
+				[fill^='#']
+				{
+					fill:$green20;
+				}
+
+				&:hover
+				{
+					[fill^='#']
+					{
+						fill:$green10;
+					}
+				}
+			}
 		}
 
 
@@ -109,6 +205,29 @@
 			background:rgba(desaturate($red70, 10%), .5);
 			border-color:darken($red70, 5%);
 			color:$red20;
+
+			.msg__title
+			{
+				color:$red20;
+			}
+
+			.msg__close svg
+			{
+				cursor: pointer;
+
+				[fill^='#']
+				{
+					fill:$red20;
+				}
+
+				&:hover
+				{
+					[fill^='#']
+					{
+						fill:$red10;
+					}
+				}
+			}
 		}
 
 
@@ -121,6 +240,29 @@
 			background:rgba($yellow70, .5);
 			border-color:darken($yellow70, 35%);
 			color:$yellow20;
+
+			.msg__title
+			{
+				color:$yellow20;
+			}
+
+			.msg__close svg
+			{
+				cursor: pointer;
+
+				[fill^='#']
+				{
+					fill:$yellow20;
+				}
+
+				&:hover
+				{
+					[fill^='#']
+					{
+						fill:$yellow10;
+					}
+				}
+			}
 		}
 
 
@@ -150,7 +292,7 @@
 			animation: notify-long 6s linear 1;
 		}
 
-		@include keyframes(notify)
+		@keyframes notify
 		{
 			0%
 			{
@@ -173,7 +315,7 @@
 			}
 		}
 
-		@include keyframes(toparea)
+		@keyframes toparea
 		{
 			10%
 			{
@@ -186,7 +328,7 @@
 			}
 		}
 
-		@include keyframes(notify-long)
+		@keyframes notify-long
 		{
 			0%
 			{
@@ -209,7 +351,7 @@
 			}
 		}
 
-		@include keyframes(toparea-long)
+		@keyframes toparea-long
 		{
 			1%
 			{
