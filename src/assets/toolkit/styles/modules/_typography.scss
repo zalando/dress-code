@@ -143,6 +143,55 @@
 		cursor:default;
 	}
 
+	[data-tooltip]
+	{
+		position: relative;
+
+		&:before,
+		&:after
+		{
+			position:absolute;
+			content: " ";
+			opacity: 0;
+			pointer-events: none;
+			transform: translateY(4px);
+			transition: transform .3s .5s ease-out, opacity .2s .5s;
+		}
+
+		&:before
+		{
+			content: attr(data-tooltip);
+			bottom: calc(100% + 12px);
+			padding: .2rem $space50;
+			background: rgba($black, .7);
+			border-radius: 2px;
+			color:$white;
+		}
+
+		&:after
+		{
+			bottom: 100%;
+			left: 20%;
+			height: 0;
+			width: 0;
+			border: solid transparent;
+			border-color: rgba($black, 0);
+			border-top-color: rgba($black, .7);
+			border-width: 6px;
+			margin-left: -6px;
+		}
+
+		&:hover
+		{
+			&:before,
+			&:after
+			{
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	}
+
 
 
 //  = LISTS
