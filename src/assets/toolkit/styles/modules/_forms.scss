@@ -24,26 +24,19 @@
 			color:$gray50;
 		}
 
-		// .label--required:after
-		// {
-		// 	content:" *";
-		// 	color:$red40;
-		// }
+		.label--required:after
+		{
+			content:"Required";
+			margin-left: $space50;
+			text-transform:capitalize;
+			font-weight:300;
+			color:$gray50;
+		}
 
-			.required
-			{
-				margin-left: $space50;
-				text-transform:capitalize;
-				font-weight:300;
-				color:$gray50;
-
-				// &:before
-				// {
-				// 	content:"* ";
-				// 	color:$red40;
-				// }
-			}
-
+		.label--is-error:after
+		{
+			color:$red40;
+		}
 
 
 //  = INPUTS
@@ -93,6 +86,17 @@
 			{
 			  padding: $space75;
 				font-size: $font100;
+			}
+
+			&.input--is-error
+			{
+				border-color: $red40;
+
+				&:hover,
+				&:focus
+				{
+					border-color: $red40;
+				}
 			}
 		}
 

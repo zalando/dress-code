@@ -37,9 +37,11 @@ pre[class*='language-'] {
 // code blocks
 pre[class*='language-'] {
 	overflow: auto;
-	margin: 1em 0;
-	padding: 1.2em;
-	border-radius: 3px;
+	margin: 0 0 $space150;
+	padding: $space100;
+	// border: 1px solid $gray60;
+	border-radius: 2px;
+	// box-shadow: inset 0 1px 1px rgba(0,0,0,.2);
 }
 
 p code,

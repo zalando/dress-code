@@ -1,2 +1,9 @@
-<label class="label" for="textInput">Text input</label>
-<input type="text" id="textInput" />
+<label class="label" for="textInput">Label</label>
+<input type="text" id="optionalInput" placeholder="e. g. give an example"/>
+
+<label class="label label--required" for="textInput">Label</label>
+<input type="text" id="requiredInput"  placeholder="e. g. give an example"/>
+
+<label class="label label--required label--is-error" for="textInput">Label</label>
+<input class="input--is-error" type="text" id="errorInput"  placeholder="e. g. give an example"/>
+<span class="text--error">Please don't leave this empty.</span>

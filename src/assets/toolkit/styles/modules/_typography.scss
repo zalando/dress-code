@@ -234,6 +234,10 @@
 
 	.text--error
 	{
+		display:block;
+		margin-top: - $space150;
+		margin-bottom: $space150;
+		font-size: $font50;
 		color:$red40;
 	}
 
