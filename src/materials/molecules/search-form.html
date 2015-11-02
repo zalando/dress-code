@@ -19,4 +19,11 @@ notes: |
         </g>
     </svg>
   </button>
+  <ul class="suggest">
+    {{#each autosuggest.brands}}
+        <li class="suggest__item">
+          <a class="suggest__link" href data-brand="{{this}}">{{this}}</a>
+        </li>
+    {{/each}}
+  </ul>
 </div>
