@@ -1,0 +1,56 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines a simple search form
+//
+//  ---------------------------------------------------------------------------
+
+
+
+
+//  = BASE
+//  ---------------------------------------------------------------------------
+
+		.search-form
+		{
+			display: inline-block;
+			position:relative;
+		}
+
+		.search-form__input
+		{
+			-webkit-appearance: none;
+		}
+
+		.search-form__btn
+		{
+			position:absolute;
+			top: 0;
+			right:0;
+			margin: 0;
+			padding: 0;
+			background: transparent;
+			border: none;
+
+			svg, img
+			{
+				display: block;
+			}
+
+			.no-touch &:hover,
+			.touch &:active,
+			&:focus
+			{
+				background: transparent;
+				box-shadow: none;
+
+				[fill^='#']
+				{
+					fill: $blue40;
+				}
+
+				[stroke^='#']
+				{
+					stroke: $blue40;
+				}
+			}
+		}
