@@ -2,9 +2,41 @@
 
 The Holy Bible UI toolkit is a highly-modular design system for rapid web page development. It contains different materials that can be assembled into more complex page layouts.
 
+## Quick links
+
+* [Demo](http://zalando.github.io/the-holy-bible/)
+* [Development](#development)
+* [Build and Deploy](#build-and-deploy)
+
 ## Getting Started
 
-Holy Bible requires [node.js](http://nodejs.org). Make sure your have `v0.10` or higher installed before proceeding.
+Holy Bible requires:
+
+* [node.js](http://nodejs.org). Make sure your have `v0.10` or higher installed before proceeding.
+* [modernizer](https://modernizr.com/) included in the ```<head>``` of your web page
+
+**Install**
+
+with bower:
+
+```
+$ bower install git@github.com:zalando/the-holy-bible-bower.git
+```
+
+with npm:
+
+```
+$ npm install git+ssh://git@github.com:zalando/the-holy-bible.git
+```
+
+## <a name="development"> Development
+
+**Install**
+
+```
+$ git clone https://github.com/zalando/the-holy-bible.git && cd the-holy-bible
+$ npm install && bower install
+```
 
 **Start the local development environment:**
 
@@ -20,14 +52,41 @@ $ npm start
 - Browserify bundling
 - Image optimization
 
-## Build
+## <a name="build-and-deploy"> Build & Deploy
 
-**Build for release:**
+**Build distribution:**
 
 ```
 $ npm run build
 ```
 
+The distribution build artifacts output to the `dist` directory.
+
+
+**Build demo:**
+
+```
+$ npm run build:demo
+```
+
 Fabricator builds both a static documentation site and optimized CSS and JS toolkit files.
 
-The build artifacts output to the `dist` directory. This can be deployed to any static hosting environment - no language runtime or database is required.
+The demo build artifacts output to the `demo` directory. This can be deployed to any static hosting environment - no language runtime or database is required.
+
+
+**Deploy demo:**
+
+```
+$ npm run deploy:demo
+```
+
+Publish the demo as github-pages website @ http://zalando.github.io/the-holy-bible  
+
+
+**Deploy bower package:**
+
+```
+$ npm run deploy:bower
+```
+
+Publish the distribution version for bower @ http://zalando.github.io/the-holy-bible-bower  

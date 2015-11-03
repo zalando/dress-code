@@ -1,0 +1,69 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines bubble wrap!
+//
+//  ---------------------------------------------------------------------------
+
+
+//  = BASE
+//  ---------------------------------------------------------------------------
+
+		.bubble-wrap
+		{
+			position:relative;
+
+			input
+			{
+				display:none;
+			}
+
+			.bubble-wrap__inner
+			{
+				position:absolute;
+				left: 6.5;
+				z-index:999;
+			}
+		}
+
+		.bubble
+		{
+			position:absolute;
+			top: $space150;
+			left: -17.2;
+			padding: $space50 $space75;
+			background:rgba(lighten($black, 5%), .85);
+			border-radius:2px;
+			color:$gray70;
+			pointer-events:none;
+			opacity:0;
+			transform: translateY(-10%);
+			transition: transform .3s ease-out, opacity .2s linear;
+
+			&:after
+			{
+				bottom: 100%;
+				left: 50%;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+				border-color: rgba(0, 0, 0, 0);
+				border-bottom-color: rgba(lighten($black, 5%), .85);
+				border-width: 6px;
+				margin-left: -6px;
+			}
+		}
+
+		:checked + label .bubble
+		{
+			opacity:1;
+			transform: translateY(0);
+		}
+
+		.bubble__bd
+		{
+			font-weight:300;
+			text-transform:none;
+		}

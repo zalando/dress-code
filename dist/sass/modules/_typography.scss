@@ -1,0 +1,369 @@
+//  ---------------------------------------------------------------------------
+//
+//  TYPOGRAPHY
+//
+//  ---------------------------------------------------------------------------
+
+
+
+//  = BOX SIZING
+//  ---------------------------------------------------------------------------
+
+	*
+	{
+		box-sizing:border-box;
+	}
+
+
+
+//  = VERTICAL RHYTHM
+//  ---------------------------------------------------------------------------
+
+	h1,h2,h3,h4,h5,h6,hgroup,
+	ul,ol,dd,
+	p,figure,object,
+	pre,table,fieldset,hr
+	{
+		margin:0;
+		margin-bottom: $space150;
+	}
+
+
+
+//  = BODY TEXT
+//  ---------------------------------------------------------------------------
+
+
+	html
+	{
+		height:100%;
+		font-family:$baseFontFamily;
+		font-size:$htmlFontSize;
+		line-height:$htmlLineHeight;
+		font-weight:$normalFontWeight;
+	}
+
+	body
+	{
+		font-size: $bodyFontSize;
+		line-height: $bodyLineHeight;
+		background: $bodyBackgroundColor;
+		color: $textColor;
+	}
+
+	pre
+	{
+		// undo reset
+		word-wrap:normal;
+	}
+
+	::-webkit-selection
+	{
+	    background-color:$secondaryAccent;
+	    color:$white;
+	}
+
+	::-moz-selection
+	{
+	    background-color:$secondaryAccent;
+	    color:$white;
+	}
+
+	::selection
+	{
+	    background-color:$secondaryAccent;
+	    color:$white;
+	}
+
+	strong
+	{
+		font-weight:$boldFontWeight;
+	}
+
+	em
+	{
+		font-style:italic;
+	}
+
+
+	.nowrap
+	{
+		white-space:nowrap;
+	}
+
+	.styleguide p
+	{
+		max-width: 45;
+	}
+
+
+
+//  = LINKS
+//  ---------------------------------------------------------------------------
+
+	a
+	{
+		text-decoration:none;
+		color:$linkColor;
+		cursor:pointer;
+
+		transition: color .1s linear;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+
+	input
+	{
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
+	}
+
+	.no-touch a:hover,
+	.touch a:active
+	{
+		text-decoration:none;
+		color:$linkColorHover;
+	}
+
+	.no-touch .link--success:hover,
+	.touch .link--success:active
+	{
+		color:$green30;
+	}
+
+	.no-touch .link--destroy:hover,
+	.touch .link--destroy:active
+	{
+		color:$red40;
+	}
+
+	.link--disabled,
+	.touch .link--disabled:active,
+	.no-touch .link--disabled:hover
+	{
+		color:$gray50;
+		cursor:default;
+	}
+
+	[data-tooltip]
+	{
+		position: relative;
+
+		&:before,
+		&:after
+		{
+			position:absolute;
+			content: " ";
+			opacity: 0;
+			pointer-events: none;
+			transform: translateY(4px);
+			transition: transform .3s .5s ease-out, opacity .2s .5s;
+		}
+
+		&:before
+		{
+			content: attr(data-tooltip);
+			bottom: calc(100% + 12px);
+			padding: .2rem $space50;
+			background: rgba($black, .7);
+			border-radius: 2px;
+			line-height: $bodyLineHeight;
+			color:$white;
+		}
+
+		&:after
+		{
+			bottom: 100%;
+			left: 20%;
+			height: 0;
+			width: 0;
+			border: solid transparent;
+			border-color: rgba($black, 0);
+			border-top-color: rgba($black, .7);
+			border-width: 6px;
+			margin-left: -6px;
+		}
+
+		&:hover
+		{
+			&:before,
+			&:after
+			{
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	}
+
+
+
+//  = LISTS
+//  ---------------------------------------------------------------------------
+
+	ul, ol, dl {
+		padding-left: 3rem;
+	}
+
+	.list--is-reset {
+		padding:0;
+		list-style-type:none;
+	}
+
+	dt
+	{
+		font-family:$baseFontFamily;
+	}
+
+
+
+//  = HEADINGS
+//  ---------------------------------------------------------------------------
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6,
+	%h1, %h2, %h3, %h4, %h5, %h6
+	{
+		margin-bottom: $space150;
+		font-family:$headingsFontFamily;
+		font-weight:$headingsFontWeight;
+		color:$headingsColor;
+
+		small
+		{
+			display:block;
+			font-family:$baseFontFamily;
+			font-size:60%;
+			color:$gray50;
+		}
+	}
+
+	h1, .h1
+	{
+		font-size: $h1Size;
+		line-height: $h1LineHeight;
+	}
+
+	h2, .h2
+	{
+		font-size: $h2Size;
+		line-height: $h2LineHeight;
+	}
+
+	h3, .h3
+	{
+		font-size: $h3Size;
+		line-height: $h3LineHeight;
+	}
+
+	h4, .h4
+	{
+		font-size: $h4Size;
+		line-height: $h4LineHeight;
+	}
+
+
+
+	//  = TEXT
+	//  ---------------------------------------------------------------------------
+
+	.text--center
+	{
+		text-align:center;
+	}
+
+	.text--small
+	{
+		font-size: $font50;
+		line-height: 1.8;
+	}
+
+	.less-important
+	{
+		font-size: $font50;
+		line-height:1;
+		color:$gray60;
+	}
+
+	.text--error
+	{
+		display:block;
+		margin-top: - $space150;
+		margin-bottom: $space150;
+		font-size: $font50;
+		color:$red40;
+	}
+
+
+
+//  = ICONS
+//  ---------------------------------------------------------------------------
+
+		.icon
+		{
+			display:inline-block;
+			vertical-align:middle;
+			cursor:pointer;
+			transform-origin: 50%;
+
+			&:hover
+			{
+				[stroke^='#']
+				{
+					stroke:$blue20;
+				}
+
+				[fill^='#']
+				{
+					fill:$blue20;
+				}
+			}
+
+			&:active
+			{
+				transform: scale(.85);
+			}
+		}
+
+		.icon--destroy:hover
+		{
+			[stroke^='#']
+			{
+				stroke:$red40;
+			}
+
+			[fill^='#']
+			{
+				fill:$red40;
+			}
+		}
+
+		body:not(.is-admin) .icon--is-admin-only,
+		body:not(.is-admin) .icon--is-admin-only:hover,
+		body:not(.is-admin) .icon--is-admin-only:active,
+		.icon--disabled,
+		.icon--disabled:hover,
+		.icon--disabled:active
+		{
+			transform: none;
+
+			[stroke^='#']
+			{
+				stroke:$gray60;
+			}
+
+			[fill^='#']
+			{
+				fill:$gray60;
+			}
+		}
+
+		:checked + .table__actions-label
+		{
+			[fill^='#']
+			{
+				fill:$blue20;
+			}
+		}
+
+		.is-admin .icon--lock
+		{
+			display:none;
+		}

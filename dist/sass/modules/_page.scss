@@ -1,0 +1,135 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines the brand shop page on edit page
+//
+//  ---------------------------------------------------------------------------
+
+
+.page-wrapper
+{
+	@include flex-grow(1);
+	padding: $space200 $space50;
+
+	@include breakpoint($large-width)
+	{
+		padding: $space200 $space100;
+	}
+
+	@include breakpoint($huge-width)
+	{
+		padding: $space200 $space150;
+	}
+}
+
+.page-wrapper--alt
+{
+	padding-top:0;
+
+	@include breakpoint($large-width)
+	{
+		padding-top:0;
+	}
+
+	@include breakpoint($huge-width)
+	{
+		padding-top:0;
+	}
+}
+
+.page-wrapper--styleguide
+{
+	padding-top: $touchSize * 2;
+}
+
+
+//  = HEADER
+//  ---------------------------------------------------------------------------
+
+.page-header
+{
+	position:relative;
+	margin:0 auto;
+	min-width: 32;
+	max-width: 160;
+
+	// @include breakpoint($large-width)
+	// {
+	// 	@include display-flex(flex);
+	// 	@include flex-wrap(wrap);
+	// 	@include justify-content(space-between);
+	// 	@include align-items(center);
+	// }
+}
+
+.page-header__title
+{
+	@extend .h3;
+	display:inline-block;
+	margin-left: $space75;
+	margin-bottom: $space100;
+
+	@include breakpoint($large-width)
+	{
+		font-size: $h2Size;
+		line-height: $h2LineHeight;
+	}
+
+	@include breakpoint($huge-width)
+	{
+		display:block;
+		font-size: $h1Size;
+		line-height: $h1LineHeight;
+		text-align:center;
+	}
+
+	.is-admin & > .is-admin-only--inline-block
+	{
+		display:none!important;
+
+		@include breakpoint($huge-width + .1)
+		{
+			display:inline!important;
+		}
+	}
+}
+
+.page-header__primary-action
+{
+	float:right;
+	// margin-top: (-$space75 -$touchSize);
+
+	@include breakpoint($huge-width)
+	{
+		float:none;
+		position:absolute;
+		top: $space100;
+		right:0;
+		margin-top:0;
+	}
+}
+
+.page
+{
+	margin:0 auto;
+	margin: 0 auto $space200;
+	padding: $space100;
+	min-width: 32;
+	max-width: 160;
+	background:$white;
+	// box-shadow:0 0  0   1px rgba($black, .03),
+	// 					 0 0 25px 0   rgba($black, .1);
+	box-shadow:0 1px 1px rgba(0,0,0,.2);
+
+	@include breakpoint($large-width)
+	{
+		padding: $space150;
+	}
+}
+
+.page--help
+{
+	.page
+	{
+		max-width: 60;
+	}
+}

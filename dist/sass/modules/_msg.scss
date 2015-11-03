@@ -1,0 +1,365 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines the brand portal messages
+//
+//  ---------------------------------------------------------------------------
+
+		.dim
+		{
+			position:absolute;
+			top: $space200;
+			right:0;
+			bottom:0;
+			left:0;
+			background:rgba($black, .6);
+			opacity:0;
+			pointer-events:none;
+			transition: opacity .1s linear;
+		}
+
+		.is-dimmed
+		{
+			.dim
+			{
+				opacity:1;
+				pointer-events:auto;
+			}
+		}
+
+		.msg
+		{
+			// position:absolute;
+			// top:0;
+			// right:0;
+			// bottom:0;
+			// left:0;
+			// z-index:999;
+			margin-bottom: $space150;
+			padding: $space100 0;
+			background:rgba(#CCE9FF, .95);
+			border:1px solid #55B6FE;
+			font-size: $font50;
+			line-height: $font100 + .2;
+			color: $blue20;
+			// transform: translateY(-100%);
+			transition: transform .2s ease-out;
+
+			@include breakpoint($medium-width)
+			{
+				padding: $space100;
+			}
+		}
+
+		.msg__inner
+		{
+			display: flex;
+			flex: 0 1 auto;
+			// max-width: 600px;
+			// margin: 0 auto;
+		}
+
+		.msg__icon
+		{
+			@include breakpoint($medium-width)
+			{
+				margin-right: $space100;
+			}
+		}
+
+		.msg__bd
+		{
+			flex: 1 1 auto;
+
+			a
+			{
+				border-bottom: 1px solid currentColor;
+				color: currentColor;
+
+				&:hover
+				{
+					border-bottom: 1px dashed currentColor;
+					color: currentColor;
+				}
+			}
+		}
+
+		.msg__title
+		{
+			margin-bottom: 0;
+			font-size: $font100;
+			line-height: $bodyLineHeight;
+			color: $blue20;
+		}
+
+		.msg__text
+		{
+			margin-bottom: 0;
+		}
+
+		.msg__close svg
+		{
+			cursor: pointer;
+
+			[fill^='#']
+			{
+				fill:$blue30;
+			}
+
+			&:hover
+			{
+				[fill^='#']
+				{
+					fill:$blue20;
+				}
+			}
+
+			@include breakpoint($medium-width)
+			{
+				margin-left: $space100;
+			}
+		}
+
+		// .top-area--is-in-back
+		// {
+		// 	> a,
+		// 	> h1,
+		// 	> div
+		// 	{
+		// 		animation: toparea 1.6s linear 1;
+		// 	}
+		//
+		// 	@include breakpoint($huge-width)
+		// 	{
+		// 		> .nav-main
+		// 		{
+		// 			animation: toparea 1.6s linear 1;
+		// 		}
+		// 	}
+		// }
+		//
+		// .top-area--is-in-back-long
+		// {
+		// 	> a,
+		// 	> h1,
+		// 	> div
+		// 	{
+		// 		animation: toparea-long 6s linear 1;
+		// 	}
+		//
+		// 	@include breakpoint($huge-width)
+		// 	{
+		// 		> .nav-main
+		// 		{
+		// 			animation: toparea-long 6s linear 1;
+		// 		}
+		// 	}
+		// }
+		//
+		// .top-area *:not(nav)
+		// {
+		// 	transition: -webkit-filter .2s linear;
+		// }
+
+
+
+//  = SUCCESS
+//  ---------------------------------------------------------------------------
+
+		.msg--success
+		{
+			background: rgba(#E3FFC7, .95);
+			border-color: #84E440;
+			color: $green20;
+
+			.msg__title
+			{
+				color:$green20;
+			}
+
+			.msg__close svg
+			{
+				cursor: pointer;
+
+				[fill^='#']
+				{
+					fill:$green20;
+				}
+
+				&:hover
+				{
+					[fill^='#']
+					{
+						fill:$green10;
+					}
+				}
+			}
+		}
+
+
+
+//  = ERROR
+//  ---------------------------------------------------------------------------
+
+		.msg--error
+		{
+			background:rgba(desaturate($red70, 10%), .5);
+			border-color:darken($red70, 5%);
+			color:$red20;
+
+			.msg__title
+			{
+				color:$red20;
+			}
+
+			.msg__close svg
+			{
+				cursor: pointer;
+
+				[fill^='#']
+				{
+					fill:$red20;
+				}
+
+				&:hover
+				{
+					[fill^='#']
+					{
+						fill:$red10;
+					}
+				}
+			}
+		}
+
+
+
+//  = WARNING
+//  ---------------------------------------------------------------------------
+
+		.msg--warning
+		{
+			background:rgba($yellow70, .5);
+			border-color:darken($yellow70, 35%);
+			color:$yellow20;
+
+			.msg__title
+			{
+				color:$yellow20;
+			}
+
+			.msg__close svg
+			{
+				cursor: pointer;
+
+				[fill^='#']
+				{
+					fill:$yellow20;
+				}
+
+				&:hover
+				{
+					[fill^='#']
+					{
+						fill:$yellow10;
+					}
+				}
+			}
+		}
+
+
+
+//  = INFO
+//  ---------------------------------------------------------------------------
+
+		.msg--info
+		{
+			background:rgba($blue70, .5);
+			border-color:darken($blue70, 5%);
+			color:$blue20;
+		}
+
+
+
+//  = ANIMATION
+//  ---------------------------------------------------------------------------
+
+		.msg--is-animating
+		{
+			animation: notify 1.6s linear 1;
+		}
+
+		.msg--is-animating-long
+		{
+			animation: notify-long 6s linear 1;
+		}
+
+		@keyframes notify
+		{
+			0%
+			{
+				transform: translateY(-100%);
+			}
+
+			10%
+			{
+				transform: translateY(0);
+			}
+
+			90%
+			{
+				transform: translateY(0);
+			}
+
+			100%
+			{
+				transform:translateY(-100%);
+			}
+		}
+
+		@keyframes toparea
+		{
+			10%
+			{
+				-webkit-filter:blur(4px);
+			}
+
+			90%
+			{
+				-webkit-filter:blur(4px);
+			}
+		}
+
+		@keyframes notify-long
+		{
+			0%
+			{
+				transform: translateY(-100%);
+			}
+
+			1%
+			{
+				transform: translateY(0);
+			}
+
+			99%
+			{
+				transform: translateY(0);
+			}
+
+			100%
+			{
+				transform: translateY(-100%);
+			}
+		}
+
+		@keyframes toparea-long
+		{
+			1%
+			{
+				-webkit-filter:blur(4px);
+			}
+
+			99%
+			{
+				-webkit-filter:blur(4px);
+			}
+		}

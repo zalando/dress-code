@@ -1,0 +1,88 @@
+//  ---------------------------------------------------------------------------
+//
+//  Common base styles for brand shop modules
+//
+//  ---------------------------------------------------------------------------
+
+		$mColor: $blue50;
+		$mBorder: $border100;
+
+
+
+//  = BASE
+//  ---------------------------------------------------------------------------
+
+		.m
+		{
+			position:relative;
+
+			* { font-family:"Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+
+			&:before
+			{
+				content:" ";
+				position:absolute;
+				top:0;
+				right:0;
+				bottom:0;
+				left:0;
+				border:$mBorder solid transparent;
+				pointer-events:none;
+			}
+
+			&:hover
+			{
+				&:before
+				{
+					border-color:$mColor;
+				}
+
+				.m__actions
+				{
+					@include display-flex(flex);
+				}
+			}
+		}
+
+		.m__actions
+		{
+			display:none;
+			position:absolute;
+			bottom:100%;
+			left:0;
+			margin:0;
+		}
+
+		.m__action
+		{
+			padding: 0 $space50;
+			background:$mColor;
+			font-size: $font50;
+			font-weight:$boldFontWeight;
+			text-transform:uppercase;
+			color:$white;
+			cursor:pointer;
+
+			& + .m__action
+			{
+				border-left:1px solid lighten($mColor, 15%);
+			}
+
+			&:hover
+			{
+				background:darken($mColor, 10%);
+			}
+		}
+
+
+
+//  = SIDEBAR DRAGGABLE MODULE REPRESENTATION
+//  ---------------------------------------------------------------------------
+
+		.m--mini
+		{
+			background:$white;
+			text-align:center;
+			border-radius:2px;
+			box-shadow:0 1px 1px rgba(0,0,0,.2);
+		}

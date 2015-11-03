@@ -5,9 +5,10 @@
  */
 
 // Reset
-@import "../../../../node_modules/normalize.css/normalize";
+@import "../../../../node_modules/normalize-css/normalize";
 
 // Breakpoint framework
+// @import "../../../../bower_components/compass-breakpoint/stylesheets/breakpoint";
 @import "../../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
 
 // Susy grid framework
