@@ -1,0 +1,57 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines a page section
+//
+//  ---------------------------------------------------------------------------
+
+
+
+
+//  = BASE
+//  ---------------------------------------------------------------------------
+
+		.section
+		{
+			margin-bottom: $space150;
+		}
+
+			.section__actions
+			{
+				float:right;
+				margin-top: -$space50;
+			}
+
+			.section__title
+			{
+				@extend .h4;
+				padding-bottom: $space75;
+				border-bottom:1px solid $gray60;
+			}
+
+			.section__sub-title
+			{
+				@extend .label;
+
+				border-bottom:1px solid $gray70;
+			}
+
+
+
+
+//  = DASHBOARD SPECIFIC SECTION
+//  ---------------------------------------------------------------------------
+
+		.section--dashboard
+		{
+			@include breakpoint($huge-width)
+			{
+				@include display-flex(flex);
+				margin-left: -$space150;
+
+				.section__sub-section
+				{
+					width:33.33%;
+					padding-left: $space150;
+				}
+			}
+		}

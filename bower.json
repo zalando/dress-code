@@ -1,0 +1,26 @@
+{
+  "name": "the-holy-bible",
+  "version": "0.0.0",
+  "homepage": "https://zalando.github.io/the-holy-bible",
+  "description": "The holy bible is the official style guide for all Brand Solutions products.",
+  "main": "sass/toolkit.scss",
+  "moduleType": [],
+  "authors": [
+    "Thomas Nägele <thomas.nagele@zalando.de>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "compass-breakpoint": "breakpoint-sass#~2.6.1",
+    "normalize-css": "normalize.css#~3.0.3",
+    "susy": "~2.2.6",
+    "modernizer": "~2.8.2"
+  }
+}

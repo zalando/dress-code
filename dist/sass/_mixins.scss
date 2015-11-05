@@ -1,0 +1,475 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines all Sass functions.
+//
+//  ---------------------------------------------------------------------------
+
+
+//  = GENERIC DEBUG MESSAGE E.G. FOR MEDIA QUERIES
+//  ---------------------------------------------------------------------------
+
+	@mixin debugmessage($message, $color: rgba(255,255,0, 0.9))
+	{
+		// margin-top: $bodyLineHeight;
+
+		&::before
+		{
+			content:$message;
+
+			display: block;
+			position:fixed;
+			right:0;
+			top: 100%;
+			left:0;
+			z-index:910;
+			height: $bodyLineHeight;
+
+			background:#{$color};
+
+			font-weight:$boldFontWeight;
+			text-align:center;
+			transition: transform .2s ease-out, opacity .2s;
+			transform: translateY(100%);
+			opacity: 0;
+		}
+	}
+
+
+
+//  = FONT SIZE & LINE HEIGHT
+//  ---------------------------------------------------------------------------
+
+	@mixin setType($font-size, $line-height)
+	{
+		font-size: $font-size;
+		line-height: $line-height;
+	}
+
+
+
+//  = REM SIZING
+//  ---------------------------------------------------------------------------
+
+	// Mixin that allows to specify arbitrary CSS properties with
+	// unitless numbers. The output has rem unit with pixel fallback.
+	// Shorthand assignments are supported too!
+	$base_line: 10;
+
+	@mixin rem($property, $values, $important:"")
+	{
+		// Placeholder variables
+		$shorthand_px:  "";
+		$shorthand_rem: "";
+
+		// Parameter $values might be a list of elements
+		@each $value in $values
+		{
+			// Current value is a valid number and greater than 0
+			@if $value != auto and $value != 0 and $value != inherit
+			{
+				// Add 'px' and 'rm' to the current value and store in
+				// placeholder variables
+				$shorthand_px: #{ $shorthand_px + " " + $value * $base_line + px };
+				$shorthand_rem: #{ $shorthand_rem + " " + $value + rem };
+			}
+			// Current value is 'auto' or 0
+			@else
+			{
+				// Add only 'auto' or 0 to the placeholder variables
+				$shorthand_px: #{ $shorthand_px + " " + $value };
+				$shorthand_rem: #{ $shorthand_rem + " " + $value };
+			}
+		}
+
+		@if $important == !important
+		{
+			$shorthand_px: #{ $shorthand_px + " !important" };
+			$shorthand_rem: #{ $shorthand_rem + " !important" };
+		}
+
+		// Output the CSS property in pixels and rems
+		#{$property}:$shorthand_px;
+		#{$property}:$shorthand_rem;
+	}
+
+
+//  = ABSBLEED
+//  ---------------------------------------------------------------------------
+
+	// Mixin that allows left/rightbleeding with absolute values in rem
+
+	@mixin absbleed($width, $sides: left right)
+	{
+		@if $sides == 'all'
+		{
+    		margin: 0 - $width;
+    		padding: 0 $width;
+  		}
+  		@else
+  		{
+    		@each $side in $sides
+    		{
+      			margin-#{$side}: - $width;
+      			padding-#{$side}: $width;
+    		}
+    	}
+	}
+
+
+//  = FORM FIELD SIZING
+//  ---------------------------------------------------------------------------
+
+	// Mixin that allows to specify arbitrary CSS properties with
+	// unitless numbers. The output has rem unit with pixel fallback.
+	// Shorthand assignments are supported too!
+
+	@mixin calc-input-widths($context, $min-width:$r-column-width, $gutter-width:$r-gutter-width)
+	{
+
+		$widths: mini small medium large xlarge;
+		@for $i from 1 through length($widths) * 2 {
+  			@if $i % 2 == 0 {
+  				.input--#{nth($widths, $i / 2)}
+  				{
+                	$width:	$min-width * $i / 2 + $r-gutter-width * ($i - 1);
+                	@if $width <= $context
+                	{
+                		width: $width;
+                	}
+                	@else
+                	{
+                		width:100%;
+                	}
+
+            	}
+  			}
+		}
+
+	}
+
+//  = WEBKIT-STYLE TAB-FOCUS SIZING
+//  ---------------------------------------------------------------------------
+
+	@mixin tab-focus()
+	{
+	  // Default
+	  outline: thin dotted #333;
+
+	  // Webkit
+	  outline: 5px auto -webkit-focus-ring-color;
+	  outline-offset: -2px;
+
+	}
+
+
+//  = CSS CALC
+//  ---------------------------------------------------------------------------
+
+	@mixin calc($property, $expression)
+	{
+		#{$property}: -moz-calc(#{$expression});
+		#{$property}: -o-calc(#{$expression});
+		#{$property}: -webkit-calc(#{$expression});
+		#{$property}: calc(#{$expression});
+	}
+
+
+
+//  = GRADIENTS
+//  ---------------------------------------------------------------------------
+
+	@mixin gradient-horizontal($startColor: #555, $endColor: #333)
+	{
+	  background-color: $endColor;
+	  background-image: -moz-linear-gradient(left, $startColor, $endColor); // FF 3.6+
+	  background-image: -ms-linear-gradient(left, $startColor, $endColor); // IE10
+	  // background-image: -webkit-gradient(linear, 0 0, 100% 0, from($startColor), to($endColor)); // Safari 4+, Chrome 2+
+	  background-image: -webkit-linear-gradient(left, $startColor, $endColor); // Safari 5.1+, Chrome 10+
+	  // background-image: -o-linear-gradient(left, $startColor, $endColor); // Opera 11.10
+	  background-image: linear-gradient(left, $startColor, $endColor); // Le standard
+	  background-repeat: repeat-x;
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{darken($startColor, 1%)}', endColorstr='#{darken($endColor, 1%)}', GradientType=1); // IE9 and down
+	}
+
+	@mixin gradient-vertical($startColor: #555, $endColor: #333)
+	{
+	  background-color: mix($startColor, $endColor, 60%);
+	  background-image: -moz-linear-gradient(top, $startColor, $endColor); // FF 3.6+
+	  background-image: -ms-linear-gradient(top, $startColor, $endColor); // IE10
+	  // background-image: -webkit-gradient(linear, 0 0, 0 100%, from($startColor), to($endColor)); // Safari 4+, Chrome 2+
+	  background-image: -webkit-linear-gradient(top, $startColor, $endColor); // Safari 5.1+, Chrome 10+
+	  // background-image: -o-linear-gradient(top, $startColor, $endColor); // Opera 11.10
+	  background-image: linear-gradient(top, $startColor, $endColor); // The standard
+	  background-repeat: repeat-x;
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{darken($startColor, 1%)}', endColorstr='#{darken($endColor, 1%)}', GradientType=0); // IE9 and down
+	}
+
+	@mixin gradient-directional($startColor: #555, $endColor: #333, $deg: 45deg)
+	{
+	  background-color: $endColor;
+	  background-repeat: repeat-x;
+	  background-image: -moz-linear-gradient($deg, $startColor, $endColor); // FF 3.6+
+	  background-image: -ms-linear-gradient($deg, $startColor, $endColor); // IE10
+	  background-image: -webkit-linear-gradient($deg, $startColor, $endColor); // Safari 5.1+, Chrome 10+
+	  // background-image: -o-linear-gradient($deg, $startColor, $endColor); // Opera 11.10
+	  background-image: linear-gradient($deg, $startColor, $endColor); // The standard
+	}
+
+	@mixin gradient-vertical-three-colors($startColor: #00b3ee, $midColor: #7a43b6, $colorStop: 50%, $endColor: #c3325f)
+	{
+	  background-color: mix($midColor, $endColor, 80%);
+	  // background-image: -webkit-gradient(linear, 0 0, 0 100%, from($startColor), color-stop($colorStop, $midColor), to($endColor));
+	  background-image: -webkit-linear-gradient($startColor, $midColor $colorStop, $endColor);
+	  background-image: -moz-linear-gradient(top, $startColor, $midColor $colorStop, $endColor);
+	  background-image: -ms-linear-gradient($startColor, $midColor $colorStop, $endColor);
+	  // background-image: -o-linear-gradient($startColor, $midColor $colorStop, $endColor);
+	  background-image: linear-gradient($startColor, $midColor $colorStop, $endColor);
+	  background-repeat: no-repeat;
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{darken($startColor, 1%)}', endColorstr='#{darken($endColor, 1%)}', GradientType=0); // IE9 and down, gets no color-stop at all for proper fallback
+	}
+
+	@mixin gradient-vertical-four-colors($startColor: #00b3ee, $midColor: #7a43b6, $colorStop: 51%, $anotherMidColor: #7a43b6, $anotherColorStop: 50%, $endColor: #c3325f)
+	{
+	  background-color: mix($midColor, $endColor, 80%);
+	  // background-image: -webkit-gradient(linear, 0 0, 0 100%, from($startColor), color-stop($colorStop, $midColor), to($endColor));
+	  background-image: -webkit-linear-gradient($startColor, $midColor $colorStop, $anotherMidColor $anotherColorStop, $endColor);
+	  background-image: -moz-linear-gradient(top, $startColor, $midColor $colorStop, $endColor);
+	  background-image: -ms-linear-gradient($startColor, $midColor $colorStop, $anotherMidColor $anotherColorStop, $endColor);
+	  // background-image: -o-linear-gradient($startColor, $midColor $colorStop, $endColor);
+	  background-image: linear-gradient($startColor, $midColor $colorStop, $anotherMidColor $anotherColorStop, $endColor);
+	  background-repeat: no-repeat;
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{darken($startColor, 1%)}', endColorstr='#{darken($endColor, 1%)}', GradientType=0); // IE9 and down, gets no color-stop at all for proper fallback
+	}
+
+	@mixin gradient-radial($innerColor: #555, $outerColor: #333)
+	{
+	  background-color: $outerColor;
+	  // background-image: -webkit-gradient(radial, center center, 0, center center, 460, from($innerColor), to($outerColor));
+	  background-image: -webkit-radial-gradient(circle, $innerColor, $outerColor);
+	  background-image: -moz-radial-gradient(circle, $innerColor, $outerColor);
+	  background-image: -ms-radial-gradient(circle, $innerColor, $outerColor);
+	  // background-image: -o-radial-gradient(circle, $innerColor, $outerColor);
+	  background-repeat: no-repeat;
+	}
+
+	@mixin gradient-striped($color, $angle: -45deg)
+	{
+	  background-color: $color;
+	  // background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255,255,255,.15)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255,255,255,.15)), color-stop(.75, rgba(255,255,255,.15)), color-stop(.75, transparent), to(transparent));
+	  background-image: -webkit-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+	  background-image: -moz-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+	  background-image: -ms-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+	  // background-image: -o-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+	  background-image: linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+	}
+
+	@mixin gradient-btn
+	{
+		background: #f2f2f2; /* Old browsers */
+		background: -moz-linear-gradient(top,  #f2f2f2 0%, #c4c4c4 50%, #bfbfbf 51%, #d9d9d9 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(50%,#c4c4c4), color-stop(51%,#bfbfbf), color-stop(100%,#d9d9d9)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #f2f2f2 0%,#c4c4c4 50%,#bfbfbf 51%,#d9d9d9 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #f2f2f2 0%,#c4c4c4 50%,#bfbfbf 51%,#d9d9d9 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #f2f2f2 0%,#c4c4c4 50%,#bfbfbf 51%,#d9d9d9 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #f2f2f2 0%,#c4c4c4 50%,#bfbfbf 51%,#d9d9d9 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#d9d9d9',GradientType=0 ); /* IE6-9 */
+	}
+
+//  = ANIMATIONS
+//  ---------------------------------------------------------------------------
+
+	@mixin keyframe ($animation-name)
+	{
+		@-webkit-keyframes $animation-name
+		{
+			@content;
+		}
+
+		@-moz-keyframes $animation-name
+		{
+			@content;
+		}
+
+		@-o-keyframes $animation-name
+		{
+			@content;
+		}
+
+		@keyframes $animation-name
+		{
+			@content;
+		}
+	}
+
+
+
+//  = SPINNER
+//  ---------------------------------------------------------------------------
+
+    // Need to remove the units to do some math.
+    @function strip-units($number)
+    {
+        @return $number / ($number * 0 + 1);
+    }
+
+
+    @mixin spinner($spinner-hole-color:transparent)
+    {
+        .spinner
+        {
+           	position: relative;
+        	border-radius: 100%;
+            width: $spinner-size;
+            height: $spinner-size;
+            background: $spinner-background;
+            margin-bottom: $doubleSpace;
+
+            .spinner__side
+            {
+            	width: 50%;
+            	height: 100%;
+            	overflow: hidden;
+            	position: absolute;
+
+            	.spinner__fill
+            	{
+	                border-radius: 999px;
+                	position: absolute;
+                	width: 100%;
+                	height: 100%;
+	                background: $spinner-fill;
+	                opacity: $spinner-opacity;
+                	@include experimental(animation-iteration-count, $spinner-count);
+                	@include experimental(animation-timing-function, $spinner-function);
+	                @include experimental(animation-duration, $spinner-duration);
+            	}
+
+            	&.spinner--left
+            	{
+            		left: 0;
+		            .spinner__fill
+		            {
+		                left: 100%;
+		                border-top-left-radius: 0;
+		                border-bottom-left-radius: 0;
+		                @include experimental(animation-name, $spinner-rotate-left);
+		                @include experimental(transform-origin, 0 50%);
+		            }
+            	}
+
+            	&.spinner--right
+		        {
+		            left: 50%;
+		            .spinner__fill
+		            {
+		                left: -100%;
+		                border-top-right-radius: 0;
+		                border-bottom-right-radius: 0;
+		                @include experimental(animation-name, $spinner-rotate-right);
+		                @include experimental(transform-origin, 100% 50%);
+		            }
+		        }
+            }
+
+
+
+            // This is the 'hole' that creates the ring. It's size is determined by the
+            // size of the spinner.
+            &:after
+            {
+                $hole-size: round((strip-units($spinner-size)*.6)) + px;
+                $hole-position: round((strip-units($spinner-size)*.2)) + px;
+                content: "";
+                background: $spinner-hole-color;
+                position: absolute;
+                width: $hole-size;
+                height: $hole-size;
+                border-radius: 50%;
+                top: $hole-position;
+                left: $hole-position;
+                display: block;
+            }
+        }
+    }
+
+
+//	= SLIDER
+//  ---------------------------------------------------------------------------
+
+    @mixin slider-items($slideCount:3, $slidesClass:"slides--contains", $loop:true)
+    {
+        @if $loop == true
+
+        {
+
+            @for $i from 1 through $slideCount
+            {
+
+                .#{$slidesClass + "-" + $i}
+                {
+                    @include slider-items-inner($i);
+                }
+
+            }
+        }
+
+        @else
+
+        {
+            .#{$slidesClass + "-" + $slideCount}
+            {
+                @include slider-items-inner($slideCount);
+            }
+        }
+
+    }
+
+    @mixin slider-items-inner($slideCount)
+    {
+        width: #{$slideCount * 100 - 25 + "%"};
+
+        .slide
+        {
+            position: relative;
+            float:left;
+            width: #{100 / $slideCount + "%"};
+            padding: $singleSpace/2;
+
+            @include breakpoint($large-width)
+            {
+                padding: $singleSpace;
+            }
+        }
+    }
+
+//  = RESPONSIVE IMAGES MIXIN
+//  ---------------------------------------------------------------------------
+
+    @mixin responsive-image($url, $width, $height, $breakpoint: "")
+    {
+        // No breakpoint set
+        @if $breakpoint == ""
+        {
+            @include set-background-image($url, $width, $height);
+        }
+        // wrap in breakpoint
+        @else
+        {
+            @include breakpoint($breakpoint)
+            {
+                @include set-background-image($url, $width, $height);
+            }
+        }
+    }
+
+    @mixin set-background-image($url, $width, $height)
+    {
+        max-height: $height/10;
+
+        > .responsive-image__inner
+        {
+            background-image: url($url);
+            padding-bottom: ($height / $width) * 100%;
+            max-width: $width/10;
+        }
+    }
