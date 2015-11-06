@@ -1,8 +1,8 @@
 {
-  "name": "the-holy-bible",
+  "name": "bs-dress-code",
   "version": "0.0.0",
-  "description": "The holy bible is the official style guide for all Brand Solutions products.",
-  "homepage": "https://zalando.github.io/the-holy-bible",
+  "description": "The brand-solutions-dress-code is the official style guide for all Brand Solutions products.",
+  "homepage": "https://zalando.github.io/brand-solutions-dress-code",
   "main": "dist/sass/toolkit.sass",
   "scripts": {
     "build": "gulp dist",
@@ -27,7 +27,7 @@
   "licenses": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zalando/the-holy-bible.git"
+    "url": "https://github.com/zalando/tbrand-solutions-dress-code.git"
   },
   "engines": {
     "node": ">=0.10.0",

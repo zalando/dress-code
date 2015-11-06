@@ -189,7 +189,7 @@ gulp.task('demo:serve', function () {
 
 gulp.task('demo:deploy', ['demo'],  function() {
   return gulp.src(path.join(config.demo , '/**/*'))
-    .pipe(ghPages({remoteUrl: 'https://github.com/zalando/the-holy-bible.git'}));
+    .pipe(ghPages({remoteUrl: 'https://github.com/zalando/brand-solutions-dress-code.git'}));
 });
 
 
@@ -274,7 +274,7 @@ gulp.task('dist:bower:deploy', ['dist:bower'], function () {
 		.pipe(ghPages({
 			cacheDir: '.publish-bower',
 			branch: 'master',
-			remoteUrl: 'git@github.com:zalando/the-holy-bible-bower'
+			remoteUrl: 'git@github.com:zalando/brand-solutions-dress-code-bower'
 		}));
 });
 

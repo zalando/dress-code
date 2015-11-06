@@ -1,10 +1,10 @@
-# Holy Bible
+# Brand Solutions Dress Code
 
-The Holy Bible UI toolkit is a highly-modular design system for rapid web page development. It contains different materials that can be assembled into more complex page layouts.
+The Brand Solutions Dress Code UI toolkit is a highly-modular design system for rapid web page development. It contains different materials that can be assembled into more complex page layouts.
 
 ## Quick links
 
-* [Demo](http://zalando.github.io/the-holy-bible/)
+* [Demo](http://zalando.github.io/brand-solutions-dress-code/)
 * [Development](#development)
 * [Build and Deploy](#build-and-deploy)
 
@@ -20,13 +20,13 @@ Holy Bible requires:
 with bower:
 
 ```
-$ bower install git@github.com:zalando/the-holy-bible-bower.git
+$ bower install git@github.com:zalando/brand-solutions-dress-code-bower.git
 ```
 
 with npm:
 
 ```
-$ npm install git+ssh://git@github.com:zalando/the-holy-bible.git
+$ npm install git+ssh://git@github.com:zalando/brand-solutions-dress-code.git
 ```
 
 ## <a name="development"> Development
@@ -34,7 +34,7 @@ $ npm install git+ssh://git@github.com:zalando/the-holy-bible.git
 **Install**
 
 ```
-$ git clone https://github.com/zalando/the-holy-bible.git && cd the-holy-bible
+$ git clone https://github.com/zalando/brand-solutions-dress-code.git && cd brand-solutions-dress-code
 $ npm install && bower install
 ```
 
@@ -80,7 +80,7 @@ The demo build artifacts output to the `demo` directory. This can be deployed to
 $ npm run deploy:demo
 ```
 
-Publish the demo as github-pages website @ http://zalando.github.io/the-holy-bible  
+Publish the demo as github-pages website @ http://zalando.github.io/brand-solutions-dress-code
 
 
 **Deploy bower package:**
@@ -89,4 +89,4 @@ Publish the demo as github-pages website @ http://zalando.github.io/the-holy-bib
 $ npm run deploy:bower
 ```
 
-Publish the distribution version for bower @ http://zalando.github.io/the-holy-bible-bower  
+Publish the distribution version for bower @ http://zalando.github.io/brand-solutions-dress-code-bower  
