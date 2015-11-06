@@ -20,7 +20,7 @@
 //  ---------------------------------------------------------------------------
 
 	h1,h2,h3,h4,h5,h6,hgroup,
-	ul,ol,dd,
+	.#{$bsPrefix}-list,dd,
 	p,figure,object,
 	pre,table,fieldset,hr
 	{
@@ -198,11 +198,11 @@
 //  = LISTS
 //  ---------------------------------------------------------------------------
 
-	ul, ol, dl {
+	.#{$bsPrefix}-list {
 		padding-left: 3rem;
 	}
 
-	.list--is-reset {
+	.#{$bsPrefix}-list--is-reset {
 		padding:0;
 		list-style-type:none;
 	}
