@@ -158,7 +158,8 @@ textarea {
 //  = RADIO BUTTON
 //  ---------------------------------------------------------------------------
 
-input[type='radio'],
+
+.#{$bsPrefix}-radio,
 .#{$bsPrefix}-checkbox {
 	display: none;
 
@@ -213,7 +214,7 @@ input[type='radio'],
 	}
 }
 
-input[type='radio'] {
+.#{$bsPrefix}-radio {
 
 	& + label:before,
 	& + label:after {
