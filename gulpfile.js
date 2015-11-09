@@ -228,7 +228,7 @@ gulp.task('dist:styles', function () {
 gulp.task('dist:styles:src', function () {
 	return gulp.src(path.join(config.path.styles.toolkit, '/**/*'))
 		.pipe(gulp.dest(path.join(config.dist, 'sass')))
-		.pipe(gulpFilter(['_base.scss']))
+		.pipe(gulpFilter(['_base.scss','_import.scss']))
 		// this replace relative imports inside _base.scss
 		.pipe(replace(/@import "..\/..\/..\/..\/(.*)"/g, function (match, p1) {
 			return '@import "../../' + p1 + '"';
@@ -258,7 +258,7 @@ gulp.task('dist:bower', ['dist:bower:clean','dist'], function () {
 		'.jshintrc'
 	])
 	.pipe(gulp.dest(config.distBower))
-	.pipe(gulpFilter(['**/sass/_base.scss']))
+	.pipe(gulpFilter(['**/sass/_import.scss','**/sass/_base.scss']))
 	.pipe(replace(/@import "..\/..\/node_modules\/(.*)"/g, function (match, p1) {
 		if(p1.indexOf('breakpoint-sass') > -1) {
 			return '@import "../../compass-breakpoint/stylesheets/breakpoint"';
