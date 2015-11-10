@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "The brand-solutions-dress-code is the official style guide for all Brand Solutions products.",
   "homepage": "https://zalando.github.io/brand-solutions-dress-code",
-  "main": "dist/sass/toolkit.sass",
+  "main": "dist/sass/toolkit.scss",
   "scripts": {
     "build": "gulp dist",
     "build:demo": "gulp demo",
@@ -22,12 +22,12 @@
     "zalando brand solutions"
   ],
   "authors": [
-    "Thomas Nägele <thomas.nagele@zalando.de>"
+    "Thomas Nägele <thomas.naegele.extern@zalando.de>"
   ],
   "licenses": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zalando/tbrand-solutions-dress-code.git"
+    "url": "https://github.com/zalando/brand-solutions-dress-code.git"
   },
   "engines": {
     "node": ">=0.10.0",
