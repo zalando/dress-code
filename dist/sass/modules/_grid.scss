@@ -116,36 +116,36 @@
 
 	body
 	{
-		@include debugmessage("Tiny \2014 0-320px", $red60);
+		@include bs-debugmessage("Tiny \2014 0-320px", $red60);
 
 		@include breakpoint($small-width)
 		{
-			@include debugmessage("Small \2014 320-480px", $orange60);
+			@include bs-debugmessage("Small \2014 320-480px", $orange60);
 		}
 
 		@include breakpoint($medium-width)
 		{
-			@include debugmessage("Medium \2014 480-600px", $yellow60);
+			@include bs-debugmessage("Medium \2014 480-600px", $yellow60);
 		}
 
 		@include breakpoint($large-width)
 		{
-			@include debugmessage("Large \2014 600-1024px", $green60);
+			@include bs-debugmessage("Large \2014 600-1024px", $green60);
 		}
 
 		@include breakpoint($huge-width)
 		{
-			@include debugmessage("Huge \2014 1024-1280px", $cyan60);
+			@include bs-debugmessage("Huge \2014 1024-1280px", $cyan60);
 		}
 
 		@include breakpoint($giant-width)
 		{
-			@include debugmessage("Giant \2014 1280-1600px", $blue60);
+			@include bs-debugmessage("Giant \2014 1280-1600px", $blue60);
 		}
 
 		@include breakpoint($monstrous-width)
 		{
-			@include debugmessage("Monstrous \2014 1600px and up", $purple60);
+			@include bs-debugmessage("Monstrous \2014 1600px and up", $purple60);
 		}
 	}
 
