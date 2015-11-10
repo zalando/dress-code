@@ -1,27 +1,27 @@
-$base-colors: (
+$bs-base-colors: (
 	dark: hsl(0, 0%, 12%),
 	medium: hsl(0, 0%, 46%),
 	light: hsl(0, 0%, 80%),
 	accent: #ff8e25
 );
 
-$theme-dark: (
-	menu-background: map-get($base-colors, dark),
-	menu-text: map-get($base-colors, light),
-	normal: map-get($base-colors, medium)
+$bs-theme-dark: (
+	menu-background: map-get($bs-base-colors, dark),
+	menu-text: map-get($bs-base-colors, light),
+	normal: map-get($bs-base-colors, medium)
 );
 
-$theme-light: (
+$bs-theme-light: (
 	menu-background: hsl(0, 0%, 100%),
-	menu-text: map-get($base-colors, medium),
-	normal: map-get($base-colors, medium)
+	menu-text: map-get($bs-base-colors, medium),
+	normal: map-get($bs-base-colors, medium)
 );
 
-$theme: $theme-light;
+$bs-theme: $bs-theme-light;
 
-$colors: map-merge($base-colors, $theme);
+$bs-colors: map-merge($bs-base-colors, $bs-theme);
 
-$menu-width: 20rem;
+$bs-menu-width: 20rem;
 
 
 // mixins

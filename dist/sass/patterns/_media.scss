@@ -48,7 +48,7 @@
 		.media__img
 		{
 			float:left;
-			margin-right: $space100;
+			margin-right: $bs-space100;
 
 			img
 			{
@@ -59,6 +59,6 @@
 		.media__img--rev
 		{
 			float:right;
-			margin-left: $space100;
+			margin-left: $bs-space100;
 		}
 	}

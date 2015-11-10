@@ -115,7 +115,7 @@ fabricator.setActiveItem = function () {
 			if (href.indexOf('#') > -1) {
 				id = href.split('#').pop();
 			} else {
-				id = href.split('/').pop().replace(/\.[^/.]+$/, '');
+				id = href.split('/').pop().replace(/\.[^/.]+$bs-/, '');
 			}
 
 			items.push(id);
@@ -140,7 +140,7 @@ fabricator.setActiveItem = function () {
 		if (href.indexOf('#') > -1) {
 			id = window.location.hash.replace('#', '');
 		} else {
-			id = window.location.pathname.split('/').pop().replace(/\.[^/.]+$/, '');
+			id = window.location.pathname.split('/').pop().replace(/\.[^/.]+$bs-/, '');
 		}
 
 		// In case the first menu item isn't the index page.

@@ -12,52 +12,52 @@
 
 .tile
 {
-	margin-bottom: $doubleSpace;
-	background:$white;
-	border:2px solid $grayLightest;
-	box-shadow:2px 2px 0 rgba($black, .2);
+	margin-bottom: $bs-doubleSpace;
+	background:$bs-white;
+	border:2px solid $bs-grayLightest;
+	box-shadow:2px 2px 0 rgba($bs-black, .2);
 	text-align:center;
 }
 
 .tile__link
 {
 	display:block;
-	padding: $doubleSpace $doubleSpace * 2;
-	color:$textColor;
+	padding: $bs-doubleSpace $bs-doubleSpace * 2;
+	color:$bs-textColor;
 }
 
 .touch .tile__link:active,
 .no-touch .tile__link:hover
 {
-	background:$grayLightest;
-	color:$textColor;
+	background:$bs-grayLightest;
+	color:$bs-textColor;
 }
 
 .tile--positive
 {
-	border:2px solid $greenLighter;
-	box-shadow:2px 2px 0 rgba($greenDark, .5);
+	border:2px solid $bs-greenLighter;
+	box-shadow:2px 2px 0 rgba($bs-greenDark, .5);
 }
 
 .tile--negative
 {
-	border:2px solid $redLighter;
-	box-shadow:2px 2px 0 rgba($redDark, .5);
+	border:2px solid $bs-redLighter;
+	box-shadow:2px 2px 0 rgba($bs-redDark, .5);
 }
 
 .tile__title
 {
-	margin-bottom: $singleSpace;
+	margin-bottom: $bs-singleSpace;
 	font-size: 2.4;
 	line-height:1.2;
 	text-transform:uppercase;
-	color:$grayLight;
+	color:$bs-grayLight;
 	font-weight:300;
 }
 
 .tile__text
 {
-	margin-bottom: $singleSpace;
+	margin-bottom: $bs-singleSpace;
 	font-size: 1.6;
 	line-height:1.5;
 }
@@ -72,12 +72,12 @@
 
 .tile__positive
 {
-	color:$green;
+	color:$bs-green;
 	font-weight:bold;
 }
 
 .tile__negative
 {
-	color:$red;
+	color:$bs-red;
 	font-weight:bold;
 }

@@ -12,65 +12,65 @@
 		{
 			@include display-flex(flex);
 			@include align-items(center);
-			margin-bottom: $space75;
-			padding: $space100;
+			margin-bottom: $bs-space75;
+			padding: $bs-space100;
 			max-width: 46;
-			background:$gray70;
+			background:$bs-gray70;
 			border-radius:2px;
 		}
 
 		.alert--info
 		{
-			background:lighten($blue70, 10%);
+			background:lighten($bs-blue70, 10%);
 		}
 
 		.alert--error
 		{
-			background:lighten($red70, 10%);
+			background:lighten($bs-red70, 10%);
 
 			.touch & a,
 			.no-touch & a
 			{
-				color:$red40;
+				color:$bs-red40;
 
 				&:hover,
 				&:active
 				{
-					color:$red30;
+					color:$bs-red30;
 				}
 			}
 		}
 
 		.alert--warning
 		{
-			background:lighten($yellow70, 10%);
+			background:lighten($bs-yellow70, 10%);
 
 			.touch & a,
 			.no-touch & a
 			{
-				color:$yellow30;
+				color:$bs-yellow30;
 
 				&:hover,
 				&:active
 				{
-					color:$yellow20;
+					color:$bs-yellow20;
 				}
 			}
 		}
 
 		.alert--success
 		{
-			background:lighten($green70, 10%);
+			background:lighten($bs-green70, 10%);
 
 			.touch & a,
 			.no-touch & a
 			{
-				color:$green30;
+				color:$bs-green30;
 
 				&:hover,
 				&:active
 				{
-					color:$green20;
+					color:$bs-green20;
 				}
 			}
 		}
@@ -83,5 +83,5 @@
 				.alert__img
 				{
 					display:block;
-					margin: 0 $space100 0 0;
+					margin: 0 $bs-space100 0 0;
 				}

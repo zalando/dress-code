@@ -4,8 +4,8 @@
 //
 //  ---------------------------------------------------------------------------
 
-		$mColor: $blue50;
-		$mBorder: $border100;
+		$bs-mColor: $bs-blue50;
+		$bs-mBorder: $bs-border100;
 
 
 
@@ -26,7 +26,7 @@
 				right:0;
 				bottom:0;
 				left:0;
-				border:$mBorder solid transparent;
+				border:$bs-mBorder solid transparent;
 				pointer-events:none;
 			}
 
@@ -34,7 +34,7 @@
 			{
 				&:before
 				{
-					border-color:$mColor;
+					border-color:$bs-mColor;
 				}
 
 				.m__actions
@@ -55,22 +55,22 @@
 
 		.m__action
 		{
-			padding: 0 $space50;
-			background:$mColor;
-			font-size: $font50;
-			font-weight:$boldFontWeight;
+			padding: 0 $bs-space50;
+			background:$bs-mColor;
+			font-size: $bs-font50;
+			font-weight:$bs-boldFontWeight;
 			text-transform:uppercase;
-			color:$white;
+			color:$bs-white;
 			cursor:pointer;
 
 			& + .m__action
 			{
-				border-left:1px solid lighten($mColor, 15%);
+				border-left:1px solid lighten($bs-mColor, 15%);
 			}
 
 			&:hover
 			{
-				background:darken($mColor, 10%);
+				background:darken($bs-mColor, 10%);
 			}
 		}
 
@@ -81,7 +81,7 @@
 
 		.m--mini
 		{
-			background:$white;
+			background:$bs-white;
 			text-align:center;
 			border-radius:2px;
 			box-shadow:0 1px 1px rgba(0,0,0,.2);

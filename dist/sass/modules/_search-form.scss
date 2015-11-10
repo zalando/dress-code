@@ -13,7 +13,7 @@
 		{
 			display: inline-block;
 			position:relative;
-			margin-bottom: $space150;
+			margin-bottom: $bs-space150;
 		}
 
 		.search-form__input
@@ -50,12 +50,12 @@
 
 				[fill^='#']
 				{
-					fill: $blue40;
+					fill: $bs-blue40;
 				}
 
 				[stroke^='#']
 				{
-					stroke: $blue40;
+					stroke: $bs-blue40;
 				}
 			}
 		}
@@ -74,8 +74,8 @@
 			margin: 0;
 			padding: 0;
 			min-width: 100%;
-			background: $white;
-			border: 1px solid $gray60;
+			background: $bs-white;
+			border: 1px solid $bs-gray60;
 			border-radius: 0 0 2px 2px;
 			box-shadow: 0 1px 1px rgba(0,0,0,.2);
 			list-style-type: none;
@@ -87,16 +87,16 @@
 		.suggest__link
 		{
 			display: block;
-			padding: 0 $space75;
-			line-height: $touchSize;
+			padding: 0 $bs-space75;
+			line-height: $bs-touchSize;
 			white-space: nowrap;
-			color: $textColor;
+			color: $bs-textColor;
 
 			.no-touch &:hover,
 			.touch &:active
 			{
-				background:desaturate(lighten($blue70, 10%), 10%);
-				color: $textColor;
+				background:desaturate(lighten($bs-blue70, 10%), 10%);
+				color: $bs-textColor;
 			}
 		}
 

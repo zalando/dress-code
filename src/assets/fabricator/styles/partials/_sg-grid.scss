@@ -15,29 +15,29 @@
 			@include display-flex(flex);
 			@include flex-wrap(wrap);
 		  position:relative;
-			margin-bottom: $space250;
+			margin-bottom: $bs-space250;
 		}
 
 			.sg-grid__element
 			{
 				width:50%;
 
-				@include breakpoint($medium-width)
+				@include breakpoint($bs-medium-width)
 				{
 					width:33.33%;
 				}
 
-				@include breakpoint($large-width)
+				@include breakpoint($bs-large-width)
 				{
 					width:25%;
 				}
 
-				@include breakpoint($huge-width)
+				@include breakpoint($bs-huge-width)
 				{
 					width:20%;
 				}
 
-				@include breakpoint($giant-width)
+				@include breakpoint($bs-giant-width)
 				{
 					width:14.25%;
 				}

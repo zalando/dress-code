@@ -15,7 +15,7 @@
 	@include display-flex(flex);
 	@include justify-content(space-between);
 	font-size: 1.2;
-	color:$gray;
+	color:$bs-gray;
 }
 
 .group__label

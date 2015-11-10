@@ -4,8 +4,8 @@
 //
 //  ---------------------------------------------------------------------------
 
-$navHeightHuge:3;
-$navAccentColor:$orange40;
+$bs-navHeightHuge:3;
+$bs-navAccentColor:$bs-orange40;
 
 
 
@@ -16,11 +16,11 @@ $navAccentColor:$orange40;
 .p-header
 {
 	position:relative;
-	margin-bottom: $space150;
+	margin-bottom: $bs-space150;
 
 	a
 	{
-		color:$textColor;
+		color:$bs-textColor;
 		transition: color .2s linear, background-color .2s linear;
 	}
 
@@ -39,12 +39,12 @@ $navAccentColor:$orange40;
 	{
 		[fill^='#']
 		{
-			fill:$orange40;
+			fill:$bs-orange40;
 		}
 
 		[stroke^='#']
 		{
-			stroke:$orange40;
+			stroke:$bs-orange40;
 		}
 	}
 }
@@ -74,19 +74,19 @@ $navAccentColor:$orange40;
 		position:relative;
 		display: flex;
 		justify-content: space-between;
-		height: $touchSize;
-		background-color:$white;
-		border-bottom:1px solid $gray60;
+		height: $bs-touchSize;
+		background-color:$bs-white;
+		border-bottom:1px solid $bs-gray60;
 
-		@include breakpoint($huge-width)
+		@include breakpoint($bs-huge-width)
 		{
-			padding-left: $space100;
+			padding-left: $bs-space100;
 		}
 	}
 
 	.nav-main-toggle
 	{
-		@include breakpoint($huge-width)
+		@include breakpoint($bs-huge-width)
 		{
 			display:none;
 		}
@@ -96,7 +96,7 @@ $navAccentColor:$orange40;
 	{
 		display:none;
 
-		@include breakpoint($large-width)
+		@include breakpoint($bs-large-width)
 		{
 			display:block;
 		}
@@ -107,19 +107,19 @@ $navAccentColor:$orange40;
 		display:none;
 		order: 2;
 		flex: 1 0 auto;
-		margin: 0 $space100;
-		font-size: $font150;
-		line-height: $touchSize;
-		font-weight:$normalFontWeight;
+		margin: 0 $bs-space100;
+		font-size: $bs-font150;
+		line-height: $bs-touchSize;
+		font-weight:$bs-normalFontWeight;
 
 		img { vertical-align:top; }
 
-		@include breakpoint($large-width)
+		@include breakpoint($bs-large-width)
 		{
-			margin-left: $space100;
+			margin-left: $bs-space100;
 		}
 
-		@include breakpoint($huge-width)
+		@include breakpoint($bs-huge-width)
 		{
 			display:block;
 			flex-grow: 0;
@@ -134,7 +134,7 @@ $navAccentColor:$orange40;
 		margin: .8 -.4 0 1.2;
 		vertical-align: top;
 
-		@include breakpoint($huge-width)
+		@include breakpoint($bs-huge-width)
 		{
 			display:none;
 
@@ -148,11 +148,11 @@ $navAccentColor:$orange40;
 	.logo--with-text
 	{
 		display:none;
-		margin-top: $space75;
-		margin-left: $space75;
-		height: $space100 + .6;
+		margin-top: $bs-space75;
+		margin-left: $bs-space75;
+		height: $bs-space100 + .6;
 
-		@include breakpoint($huge-width)
+		@include breakpoint($bs-huge-width)
 		{
 			display:inline-block;
 		}
@@ -173,10 +173,10 @@ $navAccentColor:$orange40;
 		order: 3;
 		flex: 1 0 auto;
 		position:relative;
-		// font-size: $font150;
-		line-height: $touchSize;
+		// font-size: $bs-font150;
+		line-height: $bs-touchSize;
 		text-transform: uppercase;
-		font-weight: $boldFontWeight;
+		font-weight: $bs-boldFontWeight;
 		text-align: center;
 		cursor:default;
 		pointer-events:none;
@@ -187,19 +187,19 @@ $navAccentColor:$orange40;
 			pointer-events:auto;
 		}
 
-		@include breakpoint($huge-width)
+		@include breakpoint($bs-huge-width)
 		{
 			// @include order(2);
 			flex: 0 0 auto;
-			margin-right: $space150;
-			font-size: $font100;
+			margin-right: $bs-space150;
+			font-size: $bs-font100;
 		}
 	}
 
 	.touch .nav-brand:active,
 	.no-touch .nav-brand:hover
 	{
-		color:$textColor;
+		color:$bs-textColor;
 
 		& .nav-brand__inner::after
 		{
@@ -217,7 +217,7 @@ $navAccentColor:$orange40;
 	{
 		display:inline-block;
 		position: relative;
-		line-height: $touchSize;
+		line-height: $bs-touchSize;
 
 		&::after
 		{
@@ -226,8 +226,8 @@ $navAccentColor:$orange40;
 			right:0;
 			bottom:1px;
 			left: 0;
-			height: $space50/2;
-			background:$orange40;
+			height: $bs-space50/2;
+			background:$bs-orange40;
 			opacity:0;
 			transition: opacity .1s linear;
 		}
@@ -249,11 +249,11 @@ $navAccentColor:$orange40;
 	overflow-x:scroll;
 	overflow-y:hidden;
 	-webkit-overflow-scrolling:touch;
-	border-top:$border50 solid $gray60;
-	border-bottom:$border50 solid $gray60;
+	border-top:$bs-border50 solid $bs-gray60;
+	border-bottom:$bs-border50 solid $bs-gray60;
 	transform-origin: 0 0 0;
 	transform: scaleY(0);
-	background:rgba($white, .85);
+	background:rgba($bs-white, .85);
 	opacity:0;
 	pointer-events:none;
 
@@ -271,12 +271,12 @@ $navAccentColor:$orange40;
 		opacity:0;
 	}
 
-	@include breakpoint($huge-width)
+	@include breakpoint($bs-huge-width)
 	{
 		position:static;
 		order: 3;
 		flex-grow: 1;
-		margin-left: $space100;
+		margin-left: $bs-space100;
 		border:0 none;
 		overflow-x:hidden;
 		transform: scaleY(1);
@@ -296,12 +296,12 @@ $navAccentColor:$orange40;
 	.nav-user__items
 	{
 		float:right;
-		margin-right: $space100;
+		margin-right: $bs-space100;
 		transform: translateX(100%);
 		transition: transform .2s ease-in-out, opacity .1s;
 	}
 
-	@include breakpoint($huge-width)
+	@include breakpoint($bs-huge-width)
 	{
 		overflow-x:hidden;
 	}
@@ -317,12 +317,12 @@ $navAccentColor:$orange40;
 		{
 			[fill^='#']
 			{
-				fill:$orange40;
+				fill:$bs-orange40;
 			}
 
 			[stroke^='#']
 			{
-				stroke:$orange40;
+				stroke:$bs-orange40;
 			}
 		}
 	}
@@ -346,17 +346,17 @@ $navAccentColor:$orange40;
 	{
 		.user-name
 		{
-			color:$orange40;
+			color:$bs-orange40;
 		}
 
 		[fill^='#']
 		{
-			fill:$orange40;
+			fill:$bs-orange40;
 		}
 
 		[stroke^='#']
 		{
-			stroke:$orange40;
+			stroke:$bs-orange40;
 		}
 	}
 
@@ -377,12 +377,12 @@ $navAccentColor:$orange40;
 	{
 		[fill^='#']
 		{
-			fill:$orange40;
+			fill:$bs-orange40;
 		}
 
 		[stroke^='#']
 		{
-			stroke:$orange40;
+			stroke:$bs-orange40;
 		}
 	}
 }
@@ -393,18 +393,18 @@ $navAccentColor:$orange40;
 	// {
 	// 	[fill^='#']
 	// 	{
-	// 		fill:$orange40;
+	// 		fill:$bs-orange40;
 	// 	}
 	//
 	// 	[stroke^='#']
 	// 	{
-	// 		stroke:$orange40;
+	// 		stroke:$bs-orange40;
 	// 	}
 	// }
 	//
 	// ~ .nav-user-toggle .user-name
 	// {
-	// 	color:$orange40;
+	// 	color:$bs-orange40;
 	// }
 
 		li:first-child
@@ -419,7 +419,7 @@ $navAccentColor:$orange40;
 				bottom:0;
 				left:0;
 				height:2px;
-				background:$orange40;
+				background:$bs-orange40;
 			}
 		}
 }
@@ -428,18 +428,18 @@ $navAccentColor:$orange40;
 {
 	[fill^='#']
 	{
-		fill:$orange40;
+		fill:$bs-orange40;
 	}
 
 	[stroke^='#']
 	{
-		stroke:$orange40;
+		stroke:$bs-orange40;
 	}
 }
 
 [href='help.html']
 {
-	margin-left: $space100;
+	margin-left: $bs-space100;
 	order: 6;
 }
 
@@ -447,12 +447,12 @@ $navAccentColor:$orange40;
 {
 	display:none;
 
-	@include breakpoint($large-width)
+	@include breakpoint($bs-large-width)
 	{
 		display:inline;
 		order: 4;
-		line-height: $touchSize;
-		margin-left: $space100;
+		line-height: $bs-touchSize;
+		margin-left: $bs-space100;
 		margin-right: -.6;
 	}
 }
@@ -477,7 +477,7 @@ $navAccentColor:$orange40;
 .nav-main__items,
 .nav-user__items
 {
-	height: $touchSize;
+	height: $bs-touchSize;
 	white-space:nowrap;
 }
 
@@ -497,11 +497,11 @@ $navAccentColor:$orange40;
 .nav-user__item
 {
 	display:inline-block;
-	margin-left: $space150;
+	margin-left: $bs-space150;
 
 	&:first-child
 	{
-		margin-left: $space100;
+		margin-left: $bs-space100;
 	}
 
 	&:active
@@ -529,8 +529,8 @@ $navAccentColor:$orange40;
 {
 	display:block;
 	position:relative;
-	height: $touchSize;
-	line-height: $touchSize;
+	height: $bs-touchSize;
+	line-height: $bs-touchSize;
 
 	&:after
 	{
@@ -539,8 +539,8 @@ $navAccentColor:$orange40;
 		right:0;
 		bottom:0;
 		left:0;
-		height:$border100;
-		background-color:$navAccentColor;
+		height:$bs-border100;
+		background-color:$bs-navAccentColor;
 		opacity:0;
 		transition: opacity .1s linear;
 	}
@@ -548,7 +548,7 @@ $navAccentColor:$orange40;
 
 .nav-main__link:after
 {
-	@include breakpoint($huge-width)
+	@include breakpoint($bs-huge-width)
 	{
 		bottom:1px;
 	}
@@ -561,7 +561,7 @@ $navAccentColor:$orange40;
 .p-header .nav-main__link--is-active,
 .p-header .nav-user__link--is-active
 {
-	color:$textColor;
+	color:$bs-textColor;
 
 	&:after
 	{

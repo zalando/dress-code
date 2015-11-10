@@ -8,13 +8,13 @@
 //  = GENERIC DEBUG MESSAGE E.G. FOR MEDIA QUERIES
 //  ---------------------------------------------------------------------------
 
-	@mixin bs-debugmessage($message, $color: rgba(255,255,0, 0.9))
+	@mixin bs-debugmessage($bs-message, $bs-color: rgba(255,255,0, 0.9))
 	{
-		// margin-top: $bodyLineHeight;
+		// margin-top: $bs-bodyLineHeight;
 
 		&::before
 		{
-			content:$message;
+			content:$bs-message;
 
 			display: block;
 			position:fixed;
@@ -22,11 +22,11 @@
 			top: 100%;
 			left:0;
 			z-index:910;
-			height: $bodyLineHeight;
+			height: $bs-bodyLineHeight;
 
-			background:#{$color};
+			background:#{$bs-color};
 
-			font-weight:$boldFontWeight;
+			font-weight:$bs-boldFontWeight;
 			text-align:center;
 			transition: transform .2s ease-out, opacity .2s;
 			transform: translateY(100%);

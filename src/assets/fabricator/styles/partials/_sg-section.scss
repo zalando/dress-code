@@ -12,12 +12,12 @@
 
 		.sg-section
 		{
-			padding-top: $space350;
-			margin-bottom: $space350;
+			padding-top: $bs-space350;
+			margin-bottom: $bs-space350;
 
 			@include breakpoint(huge-width)
 			{
-				padding-top: $space250;
+				padding-top: $bs-space250;
 			}
 		}
 
@@ -33,18 +33,18 @@
 			{
 				@extend .h3;
 
-				margin-top: $space350;
+				margin-top: $bs-space350;
 				text-transform:uppercase;
-				color:$gray50;
-				border-bottom:1px solid $gray60;
+				color:$bs-gray50;
+				border-bottom:1px solid $bs-gray60;
 
 				.sg-section__title + &
 				{
-					margin-top: $space250;
+					margin-top: $bs-space250;
 				}
 			}
 
 			.sg-section__sub-section
 			{
-				margin-bottom: $space100;
+				margin-bottom: $bs-space100;
 			}

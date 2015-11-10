@@ -19,8 +19,8 @@
 			bottom:0;
 			left:0;
 			z-index:999;
-			padding: $space100;
-			background:rgba($black, .6);
+			padding: $bs-space100;
+			background:rgba($bs-black, .6);
 			opacity:0;
 			pointer-events:none;
 			transition: opacity .2s .2s cubic-bezier(0.39, 0.58, 0.57, 1);
@@ -51,7 +51,7 @@
 
 		.dialog
 		{
-			background:$white;
+			background:$bs-white;
 			border-radius:2px;
 			box-shadow:0 5px 10px rgba(0,0,0,.2);
 			opacity:0;
@@ -70,7 +70,7 @@
 			{
 				[fill^='#']
 				{
-					fill:$blue30;
+					fill:$bs-blue30;
 				}
 			}
 
@@ -89,7 +89,7 @@
 		.dialog__bd,
 		.dialog__actions
 		{
-			padding: $space150 $space150 0;
+			padding: $bs-space150 $bs-space150 0;
 		}
 
 
@@ -100,18 +100,18 @@
 		{
 			display: flex;
 			justify-content: flex-end;
-			background:$gray70;
-			border-top:1px solid $gray60;
+			background:$bs-gray70;
+			border-top:1px solid $bs-gray60;
 			border-radius:0 0 2px 2px;
 		}
 
 		.dialog__primary
 		{
-			margin-bottom: $space150;
+			margin-bottom: $bs-space150;
 		}
 
 		.dialog__secondary
 		{
-			margin-right: $space150;
-			line-height: $touchSize;
+			margin-right: $bs-space150;
+			line-height: $bs-touchSize;
 		}

@@ -4,8 +4,8 @@
 //
 //  ---------------------------------------------------------------------------
 
-$headerHeight: $touchSize;
-$headerAccentColor: $orange40;
+$bs-headerHeight: $bs-touchSize;
+$bs-headerAccentColor: $bs-orange40;
 
 
 
@@ -21,32 +21,32 @@ $headerAccentColor: $orange40;
 			right: 0;
 			left: 0;
 			z-index: 900;
-			height: $headerHeight;
-			padding: $space75 $space100;
-			background: $white;
-			border-bottom: 1px solid $gray60;
+			height: $bs-headerHeight;
+			padding: $bs-space75 $bs-space100;
+			background: $bs-white;
+			border-bottom: 1px solid $bs-gray60;
 
 			.logo
 			{
 				padding-bottom: 2px;
-				max-height: $touchSize - $space150;
+				max-height: $bs-touchSize - $bs-space150;
 			}
 
-			// @include breakpoint($small-width)
+			// @include breakpoint($bs-small-width)
 			// {
-			// 	padding-right: $space100;
-			// 	padding-left: $space100;
+			// 	padding-right: $bs-space100;
+			// 	padding-left: $bs-space100;
 			// }
 			//
-			// @include breakpoint($large-width)
+			// @include breakpoint($bs-large-width)
 			// {
-			// 	padding-right: $space150;
-			// 	padding-left: $space150;
+			// 	padding-right: $bs-space150;
+			// 	padding-left: $bs-space150;
 			// }
 			//
-			// @include breakpoint($monstrous-width)
+			// @include breakpoint($bs-monstrous-width)
 			// {
-			// 	padding-right: $space250;
-			// 	padding-left: $space250;
+			// 	padding-right: $bs-space250;
+			// 	padding-left: $bs-space250;
 			// }
 		}

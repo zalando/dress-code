@@ -28,12 +28,12 @@
 		.bubble
 		{
 			position:absolute;
-			top: $space150;
+			top: $bs-space150;
 			left: -17.2;
-			padding: $space50 $space75;
-			background:rgba(lighten($black, 5%), .85);
+			padding: $bs-space50 $bs-space75;
+			background:rgba(lighten($bs-black, 5%), .85);
 			border-radius:2px;
-			color:$gray70;
+			color:$bs-gray70;
 			pointer-events:none;
 			opacity:0;
 			transform: translateY(-10%);
@@ -50,7 +50,7 @@
 				position: absolute;
 				pointer-events: none;
 				border-color: rgba(0, 0, 0, 0);
-				border-bottom-color: rgba(lighten($black, 5%), .85);
+				border-bottom-color: rgba(lighten($bs-black, 5%), .85);
 				border-width: 6px;
 				margin-left: -6px;
 			}

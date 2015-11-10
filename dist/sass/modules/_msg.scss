@@ -7,11 +7,11 @@
 		.dim
 		{
 			position:absolute;
-			top: $space200;
+			top: $bs-space200;
 			right:0;
 			bottom:0;
 			left:0;
-			background:rgba($black, .6);
+			background:rgba($bs-black, .6);
 			opacity:0;
 			pointer-events:none;
 			transition: opacity .1s linear;
@@ -34,19 +34,19 @@
 			// bottom:0;
 			// left:0;
 			// z-index:999;
-			margin-bottom: $space150;
-			padding: $space100 0;
+			margin-bottom: $bs-space150;
+			padding: $bs-space100 0;
 			background:rgba(#CCE9FF, .95);
 			border:1px solid #55B6FE;
-			font-size: $font50;
-			line-height: $font100 + .2;
-			color: $blue20;
+			font-size: $bs-font50;
+			line-height: $bs-font100 + .2;
+			color: $bs-blue20;
 			// transform: translateY(-100%);
 			transition: transform .2s ease-out;
 
-			@include breakpoint($medium-width)
+			@include breakpoint($bs-medium-width)
 			{
-				padding: $space100;
+				padding: $bs-space100;
 			}
 		}
 
@@ -60,9 +60,9 @@
 
 		.msg__icon
 		{
-			@include breakpoint($medium-width)
+			@include breakpoint($bs-medium-width)
 			{
-				margin-right: $space100;
+				margin-right: $bs-space100;
 			}
 		}
 
@@ -86,9 +86,9 @@
 		.msg__title
 		{
 			margin-bottom: 0;
-			font-size: $font100;
-			line-height: $bodyLineHeight;
-			color: $blue20;
+			font-size: $bs-font100;
+			line-height: $bs-bodyLineHeight;
+			color: $bs-blue20;
 		}
 
 		.msg__text
@@ -102,20 +102,20 @@
 
 			[fill^='#']
 			{
-				fill:$blue30;
+				fill:$bs-blue30;
 			}
 
 			&:hover
 			{
 				[fill^='#']
 				{
-					fill:$blue20;
+					fill:$bs-blue20;
 				}
 			}
 
-			@include breakpoint($medium-width)
+			@include breakpoint($bs-medium-width)
 			{
-				margin-left: $space100;
+				margin-left: $bs-space100;
 			}
 		}
 
@@ -128,7 +128,7 @@
 		// 		animation: toparea 1.6s linear 1;
 		// 	}
 		//
-		// 	@include breakpoint($huge-width)
+		// 	@include breakpoint($bs-huge-width)
 		// 	{
 		// 		> .nav-main
 		// 		{
@@ -146,7 +146,7 @@
 		// 		animation: toparea-long 6s linear 1;
 		// 	}
 		//
-		// 	@include breakpoint($huge-width)
+		// 	@include breakpoint($bs-huge-width)
 		// 	{
 		// 		> .nav-main
 		// 		{
@@ -169,11 +169,11 @@
 		{
 			background: rgba(#E3FFC7, .95);
 			border-color: #84E440;
-			color: $green20;
+			color: $bs-green20;
 
 			.msg__title
 			{
-				color:$green20;
+				color:$bs-green20;
 			}
 
 			.msg__close svg
@@ -182,14 +182,14 @@
 
 				[fill^='#']
 				{
-					fill:$green20;
+					fill:$bs-green20;
 				}
 
 				&:hover
 				{
 					[fill^='#']
 					{
-						fill:$green10;
+						fill:$bs-green10;
 					}
 				}
 			}
@@ -202,13 +202,13 @@
 
 		.msg--error
 		{
-			background:rgba(desaturate($red70, 10%), .5);
-			border-color:darken($red70, 5%);
-			color:$red20;
+			background:rgba(desaturate($bs-red70, 10%), .5);
+			border-color:darken($bs-red70, 5%);
+			color:$bs-red20;
 
 			.msg__title
 			{
-				color:$red20;
+				color:$bs-red20;
 			}
 
 			.msg__close svg
@@ -217,14 +217,14 @@
 
 				[fill^='#']
 				{
-					fill:$red20;
+					fill:$bs-red20;
 				}
 
 				&:hover
 				{
 					[fill^='#']
 					{
-						fill:$red10;
+						fill:$bs-red10;
 					}
 				}
 			}
@@ -237,13 +237,13 @@
 
 		.msg--warning
 		{
-			background:rgba($yellow70, .5);
-			border-color:darken($yellow70, 35%);
-			color:$yellow20;
+			background:rgba($bs-yellow70, .5);
+			border-color:darken($bs-yellow70, 35%);
+			color:$bs-yellow20;
 
 			.msg__title
 			{
-				color:$yellow20;
+				color:$bs-yellow20;
 			}
 
 			.msg__close svg
@@ -252,14 +252,14 @@
 
 				[fill^='#']
 				{
-					fill:$yellow20;
+					fill:$bs-yellow20;
 				}
 
 				&:hover
 				{
 					[fill^='#']
 					{
-						fill:$yellow10;
+						fill:$bs-yellow10;
 					}
 				}
 			}
@@ -272,9 +272,9 @@
 
 		.msg--info
 		{
-			background:rgba($blue70, .5);
-			border-color:darken($blue70, 5%);
-			color:$blue20;
+			background:rgba($bs-blue70, .5);
+			border-color:darken($bs-blue70, 5%);
+			color:$bs-blue20;
 		}
 
 

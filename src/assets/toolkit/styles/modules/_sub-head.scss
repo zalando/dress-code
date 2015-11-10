@@ -13,13 +13,13 @@
 .sub-head
 {
 	width:100%;
-	margin-bottom: $doubleSpace;
-	border-bottom:2px solid $grayLightest;
+	margin-bottom: $bs-doubleSpace;
+	border-bottom:2px solid $bs-grayLightest;
 }
 
 .sub-head__back
 {
-	margin-right: $singleSpace * 3;
+	margin-right: $bs-singleSpace * 3;
 	font-size: 1.6;
 }
 

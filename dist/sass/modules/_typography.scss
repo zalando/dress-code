@@ -20,12 +20,12 @@
 //  ---------------------------------------------------------------------------
 
 	h1,h2,h3,h4,h5,h6,hgroup,
-	.#{$bsPrefix}-list,dd,
+	.#{$bs-prefix}-list,dd,
 	p,figure,object,
 	pre,table,fieldset,hr
 	{
 		margin:0;
-		margin-bottom: $space150;
+		margin-bottom: $bs-space150;
 	}
 
 
@@ -37,18 +37,18 @@
 	html
 	{
 		height:100%;
-		font-family:$baseFontFamily;
-		font-size:$htmlFontSize;
-		line-height:$htmlLineHeight;
-		font-weight:$normalFontWeight;
+		font-family:$bs-baseFontFamily;
+		font-size:$bs-htmlFontSize;
+		line-height:$bs-htmlLineHeight;
+		font-weight:$bs-normalFontWeight;
 	}
 
 	body
 	{
-		font-size: $bodyFontSize;
-		line-height: $bodyLineHeight;
-		background: $bodyBackgroundColor;
-		color: $textColor;
+		font-size: $bs-bodyFontSize;
+		line-height: $bs-bodyLineHeight;
+		background: $bs-bodyBackgroundColor;
+		color: $bs-textColor;
 	}
 
 	pre
@@ -59,25 +59,25 @@
 
 	::-webkit-selection
 	{
-	    background-color:$secondaryAccent;
-	    color:$white;
+	    background-color:$bs-secondaryAccent;
+	    color:$bs-white;
 	}
 
 	::-moz-selection
 	{
-	    background-color:$secondaryAccent;
-	    color:$white;
+	    background-color:$bs-secondaryAccent;
+	    color:$bs-white;
 	}
 
 	::selection
 	{
-	    background-color:$secondaryAccent;
-	    color:$white;
+	    background-color:$bs-secondaryAccent;
+	    color:$bs-white;
 	}
 
 	strong
 	{
-		font-weight:$boldFontWeight;
+		font-weight:$bs-boldFontWeight;
 	}
 
 	em
@@ -101,10 +101,10 @@
 //  = LINKS
 //  ---------------------------------------------------------------------------
 
-	.#{$bsPrefix}-link
+	.#{$bs-prefix}-link
 	{
 		text-decoration:none;
-		color:$linkColor;
+		color:$bs-linkColor;
 		cursor:pointer;
 
 		transition: color .1s linear;
@@ -120,26 +120,26 @@
 	.touch a:active
 	{
 		text-decoration:none;
-		color:$linkColorHover;
+		color:$bs-linkColorHover;
 	}
 
-	.no-touch .#{$bsPrefix}-link--success:hover,
-	.touch .#{$bsPrefix}-link--success:active
+	.no-touch .#{$bs-prefix}-link--success:hover,
+	.touch .#{$bs-prefix}-link--success:active
 	{
-		color:$green30;
+		color:$bs-green30;
 	}
 
-	.no-touch .#{$bsPrefix}-link--destroy:hover,
-	.touch .#{$bsPrefix}-link--destroy:active
+	.no-touch .#{$bs-prefix}-link--destroy:hover,
+	.touch .#{$bs-prefix}-link--destroy:active
 	{
-		color:$red40;
+		color:$bs-red40;
 	}
 
-	.#{$bsPrefix}-link--disabled,
-	.touch .#{$bsPrefix}-link--disabled:active,
-	.no-touch .#{$bsPrefix}-link--disabled:hover
+	.#{$bs-prefix}-link--disabled,
+	.touch .#{$bs-prefix}-link--disabled:active,
+	.no-touch .#{$bs-prefix}-link--disabled:hover
 	{
-		color:$gray50;
+		color:$bs-gray50;
 		cursor:default;
 	}
 
@@ -162,11 +162,11 @@
 		{
 			content: attr(data-tooltip);
 			bottom: calc(100% + 12px);
-			padding: .2rem $space50;
-			background: rgba($black, .7);
+			padding: .2rem $bs-space50;
+			background: rgba($bs-black, .7);
 			border-radius: 2px;
-			line-height: $bodyLineHeight;
-			color:$white;
+			line-height: $bs-bodyLineHeight;
+			color:$bs-white;
 		}
 
 		&:after
@@ -176,8 +176,8 @@
 			height: 0;
 			width: 0;
 			border: solid transparent;
-			border-color: rgba($black, 0);
-			border-top-color: rgba($black, .7);
+			border-color: rgba($bs-black, 0);
+			border-top-color: rgba($bs-black, .7);
 			border-width: 6px;
 			margin-left: -6px;
 		}
@@ -198,18 +198,18 @@
 //  = LISTS
 //  ---------------------------------------------------------------------------
 
-	.#{$bsPrefix}-list {
+	.#{$bs-prefix}-list {
 		padding-left: 3rem;
 	}
 
-	.#{$bsPrefix}-list--is-reset {
+	.#{$bs-prefix}-list--is-reset {
 		padding:0;
 		list-style-type:none;
 	}
 
 	dt
 	{
-		font-family:$baseFontFamily;
+		font-family:$bs-baseFontFamily;
 	}
 
 
@@ -221,42 +221,42 @@
 	.h1, .h2, .h3, .h4, .h5, .h6,
 	%h1, %h2, %h3, %h4, %h5, %h6
 	{
-		margin-bottom: $space150;
-		font-family:$headingsFontFamily;
-		font-weight:$headingsFontWeight;
-		color:$headingsColor;
+		margin-bottom: $bs-space150;
+		font-family:$bs-headingsFontFamily;
+		font-weight:$bs-headingsFontWeight;
+		color:$bs-headingsColor;
 
 		small
 		{
 			display:block;
-			font-family:$baseFontFamily;
+			font-family:$bs-baseFontFamily;
 			font-size:60%;
-			color:$gray50;
+			color:$bs-gray50;
 		}
 	}
 
 	h1, .h1
 	{
-		font-size: $h1Size;
-		line-height: $h1LineHeight;
+		font-size: $bs-h1Size;
+		line-height: $bs-h1LineHeight;
 	}
 
 	h2, .h2
 	{
-		font-size: $h2Size;
-		line-height: $h2LineHeight;
+		font-size: $bs-h2Size;
+		line-height: $bs-h2LineHeight;
 	}
 
 	h3, .h3
 	{
-		font-size: $h3Size;
-		line-height: $h3LineHeight;
+		font-size: $bs-h3Size;
+		line-height: $bs-h3LineHeight;
 	}
 
 	h4, .h4
 	{
-		font-size: $h4Size;
-		line-height: $h4LineHeight;
+		font-size: $bs-h4Size;
+		line-height: $bs-h4LineHeight;
 	}
 
 
@@ -271,24 +271,24 @@
 
 	.text--small
 	{
-		font-size: $font50;
+		font-size: $bs-font50;
 		line-height: 1.8;
 	}
 
 	.less-important
 	{
-		font-size: $font50;
+		font-size: $bs-font50;
 		line-height:1;
-		color:$gray60;
+		color:$bs-gray60;
 	}
 
 	.text--error
 	{
 		display:block;
-		margin-top: - $space150;
-		margin-bottom: $space150;
-		font-size: $font50;
-		color:$red40;
+		margin-top: - $bs-space150;
+		margin-bottom: $bs-space150;
+		font-size: $bs-font50;
+		color:$bs-red40;
 	}
 
 
@@ -307,12 +307,12 @@
 			{
 				[stroke^='#']
 				{
-					stroke:$blue20;
+					stroke:$bs-blue20;
 				}
 
 				[fill^='#']
 				{
-					fill:$blue20;
+					fill:$bs-blue20;
 				}
 			}
 
@@ -326,12 +326,12 @@
 		{
 			[stroke^='#']
 			{
-				stroke:$red40;
+				stroke:$bs-red40;
 			}
 
 			[fill^='#']
 			{
-				fill:$red40;
+				fill:$bs-red40;
 			}
 		}
 
@@ -346,12 +346,12 @@
 
 			[stroke^='#']
 			{
-				stroke:$gray60;
+				stroke:$bs-gray60;
 			}
 
 			[fill^='#']
 			{
-				fill:$gray60;
+				fill:$bs-gray60;
 			}
 		}
 
@@ -359,7 +359,7 @@
 		{
 			[fill^='#']
 			{
-				fill:$blue20;
+				fill:$bs-blue20;
 			}
 		}
 

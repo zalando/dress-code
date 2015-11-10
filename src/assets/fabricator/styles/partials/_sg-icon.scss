@@ -13,15 +13,15 @@
 		.sg-icon
 		{
 			display:inline-block;
-			margin-bottom: $font250;
-			padding: $space100;
-			background-color: $white;
-			border:1px solid $gray60;
+			margin-bottom: $bs-font250;
+			padding: $bs-space100;
+			background-color: $bs-white;
+			border:1px solid $bs-gray60;
 			text-align:center;
 
 			svg
 			{
-				margin-bottom: $font50;
+				margin-bottom: $bs-font50;
 				vertical-align:middle;
 			}
 
@@ -31,12 +31,12 @@
 				{
 					[fill^='#']
 					{
-						fill:$blue30;
+						fill:$bs-blue30;
 					}
 
 					[stroke^='#']
 					{
-						stroke:$blue30;
+						stroke:$bs-blue30;
 					}
 				}
 
@@ -54,12 +54,12 @@
 				{
 					[fill^='#']
 					{
-						fill:$orange40;
+						fill:$bs-orange40;
 					}
 
 					[stroke^='#']
 					{
-						stroke:$orange40;
+						stroke:$bs-orange40;
 					}
 				}
 			}

@@ -8,16 +8,16 @@
 .page-wrapper
 {
 	@include flex-grow(1);
-	padding: $space200 $space50;
+	padding: $bs-space200 $bs-space50;
 
-	@include breakpoint($large-width)
+	@include breakpoint($bs-large-width)
 	{
-		padding: $space200 $space100;
+		padding: $bs-space200 $bs-space100;
 	}
 
-	@include breakpoint($huge-width)
+	@include breakpoint($bs-huge-width)
 	{
-		padding: $space200 $space150;
+		padding: $bs-space200 $bs-space150;
 	}
 }
 
@@ -25,12 +25,12 @@
 {
 	padding-top:0;
 
-	@include breakpoint($large-width)
+	@include breakpoint($bs-large-width)
 	{
 		padding-top:0;
 	}
 
-	@include breakpoint($huge-width)
+	@include breakpoint($bs-huge-width)
 	{
 		padding-top:0;
 	}
@@ -38,7 +38,7 @@
 
 .page-wrapper--styleguide
 {
-	padding-top: $touchSize * 2;
+	padding-top: $bs-touchSize * 2;
 }
 
 
@@ -52,7 +52,7 @@
 	min-width: 32;
 	max-width: 160;
 
-	// @include breakpoint($large-width)
+	// @include breakpoint($bs-large-width)
 	// {
 	// 	@include display-flex(flex);
 	// 	@include flex-wrap(wrap);
@@ -65,20 +65,20 @@
 {
 	@extend .h3;
 	display:inline-block;
-	margin-left: $space75;
-	margin-bottom: $space100;
+	margin-left: $bs-space75;
+	margin-bottom: $bs-space100;
 
-	@include breakpoint($large-width)
+	@include breakpoint($bs-large-width)
 	{
-		font-size: $h2Size;
-		line-height: $h2LineHeight;
+		font-size: $bs-h2Size;
+		line-height: $bs-h2LineHeight;
 	}
 
-	@include breakpoint($huge-width)
+	@include breakpoint($bs-huge-width)
 	{
 		display:block;
-		font-size: $h1Size;
-		line-height: $h1LineHeight;
+		font-size: $bs-h1Size;
+		line-height: $bs-h1LineHeight;
 		text-align:center;
 	}
 
@@ -86,7 +86,7 @@
 	{
 		display:none!important;
 
-		@include breakpoint($huge-width + .1)
+		@include breakpoint($bs-huge-width + .1)
 		{
 			display:inline!important;
 		}
@@ -96,13 +96,13 @@
 .page-header__primary-action
 {
 	float:right;
-	// margin-top: (-$space75 -$touchSize);
+	// margin-top: (-$bs-space75 -$bs-touchSize);
 
-	@include breakpoint($huge-width)
+	@include breakpoint($bs-huge-width)
 	{
 		float:none;
 		position:absolute;
-		top: $space100;
+		top: $bs-space100;
 		right:0;
 		margin-top:0;
 	}
@@ -111,18 +111,18 @@
 .page
 {
 	margin:0 auto;
-	margin: 0 auto $space200;
-	padding: $space100;
+	margin: 0 auto $bs-space200;
+	padding: $bs-space100;
 	min-width: 32;
 	max-width: 160;
-	background:$white;
-	// box-shadow:0 0  0   1px rgba($black, .03),
-	// 					 0 0 25px 0   rgba($black, .1);
+	background:$bs-white;
+	// box-shadow:0 0  0   1px rgba($bs-black, .03),
+	// 					 0 0 25px 0   rgba($bs-black, .1);
 	box-shadow:0 1px 1px rgba(0,0,0,.2);
 
-	@include breakpoint($large-width)
+	@include breakpoint($bs-large-width)
 	{
-		padding: $space150;
+		padding: $bs-space150;
 	}
 }
 

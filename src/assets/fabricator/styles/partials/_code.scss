@@ -4,7 +4,7 @@
  */
 
 // color vars
-$code-colors: (
+$bs-code-colors: (
 	blue: #26aafe,
 	teal: #24e0fe,
 	black: #4a4a4a,
@@ -21,7 +21,7 @@ $code-colors: (
 code,
 code[class*='language-'],
 pre[class*='language-'] {
-	color: map-get($code-colors, black);
+	color: map-get($bs-code-colors, black);
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
@@ -37,9 +37,9 @@ pre[class*='language-'] {
 // code blocks
 pre[class*='language-'] {
 	overflow: auto;
-	margin: 0 0 $space150;
-	padding: $space100;
-	// border: 1px solid $gray60;
+	margin: 0 0 $bs-space150;
+	padding: $bs-space100;
+	// border: 1px solid $bs-gray60;
 	border-radius: 2px;
 	// box-shadow: inset 0 1px 1px rgba(0,0,0,.2);
 }
@@ -61,7 +61,7 @@ table code {
 code,
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
-	background: map-get($code-colors, light-gray);
+	background: map-get($bs-code-colors, light-gray);
 }
 
 // inline code
@@ -78,27 +78,27 @@ pre[class*='language-'] {
 	&.prolog,
 	&.doctype,
 	&.cdata {
-		color: map-get($code-colors, dark-gray);
+		color: map-get($bs-code-colors, dark-gray);
 	}
 
 	&.punctuation,
 	&.string,
 	&.atrule {
-		color: map-get($code-colors, dark-gray);
+		color: map-get($bs-code-colors, dark-gray);
 	}
 
 	&.attr-value {
-		color: map-get($code-colors, orange);
+		color: map-get($bs-code-colors, orange);
 	}
 
 	&.property,
 	&.tag {
-		color: map-get($code-colors, blue);
+		color: map-get($bs-code-colors, blue);
 	}
 
 	&.boolean,
 	&.number {
-		color: map-get($code-colors, teal);
+		color: map-get($bs-code-colors, teal);
 	}
 
 	&.selector,
@@ -107,7 +107,7 @@ pre[class*='language-'] {
 	&.keyword,
 	&.regex,
 	&.important {
-		color: map-get($code-colors, purple);
+		color: map-get($bs-code-colors, purple);
 	}
 
 
@@ -115,7 +115,7 @@ pre[class*='language-'] {
 	&.entity,
 	&.url,
 	.language-css &.string {
-		color: map-get($code-colors, purple);
+		color: map-get($bs-code-colors, purple);
 	}
 
 	&.entity {

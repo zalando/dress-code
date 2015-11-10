@@ -13,7 +13,7 @@
 		.brand-logo
 		{
 			margin:0 auto;
-			margin: $space150 auto $space200;
+			margin: $bs-space150 auto $bs-space200;
 		}
 
 
@@ -34,7 +34,7 @@
 			@include display-flex(flex);
 			@include flex-wrap(wrap);
 			@include align-items(stretch);
-			margin-left: -$space100;
+			margin-left: -$bs-space100;
 		}
 
 			.brand
@@ -42,8 +42,8 @@
 				@include display-flex(flex);
 				@include align-items(stretch);
 				width:50%;
-				margin-bottom: $space150;
-				padding-left: $space100;
+				margin-bottom: $bs-space150;
+				padding-left: $bs-space100;
 
 				> a
 				{
@@ -51,13 +51,13 @@
 					@include flex-direction(column);
 					@include justify-content(center);
 
-					padding: $space150 $space150 $space100;
+					padding: $bs-space150 $bs-space150 $bs-space100;
 					border:1px solid transparent;
 					border-radius: 2px;
 
 					.no-touch &:hover
 					{
-						border-color:$gray70;
+						border-color:$bs-gray70;
 					}
 				}
 
@@ -71,7 +71,7 @@
 					width:33.33%;
 				}
 
-				@include breakpoint($large-width)
+				@include breakpoint($bs-large-width)
 				{
 					width:25%;
 				}
@@ -81,19 +81,19 @@
 					width:20%;
 				}
 
-				@include breakpoint($huge-width)
+				@include breakpoint($bs-huge-width)
 				{
 					> a
 					{
-						padding: $space150 $space200 $space100;
+						padding: $bs-space150 $bs-space200 $bs-space100;
 					}
 				}
 
-				@include breakpoint($giant-width)
+				@include breakpoint($bs-giant-width)
 				{
 					> a
 					{
-						padding: $space150 $space250 $space100;
+						padding: $bs-space150 $bs-space250 $bs-space100;
 					}
 				}
 			}
@@ -101,17 +101,17 @@
 				.brand__img
 				{
 					// max-width: 13;
-					margin-bottom: $space150;
+					margin-bottom: $bs-space150;
 					@include flex(1 0 auto);
 				}
 
 				.brand__title
 				{
-					font-size: $font50;
+					font-size: $bs-font50;
 					line-height:1;
 					text-align:center;
 					text-transform:capitalize;
-					color:$gray50;
+					color:$bs-gray50;
 
 					.no-touch &
 					{
@@ -121,7 +121,7 @@
 
 					.no-touch a:hover &
 					{
-						color:$gray50;
+						color:$bs-gray50;
 						opacity:1;
 					}
 				}

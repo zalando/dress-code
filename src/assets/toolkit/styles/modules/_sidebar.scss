@@ -19,19 +19,19 @@
 		position:absolute;
 		top:0;
 		right:100%;
-		background:$primaryAccent;
-		color:$white;
+		background:$bs-primaryAccent;
+		color:$bs-white;
 	}
 
 	&:hover
 	{
-		padding-right: $space100;
+		padding-right: $bs-space100;
 		width: 20;
 	}
 }
 
 .sidebar__inner
 {
-	padding: $space200 $space100;
+	padding: $bs-space200 $bs-space100;
 	overflow:hidden;
 }

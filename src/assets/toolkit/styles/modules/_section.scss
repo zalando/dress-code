@@ -12,27 +12,27 @@
 
 		.section
 		{
-			margin-bottom: $space150;
+			margin-bottom: $bs-space150;
 		}
 
 			.section__actions
 			{
 				float:right;
-				margin-top: -$space50;
+				margin-top: -$bs-space50;
 			}
 
 			.section__title
 			{
 				@extend .h4;
-				padding-bottom: $space75;
-				border-bottom:1px solid $gray60;
+				padding-bottom: $bs-space75;
+				border-bottom:1px solid $bs-gray60;
 			}
 
 			.section__sub-title
 			{
 				@extend .label;
 
-				border-bottom:1px solid $gray70;
+				border-bottom:1px solid $bs-gray70;
 			}
 
 
@@ -43,15 +43,15 @@
 
 		.section--dashboard
 		{
-			@include breakpoint($huge-width)
+			@include breakpoint($bs-huge-width)
 			{
 				@include display-flex(flex);
-				margin-left: -$space150;
+				margin-left: -$bs-space150;
 
 				.section__sub-section
 				{
 					width:33.33%;
-					padding-left: $space150;
+					padding-left: $bs-space150;
 				}
 			}
 		}

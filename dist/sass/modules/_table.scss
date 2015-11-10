@@ -4,73 +4,73 @@
 //
 //  ---------------------------------------------------------------------------
 
-.#{$bsPrefix}-table {
-	background: $white;
+.#{$bs-prefix}-table {
+	background: $bs-white;
 	border-radius: 2px;
 }
 
-.#{$bsPrefix}-table__item-title {
-	font-weight: $boldFontWeight;
+.#{$bs-prefix}-table__item-title {
+	font-weight: $bs-boldFontWeight;
 }
 
 .status { // FIXME!
 	&:before {
 		content: " ";
 		display: inline-block;
-		width: $space75;
-		height: $space75;
-		margin-right: $space75;
+		width: $bs-space75;
+		height: $bs-space75;
+		margin-right: $bs-space75;
 		border-radius: 2px;
 	}
 }
 
 .status--online:before {
-	background: $green30;
+	background: $bs-green30;
 }
 
 .status--offline:before {
-	background: $gray50;
+	background: $bs-gray50;
 }
 
 //  = TABLE
 //  ---------------------------------------------------------------------------
 
-.#{$bsPrefix}-table__tr {
+.#{$bs-prefix}-table__tr {
 	@extend .cf;
 	cursor: pointer;
 }
 
-.#{$bsPrefix}-table__actions-wrapper {
+.#{$bs-prefix}-table__actions-wrapper {
 	display: none;
 }
 
-@include breakpoint(0 $huge-width - .1) {
-	.#{$bsPrefix}-table,
-	.#{$bsPrefix}-table__thead,
-	.#{$bsPrefix}-table__tbody,
-	.#{$bsPrefix}-table__tr,
-	.#{$bsPrefix}-table__th,
-	.#{$bsPrefix}-table__td {
+@include breakpoint(0 $bs-huge-width - .1) {
+	.#{$bs-prefix}-table,
+	.#{$bs-prefix}-table__thead,
+	.#{$bs-prefix}-table__tbody,
+	.#{$bs-prefix}-table__tr,
+	.#{$bs-prefix}-table__th,
+	.#{$bs-prefix}-table__td {
 		display: block;
 		width: 100%;
-		font-weight: $normalFontWeight;
+		font-weight: $bs-normalFontWeight;
 	}
 
-	.#{$bsPrefix}-table__thead > tr {
+	.#{$bs-prefix}-table__thead > tr {
 		display: none;
 	}
 
-	.#{$bsPrefix}-table__tr {
+	.#{$bs-prefix}-table__tr {
 		position: relative;
-		padding: $space100 0;
-		border-bottom: 1px solid $gray70;
+		padding: $bs-space100 0;
+		border-bottom: 1px solid $bs-gray70;
 
 		&:last-child {
 			border-bottom: 0 none;
 		}
 	}
 
-	.#{$bsPrefix}-table__td {
+	.#{$bs-prefix}-table__td {
 		padding-left: calc(30% + 12px);
 		text-align: left;
 
@@ -80,9 +80,9 @@
 			position: absolute;
 			left: 0;
 			right: 70%;
-			font-size: $font50;
+			font-size: $bs-font50;
 			line-height: 2.6;
-			font-weight: $boldFontWeight;
+			font-weight: $bs-boldFontWeight;
 			text-transform: uppercase;
 			text-align: right;
 		}
@@ -98,7 +98,7 @@
 		// }
 	}
 
-	.page--dashboard .#{$bsPrefix}-table__td:last-child { // FIXME
+	.page--dashboard .#{$bs-prefix}-table__td:last-child { // FIXME
 		padding-left: calc(30% + 12px);
 
 		&::before {
@@ -107,47 +107,47 @@
 	}
 }
 
-.#{$bsPrefix}-table {
+.#{$bs-prefix}-table {
 	width: 100%;
 	text-align: left;
 }
 
-.#{$bsPrefix}-table__th {
+.#{$bs-prefix}-table__th {
 	text-transform: uppercase;
 }
 
-.#{$bsPrefix}-table__td {
-	font-weight: $normalFontWeight;
+.#{$bs-prefix}-table__td {
+	font-weight: $bs-normalFontWeight;
 }
 
-.#{$bsPrefix}-table__actions-toggle {
+.#{$bs-prefix}-table__actions-toggle {
 	display: none;
 }
 
-.#{$bsPrefix}-table__actions-label {
+.#{$bs-prefix}-table__actions-label {
 	display: inline;
-	color: $linkColor;
+	color: $bs-linkColor;
 	cursor: pointer;
 
 	&:hover {
-		color: $linkColorHover;
+		color: $bs-linkColorHover;
 	}
 }
 
-:checked + .#{$bsPrefix}-table__actions-label {
-	color: $linkColorHover;
+:checked + .#{$bs-prefix}-table__actions-label {
+	color: $bs-linkColorHover;
 }
 
-.#{$bsPrefix}-table__actions {
+.#{$bs-prefix}-table__actions {
 	display: none;
 	position: absolute;
 	top: 100%;
 	right: -1;
-	background: $white;
-	border: 1px solid $gray60;
+	background: $bs-white;
+	border: 1px solid $bs-gray60;
 	border-radius: 2px;
-	box-shadow: 0 1px 2px rgba($black, .2);
-	line-height: $touchSize;
+	box-shadow: 0 1px 2px rgba($bs-black, .2);
+	line-height: $bs-touchSize;
 	z-index: 900;
 
 	&:after,
@@ -155,7 +155,7 @@
 		content: " ";
 		position: absolute;
 		bottom: 100%;
-		right: $space100;
+		right: $bs-space100;
 		height: 0;
 		width: 0;
 		border: solid transparent;
@@ -176,25 +176,25 @@
 	}
 }
 
-.#{$bsPrefix}-table__actions-toggle:checked ~ .table__actions {
+.#{$bs-prefix}-table__actions-toggle:checked ~ .table__actions {
 	display: inline-block;
 }
 
-.#{$bsPrefix}-table__action {
-	padding: 0 $space100;
+.#{$bs-prefix}-table__action {
+	padding: 0 $bs-space100;
 }
 
-.#{$bsPrefix}-table__action--disabled,
-.#{$bsPrefix}-table__action--disabled a,
-.touch .#{$bsPrefix}-table__action--disabled a:active,
-.no-touch .#{$bsPrefix}-table__action--disabled a:hover {
+.#{$bs-prefix}-table__action--disabled,
+.#{$bs-prefix}-table__action--disabled a,
+.touch .#{$bs-prefix}-table__action--disabled a:active,
+.no-touch .#{$bs-prefix}-table__action--disabled a:hover {
 	cursor: default;
-	color: $gray60;
+	color: $bs-gray60;
 	text-decoration: none;
 }
 
-@include breakpoint($large-width $huge-width - .1) {
-	.#{$bsPrefix}-table__td {
+@include breakpoint($bs-large-width $bs-huge-width - .1) {
+	.#{$bs-prefix}-table__td {
 		position: relative;
 		float: left;
 		width: 50%;
@@ -209,7 +209,7 @@
 		}
 
 		&:first-child {
-			margin-bottom: $space50;
+			margin-bottom: $bs-space50;
 			width: 100%;
 
 			&:before {
@@ -219,64 +219,64 @@
 	}
 }
 
-@include breakpoint($huge-width) {
-	.#{$bsPrefix}-table__actions-wrapper {
+@include breakpoint($bs-huge-width) {
+	.#{$bs-prefix}-table__actions-wrapper {
 		display: block;
 		position: relative;
 		padding: .4 0;
 	}
 
-	.#{$bsPrefix}-table__actions {
-		padding: $space50 $space50 $space50 0;
+	.#{$bs-prefix}-table__actions {
+		padding: $bs-space50 $bs-space50 $bs-space50 0;
 		line-height: 1;
 	}
 
-	.#{$bsPrefix}-table__action {
+	.#{$bs-prefix}-table__action {
 		display: inline-block;
 		padding: 0;
-		margin-left: $space50;
+		margin-left: $bs-space50;
 	}
 
-	.#{$bsPrefix}-table__action-group-start {
-		padding-left: $space100;
+	.#{$bs-prefix}-table__action-group-start {
+		padding-left: $bs-space100;
 	}
 
-	.#{$bsPrefix}-table__action-group-end {
-		padding-right: $space100;
+	.#{$bs-prefix}-table__action-group-end {
+		padding-right: $bs-space100;
 	}
 
 	[title='Preview'] { // FIXME
-		margin-left: $space100;
+		margin-left: $bs-space100;
 
 		.styleguide & {
 			margin-left: 0;
 		}
 	}
 
-	.#{$bsPrefix}-table__tr {
-		border-bottom: 1px solid $gray70;
+	.#{$bs-prefix}-table__tr {
+		border-bottom: 1px solid $bs-gray70;
 	}
 
-	.#{$bsPrefix}-table__tbody > .table__tr {
+	.#{$bs-prefix}-table__tbody > .table__tr {
 		&:hover {
-			background: desaturate(lighten($blue70, 12%), 10%);
+			background: desaturate(lighten($bs-blue70, 12%), 10%);
 		}
 	}
 
-	body:not(.is-admin) .#{$bsPrefix}-table__tbody > .#{$bsPrefix}-table__tr--is-in-review { // FIXME
+	body:not(.is-admin) .#{$bs-prefix}-table__tbody > .#{$bs-prefix}-table__tr--is-in-review { // FIXME
 		&:hover {
 			background: transparent;
 			cursor: default;
 		}
 	}
 
-	.#{$bsPrefix}-table__th,
-	.#{$bsPrefix}-table__td {
-		padding: $space50 $space50 / 2;
+	.#{$bs-prefix}-table__th,
+	.#{$bs-prefix}-table__td {
+		padding: $bs-space50 $bs-space50 / 2;
 		line-height: 1.5;
 
 		&:first-child {
-			padding-left: $space100 / 2;
+			padding-left: $bs-space100 / 2;
 		}
 
 		// &:last-child
@@ -286,24 +286,24 @@
 		// }
 
 		@include breakpoint(1150px) {
-			padding: 0 $space100;
+			padding: 0 $bs-space100;
 		}
 	}
 
-	.page--dashboard .#{$bsPrefix}-table__th:last-child, // FIXME
-	.page--dashboard .#{$bsPrefix}-table__td:last-child {
+	.page--dashboard .#{$bs-prefix}-table__th:last-child, // FIXME
+	.page--dashboard .#{$bs-prefix}-table__td:last-child {
 		text-align: left;
 	}
 
-	.#{$bsPrefix}-table__th {
+	.#{$bs-prefix}-table__th {
 		@include breakpoint(1150px) {
-			padding: $space50 $space100;
+			padding: $bs-space50 $bs-space100;
 		}
 	}
 
-	.#{$bsPrefix}-table__td {
-		padding-top: $space75;
-		padding-bottom: $space75;
+	.#{$bs-prefix}-table__td {
+		padding-top: $bs-space75;
+		padding-bottom: $bs-space75;
 		white-space: nowrap;
 
 		@include breakpoint(1280px) {
@@ -313,13 +313,13 @@
 		}
 	}
 
-	.#{$bsPrefix}-table__item-title {
-		font-weight: $normalFontWeight;
+	.#{$bs-prefix}-table__item-title {
+		font-weight: $bs-normalFontWeight;
 		white-space: normal;
 	}
 }
 
-.touch .page--dashboard .#{$bsPrefix}-table__tr { // FIXME
+.touch .page--dashboard .#{$bs-prefix}-table__tr { // FIXME
 	position: relative;
 
 	&::after {
