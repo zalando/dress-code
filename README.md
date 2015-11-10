@@ -10,7 +10,7 @@ The Brand Solutions Dress Code UI toolkit is a highly-modular design system for 
 
 ## Getting Started
 
-Holy Bible requires:
+Brand Solutions Dress Code requires:
 
 * [node.js](http://nodejs.org). Make sure your have `v0.10` or higher installed before proceeding.
 * [modernizer](https://modernizr.com/) included in the ```<head>``` of your web page
