@@ -7,8 +7,7 @@ module.exports = function(_config) {
 
 	var config = {
 		entry: {
-			'fabricator/scripts/f': _config.src.scripts.fabricator,
-			'toolkit/scripts/toolkit': _config.src.scripts.toolkit
+			'fabricator/scripts/f': _config.src.scripts.fabricator
 		},
 		output: {
 			path: path.resolve(__dirname, _config.demo, 'assets'),

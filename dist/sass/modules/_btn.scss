@@ -7,6 +7,7 @@
 //  = BASE
 //  ---------------------------------------------------------------------------
 
+<<<<<<< HEAD
 .#{$bs-prefix}-btn {
 	display: inline-block;
 	margin-right: $bs-space50;
@@ -47,11 +48,59 @@
 	box-shadow: inset 0 1px 1px rgba($bs-black, .1);
 	color: $bs-gray10;
 	text-decoration: none;
+=======
+.btn,
+button {
+
+    display: inline-block;
+    margin-right: $space50;
+    margin-bottom: $space100;
+    padding: $space100 - .1 $space100;
+    line-height: $space100;
+    background: linear-gradient($white, darken($white, 7%));
+    border: 1px solid $gray50;
+    border-radius: $radius100;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: center;
+    color: $gray10;
+    box-shadow: 0 1px 1px transparent;
+    cursor: default;
+
+    transition: box-shadow .2s linear, border-color .2s linear;
+
+    &:focus {
+        outline: 0;
+
+        // TODO: Validate whether we need visible :focus
+        // border-color:$blue40;
+    }
+}
+
+.no-touch .btn:hover,
+.no-touch button:hover {
+    box-shadow: 0 1px 1px rgba($black, .2);
+    background: linear-gradient($white, darken($white, 5%));
+    color: $gray10;
+    text-decoration: none;
+    outline: 0;
+}
+
+.touch .btn:active,
+.no-touch .btn:active,
+.touch button:active,
+.no-touch button:active {
+    background: darken($white, 4%);
+    box-shadow: inset 0 1px 1px rgba($black, .1);
+    color: $gray10;
+    text-decoration: none;
+>>>>>>> develop
 }
 
 //  = ICON BUTTONS
 //  ---------------------------------------------------------------------------
 
+<<<<<<< HEAD
 .#{$bs-prefix}-btn--icon {
 	padding: 0;
 	width: $bs-touchSize;
@@ -66,11 +115,63 @@
 	[stroke^='#'] {
 		stroke: $bs-textColor;
 	}
+=======
+.btn--icon {
+    padding: 0;
+    width: $touchSize;
+    height: $touchSize;
+
+    svg {
+        position: relative;
+        top: -1px;
+        left: -1px;
+    }
+
+    [stroke^='#'] {
+        stroke: $textColor;
+    }
+
+    [fill^='#'] {
+        fill: $textColor;
+    }
+
+    &.btn--primary {
+        [stroke^='#'] {
+            stroke: $white;
+        }
+
+        [fill^='#'] {
+            fill: $white;
+        }
+    }
+
+    &.btn--destroy:hover {
+        [stroke^='#'] {
+            stroke: $white;
+        }
+
+        [fill^='#'] {
+            fill: $white;
+        }
+    }
+
+    &.btn--disabled {
+        [stroke^='#'] {
+            stroke: $gray50;
+        }
+
+        [fill^='#'] {
+            fill: $gray50;
+        }
+    }
+}
+>>>>>>> develop
 
 	[fill^='#'] {
 		fill: $bs-textColor;
 	}
 
+<<<<<<< HEAD
 	&.#{$bs-prefix}-btn--primary {
 		[stroke^='#'] {
 			stroke: $bs-white;
@@ -109,6 +210,38 @@
 	background: linear-gradient($bs-blue40, darken($bs-blue40, 7%));
 	border-color: darken($bs-blue40, 7%);
 	color: $bs-white;
+=======
+.btn--primary {
+    background: linear-gradient($blue40, darken($blue40, 7%));
+    border-color: darken($blue40, 7%);
+    color: $white;
+
+    &:focus {
+        // TODO: Validate whether we need visible :focus
+        // border-color:$blue20;
+    }
+}
+
+.touch .btn--primary:active,
+.no-touch .btn--primary:hover {
+    background: lighten($blue40, 3%);
+    color: $white;
+}
+
+//  = DESTROY
+//  ---------------------------------------------------------------------------
+
+.btn--destroy {
+    transition: box-shadow .2s linear;
+}
+
+.touch .btn--destroy:active,
+.no-touch .btn--destroy:hover {
+    color: $white;
+    background: $red50;
+    border-color: $red40;
+}
+>>>>>>> develop
 
 	&:focus {
 		// TODO: Validate whether we need visible :focus
@@ -125,6 +258,7 @@
 //  = DESTROY
 //  ---------------------------------------------------------------------------
 
+<<<<<<< HEAD
 .#{$bs-prefix}-btn--destroy {
 	transition: box-shadow .2s linear;
 }
@@ -146,11 +280,21 @@
 	background: transparent;
 	border-color: $bs-gray60;
 	box-shadow: none;
+=======
+.btn--disabled,
+.touch .btn--disabled:active,
+.no-touch .btn--disabled:hover {
+    color: $gray50;
+    background: transparent;
+    border-color: $gray60;
+    box-shadow: none;
+>>>>>>> develop
 }
 
 //  = BUTTON GROUPS
 //  ---------------------------------------------------------------------------
 
+<<<<<<< HEAD
 .#{$bs-prefix}-btn-group {
 	@extend .cf;
 
@@ -173,22 +317,57 @@
 	.#{$bs-prefix}-btn--primary:first-child {
 		border-left: 1px solid darken($bs-blue40, 7%);
 	}
+=======
+.btn-group {
+    @extend .cf;
+
+    .btn,
+    button {
+        float: left;
+        margin-right: 0;
+        border-radius: 0;
+        border-left: 0 none;
+
+        &:first-child {
+            border-radius: 2px 0 0 2px;
+            border-left: 1px solid $gray50;
+        }
+
+        &:last-child {
+            border-radius: 0 2px 2px 0;
+        }
+    }
+
+    .btn--primary:first-child {
+        border-left: 1px solid darken($blue40, 7%);
+    }
+>>>>>>> develop
 }
 
 //  = CREATE PAGE
 //  ---------------------------------------------------------------------------
 
+<<<<<<< HEAD
 .#{$bs-prefix}-btn--create-page {
 	display: none;
 
 	@include breakpoint($bs-huge-width) {
 		display: inline-block;
 	}
+=======
+.btn--create-page {
+    display: none;
+
+    @include breakpoint($huge-width) {
+        display: inline-block;
+    }
+>>>>>>> develop
 }
 
 //  = SMALL BUTTON
 //  ---------------------------------------------------------------------------
 
+<<<<<<< HEAD
 .#{$bs-prefix}-btn--small {
 	padding: $bs-space50 $bs-space75;
 	font-size: $bs-font50;
@@ -201,4 +380,18 @@
 	+ .#{$bs-prefix}-btn--inline {
 		margin-left: .2; // Account for 4px inline margin
 	}
+=======
+.btn--small {
+    padding: $space50 $space75;
+    font-size: $font50;
+    text-transform: uppercase;
+}
+
+.btn--inline {
+    margin-bottom: 0;
+
+    + .btn--inline {
+        margin-left: .2; // Account for 4px inline margin
+    }
+>>>>>>> develop
 }
