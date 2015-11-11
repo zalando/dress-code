@@ -9,7 +9,7 @@
     "build:demo": "gulp demo",
     "deploy:demo": "gulp demo:deploy",
     "deploy:bower": "gulp dist:bower:deploy",
-    "start": "gulp --dev"
+    "start": "gulp"
   },
   "keywords": [
     "toolkit",
