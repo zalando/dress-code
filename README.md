@@ -5,7 +5,7 @@ The Brand Solutions Dress Code UI toolkit is a highly-modular design system for 
 ## Quick links
 
 * [Demo](http://zalando.github.io/brand-solutions-dress-code/)
-* [Development](#development)
+* [Development & Contributing](#development)
 * [Build and Deploy](#build-and-deploy)
 
 ## Getting Started
@@ -29,7 +29,16 @@ with npm:
 $ npm install git+ssh://git@github.com:zalando/brand-solutions-dress-code.git
 ```
 
-## <a name="development"> Development
+## <a name="development"> Development & Contributing
+
+Developers interested in contributing should read the following guidelines:
+
+- [Contributing Guidelines](docs/guides/CONTRIBUTING.md)
+- [Coding Guidelines](docs/guides/CODING.md)
+- [ChangeLog](CHANGELOG.md)
+
+
+### Install and start working
 
 **Install**
 
@@ -71,7 +80,7 @@ $ npm run build:demo
 
 Fabricator builds both a static documentation site and optimized CSS and JS toolkit files.
 
-The demo build artifacts output to the `demo` directory. This can be deployed to any static hosting environment - no language runtime or database is required.
+The demo build artifacts output to the `.demo` directory. This can be deployed to any static hosting environment - no language runtime or database is required.
 
 
 **Deploy demo:**
@@ -90,3 +99,7 @@ $ npm run deploy:bower
 ```
 
 Publish the distribution version for bower @ http://zalando.github.io/brand-solutions-dress-code-bower  
+
+## License
+
+Brand solutions Dress Code is released under the MIT license. See LICENSE for details.

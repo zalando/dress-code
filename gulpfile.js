@@ -26,27 +26,24 @@ var pkg = require('./package.json');
 // configuration
 var config = {
 	pkg: pkg,
-	dev: gutil.env.dev,
 	path: {
 		styles: {
-			toolkit: './src/assets/toolkit/styles/'
+			toolkit: './src/styles/'
 		}
 	},
 	src: {
 		scripts: {
-			fabricator: './src/assets/fabricator/scripts/fabricator.js',
-			toolkit: './src/assets/toolkit/scripts/toolkit.js'
+			fabricator: './docs/demo/assets/fabricator/scripts/fabricator.js'
 		},
 		styles: {
-			fabricator: './src/assets/fabricator/styles/fabricator.scss',
-			toolkit: './src/assets/toolkit/styles/toolkit.scss'
+			fabricator: './docs/demo/assets/fabricator/styles/fabricator.scss',
+			toolkit: './src/styles/toolkit.scss'
 		},
-		images: './src/assets/toolkit/img/**/*',
-		views: './src/toolkit/views/*.html'
+		images: './src/img/**/*'
 	},
-	demo: 'demo',
-	dist: 'dist',
-	distBower: '.dist-bower'
+	demo: '.demo',
+	distBower: '.dist-bower',
+	dist: 'dist'
 };
 
 
@@ -79,11 +76,10 @@ gulp.task('demo:styles:fabricator', function () {
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
 		.pipe(prefix('last 1 version'))
-		.pipe(gulpif(!config.dev, csso()))
 		.pipe(rename('f.css'))
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(path.join(config.demo , '/assets/fabricator/styles')))
-		.pipe(gulpif(config.dev, reload({stream:true})));
+		.pipe(reload({stream:true}));
 });
 
 gulp.task('demo:styles:toolkit', function () {
@@ -91,10 +87,9 @@ gulp.task('demo:styles:toolkit', function () {
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
 		.pipe(prefix('last 1 version'))
-		.pipe(gulpif(!config.dev, csso()))
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(path.join(config.demo , '/assets/toolkit/styles')))
-		.pipe(gulpif(config.dev, reload({stream:true})));
+		.pipe(reload({stream:true}));
 });
 
 gulp.task('demo:styles', ['demo:styles:fabricator', 'demo:styles:toolkit']);
@@ -125,7 +120,7 @@ gulp.task('demo:images', ['demo:favicon'], function () {
 });
 
 gulp.task('demo:favicon', function () {
-	return gulp.src('./src/favicon.ico')
+	return gulp.src('./docs/demo/favicon.ico')
 		.pipe(gulp.dest(config.demo));
 });
 
@@ -133,8 +128,14 @@ gulp.task('demo:favicon', function () {
 // assemble
 gulp.task('demo:assemble', function (done) {
 	assemble({
+		layouts: 'docs/demo/views/layouts/*',
+		layoutIncludes: 'docs/demo/views/layouts/includes/*',
+		views: ['docs/demo/views/**/*','!docs/demo/views/+(layouts)/**'],
+		materials: 'docs/demo/materials/**/*',
+		data: 'docs/demo/data/**/*.{json,yml}',
+		docs: 'docs/**/*.md',
 		logErrors: true,
-		dest: 'demo'
+		dest: config.demo
 	});
 	done();
 });
@@ -171,16 +172,16 @@ gulp.task('demo:serve', function () {
 	}
 
 	gulp.task('demo:assemble:watch', ['demo:assemble'], reload);
-	gulp.watch('src/**/*.{html,md,json,yml}', ['demo:assemble:watch']);
+	gulp.watch('docs/{demo,guides}/**/*.{html,md,json,yml}', ['demo:assemble:watch']);
 
 	gulp.task('demo:styles:fabricator:watch', ['demo:styles:fabricator']);
-	gulp.watch('src/assets/fabricator/styles/**/*.scss', ['demo:styles:fabricator:watch']);
+	gulp.watch('docs/demo/assets/fabricator/styles/**/*.scss', ['demo:styles:fabricator:watch']);
 
 	gulp.task('demo:styles:toolkit:watch', ['demo:styles:toolkit']);
-	gulp.watch('src/assets/toolkit/styles/**/*.scss', ['demo:styles:toolkit:watch']);
+	gulp.watch('src/styles/**/*.scss', ['demo:styles:toolkit:watch']);
 
 	gulp.task('demo:scripts:watch', ['demo:scripts'], reload);
-	gulp.watch('src/assets/{fabricator,toolkit}/scripts/**/*.js', ['demo:scripts:watch']).on('change', webpackCache);
+	gulp.watch('docs/demo/assets/fabricator/scripts/**/*.js', ['demo:scripts:watch']).on('change', webpackCache);
 
 	gulp.task('demo:images:watch', ['demo:images'], reload);
 	gulp.watch(config.src.images, ['demo:images:watch']);
@@ -227,12 +228,6 @@ gulp.task('dist:styles', function () {
 
 gulp.task('dist:styles:src', function () {
 	return gulp.src(path.join(config.path.styles.toolkit, '/**/*'))
-		.pipe(gulp.dest(path.join(config.dist, 'sass')))
-		.pipe(gulpFilter(['_base.scss','_import.scss']))
-		// this replace relative imports inside _base.scss
-		.pipe(replace(/@import "..\/..\/..\/..\/(.*)"/g, function (match, p1) {
-			return '@import "../../' + p1 + '"';
-		}))
 		.pipe(gulp.dest(path.join(config.dist, 'sass')));
 });
 
