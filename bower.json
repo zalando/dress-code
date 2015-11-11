@@ -6,7 +6,7 @@
   "main": "sass/toolkit.scss",
   "moduleType": [],
   "authors": [
-    "Thomas Nägele <thomas.nagele@zalando.de>"
+    "Thomas Nägele <thomas.naegele.extern@zalando.de>"
   ],
   "license": "MIT",
   "private": true,
