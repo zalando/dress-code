@@ -133,7 +133,7 @@ gulp.task('demo:assemble', function (done) {
 		views: ['docs/demo/views/**/*','!docs/demo/views/+(layouts)/**'],
 		materials: 'docs/demo/materials/**/*',
 		data: 'docs/demo/data/**/*.{json,yml}',
-		docs: 'docs/**/*.md',
+		docs: ['docs/**/*.md', '!docs/BOWER-README.md'],
 		logErrors: true,
 		dest: config.demo
 	});
