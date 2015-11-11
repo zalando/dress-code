@@ -133,7 +133,7 @@ gulp.task('demo:assemble', function (done) {
 		views: ['docs/demo/views/**/*','!docs/demo/views/+(layouts)/**'],
 		materials: 'docs/demo/materials/**/*',
 		data: 'docs/demo/data/**/*.{json,yml}',
-		docs: 'docs/**/*.md',
+		docs: ['docs/**/*.md', '!docs/BOWER-README.md'],
 		logErrors: true,
 		dest: config.demo
 	});
@@ -244,16 +244,21 @@ gulp.task('dist:bower:clean', function (cb) {
 
 
 gulp.task('dist:bower', ['dist:bower:clean','dist'], function () {
-	return gulp.src([
+	var bowerReadmeFilter = gulpFilter(['BOWER-README.md'], { restore: true });
+    var importFilter = gulpFilter(['**/sass/_import.scss','**/sass/_base.scss'], { restore: true })
+
+    return gulp.src([
 		path.join(config.dist, '/**/*'),
 		'bower.json',
 		'LICENSE',
-		'README.md',
-		'.editorconfig',
-		'.jshintrc'
+		'docs/BOWER-README.md',
+		'.editorconfig'
 	])
+    .pipe(bowerReadmeFilter)
+    .pipe(rename('README.md'))
 	.pipe(gulp.dest(config.distBower))
-	.pipe(gulpFilter(['**/sass/_import.scss','**/sass/_base.scss']))
+    .pipe(bowerReadmeFilter.restore)
+	.pipe(importFilter)
 	.pipe(replace(/@import "..\/..\/node_modules\/(.*)"/g, function (match, p1) {
 		if(p1.indexOf('breakpoint-sass') > -1) {
 			return '@import "../../compass-breakpoint/stylesheets/breakpoint"';
@@ -261,6 +266,7 @@ gulp.task('dist:bower', ['dist:bower:clean','dist'], function () {
 			return '@import "../../' + p1 + '"';
 		}
 	}))
+    .pipe(importFilter.restore)
 	.pipe(gulp.dest(config.distBower));
 });
 
