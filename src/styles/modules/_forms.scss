@@ -35,11 +35,9 @@
 //  = INPUTS
 //  ---------------------------------------------------------------------------
 
-input[type='text'],
-input[type='password'],
-input[type='email'],
-input[type='search'],
-textarea {
+
+.#{$bs-prefix}-input,
+.#{$bs-prefix}-textarea {
 	margin-bottom: $bs-space150;
 	padding: $bs-space75 + .1 $bs-space75;
 	border-radius: $bs-radius100;
@@ -84,7 +82,7 @@ textarea {
 		font-size: $bs-font100;
 	}
 
-	&.input--is-error {
+	&.#{$bs-prefix}-input-is-error {
 		border-color: $bs-red40;
 
 		&:hover,
@@ -94,7 +92,7 @@ textarea {
 	}
 }
 
-.input--block {
+.#{$bs-prefix}-input--block {
 	display: inline-block;
 	width: 100%;
 }
@@ -125,7 +123,7 @@ textarea {
 //  = TEXT AREA
 //  ---------------------------------------------------------------------------
 
-textarea {
+.#{$bs-prefix}-textarea {
 	width: 100%;
 	min-height: $bs-space350 + $bs-space75;
 	padding: $bs-space50 $bs-space75;
