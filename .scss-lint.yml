@@ -1,0 +1,6 @@
+scss_files: 'src/styles/**/*.scss'
+
+linters:
+  StringQuotes:
+      enabled: true
+      style: double_quotes # or single_quotes

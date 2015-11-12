@@ -40,6 +40,14 @@ Developers interested in contributing should read the following guidelines:
 
 ### Install
 
+**Requirements**
+
+* [node.js](http://nodejs.org). Make sure your have `v0.10` or higher installed before proceeding.
+* [bower](http://bower.io/). Make sure you have bower installed globally with npm, if not, run this command:```npm install -g bower```
+* [Ruby](https://www.ruby-lang.org/en/documentation/installation/) 1.9.3+. If you are using OSX it should be already installed.
+* [Sass](http://sass-lang.com/install) 3.4.1+. to install: ```sudo gem install sass```
+* [scss-lint](https://github.com/brigade/scss-lint) to install: ```sudo gem install scss_lint```
+
 **Install**
 
 ```
