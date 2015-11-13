@@ -1,0 +1,10 @@
+i[class^="dc-icons-"] {
+    color: $blue40;
+
+    &.dc-icons--interactive  {
+        cursor: pointer;
+        &:hover {
+            color: $blue20;
+        }
+    }
+}

@@ -21,6 +21,8 @@ var gulp = require('gulp');
 var ghPages = require('gulp-gh-pages');
 var gulpFilter = require('gulp-filter');
 var gulpDebug = require('gulp-debug');
+var iconfont = require('gulp-iconfont');
+var iconfontCss = require('gulp-iconfont-css');
 var pkg = require('./package.json');
 
 // configuration
@@ -39,14 +41,18 @@ var config = {
             fabricator: './docs/demo/assets/fabricator/styles/fabricator.scss',
             toolkit: './src/styles/toolkit.scss'
         },
-        images: './src/img/**/*'
+        images: './src/img/**/*',
+        icons: './src/icons/*.svg'
+
     },
     dist: 'dist',
     tmp: {
+        tmp: '.tmp',
         demo: '.tmp/.demo',
         deployDemo: '.tmp/.deploy-demo',
         distBower: '.tmp/.dist-bower',
-        deployBower: '.tmp/.deploy-bower'
+        deployBower: '.tmp/.deploy-bower',
+        iconfont: '.tmp/.iconfont'
     }
 };
 
@@ -55,7 +61,7 @@ var config = {
  *
  *
  *
- *  DEMO TASKS
+ *  DEMO/DEVELOPMENT TASKS
  *
  *
  *
@@ -65,8 +71,8 @@ var config = {
 var demoWebpackConfig = require('./webpack.demo.config')(config);
 var demoWebpackCompiler = webpack(demoWebpackConfig);
 
-gulp.task('demo', function (cb) {
-    runSequence('demo:clean', ['demo:styles', 'demo:scripts', 'demo:images', 'demo:assemble'], cb)
+gulp.task('demo', function(cb) {
+	runSequence('demo:clean',['demo:styles', 'demo:scripts', 'demo:images', 'demo:icons', 'demo:assemble'], cb)
 });
 
 // clean
@@ -121,6 +127,32 @@ gulp.task('demo:images', ['demo:favicon'], function () {
     return gulp.src(config.src.images)
         .pipe(imagemin())
         .pipe(gulp.dest(path.join(config.tmp.demo, '/assets/toolkit/img')));
+});
+
+// Generate the font by using what is found in the src/icons folder
+// Generate the scss _generated/icons.scss to use icons as classes
+gulp.task('demo:icons', function () {
+    var runTimestamp = Math.round(Date.now()/1000);
+    var fontName = 'DressCodeIcons';
+
+    return gulp.src(config.src.icons)
+        .pipe(gulp.dest(path.join(config.tmp.iconfont, '/svg-icons')))
+        .pipe(iconfontCss({
+            fontName: fontName,
+            path: 'scss',
+            targetPath: '../styles/_generated/_icons.scss',
+            fontPath: '../fonts/',
+            cssClass: 'dc-icons'
+        }))
+        .pipe(iconfont({
+            fontName: fontName, // required
+            formats: ['ttf', 'eot', 'woff','svg','woof2'],
+            timestamp: runTimestamp, // recommended to get consistent builds when watching files,
+            normalize: true,
+            centerHorizontally: true
+        }))
+        .pipe(gulp.dest(path.join('src' , '/fonts')))
+        .pipe(gulp.dest(path.join(config.tmp.demo, '/assets/toolkit/fonts')))
 });
 
 gulp.task('demo:favicon', function () {
@@ -189,6 +221,9 @@ gulp.task('demo:serve', function () {
 
     gulp.task('demo:images:watch', ['demo:images'], reload);
     gulp.watch(config.src.images, ['demo:images:watch']);
+
+    gulp.task('demo:icons:watch', ['demo:icons'], reload);
+    gulp.watch(config.src.icons, ['demo:fonts:watch']);
 
 });
 

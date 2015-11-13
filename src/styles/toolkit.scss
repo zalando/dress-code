@@ -9,6 +9,9 @@
 	// Common base
 	@import "base";
 
+    @import "_generated/icons";
+
+    @import "modules/icons";
 	@import "modules/btn";
 	@import "modules/header";
 	@import "modules/table";

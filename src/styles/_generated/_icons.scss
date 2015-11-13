@@ -1,0 +1,109 @@
+@font-face {
+	font-family: "DressCodeIcons";
+	src: url('../fonts/DressCodeIcons.eot');
+	src: url('../fonts/DressCodeIcons.eot?#iefix') format('eot'),
+		url('../fonts/DressCodeIcons.woff') format('woff'),
+		url('../fonts/DressCodeIcons.ttf') format('truetype'),
+		url('../fonts/DressCodeIcons.svg#DressCodeIcons') format('svg');
+}
+
+@mixin dc-icons-styles {
+	font-family: "DressCodeIcons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%dc-icons {
+	@include dc-icons-styles;
+}
+
+@function dc-icons-char($filename) {
+	$char: "";
+
+	@if $filename == add {
+		$char: "\E001";
+	}
+	@if $filename == cog {
+		$char: "\E002";
+	}
+	@if $filename == eye {
+		$char: "\E003";
+	}
+	@if $filename == history {
+		$char: "\E004";
+	}
+	@if $filename == lock {
+		$char: "\E005";
+	}
+	@if $filename == more {
+		$char: "\E006";
+	}
+	@if $filename == ok {
+		$char: "\E007";
+	}
+	@if $filename == pencil {
+		$char: "\E008";
+	}
+	@if $filename == redo {
+		$char: "\E009";
+	}
+	@if $filename == trash {
+		$char: "\E00A";
+	}
+	@if $filename == undo {
+		$char: "\E00B";
+	}
+
+	@return $char;
+}
+
+@mixin dc-icons($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %dc-icons;
+		} @else {
+			@include dc-icons-styles;
+		}
+		content: dc-icons-char($filename);
+	}
+}
+
+.dc-icons-add {
+	@include dc-icons(add);
+}
+.dc-icons-cog {
+	@include dc-icons(cog);
+}
+.dc-icons-eye {
+	@include dc-icons(eye);
+}
+.dc-icons-history {
+	@include dc-icons(history);
+}
+.dc-icons-lock {
+	@include dc-icons(lock);
+}
+.dc-icons-more {
+	@include dc-icons(more);
+}
+.dc-icons-ok {
+	@include dc-icons(ok);
+}
+.dc-icons-pencil {
+	@include dc-icons(pencil);
+}
+.dc-icons-redo {
+	@include dc-icons(redo);
+}
+.dc-icons-trash {
+	@include dc-icons(trash);
+}
+.dc-icons-undo {
+	@include dc-icons(undo);
+}
