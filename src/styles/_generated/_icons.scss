@@ -29,50 +29,62 @@
 	@if $filename == add {
 		$char: "\E001";
 	}
-	@if $filename == arrow-left {
+	@if $filename == alert-error {
 		$char: "\E002";
 	}
-	@if $filename == arrow-right {
+	@if $filename == alert-info {
 		$char: "\E003";
 	}
-	@if $filename == check {
+	@if $filename == alert-neutral {
 		$char: "\E004";
 	}
-	@if $filename == cog {
+	@if $filename == alert-success {
 		$char: "\E005";
 	}
-	@if $filename == eye {
+	@if $filename == alert-warning {
 		$char: "\E006";
 	}
-	@if $filename == history {
+	@if $filename == arrow-left {
 		$char: "\E007";
 	}
-	@if $filename == info {
+	@if $filename == arrow-right {
 		$char: "\E008";
 	}
-	@if $filename == lock {
+	@if $filename == check {
 		$char: "\E009";
 	}
-	@if $filename == more {
+	@if $filename == cog {
 		$char: "\E00A";
 	}
-	@if $filename == pencil {
+	@if $filename == eye {
 		$char: "\E00B";
 	}
-	@if $filename == play {
+	@if $filename == history {
 		$char: "\E00C";
 	}
-	@if $filename == redo {
+	@if $filename == info {
 		$char: "\E00D";
 	}
-	@if $filename == search {
+	@if $filename == lock {
 		$char: "\E00E";
 	}
-	@if $filename == trash {
+	@if $filename == more {
 		$char: "\E00F";
 	}
-	@if $filename == undo {
+	@if $filename == pencil {
 		$char: "\E010";
+	}
+	@if $filename == play {
+		$char: "\E011";
+	}
+	@if $filename == redo {
+		$char: "\E012";
+	}
+	@if $filename == search {
+		$char: "\E013";
+	}
+	@if $filename == trash {
+		$char: "\E014";
 	}
 
 	@return $char;
@@ -91,6 +103,21 @@
 
 .dc-icons-add {
 	@include dc-icons(add);
+}
+.dc-icons-alert-error {
+	@include dc-icons(alert-error);
+}
+.dc-icons-alert-info {
+	@include dc-icons(alert-info);
+}
+.dc-icons-alert-neutral {
+	@include dc-icons(alert-neutral);
+}
+.dc-icons-alert-success {
+	@include dc-icons(alert-success);
+}
+.dc-icons-alert-warning {
+	@include dc-icons(alert-warning);
 }
 .dc-icons-arrow-left {
 	@include dc-icons(arrow-left);
@@ -133,7 +160,4 @@
 }
 .dc-icons-trash {
 	@include dc-icons(trash);
-}
-.dc-icons-undo {
-	@include dc-icons(undo);
 }

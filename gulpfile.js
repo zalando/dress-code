@@ -41,8 +41,8 @@ var config = {
             fabricator: './docs/demo/assets/fabricator/styles/fabricator.scss',
             toolkit: './src/styles/toolkit.scss'
         },
-        images: './src/img/**/*',
-        icons: './src/icons/*.svg'
+        images: 'src/img/**/*',
+        icons: 'src/icons/*.svg'
 
     },
     dist: 'dist',
@@ -140,7 +140,7 @@ gulp.task('demo:icons', ['demo:icons:clean'], function () {
         .pipe(iconfontCss({
             fontName: fontName,
             path: 'scss',
-            targetPath: '../styles/_generated/_icons.scss',
+            targetPath: '../../../src/styles/_generated/_icons.scss', // this path to path.join(config.tmp.iconfont, '/fonts') ... weird
             fontPath: '../fonts/',
             cssClass: 'dc-icons'
         }))
@@ -226,8 +226,7 @@ gulp.task('demo:serve', function () {
     gulp.task('demo:images:watch', ['demo:images'], reload);
     gulp.watch(config.src.images, ['demo:images:watch']);
 
-    gulp.task('demo:icons:watch', ['demo:icons'], reload);
-    gulp.watch(config.src.icons, ['demo:icons:watch']);
+    gulp.watch(config.src.icons, ['demo:icons']);
 
 });
 
