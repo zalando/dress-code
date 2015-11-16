@@ -5,5 +5,5 @@ bower_components
 
 /demo
 .demo
-
+src/fonts
 .tmp
