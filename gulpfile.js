@@ -131,7 +131,7 @@ gulp.task('demo:images', ['demo:favicon'], function () {
 
 // Generate the font by using what is found in the src/icons folder
 // Generate the scss _generated/icons.scss to use icons as classes
-gulp.task('demo:icons', function () {
+gulp.task('demo:icons', ['demo:icons:clean'], function () {
     var runTimestamp = Math.round(Date.now()/1000);
     var fontName = 'DressCodeIcons';
 
@@ -151,8 +151,12 @@ gulp.task('demo:icons', function () {
             normalize: true,
             centerHorizontally: true
         }))
-        .pipe(gulp.dest(path.join('src' , '/fonts')))
+        .pipe(gulp.dest(path.join(config.tmp.iconfont, '/fonts')))
         .pipe(gulp.dest(path.join(config.tmp.demo, '/assets/toolkit/fonts')))
+});
+
+gulp.task('demo:icons:clean', function (cb) {
+    del([config.tmp.iconfont], cb);
 });
 
 gulp.task('demo:favicon', function () {
@@ -223,7 +227,7 @@ gulp.task('demo:serve', function () {
     gulp.watch(config.src.images, ['demo:images:watch']);
 
     gulp.task('demo:icons:watch', ['demo:icons'], reload);
-    gulp.watch(config.src.icons, ['demo:fonts:watch']);
+    gulp.watch(config.src.icons, ['demo:icons:watch']);
 
 });
 
@@ -247,7 +251,7 @@ gulp.task('demo:deploy', ['demo'], function () {
  */
 
 gulp.task('dist', function (cb) {
-    runSequence('dist:clean', ['dist:styles', 'dist:styles:src', 'dist:images'], cb);
+    runSequence('dist:clean', ['dist:styles', 'dist:styles:src', 'dist:images', 'dist:icons'], cb);
 });
 
 gulp.task('dist:clean', function (cb) {
@@ -278,6 +282,11 @@ gulp.task('dist:images', function () {
     return gulp.src(config.src.images)
         .pipe(imagemin())
         .pipe(gulp.dest(path.join(config.dist, '/img')));
+});
+
+gulp.task('dist:icons', ['demo:icons'], function () {
+    return gulp.src(path.join(config.tmp.iconfont, '/fonts/**'))
+        .pipe(gulp.dest(path.join(config.dist, '/fonts')));
 });
 
 gulp.task('dist:bower:clean', function (cb) {
