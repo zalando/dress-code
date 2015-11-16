@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
-    <title>i-info</title>
+    <title>info</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="i-info" sketch:type="MSArtboardGroup" fill="#000000">
-            <path d="M250,360 C310.751322,360 360,310.751322 360,250 C360,189.248678 310.751322,140 250,140 C189.248678,140 140,189.248678 140,250 C140,310.751322 189.248678,360 250,360 Z M239.5,236 L264,236 L264,319 L239.5,319 L229,319 L229,305.166667 L236,305.166667 L236,249.833333 L229,249.833333 L229,236 L239.5,236 L239.5,236 Z M236,181 L264,181 L264,209 L236,209 L236,181 Z" id="Oval-7" sketch:type="MSShapeGroup"></path>
+        <g id="info" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M250,500 C388.071187,500 500,388.071187 500,250 C500,111.928813 388.071187,0 250,0 C111.928813,0 0,111.928813 0,250 C0,388.071187 111.928813,500 250,500 Z M226.136364,218.181818 L281.818182,218.181818 L281.818182,406.818182 L226.136364,406.818182 L202.272727,406.818182 L202.272727,375.378788 L218.181818,375.378788 L218.181818,249.621212 L202.272727,249.621212 L202.272727,218.181818 L226.136364,218.181818 L226.136364,218.181818 Z M218.181818,93.1818182 L281.818182,93.1818182 L281.818182,156.818182 L218.181818,156.818182 L218.181818,93.1818182 Z" id="Oval-7" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

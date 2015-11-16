@@ -1,1 +1,12 @@
-<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="m194.44 166.67h-55.56v13.889h14.881l12.897 180.56h6.944 138.89 6.944l12.897-180.56h14.881v-13.889h-55.56v-13.889h13.889v-13.889h-125v13.889h13.889v13.889m13.889 0h69.44v-13.889h-69.44v13.889m110.12 13.889h-150.79l11.905 166.67h126.98l11.905-166.67m-110.12 27.778h13.889v111.11h-13.889v-111.11m27.778 0h13.889v111.25h-13.889v-111.25m27.778 0h13.889v111.25h-13.889v-111.25" fill="#25aaff"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
+    <title>trash</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="trash" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M141.066667,62.5 L16,62.5 L16,93.75 L49.5,93.75 L78.5333333,500 L94.1666667,500 L406.833333,500 L422.466667,500 L451.5,93.75 L485,93.75 L485,62.5 L359.933333,62.5 L359.933333,31.25 L391.2,31.25 L391.2,0 L109.8,0 L109.8,31.25 L141.066667,31.25 L141.066667,62.5 Z M172.333333,62.5 L328.666667,62.5 L328.666667,31.25 L172.333333,31.25 L172.333333,62.5 Z M420.233333,93.75 L80.7666667,93.75 L107.566667,468.75 L393.433333,468.75 L420.233333,93.75 Z M172.333333,156.25 L203.6,156.25 L203.6,406.25 L172.333333,406.25 L172.333333,156.25 Z M234.866667,156.25 L266.133333,156.25 L266.133333,406.562507 L234.866667,406.562507 L234.866667,156.25 Z M297.4,156.25 L328.666667,156.25 L328.666667,406.562507 L297.4,406.562507 L297.4,156.25 Z" id="Rectangle-28" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

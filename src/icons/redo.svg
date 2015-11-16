@@ -1,1 +1,12 @@
-<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="m250 202.12c-71.05 12.01-125 70.967-125 141.88 0 3.418.125 6.808.372 10.166 24.23-44.11 70.36-75.58 124.63-81.29v53.11l125-90.08-125-90.08v56.28" fill="#4a4a4a"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
+    <title>redo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="redo" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M250,154.655441 C107.892272,178.699487 5.68434189e-14,296.702657 5.68434189e-14,438.6522 C5.68434189e-14,445.493027 0.250576028,452.278239 0.74348187,459 C49.1984691,370.710161 141.454141,307.727682 250,296.285691 L250,402.592909 L500,222.296454 L250,42 L250,154.655441 L250,154.655441 Z" id="Arrow-left-3" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

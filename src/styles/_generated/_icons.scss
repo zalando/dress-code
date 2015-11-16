@@ -35,41 +35,44 @@
 	@if $filename == arrow-right {
 		$char: "\E003";
 	}
-	@if $filename == cog {
+	@if $filename == check {
 		$char: "\E004";
 	}
-	@if $filename == eye {
+	@if $filename == cog {
 		$char: "\E005";
 	}
-	@if $filename == history {
+	@if $filename == eye {
 		$char: "\E006";
 	}
-	@if $filename == info {
+	@if $filename == history {
 		$char: "\E007";
 	}
-	@if $filename == lock {
+	@if $filename == info {
 		$char: "\E008";
 	}
-	@if $filename == more {
+	@if $filename == lock {
 		$char: "\E009";
 	}
-	@if $filename == ok {
+	@if $filename == more {
 		$char: "\E00A";
 	}
 	@if $filename == pencil {
 		$char: "\E00B";
 	}
-	@if $filename == redo {
+	@if $filename == play {
 		$char: "\E00C";
 	}
-	@if $filename == search {
+	@if $filename == redo {
 		$char: "\E00D";
 	}
-	@if $filename == trash {
+	@if $filename == search {
 		$char: "\E00E";
 	}
-	@if $filename == undo {
+	@if $filename == trash {
 		$char: "\E00F";
+	}
+	@if $filename == undo {
+		$char: "\E010";
 	}
 
 	@return $char;
@@ -95,6 +98,9 @@
 .dc-icons-arrow-right {
 	@include dc-icons(arrow-right);
 }
+.dc-icons-check {
+	@include dc-icons(check);
+}
 .dc-icons-cog {
 	@include dc-icons(cog);
 }
@@ -113,11 +119,11 @@
 .dc-icons-more {
 	@include dc-icons(more);
 }
-.dc-icons-ok {
-	@include dc-icons(ok);
-}
 .dc-icons-pencil {
 	@include dc-icons(pencil);
+}
+.dc-icons-play {
+	@include dc-icons(play);
 }
 .dc-icons-redo {
 	@include dc-icons(redo);
