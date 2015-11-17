@@ -7,7 +7,7 @@
 		url('../fonts/DressCodeIcons.svg#DressCodeIcons') format('svg');
 }
 
-@mixin dc-icons-styles {
+@mixin dc-font-icon-styles {
 	font-family: "DressCodeIcons";
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
@@ -19,11 +19,11 @@
 	text-transform: none;
 }
 
-%dc-icons {
-	@include dc-icons-styles;
+%dc-font-icon {
+	@include dc-font-icon-styles;
 }
 
-@function dc-icons-char($filename) {
+@function dc-font-icon-char($filename) {
 	$char: "";
 
 	@if $filename == add {
@@ -96,80 +96,80 @@
 	@return $char;
 }
 
-@mixin dc-icons($filename, $insert: before, $extend: true) {
+@mixin dc-font-icon($filename, $insert: before, $extend: true) {
 	&:#{$insert} {
 		@if $extend {
-			@extend %dc-icons;
+			@extend %dc-font-icon;
 		} @else {
-			@include dc-icons-styles;
+			@include dc-font-icon-styles;
 		}
-		content: dc-icons-char($filename);
+		content: dc-font-icon-char($filename);
 	}
 }
 
-.dc-icons-add {
-	@include dc-icons(add);
+.dc-font-icon-add {
+	@include dc-font-icon(add);
 }
-.dc-icons-alert-error {
-	@include dc-icons(alert-error);
+.dc-font-icon-alert-error {
+	@include dc-font-icon(alert-error);
 }
-.dc-icons-alert-info {
-	@include dc-icons(alert-info);
+.dc-font-icon-alert-info {
+	@include dc-font-icon(alert-info);
 }
-.dc-icons-alert-neutral {
-	@include dc-icons(alert-neutral);
+.dc-font-icon-alert-neutral {
+	@include dc-font-icon(alert-neutral);
 }
-.dc-icons-alert-success {
-	@include dc-icons(alert-success);
+.dc-font-icon-alert-success {
+	@include dc-font-icon(alert-success);
 }
-.dc-icons-alert-warning {
-	@include dc-icons(alert-warning);
+.dc-font-icon-alert-warning {
+	@include dc-font-icon(alert-warning);
 }
-.dc-icons-arrow-left {
-	@include dc-icons(arrow-left);
+.dc-font-icon-arrow-left {
+	@include dc-font-icon(arrow-left);
 }
-.dc-icons-arrow-right {
-	@include dc-icons(arrow-right);
+.dc-font-icon-arrow-right {
+	@include dc-font-icon(arrow-right);
 }
-.dc-icons-check {
-	@include dc-icons(check);
+.dc-font-icon-check {
+	@include dc-font-icon(check);
 }
-.dc-icons-close {
-	@include dc-icons(close);
+.dc-font-icon-close {
+	@include dc-font-icon(close);
 }
-.dc-icons-cog {
-	@include dc-icons(cog);
+.dc-font-icon-cog {
+	@include dc-font-icon(cog);
 }
-.dc-icons-eye {
-	@include dc-icons(eye);
+.dc-font-icon-eye {
+	@include dc-font-icon(eye);
 }
-.dc-icons-history {
-	@include dc-icons(history);
+.dc-font-icon-history {
+	@include dc-font-icon(history);
 }
-.dc-icons-info {
-	@include dc-icons(info);
+.dc-font-icon-info {
+	@include dc-font-icon(info);
 }
-.dc-icons-lock {
-	@include dc-icons(lock);
+.dc-font-icon-lock {
+	@include dc-font-icon(lock);
 }
-.dc-icons-more {
-	@include dc-icons(more);
+.dc-font-icon-more {
+	@include dc-font-icon(more);
 }
-.dc-icons-pencil {
-	@include dc-icons(pencil);
+.dc-font-icon-pencil {
+	@include dc-font-icon(pencil);
 }
-.dc-icons-play {
-	@include dc-icons(play);
+.dc-font-icon-play {
+	@include dc-font-icon(play);
 }
-.dc-icons-redo {
-	@include dc-icons(redo);
+.dc-font-icon-redo {
+	@include dc-font-icon(redo);
 }
-.dc-icons-search {
-	@include dc-icons(search);
+.dc-font-icon-search {
+	@include dc-font-icon(search);
 }
-.dc-icons-trash {
-	@include dc-icons(trash);
+.dc-font-icon-trash {
+	@include dc-font-icon(trash);
 }
-.dc-icons-undo {
-	@include dc-icons(undo);
+.dc-font-icon-undo {
+	@include dc-font-icon(undo);
 }

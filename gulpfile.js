@@ -140,9 +140,9 @@ gulp.task('demo:icons', ['demo:icons:clean'], function () {
         .pipe(iconfontCss({
             fontName: fontName,
             path: 'scss',
-            targetPath: '../../../src/styles/_generated/_icons.scss', // this path to path.join(config.tmp.iconfont, '/fonts') ... weird
+            targetPath: '../../../src/styles/_generated/_font-icon.scss', // this path to path.join(config.tmp.iconfont, '/fonts') ... weird
             fontPath: '../fonts/',
-            cssClass: 'dc-icons'
+            cssClass: 'dc-font-icon'
         }))
         .pipe(iconfont({
             fontName: fontName, // required
