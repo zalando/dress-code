@@ -1,6 +1,6 @@
 //  ---------------------------------------------------------------------------
 //
-//  Defines icon grids for the styleguide
+//  Defines icons
 //
 //  ---------------------------------------------------------------------------
 
@@ -10,7 +10,7 @@
 //  = BASE
 //  ---------------------------------------------------------------------------
 
-		.sg-icon
+		.#{$dc-prefix}-icon
 		{
 			display:inline-block;
 			margin-bottom: $dc-font250;
@@ -19,48 +19,48 @@
 			border:1px solid $dc-gray60;
 			text-align:center;
 
-			svg
+			.#{$dc-prefix}-svg
 			{
 				margin-bottom: $dc-font50;
 				vertical-align:middle;
 			}
+		}
 
-			.i--interactive
+		.#{$dc-prefix}-icon--interactive
+		{
+			&:hover
 			{
-				&:hover
+				[fill^='#']
 				{
-					[fill^='#']
-					{
-						fill:$dc-blue30;
-					}
-
-					[stroke^='#']
-					{
-						stroke:$dc-blue30;
-					}
+					fill:$dc-blue30;
 				}
 
-				&:active
+				[stroke^='#']
 				{
-					transform: scale(.85);
-					shape-rendering: optimizeSpeed;
-					-webkit-tap-highlight-color: transparent;
+					stroke:$dc-blue30;
 				}
 			}
 
-			.i--portal
+			&:active
 			{
-				&:hover
-				{
-					[fill^='#']
-					{
-						fill:$dc-orange40;
-					}
+				transform: scale(.85);
+				shape-rendering: optimizeSpeed;
+				-webkit-tap-highlight-color: transparent;
+			}
+		}
 
-					[stroke^='#']
-					{
-						stroke:$dc-orange40;
-					}
+		.#{$dc-prefix}-icon--alternate
+		{
+			&:hover
+			{
+				[fill^='#']
+				{
+					fill:$dc-orange40;
+				}
+
+				[stroke^='#']
+				{
+					stroke:$dc-orange40;
 				}
 			}
 		}

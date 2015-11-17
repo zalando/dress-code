@@ -2,7 +2,7 @@
 	@include clearfix;
 	margin-bottom: 3rem;
 	padding-bottom: 3rem;
-	border-bottom: 1px solid map-get($colors, light);
+	border-bottom: 1px solid map-get($dc-colors, light);
 
 	&:last-child {
 		border-bottom: 0;
@@ -38,7 +38,7 @@
 }
 
 .f-item-border-bottom {
-	border-bottom: 1px solid map-get($colors, light);
+	border-bottom: 1px solid map-get($dc-colors, light);
 }
 
 .f-item-heading-group {
@@ -56,14 +56,14 @@ h2.f-item-heading {
 h3.f-item-heading {
 	@extend .h3;
 
-	// margin-top: $space350;
+	// margin-top: $dc-space350;
 	text-transform:uppercase;
-	color:$gray40;
-	border-bottom:1px solid $gray60;
+	color:$dc-gray40;
+	border-bottom:1px solid $dc-gray60;
 
 	.sg-section__title + &
 	{
-		margin-top: $space250;
+		margin-top: $dc-space250;
 	}
 }
 
@@ -81,12 +81,12 @@ h3.f-item-heading {
 		float: left;
 
 		use {
-			fill: $primaryAccent;
+			fill: $dc-primary-accent;
 		}
 
 		&:hover {
 			use {
-				fill: darken($primaryAccent, 20%);
+				fill: darken($dc-primary-accent, 20%);
 			}
 		}
 
@@ -107,9 +107,9 @@ h3.f-item-heading {
 }
 
 .f-item-notes {
-	margin-bottom: $space150;
-	font-size: $font100;
-	color: $gray20;
+	margin-bottom: $dc-space150;
+	font-size: $dc-font100;
+	color: $dc-gray20;
 
 	> * {
 		margin-bottom: 0;
@@ -117,7 +117,7 @@ h3.f-item-heading {
 		&:before
 		{
 			content: "//";
-			margin-right: $space75;
+			margin-right: $dc-space75;
 		}
 	}
 }

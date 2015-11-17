@@ -3,10 +3,10 @@ notes: |
   These are notes associated with this `search-form` component.
 ---
 
-<div class="search-form">
-  <input class="search-form__input" type="search" placeholder="Search...">
-  <button class="search-form__btn">
-    <svg class="i--interactive" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+<div class="dc-search-form">
+  <input class="dc-input dc-search-form__input" type="search" placeholder="Search...">
+  <button class="dc-btn dc-search-form__btn">
+    <svg class="dc-svg dc-icon--interactive" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
         <title>
             Search
         </title>
@@ -19,10 +19,10 @@ notes: |
         </g>
     </svg>
   </button>
-  <ul class="suggest">
+  <ul class="dc-list dc-suggest">
     {{#each autosuggest.brands}}
-        <li class="suggest__item">
-          <a class="suggest__link" href data-brand="{{this}}">{{this}}</a>
+        <li class="dc-suggest__item">
+          <a class="dc-link dc-suggest__link" href data-brand="{{this}}">{{this}}</a>
         </li>
     {{/each}}
   </ul>

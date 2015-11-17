@@ -34,31 +34,31 @@
 
 
 
-	.media
+	.#{$dc-prefix}-media
 	{
 		margin:0;
 
-		.media__bd
+		.#{$dc-prefix}-media__bd
 		{
 			overflow:hidden;
 			_overflow:visible;
 			zoom:1;
 		}
 
-		.media__img
+		.#{$dc-prefix}-media__img
 		{
 			float:left;
-			margin-right: $space100;
+			margin-right: $dc-space100;
 
-			img
+			.#{$dc-prefix}-img
 			{
 				display:block;
 			}
 		}
 
-		.media__img--rev
+		.#{$dc-prefix}-media__img--rev
 		{
 			float:right;
-			margin-left: $space100;
+			margin-left: $dc-space100;
 		}
 	}
