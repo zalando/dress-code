@@ -53,38 +53,44 @@
 	@if $filename == check {
 		$char: "\E009";
 	}
-	@if $filename == cog {
+	@if $filename == close {
 		$char: "\E00A";
 	}
-	@if $filename == eye {
+	@if $filename == cog {
 		$char: "\E00B";
 	}
-	@if $filename == history {
+	@if $filename == eye {
 		$char: "\E00C";
 	}
-	@if $filename == info {
+	@if $filename == history {
 		$char: "\E00D";
 	}
-	@if $filename == lock {
+	@if $filename == info {
 		$char: "\E00E";
 	}
-	@if $filename == more {
+	@if $filename == lock {
 		$char: "\E00F";
 	}
-	@if $filename == pencil {
+	@if $filename == more {
 		$char: "\E010";
 	}
-	@if $filename == play {
+	@if $filename == pencil {
 		$char: "\E011";
 	}
-	@if $filename == redo {
+	@if $filename == play {
 		$char: "\E012";
 	}
-	@if $filename == search {
+	@if $filename == redo {
 		$char: "\E013";
 	}
-	@if $filename == trash {
+	@if $filename == search {
 		$char: "\E014";
+	}
+	@if $filename == trash {
+		$char: "\E015";
+	}
+	@if $filename == undo {
+		$char: "\E016";
 	}
 
 	@return $char;
@@ -128,6 +134,9 @@
 .dc-icons-check {
 	@include dc-icons(check);
 }
+.dc-icons-close {
+	@include dc-icons(close);
+}
 .dc-icons-cog {
 	@include dc-icons(cog);
 }
@@ -160,4 +169,7 @@
 }
 .dc-icons-trash {
 	@include dc-icons(trash);
+}
+.dc-icons-undo {
+	@include dc-icons(undo);
 }
