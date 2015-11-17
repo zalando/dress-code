@@ -152,7 +152,7 @@
 //  ---------------------------------------------------------------------------
 
 .#{$bs-prefix}-btn-group {
-    @extend .cf;
+    @extend .#{$bs-prefix}-cf;
 
     .#{$bs-prefix}-btn {
         float: left;

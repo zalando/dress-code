@@ -19,10 +19,10 @@
 //  = VERTICAL RHYTHM
 //  ---------------------------------------------------------------------------
 
-	h1,h2,h3,h4,h5,h6,hgroup,
-	.#{$bs-prefix}-list,dd,
-	p,figure,object,
-	pre,table,fieldset,hr
+	.#{$bs-prefix}-h1,.#{$bs-prefix}-h2,.#{$bs-prefix}-h3,.#{$bs-prefix}-h4,.#{$bs-prefix}-h5,.#{$bs-prefix}-h6,.#{$bs-prefix}-hgroup,
+	.#{$bs-prefix}-list,.#{$bs-prefix}-dd,
+	.#{$bs-prefix}-p,.#{$bs-prefix}-figure,.#{$bs-prefix}-object,
+	.#{$bs-prefix}-pre,.#{$bs-prefix}-table,.#{$bs-prefix}-fieldset,.#{$bs-prefix}-hr
 	{
 		margin:0;
 		margin-bottom: $bs-space150;
@@ -34,7 +34,7 @@
 //  ---------------------------------------------------------------------------
 
 
-	html
+	.#{$bs-prefix}-html
 	{
 		height:100%;
 		font-family:$bs-base-font-family;
@@ -43,7 +43,7 @@
 		font-weight:$bs-normal-font-weight;
 	}
 
-	body
+	.#{$bs-prefix}-body
 	{
 		font-size: $bs-body-font-size;
 		line-height: $bs-body-line-height;
@@ -51,7 +51,7 @@
 		color: $bs-text-color;
 	}
 
-	pre
+	.#{$bs-prefix}-pre
 	{
 		// undo reset
 		word-wrap:normal;
@@ -75,23 +75,23 @@
 	    color:$bs-white;
 	}
 
-	strong
+	.#{$bs-prefix}-strong
 	{
 		font-weight:$bs-bold-font-weight;
 	}
 
-	em
+	.#{$bs-prefix}-em
 	{
 		font-style:italic;
 	}
 
 
-	.nowrap
+	.#{$bs-prefix}-nowrap
 	{
 		white-space:nowrap;
 	}
 
-	.styleguide p
+	.#{$bs-prefix}-styleguide .#{$bs-prefix}-p
 	{
 		max-width: 45;
 	}
@@ -111,13 +111,13 @@
 		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	}
 
-	input // FIXME
+	.#{$bs-prefix}-input
 	{
 		-webkit-tap-highlight-color:rgba(0,0,0,0);
 	}
 
-	.no-touch a:hover,
-	.touch a:active
+	.no-touch .#{$bs-prefix}-link:hover,
+	.touch .#{$bs-prefix}-link:active
 	{
 		text-decoration:none;
 		color:$bs-link-color-hover;
@@ -143,7 +143,7 @@
 		cursor:default;
 	}
 
-	[data-tooltip] // FIXME
+	.#{$bs-prefix}-has-tooltip[data-tooltip]
 	{
 		position: relative;
 
@@ -207,7 +207,7 @@
 		list-style-type:none;
 	}
 
-	dt
+	.#{$bs-prefix}-dt
 	{
 		font-family:$bs-base-font-family;
 	}
@@ -217,16 +217,19 @@
 //  = HEADINGS
 //  ---------------------------------------------------------------------------
 
-	h1, h2, h3, h4, h5, h6,
-	.h1, .h2, .h3, .h4, .h5, .h6,
-	%h1, %h2, %h3, %h4, %h5, %h6
+	.#{$bs-prefix}-h1,
+	.#{$bs-prefix}-h2,
+	.#{$bs-prefix}-h3,
+	.#{$bs-prefix}-h4,
+	.#{$bs-prefix}-h5,
+	.#{$bs-prefix}-h6
 	{
 		margin-bottom: $bs-space150;
 		font-family:$bs-headings-font-family;
 		font-weight:$bs-headings-font-weight;
 		color:$bs-headings-color;
 
-		small
+		.#{$bs-prefix}-small
 		{
 			display:block;
 			font-family:$bs-base-font-family;
@@ -235,25 +238,25 @@
 		}
 	}
 
-	h1, .h1
+	.#{$bs-prefix}-h1
 	{
 		font-size: $bs-h1-size;
 		line-height: $bs-h1-line-height;
 	}
 
-	h2, .h2
+	.#{$bs-prefix}-h2
 	{
 		font-size: $bs-h2-size;
 		line-height: $bs-h2-line-height;
 	}
 
-	h3, .h3
+	.#{$bs-prefix}-h3
 	{
 		font-size: $bs-h3-size;
 		line-height: $bs-h3-line-height;
 	}
 
-	h4, .h4
+	.#{$bs-prefix}-h4
 	{
 		font-size: $bs-h4-size;
 		line-height: $bs-h4-line-height;
@@ -264,25 +267,25 @@
 	//  = TEXT
 	//  ---------------------------------------------------------------------------
 
-	.text--center
+	.#{$bs-prefix}-text--center
 	{
 		text-align:center;
 	}
 
-	.text--small
+	.#{$bs-prefix}-text--small
 	{
 		font-size: $bs-font50;
 		line-height: 1.8;
 	}
 
-	.less-important
+	.#{$bs-prefix}-less-important
 	{
 		font-size: $bs-font50;
 		line-height:1;
 		color:$bs-gray60;
 	}
 
-	.text--error
+	.#{$bs-prefix}-text--error
 	{
 		display:block;
 		margin-top: - $bs-space150;
@@ -296,7 +299,7 @@
 //  = ICONS
 //  ---------------------------------------------------------------------------
 
-		.icon
+		.#{$bs-prefix}-icon
 		{
 			display:inline-block;
 			vertical-align:middle;
@@ -322,7 +325,7 @@
 			}
 		}
 
-		.icon--destroy:hover
+		.#{$bs-prefix}-icon--destroy:hover
 		{
 			[stroke^='#']
 			{
@@ -333,37 +336,4 @@
 			{
 				fill:$bs-red40;
 			}
-		}
-
-		body:not(.is-admin) .icon--is-admin-only,
-		body:not(.is-admin) .icon--is-admin-only:hover,
-		body:not(.is-admin) .icon--is-admin-only:active,
-		.icon--disabled,
-		.icon--disabled:hover,
-		.icon--disabled:active
-		{
-			transform: none;
-
-			[stroke^='#']
-			{
-				stroke:$bs-gray60;
-			}
-
-			[fill^='#']
-			{
-				fill:$bs-gray60;
-			}
-		}
-
-		:checked + .table__actions-label
-		{
-			[fill^='#']
-			{
-				fill:$bs-blue20;
-			}
-		}
-
-		.is-admin .icon--lock
-		{
-			display:none;
 		}

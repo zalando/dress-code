@@ -4,7 +4,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-		.dim
+		.#{$bs-prefix}-dim
 		{
 			position:absolute;
 			top: $bs-space200;
@@ -17,16 +17,16 @@
 			transition: opacity .1s linear;
 		}
 
-		.is-dimmed
+		.#{$bs-prefix}-is-dimmed
 		{
-			.dim
+			.#{$bs-prefix}-dim
 			{
 				opacity:1;
 				pointer-events:auto;
 			}
 		}
 
-		.msg
+		.#{$bs-prefix}-msg
 		{
 			// position:absolute;
 			// top:0;
@@ -50,7 +50,7 @@
 			}
 		}
 
-		.msg__inner
+		.#{$bs-prefix}-msg__inner
 		{
 			display: flex;
 			flex: 0 1 auto;
@@ -58,7 +58,7 @@
 			// margin: 0 auto;
 		}
 
-		.msg__icon
+		.#{$bs-prefix}-msg__icon
 		{
 			@include breakpoint($bs-medium-width)
 			{
@@ -66,11 +66,11 @@
 			}
 		}
 
-		.msg__bd
+		.#{$bs-prefix}-msg__bd
 		{
 			flex: 1 1 auto;
 
-			a
+			.#{$bs-prefix}-link
 			{
 				border-bottom: 1px solid currentColor;
 				color: currentColor;
@@ -83,20 +83,21 @@
 			}
 		}
 
-		.msg__title
+		.#{$bs-prefix}-msg__title
 		{
-			margin-bottom: 0;
+			margin: 0;
 			font-size: $bs-font100;
+			font-weight: $bs-normal-font-weight;
 			line-height: $bs-body-line-height;
 			color: $bs-blue20;
 		}
 
-		.msg__text
+		.#{$bs-prefix}-msg__text
 		{
-			margin-bottom: 0;
+			margin: 0;
 		}
 
-		.msg__close svg
+		.#{$bs-prefix}-msg__close .#{$bs-prefix}-svg
 		{
 			cursor: pointer;
 
@@ -119,64 +120,23 @@
 			}
 		}
 
-		// .top-area--is-in-back
-		// {
-		// 	> a,
-		// 	> h1,
-		// 	> div
-		// 	{
-		// 		animation: toparea 1.6s linear 1;
-		// 	}
-		//
-		// 	@include breakpoint($bs-huge-width)
-		// 	{
-		// 		> .nav-main
-		// 		{
-		// 			animation: toparea 1.6s linear 1;
-		// 		}
-		// 	}
-		// }
-		//
-		// .top-area--is-in-back-long
-		// {
-		// 	> a,
-		// 	> h1,
-		// 	> div
-		// 	{
-		// 		animation: toparea-long 6s linear 1;
-		// 	}
-		//
-		// 	@include breakpoint($bs-huge-width)
-		// 	{
-		// 		> .nav-main
-		// 		{
-		// 			animation: toparea-long 6s linear 1;
-		// 		}
-		// 	}
-		// }
-		//
-		// .top-area *:not(nav)
-		// {
-		// 	transition: -webkit-filter .2s linear;
-		// }
-
 
 
 //  = SUCCESS
 //  ---------------------------------------------------------------------------
 
-		.msg--success
+		.#{$bs-prefix}-msg--success
 		{
 			background: rgba(#E3FFC7, .95);
 			border-color: #84E440;
 			color: $bs-green20;
 
-			.msg__title
+			.#{$bs-prefix}-msg__title
 			{
 				color:$bs-green20;
 			}
 
-			.msg__close svg
+			.#{$bs-prefix}-msg__close .#{$bs-prefix}-svg
 			{
 				cursor: pointer;
 
@@ -200,18 +160,18 @@
 //  = ERROR
 //  ---------------------------------------------------------------------------
 
-		.msg--error
+		.#{$bs-prefix}-msg--error
 		{
 			background:rgba(desaturate($bs-red70, 10%), .5);
 			border-color:darken($bs-red70, 5%);
 			color:$bs-red20;
 
-			.msg__title
+			.#{$bs-prefix}-msg__title
 			{
 				color:$bs-red20;
 			}
 
-			.msg__close svg
+			.#{$bs-prefix}-msg__close .#{$bs-prefix}-svg
 			{
 				cursor: pointer;
 
@@ -235,18 +195,18 @@
 //  = WARNING
 //  ---------------------------------------------------------------------------
 
-		.msg--warning
+		.#{$bs-prefix}-msg--warning
 		{
 			background:rgba($bs-yellow70, .5);
 			border-color:darken($bs-yellow70, 35%);
 			color:$bs-yellow20;
 
-			.msg__title
+			.#{$bs-prefix}-msg__title
 			{
 				color:$bs-yellow20;
 			}
 
-			.msg__close svg
+			.#{$bs-prefix}-msg__close .#{$bs-prefix}-svg
 			{
 				cursor: pointer;
 
@@ -270,7 +230,7 @@
 //  = INFO
 //  ---------------------------------------------------------------------------
 
-		.msg--info
+		.#{$bs-prefix}-msg--info
 		{
 			background:rgba($bs-blue70, .5);
 			border-color:darken($bs-blue70, 5%);
@@ -282,17 +242,17 @@
 //  = ANIMATION
 //  ---------------------------------------------------------------------------
 
-		.msg--is-animating
+		.#{$bs-prefix}-msg--is-animating
 		{
-			animation: notify 1.6s linear 1;
+			animation: #{$bs-prefix}-notify 1.6s linear 1;
 		}
 
-		.msg--is-animating-long
+		.#{$bs-prefix}-msg--is-animating-long
 		{
-			animation: notify-long 6s linear 1;
+			animation: #{$bs-prefix}-notify-long 6s linear 1;
 		}
 
-		@keyframes notify
+		@keyframes #{$bs-prefix}-notify
 		{
 			0%
 			{
@@ -315,7 +275,7 @@
 			}
 		}
 
-		@keyframes toparea
+		@keyframes #{$bs-prefix}-toparea
 		{
 			10%
 			{
@@ -328,7 +288,7 @@
 			}
 		}
 
-		@keyframes notify-long
+		@keyframes #{$bs-prefix}-notify-long
 		{
 			0%
 			{
@@ -351,7 +311,7 @@
 			}
 		}
 
-		@keyframes toparea-long
+		@keyframes #{$bs-prefix}-toparea-long
 		{
 			1%
 			{

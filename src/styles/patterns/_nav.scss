@@ -11,15 +11,15 @@
 //  ---------------------------------------------------------------------------
 
 
-	.nav {
+	.#{$bs-prefix}-nav {
 		list-style-type:none;
 		margin-left:0;
 
-		li {
+		.#{$bs-prefix}-li {
 			display: inline;
 		}
 
-			a {
+			.#{$bs-prefix}-link {
 				display: inline-block;
 			}
 	}

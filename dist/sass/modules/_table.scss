@@ -36,7 +36,7 @@
 //  ---------------------------------------------------------------------------
 
 .#{$bs-prefix}-table__tr {
-	@extend .cf;
+	@extend .#{$bs-prefix}-cf;
 	cursor: pointer;
 }
 

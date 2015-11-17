@@ -4,15 +4,15 @@
 //
 //  ---------------------------------------------------------------------------
 
-$bs-headerHeight: $bs-touch-size;
-$bs-headerAccentColor: $bs-orange40;
+$bs-header-height: $bs-touch-size;
+$bs-header-accent-color: $bs-orange40;
 
 
 
 //  = HEADER
 //  ---------------------------------------------------------------------------
 
-		.header
+		.#{$bs-prefix}-header
 		{
 			display: flex;
 			align-items: center;
@@ -21,32 +21,14 @@ $bs-headerAccentColor: $bs-orange40;
 			right: 0;
 			left: 0;
 			z-index: 900;
-			height: $bs-headerHeight;
+			height: $bs-header-height;
 			padding: $bs-space75 $bs-space100;
 			background: $bs-white;
 			border-bottom: 1px solid $bs-gray60;
 
-			.logo
+			.#{$bs-prefix}-logo
 			{
 				padding-bottom: 2px;
 				max-height: $bs-touch-size - $bs-space150;
 			}
-
-			// @include breakpoint($bs-small-width)
-			// {
-			// 	padding-right: $bs-space100;
-			// 	padding-left: $bs-space100;
-			// }
-			//
-			// @include breakpoint($bs-large-width)
-			// {
-			// 	padding-right: $bs-space150;
-			// 	padding-left: $bs-space150;
-			// }
-			//
-			// @include breakpoint($bs-monstrous-width)
-			// {
-			// 	padding-right: $bs-space250;
-			// 	padding-left: $bs-space250;
-			// }
 		}

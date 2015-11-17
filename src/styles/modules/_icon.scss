@@ -1,0 +1,66 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines icons
+//
+//  ---------------------------------------------------------------------------
+
+
+
+
+//  = BASE
+//  ---------------------------------------------------------------------------
+
+		.#{$bs-prefix}-icon
+		{
+			display:inline-block;
+			margin-bottom: $bs-font250;
+			padding: $bs-space100;
+			background-color: $bs-white;
+			border:1px solid $bs-gray60;
+			text-align:center;
+
+			.#{$bs-prefix}-svg
+			{
+				margin-bottom: $bs-font50;
+				vertical-align:middle;
+			}
+		}
+
+		.#{$bs-prefix}-icon--interactive
+		{
+			&:hover
+			{
+				[fill^='#']
+				{
+					fill:$bs-blue30;
+				}
+
+				[stroke^='#']
+				{
+					stroke:$bs-blue30;
+				}
+			}
+
+			&:active
+			{
+				transform: scale(.85);
+				shape-rendering: optimizeSpeed;
+				-webkit-tap-highlight-color: transparent;
+			}
+		}
+
+		.#{$bs-prefix}-icon--alternate
+		{
+			&:hover
+			{
+				[fill^='#']
+				{
+					fill:$bs-orange40;
+				}
+
+				[stroke^='#']
+				{
+					stroke:$bs-orange40;
+				}
+			}
+		}

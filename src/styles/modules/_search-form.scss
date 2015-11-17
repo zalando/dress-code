@@ -9,14 +9,14 @@
 //  = INPUT & BUTTON
 //  ---------------------------------------------------------------------------
 
-		.search-form
+		.#{$bs-prefix}-search-form
 		{
 			display: inline-block;
 			position:relative;
 			margin-bottom: $bs-space150;
 		}
 
-		.search-form__input
+		.#{$bs-prefix}-search-form__input
 		{
 			.no-touch &[type='search'],
 			.touch &[type='search']
@@ -26,7 +26,7 @@
 			-webkit-appearance: none;
 		}
 
-		.search-form__btn
+		.#{$bs-prefix}-search-form__btn
 		{
 			position:absolute;
 			top: 0;
@@ -36,7 +36,8 @@
 			background: transparent;
 			border: none;
 
-			svg, img
+			.#{$bs-prefix}-svg,
+			.#{$bs-prefix}-img
 			{
 				display: block;
 			}
@@ -65,7 +66,7 @@
 		//  = AUTOSUGGEST
 		//  ---------------------------------------------------------------------------
 
-		.suggest
+		.#{$bs-prefix}-suggest
 		{
 			position:absolute;
 			top: calc(100% - 1px);
@@ -84,7 +85,7 @@
 			transition: transform .3s ease-out, opacity .2s;
 		}
 
-		.suggest__link
+		.#{$bs-prefix}-suggest__link
 		{
 			display: block;
 			padding: 0 $bs-space75;
@@ -100,7 +101,7 @@
 			}
 		}
 
-		.search-form__input:focus ~ .suggest
+		.#{$bs-prefix}-search-form__input:focus ~ .#{$bs-prefix}-suggest
 		{
 			opacity: 1;
 			transform: translateY(0);

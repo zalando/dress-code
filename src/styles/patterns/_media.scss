@@ -34,29 +34,29 @@
 
 
 
-	.media
+	.#{$bs-prefix}-media
 	{
 		margin:0;
 
-		.media__bd
+		.#{$bs-prefix}-media__bd
 		{
 			overflow:hidden;
 			_overflow:visible;
 			zoom:1;
 		}
 
-		.media__img
+		.#{$bs-prefix}-media__img
 		{
 			float:left;
 			margin-right: $bs-space100;
 
-			img
+			.#{$bs-prefix}-img
 			{
 				display:block;
 			}
 		}
 
-		.media__img--rev
+		.#{$bs-prefix}-media__img--rev
 		{
 			float:right;
 			margin-left: $bs-space100;

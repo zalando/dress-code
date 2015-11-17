@@ -370,7 +370,7 @@ fabricator.setBreakpointsState = function ()
 	// Set initial state
 	if(localStorage.getItem("breakpoints") !== "shown")
 	{
-		root.classList.remove('is-show-breakpoints');
+		root.classList.remove('bs-is-show-breakpoints');
 	}
 
 	// Breakpoint toggle
@@ -382,15 +382,15 @@ fabricator.setBreakpointsState = function ()
 		{
 			e.preventDefault();
 
-			if(root.classList.contains("is-show-breakpoints"))
+			if(root.classList.contains("bs-is-show-breakpoints"))
 			{
 				localStorage.removeItem("breakpoints");
-				root.classList.remove('is-show-breakpoints');
+				root.classList.remove('bs-is-show-breakpoints');
 			}
 			else
 			{
 				localStorage.setItem("breakpoints", "shown");
-				root.classList.add('is-show-breakpoints');
+				root.classList.add('bs-is-show-breakpoints');
 			}
 		});
 	}
@@ -409,7 +409,7 @@ fabricator.setGridState = function ()
 	// Set initial state
 	if(localStorage.getItem("grid") !== "shown")
 	{
-		root.classList.remove('is-show-grid');
+		root.classList.remove('bs-is-show-grid');
 	}
 
 	// Breakpoint toggle
@@ -421,15 +421,15 @@ fabricator.setGridState = function ()
 		{
 			e.preventDefault();
 
-			if(root.classList.contains("is-show-grid"))
+			if(root.classList.contains("bs-is-show-grid"))
 			{
 				localStorage.removeItem("grid");
-				root.classList.remove('is-show-grid');
+				root.classList.remove('bs-is-show-grid');
 			}
 			else
 			{
 				localStorage.setItem("grid", "shown");
-				root.classList.add('is-show-grid');
+				root.classList.add('bs-is-show-grid');
 			}
 		});
 	}

@@ -4,8 +4,8 @@
 //
 //  ---------------------------------------------------------------------------
 
-$bs-headerHeight: $bs-touch-size;
-$bs-headerAccentColor: $bs-orange40;
+$bs-header-height: $bs-touch-size;
+$bs-header-accent-color: $bs-orange40;
 
 
 
@@ -21,7 +21,7 @@ $bs-headerAccentColor: $bs-orange40;
 			right: 0;
 			left: 0;
 			z-index: 900;
-			height: $bs-headerHeight;
+			height: $bs-header-height;
 			padding: $bs-space75 $bs-space100;
 			background: $bs-white;
 			border-bottom: 1px solid $bs-gray60;

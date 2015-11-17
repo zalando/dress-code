@@ -8,16 +8,16 @@
 //  = BASE
 //  ---------------------------------------------------------------------------
 
-		.bubble-wrap
+		.#{$bs-prefix}-bubble-wrap
 		{
 			position:relative;
 
-			input
+			.#{$bs-prefix}-input
 			{
 				display:none;
 			}
 
-			.bubble-wrap__inner
+			.#{$bs-prefix}-bubble-wrap__inner
 			{
 				position:absolute;
 				left: 6.5;
@@ -25,7 +25,7 @@
 			}
 		}
 
-		.bubble
+		.#{$bs-prefix}-bubble
 		{
 			position:absolute;
 			top: $bs-space150;
@@ -56,13 +56,13 @@
 			}
 		}
 
-		:checked + label .bubble
+		:checked + .#{$bs-prefix}-label .#{$bs-prefix}-bubble
 		{
 			opacity:1;
 			transform: translateY(0);
 		}
 
-		.bubble__bd
+		.#{$bs-prefix}-bubble__bd
 		{
 			font-weight:300;
 			text-transform:none;

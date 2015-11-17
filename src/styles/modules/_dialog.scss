@@ -8,7 +8,7 @@
 //  = DIM
 //  ---------------------------------------------------------------------------
 
-		.dim-dialog
+		.#{$bs-prefix}-dim-dialog
 		{
 			display: flex;
 			justify-content: center;
@@ -27,16 +27,16 @@
 			perspective: 600px;
 		}
 
-		.is-dimmed-dialog
+		.#{$bs-prefix}-is-dimmed-dialog
 		{
-			.dim-dialog
+			.#{$bs-prefix}-dim-dialog
 			{
 				opacity:1;
 				pointer-events:auto;
 				transition: opacity .2s cubic-bezier(0.39, 0.58, 0.57, 1);
 			}
 
-			.dialog
+			.#{$bs-prefix}-dialog
 			{
 				box-shadow:0 1px 1px rgba(0,0,0,.2);
 				opacity:1;
@@ -49,7 +49,7 @@
 //  = BASE
 //  ---------------------------------------------------------------------------
 
-		.dialog
+		.#{$bs-prefix}-dialog
 		{
 			background:$bs-white;
 			border-radius:2px;
@@ -59,7 +59,7 @@
 			transition: transform 2s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity .2s cubic-bezier(0.39, 0.58, 0.57, 1);
 		}
 
-		.dialog__close
+		.#{$bs-prefix}-dialog__close
 		{
 			display:block;
 			float:right;
@@ -81,13 +81,13 @@
 			}
 		}
 
-		.dialog__title
+		.#{$bs-prefix}-dialog__title
 		{
 			@extend .h3;
 		}
 
-		.dialog__bd,
-		.dialog__actions
+		.#{$bs-prefix}-dialog__bd,
+		.#{$bs-prefix}-dialog__actions
 		{
 			padding: $bs-space150 $bs-space150 0;
 		}
@@ -96,7 +96,7 @@
 //  = ACTIONS
 //  ---------------------------------------------------------------------------
 
-		.dialog__actions
+		.#{$bs-prefix}-dialog__actions
 		{
 			display: flex;
 			justify-content: flex-end;
@@ -105,12 +105,12 @@
 			border-radius:0 0 2px 2px;
 		}
 
-		.dialog__primary
+		.#{$bs-prefix}-dialog__primary
 		{
 			margin-bottom: $bs-space150;
 		}
 
-		.dialog__secondary
+		.#{$bs-prefix}-dialog__secondary
 		{
 			margin-right: $bs-space150;
 			line-height: $bs-touch-size;

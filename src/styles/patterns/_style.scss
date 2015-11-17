@@ -10,14 +10,14 @@
 
 	// Use this class to set a larger
 	// bottom margin than the default
-	.space-lover
+	.#{$bs-prefix}-space-lover
 	{
 		margin-bottom: $bs-space100 * 2 !important;
 	}
 
 	// Use this class to set an EVEN LARGER
 	// bottom margin than the default
-	.space-lover--huge
+	.#{$bs-prefix}-space-lover--huge
 	{
 		margin-bottom: $bs-space100 * 4 !important;
 	}
@@ -30,7 +30,7 @@
 	// Use this class to give an element
 	// more space to other elements, just
 	// like an island.
-	.island
+	.#{$bs-prefix}-island
 	{
 		padding: $bs-space50 !important;
 	}
@@ -38,7 +38,7 @@
 	// Use this class to give an element
 	// EVEN MORE space to other elements,
 	// just like a far away island.
-	.island--far-away
+	.#{$bs-prefix}-island--far-away
 	{
 		padding: $bs-space100 !important;
 	}

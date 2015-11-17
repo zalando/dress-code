@@ -7,7 +7,7 @@
 //  = LABEL
 //  ---------------------------------------------------------------------------
 
-.label {
+.#{$bs-prefix}-label {
 	display: block;
 	margin-bottom: $bs-space50;
 	font-size: $bs-font50;
@@ -16,11 +16,11 @@
 	text-transform: uppercase;
 }
 
-.label--disabled {
+.#{$bs-prefix}-label--disabled {
 	color: $bs-gray50;
 }
 
-.label--required:after {
+.#{$bs-prefix}-label--required:after {
 	content: "Required";
 	margin-left: $bs-space50;
 	text-transform: capitalize;
@@ -28,7 +28,7 @@
 	color: $bs-gray50;
 }
 
-.label--is-error:after {
+.#{$bs-prefix}-label--is-error:after {
 	color: $bs-red40;
 }
 
@@ -44,6 +44,7 @@
 	border: 1px solid $bs-gray60;
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
 	font-size: 1.6rem;
+	font-weight: $bs-normal-font-weight;
 	box-sizing: border-box;
 	-webkit-appearance: none;
 
@@ -64,15 +65,19 @@
 		color: $bs-gray50;
 
 		&::-webkit-input-placeholder {
+			font-weight: $bs-normal-font-weight;
 			color: $bs-gray60;
 		}
 		&:-moz-placeholder {
+			font-weight: $bs-normal-font-weight;
 			color: $bs-gray60;
 		}
 		&::-moz-placeholder {
+			font-weight: $bs-normal-font-weight;
 			color: $bs-gray60;
 		}
 		&:-ms-input-placeholder {
+			font-weight: $bs-normal-font-weight;
 			color: $bs-gray60;
 		}
 	}
@@ -82,7 +87,7 @@
 		font-size: $bs-font100;
 	}
 
-	&.#{$bs-prefix}-input-is-error {
+	&.#{$bs-prefix}-input--is-error {
 		border-color: $bs-red40;
 
 		&:hover,
@@ -95,29 +100,6 @@
 .#{$bs-prefix}-input--block {
 	display: inline-block;
 	width: 100%;
-}
-
-//  = SEARCH FIELD
-//  ---------------------------------------------------------------------------
-
-.search {
-	position: relative;
-
-	@include breakpoint($bs-huge-width) {
-		position: absolute;
-		top: $bs-space75;
-		width: 30%;
-	}
-}
-
-.search__input {
-	width: 100%;
-}
-
-.search__icon {
-	position: absolute;
-	top: 0;
-	right: 0;
 }
 
 //  = TEXT AREA
@@ -138,18 +120,22 @@
 //  ---------------------------------------------------------------------------
 
 ::-webkit-input-placeholder {
+	font-weight: $bs-normal-font-weight;
 	color: $bs-gray50;
 }
 
 :-moz-placeholder {
+	font-weight: $bs-normal-font-weight;
 	color: $bs-gray50;
 }
 
 ::-moz-placeholder {
+	font-weight: $bs-normal-font-weight;
 	color: $bs-gray50;
 }
 
 :-ms-input-placeholder {
+	font-weight: $bs-normal-font-weight;
 	color: $bs-gray50;
 }
 
@@ -161,7 +147,7 @@
 .#{$bs-prefix}-checkbox {
 	display: none;
 
-	& + label {
+	& + .#{$bs-prefix}-label {
 		display: inline-block;
 		position: relative;
 		padding-left: $bs-space200 - $bs-space75;
@@ -193,12 +179,12 @@
 		}
 	}
 
-	&:checked + label:after {
+	&:checked + .#{$bs-prefix}-label:after {
 		opacity: 1;
 		transform: scale3d(1, 1, 1);
 	}
 
-	&[disabled] + label {
+	&[disabled] + .#{$bs-prefix}-label {
 		color: $bs-gray50;
 
 		&:before,
@@ -214,16 +200,16 @@
 
 .#{$bs-prefix}-radio {
 
-	& + label:before,
-	& + label:after {
+	& + .#{$bs-prefix}-label:before,
+	& + .#{$bs-prefix}-label:after {
 		border-radius: 50%;
 	}
 
-	& + label:after {
+	& + .#{$bs-prefix}-label:after {
 		border-color: darken($bs-blue40, 5%);
 	}
 
-	&:checked + label:after {
+	&:checked + .#{$bs-prefix}-label:after {
 		background: $bs-blue40;
 	}
 }
@@ -231,7 +217,7 @@
 //  = CHECKBOX
 //  ---------------------------------------------------------------------------
 .#{$bs-prefix}-checkbox {
-	& + label:after {
+	& + .#{$bs-prefix}-label:after {
 		top: .2rem;
 		left: .2rem;
 		width: 2rem;
@@ -240,7 +226,7 @@
 		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iMThweCIgaGVpZ2h0PSIxOHB4IiB2aWV3Qm94PSIwIDAgMTggMTgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiPiAgICAgICAgPHRpdGxlPkNoZWNrYm94PC90aXRsZT4gICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+ICAgIDxkZWZzPjwvZGVmcz4gICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+ICAgICAgICA8ZyBpZD0iQ2hlY2tib3giIHNrZXRjaDp0eXBlPSJNU0FydGJvYXJkR3JvdXAiIHN0cm9rZT0iIzI2QUFGRSIgc3Ryb2tlLXdpZHRoPSIzIj4gICAgICAgICAgICA8cGF0aCBkPSJNMyw5LjMyNjk5ODQ5IEw2LjY0OTA5ODM2LDEzLjUwOTQxNTQgTDE1LjAyNzgzMiwzLjUiIGlkPSJQYXRoLTE2IiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIj48L3BhdGg+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=);
 	}
 
-	&[disabled] + label {
+	&[disabled] + .#{$bs-prefix}-label {
 		color: $bs-gray50;
 
 		&:before,
@@ -254,10 +240,17 @@
 	}
 }
 
+.#{$bs-prefix}-checkbox + .#{$bs-prefix}-label {
+	font-size: $bs-body-font-size;
+	line-height: $bs-space150 - .2;
+	font-weight: $bs-normal-font-weight;
+	text-transform: none;
+}
+
 //  = CHECKBOX SWITCH
 //  ---------------------------------------------------------------------------
 
-.#{$bs-prefix}-checkbox--alt + label {
+.#{$bs-prefix}-checkbox--alt + .#{$bs-prefix}-label {
 	padding-left: $bs-space200;
 
 	&:before,
@@ -279,7 +272,7 @@
 	}
 }
 
-.#{$bs-prefix}-checkbox--alt:checked + label {
+.#{$bs-prefix}-checkbox--alt:checked + .#{$bs-prefix}-label {
 	&:after {
 		background: none;
 		background-color: $bs-green30;
@@ -289,11 +282,15 @@
 	}
 }
 
-.#{$bs-prefix}-checkbox--alt[disabled] + label {
+.#{$bs-prefix}-checkbox--alt[disabled] + .#{$bs-prefix}-label {
 	&:after {
 		background: none !important;
 		background-color: $bs-gray60 !important;
 	}
+}
+
+.#{$bs-prefix}-checkbox--alt + .#{$bs-prefix}-label {
+	line-height: $bs-space150;
 }
 
 //  = SELECT BOXES
@@ -304,6 +301,7 @@
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iOXB4IiBoZWlnaHQ9IjVweCIgdmlld0JveD0iMCAwIDkgNSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI+ICAgICAgICA8dGl0bGU+VHJpYW5nbGUgODwvdGl0bGU+ICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPiAgICA8ZGVmcz48L2RlZnM+ICAgIDxnIGlkPSJBbmFseXRpY3MtRmlsdGVyIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBza2V0Y2g6dHlwZT0iTVNQYWdlIj4gICAgICAgIDxnIGlkPSJQb3J0cmFpdC0tLTUvNVMvNUMtMiIgc2tldGNoOnR5cGU9Ik1TQXJ0Ym9hcmRHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE3Ni4wMDAwMDAsIC0xMDcuMDAwMDAwKSIgZmlsbD0iIzNFM0UzRSI+ICAgICAgICAgICAgPHBhdGggZD0iTTE3NiwxMDcgTDE4NSwxMDcgTDE4MC41LDExMiBMMTc2LDEwNyBaIiBpZD0iVHJpYW5nbGUtOCIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCI+PC9wYXRoPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+) no-repeat 92% 50% $bs-white;
 	border: $bs-border50 solid $bs-gray60;
 	font-size: $bs-body-font-size;
+	font-weight: $bs-normal-font-weight;
 	line-height: 1;
 	-webkit-appearance: none;
 	transition: box-shadow .2s linear, border-color .2s linear;

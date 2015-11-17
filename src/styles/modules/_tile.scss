@@ -10,7 +10,7 @@
 //  = BASE
 //  ---------------------------------------------------------------------------
 
-.tile
+.#{$bs-prefix}-tile
 {
 	margin-bottom: $bs-doubleSpace;
 	background:$bs-white;
@@ -19,33 +19,33 @@
 	text-align:center;
 }
 
-.tile__link
+.#{$bs-prefix}-tile__link
 {
 	display:block;
 	padding: $bs-doubleSpace $bs-doubleSpace * 2;
 	color:$bs-text-color;
 }
 
-.touch .tile__link:active,
-.no-touch .tile__link:hover
+.touch .#{$bs-prefix}-tile__link:active,
+.no-touch .#{$bs-prefix}-tile__link:hover
 {
 	background:$bs-grayLightest;
 	color:$bs-text-color;
 }
 
-.tile--positive
+.#{$bs-prefix}-tile--positive
 {
 	border:2px solid $bs-greenLighter;
 	box-shadow:2px 2px 0 rgba($bs-greenDark, .5);
 }
 
-.tile--negative
+.#{$bs-prefix}-tile--negative
 {
 	border:2px solid $bs-redLighter;
 	box-shadow:2px 2px 0 rgba($bs-redDark, .5);
 }
 
-.tile__title
+.#{$bs-prefix}-tile__title
 {
 	margin-bottom: $bs-singleSpace;
 	font-size: 2.4;
@@ -55,14 +55,14 @@
 	font-weight:300;
 }
 
-.tile__text
+.#{$bs-prefix}-tile__text
 {
 	margin-bottom: $bs-singleSpace;
 	font-size: 1.6;
 	line-height:1.5;
 }
 
-.tile__kpi
+.#{$bs-prefix}-tile__kpi
 {
 	display:block;
 	font-size: 4.8;
@@ -70,13 +70,13 @@
 	font-weight:bold;
 }
 
-.tile__positive
+.#{$bs-prefix}-tile__positive
 {
 	color:$bs-green;
 	font-weight:bold;
 }
 
-.tile__negative
+.#{$bs-prefix}-tile__negative
 {
 	color:$bs-red;
 	font-weight:bold;

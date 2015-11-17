@@ -5,14 +5,14 @@
 //  ---------------------------------------------------------------------------
 
 		/* Animation keyframes - you need to add prefixes */
-		@include keyframes(spin)
+		@include keyframes(#{$bs-prefix}-spin)
 		{
 			from { @include transform(rotate(0deg)); }
 			to { @include transform(rotate(360deg)); }
 		}
 
 		/* Loading animation container */
-		.loading
+		.#{$bs-prefix}-loading
 		{
 			display:inline-block;
 			position: relative;
@@ -23,7 +23,7 @@
 		}
 
 		/* Spinning circle (inner circle) */
-		.loading .maskedCircle
+		.#{$bs-prefix}-loading .#{$bs-prefix}-maskedCircle
 		{
 			width: 10px;
 			height: 10px;
@@ -32,7 +32,7 @@
 		}
 
 		/* Spinning circle mask */
-		.loading .mask
+		.#{$bs-prefix}-loading .#{$bs-prefix}-mask
 		{
 			width: 6px;
 			height: 6px;
@@ -40,12 +40,12 @@
 		}
 
 		/* Spinner */
-		.loading .spinner
+		.#{$bs-prefix}-loading .#{$bs-prefix}-spinner
 		{
 			position: absolute;
 			left: 1px;
 			top: 1px;
 			width: 13px;
 			height: 13px;
-			@include animation(spin 1s infinite linear);
+			@include animation(#{$bs-prefix}-spin 1s infinite linear);
 		}
