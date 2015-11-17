@@ -9,14 +9,14 @@
 //  = INPUT & BUTTON
 //  ---------------------------------------------------------------------------
 
-		.search-form
+		.#{$dc-prefix}-search-form
 		{
 			display: inline-block;
 			position:relative;
-			margin-bottom: $space150;
+			margin-bottom: $dc-space150;
 		}
 
-		.search-form__input
+		.#{$dc-prefix}-search-form__input
 		{
 			.no-touch &[type='search'],
 			.touch &[type='search']
@@ -26,7 +26,7 @@
 			-webkit-appearance: none;
 		}
 
-		.search-form__btn
+		.#{$dc-prefix}-search-form__btn
 		{
 			position:absolute;
 			top: 0;
@@ -36,7 +36,8 @@
 			background: transparent;
 			border: none;
 
-			svg, img
+			.#{$dc-prefix}-svg,
+			.#{$dc-prefix}-img
 			{
 				display: block;
 			}
@@ -50,12 +51,12 @@
 
 				[fill^='#']
 				{
-					fill: $blue40;
+					fill: $dc-blue40;
 				}
 
 				[stroke^='#']
 				{
-					stroke: $blue40;
+					stroke: $dc-blue40;
 				}
 			}
 		}
@@ -65,7 +66,7 @@
 		//  = AUTOSUGGEST
 		//  ---------------------------------------------------------------------------
 
-		.suggest
+		.#{$dc-prefix}-suggest
 		{
 			position:absolute;
 			top: calc(100% - 1px);
@@ -74,34 +75,36 @@
 			margin: 0;
 			padding: 0;
 			min-width: 100%;
-			background: $white;
-			border: 1px solid $gray60;
+			background: $dc-white;
+			border: 1px solid $dc-gray60;
 			border-radius: 0 0 2px 2px;
 			box-shadow: 0 1px 1px rgba(0,0,0,.2);
 			list-style-type: none;
 			opacity: 0;
 			transform: translateY(-4px);
 			transition: transform .3s ease-out, opacity .2s;
+			pointer-events: none;
 		}
 
-		.suggest__link
+		.#{$dc-prefix}-suggest__link
 		{
 			display: block;
-			padding: 0 $space75;
-			line-height: $touchSize;
+			padding: 0 $dc-space75;
+			line-height: $dc-touch-size;
 			white-space: nowrap;
-			color: $textColor;
+			color: $dc-text-color;
 
 			.no-touch &:hover,
 			.touch &:active
 			{
-				background:desaturate(lighten($blue70, 10%), 10%);
-				color: $textColor;
+				background:desaturate(lighten($dc-blue70, 10%), 10%);
+				color: $dc-text-color;
 			}
 		}
 
-		.search-form__input:focus ~ .suggest
+		.#{$dc-prefix}-search-form__input:focus ~ .#{$dc-prefix}-suggest
 		{
 			opacity: 1;
 			transform: translateY(0);
+			pointer-events: auto;
 		}

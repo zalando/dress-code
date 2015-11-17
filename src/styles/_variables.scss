@@ -5,22 +5,23 @@
 //
 //  ---------------------------------------------------------------------------
 
+	$dc-prefix: 									'dc';
 
 
 //  = GRAYS
 //  ---------------------------------------------------------------------------
 
-	$white:										#fff;
+	$dc-white:										#fff;
 
-	$gray70:									#edeced;
-	$gray60:									#d1d1d1;
-	$gray50:									#b6b6b6;
-	$gray40:									#9b9b9b;
-	$gray30:									#807f80;
-	$gray20:									#646464;
-	$gray10:									#4a4a4a;
+	$dc-gray70:										#edeced;
+	$dc-gray60:										#d1d1d1;
+	$dc-gray50:										#b6b6b6;
+	$dc-gray40:										#9b9b9b;
+	$dc-gray30:										#807f80;
+	$dc-gray20:										#646464;
+	$dc-gray10:										#4a4a4a;
 
-	$black: 									#000;
+	$dc-black: 										#000;
 
 
 
@@ -28,175 +29,175 @@
 //  ---------------------------------------------------------------------------
 
 	// BLUE
-	$blue70:									#b1dcfe;
-	$blue60:									#88ccfe;
-	$blue50:									#5cbbfe;
-	$blue40:									#26aafe; // Base color
-	$blue30:									#1e87cb;
-	$blue20:									#186698;
-	$blue10:									#124365;
+	$dc-blue70:										#b1dcfe;
+	$dc-blue60:										#88ccfe;
+	$dc-blue50:										#5cbbfe;
+	$dc-blue40:										#26aafe; // Base color
+	$dc-blue30:										#1e87cb;
+	$dc-blue20:										#186698;
+	$dc-blue10:										#124365;
 
 	// CYAN
-	$cyan70:									#b5f2ff;
-	$cyan60:									#8decff;
-	$cyan50:									#61e6fe;
-	$cyan40:									#24e0fe; // Base color
-	$cyan30:									#1fb3cb;
-	$cyan20:									#1a8699;
-	$cyan10:									#145966;
+	$dc-cyan70:										#b5f2ff;
+	$dc-cyan60:										#8decff;
+	$dc-cyan50:										#61e6fe;
+	$dc-cyan40:										#24e0fe; // Base color
+	$dc-cyan30:										#1fb3cb;
+	$dc-cyan20:										#1a8699;
+	$dc-cyan10:										#145966;
 
 	// GREEN
-	$green70:									#ceff9e;
-	$green60:									#b4ff70;
-	$green50:									#9aff44;
-	$green40:									#7fff25; // Base color
-	$green30:									#65cb1c;
-	$green20:									#4c9913;
-	$green10:									#32650a;
+	$dc-green70:									#ceff9e;
+	$dc-green60:									#b4ff70;
+	$dc-green50:									#9aff44;
+	$dc-green40:									#7fff25; // Base color
+	$dc-green30:									#65cb1c;
+	$dc-green20:									#4c9913;
+	$dc-green10:									#32650a;
 
 	// YELLOW
-	$yellow70:								#fff49b;
-	$yellow60:								#ffef6a;
-	$yellow50:								#ffe93d;
-	$yellow40:								#ffe41f; // Base color
-	$yellow30:								#ccb616;
-	$yellow20:								#99880e;
-	$yellow10:								#665b05;
+	$dc-yellow70:									#fff49b;
+	$dc-yellow60:									#ffef6a;
+	$dc-yellow50:									#ffe93d;
+	$dc-yellow40:									#ffe41f; // Base color
+	$dc-yellow30:									#ccb616;
+	$dc-yellow20:									#99880e;
+	$dc-yellow10:									#665b05;
 
 	// ORANGE
-	$orange70:								#ffd2a6;
-	$orange60:								#ffbc7a;
-	$orange50:								#ffa54e;
-	$orange40:								#ff8e25; // Base color
-	$orange30:								#cc611d;
-	$orange20:								#995516;
-	$orange10:								#66380e;
+	$dc-orange70:									#ffd2a6;
+	$dc-orange60:									#ffbc7a;
+	$dc-orange50:									#ffa54e;
+	$dc-orange40:									#ff8e25; // Base color
+	$dc-orange30:									#cc611d;
+	$dc-orange20:									#995516;
+	$dc-orange10:									#66380e;
 
 	// RED
-	$red70:										#FFB7A6;
-	$red60:										#ff937b;
-	$red50:										#ff6e4f;
-	$red40:										#ff4a25; // Base color
-	$red30:										#cc3a1d;
-	$red20:										#982c15;
-	$red10:										#661d0e;
+	$dc-red70:										#FFB7A6;
+	$dc-red60:										#ff937b;
+	$dc-red50:										#ff6e4f;
+	$dc-red40:										#ff4a25; // Base color
+	$dc-red30:										#cc3a1d;
+	$dc-red20:										#982c15;
+	$dc-red10:										#661d0e;
 
 	// MAGENTA
-	$magenta70:								#f7c8f5;
-	$magenta60:								#f3acf1;
-	$magenta50:								#ef8fed;
-	$magenta40:								#eb74e9; // Base color
-	$magenta30:								#bb5cba;
-	$magenta20:								#8d458b;
-	$magenta10:								#5d2e5c;
+	$dc-magenta70:								#f7c8f5;
+	$dc-magenta60:								#f3acf1;
+	$dc-magenta50:								#ef8fed;
+	$dc-magenta40:								#eb74e9; // Base color
+	$dc-magenta30:								#bb5cba;
+	$dc-magenta20:								#8d458b;
+	$dc-magenta10:								#5d2e5c;
 
 	// PURPLE
-	$purple70:								#d5bdfe;
-	$purple60:								#c19cfe;
-	$purple50:								#ac7afd;
-	$purple40:								#9757fd; // Base color
-	$purple30:								#7845cb;
-	$purple20:								#5a3498;
-	$purple10:								#3c2365;
+	$dc-purple70:									#d5bdfe;
+	$dc-purple60:									#c19cfe;
+	$dc-purple50:									#ac7afd;
+	$dc-purple40:									#9757fd; // Base color
+	$dc-purple30:									#7845cb;
+	$dc-purple20:									#5a3498;
+	$dc-purple10:									#3c2365;
 
-	$primaryAccent:						$blue40;
-	$secondaryAccent:					$orange40;
+	$dc-primary-accent:						$dc-blue40;
+	$dc-secondary-accent:					$dc-orange40;
 
 
 
 //  = SCAFFOLDING
 //  ---------------------------------------------------------------------------
 
-	$bodyBackgroundColor:			$gray70;
-	$textColor:								$gray10;
+	$dc-body-background-color:			$dc-gray70;
+	$dc-text-color:								$dc-gray10;
 
 
 
 //  = LINKS
 //  ---------------------------------------------------------------------------
 
-	$linkColor:								$primaryAccent;
-	$linkColorHover:					$blue30;
+	$dc-link-color:								$dc-primary-accent;
+	$dc-link-color-hover:						$dc-blue30;
 
 
 
 //  = SPACING
 //  ---------------------------------------------------------------------------
 
-	$space50:									.4rem;
-	$space75:									.8rem;
-	$space100:								1.2rem;
-	$space125:								$space75 * 2;
-	$space150:								$space100 * 2;
-	$space200:								$space100 * 3;
-	$space250:								$space100 * 4;
-	$space300:								$space100 * 5;
-	$space350:								$space100 * 6;
+	$dc-space50:									.4rem;
+	$dc-space75:									.8rem;
+	$dc-space100:									1.2rem;
+	$dc-space125:									$dc-space75 * 2;
+	$dc-space150:									$dc-space100 * 2;
+	$dc-space200:									$dc-space100 * 3;
+	$dc-space250:									$dc-space100 * 4;
+	$dc-space300:									$dc-space100 * 5;
+	$dc-space350:									$dc-space100 * 6;
 
-	$touchSize:								$space50 * 11;
+	$dc-touch-size:								$dc-space50 * 11;
 
 
-	// $space50:									.4rem;
-	// $space100:								$space50 * 2;  //  8px
-	// $space150:								$space50 * 3;  // 12px
-	// $space200:								$space50 * 4;  // 16px
-	// $space300:								$space50 * 6;  // 24px
-	// $space450:								$space50 * 9;  // 36px
-	// $space600:								$space50 * 12; // 48px
-	// $space750:								$space50 * 15; // 60px
-	// $space900:								$space50 * 18; // 72px
+	// $dc-space50:								.4rem;
+	// $dc-space100:							$dc-space50 * 2;  //  8px
+	// $dc-space150:							$dc-space50 * 3;  // 12px
+	// $dc-space200:							$dc-space50 * 4;  // 16px
+	// $dc-space300:							$dc-space50 * 6;  // 24px
+	// $dc-space450:							$dc-space50 * 9;  // 36px
+	// $dc-space600:							$dc-space50 * 12; // 48px
+	// $dc-space750:							$dc-space50 * 15; // 60px
+	// $dc-space900:							$dc-space50 * 18; // 72px
 	//
-	// $touchSize:								$space50 * 9;  // 36px
+	// $dc-touch-size:							$dc-space50 * 9;  // 36px
 
 
 
 //  = TYPOGRAPHY
 //  ---------------------------------------------------------------------------
 
-	$sansFontFamily:        	"Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-	$serifFontFamily:       	"Georgia", "Geneva", "Times New Roman", serif;
-	$monoFontFamily:        	"Menlo", "Monaco", "Consolas", "Courier New", monospace;
+	$dc-sans-font-family:        		"Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	$dc-serif-font-family:       		"Georgia", "Geneva", "Times New Roman", serif;
+	$dc-mono-font-family:        		"Menlo", "Monaco", "Consolas", "Courier New", monospace;
 
-	$htmlFontSize:          	62.5%;
-	$htmlLineHeight:        	1;
-	$bodyFontSize:          	1.4rem;
-	$bodyLineHeight:        	$space150;
-	$baseFontFamily:        	$sansFontFamily;
-	$altFontFamily:         	$sansFontFamily;
+	$dc-html-font-size:         	 	62.5%;
+	$dc-html-line-height:       	 	1;
+	$dc-body-font-size:         	 	1.4rem;
+	$dc-body-line-height:       	 	$dc-space150;
+	$dc-base-font-family:       	 	$dc-sans-font-family;
+	$dc-alt-font-family:        	 	$dc-sans-font-family;
 
-	$font50:									1.1rem;
-	$font100:									1.4rem;
-	$font150:									1.8rem;
-	$font200:									2.2rem;
-	$font250:									2.7rem;
-	$font300:									3.4rem;
+	$dc-font50:										1.1rem;
+	$dc-font100:									1.4rem;
+	$dc-font150:									1.8rem;
+	$dc-font200:									2.2rem;
+	$dc-font250:									2.7rem;
+	$dc-font300:									3.4rem;
 
-	$normalFontWeight:				300;
-	$boldFontWeight:					500;
+	$dc-normal-font-weight:					300;
+	$dc-bold-font-weight:						500;
 
-	$headingsFontFamily:    	$sansFontFamily;
-	$headingsFontWeight:    	$normalFontWeight;
-	$headingsColor:         	$textColor;
+	$dc-headings-font-family:   	 	$dc-sans-font-family;
+	$dc-headings-font-weight:   	 	$dc-normal-font-weight;
+	$dc-headings-color:        	 	$dc-text-color;
 
-	$h1Size:									$font300;
-	$h2Size:									$font250;
-	$h3Size:									$font200;
-	$h4Size:									$font150;
+	$dc-h1-size:										$dc-font300;
+	$dc-h2-size:										$dc-font250;
+	$dc-h3-size:										$dc-font200;
+	$dc-h4-size:										$dc-font150;
 
-	$h1LineHeight:						4.8rem;
-	$h2LineHeight:						3.6rem;
-	$h3LineHeight:						3.6rem;
-	$h4LineHeight:						2.4rem;
+	$dc-h1-line-height:							4.8rem;
+	$dc-h2-line-height:							3.6rem;
+	$dc-h3-line-height:							3.6rem;
+	$dc-h4-line-height:							2.4rem;
 
 
 
 //  = BORDERS & RADII
 //  ---------------------------------------------------------------------------
 
-	$radius100:								2px;
-	$border50:								1px;
-	$border100:								2px;
-	$border150:								4px;
+	$dc-radius100:								2px;
+	$dc-border50:									1px;
+	$dc-border100:								2px;
+	$dc-border150:								4px;
 
 
 
@@ -206,16 +207,16 @@
 	// Base is 10px at this point
 
 	// Relative column & gutter width
-	$r-column-width:				 	6;
-	$r-gutter-width:				 	4;
-	$r-grid-padding:				 	8;
-	$r-grid-padding-large:		4;
-	$r-grid-padding-huge:			5;
+	$dc-r-column-width:				 		6;
+	$dc-r-gutter-width:				 		4;
+	$dc-r-grid-padding:				 		8;
+	$dc-r-grid-padding-large:			4;
+	$dc-r-grid-padding-huge:			5;
 
 	// Columns for smallest screen
-	$total-columns:						2;
+	$dc-total-columns:						2;
 
-	$container-style:				 	fluid;
+	$dc-container-style:				 	fluid;
 
 
 
@@ -224,30 +225,30 @@
 
 	// Base is 16px at this point
 
-	// Feature phone: 				0px		 	 2 columns	-->	   0-UP
-	$tiny-width: 							0;
-	$tiny-cols: 							2;
+	// Feature phone: 						0px		 	 2 columns	-->	   0-UP
+	$dc-tiny-width: 							0;
+	$dc-tiny-cols: 								2;
 
-	// Smartphone: 						320px		 4 columns 	-->  320-UP
-	$small-width: 						20em;
-	$small-cols: 							4;
+	// Smartphone: 								320px		 4 columns 	-->  320-UP
+	$dc-small-width: 							20em;
+	$dc-small-cols: 							4;
 
-	// Smartphone landscape: 	480px 	 6 columns 	-->  480-UP
-	$medium-width: 						30em;
-	$medium-cols: 						6;
+	// Smartphone landscape: 			480px 	 6 columns 	-->  480-UP
+	$dc-medium-width: 						30em;
+	$dc-medium-cols: 							6;
 
-	// Tablet: 								600px, 	 8 columns 	-->  600-UP
-	$large-width: 						37.5em;
-	$large-cols: 							8;
+	// Tablet: 										600px, 	 8 columns 	-->  600-UP
+	$dc-large-width: 							37.5em;
+	$dc-large-cols: 							8;
 
-	// Tablet landscape: 			1024px 	12 columns 	--> 1024-UP
-	$huge-width: 							64em;
-	$huge-cols: 							12;
+	// Tablet landscape: 					1024px 	12 columns 	--> 1024-UP
+	$dc-huge-width: 							64em;
+	$dc-huge-cols: 								12;
 
-	// Desktop: 							1280px 	16 columns 	--> 1280-UP
-	$giant-width: 						80em;
-	$giant-cols: 							16;
+	// Desktop: 									1280px 	16 columns 	--> 1280-UP
+	$dc-giant-width: 							80em;
+	$dc-giant-cols: 							16;
 
-	// Desktop large: 				1600px 	20 columns 	--> 1600-UP
-	$monstrous-width: 				100em;
-	$monstrous-cols: 					20;
+	// Desktop large: 						1600px 	20 columns 	--> 1600-UP
+	$dc-monstrous-width: 					100em;
+	$dc-monstrous-cols: 					20;

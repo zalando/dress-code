@@ -21,16 +21,16 @@
 
 
 
-	.cf:before,
-	.cf:after {
+	.#{$dc-prefix}-cf:before,
+	.#{$dc-prefix}-cf:after {
 	    content: " "; /* 1 */
 	    display: table; /* 2 */
 	}
 
-	.cf:after {
+	.#{$dc-prefix}-cf:after {
 	    clear: both;
 	}
 
-	.cf {
+	.#{$dc-prefix}-cf {
 	    *zoom: 1; /* 3 */
 	}

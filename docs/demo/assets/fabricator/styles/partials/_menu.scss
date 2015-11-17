@@ -2,48 +2,48 @@
 .f-menu {
 	@include border-box;
 	position: fixed;
-	top: $touchSize;
+	top: $dc-touch-size;
 	left: 0;
 	z-index: 1;
-	width: calc(#{span(1 of 2)} + #{$space75});
+	width: calc(#{span(1 of 2)} + #{$dc-space75});
 	height: 100%;
-	padding-bottom: $touchSize;
-	background-color: map-get($colors, menu-background);
-	border-right: 1px solid $gray60;
+	padding-bottom: $dc-touch-size;
+	background-color: map-get($dc-colors, menu-background);
+	border-right: 1px solid $dc-gray60;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	transition: transform .2s ease-out;
 	transform: translate(-100%, 0);
 	-webkit-overflow-scrolling: touch;
 
-	@include breakpoint($small-width)
+	@include breakpoint($dc-small-width)
 	{
 		width: span(2 of 4);
 	}
 
-	@include breakpoint($medium-width)
+	@include breakpoint($dc-medium-width)
 	{
-		width: calc(#{span(2 of 6)} + #{$space75});
+		width: calc(#{span(2 of 6)} + #{$dc-space75});
 	}
 
-	@include breakpoint($large-width)
+	@include breakpoint($dc-large-width)
 	{
-		width: calc(#{span(2 of 8)} + #{$space100});
+		width: calc(#{span(2 of 8)} + #{$dc-space100});
 	}
 
-	@include breakpoint($huge-width)
+	@include breakpoint($dc-huge-width)
 	{
-		width: calc(#{span(2 of 12)} + #{$space100});
+		width: calc(#{span(2 of 12)} + #{$dc-space100});
 	}
 
-	@include breakpoint($giant-width)
+	@include breakpoint($dc-giant-width)
 	{
-		width: calc(#{span(2 of 16)} + #{$space150});
+		width: calc(#{span(2 of 16)} + #{$dc-space150});
 	}
 
-	@include breakpoint($monstrous-width)
+	@include breakpoint($dc-monstrous-width)
 	{
-		width: calc(#{span(2 of 20)} + #{$space200});
+		width: calc(#{span(2 of 20)} + #{$dc-space200});
 	}
 
 	.f-menu-active & {
@@ -58,12 +58,12 @@
 
 	> ul {
 		margin-top: 0;
-		margin-bottom: $space150;
+		margin-bottom: $dc-space150;
 
 		> li {
-			margin-bottom: $space125;
-			padding-bottom: $space125;
-			border-bottom: 1px solid $gray70;
+			margin-bottom: $dc-space125;
+			padding-bottom: $dc-space125;
+			border-bottom: 1px solid $dc-gray70;
 		}
 	}
 
@@ -75,29 +75,29 @@
 
 	a {
 		display: block;
-		padding: $space50 $space125;
-		color: $gray20;
+		padding: $dc-space50 $dc-space125;
+		color: $dc-gray20;
 		text-decoration: none;
-		font-size: $font100;
+		font-size: $dc-font100;
 		line-height: 1.2;
 
 		&:hover {
-			color: $orange40;
+			color: $dc-orange40;
 		}
 
 		&.f-active {
-			box-shadow: inset 3px 0 0 0 map-get($colors, accent);
+			box-shadow: inset 3px 0 0 0 map-get($dc-colors, accent);
 		}
 	}
 
 	.f-menu__heading {
 		padding-left: 1.5rem;
 		font-weight: 500;
-		font-size: $font100;
+		font-size: $dc-font100;
 		text-transform: uppercase;
 
 		&:hover {
-			color: map-get($colors, normal);
+			color: map-get($dc-colors, normal);
 		}
 	}
 }
@@ -105,6 +105,6 @@
 .touch .f-menu a:active,
 .no-touch .f-menu a:hover
 {
-	background-color: lighten($orange70, 12%);
-	color: $orange40;
+	background-color: lighten($dc-orange70, 12%);
+	color: $dc-orange40;
 }

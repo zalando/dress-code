@@ -7,21 +7,20 @@
 //  = BASE
 //  ---------------------------------------------------------------------------
 
-.btn,
-button {
-
+.#{$dc-prefix}-btn {
     display: inline-block;
-    margin-right: $space50;
-    margin-bottom: $space100;
-    padding: $space100 - .1 $space100;
-    line-height: $space100;
-    background: linear-gradient($white, darken($white, 7%));
-    border: 1px solid $gray50;
-    border-radius: $radius100;
+    margin-right: $dc-space50;
+    margin-bottom: $dc-space100;
+    padding: $dc-space100 - .1 $dc-space100;
+    line-height: $dc-space100;
+    background: linear-gradient($dc-white, darken($dc-white, 7%));
+    border: 1px solid $dc-gray50;
+    border-radius: $dc-radius100;
     text-transform: capitalize;
     text-decoration: none;
     text-align: center;
-    color: $gray10;
+    font-weight: $dc-normal-font-weight;
+    color: $dc-gray10;
     box-shadow: 0 1px 1px transparent;
     cursor: default;
 
@@ -31,36 +30,33 @@ button {
         outline: 0;
 
         // TODO: Validate whether we need visible :focus
-        // border-color:$blue40;
+        // border-color:$dc-blue40;
     }
 }
 
-.no-touch .btn:hover,
-.no-touch button:hover {
-    box-shadow: 0 1px 1px rgba($black, .2);
-    background: linear-gradient($white, darken($white, 5%));
-    color: $gray10;
+.no-touch .#{$dc-prefix}-btn:hover {
+    box-shadow: 0 1px 1px rgba($dc-black, .2);
+    background: linear-gradient($dc-white, darken($dc-white, 5%));
+    color: $dc-gray10;
     text-decoration: none;
     outline: 0;
 }
 
-.touch .btn:active,
-.no-touch .btn:active,
-.touch button:active,
-.no-touch button:active {
-    background: darken($white, 4%);
-    box-shadow: inset 0 1px 1px rgba($black, .1);
-    color: $gray10;
+.touch .#{$dc-prefix}-btn:active,
+.no-touch .#{$dc-prefix}-btn:active {
+    background: darken($dc-white, 4%);
+    box-shadow: inset 0 1px 1px rgba($dc-black, .1);
+    color: $dc-gray10;
     text-decoration: none;
 }
 
 //  = ICON BUTTONS
 //  ---------------------------------------------------------------------------
 
-.btn--icon {
+.#{$dc-prefix}-btn--icon {
     padding: 0;
-    width: $touchSize;
-    height: $touchSize;
+    width: $dc-touch-size;
+    height: $dc-touch-size;
 
     svg {
         position: relative;
@@ -69,40 +65,40 @@ button {
     }
 
     [stroke^='#'] {
-        stroke: $textColor;
+        stroke: $dc-text-color;
     }
 
     [fill^='#'] {
-        fill: $textColor;
+        fill: $dc-text-color;
     }
 
-    &.btn--primary {
+    &.#{$dc-prefix}-btn--primary {
         [stroke^='#'] {
-            stroke: $white;
+            stroke: $dc-white;
         }
 
         [fill^='#'] {
-            fill: $white;
+            fill: $dc-white;
         }
     }
 
-    &.btn--destroy:hover {
+    &.#{$dc-prefix}-btn--destroy:hover {
         [stroke^='#'] {
-            stroke: $white;
+            stroke: $dc-white;
         }
 
         [fill^='#'] {
-            fill: $white;
+            fill: $dc-white;
         }
     }
 
-    &.btn--disabled {
+    &.#{$dc-prefix}-btn--disabled {
         [stroke^='#'] {
-            stroke: $gray50;
+            stroke: $dc-gray50;
         }
 
         [fill^='#'] {
-            fill: $gray50;
+            fill: $dc-gray50;
         }
     }
 }
@@ -110,57 +106,56 @@ button {
 //  = PRIMARY
 //  ---------------------------------------------------------------------------
 
-.btn--primary {
-    background: linear-gradient($blue40, darken($blue40, 7%));
-    border-color: darken($blue40, 7%);
-    color: $white;
+.#{$dc-prefix}-btn--primary {
+    background: linear-gradient($dc-blue40, darken($dc-blue40, 7%));
+    border-color: darken($dc-blue40, 7%);
+    color: $dc-white;
 
     &:focus {
         // TODO: Validate whether we need visible :focus
-        // border-color:$blue20;
+        // border-color:$dc-blue20;
     }
 }
 
-.touch .btn--primary:active,
-.no-touch .btn--primary:hover {
-    background: lighten($blue40, 3%);
-    color: $white;
+.touch .#{$dc-prefix}-btn--primary:active,
+.no-touch .#{$dc-prefix}-btn--primary:hover {
+    background: lighten($dc-blue40, 3%);
+    color: $dc-white;
 }
 
 //  = DESTROY
 //  ---------------------------------------------------------------------------
 
-.btn--destroy {
+.#{$dc-prefix}-btn--destroy {
     transition: box-shadow .2s linear;
 }
 
-.touch .btn--destroy:active,
-.no-touch .btn--destroy:hover {
-    color: $white;
-    background: $red50;
-    border-color: $red40;
+.touch .#{$dc-prefix}-btn--destroy:active,
+.no-touch .#{$dc-prefix}-btn--destroy:hover {
+    color: $dc-white;
+    background: $dc-red50;
+    border-color: $dc-red40;
 }
 
 //  = DISABLED
 //  ---------------------------------------------------------------------------
 
-.btn--disabled,
-.touch .btn--disabled:active,
-.no-touch .btn--disabled:hover {
-    color: $gray50;
+.#{$dc-prefix}-btn--disabled,
+.touch .#{$dc-prefix}-btn--disabled:active,
+.no-touch .#{$dc-prefix}-btn--disabled:hover {
+    color: $dc-gray50;
     background: transparent;
-    border-color: $gray60;
+    border-color: $dc-gray60;
     box-shadow: none;
 }
 
 //  = BUTTON GROUPS
 //  ---------------------------------------------------------------------------
 
-.btn-group {
-    @extend .cf;
+.#{$dc-prefix}-btn-group {
+    @extend .#{$dc-prefix}-cf;
 
-    .btn,
-    button {
+    .#{$dc-prefix}-btn {
         float: left;
         margin-right: 0;
         border-radius: 0;
@@ -168,7 +163,7 @@ button {
 
         &:first-child {
             border-radius: 2px 0 0 2px;
-            border-left: 1px solid $gray50;
+            border-left: 1px solid $dc-gray50;
         }
 
         &:last-child {
@@ -176,18 +171,18 @@ button {
         }
     }
 
-    .btn--primary:first-child {
-        border-left: 1px solid darken($blue40, 7%);
+    .#{$dc-prefix}-btn--primary:first-child {
+        border-left: 1px solid darken($dc-blue40, 7%);
     }
 }
 
 //  = CREATE PAGE
 //  ---------------------------------------------------------------------------
 
-.btn--create-page {
+.#{$dc-prefix}-btn--create-page {
     display: none;
 
-    @include breakpoint($huge-width) {
+    @include breakpoint($dc-huge-width) {
         display: inline-block;
     }
 }
@@ -195,16 +190,16 @@ button {
 //  = SMALL BUTTON
 //  ---------------------------------------------------------------------------
 
-.btn--small {
-    padding: $space50 $space75;
-    font-size: $font50;
+.#{$dc-prefix}-btn--small {
+    padding: $dc-space50 $dc-space75;
+    font-size: $dc-font50;
     text-transform: uppercase;
 }
 
-.btn--inline {
+.#{$dc-prefix}-btn--inline {
     margin-bottom: 0;
 
-    + .btn--inline {
+    + .#{$dc-prefix}-btn--inline {
         margin-left: .2; // Account for 4px inline margin
     }
 }

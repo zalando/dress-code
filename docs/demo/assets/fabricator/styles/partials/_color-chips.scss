@@ -12,8 +12,8 @@
 	border-bottom-width: 0;
 	border-bottom-style: solid;
 	background-color: #fff;
-	font-weight: 700;
-	font-size: 0.75em;
+	font-size: $dc-body-font-size;
+	font-weight: $dc-bold-font-weight;
 	padding: 1em;
 	margin-bottom: 2em;
 
@@ -24,6 +24,7 @@
 	.f-color-chip__color {
 		background-color: #fff;
 		content: attr(data-color);
-		font-weight: 400;
+		font-weight: $dc-normal-font-weight;
+		color: $dc-gray40;
 	}
 }
