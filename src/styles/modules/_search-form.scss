@@ -83,6 +83,7 @@
 			opacity: 0;
 			transform: translateY(-4px);
 			transition: transform .3s ease-out, opacity .2s;
+			pointer-events: none;
 		}
 
 		.#{$dc-prefix}-suggest__link
@@ -105,4 +106,5 @@
 		{
 			opacity: 1;
 			transform: translateY(0);
+			pointer-events: auto;
 		}
