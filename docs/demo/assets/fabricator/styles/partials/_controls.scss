@@ -1,8 +1,8 @@
 .f-controls {
 	@include clearfix;
 	@include border-box;
-		margin-bottom: $bs-space125;
-		border-bottom: 1px solid $bs-gray70;
+		margin-bottom: $dc-space125;
+		border-bottom: 1px solid $dc-gray70;
 
 	.f-control {
 		display: block;
@@ -13,15 +13,15 @@
 		padding: 1rem 0;
 
 		&.f-active {
-			box-shadow: inset 0 -3px 0 0 map-get($bs-colors, accent);
+			box-shadow: inset 0 -3px 0 0 map-get($dc-colors, accent);
 
 			use {
-				fill: $bs-orange40;
+				fill: $dc-orange40;
 			}
 
 			&:hover {
 				use {
-					fill: darken($bs-orange40, 10%);
+					fill: darken($dc-orange40, 10%);
 				}
 			}
 		}
@@ -30,12 +30,12 @@
 			vertical-align: middle;
 
 			use {
-				fill: $bs-gray40;
+				fill: $dc-gray40;
 			}
 
 			&:hover {
 				use {
-					fill: darken($bs-orange40, 10%);
+					fill: darken($dc-orange40, 10%);
 				}
 			}
 		}
@@ -46,18 +46,18 @@
 	@include border-box;
 	display: inline-block;
 	cursor: pointer;
-	margin-left: $bs-space150;
+	margin-left: $dc-space150;
 
 	&:first-child {
 		margin-left: 0;
 	}
 
 	svg {
-		width: $bs-space125;
-		height: $bs-space125;
+		width: $dc-space125;
+		height: $dc-space125;
 
 		use {
-			fill: map-get($bs-colors, light);
+			fill: map-get($dc-colors, light);
 		}
 
 		&:active
@@ -82,12 +82,12 @@
 		margin-bottom: -1px;
 
 		use {
-			fill: $bs-gray40;
+			fill: $dc-gray40;
 		}
 
 		&:hover {
 			use {
-				fill: darken($bs-orange40, 10%);
+				fill: darken($dc-orange40, 10%);
 			}
 		}
 	}

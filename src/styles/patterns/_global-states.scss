@@ -6,12 +6,12 @@
 //  ---------------------------------------------------------------------------
 
 
-	.#{$bs-prefix}-is-collapsed
+	.#{$dc-prefix}-is-collapsed
 	{
 		height:0!important;
 	}
 
-	.#{$bs-prefix}-is-expanded
+	.#{$dc-prefix}-is-expanded
 	{
 		height:auto!important;
 	}
@@ -25,12 +25,12 @@
 //  ---------------------------------------------------------------------------
 
 
-	.#{$bs-prefix}-is-hidden
+	.#{$dc-prefix}-is-hidden
 	{
 		display:none!important;
 	}
 
-	.#{$bs-prefix}-is-shown
+	.#{$dc-prefix}-is-shown
 	{
 		display:block!important;
 	}
@@ -44,12 +44,12 @@
 //  ---------------------------------------------------------------------------
 
 
-	.#{$bs-prefix}-is-invisible
+	.#{$dc-prefix}-is-invisible
 	{
 		opacity: 0;
 	}
 
-	.#{$bs-prefix}-is-visible
+	.#{$dc-prefix}-is-visible
 	{
 		opacity: 1;
 	}
@@ -62,7 +62,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-	.#{$bs-prefix}-is-inline
+	.#{$dc-prefix}-is-inline
 	{
 		display:inline-block !important;
 	}
@@ -75,7 +75,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-	.#{$bs-prefix}-is-fixed
+	.#{$dc-prefix}-is-fixed
 	{
 		position:fixed !important;
 	}
@@ -88,9 +88,9 @@
 //
 //  ---------------------------------------------------------------------------
 
-	.#{$bs-prefix}-is-important
+	.#{$dc-prefix}-is-important
 	{
-		background:$bs-yellow60 !important;
+		background:$dc-yellow60 !important;
 	}
 
 
@@ -101,9 +101,9 @@
 //
 //  ---------------------------------------------------------------------------
 
-	.#{$bs-prefix}-less-important
+	.#{$dc-prefix}-less-important
 	{
-		color:$bs-gray50 !important;
+		color:$dc-gray50 !important;
 	}
 
 //  ---------------------------------------------------------------------------
@@ -113,17 +113,17 @@
 //  ---------------------------------------------------------------------------
 
 
-	.#{$bs-prefix}-text-left
+	.#{$dc-prefix}-text-left
 	{
 		text-align:left;
 	}
 
-	.#{$bs-prefix}-text-center
+	.#{$dc-prefix}-text-center
 	{
 		text-align:center;
 	}
 
-	.#{$bs-prefix}-text-right
+	.#{$dc-prefix}-text-right
 	{
 		text-align:right;
 	}

@@ -29,62 +29,62 @@ body {
 	@include clearfix;
 	@include border-box;
 	position: relative;
-	margin-top: $bs-touch-size;
-	padding: $bs-space100;
+	margin-top: $dc-touch-size;
+	padding: $dc-space100;
 	z-index: 0;
 	min-height: calc(100vh - 4.4rem);
 	transition: transform .2s ease-out, padding .2s ease-out;
 
 	.f-menu-active & {
-		transform: translate(calc(#{span(1 of 2)} + #{$bs-space75} + #{gutter(4)}), 0);
+		transform: translate(calc(#{span(1 of 2)} + #{$dc-space75} + #{gutter(4)}), 0);
 		padding-left: 0;
 
-		@include breakpoint($bs-small-width)
+		@include breakpoint($dc-small-width)
 		{
 			transform: translate(calc(#{span(2 of 4)} + #{gutter(4)}), 0);
 		}
 
-		@include breakpoint($bs-medium-width)
+		@include breakpoint($dc-medium-width)
 		{
-			transform: translate(calc(#{span(2 of 6)} + #{$bs-space75} + #{gutter(6)}), 0);
+			transform: translate(calc(#{span(2 of 6)} + #{$dc-space75} + #{gutter(6)}), 0);
 		}
 
-		@include breakpoint($bs-large-width)
+		@include breakpoint($dc-large-width)
 		{
-			transform: translate(calc(#{span(2 of 8)} + #{$bs-space100} + #{gutter(8)}), 0);
+			transform: translate(calc(#{span(2 of 8)} + #{$dc-space100} + #{gutter(8)}), 0);
 		}
 
-		@include breakpoint($bs-huge-width)
+		@include breakpoint($dc-huge-width)
 		{
-			margin-left: calc(#{span(2 of 12)} + #{$bs-space100} + #{gutter(12)});
-			padding: $bs-space150 $bs-space150 0 0;
-			height: calc(100vh - #{$bs-touch-size};
+			margin-left: calc(#{span(2 of 12)} + #{$dc-space100} + #{gutter(12)});
+			padding: $dc-space150 $dc-space150 0 0;
+			height: calc(100vh - #{$dc-touch-size};
 			overflow-y: scroll;
 			-webkit-overflow-scrolling: touch;
 			transform: translate(0, 0);
 		}
 
-		@include breakpoint($bs-giant-width)
+		@include breakpoint($dc-giant-width)
 		{
-			margin-left: calc(#{span(2 of 16)} + #{$bs-space150} + #{gutter(16)});
-			padding: $bs-space150 $bs-space200 0 0;
+			margin-left: calc(#{span(2 of 16)} + #{$dc-space150} + #{gutter(16)});
+			padding: $dc-space150 $dc-space200 0 0;
 		}
 
-		@include breakpoint($bs-monstrous-width)
+		@include breakpoint($dc-monstrous-width)
 		{
-			margin-left: calc(#{span(2 of 20)} + #{$bs-space200} + #{gutter(20)});
-			padding: $bs-space150 $bs-space250 0 0;
+			margin-left: calc(#{span(2 of 20)} + #{$dc-space200} + #{gutter(20)});
+			padding: $dc-space150 $dc-space250 0 0;
 		}
 	}
 
-	@include breakpoint($bs-large-width)
+	@include breakpoint($dc-large-width)
 	{
-		padding: $bs-space100 $bs-space150;
+		padding: $dc-space100 $dc-space150;
 	}
 
-	@include breakpoint($bs-monstrous-width)
+	@include breakpoint($dc-monstrous-width)
 	{
-		padding: $bs-space100 $bs-space250;
+		padding: $dc-space100 $dc-space250;
 	}
 
 }

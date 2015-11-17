@@ -10,9 +10,9 @@
 //  ---------------------------------------------------------------------------
 
 	// Use these classes for <img>, <object> and <video>
-	.#{$bs-prefix}-img,
-	.#{$bs-prefix}-object,
-	.#{$bs-prefix}-video
+	.#{$dc-prefix}-img,
+	.#{$dc-prefix}-object,
+	.#{$dc-prefix}-video
 	{
 		max-width:100%;
 	}

@@ -9,13 +9,13 @@
 //  = BODY
 //  ---------------------------------------------------------------------------
 
-	.#{$bs-prefix}-collapse-bd
+	.#{$dc-prefix}-collapse-bd
 	{
 		height:0;
 		overflow:hidden;
 	}
 
-	.csstransitions .#{$bs-prefix}-collapsing
+	.csstransitions .#{$dc-prefix}-collapsing
 	{
 		transition: height .3s ease-out;
 	}

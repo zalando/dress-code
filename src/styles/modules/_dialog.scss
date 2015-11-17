@@ -8,7 +8,7 @@
 //  = DIM
 //  ---------------------------------------------------------------------------
 
-		.#{$bs-prefix}-dim-dialog
+		.#{$dc-prefix}-dim-dialog
 		{
 			display: flex;
 			justify-content: center;
@@ -19,24 +19,24 @@
 			bottom:0;
 			left:0;
 			z-index:999;
-			padding: $bs-space100;
-			background:rgba($bs-black, .6);
+			padding: $dc-space100;
+			background:rgba($dc-black, .6);
 			opacity:0;
 			pointer-events:none;
 			transition: opacity .2s .2s cubic-bezier(0.39, 0.58, 0.57, 1);
 			perspective: 600px;
 		}
 
-		.#{$bs-prefix}-is-dimmed-dialog
+		.#{$dc-prefix}-is-dimmed-dialog
 		{
-			.#{$bs-prefix}-dim-dialog
+			.#{$dc-prefix}-dim-dialog
 			{
 				opacity:1;
 				pointer-events:auto;
 				transition: opacity .2s cubic-bezier(0.39, 0.58, 0.57, 1);
 			}
 
-			.#{$bs-prefix}-dialog
+			.#{$dc-prefix}-dialog
 			{
 				box-shadow:0 1px 1px rgba(0,0,0,.2);
 				opacity:1;
@@ -49,9 +49,9 @@
 //  = BASE
 //  ---------------------------------------------------------------------------
 
-		.#{$bs-prefix}-dialog
+		.#{$dc-prefix}-dialog
 		{
-			background:$bs-white;
+			background:$dc-white;
 			border-radius:2px;
 			box-shadow:0 5px 10px rgba(0,0,0,.2);
 			opacity:0;
@@ -59,7 +59,7 @@
 			transition: transform 2s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity .2s cubic-bezier(0.39, 0.58, 0.57, 1);
 		}
 
-		.#{$bs-prefix}-dialog__close
+		.#{$dc-prefix}-dialog__close
 		{
 			display:block;
 			float:right;
@@ -70,7 +70,7 @@
 			{
 				[fill^='#']
 				{
-					fill:$bs-blue30;
+					fill:$dc-blue30;
 				}
 			}
 
@@ -81,37 +81,37 @@
 			}
 		}
 
-		.#{$bs-prefix}-dialog__title
+		.#{$dc-prefix}-dialog__title
 		{
 			@extend .h3;
 		}
 
-		.#{$bs-prefix}-dialog__bd,
-		.#{$bs-prefix}-dialog__actions
+		.#{$dc-prefix}-dialog__bd,
+		.#{$dc-prefix}-dialog__actions
 		{
-			padding: $bs-space150 $bs-space150 0;
+			padding: $dc-space150 $dc-space150 0;
 		}
 
 
 //  = ACTIONS
 //  ---------------------------------------------------------------------------
 
-		.#{$bs-prefix}-dialog__actions
+		.#{$dc-prefix}-dialog__actions
 		{
 			display: flex;
 			justify-content: flex-end;
-			background:$bs-gray70;
-			border-top:1px solid $bs-gray60;
+			background:$dc-gray70;
+			border-top:1px solid $dc-gray60;
 			border-radius:0 0 2px 2px;
 		}
 
-		.#{$bs-prefix}-dialog__primary
+		.#{$dc-prefix}-dialog__primary
 		{
-			margin-bottom: $bs-space150;
+			margin-bottom: $dc-space150;
 		}
 
-		.#{$bs-prefix}-dialog__secondary
+		.#{$dc-prefix}-dialog__secondary
 		{
-			margin-right: $bs-space150;
-			line-height: $bs-touch-size;
+			margin-right: $dc-space150;
+			line-height: $dc-touch-size;
 		}

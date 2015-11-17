@@ -10,34 +10,34 @@
 //  = BASE
 //  ---------------------------------------------------------------------------
 
-		.#{$bs-prefix}-icon
+		.#{$dc-prefix}-icon
 		{
 			display:inline-block;
-			margin-bottom: $bs-font250;
-			padding: $bs-space100;
-			background-color: $bs-white;
-			border:1px solid $bs-gray60;
+			margin-bottom: $dc-font250;
+			padding: $dc-space100;
+			background-color: $dc-white;
+			border:1px solid $dc-gray60;
 			text-align:center;
 
-			.#{$bs-prefix}-svg
+			.#{$dc-prefix}-svg
 			{
-				margin-bottom: $bs-font50;
+				margin-bottom: $dc-font50;
 				vertical-align:middle;
 			}
 		}
 
-		.#{$bs-prefix}-icon--interactive
+		.#{$dc-prefix}-icon--interactive
 		{
 			&:hover
 			{
 				[fill^='#']
 				{
-					fill:$bs-blue30;
+					fill:$dc-blue30;
 				}
 
 				[stroke^='#']
 				{
-					stroke:$bs-blue30;
+					stroke:$dc-blue30;
 				}
 			}
 
@@ -49,18 +49,18 @@
 			}
 		}
 
-		.#{$bs-prefix}-icon--alternate
+		.#{$dc-prefix}-icon--alternate
 		{
 			&:hover
 			{
 				[fill^='#']
 				{
-					fill:$bs-orange40;
+					fill:$dc-orange40;
 				}
 
 				[stroke^='#']
 				{
-					stroke:$bs-orange40;
+					stroke:$dc-orange40;
 				}
 			}
 		}

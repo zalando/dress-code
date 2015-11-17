@@ -9,14 +9,14 @@
 //  = INPUT & BUTTON
 //  ---------------------------------------------------------------------------
 
-		.#{$bs-prefix}-search-form
+		.#{$dc-prefix}-search-form
 		{
 			display: inline-block;
 			position:relative;
-			margin-bottom: $bs-space150;
+			margin-bottom: $dc-space150;
 		}
 
-		.#{$bs-prefix}-search-form__input
+		.#{$dc-prefix}-search-form__input
 		{
 			.no-touch &[type='search'],
 			.touch &[type='search']
@@ -26,7 +26,7 @@
 			-webkit-appearance: none;
 		}
 
-		.#{$bs-prefix}-search-form__btn
+		.#{$dc-prefix}-search-form__btn
 		{
 			position:absolute;
 			top: 0;
@@ -36,8 +36,8 @@
 			background: transparent;
 			border: none;
 
-			.#{$bs-prefix}-svg,
-			.#{$bs-prefix}-img
+			.#{$dc-prefix}-svg,
+			.#{$dc-prefix}-img
 			{
 				display: block;
 			}
@@ -51,12 +51,12 @@
 
 				[fill^='#']
 				{
-					fill: $bs-blue40;
+					fill: $dc-blue40;
 				}
 
 				[stroke^='#']
 				{
-					stroke: $bs-blue40;
+					stroke: $dc-blue40;
 				}
 			}
 		}
@@ -66,7 +66,7 @@
 		//  = AUTOSUGGEST
 		//  ---------------------------------------------------------------------------
 
-		.#{$bs-prefix}-suggest
+		.#{$dc-prefix}-suggest
 		{
 			position:absolute;
 			top: calc(100% - 1px);
@@ -75,8 +75,8 @@
 			margin: 0;
 			padding: 0;
 			min-width: 100%;
-			background: $bs-white;
-			border: 1px solid $bs-gray60;
+			background: $dc-white;
+			border: 1px solid $dc-gray60;
 			border-radius: 0 0 2px 2px;
 			box-shadow: 0 1px 1px rgba(0,0,0,.2);
 			list-style-type: none;
@@ -85,23 +85,23 @@
 			transition: transform .3s ease-out, opacity .2s;
 		}
 
-		.#{$bs-prefix}-suggest__link
+		.#{$dc-prefix}-suggest__link
 		{
 			display: block;
-			padding: 0 $bs-space75;
-			line-height: $bs-touch-size;
+			padding: 0 $dc-space75;
+			line-height: $dc-touch-size;
 			white-space: nowrap;
-			color: $bs-text-color;
+			color: $dc-text-color;
 
 			.no-touch &:hover,
 			.touch &:active
 			{
-				background:desaturate(lighten($bs-blue70, 10%), 10%);
-				color: $bs-text-color;
+				background:desaturate(lighten($dc-blue70, 10%), 10%);
+				color: $dc-text-color;
 			}
 		}
 
-		.#{$bs-prefix}-search-form__input:focus ~ .#{$bs-prefix}-suggest
+		.#{$dc-prefix}-search-form__input:focus ~ .#{$dc-prefix}-suggest
 		{
 			opacity: 1;
 			transform: translateY(0);

@@ -19,13 +19,13 @@
 //  = VERTICAL RHYTHM
 //  ---------------------------------------------------------------------------
 
-	.#{$bs-prefix}-h1,.#{$bs-prefix}-h2,.#{$bs-prefix}-h3,.#{$bs-prefix}-h4,.#{$bs-prefix}-h5,.#{$bs-prefix}-h6,.#{$bs-prefix}-hgroup,
-	.#{$bs-prefix}-list,.#{$bs-prefix}-dd,
-	.#{$bs-prefix}-p,.#{$bs-prefix}-figure,.#{$bs-prefix}-object,
-	.#{$bs-prefix}-pre,.#{$bs-prefix}-table,.#{$bs-prefix}-fieldset,.#{$bs-prefix}-hr
+	.#{$dc-prefix}-h1,.#{$dc-prefix}-h2,.#{$dc-prefix}-h3,.#{$dc-prefix}-h4,.#{$dc-prefix}-h5,.#{$dc-prefix}-h6,.#{$dc-prefix}-hgroup,
+	.#{$dc-prefix}-list,.#{$dc-prefix}-dd,
+	.#{$dc-prefix}-p,.#{$dc-prefix}-figure,.#{$dc-prefix}-object,
+	.#{$dc-prefix}-pre,.#{$dc-prefix}-table,.#{$dc-prefix}-fieldset,.#{$dc-prefix}-hr
 	{
 		margin:0;
-		margin-bottom: $bs-space150;
+		margin-bottom: $dc-space150;
 	}
 
 
@@ -34,24 +34,24 @@
 //  ---------------------------------------------------------------------------
 
 
-	.#{$bs-prefix}-html
+	.#{$dc-prefix}-html
 	{
 		height:100%;
-		font-family:$bs-base-font-family;
-		font-size:$bs-html-font-size;
-		line-height:$bs-html-line-height;
-		font-weight:$bs-normal-font-weight;
+		font-family:$dc-base-font-family;
+		font-size:$dc-html-font-size;
+		line-height:$dc-html-line-height;
+		font-weight:$dc-normal-font-weight;
 	}
 
-	.#{$bs-prefix}-body
+	.#{$dc-prefix}-body
 	{
-		font-size: $bs-body-font-size;
-		line-height: $bs-body-line-height;
-		background: $bs-body-background-color;
-		color: $bs-text-color;
+		font-size: $dc-body-font-size;
+		line-height: $dc-body-line-height;
+		background: $dc-body-background-color;
+		color: $dc-text-color;
 	}
 
-	.#{$bs-prefix}-pre
+	.#{$dc-prefix}-pre
 	{
 		// undo reset
 		word-wrap:normal;
@@ -59,39 +59,39 @@
 
 	::-webkit-selection
 	{
-	    background-color:$bs-secondary-accent;
-	    color:$bs-white;
+	    background-color:$dc-secondary-accent;
+	    color:$dc-white;
 	}
 
 	::-moz-selection
 	{
-	    background-color:$bs-secondary-accent;
-	    color:$bs-white;
+	    background-color:$dc-secondary-accent;
+	    color:$dc-white;
 	}
 
 	::selection
 	{
-	    background-color:$bs-secondary-accent;
-	    color:$bs-white;
+	    background-color:$dc-secondary-accent;
+	    color:$dc-white;
 	}
 
-	.#{$bs-prefix}-strong
+	.#{$dc-prefix}-strong
 	{
-		font-weight:$bs-bold-font-weight;
+		font-weight:$dc-bold-font-weight;
 	}
 
-	.#{$bs-prefix}-em
+	.#{$dc-prefix}-em
 	{
 		font-style:italic;
 	}
 
 
-	.#{$bs-prefix}-nowrap
+	.#{$dc-prefix}-nowrap
 	{
 		white-space:nowrap;
 	}
 
-	.#{$bs-prefix}-styleguide .#{$bs-prefix}-p
+	.#{$dc-prefix}-styleguide .#{$dc-prefix}-p
 	{
 		max-width: 45;
 	}
@@ -101,49 +101,49 @@
 //  = LINKS
 //  ---------------------------------------------------------------------------
 
-	.#{$bs-prefix}-link
+	.#{$dc-prefix}-link
 	{
 		text-decoration:none;
-		color:$bs-link-color;
+		color:$dc-link-color;
 		cursor:pointer;
 
 		transition: color .1s linear;
 		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	}
 
-	.#{$bs-prefix}-input
+	.#{$dc-prefix}-input
 	{
 		-webkit-tap-highlight-color:rgba(0,0,0,0);
 	}
 
-	.no-touch .#{$bs-prefix}-link:hover,
-	.touch .#{$bs-prefix}-link:active
+	.no-touch .#{$dc-prefix}-link:hover,
+	.touch .#{$dc-prefix}-link:active
 	{
 		text-decoration:none;
-		color:$bs-link-color-hover;
+		color:$dc-link-color-hover;
 	}
 
-	.no-touch .#{$bs-prefix}-link--success:hover,
-	.touch .#{$bs-prefix}-link--success:active
+	.no-touch .#{$dc-prefix}-link--success:hover,
+	.touch .#{$dc-prefix}-link--success:active
 	{
-		color:$bs-green30;
+		color:$dc-green30;
 	}
 
-	.no-touch .#{$bs-prefix}-link--destroy:hover,
-	.touch .#{$bs-prefix}-link--destroy:active
+	.no-touch .#{$dc-prefix}-link--destroy:hover,
+	.touch .#{$dc-prefix}-link--destroy:active
 	{
-		color:$bs-red40;
+		color:$dc-red40;
 	}
 
-	.#{$bs-prefix}-link--disabled,
-	.touch .#{$bs-prefix}-link--disabled:active,
-	.no-touch .#{$bs-prefix}-link--disabled:hover
+	.#{$dc-prefix}-link--disabled,
+	.touch .#{$dc-prefix}-link--disabled:active,
+	.no-touch .#{$dc-prefix}-link--disabled:hover
 	{
-		color:$bs-gray50;
+		color:$dc-gray50;
 		cursor:default;
 	}
 
-	.#{$bs-prefix}-has-tooltip[data-tooltip]
+	.#{$dc-prefix}-has-tooltip[data-tooltip]
 	{
 		position: relative;
 
@@ -162,11 +162,11 @@
 		{
 			content: attr(data-tooltip);
 			bottom: calc(100% + 12px);
-			padding: .2rem $bs-space50;
-			background: rgba($bs-black, .7);
+			padding: .2rem $dc-space50;
+			background: rgba($dc-black, .7);
 			border-radius: 2px;
-			line-height: $bs-body-line-height;
-			color:$bs-white;
+			line-height: $dc-body-line-height;
+			color:$dc-white;
 		}
 
 		&:after
@@ -176,8 +176,8 @@
 			height: 0;
 			width: 0;
 			border: solid transparent;
-			border-color: rgba($bs-black, 0);
-			border-top-color: rgba($bs-black, .7);
+			border-color: rgba($dc-black, 0);
+			border-top-color: rgba($dc-black, .7);
 			border-width: 6px;
 			margin-left: -6px;
 		}
@@ -198,18 +198,18 @@
 //  = LISTS
 //  ---------------------------------------------------------------------------
 
-	.#{$bs-prefix}-list {
+	.#{$dc-prefix}-list {
 		padding-left: 3rem;
 	}
 
-	.#{$bs-prefix}-list--is-reset {
+	.#{$dc-prefix}-list--is-reset {
 		padding:0;
 		list-style-type:none;
 	}
 
-	.#{$bs-prefix}-dt
+	.#{$dc-prefix}-dt
 	{
-		font-family:$bs-base-font-family;
+		font-family:$dc-base-font-family;
 	}
 
 
@@ -217,49 +217,49 @@
 //  = HEADINGS
 //  ---------------------------------------------------------------------------
 
-	.#{$bs-prefix}-h1,
-	.#{$bs-prefix}-h2,
-	.#{$bs-prefix}-h3,
-	.#{$bs-prefix}-h4,
-	.#{$bs-prefix}-h5,
-	.#{$bs-prefix}-h6
+	.#{$dc-prefix}-h1,
+	.#{$dc-prefix}-h2,
+	.#{$dc-prefix}-h3,
+	.#{$dc-prefix}-h4,
+	.#{$dc-prefix}-h5,
+	.#{$dc-prefix}-h6
 	{
-		margin-bottom: $bs-space150;
-		font-family:$bs-headings-font-family;
-		font-weight:$bs-headings-font-weight;
-		color:$bs-headings-color;
+		margin-bottom: $dc-space150;
+		font-family:$dc-headings-font-family;
+		font-weight:$dc-headings-font-weight;
+		color:$dc-headings-color;
 
-		.#{$bs-prefix}-small
+		.#{$dc-prefix}-small
 		{
 			display:block;
-			font-family:$bs-base-font-family;
+			font-family:$dc-base-font-family;
 			font-size:60%;
-			color:$bs-gray50;
+			color:$dc-gray50;
 		}
 	}
 
-	.#{$bs-prefix}-h1
+	.#{$dc-prefix}-h1
 	{
-		font-size: $bs-h1-size;
-		line-height: $bs-h1-line-height;
+		font-size: $dc-h1-size;
+		line-height: $dc-h1-line-height;
 	}
 
-	.#{$bs-prefix}-h2
+	.#{$dc-prefix}-h2
 	{
-		font-size: $bs-h2-size;
-		line-height: $bs-h2-line-height;
+		font-size: $dc-h2-size;
+		line-height: $dc-h2-line-height;
 	}
 
-	.#{$bs-prefix}-h3
+	.#{$dc-prefix}-h3
 	{
-		font-size: $bs-h3-size;
-		line-height: $bs-h3-line-height;
+		font-size: $dc-h3-size;
+		line-height: $dc-h3-line-height;
 	}
 
-	.#{$bs-prefix}-h4
+	.#{$dc-prefix}-h4
 	{
-		font-size: $bs-h4-size;
-		line-height: $bs-h4-line-height;
+		font-size: $dc-h4-size;
+		line-height: $dc-h4-line-height;
 	}
 
 
@@ -267,31 +267,31 @@
 	//  = TEXT
 	//  ---------------------------------------------------------------------------
 
-	.#{$bs-prefix}-text--center
+	.#{$dc-prefix}-text--center
 	{
 		text-align:center;
 	}
 
-	.#{$bs-prefix}-text--small
+	.#{$dc-prefix}-text--small
 	{
-		font-size: $bs-font50;
+		font-size: $dc-font50;
 		line-height: 1.8;
 	}
 
-	.#{$bs-prefix}-less-important
+	.#{$dc-prefix}-less-important
 	{
-		font-size: $bs-font50;
+		font-size: $dc-font50;
 		line-height:1;
-		color:$bs-gray60;
+		color:$dc-gray60;
 	}
 
-	.#{$bs-prefix}-text--error
+	.#{$dc-prefix}-text--error
 	{
 		display:block;
-		margin-top: - $bs-space150;
-		margin-bottom: $bs-space150;
-		font-size: $bs-font50;
-		color:$bs-red40;
+		margin-top: - $dc-space150;
+		margin-bottom: $dc-space150;
+		font-size: $dc-font50;
+		color:$dc-red40;
 	}
 
 
@@ -299,7 +299,7 @@
 //  = ICONS
 //  ---------------------------------------------------------------------------
 
-		.#{$bs-prefix}-icon
+		.#{$dc-prefix}-icon
 		{
 			display:inline-block;
 			vertical-align:middle;
@@ -310,12 +310,12 @@
 			{
 				[stroke^='#']
 				{
-					stroke:$bs-blue20;
+					stroke:$dc-blue20;
 				}
 
 				[fill^='#']
 				{
-					fill:$bs-blue20;
+					fill:$dc-blue20;
 				}
 			}
 
@@ -325,15 +325,15 @@
 			}
 		}
 
-		.#{$bs-prefix}-icon--destroy:hover
+		.#{$dc-prefix}-icon--destroy:hover
 		{
 			[stroke^='#']
 			{
-				stroke:$bs-red40;
+				stroke:$dc-red40;
 			}
 
 			[fill^='#']
 			{
-				fill:$bs-red40;
+				fill:$dc-red40;
 			}
 		}

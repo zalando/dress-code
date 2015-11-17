@@ -10,59 +10,59 @@
 //  = BASE
 //  ---------------------------------------------------------------------------
 
-.#{$bs-prefix}-tile
+.#{$dc-prefix}-tile
 {
-	margin-bottom: $bs-doubleSpace;
-	background:$bs-white;
-	border:2px solid $bs-grayLightest;
-	box-shadow:2px 2px 0 rgba($bs-black, .2);
+	margin-bottom: $dc-doubleSpace;
+	background:$dc-white;
+	border:2px solid $dc-grayLightest;
+	box-shadow:2px 2px 0 rgba($dc-black, .2);
 	text-align:center;
 }
 
-.#{$bs-prefix}-tile__link
+.#{$dc-prefix}-tile__link
 {
 	display:block;
-	padding: $bs-doubleSpace $bs-doubleSpace * 2;
-	color:$bs-text-color;
+	padding: $dc-doubleSpace $dc-doubleSpace * 2;
+	color:$dc-text-color;
 }
 
-.touch .#{$bs-prefix}-tile__link:active,
-.no-touch .#{$bs-prefix}-tile__link:hover
+.touch .#{$dc-prefix}-tile__link:active,
+.no-touch .#{$dc-prefix}-tile__link:hover
 {
-	background:$bs-grayLightest;
-	color:$bs-text-color;
+	background:$dc-grayLightest;
+	color:$dc-text-color;
 }
 
-.#{$bs-prefix}-tile--positive
+.#{$dc-prefix}-tile--positive
 {
-	border:2px solid $bs-greenLighter;
-	box-shadow:2px 2px 0 rgba($bs-greenDark, .5);
+	border:2px solid $dc-greenLighter;
+	box-shadow:2px 2px 0 rgba($dc-greenDark, .5);
 }
 
-.#{$bs-prefix}-tile--negative
+.#{$dc-prefix}-tile--negative
 {
-	border:2px solid $bs-redLighter;
-	box-shadow:2px 2px 0 rgba($bs-redDark, .5);
+	border:2px solid $dc-redLighter;
+	box-shadow:2px 2px 0 rgba($dc-redDark, .5);
 }
 
-.#{$bs-prefix}-tile__title
+.#{$dc-prefix}-tile__title
 {
-	margin-bottom: $bs-singleSpace;
+	margin-bottom: $dc-singleSpace;
 	font-size: 2.4;
 	line-height:1.2;
 	text-transform:uppercase;
-	color:$bs-grayLight;
+	color:$dc-grayLight;
 	font-weight:300;
 }
 
-.#{$bs-prefix}-tile__text
+.#{$dc-prefix}-tile__text
 {
-	margin-bottom: $bs-singleSpace;
+	margin-bottom: $dc-singleSpace;
 	font-size: 1.6;
 	line-height:1.5;
 }
 
-.#{$bs-prefix}-tile__kpi
+.#{$dc-prefix}-tile__kpi
 {
 	display:block;
 	font-size: 4.8;
@@ -70,14 +70,14 @@
 	font-weight:bold;
 }
 
-.#{$bs-prefix}-tile__positive
+.#{$dc-prefix}-tile__positive
 {
-	color:$bs-green;
+	color:$dc-green;
 	font-weight:bold;
 }
 
-.#{$bs-prefix}-tile__negative
+.#{$dc-prefix}-tile__negative
 {
-	color:$bs-red;
+	color:$dc-red;
 	font-weight:bold;
 }

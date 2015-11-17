@@ -8,16 +8,16 @@
 //  = BASE
 //  ---------------------------------------------------------------------------
 
-		.#{$bs-prefix}-bubble-wrap
+		.#{$dc-prefix}-bubble-wrap
 		{
 			position:relative;
 
-			.#{$bs-prefix}-input
+			.#{$dc-prefix}-input
 			{
 				display:none;
 			}
 
-			.#{$bs-prefix}-bubble-wrap__inner
+			.#{$dc-prefix}-bubble-wrap__inner
 			{
 				position:absolute;
 				left: 6.5;
@@ -25,15 +25,15 @@
 			}
 		}
 
-		.#{$bs-prefix}-bubble
+		.#{$dc-prefix}-bubble
 		{
 			position:absolute;
-			top: $bs-space150;
+			top: $dc-space150;
 			left: -17.2;
-			padding: $bs-space50 $bs-space75;
-			background:rgba(lighten($bs-black, 5%), .85);
+			padding: $dc-space50 $dc-space75;
+			background:rgba(lighten($dc-black, 5%), .85);
 			border-radius:2px;
-			color:$bs-gray70;
+			color:$dc-gray70;
 			pointer-events:none;
 			opacity:0;
 			transform: translateY(-10%);
@@ -50,19 +50,19 @@
 				position: absolute;
 				pointer-events: none;
 				border-color: rgba(0, 0, 0, 0);
-				border-bottom-color: rgba(lighten($bs-black, 5%), .85);
+				border-bottom-color: rgba(lighten($dc-black, 5%), .85);
 				border-width: 6px;
 				margin-left: -6px;
 			}
 		}
 
-		:checked + .#{$bs-prefix}-label .#{$bs-prefix}-bubble
+		:checked + .#{$dc-prefix}-label .#{$dc-prefix}-bubble
 		{
 			opacity:1;
 			transform: translateY(0);
 		}
 
-		.#{$bs-prefix}-bubble__bd
+		.#{$dc-prefix}-bubble__bd
 		{
 			font-weight:300;
 			text-transform:none;

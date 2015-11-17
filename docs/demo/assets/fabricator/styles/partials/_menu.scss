@@ -2,48 +2,48 @@
 .f-menu {
 	@include border-box;
 	position: fixed;
-	top: $bs-touch-size;
+	top: $dc-touch-size;
 	left: 0;
 	z-index: 1;
-	width: calc(#{span(1 of 2)} + #{$bs-space75});
+	width: calc(#{span(1 of 2)} + #{$dc-space75});
 	height: 100%;
-	padding-bottom: $bs-touch-size;
-	background-color: map-get($bs-colors, menu-background);
-	border-right: 1px solid $bs-gray60;
+	padding-bottom: $dc-touch-size;
+	background-color: map-get($dc-colors, menu-background);
+	border-right: 1px solid $dc-gray60;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	transition: transform .2s ease-out;
 	transform: translate(-100%, 0);
 	-webkit-overflow-scrolling: touch;
 
-	@include breakpoint($bs-small-width)
+	@include breakpoint($dc-small-width)
 	{
 		width: span(2 of 4);
 	}
 
-	@include breakpoint($bs-medium-width)
+	@include breakpoint($dc-medium-width)
 	{
-		width: calc(#{span(2 of 6)} + #{$bs-space75});
+		width: calc(#{span(2 of 6)} + #{$dc-space75});
 	}
 
-	@include breakpoint($bs-large-width)
+	@include breakpoint($dc-large-width)
 	{
-		width: calc(#{span(2 of 8)} + #{$bs-space100});
+		width: calc(#{span(2 of 8)} + #{$dc-space100});
 	}
 
-	@include breakpoint($bs-huge-width)
+	@include breakpoint($dc-huge-width)
 	{
-		width: calc(#{span(2 of 12)} + #{$bs-space100});
+		width: calc(#{span(2 of 12)} + #{$dc-space100});
 	}
 
-	@include breakpoint($bs-giant-width)
+	@include breakpoint($dc-giant-width)
 	{
-		width: calc(#{span(2 of 16)} + #{$bs-space150});
+		width: calc(#{span(2 of 16)} + #{$dc-space150});
 	}
 
-	@include breakpoint($bs-monstrous-width)
+	@include breakpoint($dc-monstrous-width)
 	{
-		width: calc(#{span(2 of 20)} + #{$bs-space200});
+		width: calc(#{span(2 of 20)} + #{$dc-space200});
 	}
 
 	.f-menu-active & {
@@ -58,12 +58,12 @@
 
 	> ul {
 		margin-top: 0;
-		margin-bottom: $bs-space150;
+		margin-bottom: $dc-space150;
 
 		> li {
-			margin-bottom: $bs-space125;
-			padding-bottom: $bs-space125;
-			border-bottom: 1px solid $bs-gray70;
+			margin-bottom: $dc-space125;
+			padding-bottom: $dc-space125;
+			border-bottom: 1px solid $dc-gray70;
 		}
 	}
 
@@ -75,29 +75,29 @@
 
 	a {
 		display: block;
-		padding: $bs-space50 $bs-space125;
-		color: $bs-gray20;
+		padding: $dc-space50 $dc-space125;
+		color: $dc-gray20;
 		text-decoration: none;
-		font-size: $bs-font100;
+		font-size: $dc-font100;
 		line-height: 1.2;
 
 		&:hover {
-			color: $bs-orange40;
+			color: $dc-orange40;
 		}
 
 		&.f-active {
-			box-shadow: inset 3px 0 0 0 map-get($bs-colors, accent);
+			box-shadow: inset 3px 0 0 0 map-get($dc-colors, accent);
 		}
 	}
 
 	.f-menu__heading {
 		padding-left: 1.5rem;
 		font-weight: 500;
-		font-size: $bs-font100;
+		font-size: $dc-font100;
 		text-transform: uppercase;
 
 		&:hover {
-			color: map-get($bs-colors, normal);
+			color: map-get($dc-colors, normal);
 		}
 	}
 }
@@ -105,6 +105,6 @@
 .touch .f-menu a:active,
 .no-touch .f-menu a:hover
 {
-	background-color: lighten($bs-orange70, 12%);
-	color: $bs-orange40;
+	background-color: lighten($dc-orange70, 12%);
+	color: $dc-orange40;
 }
