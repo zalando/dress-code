@@ -81,12 +81,12 @@ h3.f-item-heading {
 		float: left;
 
 		use {
-			fill: $bs-primaryAccent;
+			fill: $bs-primary-accent;
 		}
 
 		&:hover {
 			use {
-				fill: darken($bs-primaryAccent, 20%);
+				fill: darken($bs-primary-accent, 20%);
 			}
 		}
 

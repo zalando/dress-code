@@ -23,14 +23,14 @@
 {
 	display:block;
 	padding: $bs-doubleSpace $bs-doubleSpace * 2;
-	color:$bs-textColor;
+	color:$bs-text-color;
 }
 
 .touch .tile__link:active,
 .no-touch .tile__link:hover
 {
 	background:$bs-grayLightest;
-	color:$bs-textColor;
+	color:$bs-text-color;
 }
 
 .tile--positive

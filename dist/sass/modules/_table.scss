@@ -10,7 +10,7 @@
 }
 
 .#{$bs-prefix}-table__item-title {
-	font-weight: $bs-boldFontWeight;
+	font-weight: $bs-bold-font-weight;
 }
 
 .status { // FIXME!
@@ -53,7 +53,7 @@
 	.#{$bs-prefix}-table__td {
 		display: block;
 		width: 100%;
-		font-weight: $bs-normalFontWeight;
+		font-weight: $bs-normal-font-weight;
 	}
 
 	.#{$bs-prefix}-table__thead > tr {
@@ -82,7 +82,7 @@
 			right: 70%;
 			font-size: $bs-font50;
 			line-height: 2.6;
-			font-weight: $bs-boldFontWeight;
+			font-weight: $bs-bold-font-weight;
 			text-transform: uppercase;
 			text-align: right;
 		}
@@ -117,7 +117,7 @@
 }
 
 .#{$bs-prefix}-table__td {
-	font-weight: $bs-normalFontWeight;
+	font-weight: $bs-normal-font-weight;
 }
 
 .#{$bs-prefix}-table__actions-toggle {
@@ -126,16 +126,16 @@
 
 .#{$bs-prefix}-table__actions-label {
 	display: inline;
-	color: $bs-linkColor;
+	color: $bs-link-color;
 	cursor: pointer;
 
 	&:hover {
-		color: $bs-linkColorHover;
+		color: $bs-link-color-hover;
 	}
 }
 
 :checked + .#{$bs-prefix}-table__actions-label {
-	color: $bs-linkColorHover;
+	color: $bs-link-color-hover;
 }
 
 .#{$bs-prefix}-table__actions {
@@ -147,7 +147,7 @@
 	border: 1px solid $bs-gray60;
 	border-radius: 2px;
 	box-shadow: 0 1px 2px rgba($bs-black, .2);
-	line-height: $bs-touchSize;
+	line-height: $bs-touch-size;
 	z-index: 900;
 
 	&:after,
@@ -314,7 +314,7 @@
 	}
 
 	.#{$bs-prefix}-table__item-title {
-		font-weight: $bs-normalFontWeight;
+		font-weight: $bs-normal-font-weight;
 		white-space: normal;
 	}
 }

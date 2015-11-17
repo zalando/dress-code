@@ -29,7 +29,7 @@ body {
 	@include clearfix;
 	@include border-box;
 	position: relative;
-	margin-top: $bs-touchSize;
+	margin-top: $bs-touch-size;
 	padding: $bs-space100;
 	z-index: 0;
 	min-height: calc(100vh - 4.4rem);
@@ -58,7 +58,7 @@ body {
 		{
 			margin-left: calc(#{span(2 of 12)} + #{$bs-space100} + #{gutter(12)});
 			padding: $bs-space150 $bs-space150 0 0;
-			height: calc(100vh - #{$bs-touchSize};
+			height: calc(100vh - #{$bs-touch-size};
 			overflow-y: scroll;
 			-webkit-overflow-scrolling: touch;
 			transform: translate(0, 0);

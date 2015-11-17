@@ -2,12 +2,12 @@
 .f-menu {
 	@include border-box;
 	position: fixed;
-	top: $bs-touchSize;
+	top: $bs-touch-size;
 	left: 0;
 	z-index: 1;
 	width: calc(#{span(1 of 2)} + #{$bs-space75});
 	height: 100%;
-	padding-bottom: $bs-touchSize;
+	padding-bottom: $bs-touch-size;
 	background-color: map-get($bs-colors, menu-background);
 	border-right: 1px solid $bs-gray60;
 	overflow-x: hidden;

@@ -31,11 +31,11 @@
 	$bs-total-columns		: 2 !default;
 
 	// Column & gutter width in em (susy needs em)
-	$bs-column-width 		: convert-length($bs-r-column-width,em,$bs-bodyFontSize) !default; // convert to em
-	$bs-gutter-width		: convert-length($bs-r-gutter-width,em,$bs-bodyFontSize) !default; // convert to em
-	$bs-grid-padding		: convert-length($bs-r-grid-padding,em,$bs-bodyFontSize) !default; // convert to em
-	$bs-grid-padding-large	: convert-length($bs-r-grid-padding-large,em,$bs-bodyFontSize) !default; // convert to em
-	$bs-grid-padding-huge	: convert-length($bs-r-grid-padding-huge,em,$bs-bodyFontSize) !default; // convert to em
+	$bs-column-width 		: convert-length($bs-r-column-width,em,$bs-body-font-size) !default; // convert to em
+	$bs-gutter-width		: convert-length($bs-r-gutter-width,em,$bs-body-font-size) !default; // convert to em
+	$bs-grid-padding		: convert-length($bs-r-grid-padding,em,$bs-body-font-size) !default; // convert to em
+	$bs-grid-padding-large	: convert-length($bs-r-grid-padding-large,em,$bs-body-font-size) !default; // convert to em
+	$bs-grid-padding-huge	: convert-length($bs-r-grid-padding-huge,em,$bs-body-font-size) !default; // convert to em
 
 	$bs-container-style	: fluid !default;
 
@@ -161,7 +161,7 @@
 	.is-show-grid .grid
 	{
 		position: fixed;
-		top: $bs-touchSize;
+		top: $bs-touch-size;
 		right: 0;
 		bottom : 0;
 		left: 0;

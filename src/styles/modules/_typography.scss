@@ -37,18 +37,18 @@
 	html
 	{
 		height:100%;
-		font-family:$bs-baseFontFamily;
-		font-size:$bs-htmlFontSize;
-		line-height:$bs-htmlLineHeight;
-		font-weight:$bs-normalFontWeight;
+		font-family:$bs-base-font-family;
+		font-size:$bs-html-font-size;
+		line-height:$bs-html-line-height;
+		font-weight:$bs-normal-font-weight;
 	}
 
 	body
 	{
-		font-size: $bs-bodyFontSize;
-		line-height: $bs-bodyLineHeight;
-		background: $bs-bodyBackgroundColor;
-		color: $bs-textColor;
+		font-size: $bs-body-font-size;
+		line-height: $bs-body-line-height;
+		background: $bs-body-background-color;
+		color: $bs-text-color;
 	}
 
 	pre
@@ -59,25 +59,25 @@
 
 	::-webkit-selection
 	{
-	    background-color:$bs-secondaryAccent;
+	    background-color:$bs-secondary-accent;
 	    color:$bs-white;
 	}
 
 	::-moz-selection
 	{
-	    background-color:$bs-secondaryAccent;
+	    background-color:$bs-secondary-accent;
 	    color:$bs-white;
 	}
 
 	::selection
 	{
-	    background-color:$bs-secondaryAccent;
+	    background-color:$bs-secondary-accent;
 	    color:$bs-white;
 	}
 
 	strong
 	{
-		font-weight:$bs-boldFontWeight;
+		font-weight:$bs-bold-font-weight;
 	}
 
 	em
@@ -104,7 +104,7 @@
 	.#{$bs-prefix}-link
 	{
 		text-decoration:none;
-		color:$bs-linkColor;
+		color:$bs-link-color;
 		cursor:pointer;
 
 		transition: color .1s linear;
@@ -120,7 +120,7 @@
 	.touch a:active
 	{
 		text-decoration:none;
-		color:$bs-linkColorHover;
+		color:$bs-link-color-hover;
 	}
 
 	.no-touch .#{$bs-prefix}-link--success:hover,
@@ -165,7 +165,7 @@
 			padding: .2rem $bs-space50;
 			background: rgba($bs-black, .7);
 			border-radius: 2px;
-			line-height: $bs-bodyLineHeight;
+			line-height: $bs-body-line-height;
 			color:$bs-white;
 		}
 
@@ -209,7 +209,7 @@
 
 	dt
 	{
-		font-family:$bs-baseFontFamily;
+		font-family:$bs-base-font-family;
 	}
 
 
@@ -222,14 +222,14 @@
 	%h1, %h2, %h3, %h4, %h5, %h6
 	{
 		margin-bottom: $bs-space150;
-		font-family:$bs-headingsFontFamily;
-		font-weight:$bs-headingsFontWeight;
-		color:$bs-headingsColor;
+		font-family:$bs-headings-font-family;
+		font-weight:$bs-headings-font-weight;
+		color:$bs-headings-color;
 
 		small
 		{
 			display:block;
-			font-family:$bs-baseFontFamily;
+			font-family:$bs-base-font-family;
 			font-size:60%;
 			color:$bs-gray50;
 		}
@@ -237,26 +237,26 @@
 
 	h1, .h1
 	{
-		font-size: $bs-h1Size;
-		line-height: $bs-h1LineHeight;
+		font-size: $bs-h1-size;
+		line-height: $bs-h1-line-height;
 	}
 
 	h2, .h2
 	{
-		font-size: $bs-h2Size;
-		line-height: $bs-h2LineHeight;
+		font-size: $bs-h2-size;
+		line-height: $bs-h2-line-height;
 	}
 
 	h3, .h3
 	{
-		font-size: $bs-h3Size;
-		line-height: $bs-h3LineHeight;
+		font-size: $bs-h3-size;
+		line-height: $bs-h3-line-height;
 	}
 
 	h4, .h4
 	{
-		font-size: $bs-h4Size;
-		line-height: $bs-h4LineHeight;
+		font-size: $bs-h4-size;
+		line-height: $bs-h4-line-height;
 	}
 
 

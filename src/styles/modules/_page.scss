@@ -38,7 +38,7 @@
 
 .page-wrapper--styleguide
 {
-	padding-top: $bs-touchSize * 2;
+	padding-top: $bs-touch-size * 2;
 }
 
 
@@ -70,15 +70,15 @@
 
 	@include breakpoint($bs-large-width)
 	{
-		font-size: $bs-h2Size;
-		line-height: $bs-h2LineHeight;
+		font-size: $bs-h2-size;
+		line-height: $bs-h2-line-height;
 	}
 
 	@include breakpoint($bs-huge-width)
 	{
 		display:block;
-		font-size: $bs-h1Size;
-		line-height: $bs-h1LineHeight;
+		font-size: $bs-h1-size;
+		line-height: $bs-h1-line-height;
 		text-align:center;
 	}
 
@@ -96,7 +96,7 @@
 .page-header__primary-action
 {
 	float:right;
-	// margin-top: (-$bs-space75 -$bs-touchSize);
+	// margin-top: (-$bs-space75 -$bs-touch-size);
 
 	@include breakpoint($bs-huge-width)
 	{

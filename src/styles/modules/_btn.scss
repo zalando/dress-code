@@ -54,8 +54,8 @@
 
 .#{$bs-prefix}-btn--icon {
     padding: 0;
-    width: $bs-touchSize;
-    height: $bs-touchSize;
+    width: $bs-touch-size;
+    height: $bs-touch-size;
 
     svg {
         position: relative;
@@ -64,11 +64,11 @@
     }
 
     [stroke^='#'] {
-        stroke: $bs-textColor;
+        stroke: $bs-text-color;
     }
 
     [fill^='#'] {
-        fill: $bs-textColor;
+        fill: $bs-text-color;
     }
 
     &.#{$bs-prefix}-btn--primary {

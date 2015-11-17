@@ -4,7 +4,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-$bs-headerHeight: $bs-touchSize;
+$bs-headerHeight: $bs-touch-size;
 $bs-headerAccentColor: $bs-orange40;
 
 
@@ -29,7 +29,7 @@ $bs-headerAccentColor: $bs-orange40;
 			.logo
 			{
 				padding-bottom: 2px;
-				max-height: $bs-touchSize - $bs-space150;
+				max-height: $bs-touch-size - $bs-space150;
 			}
 
 			// @include breakpoint($bs-small-width)

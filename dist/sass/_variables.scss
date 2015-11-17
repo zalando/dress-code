@@ -100,24 +100,24 @@
 	$bs-purple20:								#5a3498;
 	$bs-purple10:								#3c2365;
 
-	$bs-primaryAccent:						$bs-blue40;
-	$bs-secondaryAccent:					$bs-orange40;
+	$bs-primary-accent:						$bs-blue40;
+	$bs-secondary-accent:					$bs-orange40;
 
 
 
 //  = SCAFFOLDING
 //  ---------------------------------------------------------------------------
 
-	$bs-bodyBackgroundColor:			$bs-gray70;
-	$bs-textColor:								$bs-gray10;
+	$bs-body-background-color:			$bs-gray70;
+	$bs-text-color:								$bs-gray10;
 
 
 
 //  = LINKS
 //  ---------------------------------------------------------------------------
 
-	$bs-linkColor:								$bs-primaryAccent;
-	$bs-linkColorHover:					$bs-blue30;
+	$bs-link-color:								$bs-primary-accent;
+	$bs-link-color-hover:					$bs-blue30;
 
 
 
@@ -134,7 +134,7 @@
 	$bs-space300:								$bs-space100 * 5;
 	$bs-space350:								$bs-space100 * 6;
 
-	$bs-touchSize:								$bs-space50 * 11;
+	$bs-touch-size:								$bs-space50 * 11;
 
 
 	// $bs-space50:									.4rem;
@@ -147,23 +147,23 @@
 	// $bs-space750:								$bs-space50 * 15; // 60px
 	// $bs-space900:								$bs-space50 * 18; // 72px
 	//
-	// $bs-touchSize:								$bs-space50 * 9;  // 36px
+	// $bs-touch-size:								$bs-space50 * 9;  // 36px
 
 
 
 //  = TYPOGRAPHY
 //  ---------------------------------------------------------------------------
 
-	$bs-sansFontFamily:        	"Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-	$bs-serifFontFamily:       	"Georgia", "Geneva", "Times New Roman", serif;
-	$bs-monoFontFamily:        	"Menlo", "Monaco", "Consolas", "Courier New", monospace;
+	$bs-sans-font-family:        	"Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	$bs-serif-font-family:       	"Georgia", "Geneva", "Times New Roman", serif;
+	$bs-mono-font-family:        	"Menlo", "Monaco", "Consolas", "Courier New", monospace;
 
-	$bs-htmlFontSize:          	62.5%;
-	$bs-htmlLineHeight:        	1;
-	$bs-bodyFontSize:          	1.4rem;
-	$bs-bodyLineHeight:        	$bs-space150;
-	$bs-baseFontFamily:        	$bs-sansFontFamily;
-	$bs-altFontFamily:         	$bs-sansFontFamily;
+	$bs-html-font-size:          	62.5%;
+	$bs-html-line-height:        	1;
+	$bs-body-font-size:          	1.4rem;
+	$bs-body-line-height:        	$bs-space150;
+	$bs-base-font-family:        	$bs-sans-font-family;
+	$bs-alt-font-family:         	$bs-sans-font-family;
 
 	$bs-font50:									1.1rem;
 	$bs-font100:									1.4rem;
@@ -172,22 +172,22 @@
 	$bs-font250:									2.7rem;
 	$bs-font300:									3.4rem;
 
-	$bs-normalFontWeight:				300;
-	$bs-boldFontWeight:					500;
+	$bs-normal-font-weight:				300;
+	$bs-bold-font-weight:					500;
 
-	$bs-headingsFontFamily:    	$bs-sansFontFamily;
-	$bs-headingsFontWeight:    	$bs-normalFontWeight;
-	$bs-headingsColor:         	$bs-textColor;
+	$bs-headings-font-family:    	$bs-sans-font-family;
+	$bs-headings-font-weight:    	$bs-normal-font-weight;
+	$bs-headings-color:         	$bs-text-color;
 
-	$bs-h1Size:									$bs-font300;
-	$bs-h2Size:									$bs-font250;
-	$bs-h3Size:									$bs-font200;
-	$bs-h4Size:									$bs-font150;
+	$bs-h1-size:									$bs-font300;
+	$bs-h2-size:									$bs-font250;
+	$bs-h3-size:									$bs-font200;
+	$bs-h4-size:									$bs-font150;
 
-	$bs-h1LineHeight:						4.8rem;
-	$bs-h2LineHeight:						3.6rem;
-	$bs-h3LineHeight:						3.6rem;
-	$bs-h4LineHeight:						2.4rem;
+	$bs-h1-line-height:						4.8rem;
+	$bs-h2-line-height:						3.6rem;
+	$bs-h3-line-height:						3.6rem;
+	$bs-h4-line-height:						2.4rem;
 
 
 

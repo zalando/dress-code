@@ -10,7 +10,7 @@
 
 	@mixin bs-debugmessage($bs-message, $bs-color: rgba(255,255,0, 0.9))
 	{
-		// margin-top: $bs-bodyLineHeight;
+		// margin-top: $bs-body-line-height;
 
 		&::before
 		{
@@ -22,11 +22,11 @@
 			top: 100%;
 			left:0;
 			z-index:910;
-			height: $bs-bodyLineHeight;
+			height: $bs-body-line-height;
 
 			background:#{$bs-color};
 
-			font-weight:$bs-boldFontWeight;
+			font-weight:$bs-bold-font-weight;
 			text-align:center;
 			transition: transform .2s ease-out, opacity .2s;
 			transform: translateY(100%);

@@ -103,8 +103,8 @@ button {
 <<<<<<< HEAD
 .#{$bs-prefix}-btn--icon {
 	padding: 0;
-	width: $bs-touchSize;
-	height: $bs-touchSize;
+	width: $bs-touch-size;
+	height: $bs-touch-size;
 
 	svg {
 		position: relative;
@@ -113,7 +113,7 @@ button {
 	}
 
 	[stroke^='#'] {
-		stroke: $bs-textColor;
+		stroke: $bs-text-color;
 	}
 =======
 .btn--icon {
@@ -168,7 +168,7 @@ button {
 >>>>>>> develop
 
 	[fill^='#'] {
-		fill: $bs-textColor;
+		fill: $bs-text-color;
 	}
 
 <<<<<<< HEAD

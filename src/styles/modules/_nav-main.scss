@@ -20,7 +20,7 @@ $bs-navAccentColor:$bs-orange40;
 
 	a
 	{
-		color:$bs-textColor;
+		color:$bs-text-color;
 		transition: color .2s linear, background-color .2s linear;
 	}
 
@@ -74,7 +74,7 @@ $bs-navAccentColor:$bs-orange40;
 		position:relative;
 		display: flex;
 		justify-content: space-between;
-		height: $bs-touchSize;
+		height: $bs-touch-size;
 		background-color:$bs-white;
 		border-bottom:1px solid $bs-gray60;
 
@@ -109,8 +109,8 @@ $bs-navAccentColor:$bs-orange40;
 		flex: 1 0 auto;
 		margin: 0 $bs-space100;
 		font-size: $bs-font150;
-		line-height: $bs-touchSize;
-		font-weight:$bs-normalFontWeight;
+		line-height: $bs-touch-size;
+		font-weight:$bs-normal-font-weight;
 
 		img { vertical-align:top; }
 
@@ -174,9 +174,9 @@ $bs-navAccentColor:$bs-orange40;
 		flex: 1 0 auto;
 		position:relative;
 		// font-size: $bs-font150;
-		line-height: $bs-touchSize;
+		line-height: $bs-touch-size;
 		text-transform: uppercase;
-		font-weight: $bs-boldFontWeight;
+		font-weight: $bs-bold-font-weight;
 		text-align: center;
 		cursor:default;
 		pointer-events:none;
@@ -199,7 +199,7 @@ $bs-navAccentColor:$bs-orange40;
 	.touch .nav-brand:active,
 	.no-touch .nav-brand:hover
 	{
-		color:$bs-textColor;
+		color:$bs-text-color;
 
 		& .nav-brand__inner::after
 		{
@@ -217,7 +217,7 @@ $bs-navAccentColor:$bs-orange40;
 	{
 		display:inline-block;
 		position: relative;
-		line-height: $bs-touchSize;
+		line-height: $bs-touch-size;
 
 		&::after
 		{
@@ -451,7 +451,7 @@ $bs-navAccentColor:$bs-orange40;
 	{
 		display:inline;
 		order: 4;
-		line-height: $bs-touchSize;
+		line-height: $bs-touch-size;
 		margin-left: $bs-space100;
 		margin-right: -.6;
 	}
@@ -477,7 +477,7 @@ $bs-navAccentColor:$bs-orange40;
 .nav-main__items,
 .nav-user__items
 {
-	height: $bs-touchSize;
+	height: $bs-touch-size;
 	white-space:nowrap;
 }
 
@@ -529,8 +529,8 @@ $bs-navAccentColor:$bs-orange40;
 {
 	display:block;
 	position:relative;
-	height: $bs-touchSize;
-	line-height: $bs-touchSize;
+	height: $bs-touch-size;
+	line-height: $bs-touch-size;
 
 	&:after
 	{
@@ -561,7 +561,7 @@ $bs-navAccentColor:$bs-orange40;
 .p-header .nav-main__link--is-active,
 .p-header .nav-user__link--is-active
 {
-	color:$bs-textColor;
+	color:$bs-text-color;
 
 	&:after
 	{
