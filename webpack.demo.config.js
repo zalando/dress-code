@@ -10,7 +10,7 @@ module.exports = function(_config) {
 			'fabricator/scripts/f': _config.src.scripts.fabricator
 		},
 		output: {
-			path: path.resolve(__dirname, _config.demo, 'assets'),
+			path: path.resolve(__dirname, _config.tmp.demo, 'assets'),
 			filename: '[name].js'
 		},
 		module: {
