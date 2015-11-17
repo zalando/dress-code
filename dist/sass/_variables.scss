@@ -5,7 +5,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-	$bs-prefix: 'bs';
+	$bs-prefix: 									'bs';
 
 
 //  = GRAYS
@@ -13,15 +13,15 @@
 
 	$bs-white:										#fff;
 
-	$bs-gray70:									#edeced;
-	$bs-gray60:									#d1d1d1;
-	$bs-gray50:									#b6b6b6;
-	$bs-gray40:									#9b9b9b;
-	$bs-gray30:									#807f80;
-	$bs-gray20:									#646464;
-	$bs-gray10:									#4a4a4a;
+	$bs-gray70:										#edeced;
+	$bs-gray60:										#d1d1d1;
+	$bs-gray50:										#b6b6b6;
+	$bs-gray40:										#9b9b9b;
+	$bs-gray30:										#807f80;
+	$bs-gray20:										#646464;
+	$bs-gray10:										#4a4a4a;
 
-	$bs-black: 									#000;
+	$bs-black: 										#000;
 
 
 
@@ -29,22 +29,22 @@
 //  ---------------------------------------------------------------------------
 
 	// BLUE
-	$bs-blue70:									#b1dcfe;
-	$bs-blue60:									#88ccfe;
-	$bs-blue50:									#5cbbfe;
-	$bs-blue40:									#26aafe; // Base color
-	$bs-blue30:									#1e87cb;
-	$bs-blue20:									#186698;
-	$bs-blue10:									#124365;
+	$bs-blue70:										#b1dcfe;
+	$bs-blue60:										#88ccfe;
+	$bs-blue50:										#5cbbfe;
+	$bs-blue40:										#26aafe; // Base color
+	$bs-blue30:										#1e87cb;
+	$bs-blue20:										#186698;
+	$bs-blue10:										#124365;
 
 	// CYAN
-	$bs-cyan70:									#b5f2ff;
-	$bs-cyan60:									#8decff;
-	$bs-cyan50:									#61e6fe;
-	$bs-cyan40:									#24e0fe; // Base color
-	$bs-cyan30:									#1fb3cb;
-	$bs-cyan20:									#1a8699;
-	$bs-cyan10:									#145966;
+	$bs-cyan70:										#b5f2ff;
+	$bs-cyan60:										#8decff;
+	$bs-cyan50:										#61e6fe;
+	$bs-cyan40:										#24e0fe; // Base color
+	$bs-cyan30:										#1fb3cb;
+	$bs-cyan20:										#1a8699;
+	$bs-cyan10:										#145966;
 
 	// GREEN
 	$bs-green70:									#ceff9e;
@@ -56,22 +56,22 @@
 	$bs-green10:									#32650a;
 
 	// YELLOW
-	$bs-yellow70:								#fff49b;
-	$bs-yellow60:								#ffef6a;
-	$bs-yellow50:								#ffe93d;
-	$bs-yellow40:								#ffe41f; // Base color
-	$bs-yellow30:								#ccb616;
-	$bs-yellow20:								#99880e;
-	$bs-yellow10:								#665b05;
+	$bs-yellow70:									#fff49b;
+	$bs-yellow60:									#ffef6a;
+	$bs-yellow50:									#ffe93d;
+	$bs-yellow40:									#ffe41f; // Base color
+	$bs-yellow30:									#ccb616;
+	$bs-yellow20:									#99880e;
+	$bs-yellow10:									#665b05;
 
 	// ORANGE
-	$bs-orange70:								#ffd2a6;
-	$bs-orange60:								#ffbc7a;
-	$bs-orange50:								#ffa54e;
-	$bs-orange40:								#ff8e25; // Base color
-	$bs-orange30:								#cc611d;
-	$bs-orange20:								#995516;
-	$bs-orange10:								#66380e;
+	$bs-orange70:									#ffd2a6;
+	$bs-orange60:									#ffbc7a;
+	$bs-orange50:									#ffa54e;
+	$bs-orange40:									#ff8e25; // Base color
+	$bs-orange30:									#cc611d;
+	$bs-orange20:									#995516;
+	$bs-orange10:									#66380e;
 
 	// RED
 	$bs-red70:										#FFB7A6;
@@ -92,13 +92,13 @@
 	$bs-magenta10:								#5d2e5c;
 
 	// PURPLE
-	$bs-purple70:								#d5bdfe;
-	$bs-purple60:								#c19cfe;
-	$bs-purple50:								#ac7afd;
-	$bs-purple40:								#9757fd; // Base color
-	$bs-purple30:								#7845cb;
-	$bs-purple20:								#5a3498;
-	$bs-purple10:								#3c2365;
+	$bs-purple70:									#d5bdfe;
+	$bs-purple60:									#c19cfe;
+	$bs-purple50:									#ac7afd;
+	$bs-purple40:									#9757fd; // Base color
+	$bs-purple30:									#7845cb;
+	$bs-purple20:									#5a3498;
+	$bs-purple10:									#3c2365;
 
 	$bs-primary-accent:						$bs-blue40;
 	$bs-secondary-accent:					$bs-orange40;
@@ -117,7 +117,7 @@
 //  ---------------------------------------------------------------------------
 
 	$bs-link-color:								$bs-primary-accent;
-	$bs-link-color-hover:					$bs-blue30;
+	$bs-link-color-hover:						$bs-blue30;
 
 
 
@@ -126,68 +126,68 @@
 
 	$bs-space50:									.4rem;
 	$bs-space75:									.8rem;
-	$bs-space100:								1.2rem;
-	$bs-space125:								$bs-space75 * 2;
-	$bs-space150:								$bs-space100 * 2;
-	$bs-space200:								$bs-space100 * 3;
-	$bs-space250:								$bs-space100 * 4;
-	$bs-space300:								$bs-space100 * 5;
-	$bs-space350:								$bs-space100 * 6;
+	$bs-space100:									1.2rem;
+	$bs-space125:									$bs-space75 * 2;
+	$bs-space150:									$bs-space100 * 2;
+	$bs-space200:									$bs-space100 * 3;
+	$bs-space250:									$bs-space100 * 4;
+	$bs-space300:									$bs-space100 * 5;
+	$bs-space350:									$bs-space100 * 6;
 
 	$bs-touch-size:								$bs-space50 * 11;
 
 
-	// $bs-space50:									.4rem;
-	// $bs-space100:								$bs-space50 * 2;  //  8px
-	// $bs-space150:								$bs-space50 * 3;  // 12px
-	// $bs-space200:								$bs-space50 * 4;  // 16px
-	// $bs-space300:								$bs-space50 * 6;  // 24px
-	// $bs-space450:								$bs-space50 * 9;  // 36px
-	// $bs-space600:								$bs-space50 * 12; // 48px
-	// $bs-space750:								$bs-space50 * 15; // 60px
-	// $bs-space900:								$bs-space50 * 18; // 72px
+	// $bs-space50:								.4rem;
+	// $bs-space100:							$bs-space50 * 2;  //  8px
+	// $bs-space150:							$bs-space50 * 3;  // 12px
+	// $bs-space200:							$bs-space50 * 4;  // 16px
+	// $bs-space300:							$bs-space50 * 6;  // 24px
+	// $bs-space450:							$bs-space50 * 9;  // 36px
+	// $bs-space600:							$bs-space50 * 12; // 48px
+	// $bs-space750:							$bs-space50 * 15; // 60px
+	// $bs-space900:							$bs-space50 * 18; // 72px
 	//
-	// $bs-touch-size:								$bs-space50 * 9;  // 36px
+	// $bs-touch-size:							$bs-space50 * 9;  // 36px
 
 
 
 //  = TYPOGRAPHY
 //  ---------------------------------------------------------------------------
 
-	$bs-sans-font-family:        	"Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-	$bs-serif-font-family:       	"Georgia", "Geneva", "Times New Roman", serif;
-	$bs-mono-font-family:        	"Menlo", "Monaco", "Consolas", "Courier New", monospace;
+	$bs-sans-font-family:        		"Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	$bs-serif-font-family:       		"Georgia", "Geneva", "Times New Roman", serif;
+	$bs-mono-font-family:        		"Menlo", "Monaco", "Consolas", "Courier New", monospace;
 
-	$bs-html-font-size:          	62.5%;
-	$bs-html-line-height:        	1;
-	$bs-body-font-size:          	1.4rem;
-	$bs-body-line-height:        	$bs-space150;
-	$bs-base-font-family:        	$bs-sans-font-family;
-	$bs-alt-font-family:         	$bs-sans-font-family;
+	$bs-html-font-size:         	 	62.5%;
+	$bs-html-line-height:       	 	1;
+	$bs-body-font-size:         	 	1.4rem;
+	$bs-body-line-height:       	 	$bs-space150;
+	$bs-base-font-family:       	 	$bs-sans-font-family;
+	$bs-alt-font-family:        	 	$bs-sans-font-family;
 
-	$bs-font50:									1.1rem;
+	$bs-font50:										1.1rem;
 	$bs-font100:									1.4rem;
 	$bs-font150:									1.8rem;
 	$bs-font200:									2.2rem;
 	$bs-font250:									2.7rem;
 	$bs-font300:									3.4rem;
 
-	$bs-normal-font-weight:				300;
-	$bs-bold-font-weight:					500;
+	$bs-normal-font-weight:					300;
+	$bs-bold-font-weight:						500;
 
-	$bs-headings-font-family:    	$bs-sans-font-family;
-	$bs-headings-font-weight:    	$bs-normal-font-weight;
-	$bs-headings-color:         	$bs-text-color;
+	$bs-headings-font-family:   	 	$bs-sans-font-family;
+	$bs-headings-font-weight:   	 	$bs-normal-font-weight;
+	$bs-headings-color:        	 	$bs-text-color;
 
-	$bs-h1-size:									$bs-font300;
-	$bs-h2-size:									$bs-font250;
-	$bs-h3-size:									$bs-font200;
-	$bs-h4-size:									$bs-font150;
+	$bs-h1-size:										$bs-font300;
+	$bs-h2-size:										$bs-font250;
+	$bs-h3-size:										$bs-font200;
+	$bs-h4-size:										$bs-font150;
 
-	$bs-h1-line-height:						4.8rem;
-	$bs-h2-line-height:						3.6rem;
-	$bs-h3-line-height:						3.6rem;
-	$bs-h4-line-height:						2.4rem;
+	$bs-h1-line-height:							4.8rem;
+	$bs-h2-line-height:							3.6rem;
+	$bs-h3-line-height:							3.6rem;
+	$bs-h4-line-height:							2.4rem;
 
 
 
@@ -195,7 +195,7 @@
 //  ---------------------------------------------------------------------------
 
 	$bs-radius100:								2px;
-	$bs-border50:								1px;
+	$bs-border50:									1px;
 	$bs-border100:								2px;
 	$bs-border150:								4px;
 
@@ -207,10 +207,10 @@
 	// Base is 10px at this point
 
 	// Relative column & gutter width
-	$bs-r-column-width:				 	6;
-	$bs-r-gutter-width:				 	4;
-	$bs-r-grid-padding:				 	8;
-	$bs-r-grid-padding-large:		4;
+	$bs-r-column-width:				 		6;
+	$bs-r-gutter-width:				 		4;
+	$bs-r-grid-padding:				 		8;
+	$bs-r-grid-padding-large:			4;
 	$bs-r-grid-padding-huge:			5;
 
 	// Columns for smallest screen
@@ -225,30 +225,30 @@
 
 	// Base is 16px at this point
 
-	// Feature phone: 				0px		 	 2 columns	-->	   0-UP
+	// Feature phone: 						0px		 	 2 columns	-->	   0-UP
 	$bs-tiny-width: 							0;
-	$bs-tiny-cols: 							2;
+	$bs-tiny-cols: 								2;
 
-	// Smartphone: 						320px		 4 columns 	-->  320-UP
-	$bs-small-width: 						20em;
+	// Smartphone: 								320px		 4 columns 	-->  320-UP
+	$bs-small-width: 							20em;
 	$bs-small-cols: 							4;
 
-	// Smartphone landscape: 	480px 	 6 columns 	-->  480-UP
+	// Smartphone landscape: 			480px 	 6 columns 	-->  480-UP
 	$bs-medium-width: 						30em;
-	$bs-medium-cols: 						6;
+	$bs-medium-cols: 							6;
 
-	// Tablet: 								600px, 	 8 columns 	-->  600-UP
-	$bs-large-width: 						37.5em;
+	// Tablet: 										600px, 	 8 columns 	-->  600-UP
+	$bs-large-width: 							37.5em;
 	$bs-large-cols: 							8;
 
-	// Tablet landscape: 			1024px 	12 columns 	--> 1024-UP
+	// Tablet landscape: 					1024px 	12 columns 	--> 1024-UP
 	$bs-huge-width: 							64em;
-	$bs-huge-cols: 							12;
+	$bs-huge-cols: 								12;
 
-	// Desktop: 							1280px 	16 columns 	--> 1280-UP
-	$bs-giant-width: 						80em;
+	// Desktop: 									1280px 	16 columns 	--> 1280-UP
+	$bs-giant-width: 							80em;
 	$bs-giant-cols: 							16;
 
-	// Desktop large: 				1600px 	20 columns 	--> 1600-UP
-	$bs-monstrous-width: 				100em;
+	// Desktop large: 						1600px 	20 columns 	--> 1600-UP
+	$bs-monstrous-width: 					100em;
 	$bs-monstrous-cols: 					20;

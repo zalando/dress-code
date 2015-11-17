@@ -9,7 +9,10 @@
 //  = BASIC IMAGES
 //  ---------------------------------------------------------------------------
 
-	img,object
+	// Use these classes for <img>, <object> and <video>
+	.#{$bs-prefix}-img,
+	.#{$bs-prefix}-object,
+	.#{$bs-prefix}-video
 	{
 		max-width:100%;
 	}
