@@ -11,15 +11,15 @@
 //  ---------------------------------------------------------------------------
 
 
-	.nav {
+	.#{$dc-prefix}-nav {
 		list-style-type:none;
 		margin-left:0;
 
-		li {
+		.#{$dc-prefix}-li {
 			display: inline;
 		}
 
-			a {
+			.#{$dc-prefix}-link {
 				display: inline-block;
 			}
 	}

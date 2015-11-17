@@ -4,15 +4,15 @@
 //
 //  ---------------------------------------------------------------------------
 
-$bs-header-height: $bs-touch-size;
-$bs-header-accent-color: $bs-orange40;
+$dc-header-height: $dc-touch-size;
+$dc-header-accent-color: $dc-orange40;
 
 
 
 //  = HEADER
 //  ---------------------------------------------------------------------------
 
-		.header
+		.#{$dc-prefix}-header
 		{
 			display: flex;
 			align-items: center;
@@ -21,32 +21,14 @@ $bs-header-accent-color: $bs-orange40;
 			right: 0;
 			left: 0;
 			z-index: 900;
-			height: $bs-header-height;
-			padding: $bs-space75 $bs-space100;
-			background: $bs-white;
-			border-bottom: 1px solid $bs-gray60;
+			height: $dc-header-height;
+			padding: $dc-space75 $dc-space100;
+			background: $dc-white;
+			border-bottom: 1px solid $dc-gray60;
 
-			.logo
+			.#{$dc-prefix}-logo
 			{
 				padding-bottom: 2px;
-				max-height: $bs-touch-size - $bs-space150;
+				max-height: $dc-touch-size - $dc-space150;
 			}
-
-			// @include breakpoint($bs-small-width)
-			// {
-			// 	padding-right: $bs-space100;
-			// 	padding-left: $bs-space100;
-			// }
-			//
-			// @include breakpoint($bs-large-width)
-			// {
-			// 	padding-right: $bs-space150;
-			// 	padding-left: $bs-space150;
-			// }
-			//
-			// @include breakpoint($bs-monstrous-width)
-			// {
-			// 	padding-right: $bs-space250;
-			// 	padding-left: $bs-space250;
-			// }
 		}

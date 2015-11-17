@@ -5,14 +5,14 @@
 //  ---------------------------------------------------------------------------
 
 		/* Animation keyframes - you need to add prefixes */
-		@include keyframes(spin)
+		@include keyframes(#{$dc-prefix}-spin)
 		{
 			from { @include transform(rotate(0deg)); }
 			to { @include transform(rotate(360deg)); }
 		}
 
 		/* Loading animation container */
-		.loading
+		.#{$dc-prefix}-loading
 		{
 			display:inline-block;
 			position: relative;
@@ -23,16 +23,16 @@
 		}
 
 		/* Spinning circle (inner circle) */
-		.loading .maskedCircle
+		.#{$dc-prefix}-loading .#{$dc-prefix}-maskedCircle
 		{
 			width: 10px;
 			height: 10px;
 			border-radius: 12px;
-			border: 2px solid $bs-red20;
+			border: 2px solid $dc-red20;
 		}
 
 		/* Spinning circle mask */
-		.loading .mask
+		.#{$dc-prefix}-loading .#{$dc-prefix}-mask
 		{
 			width: 6px;
 			height: 6px;
@@ -40,12 +40,12 @@
 		}
 
 		/* Spinner */
-		.loading .spinner
+		.#{$dc-prefix}-loading .#{$dc-prefix}-spinner
 		{
 			position: absolute;
 			left: 1px;
 			top: 1px;
 			width: 13px;
 			height: 13px;
-			@include animation(spin 1s infinite linear);
+			@include animation(#{$dc-prefix}-spin 1s infinite linear);
 		}
