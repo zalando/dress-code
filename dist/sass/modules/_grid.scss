@@ -21,23 +21,23 @@
 	// Base is 10px at this point
 
 	// Relative column & gutter width
-	$bs-r-column-width				: 6 !default;
-	$bs-r-gutter-width				: 4 !default;
-	$bs-r-grid-padding				: 8 !default;
-	$bs-r-grid-padding-large		: 4 !default;
-	$bs-r-grid-padding-huge		: 5 !default;
+	$dc-r-column-width				: 6 !default;
+	$dc-r-gutter-width				: 4 !default;
+	$dc-r-grid-padding				: 8 !default;
+	$dc-r-grid-padding-large		: 4 !default;
+	$dc-r-grid-padding-huge		: 5 !default;
 
 	// Columns for smallest screen
-	$bs-total-columns		: 2 !default;
+	$dc-total-columns		: 2 !default;
 
 	// Column & gutter width in em (susy needs em)
-	$bs-column-width 		: convert-length($bs-r-column-width,em,$bs-body-font-size) !default; // convert to em
-	$bs-gutter-width		: convert-length($bs-r-gutter-width,em,$bs-body-font-size) !default; // convert to em
-	$bs-grid-padding		: convert-length($bs-r-grid-padding,em,$bs-body-font-size) !default; // convert to em
-	$bs-grid-padding-large	: convert-length($bs-r-grid-padding-large,em,$bs-body-font-size) !default; // convert to em
-	$bs-grid-padding-huge	: convert-length($bs-r-grid-padding-huge,em,$bs-body-font-size) !default; // convert to em
+	$dc-column-width 		: convert-length($dc-r-column-width,em,$dc-body-font-size) !default; // convert to em
+	$dc-gutter-width		: convert-length($dc-r-gutter-width,em,$dc-body-font-size) !default; // convert to em
+	$dc-grid-padding		: convert-length($dc-r-grid-padding,em,$dc-body-font-size) !default; // convert to em
+	$dc-grid-padding-large	: convert-length($dc-r-grid-padding-large,em,$dc-body-font-size) !default; // convert to em
+	$dc-grid-padding-huge	: convert-length($dc-r-grid-padding-huge,em,$dc-body-font-size) !default; // convert to em
 
-	$bs-container-style	: fluid !default;
+	$dc-container-style	: fluid !default;
 
 
 
@@ -46,27 +46,27 @@
 //  ---------------------------------------------------------------------------
 
 		// Feature phone		: 0px		 2 columns	-->	   0-UP
-		$bs-tiny-width				: 0px;
-		$bs-tiny-cols				: 2;
-		$bs-tiny-layout			: (
+		$dc-tiny-width				: 0px;
+		$dc-tiny-cols				: 2;
+		$dc-tiny-layout			: (
 													container: calc(100% - 16px),
 													columns: 2,
 													gutters: .1
 												);
 
 		// Smartphone			: 320px		 4 columns 	-->  320-UP
-		$bs-small-width			: 20em;
-		$bs-small-cols				: 4;
-		$bs-small-layout			: (
+		$dc-small-width			: 20em;
+		$dc-small-cols				: 4;
+		$dc-small-layout			: (
 													container: calc(100% - 24px),
 													columns: 4,
 													gutters: .25
 												);
 
 		// Smartphone landscape	: 480px 	 6 columns 	-->  480-UP
-		$bs-medium-width			: 30em;
-		$bs-medium-cols			: 6;
-		$bs-medium-layout			: (
+		$dc-medium-width			: 30em;
+		$dc-medium-cols			: 6;
+		$dc-medium-layout			: (
 													container: calc(100% - 24px),
 													columns: 6,
 													gutters: .25
@@ -75,36 +75,36 @@
 		// From large: fluid, max-width 700px 80px grid-padding
 		// Font size maybe 22px or perhaps micro breakpoint with 22px from 768px
 		// Tablet 				: 600px, 	 8 columns 	-->  600-UP
-		$bs-large-width			: 37.5em;
-		$bs-large-cols 			: 8;
-		$bs-large-layout			: (
+		$dc-large-width			: 37.5em;
+		$dc-large-cols 			: 8;
+		$dc-large-layout			: (
 													container: calc(100% - 48px),
 													columns: 8,
 													gutters: .25
 												);
 
 		// Tablet landscape		: 1024px 	12 columns 	--> 1024-UP
-		$bs-huge-width				: 64em;
-		$bs-huge-cols				: 12;
-		$bs-huge-layout			: (
+		$dc-huge-width				: 64em;
+		$dc-huge-cols				: 12;
+		$dc-huge-layout			: (
 													container: calc(100% - 48px),
 													columns: 12,
 													gutters: .25
 												);
 
 		// Desktop 				: 1280px 	16 columns 	--> 1280-UP
-		$bs-giant-width			: 80em;
-		$bs-giant-cols				: 16;
-		$bs-giant-layout			: (
+		$dc-giant-width			: 80em;
+		$dc-giant-cols				: 16;
+		$dc-giant-layout			: (
 													container: calc(100% - 48px),
 													columns: 16,
 													gutters: .25
 												);
 
 		// Desktop large 		: 1600px 	20 columns 	--> 1600-UP
-		$bs-monstrous-width		: 100em;
-		$bs-monstrous-cols			: 20;
-		$bs-monstrous-layout			: (
+		$dc-monstrous-width		: 100em;
+		$dc-monstrous-cols			: 20;
+		$dc-monstrous-layout			: (
 													container: calc(100% - 96px),
 													columns: 20,
 													gutters: .25
@@ -114,42 +114,42 @@
 //  = BREAKPOINTS
 //  ---------------------------------------------------------------------------
 
-	body
+	.#{$dc-prefix}-body
 	{
-		@include bs-debugmessage("Tiny \2014 0-320px", $bs-red60);
+		@include dc-debugmessage("Tiny \2014 0-320px", $dc-red60);
 
-		@include breakpoint($bs-small-width)
+		@include breakpoint($dc-small-width)
 		{
-			@include bs-debugmessage("Small \2014 320-480px", $bs-orange60);
+			@include dc-debugmessage("Small \2014 320-480px", $dc-orange60);
 		}
 
-		@include breakpoint($bs-medium-width)
+		@include breakpoint($dc-medium-width)
 		{
-			@include bs-debugmessage("Medium \2014 480-600px", $bs-yellow60);
+			@include dc-debugmessage("Medium \2014 480-600px", $dc-yellow60);
 		}
 
-		@include breakpoint($bs-large-width)
+		@include breakpoint($dc-large-width)
 		{
-			@include bs-debugmessage("Large \2014 600-1024px", $bs-green60);
+			@include dc-debugmessage("Large \2014 600-1024px", $dc-green60);
 		}
 
-		@include breakpoint($bs-huge-width)
+		@include breakpoint($dc-huge-width)
 		{
-			@include bs-debugmessage("Huge \2014 1024-1280px", $bs-cyan60);
+			@include dc-debugmessage("Huge \2014 1024-1280px", $dc-cyan60);
 		}
 
-		@include breakpoint($bs-giant-width)
+		@include breakpoint($dc-giant-width)
 		{
-			@include bs-debugmessage("Giant \2014 1280-1600px", $bs-blue60);
+			@include dc-debugmessage("Giant \2014 1280-1600px", $dc-blue60);
 		}
 
-		@include breakpoint($bs-monstrous-width)
+		@include breakpoint($dc-monstrous-width)
 		{
-			@include bs-debugmessage("Monstrous \2014 1600px and up", $bs-purple60);
+			@include dc-debugmessage("Monstrous \2014 1600px and up", $dc-purple60);
 		}
 	}
 
-	.is-show-breakpoints body
+	.#{$dc-prefix}-is-show-breakpoints .#{$dc-prefix}-body
 	{
 		&::before
 		{
@@ -158,10 +158,10 @@
 		}
 	}
 
-	.is-show-grid .grid
+	.#{$dc-prefix}-is-show-grid .#{$dc-prefix}-grid
 	{
 		position: fixed;
-		top: $bs-touch-size;
+		top: $dc-touch-size;
 		right: 0;
 		bottom : 0;
 		left: 0;
@@ -169,15 +169,15 @@
 		opacity: .5;
 		pointer-events: none;
 
-		@include container($bs-tiny-layout debug image show );
+		@include container($dc-tiny-layout debug image show );
 
 
 	//  = 320-UP
 	//  ---------------------------------------------------------------------------
 
-		@include breakpoint($bs-small-width)
+		@include breakpoint($dc-small-width)
 		{
-			@include container($bs-small-layout debug image show);
+			@include container($dc-small-layout debug image show);
 		}
 
 
@@ -185,9 +185,9 @@
 	//  = 480-UP
 	//  ---------------------------------------------------------------------------
 
-		@include breakpoint($bs-medium-width)
+		@include breakpoint($dc-medium-width)
 		{
-			@include container($bs-medium-layout debug image show);
+			@include container($dc-medium-layout debug image show);
 		}
 
 
@@ -195,9 +195,9 @@
 	//  = 600-UP
 	//  ---------------------------------------------------------------------------
 
-		@include breakpoint($bs-large-width)
+		@include breakpoint($dc-large-width)
 		{
-			@include container($bs-large-layout debug image show);
+			@include container($dc-large-layout debug image show);
 		}
 
 
@@ -205,9 +205,9 @@
 	//  = 1024-UP
 	//  ---------------------------------------------------------------------------
 
-		@include breakpoint($bs-huge-width)
+		@include breakpoint($dc-huge-width)
 		{
-			@include container($bs-huge-layout debug image show);
+			@include container($dc-huge-layout debug image show);
 		}
 
 
@@ -215,9 +215,9 @@
 	//  = 1280-UP
 	//  ---------------------------------------------------------------------------
 
-		@include breakpoint($bs-giant-width)
+		@include breakpoint($dc-giant-width)
 		{
-			@include container($bs-giant-layout debug image show);
+			@include container($dc-giant-layout debug image show);
 		}
 
 
@@ -225,8 +225,8 @@
 	//  = 1600-UP
 	//  ---------------------------------------------------------------------------
 
-		@include breakpoint($bs-monstrous-width)
+		@include breakpoint($dc-monstrous-width)
 		{
-			@include container($bs-monstrous-layout debug image show);
+			@include container($dc-monstrous-layout debug image show);
 		}
 	}
