@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="dc-html">
 <head>
 
 	<meta charset="utf-8">
@@ -18,28 +18,28 @@
 
     <link rel="icon" href="favicon.ico">
 </head>
-<body>
-		<header class="header">
-			<img class="logo" src="assets/toolkit/img/logo.svg" alt="Zalando Logo">
+<body class="dc-body">
+		<header class="dc-header">
+			<img class="dc-logo" src="assets/toolkit/img/logo.svg" alt="Zalando Logo">
 			<!-- <div class="f-control-bar"> -->
 				<div class="f-control f-menu-toggle">
-					<svg>
+					<svg class="dc-svg">
 						<use xlink:href="#f-icon-menu" />
 					</svg>
 				</div>
 			<!-- </div> -->
 			<div class="f-control f-menu-toggle">
-				<a href class="js-toggle-breakpoints">Breakpoints</a>
+				<a href class="dc-link js-toggle-breakpoints">Breakpoints</a>
 			</div>
 			<div class="f-control f-menu-toggle">
-				<a href class="js-toggle-grid">Grid</a>
+				<a href class="dc-link js-toggle-grid">Grid</a>
 			</div>
             <div class="f-control">
-                <a href="https://github.com/zalando/brand-solutions-dress-code/" target="_blank">Github</a>
+                <a class="dc-link" href="https://github.com/zalando/brand-solutions-dress-code/" target="_blank">Github</a>
             </div>
 		</header>
 		<!-- fabricator icons -->
-		<svg style="display: none;">
+		<svg class="dc-svg" style="display: none;">
 			<symbol id="f-icon-code" viewBox="0 0 512 512">
 				<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
 			</symbol>
@@ -62,17 +62,17 @@
 		
 			<div class="f-controls">
 				<div class="f-control f-global-control" data-f-toggle-control="labels" title="Toggle Labels">
-					<svg>
+					<svg class="dc-svg">
 						<use xlink:href="#f-icon-labels" />
 					</svg>
 				</div>
 				<div class="f-control f-global-control" data-f-toggle-control="notes" title="Toggle Notes">
-					<svg>
+					<svg class="dc-svg">
 						<use xlink:href="#f-icon-notes" />
 					</svg>
 				</div>
 				<div class="f-control f-global-control" data-f-toggle-control="code" title="Toggle Code">
-					<svg>
+					<svg class="dc-svg">
 						<use xlink:href="#f-icon-code" />
 					</svg>
 				</div>
@@ -137,54 +137,13 @@
 					<a href="molecules.html" class="f-menu__heading">Molecules</a>
 					<ul>
 						<li>
-							<a href="molecules.html#accordeon">Accordeon</a>
-						</li>
-						<li>
-							<a href="molecules.html#autocomplete">Autocomplete</a>
-						</li>
-						<li>
-							<a href="molecules.html#badge">Badge</a>
-						</li>
-						<li>
-							<a href="molecules.html#collapse">Collapse</a>
-						</li>
-						<li>
-							<a href="molecules.html#loading-spinner">Loading Spinner</a>
-						</li>
-						<li>
 							<a href="molecules.html#messages">Messages</a>
-						</li>
-						<li>
-							<a href="molecules.html#pagination">Pagination</a>
-						</li>
-						<li>
-							<a href="molecules.html#popover">Popover</a>
-						</li>
-						<li>
-							<a href="molecules.html#progress-bar">Progress Bar</a>
 						</li>
 						<li>
 							<a href="molecules.html#search-form">Search Form</a>
 						</li>
 						<li>
-							<a href="molecules.html#tabs">Tabs</a>
-						</li>
-						<li>
-							<a href="molecules.html#tag">Tag</a>
-						</li>
-						<li>
 							<a href="molecules.html#tooltip">Tooltip</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="organisms.html" class="f-menu__heading">Organisms</a>
-					<ul>
-						<li>
-							<a href="organisms.html#dialog">Dialog</a>
-						</li>
-						<li>
-							<a href="organisms.html#form">Form</a>
 						</li>
 					</ul>
 				</li>
@@ -211,41 +170,41 @@
 
 
 	
-<h1 data-f-toggle="labels">Atoms</h1>
+<h1 class="dc-h1" data-f-toggle="labels">Atoms</h1>
 
 
 <div class="f-item-group" id="buttons">
 
 	<div class="f-item-heading-group">
-		<h2 class="f-item-heading" data-f-toggle="labels">Buttons</h2>
+		<h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Buttons</h2>
 	</div>
 		<div class="f-item-group" id="buttons.01-button">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<div class="f-item-controls">
 					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-notes" />
 						</svg>
 					</span>
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-				<h3 class="f-item-heading">Button</h3>
+				<h3 class="dc-h3 f-item-heading">Button</h3>
 			</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Triggers an action and must not be used for navigation</p>
+	<p>Triggers an action and must not be used for navigation.</p>
 <p>Several instances of this component might be used on a page.</p>
 
 </div>
 <div class="f-item-preview">
-	<button>Button Tag</button>
-<a href class="btn">Anchor Tag</a>
+	<button class="dc-btn">Button Tag</button>
+<a href class="dc-btn">Anchor Tag</a>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button&gt;Button Tag&lt;/button&gt;
-&lt;a href class=&quot;btn&quot;&gt;Anchor Tag&lt;/a&gt;</code></pre>
+	<pre class="dc-pre"><code class="language-markup">&lt;button class=&quot;dc-btn&quot;&gt;Button Tag&lt;/button&gt;
+&lt;a href class=&quot;dc-btn&quot;&gt;Anchor Tag&lt;/a&gt;</code></pre>
 </div>
 
 		</div>
@@ -253,29 +212,29 @@
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<div class="f-item-controls">
 					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-notes" />
 						</svg>
 					</span>
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-				<h3 class="f-item-heading">Button  Primary</h3>
+				<h3 class="dc-h3 f-item-heading">Button  Primary</h3>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Triggers the primary action of the page it is placed on.</p>
 <p>Place only one primary button on each page/dialog.</p>
 
 </div>
 <div class="f-item-preview">
-	<button class="btn btn--primary">Primary Button Tag</button>
-<a href class="btn btn--primary">Primary Anchor Tag</a>
+	<button class="dc-btn dc-btn--primary">Primary Button Tag</button>
+<a href class="dc-btn dc-btn--primary">Primary Anchor Tag</a>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;btn btn--primary&quot;&gt;Primary Button Tag&lt;/button&gt;
-&lt;a href class=&quot;btn btn--primary&quot;&gt;Primary Anchor Tag&lt;/a&gt;</code></pre>
+	<pre class="dc-pre"><code class="language-markup">&lt;button class=&quot;dc-btn dc-btn--primary&quot;&gt;Primary Button Tag&lt;/button&gt;
+&lt;a href class=&quot;dc-btn dc-btn--primary&quot;&gt;Primary Anchor Tag&lt;/a&gt;</code></pre>
 </div>
 
 		</div>
@@ -283,29 +242,29 @@
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<div class="f-item-controls">
 					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-notes" />
 						</svg>
 					</span>
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-				<h3 class="f-item-heading">Button  Destroy</h3>
+				<h3 class="dc-h3 f-item-heading">Button  Destroy</h3>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Triggers a destructive action (e. b. Delete, Take Offline), which often can't be undone and might involve loss of data.</p>
 <p>Use these buttons sparingly and try to avoid undoable actions.</p>
 
 </div>
 <div class="f-item-preview">
-	<button class="btn btn--destroy">Negative Button Tag</button>
-<a href class="btn btn--destroy">Negative Anchor Tag</a>
+	<button class="dc-btn dc-btn--destroy">Negative Button Tag</button>
+<a href class="dc-btn dc-btn--destroy">Negative Anchor Tag</a>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;btn btn--destroy&quot;&gt;Negative Button Tag&lt;/button&gt;
-&lt;a href class=&quot;btn btn--destroy&quot;&gt;Negative Anchor Tag&lt;/a&gt;</code></pre>
+	<pre class="dc-pre"><code class="language-markup">&lt;button class=&quot;dc-btn dc-btn--destroy&quot;&gt;Negative Button Tag&lt;/button&gt;
+&lt;a href class=&quot;dc-btn dc-btn--destroy&quot;&gt;Negative Anchor Tag&lt;/a&gt;</code></pre>
 </div>
 
 		</div>
@@ -313,28 +272,28 @@
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<div class="f-item-controls">
 					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-notes" />
 						</svg>
 					</span>
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-				<h3 class="f-item-heading">Button  Disabled</h3>
+				<h3 class="dc-h3 f-item-heading">Button  Disabled</h3>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Any kind of button which is currently disabled looks like this.</p>
 
 </div>
 <div class="f-item-preview">
-	<button class="btn btn--disabled">Disabled button tag</button>
-<a href class="btn btn--disabled">disabled anchor tag</a>
+	<button class="dc-btn dc-btn--disabled">Disabled button tag</button>
+<a href class="dc-btn dc-btn--disabled">disabled anchor tag</a>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;btn btn--disabled&quot;&gt;Disabled button tag&lt;/button&gt;
-&lt;a href class=&quot;btn btn--disabled&quot;&gt;disabled anchor tag&lt;/a&gt;</code></pre>
+	<pre class="dc-pre"><code class="language-markup">&lt;button class=&quot;dc-btn dc-btn--disabled&quot;&gt;Disabled button tag&lt;/button&gt;
+&lt;a href class=&quot;dc-btn dc-btn--disabled&quot;&gt;disabled anchor tag&lt;/a&gt;</code></pre>
 </div>
 
 		</div>
@@ -342,36 +301,36 @@
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<div class="f-item-controls">
 					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-notes" />
 						</svg>
 					</span>
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-				<h3 class="f-item-heading">Button  Small</h3>
+				<h3 class="dc-h3 f-item-heading">Button  Small</h3>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Each of the buttons has a smaller sibling which might be used where little space is available.</p>
 
 </div>
 <div class="f-item-preview">
-	<button class="btn btn--small">button tag</button>
-<a href class="btn btn--small">anchor tag</a>
+	<button class="dc-btn dc-btn--small">button tag</button>
+<a href class="dc-btn dc-btn--small">anchor tag</a>
 <br>
-<a href class="btn btn--small btn--primary">primary</a>
-<a href class="btn btn--small btn--destroy">negative</a>
-<a href class="btn btn--small btn--disabled">disabled</a>
+<a href class="dc-btn dc-btn--small dc-btn--primary">primary</a>
+<a href class="dc-btn dc-btn--small dc-btn--destroy">negative</a>
+<a href class="dc-btn dc-btn--small dc-btn--disabled">disabled</a>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;btn btn--small&quot;&gt;button tag&lt;/button&gt;
-&lt;a href class=&quot;btn btn--small&quot;&gt;anchor tag&lt;/a&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;button class=&quot;dc-btn dc-btn--small&quot;&gt;button tag&lt;/button&gt;
+&lt;a href class=&quot;dc-btn dc-btn--small&quot;&gt;anchor tag&lt;/a&gt;
 &lt;br&gt;
-&lt;a href class=&quot;btn btn--small btn--primary&quot;&gt;primary&lt;/a&gt;
-&lt;a href class=&quot;btn btn--small btn--destroy&quot;&gt;negative&lt;/a&gt;
-&lt;a href class=&quot;btn btn--small btn--disabled&quot;&gt;disabled&lt;/a&gt;</code></pre>
+&lt;a href class=&quot;dc-btn dc-btn--small dc-btn--primary&quot;&gt;primary&lt;/a&gt;
+&lt;a href class=&quot;dc-btn dc-btn--small dc-btn--destroy&quot;&gt;negative&lt;/a&gt;
+&lt;a href class=&quot;dc-btn dc-btn--small dc-btn--disabled&quot;&gt;disabled&lt;/a&gt;</code></pre>
 </div>
 
 		</div>
@@ -379,17 +338,17 @@
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<div class="f-item-controls">
 					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-notes" />
 						</svg>
 					</span>
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-				<h3 class="f-item-heading">Button  Groups</h3>
+				<h3 class="dc-h3 f-item-heading">Button  Groups</h3>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Actions that logically belong together might be grouped with this component.</p>
 <p>Alternatively, this component can be used as a radio button group where space is an issue.</p>
@@ -397,47 +356,47 @@
 
 </div>
 <div class="f-item-preview">
-	<div class="btn-group">
-	<button>First</button>
-	<button>Second</button>
-	<button>Third</button>
-	<button>Fourth</button>
+	<div class="dc-btn-group">
+	<button class="dc-btn">First</button>
+	<button class="dc-btn">Second</button>
+	<button class="dc-btn">Third</button>
+	<button class="dc-btn">Fourth</button>
 </div>
 
-<div class="btn-group">
-	<a href class="btn btn--primary">Primary</a>
-	<a href class="btn">Secondary</a>
-	<a href class="btn">Secondary</a>
-	<a href class="btn btn--destroy">Attention</a>
+<div class="dc-btn-group">
+	<a href class="dc-btn dc-btn--primary">Primary</a>
+	<a href class="dc-btn">Secondary</a>
+	<a href class="dc-btn">Secondary</a>
+	<a href class="dc-btn dc-btn--destroy">Attention</a>
 </div>
 
-<div class="btn-group">
-	<a href class="btn btn--small btn--primary">Primary</a>
-	<a href class="btn btn--small">Secondary</a>
-	<a href class="btn btn--small">Secondary</a>
-	<a href class="btn btn--small btn--destroy">Attention</a>
+<div class="dc-btn-group">
+	<a href class="dc-btn dc-btn--small btn--primary">Primary</a>
+	<a href class="dc-btn dc-btn--small">Secondary</a>
+	<a href class="dc-btn dc-btn--small">Secondary</a>
+	<a href class="dc-btn dc-btn--small dc-btn--destroy">Attention</a>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;btn-group&quot;&gt;
-	&lt;button&gt;First&lt;/button&gt;
-	&lt;button&gt;Second&lt;/button&gt;
-	&lt;button&gt;Third&lt;/button&gt;
-	&lt;button&gt;Fourth&lt;/button&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-btn-group&quot;&gt;
+	&lt;button class=&quot;dc-btn&quot;&gt;First&lt;/button&gt;
+	&lt;button class=&quot;dc-btn&quot;&gt;Second&lt;/button&gt;
+	&lt;button class=&quot;dc-btn&quot;&gt;Third&lt;/button&gt;
+	&lt;button class=&quot;dc-btn&quot;&gt;Fourth&lt;/button&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;btn-group&quot;&gt;
-	&lt;a href class=&quot;btn btn--primary&quot;&gt;Primary&lt;/a&gt;
-	&lt;a href class=&quot;btn&quot;&gt;Secondary&lt;/a&gt;
-	&lt;a href class=&quot;btn&quot;&gt;Secondary&lt;/a&gt;
-	&lt;a href class=&quot;btn btn--destroy&quot;&gt;Attention&lt;/a&gt;
+&lt;div class=&quot;dc-btn-group&quot;&gt;
+	&lt;a href class=&quot;dc-btn dc-btn--primary&quot;&gt;Primary&lt;/a&gt;
+	&lt;a href class=&quot;dc-btn&quot;&gt;Secondary&lt;/a&gt;
+	&lt;a href class=&quot;dc-btn&quot;&gt;Secondary&lt;/a&gt;
+	&lt;a href class=&quot;dc-btn dc-btn--destroy&quot;&gt;Attention&lt;/a&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;btn-group&quot;&gt;
-	&lt;a href class=&quot;btn btn--small btn--primary&quot;&gt;Primary&lt;/a&gt;
-	&lt;a href class=&quot;btn btn--small&quot;&gt;Secondary&lt;/a&gt;
-	&lt;a href class=&quot;btn btn--small&quot;&gt;Secondary&lt;/a&gt;
-	&lt;a href class=&quot;btn btn--small btn--destroy&quot;&gt;Attention&lt;/a&gt;
+&lt;div class=&quot;dc-btn-group&quot;&gt;
+	&lt;a href class=&quot;dc-btn dc-btn--small btn--primary&quot;&gt;Primary&lt;/a&gt;
+	&lt;a href class=&quot;dc-btn dc-btn--small&quot;&gt;Secondary&lt;/a&gt;
+	&lt;a href class=&quot;dc-btn dc-btn--small&quot;&gt;Secondary&lt;/a&gt;
+	&lt;a href class=&quot;dc-btn dc-btn--small dc-btn--destroy&quot;&gt;Attention&lt;/a&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -446,24 +405,24 @@
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<div class="f-item-controls">
 					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-notes" />
 						</svg>
 					</span>
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-				<h3 class="f-item-heading">Button  Icon</h3>
+				<h3 class="dc-h3 f-item-heading">Button  Icon</h3>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Use icon buttons with caution. Their meanings are sometimes difficult to understand.</p>
 
 </div>
 <div class="f-item-preview">
-	<div class="btn-group">
-	<button class="btn--icon">
+	<div class="dc-btn-group">
+	<button class="dc-btn dc-btn--icon">
 
 		<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
 			<title>
@@ -477,7 +436,7 @@
 
 	</button>
 
-	<button class="btn--icon btn--disabled">
+	<button class="dc-btn dc-btn--icon dc-btn--disabled">
 
 		<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
 			<title>
@@ -492,7 +451,7 @@
 	</button>
 </div>
 
-<button class="btn--icon">
+<button class="dc-btn dc-btn--icon">
 
 	<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
 		<title>
@@ -507,7 +466,7 @@
 
 </button>
 
-<button class="btn--icon btn--destroy">
+<button class="dc-btn dc-btn--icon dc-btn--destroy">
 
 	<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
 		<title>
@@ -524,8 +483,8 @@
 </button>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;btn-group&quot;&gt;
-	&lt;button class=&quot;btn--icon&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-btn-group&quot;&gt;
+	&lt;button class=&quot;dc-btn dc-btn--icon&quot;&gt;
 
 		&lt;svg width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 36 36&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
 			&lt;title&gt;
@@ -539,7 +498,7 @@
 
 	&lt;/button&gt;
 
-	&lt;button class=&quot;btn--icon btn--disabled&quot;&gt;
+	&lt;button class=&quot;dc-btn dc-btn--icon dc-btn--disabled&quot;&gt;
 
 		&lt;svg width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 36 36&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
 			&lt;title&gt;
@@ -554,7 +513,7 @@
 	&lt;/button&gt;
 &lt;/div&gt;
 
-&lt;button class=&quot;btn--icon&quot;&gt;
+&lt;button class=&quot;dc-btn dc-btn--icon&quot;&gt;
 
 	&lt;svg width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 36 36&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
 		&lt;title&gt;
@@ -569,7 +528,7 @@
 
 &lt;/button&gt;
 
-&lt;button class=&quot;btn--icon btn--destroy&quot;&gt;
+&lt;button class=&quot;dc-btn dc-btn--icon dc-btn--destroy&quot;&gt;
 
 	&lt;svg width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 36 36&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
 		&lt;title&gt;
@@ -594,39 +553,39 @@
 <div class="f-item-group" id="checkboxes">
 
 	<div class="f-item-heading-group">
-		<h2 class="f-item-heading" data-f-toggle="labels">Checkboxes</h2>
+		<h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Checkboxes</h2>
 	</div>
 		<div class="f-item-group" id="checkboxes.01-checkbox">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<div class="f-item-controls">
 					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-				<h3 class="f-item-heading">Checkbox</h3>
+				<h3 class="dc-h3 f-item-heading">Checkbox</h3>
 			</div>
 <div class="f-item-preview">
-	<input type="checkbox" id="c1">
-<label for="c1">Check this</label>
+	<input type="checkbox" class="dc-checkbox" id="c1">
+<label for="c1" class="dc-label">Check this</label>
 
-<input type="checkbox" id="c2" checked>
-<label for="c2">Check that</label>
+<input type="checkbox" class="dc-checkbox" id="c2" checked>
+<label for="c2" class="dc-label">Check that</label>
 
-<input type="checkbox" id="c3" checked disabled>
-<label for="c3">Check Disabled</label>
+<input type="checkbox" class="dc-checkbox" id="c3" checked disabled>
+<label for="c3" class="dc-label">Check Disabled</label>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;input type=&quot;checkbox&quot; id=&quot;c1&quot;&gt;
-&lt;label for=&quot;c1&quot;&gt;Check this&lt;/label&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;input type=&quot;checkbox&quot; class=&quot;dc-checkbox&quot; id=&quot;c1&quot;&gt;
+&lt;label for=&quot;c1&quot; class=&quot;dc-label&quot;&gt;Check this&lt;/label&gt;
 
-&lt;input type=&quot;checkbox&quot; id=&quot;c2&quot; checked&gt;
-&lt;label for=&quot;c2&quot;&gt;Check that&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;dc-checkbox&quot; id=&quot;c2&quot; checked&gt;
+&lt;label for=&quot;c2&quot; class=&quot;dc-label&quot;&gt;Check that&lt;/label&gt;
 
-&lt;input type=&quot;checkbox&quot; id=&quot;c3&quot; checked disabled&gt;
-&lt;label for=&quot;c3&quot;&gt;Check Disabled&lt;/label&gt;</code></pre>
+&lt;input type=&quot;checkbox&quot; class=&quot;dc-checkbox&quot; id=&quot;c3&quot; checked disabled&gt;
+&lt;label for=&quot;c3&quot; class=&quot;dc-label&quot;&gt;Check Disabled&lt;/label&gt;</code></pre>
 </div>
 
 		</div>
@@ -635,32 +594,32 @@
 				<div class="f-item-controls">
 					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-				<h3 class="f-item-heading">Checkbox  Switch</h3>
+				<h3 class="dc-h3 f-item-heading">Checkbox  Switch</h3>
 			</div>
 <div class="f-item-preview">
-	<input type="checkbox" id="c4" class="checkbox--alt">
-<label for="c4">Check this</label>
+	<input type="checkbox" id="c4" class="dc-checkbox dc-checkbox--alt">
+<label for="c4" class="dc-label">Check this</label>
 
-<input type="checkbox" id="c5" class="checkbox--alt" checked>
-<label for="c5">Check that</label>
+<input type="checkbox" id="c5" class="dc-checkbox dc-checkbox--alt" checked>
+<label for="c5" class="dc-label">Check that</label>
 
-<input type="checkbox" id="c6" class="checkbox--alt" checked disabled>
-<label for="c6">Check Disabled</label>
+<input type="checkbox" id="c6" class="dc-checkbox dc-checkbox--alt" checked disabled>
+<label for="c6" class="dc-label">Check Disabled</label>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;input type=&quot;checkbox&quot; id=&quot;c4&quot; class=&quot;checkbox--alt&quot;&gt;
-&lt;label for=&quot;c4&quot;&gt;Check this&lt;/label&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;input type=&quot;checkbox&quot; id=&quot;c4&quot; class=&quot;dc-checkbox dc-checkbox--alt&quot;&gt;
+&lt;label for=&quot;c4&quot; class=&quot;dc-label&quot;&gt;Check this&lt;/label&gt;
 
-&lt;input type=&quot;checkbox&quot; id=&quot;c5&quot; class=&quot;checkbox--alt&quot; checked&gt;
-&lt;label for=&quot;c5&quot;&gt;Check that&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;c5&quot; class=&quot;dc-checkbox dc-checkbox--alt&quot; checked&gt;
+&lt;label for=&quot;c5&quot; class=&quot;dc-label&quot;&gt;Check that&lt;/label&gt;
 
-&lt;input type=&quot;checkbox&quot; id=&quot;c6&quot; class=&quot;checkbox--alt&quot; checked disabled&gt;
-&lt;label for=&quot;c6&quot;&gt;Check Disabled&lt;/label&gt;</code></pre>
+&lt;input type=&quot;checkbox&quot; id=&quot;c6&quot; class=&quot;dc-checkbox dc-checkbox--alt&quot; checked disabled&gt;
+&lt;label for=&quot;c6&quot; class=&quot;dc-label&quot;&gt;Check Disabled&lt;/label&gt;</code></pre>
 </div>
 
 		</div>
@@ -671,19 +630,19 @@
 <div class="f-item-group" id="icons">
 
 	<div class="f-item-heading-group">
-		<h2 class="f-item-heading" data-f-toggle="labels">Icons</h2>
+		<h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Icons</h2>
 	</div>
 		<div class="f-item-group" id="icons.01-central-services-menu">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<div class="f-item-controls">
 					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-				<h3 class="f-item-heading">Central Services Menu</h3>
+				<h3 class="dc-h3 f-item-heading">Central Services Menu</h3>
 			</div>
 <div class="f-item-preview">
 	<div class="sg-icon">
@@ -696,7 +655,7 @@
 			<path d="M10.5 25H26v-1H10v1h.5z" />
 		</g>
 	</svg>
-	<div class="less-important">Menu</div>
+	<div class="dc-less-important">Menu</div>
 </div>
 
 <div class="sg-icon">
@@ -709,7 +668,7 @@
 			<path d="M15.415 13.5L18 23.408H0L2.585 13.5C4.3 15 6.543 15.908 9 15.908s4.7-.91 6.415-2.408z" />
 		</g>
 	</svg>
-	<div class="less-important">User</div>
+	<div class="dc-less-important">User</div>
 </div>
 
 <div class="sg-icon">
@@ -723,7 +682,7 @@
 			fill="#9B9B9B" />
 		</g>
 	</svg>
-	<div class="less-important">Help</div>
+	<div class="dc-less-important">Help</div>
 </div>
 
 <div class="sg-icon">
@@ -750,11 +709,11 @@
 			transform="translate(6 9)" />
 		</g>
 	</svg>
-	<div class="less-important">Contact</div>
+	<div class="dc-less-important">Contact</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;sg-icon&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;sg-icon&quot;&gt;
 	&lt;svg class=&quot;i--interactive i--portal&quot; width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 36 36&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; shape-rendering=&quot;crispEdges&quot;&gt;
 		&lt;title&gt;
 			Menu
@@ -764,7 +723,7 @@
 			&lt;path d=&quot;M10.5 25H26v-1H10v1h.5z&quot; /&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;Menu&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;Menu&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;sg-icon&quot;&gt;
@@ -777,7 +736,7 @@
 			&lt;path d=&quot;M15.415 13.5L18 23.408H0L2.585 13.5C4.3 15 6.543 15.908 9 15.908s4.7-.91 6.415-2.408z&quot; /&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;User&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;User&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;sg-icon&quot;&gt;
@@ -791,7 +750,7 @@
 			fill=&quot;#9B9B9B&quot; /&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;Help&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;Help&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;sg-icon&quot;&gt;
@@ -818,7 +777,7 @@
 			transform=&quot;translate(6 9)&quot; /&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;Contact&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;Contact&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -828,12 +787,12 @@
 				<div class="f-item-controls">
 					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-				<h3 class="f-item-heading">Products</h3>
+				<h3 class="dc-h3 f-item-heading">Products</h3>
 			</div>
 <div class="f-item-preview">
 	<div class="sg-icon">
@@ -846,7 +805,7 @@
 			<path d="M19 17v-7h-2v7h-7v2h7v7h2v-7h7v-2h-7z" fill="#25AAFF" />
 		</g>
 	</svg>
-	<div class="less-important">Add</div>
+	<div class="dc-less-important">Add</div>
 </div>
 
 <div class="sg-icon">
@@ -861,7 +820,7 @@
 			<path d="M23 12h1l-1 14h-1l1-14zM20 10h1v3h-1zM14 10h1v3h-1z" fill="#25AAFF" />
 		</g>
 	</svg>
-	<div class="less-important">Delete</div>
+	<div class="dc-less-important">Delete</div>
 </div>
 
 <div class="sg-icon">
@@ -878,7 +837,7 @@
 			</g>
 		</g>
 	</svg>
-	<div class="less-important">Edit</div>
+	<div class="dc-less-important">Edit</div>
 </div>
 
 <div class="sg-icon">
@@ -894,7 +853,7 @@
 			<path d="M27.347 18c-.71-2.833-4.624-5-9.345-5-4.722 0-8.636 2.167-9.345 5 .71 2.833 4.623 5 9.345 5 4.72 0 8.635-2.167 9.345-5z" stroke="#25AAFF" />
 		</g>
 	</svg>
-	<div class="less-important">Preview</div>
+	<div class="dc-less-important">Preview</div>
 </div>
 
 <div class="sg-icon">
@@ -909,7 +868,7 @@
 			<circle stroke="#25AAFF" cx="18" cy="18" r="3" />
 		</g>
 	</svg>
-	<div class="less-important">Settings</div>
+	<div class="dc-less-important">Settings</div>
 </div>
 
 <div class="sg-icon">
@@ -922,7 +881,7 @@
 			<path d="M11 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm16-2c0-1.105-.895-2-2-2s-2 .895-2 2 .895 2 2 2 2-.895 2-2zm-9 2c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z" fill="#25AAFF" />
 		</g>
 	</svg>
-	<div class="less-important">More</div>
+	<div class="dc-less-important">More</div>
 </div>
 
 <div class="sg-icon">
@@ -938,7 +897,7 @@
 			</g>
 		</g>
 	</svg>
-	<div class="less-important">Lock</div>
+	<div class="dc-less-important">Lock</div>
 </div>
 
 <div class="sg-icon">
@@ -951,7 +910,7 @@
 			<path d="M18 14.552c5.116.865 9 5.11 9 10.216 0 .246-.01.49-.027.732-1.744-3.176-5.065-5.44-8.973-5.853v3.824l-9-6.485 9-6.485v4.052z" fill="#4A4A4A" />
 		</g>
 	</svg>
-	<div class="less-important">Undo</div>
+	<div class="dc-less-important">Undo</div>
 </div>
 
 <div class="sg-icon">
@@ -964,7 +923,7 @@
 			<path d="M18 14.552c-5.116.865-9 5.11-9 10.216 0 .246.01.49.027.732 1.744-3.176 5.065-5.44 8.973-5.853v3.824l9-6.485-9-6.485v4.052z" fill="#4A4A4A" />
 		</g>
 	</svg>
-	<div class="less-important">Redo</div>
+	<div class="dc-less-important">Redo</div>
 </div>
 
 <div class="sg-icon">
@@ -978,7 +937,7 @@
 			<path d="M18 18v-3M18 18h2" stroke="#4A4A4A" stroke-width="2" stroke-linecap="square" />
 		</g>
 	</svg>
-	<div class="less-important">History</div>
+	<div class="dc-less-important">History</div>
 </div>
 
 <div class="sg-icon">
@@ -994,7 +953,7 @@
 			</g>
 		</g>
 	</svg>
-	<div class="less-important">Search</div>
+	<div class="dc-less-important">Search</div>
 </div>
 
 <div class="sg-icon">
@@ -1007,11 +966,11 @@
 			<path d="M16.5 10.723l5.11 7.777-5.11 7.777" stroke="#979797" />
 		</g>
 	</svg>
-	<div class="less-important">Arrow Right</div>
+	<div class="dc-less-important">Arrow Right</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;sg-icon&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;sg-icon&quot;&gt;
 	&lt;svg class=&quot;i--interactive&quot; width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 36 36&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
 		&lt;title&gt;
 			Add
@@ -1021,7 +980,7 @@
 			&lt;path d=&quot;M19 17v-7h-2v7h-7v2h7v7h2v-7h7v-2h-7z&quot; fill=&quot;#25AAFF&quot; /&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;Add&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;Add&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;sg-icon&quot;&gt;
@@ -1036,7 +995,7 @@
 			&lt;path d=&quot;M23 12h1l-1 14h-1l1-14zM20 10h1v3h-1zM14 10h1v3h-1z&quot; fill=&quot;#25AAFF&quot; /&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;Delete&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;Delete&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;sg-icon&quot;&gt;
@@ -1053,7 +1012,7 @@
 			&lt;/g&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;Edit&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;Edit&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;sg-icon&quot;&gt;
@@ -1069,7 +1028,7 @@
 			&lt;path d=&quot;M27.347 18c-.71-2.833-4.624-5-9.345-5-4.722 0-8.636 2.167-9.345 5 .71 2.833 4.623 5 9.345 5 4.72 0 8.635-2.167 9.345-5z&quot; stroke=&quot;#25AAFF&quot; /&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;Preview&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;Preview&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;sg-icon&quot;&gt;
@@ -1084,7 +1043,7 @@
 			&lt;circle stroke=&quot;#25AAFF&quot; cx=&quot;18&quot; cy=&quot;18&quot; r=&quot;3&quot; /&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;Settings&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;Settings&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;sg-icon&quot;&gt;
@@ -1097,7 +1056,7 @@
 			&lt;path d=&quot;M11 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm16-2c0-1.105-.895-2-2-2s-2 .895-2 2 .895 2 2 2 2-.895 2-2zm-9 2c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z&quot; fill=&quot;#25AAFF&quot; /&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;More&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;More&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;sg-icon&quot;&gt;
@@ -1113,7 +1072,7 @@
 			&lt;/g&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;Lock&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;Lock&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;sg-icon&quot;&gt;
@@ -1126,7 +1085,7 @@
 			&lt;path d=&quot;M18 14.552c5.116.865 9 5.11 9 10.216 0 .246-.01.49-.027.732-1.744-3.176-5.065-5.44-8.973-5.853v3.824l-9-6.485 9-6.485v4.052z&quot; fill=&quot;#4A4A4A&quot; /&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;Undo&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;Undo&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;sg-icon&quot;&gt;
@@ -1139,7 +1098,7 @@
 			&lt;path d=&quot;M18 14.552c-5.116.865-9 5.11-9 10.216 0 .246.01.49.027.732 1.744-3.176 5.065-5.44 8.973-5.853v3.824l9-6.485-9-6.485v4.052z&quot; fill=&quot;#4A4A4A&quot; /&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;Redo&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;Redo&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;sg-icon&quot;&gt;
@@ -1153,7 +1112,7 @@
 			&lt;path d=&quot;M18 18v-3M18 18h2&quot; stroke=&quot;#4A4A4A&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;square&quot; /&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;History&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;History&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;sg-icon&quot;&gt;
@@ -1169,7 +1128,7 @@
 			&lt;/g&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;Search&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;Search&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;sg-icon&quot;&gt;
@@ -1182,7 +1141,7 @@
 			&lt;path d=&quot;M16.5 10.723l5.11 7.777-5.11 7.777&quot; stroke=&quot;#979797&quot; /&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;Arrow Right&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;Arrow Right&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -1192,12 +1151,12 @@
 				<div class="f-item-controls">
 					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-				<h3 class="f-item-heading">Alerts</h3>
+				<h3 class="dc-h3 f-item-heading">Alerts</h3>
 			</div>
 <div class="f-item-preview">
 	<div class="sg-icon">
@@ -1211,7 +1170,7 @@
 			fill="#25AAFF" />
 		</g>
 	</svg>
-	<div class="less-important">Info</div>
+	<div class="dc-less-important">Info</div>
 </div>
 
 <div class="sg-icon">
@@ -1224,7 +1183,7 @@
 			<path d="M11 20.72l5.46 6.26L29 12" stroke="#65CC1D" stroke-width="3.5" />
 		</g>
 	</svg>
-	<div class="less-important">Success</div>
+	<div class="dc-less-important">Success</div>
 </div>
 
 <div class="sg-icon">
@@ -1238,7 +1197,7 @@
 			fill="#CCB60F" />
 		</g>
 	</svg>
-	<div class="less-important">Warning</div>
+	<div class="dc-less-important">Warning</div>
 </div>
 
 <div class="sg-icon">
@@ -1252,7 +1211,7 @@
 			fill="#FF4A25" />
 		</g>
 	</svg>
-	<div class="less-important">Error</div>
+	<div class="dc-less-important">Error</div>
 </div>
 
 <div class="sg-icon">
@@ -1266,11 +1225,11 @@
 			fill="#808080" />
 		</g>
 	</svg>
-	<div class="less-important">Close</div>
+	<div class="dc-less-important">Close</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;sg-icon&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;sg-icon&quot;&gt;
 	&lt;svg width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
 		&lt;title&gt;
 			Info
@@ -1281,7 +1240,7 @@
 			fill=&quot;#25AAFF&quot; /&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;Info&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;Info&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;sg-icon&quot;&gt;
@@ -1294,7 +1253,7 @@
 			&lt;path d=&quot;M11 20.72l5.46 6.26L29 12&quot; stroke=&quot;#65CC1D&quot; stroke-width=&quot;3.5&quot; /&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;Success&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;Success&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;sg-icon&quot;&gt;
@@ -1308,7 +1267,7 @@
 			fill=&quot;#CCB60F&quot; /&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;Warning&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;Warning&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;sg-icon&quot;&gt;
@@ -1322,7 +1281,7 @@
 			fill=&quot;#FF4A25&quot; /&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;Error&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;Error&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;sg-icon&quot;&gt;
@@ -1336,28 +1295,8 @@
 			fill=&quot;#808080&quot; /&gt;
 		&lt;/g&gt;
 	&lt;/svg&gt;
-	&lt;div class=&quot;less-important&quot;&gt;Close&lt;/div&gt;
+	&lt;div class=&quot;dc-less-important&quot;&gt;Close&lt;/div&gt;
 &lt;/div&gt;</code></pre>
-</div>
-
-		</div>
-		<div class="f-item-group" id="icons.04-icon-font">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<div class="f-item-controls">
-					
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
-				<h3 class="f-item-heading">Icon Font</h3>
-			</div>
-<div class="f-item-preview">
-	<span class="icon-checkmark"></span>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;span class=&quot;icon-checkmark&quot;&gt;&lt;/span&gt;</code></pre>
 </div>
 
 		</div>
@@ -1371,18 +1310,42 @@
 		<div class="f-item-controls">
 			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
+				<svg class="dc-svg">
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-		<h2 class="f-item-heading">Link</h2>
+		<h2 class="dc-h2 f-item-heading">Link</h2>
 	</div>
 <div class="f-item-preview">
-	<a href data-tooltip="Dont't forget the tooltip">This link isn't pointing anywhere</a>
+	<a href class="dc-link" data-tooltip="Dont't forget the tooltip">This link isn't pointing anywhere</a>
+
+<br>
+
+<a href class="dc-link dc-link--success" data-tooltip="Dont't forget the tooltip">This link isn't pointing anywhere with success</a>
+
+<br>
+
+<a href class="dc-link dc-link--destroy" data-tooltip="Dont't forget the tooltip">This link isn't pointing anywhere and destroy</a>
+
+<br>
+
+<a href class="dc-link dc-link--disabled" data-tooltip="Dont't forget the tooltip">This link isn't pointing anywhere and is disabled</a>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;a href data-tooltip=&quot;Dont&#x27;t forget the tooltip&quot;&gt;This link isn&#x27;t pointing anywhere&lt;/a&gt;</code></pre>
+	<pre class="dc-pre"><code class="language-markup">&lt;a href class=&quot;dc-link&quot; data-tooltip=&quot;Dont&#x27;t forget the tooltip&quot;&gt;This link isn&#x27;t pointing anywhere&lt;/a&gt;
+
+&lt;br&gt;
+
+&lt;a href class=&quot;dc-link dc-link--success&quot; data-tooltip=&quot;Dont&#x27;t forget the tooltip&quot;&gt;This link isn&#x27;t pointing anywhere with success&lt;/a&gt;
+
+&lt;br&gt;
+
+&lt;a href class=&quot;dc-link dc-link--destroy&quot; data-tooltip=&quot;Dont&#x27;t forget the tooltip&quot;&gt;This link isn&#x27;t pointing anywhere and destroy&lt;/a&gt;
+
+&lt;br&gt;
+
+&lt;a href class=&quot;dc-link dc-link--disabled&quot; data-tooltip=&quot;Dont&#x27;t forget the tooltip&quot;&gt;This link isn&#x27;t pointing anywhere and is disabled&lt;/a&gt;</code></pre>
 </div>
 
 
@@ -1392,29 +1355,29 @@
 <div class="f-item-group" id="lists">
 
 	<div class="f-item-heading-group">
-		<h2 class="f-item-heading" data-f-toggle="labels">Lists</h2>
+		<h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Lists</h2>
 	</div>
 		<div class="f-item-group" id="lists.01-unordered">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<div class="f-item-controls">
 					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-				<h3 class="f-item-heading">Unordered</h3>
+				<h3 class="dc-h3 f-item-heading">Unordered</h3>
 			</div>
 <div class="f-item-preview">
-	<ul>
+	<ul class="dc-list">
 	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
 	<li>Aliquam tincidunt mauris eu risus.</li>
 	<li>Vestibulum auctor dapibus neque.</li>
 </ul>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;ul&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;ul class=&quot;dc-list&quot;&gt;
 	&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
 	&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
 	&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
@@ -1427,22 +1390,22 @@
 				<div class="f-item-controls">
 					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-				<h3 class="f-item-heading">Ordered</h3>
+				<h3 class="dc-h3 f-item-heading">Ordered</h3>
 			</div>
 <div class="f-item-preview">
-	<ol>
+	<ol class="dc-list">
 	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
 	<li>Aliquam tincidunt mauris eu risus.</li>
 	<li>Vestibulum auctor dapibus neque.</li>
 </ol>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;ol&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;ol class=&quot;dc-list&quot;&gt;
 	&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
 	&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
 	&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
@@ -1455,22 +1418,22 @@
 				<div class="f-item-controls">
 					
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg>
+						<svg class="dc-svg">
 							<use xlink:href="#f-icon-code" />
 						</svg>
 					</span>
 				</div>
-				<h3 class="f-item-heading">List  Is Reset</h3>
+				<h3 class="dc-h3 f-item-heading">List  Is Reset</h3>
 			</div>
 <div class="f-item-preview">
-	<ul class="list--is-reset">
+	<ul class="dc-list dc-list--is-reset">
 	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
 	<li>Aliquam tincidunt mauris eu risus.</li>
 	<li>Vestibulum auctor dapibus neque.</li>
 </ul>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;ul class=&quot;list--is-reset&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;ul class=&quot;dc-list dc-list--is-reset&quot;&gt;
 	&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
 	&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
 	&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
@@ -1488,21 +1451,21 @@
 		<div class="f-item-controls">
 			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
+				<svg class="dc-svg">
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-		<h2 class="f-item-heading">Paragraph</h2>
+		<h2 class="dc-h2 f-item-heading">Paragraph</h2>
 	</div>
 <div class="f-item-preview">
-	<p>
+	<p class="dc-p">
 	Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
 	nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.
 </p>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;p&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;p class=&quot;dc-p&quot;&gt;
 	Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
 	nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.
 &lt;/p&gt;</code></pre>
@@ -1518,32 +1481,32 @@
 		<div class="f-item-controls">
 			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
+				<svg class="dc-svg">
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-		<h2 class="f-item-heading">Radio Button</h2>
+		<h2 class="dc-h2 f-item-heading">Radio Button</h2>
 	</div>
 <div class="f-item-preview">
-	<input type="radio" id="r1" name="rg1" checked>
-<label for="r1">Either this</label>
+	<input type="radio" class="dc-radio" id="r1" name="rg1" checked>
+<label for="r1" class="dc-label">Either this</label>
 
-<input type="radio" id="r2" name="rg1">
-<label for="r2">Or that</label>
+<input type="radio" class="dc-radio" id="r2" name="rg1">
+<label for="r2" class="dc-label">Or that</label>
 
-<input type="radio" id="r3" name="rg2" checked disabled>
-<label for="r3">Disabled</label>
+<input type="radio" class="dc-radio" id="r3" name="rg2" checked disabled>
+<label for="r3" class="dc-label">Disabled</label>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;input type=&quot;radio&quot; id=&quot;r1&quot; name=&quot;rg1&quot; checked&gt;
-&lt;label for=&quot;r1&quot;&gt;Either this&lt;/label&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;input type=&quot;radio&quot; class=&quot;dc-radio&quot; id=&quot;r1&quot; name=&quot;rg1&quot; checked&gt;
+&lt;label for=&quot;r1&quot; class=&quot;dc-label&quot;&gt;Either this&lt;/label&gt;
 
-&lt;input type=&quot;radio&quot; id=&quot;r2&quot; name=&quot;rg1&quot;&gt;
-&lt;label for=&quot;r2&quot;&gt;Or that&lt;/label&gt;
+&lt;input type=&quot;radio&quot; class=&quot;dc-radio&quot; id=&quot;r2&quot; name=&quot;rg1&quot;&gt;
+&lt;label for=&quot;r2&quot; class=&quot;dc-label&quot;&gt;Or that&lt;/label&gt;
 
-&lt;input type=&quot;radio&quot; id=&quot;r3&quot; name=&quot;rg2&quot; checked disabled&gt;
-&lt;label for=&quot;r3&quot;&gt;Disabled&lt;/label&gt;</code></pre>
+&lt;input type=&quot;radio&quot; class=&quot;dc-radio&quot; id=&quot;r3&quot; name=&quot;rg2&quot; checked disabled&gt;
+&lt;label for=&quot;r3&quot; class=&quot;dc-label&quot;&gt;Disabled&lt;/label&gt;</code></pre>
 </div>
 
 
@@ -1556,15 +1519,15 @@
 		<div class="f-item-controls">
 			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
+				<svg class="dc-svg">
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-		<h2 class="f-item-heading">Select</h2>
+		<h2 class="dc-h2 f-item-heading">Select</h2>
 	</div>
 <div class="f-item-preview">
-	<select name="" id="">
+	<select class="dc-select" name="" id="">
 	<option value="">Option 1</option>
 	<option value="">Option 2</option>
 	<option value="">Option 3</option>
@@ -1573,7 +1536,7 @@
 </select>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;select name=&quot;&quot; id=&quot;&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;select class=&quot;dc-select&quot; name=&quot;&quot; id=&quot;&quot;&gt;
 	&lt;option value=&quot;&quot;&gt;Option 1&lt;/option&gt;
 	&lt;option value=&quot;&quot;&gt;Option 2&lt;/option&gt;
 	&lt;option value=&quot;&quot;&gt;Option 3&lt;/option&gt;
@@ -1592,60 +1555,60 @@
 		<div class="f-item-controls">
 			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
+				<svg class="dc-svg">
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-		<h2 class="f-item-heading">Table</h2>
+		<h2 class="dc-h2 f-item-heading">Table</h2>
 	</div>
 <div class="f-item-preview">
-	<table class="table">
-	<thead class="table__thead">
+	<table class="dc-table">
+	<thead class="dc-table__thead">
 
-		<tr class="table__tr">
-			<th class="table__th">Name</th>
-			<th class="table__th">Market</th>
-			<th class="table__th">Gender</th>
-			<th class="table__th">Page URL</th>
-			<th class="table__th">Status</th>
-			<th class="table__th">Last modified</th>
+		<tr class="dc-table__tr">
+			<th class="dc-table__th">Name</th>
+			<th class="dc-table__th">Market</th>
+			<th class="dc-table__th">Gender</th>
+			<th class="dc-table__th">Page URL</th>
+			<th class="dc-table__th">Status</th>
+			<th class="dc-table__th">Last modified</th>
 		</tr>
 
 	</thead>
 
-	<tbody class="table__tbody">
+	<tbody class="dc-table__tbody">
 
-		<tr class="table__tr">
+		<tr class="dc-table__tr">
 
-			<td class="table__td" data-col="Name"><span class="table__item-title">Christmas '15</span></td>
-			<td class="table__td" data-col="Market">Germany (DE)</td>
-			<td class="table__td" data-col="Gender">Men</td>
-			<td class="table__td" data-col="Page URL"><a href><span class="nowrap">brand-shop-men</span></a></td>
-			<td class="table__td" data-col="Status"><span class="status status--online nowrap">Online</span></td>
-			<td class="table__td" data-col="Last modified">3/7/15 05:56 PM <span class="less-important">admin</span></td>
-
-		</tr>
-
-		<tr class="table__tr">
-
-			<td class="table__td" data-col="Name"><span class="table__item-title">Q2 Campaign Test</span></td>
-			<td class="table__td" data-col="Market">Germany (DE)</td>
-			<td class="table__td" data-col="Gender">Women</td>
-			<td class="table__td" data-col="Page URL"><span class="nowrap">brand-shop-women</span></td>
-			<td class="table__td" data-col="Status"><span class="status status--offline nowrap">Offline</span></td>
-			<td class="table__td" data-col="Last modified">3/7/15 05:56 PM <span class="less-important">admin</span></td>
+			<td class="dc-table__td" data-col="Name"><span class="dc-table__item-title">Christmas '15</span></td>
+			<td class="dc-table__td" data-col="Market">Germany (DE)</td>
+			<td class="dc-table__td" data-col="Gender">Men</td>
+			<td class="dc-table__td" data-col="Page URL"><a class="dc-link" href><span class="nowrap">brand-shop-men</span></a></td>
+			<td class="dc-table__td" data-col="Status"><span class="status status--online nowrap">Online</span></td>
+			<td class="dc-table__td" data-col="Last modified">3/7/15 05:56 PM <span class="less-important">admin</span></td>
 
 		</tr>
 
-		<tr class="table__tr">
+		<tr class="dc-table__tr">
 
-			<td class="table__td" data-col="Name"><span class="table__item-title">Basic Shop Template</span></td>
-			<td class="table__td" data-col="Market">Germany (DE)</td>
-			<td class="table__td" data-col="Gender">Kids</td>
-			<td class="table__td" data-col="Page URL"><a href><span class="nowrap">brand-shop-kids</span></a></td>
-			<td class="table__td" data-col="Status"><span class="status status--online nowrap">Online</span></td>
-			<td class="table__td" data-col="Last modified">3/7/15 05:56 PM <span class="less-important">admin</span></td>
+			<td class="dc-table__td" data-col="Name"><span class="dc-table__item-title">Q2 Campaign Test</span></td>
+			<td class="dc-table__td" data-col="Market">Germany (DE)</td>
+			<td class="dc-table__td" data-col="Gender">Women</td>
+			<td class="dc-table__td" data-col="Page URL"><span class="nowrap">brand-shop-women</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="status status--offline nowrap">Offline</span></td>
+			<td class="dc-table__td" data-col="Last modified">3/7/15 05:56 PM <span class="less-important">admin</span></td>
+
+		</tr>
+
+		<tr class="dc-table__tr">
+
+			<td class="dc-table__td" data-col="Name"><span class="dc-table__item-title">Basic Shop Template</span></td>
+			<td class="dc-table__td" data-col="Market">Germany (DE)</td>
+			<td class="dc-table__td" data-col="Gender">Kids</td>
+			<td class="dc-table__td" data-col="Page URL"><a href class="dc-link"><span class="nowrap">brand-shop-kids</span></a></td>
+			<td class="dc-table__td" data-col="Status"><span class="status status--online nowrap">Online</span></td>
+			<td class="dc-table__td" data-col="Last modified">3/7/15 05:56 PM <span class="less-important">admin</span></td>
 
 		</tr>
 
@@ -1653,52 +1616,52 @@
 </table>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;table class=&quot;table&quot;&gt;
-	&lt;thead class=&quot;table__thead&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;table class=&quot;dc-table&quot;&gt;
+	&lt;thead class=&quot;dc-table__thead&quot;&gt;
 
-		&lt;tr class=&quot;table__tr&quot;&gt;
-			&lt;th class=&quot;table__th&quot;&gt;Name&lt;/th&gt;
-			&lt;th class=&quot;table__th&quot;&gt;Market&lt;/th&gt;
-			&lt;th class=&quot;table__th&quot;&gt;Gender&lt;/th&gt;
-			&lt;th class=&quot;table__th&quot;&gt;Page URL&lt;/th&gt;
-			&lt;th class=&quot;table__th&quot;&gt;Status&lt;/th&gt;
-			&lt;th class=&quot;table__th&quot;&gt;Last modified&lt;/th&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Name&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Market&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Gender&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Page URL&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Status&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Last modified&lt;/th&gt;
 		&lt;/tr&gt;
 
 	&lt;/thead&gt;
 
-	&lt;tbody class=&quot;table__tbody&quot;&gt;
+	&lt;tbody class=&quot;dc-table__tbody&quot;&gt;
 
-		&lt;tr class=&quot;table__tr&quot;&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
 
-			&lt;td class=&quot;table__td&quot; data-col=&quot;Name&quot;&gt;&lt;span class=&quot;table__item-title&quot;&gt;Christmas &#x27;15&lt;/span&gt;&lt;/td&gt;
-			&lt;td class=&quot;table__td&quot; data-col=&quot;Market&quot;&gt;Germany (DE)&lt;/td&gt;
-			&lt;td class=&quot;table__td&quot; data-col=&quot;Gender&quot;&gt;Men&lt;/td&gt;
-			&lt;td class=&quot;table__td&quot; data-col=&quot;Page URL&quot;&gt;&lt;a href&gt;&lt;span class=&quot;nowrap&quot;&gt;brand-shop-men&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
-			&lt;td class=&quot;table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status status--online nowrap&quot;&gt;Online&lt;/span&gt;&lt;/td&gt;
-			&lt;td class=&quot;table__td&quot; data-col=&quot;Last modified&quot;&gt;3/7/15 05:56 PM &lt;span class=&quot;less-important&quot;&gt;admin&lt;/span&gt;&lt;/td&gt;
-
-		&lt;/tr&gt;
-
-		&lt;tr class=&quot;table__tr&quot;&gt;
-
-			&lt;td class=&quot;table__td&quot; data-col=&quot;Name&quot;&gt;&lt;span class=&quot;table__item-title&quot;&gt;Q2 Campaign Test&lt;/span&gt;&lt;/td&gt;
-			&lt;td class=&quot;table__td&quot; data-col=&quot;Market&quot;&gt;Germany (DE)&lt;/td&gt;
-			&lt;td class=&quot;table__td&quot; data-col=&quot;Gender&quot;&gt;Women&lt;/td&gt;
-			&lt;td class=&quot;table__td&quot; data-col=&quot;Page URL&quot;&gt;&lt;span class=&quot;nowrap&quot;&gt;brand-shop-women&lt;/span&gt;&lt;/td&gt;
-			&lt;td class=&quot;table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status status--offline nowrap&quot;&gt;Offline&lt;/span&gt;&lt;/td&gt;
-			&lt;td class=&quot;table__td&quot; data-col=&quot;Last modified&quot;&gt;3/7/15 05:56 PM &lt;span class=&quot;less-important&quot;&gt;admin&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Name&quot;&gt;&lt;span class=&quot;dc-table__item-title&quot;&gt;Christmas &#x27;15&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Market&quot;&gt;Germany (DE)&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Gender&quot;&gt;Men&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Page URL&quot;&gt;&lt;a class=&quot;dc-link&quot; href&gt;&lt;span class=&quot;nowrap&quot;&gt;brand-shop-men&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status status--online nowrap&quot;&gt;Online&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last modified&quot;&gt;3/7/15 05:56 PM &lt;span class=&quot;less-important&quot;&gt;admin&lt;/span&gt;&lt;/td&gt;
 
 		&lt;/tr&gt;
 
-		&lt;tr class=&quot;table__tr&quot;&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
 
-			&lt;td class=&quot;table__td&quot; data-col=&quot;Name&quot;&gt;&lt;span class=&quot;table__item-title&quot;&gt;Basic Shop Template&lt;/span&gt;&lt;/td&gt;
-			&lt;td class=&quot;table__td&quot; data-col=&quot;Market&quot;&gt;Germany (DE)&lt;/td&gt;
-			&lt;td class=&quot;table__td&quot; data-col=&quot;Gender&quot;&gt;Kids&lt;/td&gt;
-			&lt;td class=&quot;table__td&quot; data-col=&quot;Page URL&quot;&gt;&lt;a href&gt;&lt;span class=&quot;nowrap&quot;&gt;brand-shop-kids&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
-			&lt;td class=&quot;table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status status--online nowrap&quot;&gt;Online&lt;/span&gt;&lt;/td&gt;
-			&lt;td class=&quot;table__td&quot; data-col=&quot;Last modified&quot;&gt;3/7/15 05:56 PM &lt;span class=&quot;less-important&quot;&gt;admin&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Name&quot;&gt;&lt;span class=&quot;dc-table__item-title&quot;&gt;Q2 Campaign Test&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Market&quot;&gt;Germany (DE)&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Gender&quot;&gt;Women&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Page URL&quot;&gt;&lt;span class=&quot;nowrap&quot;&gt;brand-shop-women&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status status--offline nowrap&quot;&gt;Offline&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last modified&quot;&gt;3/7/15 05:56 PM &lt;span class=&quot;less-important&quot;&gt;admin&lt;/span&gt;&lt;/td&gt;
+
+		&lt;/tr&gt;
+
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
+
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Name&quot;&gt;&lt;span class=&quot;dc-table__item-title&quot;&gt;Basic Shop Template&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Market&quot;&gt;Germany (DE)&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Gender&quot;&gt;Kids&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Page URL&quot;&gt;&lt;a href class=&quot;dc-link&quot;&gt;&lt;span class=&quot;nowrap&quot;&gt;brand-shop-kids&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status status--online nowrap&quot;&gt;Online&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last modified&quot;&gt;3/7/15 05:56 PM &lt;span class=&quot;less-important&quot;&gt;admin&lt;/span&gt;&lt;/td&gt;
 
 		&lt;/tr&gt;
 
@@ -1716,34 +1679,46 @@
 		<div class="f-item-controls">
 			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
+				<svg class="dc-svg">
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-		<h2 class="f-item-heading">Text Input</h2>
+		<h2 class="dc-h2 f-item-heading">Text Input</h2>
 	</div>
 <div class="f-item-preview">
-	<label class="label" for="optionalInput">Label</label>
-<input type="text" id="optionalInput" placeholder="e. g. give an example" />
+	<label class="dc-label" for="optionalInput">Label</label>
+<input class="dc-input" type="text" id="optionalInput" placeholder="e. g. give an example" />
 
-<label class="label label--required" for="requiredInput">Label</label>
-<input type="text" id="requiredInput" placeholder="e. g. give an example" />
+<label class="dc-label dc-label--required" for="requiredInput">Label</label>
+<input class="dc-input" type="text" id="requiredInput" placeholder="e. g. give an example" />
 
-<label class="label label--required label--is-error" for="errorInput">Label</label>
-<input class="input--is-error" type="text" id="errorInput" placeholder="e. g. give an example" />
-<span class="text--error">Please don't leave this empty.</span>
+<label class="dc-label dc-label--required dc-label--is-error" for="errorInput">Label</label>
+<input class="dc-input dc-input--is-error" type="text" id="errorInput" placeholder="e. g. give an example" />
+<span class="dc-text--error">Please don't leave this empty.</span>
+
+<label class="dc-label" for="numberInput">Stock</label>
+<input class="dc-input" type="number" id="numberInput" placeholder="e. g. 100" />
+
+<label class="dc-label dc-label--disabled" for="disabledInput">Disabled input</label>
+<input class="dc-input dc-input--disabled" type="text" id="disabledInput" placeholder="e. g. give an example" disabled/>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label class=&quot;label&quot; for=&quot;optionalInput&quot;&gt;Label&lt;/label&gt;
-&lt;input type=&quot;text&quot; id=&quot;optionalInput&quot; placeholder=&quot;e. g. give an example&quot; /&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;label class=&quot;dc-label&quot; for=&quot;optionalInput&quot;&gt;Label&lt;/label&gt;
+&lt;input class=&quot;dc-input&quot; type=&quot;text&quot; id=&quot;optionalInput&quot; placeholder=&quot;e. g. give an example&quot; /&gt;
 
-&lt;label class=&quot;label label--required&quot; for=&quot;requiredInput&quot;&gt;Label&lt;/label&gt;
-&lt;input type=&quot;text&quot; id=&quot;requiredInput&quot; placeholder=&quot;e. g. give an example&quot; /&gt;
+&lt;label class=&quot;dc-label dc-label--required&quot; for=&quot;requiredInput&quot;&gt;Label&lt;/label&gt;
+&lt;input class=&quot;dc-input&quot; type=&quot;text&quot; id=&quot;requiredInput&quot; placeholder=&quot;e. g. give an example&quot; /&gt;
 
-&lt;label class=&quot;label label--required label--is-error&quot; for=&quot;errorInput&quot;&gt;Label&lt;/label&gt;
-&lt;input class=&quot;input--is-error&quot; type=&quot;text&quot; id=&quot;errorInput&quot; placeholder=&quot;e. g. give an example&quot; /&gt;
-&lt;span class=&quot;text--error&quot;&gt;Please don&#x27;t leave this empty.&lt;/span&gt;</code></pre>
+&lt;label class=&quot;dc-label dc-label--required dc-label--is-error&quot; for=&quot;errorInput&quot;&gt;Label&lt;/label&gt;
+&lt;input class=&quot;dc-input dc-input--is-error&quot; type=&quot;text&quot; id=&quot;errorInput&quot; placeholder=&quot;e. g. give an example&quot; /&gt;
+&lt;span class=&quot;dc-text--error&quot;&gt;Please don&#x27;t leave this empty.&lt;/span&gt;
+
+&lt;label class=&quot;dc-label&quot; for=&quot;numberInput&quot;&gt;Stock&lt;/label&gt;
+&lt;input class=&quot;dc-input&quot; type=&quot;number&quot; id=&quot;numberInput&quot; placeholder=&quot;e. g. 100&quot; /&gt;
+
+&lt;label class=&quot;dc-label dc-label--disabled&quot; for=&quot;disabledInput&quot;&gt;Disabled input&lt;/label&gt;
+&lt;input class=&quot;dc-input dc-input--disabled&quot; type=&quot;text&quot; id=&quot;disabledInput&quot; placeholder=&quot;e. g. give an example&quot; disabled/&gt;</code></pre>
 </div>
 
 
@@ -1756,20 +1731,20 @@
 		<div class="f-item-controls">
 			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
+				<svg class="dc-svg">
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-		<h2 class="f-item-heading">Textarea</h2>
+		<h2 class="dc-h2 f-item-heading">Textarea</h2>
 	</div>
 <div class="f-item-preview">
-	<label class="label" for="textArea">Text area</label>
-<textarea name="textArea" id="" cols="30" rows="5"></textarea>
+	<label class="dc-label" for="textArea">Text area</label>
+<textarea class="dc-textarea" name="textArea" id="" cols="30" rows="5"></textarea>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;label class=&quot;label&quot; for=&quot;textArea&quot;&gt;Text area&lt;/label&gt;
-&lt;textarea name=&quot;textArea&quot; id=&quot;&quot; cols=&quot;30&quot; rows=&quot;5&quot;&gt;&lt;/textarea&gt;</code></pre>
+	<pre class="dc-pre"><code class="language-markup">&lt;label class=&quot;dc-label&quot; for=&quot;textArea&quot;&gt;Text area&lt;/label&gt;
+&lt;textarea class=&quot;dc-textarea&quot; name=&quot;textArea&quot; id=&quot;&quot; cols=&quot;30&quot; rows=&quot;5&quot;&gt;&lt;/textarea&gt;</code></pre>
 </div>
 
 
@@ -1778,7 +1753,7 @@
 
 
 		</div>
-		<div class="grid"></div>
+		<div class="dc-grid"></div>
 
 		<script src="assets/fabricator/scripts/f.js"></script>
 

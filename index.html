@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="dc-html">
 <head>
 
 	<meta charset="utf-8">
@@ -18,28 +18,28 @@
 
     <link rel="icon" href="favicon.ico">
 </head>
-<body>
-		<header class="header">
-			<img class="logo" src="assets/toolkit/img/logo.svg" alt="Zalando Logo">
+<body class="dc-body">
+		<header class="dc-header">
+			<img class="dc-logo" src="assets/toolkit/img/logo.svg" alt="Zalando Logo">
 			<!-- <div class="f-control-bar"> -->
 				<div class="f-control f-menu-toggle">
-					<svg>
+					<svg class="dc-svg">
 						<use xlink:href="#f-icon-menu" />
 					</svg>
 				</div>
 			<!-- </div> -->
 			<div class="f-control f-menu-toggle">
-				<a href class="js-toggle-breakpoints">Breakpoints</a>
+				<a href class="dc-link js-toggle-breakpoints">Breakpoints</a>
 			</div>
 			<div class="f-control f-menu-toggle">
-				<a href class="js-toggle-grid">Grid</a>
+				<a href class="dc-link js-toggle-grid">Grid</a>
 			</div>
             <div class="f-control">
-                <a href="https://github.com/zalando/brand-solutions-dress-code/" target="_blank">Github</a>
+                <a class="dc-link" href="https://github.com/zalando/brand-solutions-dress-code/" target="_blank">Github</a>
             </div>
 		</header>
 		<!-- fabricator icons -->
-		<svg style="display: none;">
+		<svg class="dc-svg" style="display: none;">
 			<symbol id="f-icon-code" viewBox="0 0 512 512">
 				<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
 			</symbol>
@@ -62,17 +62,17 @@
 		
 			<div class="f-controls">
 				<div class="f-control f-global-control" data-f-toggle-control="labels" title="Toggle Labels">
-					<svg>
+					<svg class="dc-svg">
 						<use xlink:href="#f-icon-labels" />
 					</svg>
 				</div>
 				<div class="f-control f-global-control" data-f-toggle-control="notes" title="Toggle Notes">
-					<svg>
+					<svg class="dc-svg">
 						<use xlink:href="#f-icon-notes" />
 					</svg>
 				</div>
 				<div class="f-control f-global-control" data-f-toggle-control="code" title="Toggle Code">
-					<svg>
+					<svg class="dc-svg">
 						<use xlink:href="#f-icon-code" />
 					</svg>
 				</div>
@@ -137,54 +137,13 @@
 					<a href="molecules.html" class="f-menu__heading">Molecules</a>
 					<ul>
 						<li>
-							<a href="molecules.html#accordeon">Accordeon</a>
-						</li>
-						<li>
-							<a href="molecules.html#autocomplete">Autocomplete</a>
-						</li>
-						<li>
-							<a href="molecules.html#badge">Badge</a>
-						</li>
-						<li>
-							<a href="molecules.html#collapse">Collapse</a>
-						</li>
-						<li>
-							<a href="molecules.html#loading-spinner">Loading Spinner</a>
-						</li>
-						<li>
 							<a href="molecules.html#messages">Messages</a>
-						</li>
-						<li>
-							<a href="molecules.html#pagination">Pagination</a>
-						</li>
-						<li>
-							<a href="molecules.html#popover">Popover</a>
-						</li>
-						<li>
-							<a href="molecules.html#progress-bar">Progress Bar</a>
 						</li>
 						<li>
 							<a href="molecules.html#search-form">Search Form</a>
 						</li>
 						<li>
-							<a href="molecules.html#tabs">Tabs</a>
-						</li>
-						<li>
-							<a href="molecules.html#tag">Tag</a>
-						</li>
-						<li>
 							<a href="molecules.html#tooltip">Tooltip</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="organisms.html" class="f-menu__heading">Organisms</a>
-					<ul>
-						<li>
-							<a href="organisms.html#dialog">Dialog</a>
-						</li>
-						<li>
-							<a href="organisms.html#form">Form</a>
 						</li>
 					</ul>
 				</li>
@@ -211,25 +170,25 @@
 
 
 	
-<h1>Brand Solutions Dress Code</h1>
-<h2>Brand Solutions platform style guide</h2>
+<h1 class="dc-h1">Brand Solutions Dress Code</h1>
+<h2 class="dc-h2">Brand Solutions platform style guide</h2>
 
-<p>For You are my rock and my fortress; For Your name's sake You will lead me and guide me.<br>
-   <em>Psalms 31:3</em></p>
+<p class="dc-p">For You are my rock and my fortress; For Your name's sake You will lead me and guide me.<br>
+   <em class="dc-em">Psalms 31:3</em></p>
 
-<h2>Usage</h2>
+<h2 class="dc-h2">Usage</h2>
 
 <p>Start by adding the following files to your page:</p>
 
-<pre class="language-markup"><code class="language-markup">&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+<pre class="dc-pre language-markup"><code class="language-markup">&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js&quot;&gt;&lt;/script&gt;</code></pre>
 
-<pre class="language-markup"><code class="language-markup">&lt;link rel=&quot;stylesheet&quot; href=&quot;bower_components/bs-dress-code/dist/css/bs-dress-code.css&quot;&gt;</code></pre>
+<pre class="dc-pre language-markup"><code class="language-markup">&lt;link rel=&quot;stylesheet&quot; href=&quot;bower_components/dress-code/dist/css/dress-code.css&quot;&gt;</code></pre>
 
-<pre class="language-markup"><code class="language-markup">&lt;script src=&quot;bower_components/bs-dress-code/dist/js/bs-dress-code.js&quot;&gt;&lt;/script&gt;</code></pre>
+<pre class="dc-pre language-markup"><code class="language-markup">&lt;script src=&quot;bower_components/dress-code/dist/js/dress-code.js&quot;&gt;&lt;/script&gt;</code></pre>
 
 
 		</div>
-		<div class="grid"></div>
+		<div class="dc-grid"></div>
 
 		<script src="assets/fabricator/scripts/f.js"></script>
 

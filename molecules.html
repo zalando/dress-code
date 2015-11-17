@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="dc-html">
 <head>
 
 	<meta charset="utf-8">
@@ -18,28 +18,28 @@
 
     <link rel="icon" href="favicon.ico">
 </head>
-<body>
-		<header class="header">
-			<img class="logo" src="assets/toolkit/img/logo.svg" alt="Zalando Logo">
+<body class="dc-body">
+		<header class="dc-header">
+			<img class="dc-logo" src="assets/toolkit/img/logo.svg" alt="Zalando Logo">
 			<!-- <div class="f-control-bar"> -->
 				<div class="f-control f-menu-toggle">
-					<svg>
+					<svg class="dc-svg">
 						<use xlink:href="#f-icon-menu" />
 					</svg>
 				</div>
 			<!-- </div> -->
 			<div class="f-control f-menu-toggle">
-				<a href class="js-toggle-breakpoints">Breakpoints</a>
+				<a href class="dc-link js-toggle-breakpoints">Breakpoints</a>
 			</div>
 			<div class="f-control f-menu-toggle">
-				<a href class="js-toggle-grid">Grid</a>
+				<a href class="dc-link js-toggle-grid">Grid</a>
 			</div>
             <div class="f-control">
-                <a href="https://github.com/zalando/brand-solutions-dress-code/" target="_blank">Github</a>
+                <a class="dc-link" href="https://github.com/zalando/brand-solutions-dress-code/" target="_blank">Github</a>
             </div>
 		</header>
 		<!-- fabricator icons -->
-		<svg style="display: none;">
+		<svg class="dc-svg" style="display: none;">
 			<symbol id="f-icon-code" viewBox="0 0 512 512">
 				<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
 			</symbol>
@@ -62,17 +62,17 @@
 		
 			<div class="f-controls">
 				<div class="f-control f-global-control" data-f-toggle-control="labels" title="Toggle Labels">
-					<svg>
+					<svg class="dc-svg">
 						<use xlink:href="#f-icon-labels" />
 					</svg>
 				</div>
 				<div class="f-control f-global-control" data-f-toggle-control="notes" title="Toggle Notes">
-					<svg>
+					<svg class="dc-svg">
 						<use xlink:href="#f-icon-notes" />
 					</svg>
 				</div>
 				<div class="f-control f-global-control" data-f-toggle-control="code" title="Toggle Code">
-					<svg>
+					<svg class="dc-svg">
 						<use xlink:href="#f-icon-code" />
 					</svg>
 				</div>
@@ -137,54 +137,13 @@
 					<a href="molecules.html" class="f-menu__heading">Molecules</a>
 					<ul>
 						<li>
-							<a href="molecules.html#accordeon">Accordeon</a>
-						</li>
-						<li>
-							<a href="molecules.html#autocomplete">Autocomplete</a>
-						</li>
-						<li>
-							<a href="molecules.html#badge">Badge</a>
-						</li>
-						<li>
-							<a href="molecules.html#collapse">Collapse</a>
-						</li>
-						<li>
-							<a href="molecules.html#loading-spinner">Loading Spinner</a>
-						</li>
-						<li>
 							<a href="molecules.html#messages">Messages</a>
-						</li>
-						<li>
-							<a href="molecules.html#pagination">Pagination</a>
-						</li>
-						<li>
-							<a href="molecules.html#popover">Popover</a>
-						</li>
-						<li>
-							<a href="molecules.html#progress-bar">Progress Bar</a>
 						</li>
 						<li>
 							<a href="molecules.html#search-form">Search Form</a>
 						</li>
 						<li>
-							<a href="molecules.html#tabs">Tabs</a>
-						</li>
-						<li>
-							<a href="molecules.html#tag">Tag</a>
-						</li>
-						<li>
 							<a href="molecules.html#tooltip">Tooltip</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="organisms.html" class="f-menu__heading">Organisms</a>
-					<ul>
-						<li>
-							<a href="organisms.html#dialog">Dialog</a>
-						</li>
-						<li>
-							<a href="organisms.html#form">Form</a>
 						</li>
 					</ul>
 				</li>
@@ -211,162 +170,7 @@
 
 
 	
-<h1 data-f-toggle="labels">Molecules</h1>
-
-
-<div class="f-item-group" id="accordeon">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-		<h2 class="f-item-heading">Accordeon</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>These are notes associated with this <code>accordeon</code> component.</p>
-
-</div>
-<div class="f-item-preview">
-	<button class="button">accordeon</button>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;button&quot;&gt;accordeon&lt;/button&gt;</code></pre>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="autocomplete">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-		<h2 class="f-item-heading">Autocomplete</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>These are notes associated with this <code>autocomplete</code> component.</p>
-
-</div>
-<div class="f-item-preview">
-	<button class="button">Submit</button>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;button&quot;&gt;Submit&lt;/button&gt;</code></pre>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="badge">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-		<h2 class="f-item-heading">Badge</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>These are notes associated with this <code>badge</code> component.</p>
-
-</div>
-<div class="f-item-preview">
-	<button class="button">badge</button>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;button&quot;&gt;badge&lt;/button&gt;</code></pre>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="collapse">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-		<h2 class="f-item-heading">Collapse</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>These are notes associated with this <code>collapse</code> component.</p>
-
-</div>
-<div class="f-item-preview">
-	<button class="button">collapse</button>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;button&quot;&gt;collapse&lt;/button&gt;</code></pre>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="loading-spinner">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-		<h2 class="f-item-heading">Loading Spinner</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>These are notes associated with this <code>loading spinner</code> component.</p>
-
-</div>
-<div class="f-item-preview">
-	<button class="button">loading spinner</button>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;button&quot;&gt;loading spinner&lt;/button&gt;</code></pre>
-</div>
-
-
-</div>
+<h1 class="dc-h1" data-f-toggle="labels">Molecules</h1>
 
 
 <div class="f-item-group" id="messages">
@@ -375,19 +179,19 @@
 		<div class="f-item-controls">
 			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
+				<svg class="dc-svg">
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-		<h2 class="f-item-heading">Messages</h2>
+		<h2 class="dc-h2 f-item-heading">Messages</h2>
 	</div>
 <div class="f-item-preview">
-	<div class="msg">
-	<div class="msg__inner">
+	<div class="dc-msg">
+	<div class="dc-msg__inner">
 
-		<div class="msg__icon">
-			<svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+		<div class="dc-msg__icon">
+			<svg class="dc-svg" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
 				<title>
 					Info
 				</title>
@@ -399,18 +203,18 @@
 			</svg>
 		</div>
 
-		<div class="msg__bd">
+		<div class="dc-msg__bd">
 
-			<h1 class="msg__title">Info message</h1>
+			<h1 class="dc-msg__title">Info message</h1>
 
-			<p class="msg__text">
-				Give some more information about what happened. <a href title="tooltip">Also, here's a link. Boo!</a>
+			<p class="dc-msg__text">
+				Give some more information about what happened. <a href class="dc-link" title="tooltip">Also, here's a link. Boo!</a>
 			</p>
 
 		</div>
 
-		<div class="msg__close">
-			<svg class="i--interactive" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+		<div class="dc-msg__close">
+			<svg class="dc-svg dc-icon--interactive" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
 				<title>
 					Close
 				</title>
@@ -424,11 +228,11 @@
 	</div>
 </div>
 
-<div class="msg msg--success">
-	<div class="msg__inner">
+<div class="dc-msg dc-msg--success">
+	<div class="dc-msg__inner">
 
-		<div class="msg__icon">
-			<svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+		<div class="dc-msg__icon">
+			<svg class="dc-svg" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
 				<title>
 					Success
 				</title>
@@ -439,18 +243,18 @@
 			</svg>
 		</div>
 
-		<div class="msg__bd">
+		<div class="dc-msg__bd">
 
-			<h1 class="msg__title">Success message</h1>
+			<h1 class="dc-msg__title">Success message</h1>
 
-			<p class="msg__text">
-				Give some more information about what happened. <a href title="tooltip">Also, here's a link. Boo!</a>
+			<p class="dc-msg__text">
+				Give some more information about what happened. <a href class="dc-link" title="tooltip">Also, here's a link. Boo!</a>
 			</p>
 
 		</div>
 
-		<div class="msg__close">
-			<svg class="i--interactive" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+		<div class="dc-msg__close">
+			<svg class="dc-svg dc-icon--interactive" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
 				<title>
 					Close
 				</title>
@@ -464,11 +268,11 @@
 	</div>
 </div>
 
-<div class="msg msg--warning">
-	<div class="msg__inner">
+<div class="dc-msg dc-msg--warning">
+	<div class="dc-msg__inner">
 
-		<div class="msg__icon">
-			<svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+		<div class="dc-msg__icon">
+			<svg class="dc-svg" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
 				<title>
 					Warning
 				</title>
@@ -480,18 +284,18 @@
 			</svg>
 		</div>
 
-		<div class="msg__bd">
+		<div class="dc-msg__bd">
 
-			<h1 class="msg__title">Warning message</h1>
+			<h1 class="dc-msg__title">Warning message</h1>
 
-			<p class="msg__text">
-				Give some more information about what happened. <a href title="tooltip">Also, here's a link. Boo!</a>
+			<p class="dc-msg__text">
+				Give some more information about what happened. <a href class="dc-link" title="tooltip">Also, here's a link. Boo!</a>
 			</p>
 
 		</div>
 
-		<div class="msg__close">
-			<svg class="i--interactive" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+		<div class="dc-msg__close">
+			<svg class="dc-svg dc-icon--interactive" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
 				<title>
 					Close
 				</title>
@@ -506,11 +310,11 @@
 </div>
 
 
-<div class="msg msg--error">
-	<div class="msg__inner">
+<div class="dc-msg dc-msg--error">
+	<div class="dc-msg__inner">
 
-		<div class="msg__icon">
-			<svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+		<div class="dc-msg__icon">
+			<svg class="dc-svg" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
 				<title>
 					Error
 				</title>
@@ -522,18 +326,18 @@
 			</svg>
 		</div>
 
-		<div class="msg__bd">
+		<div class="dc-msg__bd">
 
-			<h1 class="msg__title">Error message</h1>
+			<h1 class="dc-msg__title">Error message</h1>
 
-			<p class="msg__text">
-				Give some more information about what happened. <a href title="tooltip">Also, here's a link. Boo!</a>
+			<p class="dc-msg__text">
+				Give some more information about what happened. <a href class="dc-link" title="tooltip">Also, here's a link. Boo!</a>
 			</p>
 
 		</div>
 
-		<div class="msg__close">
-			<svg class="i--interactive" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+		<div class="dc-msg__close">
+			<svg class="dc-svg dc-icon--interactive" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
 				<title>
 					Close
 				</title>
@@ -548,11 +352,11 @@
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;msg&quot;&gt;
-	&lt;div class=&quot;msg__inner&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-msg&quot;&gt;
+	&lt;div class=&quot;dc-msg__inner&quot;&gt;
 
-		&lt;div class=&quot;msg__icon&quot;&gt;
-			&lt;svg width=&quot;44&quot; height=&quot;44&quot; viewBox=&quot;0 0 44 44&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+		&lt;div class=&quot;dc-msg__icon&quot;&gt;
+			&lt;svg class=&quot;dc-svg&quot; width=&quot;44&quot; height=&quot;44&quot; viewBox=&quot;0 0 44 44&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
 				&lt;title&gt;
 					Info
 				&lt;/title&gt;
@@ -564,18 +368,18 @@
 			&lt;/svg&gt;
 		&lt;/div&gt;
 
-		&lt;div class=&quot;msg__bd&quot;&gt;
+		&lt;div class=&quot;dc-msg__bd&quot;&gt;
 
-			&lt;h1 class=&quot;msg__title&quot;&gt;Info message&lt;/h1&gt;
+			&lt;h1 class=&quot;dc-msg__title&quot;&gt;Info message&lt;/h1&gt;
 
-			&lt;p class=&quot;msg__text&quot;&gt;
-				Give some more information about what happened. &lt;a href title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
+			&lt;p class=&quot;dc-msg__text&quot;&gt;
+				Give some more information about what happened. &lt;a href class=&quot;dc-link&quot; title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
 			&lt;/p&gt;
 
 		&lt;/div&gt;
 
-		&lt;div class=&quot;msg__close&quot;&gt;
-			&lt;svg class=&quot;i--interactive&quot; width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+		&lt;div class=&quot;dc-msg__close&quot;&gt;
+			&lt;svg class=&quot;dc-svg dc-icon--interactive&quot; width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
 				&lt;title&gt;
 					Close
 				&lt;/title&gt;
@@ -589,11 +393,11 @@
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;msg msg--success&quot;&gt;
-	&lt;div class=&quot;msg__inner&quot;&gt;
+&lt;div class=&quot;dc-msg dc-msg--success&quot;&gt;
+	&lt;div class=&quot;dc-msg__inner&quot;&gt;
 
-		&lt;div class=&quot;msg__icon&quot;&gt;
-			&lt;svg width=&quot;44&quot; height=&quot;44&quot; viewBox=&quot;0 0 44 44&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+		&lt;div class=&quot;dc-msg__icon&quot;&gt;
+			&lt;svg class=&quot;dc-svg&quot; width=&quot;44&quot; height=&quot;44&quot; viewBox=&quot;0 0 44 44&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
 				&lt;title&gt;
 					Success
 				&lt;/title&gt;
@@ -604,18 +408,18 @@
 			&lt;/svg&gt;
 		&lt;/div&gt;
 
-		&lt;div class=&quot;msg__bd&quot;&gt;
+		&lt;div class=&quot;dc-msg__bd&quot;&gt;
 
-			&lt;h1 class=&quot;msg__title&quot;&gt;Success message&lt;/h1&gt;
+			&lt;h1 class=&quot;dc-msg__title&quot;&gt;Success message&lt;/h1&gt;
 
-			&lt;p class=&quot;msg__text&quot;&gt;
-				Give some more information about what happened. &lt;a href title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
+			&lt;p class=&quot;dc-msg__text&quot;&gt;
+				Give some more information about what happened. &lt;a href class=&quot;dc-link&quot; title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
 			&lt;/p&gt;
 
 		&lt;/div&gt;
 
-		&lt;div class=&quot;msg__close&quot;&gt;
-			&lt;svg class=&quot;i--interactive&quot; width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+		&lt;div class=&quot;dc-msg__close&quot;&gt;
+			&lt;svg class=&quot;dc-svg dc-icon--interactive&quot; width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
 				&lt;title&gt;
 					Close
 				&lt;/title&gt;
@@ -629,11 +433,11 @@
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;msg msg--warning&quot;&gt;
-	&lt;div class=&quot;msg__inner&quot;&gt;
+&lt;div class=&quot;dc-msg dc-msg--warning&quot;&gt;
+	&lt;div class=&quot;dc-msg__inner&quot;&gt;
 
-		&lt;div class=&quot;msg__icon&quot;&gt;
-			&lt;svg width=&quot;44&quot; height=&quot;44&quot; viewBox=&quot;0 0 44 44&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+		&lt;div class=&quot;dc-msg__icon&quot;&gt;
+			&lt;svg class=&quot;dc-svg&quot; width=&quot;44&quot; height=&quot;44&quot; viewBox=&quot;0 0 44 44&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
 				&lt;title&gt;
 					Warning
 				&lt;/title&gt;
@@ -645,18 +449,18 @@
 			&lt;/svg&gt;
 		&lt;/div&gt;
 
-		&lt;div class=&quot;msg__bd&quot;&gt;
+		&lt;div class=&quot;dc-msg__bd&quot;&gt;
 
-			&lt;h1 class=&quot;msg__title&quot;&gt;Warning message&lt;/h1&gt;
+			&lt;h1 class=&quot;dc-msg__title&quot;&gt;Warning message&lt;/h1&gt;
 
-			&lt;p class=&quot;msg__text&quot;&gt;
-				Give some more information about what happened. &lt;a href title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
+			&lt;p class=&quot;dc-msg__text&quot;&gt;
+				Give some more information about what happened. &lt;a href class=&quot;dc-link&quot; title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
 			&lt;/p&gt;
 
 		&lt;/div&gt;
 
-		&lt;div class=&quot;msg__close&quot;&gt;
-			&lt;svg class=&quot;i--interactive&quot; width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+		&lt;div class=&quot;dc-msg__close&quot;&gt;
+			&lt;svg class=&quot;dc-svg dc-icon--interactive&quot; width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
 				&lt;title&gt;
 					Close
 				&lt;/title&gt;
@@ -671,11 +475,11 @@
 &lt;/div&gt;
 
 
-&lt;div class=&quot;msg msg--error&quot;&gt;
-	&lt;div class=&quot;msg__inner&quot;&gt;
+&lt;div class=&quot;dc-msg dc-msg--error&quot;&gt;
+	&lt;div class=&quot;dc-msg__inner&quot;&gt;
 
-		&lt;div class=&quot;msg__icon&quot;&gt;
-			&lt;svg width=&quot;44&quot; height=&quot;44&quot; viewBox=&quot;0 0 44 44&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+		&lt;div class=&quot;dc-msg__icon&quot;&gt;
+			&lt;svg class=&quot;dc-svg&quot; width=&quot;44&quot; height=&quot;44&quot; viewBox=&quot;0 0 44 44&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
 				&lt;title&gt;
 					Error
 				&lt;/title&gt;
@@ -687,18 +491,18 @@
 			&lt;/svg&gt;
 		&lt;/div&gt;
 
-		&lt;div class=&quot;msg__bd&quot;&gt;
+		&lt;div class=&quot;dc-msg__bd&quot;&gt;
 
-			&lt;h1 class=&quot;msg__title&quot;&gt;Error message&lt;/h1&gt;
+			&lt;h1 class=&quot;dc-msg__title&quot;&gt;Error message&lt;/h1&gt;
 
-			&lt;p class=&quot;msg__text&quot;&gt;
-				Give some more information about what happened. &lt;a href title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
+			&lt;p class=&quot;dc-msg__text&quot;&gt;
+				Give some more information about what happened. &lt;a href class=&quot;dc-link&quot; title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
 			&lt;/p&gt;
 
 		&lt;/div&gt;
 
-		&lt;div class=&quot;msg__close&quot;&gt;
-			&lt;svg class=&quot;i--interactive&quot; width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+		&lt;div class=&quot;dc-msg__close&quot;&gt;
+			&lt;svg class=&quot;dc-svg dc-icon--interactive&quot; width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
 				&lt;title&gt;
 					Close
 				&lt;/title&gt;
@@ -717,124 +521,31 @@
 </div>
 
 
-<div class="f-item-group" id="pagination">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-		<h2 class="f-item-heading">Pagination</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>These are notes associated with this <code>pagination</code> component.</p>
-
-</div>
-<div class="f-item-preview">
-	<button class="button">pagination</button>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;button&quot;&gt;pagination&lt;/button&gt;</code></pre>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="popover">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-		<h2 class="f-item-heading">Popover</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>These are notes associated with this <code>popover</code> component.</p>
-
-</div>
-<div class="f-item-preview">
-	<button class="button">popover</button>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;button&quot;&gt;popover&lt;/button&gt;</code></pre>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="progress-bar">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-		<h2 class="f-item-heading">Progress Bar</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>These are notes associated with this <code>progress bar</code> component.</p>
-
-</div>
-<div class="f-item-preview">
-	<button class="button">progress bar</button>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;button&quot;&gt;progress bar&lt;/button&gt;</code></pre>
-</div>
-
-
-</div>
-
-
 <div class="f-item-group" id="search-form">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<div class="f-item-controls">
 			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
+				<svg class="dc-svg">
 					<use xlink:href="#f-icon-notes" />
 				</svg>
 			</span>
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
+				<svg class="dc-svg">
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-		<h2 class="f-item-heading">Search Form</h2>
+		<h2 class="dc-h2 f-item-heading">Search Form</h2>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>These are notes associated with this <code>search-form</code> component.</p>
 
 </div>
 <div class="f-item-preview">
-	<div class="search-form">
-	<input class="search-form__input" type="search" placeholder="Search...">
-	<button class="search-form__btn">
-		<svg class="i--interactive" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+	<div class="dc-search-form">
+	<input class="dc-input dc-search-form__input" type="search" placeholder="Search...">
+	<button class="dc-btn dc-search-form__btn">
+		<svg class="dc-svg dc-icon--interactive" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
 			<title>
 				Search
 			</title>
@@ -847,36 +558,36 @@
 			</g>
 		</svg>
 	</button>
-	<ul class="suggest">
-		<li class="suggest__item">
-			<a class="suggest__link" href data-brand="Esprit">Esprit</a>
+	<ul class="dc-list dc-suggest">
+		<li class="dc-suggest__item">
+			<a class="dc-link dc-suggest__link" href data-brand="Esprit">Esprit</a>
 		</li>
-		<li class="suggest__item">
-			<a class="suggest__link" href data-brand="Hugo Boss">Hugo Boss</a>
+		<li class="dc-suggest__item">
+			<a class="dc-link dc-suggest__link" href data-brand="Hugo Boss">Hugo Boss</a>
 		</li>
-		<li class="suggest__item">
-			<a class="suggest__link" href data-brand="Michael Kors">Michael Kors</a>
+		<li class="dc-suggest__item">
+			<a class="dc-link dc-suggest__link" href data-brand="Michael Kors">Michael Kors</a>
 		</li>
-		<li class="suggest__item">
-			<a class="suggest__link" href data-brand="adidas">adidas</a>
+		<li class="dc-suggest__item">
+			<a class="dc-link dc-suggest__link" href data-brand="adidas">adidas</a>
 		</li>
-		<li class="suggest__item">
-			<a class="suggest__link" href data-brand="Tommy Hilfiger">Tommy Hilfiger</a>
+		<li class="dc-suggest__item">
+			<a class="dc-link dc-suggest__link" href data-brand="Tommy Hilfiger">Tommy Hilfiger</a>
 		</li>
-		<li class="suggest__item">
-			<a class="suggest__link" href data-brand="Diesel">Diesel</a>
+		<li class="dc-suggest__item">
+			<a class="dc-link dc-suggest__link" href data-brand="Diesel">Diesel</a>
 		</li>
-		<li class="suggest__item">
-			<a class="suggest__link" href data-brand="Armani Jeans">Armani Jeans</a>
+		<li class="dc-suggest__item">
+			<a class="dc-link dc-suggest__link" href data-brand="Armani Jeans">Armani Jeans</a>
 		</li>
 	</ul>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;search-form&quot;&gt;
-	&lt;input class=&quot;search-form__input&quot; type=&quot;search&quot; placeholder=&quot;Search...&quot;&gt;
-	&lt;button class=&quot;search-form__btn&quot;&gt;
-		&lt;svg class=&quot;i--interactive&quot; width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 36 36&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-search-form&quot;&gt;
+	&lt;input class=&quot;dc-input dc-search-form__input&quot; type=&quot;search&quot; placeholder=&quot;Search...&quot;&gt;
+	&lt;button class=&quot;dc-btn dc-search-form__btn&quot;&gt;
+		&lt;svg class=&quot;dc-svg dc-icon--interactive&quot; width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 36 36&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
 			&lt;title&gt;
 				Search
 			&lt;/title&gt;
@@ -889,92 +600,30 @@
 			&lt;/g&gt;
 		&lt;/svg&gt;
 	&lt;/button&gt;
-	&lt;ul class=&quot;suggest&quot;&gt;
-		&lt;li class=&quot;suggest__item&quot;&gt;
-			&lt;a class=&quot;suggest__link&quot; href data-brand=&quot;Esprit&quot;&gt;Esprit&lt;/a&gt;
+	&lt;ul class=&quot;dc-list dc-suggest&quot;&gt;
+		&lt;li class=&quot;dc-suggest__item&quot;&gt;
+			&lt;a class=&quot;dc-link dc-suggest__link&quot; href data-brand=&quot;Esprit&quot;&gt;Esprit&lt;/a&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;suggest__item&quot;&gt;
-			&lt;a class=&quot;suggest__link&quot; href data-brand=&quot;Hugo Boss&quot;&gt;Hugo Boss&lt;/a&gt;
+		&lt;li class=&quot;dc-suggest__item&quot;&gt;
+			&lt;a class=&quot;dc-link dc-suggest__link&quot; href data-brand=&quot;Hugo Boss&quot;&gt;Hugo Boss&lt;/a&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;suggest__item&quot;&gt;
-			&lt;a class=&quot;suggest__link&quot; href data-brand=&quot;Michael Kors&quot;&gt;Michael Kors&lt;/a&gt;
+		&lt;li class=&quot;dc-suggest__item&quot;&gt;
+			&lt;a class=&quot;dc-link dc-suggest__link&quot; href data-brand=&quot;Michael Kors&quot;&gt;Michael Kors&lt;/a&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;suggest__item&quot;&gt;
-			&lt;a class=&quot;suggest__link&quot; href data-brand=&quot;adidas&quot;&gt;adidas&lt;/a&gt;
+		&lt;li class=&quot;dc-suggest__item&quot;&gt;
+			&lt;a class=&quot;dc-link dc-suggest__link&quot; href data-brand=&quot;adidas&quot;&gt;adidas&lt;/a&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;suggest__item&quot;&gt;
-			&lt;a class=&quot;suggest__link&quot; href data-brand=&quot;Tommy Hilfiger&quot;&gt;Tommy Hilfiger&lt;/a&gt;
+		&lt;li class=&quot;dc-suggest__item&quot;&gt;
+			&lt;a class=&quot;dc-link dc-suggest__link&quot; href data-brand=&quot;Tommy Hilfiger&quot;&gt;Tommy Hilfiger&lt;/a&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;suggest__item&quot;&gt;
-			&lt;a class=&quot;suggest__link&quot; href data-brand=&quot;Diesel&quot;&gt;Diesel&lt;/a&gt;
+		&lt;li class=&quot;dc-suggest__item&quot;&gt;
+			&lt;a class=&quot;dc-link dc-suggest__link&quot; href data-brand=&quot;Diesel&quot;&gt;Diesel&lt;/a&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;suggest__item&quot;&gt;
-			&lt;a class=&quot;suggest__link&quot; href data-brand=&quot;Armani Jeans&quot;&gt;Armani Jeans&lt;/a&gt;
+		&lt;li class=&quot;dc-suggest__item&quot;&gt;
+			&lt;a class=&quot;dc-link dc-suggest__link&quot; href data-brand=&quot;Armani Jeans&quot;&gt;Armani Jeans&lt;/a&gt;
 		&lt;/li&gt;
 	&lt;/ul&gt;
 &lt;/div&gt;</code></pre>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="tabs">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-		<h2 class="f-item-heading">Tabs</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>These are notes associated with this <code>tabs</code> component.</p>
-
-</div>
-<div class="f-item-preview">
-	<button class="button">Tabs</button>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;button&quot;&gt;Tabs&lt;/button&gt;</code></pre>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="tag">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-		<h2 class="f-item-heading">Tag</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>These are notes associated with this <code>tag</code> component.</p>
-
-</div>
-<div class="f-item-preview">
-	<button class="button">tag</button>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;button&quot;&gt;tag&lt;/button&gt;</code></pre>
 </div>
 
 
@@ -987,18 +636,18 @@
 		<div class="f-item-controls">
 			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
+				<svg class="dc-svg">
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-		<h2 class="f-item-heading">Tooltip</h2>
+		<h2 class="dc-h2 f-item-heading">Tooltip</h2>
 	</div>
 <div class="f-item-preview">
-	<button class="button" data-tooltip="Hi. I'm a tooltip.">This button has a tooltip</button>
+	<button class="dc-btn dc-has-tooltip" data-tooltip="Hi. I'm a tooltip.">This button has a tooltip</button>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;button class=&quot;button&quot; data-tooltip=&quot;Hi. I&#x27;m a tooltip.&quot;&gt;This button has a tooltip&lt;/button&gt;</code></pre>
+	<pre class="dc-pre"><code class="language-markup">&lt;button class=&quot;dc-btn dc-has-tooltip&quot; data-tooltip=&quot;Hi. I&#x27;m a tooltip.&quot;&gt;This button has a tooltip&lt;/button&gt;</code></pre>
 </div>
 
 
@@ -1007,7 +656,7 @@
 
 
 		</div>
-		<div class="grid"></div>
+		<div class="dc-grid"></div>
 
 		<script src="assets/fabricator/scripts/f.js"></script>
 
