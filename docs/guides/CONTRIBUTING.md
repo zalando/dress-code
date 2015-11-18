@@ -1,4 +1,4 @@
-# Contributing to Brand Solutions Dress Code
+# Contributing to Dress Code
 
 ## Git workflow
 
@@ -8,8 +8,13 @@ The git workflow that we use to contribute is mostly based and well explained in
 
 * **master** : must point to the latest stable version
 * **develop**: the main development branch, never work on it directly, always merge ***topic*** branches and ***hotfix*** branches into this branch.
-* **topic/(*)**: for every new feature or task, open a ***topic*** branch from ***develop*** and work on it, when you are done open a pull request and ask for review.
-* **hotfix/(*)**: used to fix stable versions
+* **topic/[topic-name]**: for every new feature or task, open a ***topic*** branch from ***develop*** and work on it, when you are done open a pull request and ask for review.
+* **hotfix/[hotifx-name]**: used to fix stable versions
+* **release/[release-name]**: used to work on release candidates
+
+> If a github issue is related to a branch we suggest to append the number at the end of the branch name.<br>
+  example: topic/dropdown-refactor-98
+
 
 ## <a name="commit"></a> Git Commit Guidelines
 
@@ -77,9 +82,9 @@ reference GitHub issues that this commit **Closes**.
 #### Sample Commit message:
 
 ```text
-refactor(button): prefix btn class with bs-
+refactor(button): prefix btn class with dc-
 
-    BREAKING CHANGE: btn class now is prefixed with the bs namespace.
+    BREAKING CHANGE: btn class now is prefixed with dc namespace.
 
     Change your code from this:
 
@@ -90,6 +95,6 @@ refactor(button): prefix btn class with bs-
     To this:
 
     ```html
-    <button class="bs-btn">submit</button>
+    <button class="dc-btn">submit</button>
     ```
 ```
