@@ -60,6 +60,24 @@
 
 		.#{$dc-prefix}-msg__icon
 		{
+
+			i
+			{
+				font-size: 2.3rem;
+				line-height: 2;
+				margin: .5rem;
+
+				&.#{$dc-prefix}-font-icon-alert-info {
+					color: $dc-blue40;
+				}
+
+				&.#{$dc-prefix}-font-icon-alert-success {
+					color: $dc-green30;
+				}
+
+			}
+
+
 			@include breakpoint($dc-medium-width)
 			{
 				margin-right: $dc-space100;
