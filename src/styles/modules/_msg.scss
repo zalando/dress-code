@@ -65,7 +65,7 @@
 				margin-right: $dc-space100;
 			}
 		}
-		.#{$dc-prefix}-msg__icon i {
+		.#{$dc-prefix}-msg__icon [class^="dc-font-icon-"] {
 			font-size: 2rem;
 		}
 
