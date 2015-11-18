@@ -20,7 +20,7 @@ The git workflow that we use to contribute is mostly based and well explained in
 
 We have very precise rules over how our git commit messages can be formatted. This leads to **more
 readable messages** that are easy to follow when looking through the **project history**. It is
-important to note that we use the git commit messages to **generate** the Brand Solutions Dress Code
+important to note that we use the git commit messages to **generate** the Dress Code
 [Changelog](../../CHANGELOG.md) document.
 
 > A detailed explanation of guidelines and conventions can be found in this

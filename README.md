@@ -1,16 +1,16 @@
-# Brand Solutions Dress Code
+# The Dress Code
 
-The Brand Solutions Dress Code UI toolkit is a highly-modular design system for rapid web page development. It contains different materials that can be assembled into more complex page layouts.
+The Dress Code UI toolkit is a highly-modular design system for rapid web page development. It contains different materials that can be assembled into more complex page layouts.
 
 ## Quick links
 
-* [Demo](http://zalando.github.io/brand-solutions-dress-code/)
+* [Demo](http://zalando.github.io/dress-code/)
 * [Development & Contributing](#development)
 * [Build and Deploy](#build-and-deploy)
 
 ## Getting Started
 
-Brand Solutions Dress Code requires:
+#### Requirements
 
 * [node.js](http://nodejs.org). Make sure your have `v0.10` or higher installed before proceeding.
 * [modernizer](https://modernizr.com/) included in the ```<head>``` of your web page
@@ -20,13 +20,13 @@ Brand Solutions Dress Code requires:
 with bower:
 
 ```
-$ bower install git@github.com:zalando/brand-solutions-dress-code-bower.git
+$ bower install git@github.com:zalando/dress-code-bower.git
 ```
 
 with npm:
 
 ```
-$ npm install git+ssh://git@github.com:zalando/brand-solutions-dress-code.git
+$ npm install git+ssh://git@github.com:zalando/dress-code.git
 ```
 
 ## <a name="development"> Development & Contributing
@@ -38,13 +38,13 @@ Developers interested in contributing should read the following guidelines:
 - [ChangeLog](CHANGELOG.md)
 
 
-### Install and start working
+### Install
 
 **Install**
 
 ```
-$ git clone https://github.com/zalando/brand-solutions-dress-code.git && cd brand-solutions-dress-code
-$ npm install && bower install
+$ git clone https://github.com/zalando/dress-code.git && cd dress-code
+$ npm install
 ```
 
 **Start the local development environment:**
@@ -80,7 +80,7 @@ $ npm run build:demo
 
 Fabricator builds both a static documentation site and optimized CSS and JS toolkit files.
 
-The demo build artifacts output to the `.demo` directory. This can be deployed to any static hosting environment - no language runtime or database is required.
+The demo build artifacts output to the `.tmp/.demo` directory. This can be deployed to any static hosting environment - no language runtime or database is required.
 
 
 **Deploy demo:**
@@ -89,7 +89,7 @@ The demo build artifacts output to the `.demo` directory. This can be deployed t
 $ npm run deploy:demo
 ```
 
-Publish the demo as github-pages website @ http://zalando.github.io/brand-solutions-dress-code
+Publish the demo as github-pages website @ https://zalando.github.io/dress-code
 
 
 **Deploy bower package:**
@@ -98,8 +98,8 @@ Publish the demo as github-pages website @ http://zalando.github.io/brand-soluti
 $ npm run deploy:bower
 ```
 
-Publish the distribution version for bower @ http://zalando.github.io/brand-solutions-dress-code-bower  
+Publish the distribution version for bower @ https://github.com/zalando/dress-code-bower  
 
 ## License
 
-Brand solutions Dress Code is released under the MIT license. See LICENSE for details.
+The Dress Code is released under the MIT license. See LICENSE for details.

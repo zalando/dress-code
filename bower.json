@@ -1,8 +1,8 @@
 {
-  "name": "bs-dress-code",
+  "name": "dress-code",
   "version": "0.0.0",
-  "homepage": "https://zalando.github.io/brand-solutions-dress-code",
-  "description": "The brand-solutions-dress-code is the official style guide for all Brand Solutions products.",
+  "homepage": "https://zalando.github.io/dress-code",
+  "description": "The Dress Code is the official style guide/UI toolkit for all Brand Solutions products.",
   "main": "sass/toolkit.scss",
   "moduleType": [],
   "authors": [
