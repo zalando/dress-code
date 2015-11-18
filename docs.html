@@ -191,16 +191,21 @@
 
 <div class="f-item-group">
 	<h2 class="dc-h2" id="CONTRIBUTING"><a class="dc-link" href="#CONTRIBUTING">Contributing</a></h2>
-	<h1>Contributing to Brand Solutions Dress Code</h1>
+	<h1>Contributing to Dress Code</h1>
 <h2>Git workflow</h2>
 <p>The git workflow that we use to contribute is mostly based and well explained in this article: <a href="http://nvie.com/posts/a-successful-git-branching-model/">a-successful-git-branching-model</a></p>
 <h4>Main branches:</h4>
 <ul>
 <li><strong>master</strong> : must point to the latest stable version</li>
 <li><strong>develop</strong>: the main development branch, never work on it directly, always merge <strong><em>topic</em></strong> branches and <strong><em>hotfix</em></strong> branches into this branch.</li>
-<li><em><em>topic/(</em>)</em>*: for every new feature or task, open a <strong><em>topic</em></strong> branch from <strong><em>develop</em></strong> and work on it, when you are done open a pull request and ask for review.</li>
-<li><em><em>hotfix/(</em>)</em>*: used to fix stable versions</li>
+<li><strong>topic/[topic-name]</strong>: for every new feature or task, open a <strong><em>topic</em></strong> branch from <strong><em>develop</em></strong> and work on it, when you are done open a pull request and ask for review.</li>
+<li><strong>hotfix/[hotifx-name]</strong>: used to fix stable versions</li>
+<li><strong>release/[release-name]</strong>: used to work on release candidates</li>
 </ul>
+<blockquote>
+<p>If a github issue is related to a branch we suggest to append the number at the end of the branch name.<br>
+example: topic/dropdown-refactor-98</p>
+</blockquote>
 <h2><a name="commit"></a> Git Commit Guidelines</h2>
 <p>We have very precise rules over how our git commit messages can be formatted. This leads to <strong>more
 readable messages</strong> that are easy to follow when looking through the <strong>project history</strong>. It is
@@ -258,9 +263,9 @@ users to modify their code with this commit.</p>
 </blockquote>
 <br/>
 <h4>Sample Commit message:</h4>
-<pre><code class="language-text">refactor(button): prefix btn class with bs-
+<pre><code class="language-text">refactor(button): prefix btn class with dc-
 
-    BREAKING CHANGE: btn class now is prefixed with the bs namespace.
+    BREAKING CHANGE: btn class now is prefixed with dc namespace.
 
     Change your code from this:
 
@@ -271,7 +276,7 @@ users to modify their code with this commit.</p>
     To this:
 
     ```html
-    &lt;button class=&quot;bs-btn&quot;&gt;submit&lt;/button&gt;
+    &lt;button class=&quot;dc-btn&quot;&gt;submit&lt;/button&gt;
     ```
 </code></pre>
 
