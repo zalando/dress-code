@@ -234,7 +234,7 @@ gulp.task('demo:deploy', ['demo'], function () {
     return gulp.src(path.join(config.tmp.demo, '/**/*'))
         .pipe(ghPages({
             cacheDir: config.tmp.deployDemo,
-            remoteUrl: 'https://github.com/zalando/brand-solutions-dress-code.git'
+            remoteUrl: 'https://github.com/zalando/dress-code.git'
         }));
 });
 
@@ -325,7 +325,7 @@ gulp.task('dist:bower:deploy', ['dist:bower'], function () {
         .pipe(ghPages({
             cacheDir: config.tmp.deployBower,
             branch: 'master',
-            remoteUrl: 'git@github.com:zalando/brand-solutions-dress-code-bower'
+            remoteUrl: 'git@github.com:zalando/dress-code-bower'
         }));
 });
 
