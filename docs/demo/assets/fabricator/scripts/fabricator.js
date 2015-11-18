@@ -450,7 +450,7 @@ fabricator.setGridState = function ()
 		.singleItemToggle()
 		.buildColorChips()
 		.setActiveItem()
-		.bindCodeAutoSelect()
+		// .bindCodeAutoSelect() [RB] commented, because is annoying for many users
 		.setBreakpointsState()
 		.setGridState();
 
