@@ -102,6 +102,56 @@
 	width: 100%;
 }
 
+.#{$dc-prefix}-input--text-right {
+	text-align: right;
+
+	&::-webkit-input-placeholder {
+		text-align: right;
+	}
+
+	&:-moz-placeholder {
+		text-align: right;
+	}
+
+	&::-moz-placeholder {
+		text-align: right;
+	}
+
+	&:-ms-input-placeholder {
+		text-align: right;
+	}
+}
+
+//  = INPUT GROUPS
+//  ---------------------------------------------------------------------------
+
+.#{$dc-prefix}-input-group {
+
+	.#{$dc-prefix}-input {
+		display: inline-block;
+	}
+}
+
+.#{$dc-prefix}-input-group--price {
+
+	.#{$dc-prefix}-input {
+		padding-right: $dc-space150 + $dc-space50;
+
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button {
+			margin: 0;
+			-webkit-appearance: none;
+		}
+	}
+}
+
+.#{$dc-prefix}-input-group__addon {
+	display: inline-block;
+	padding: 0 $dc-space100;
+	line-height: $dc-space200;
+	transform: translateX(calc(-100% - 4px));
+}
+
 //  = TEXT AREA
 //  ---------------------------------------------------------------------------
 
