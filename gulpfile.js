@@ -341,7 +341,7 @@ gulp.task('dist:bower:deploy', ['dist:bower'], function () {
     return gulp.src(path.join(config.tmp.distBower, '/**/*'))
         .pipe(ghPages({
             cacheDir: config.tmp.deployBower,
-            branch: 'master',
+            branch: gutil.env.dev ? 'develop' : 'master',
             remoteUrl: 'git@github.com:zalando/dress-code-bower'
         }));
 });
