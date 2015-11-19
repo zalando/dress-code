@@ -29,49 +29,49 @@
 	@if $filename == add {
 		$char: "\E001";
 	}
-	@if $filename == alert-error {
+	@if $filename == arrow-left {
 		$char: "\E002";
 	}
-	@if $filename == alert-info {
+	@if $filename == arrow-right {
 		$char: "\E003";
 	}
-	@if $filename == alert-neutral {
+	@if $filename == check {
 		$char: "\E004";
 	}
-	@if $filename == alert-success {
+	@if $filename == close {
 		$char: "\E005";
 	}
-	@if $filename == alert-warning {
+	@if $filename == cog {
 		$char: "\E006";
 	}
-	@if $filename == arrow-left {
+	@if $filename == eye {
 		$char: "\E007";
 	}
-	@if $filename == arrow-right {
+	@if $filename == history {
 		$char: "\E008";
 	}
-	@if $filename == check {
+	@if $filename == info {
 		$char: "\E009";
 	}
-	@if $filename == close {
+	@if $filename == lock {
 		$char: "\E00A";
 	}
-	@if $filename == cog {
+	@if $filename == more {
 		$char: "\E00B";
 	}
-	@if $filename == eye {
+	@if $filename == msg-error {
 		$char: "\E00C";
 	}
-	@if $filename == history {
+	@if $filename == msg-info {
 		$char: "\E00D";
 	}
-	@if $filename == info {
+	@if $filename == msg-neutral {
 		$char: "\E00E";
 	}
-	@if $filename == lock {
+	@if $filename == msg-success {
 		$char: "\E00F";
 	}
-	@if $filename == more {
+	@if $filename == msg-warning {
 		$char: "\E010";
 	}
 	@if $filename == pencil {
@@ -110,21 +110,6 @@
 .dc-font-icon-add {
 	@include dc-font-icon(add);
 }
-.dc-font-icon-alert-error {
-	@include dc-font-icon(alert-error);
-}
-.dc-font-icon-alert-info {
-	@include dc-font-icon(alert-info);
-}
-.dc-font-icon-alert-neutral {
-	@include dc-font-icon(alert-neutral);
-}
-.dc-font-icon-alert-success {
-	@include dc-font-icon(alert-success);
-}
-.dc-font-icon-alert-warning {
-	@include dc-font-icon(alert-warning);
-}
 .dc-font-icon-arrow-left {
 	@include dc-font-icon(arrow-left);
 }
@@ -154,6 +139,21 @@
 }
 .dc-font-icon-more {
 	@include dc-font-icon(more);
+}
+.dc-font-icon-msg-error {
+	@include dc-font-icon(msg-error);
+}
+.dc-font-icon-msg-info {
+	@include dc-font-icon(msg-info);
+}
+.dc-font-icon-msg-neutral {
+	@include dc-font-icon(msg-neutral);
+}
+.dc-font-icon-msg-success {
+	@include dc-font-icon(msg-success);
+}
+.dc-font-icon-msg-warning {
+	@include dc-font-icon(msg-warning);
 }
 .dc-font-icon-pencil {
 	@include dc-font-icon(pencil);

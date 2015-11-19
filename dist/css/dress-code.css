@@ -1167,7 +1167,7 @@ table {
   src: url("../fonts/DressCodeIcons.eot");
   src: url("../fonts/DressCodeIcons.eot?#iefix") format("eot"), url("../fonts/DressCodeIcons.woff") format("woff"), url("../fonts/DressCodeIcons.ttf") format("truetype"), url("../fonts/DressCodeIcons.svg#DressCodeIcons") format("svg"); }
 
-.dc-font-icon-add:before, .dc-font-icon-alert-error:before, .dc-font-icon-alert-info:before, .dc-font-icon-alert-neutral:before, .dc-font-icon-alert-success:before, .dc-font-icon-alert-warning:before, .dc-font-icon-arrow-left:before, .dc-font-icon-arrow-right:before, .dc-font-icon-check:before, .dc-font-icon-close:before, .dc-font-icon-cog:before, .dc-font-icon-eye:before, .dc-font-icon-history:before, .dc-font-icon-info:before, .dc-font-icon-lock:before, .dc-font-icon-more:before, .dc-font-icon-pencil:before, .dc-font-icon-play:before, .dc-font-icon-redo:before, .dc-font-icon-search:before, .dc-font-icon-trash:before, .dc-font-icon-undo:before {
+.dc-font-icon-add:before, .dc-font-icon-arrow-left:before, .dc-font-icon-arrow-right:before, .dc-font-icon-check:before, .dc-font-icon-close:before, .dc-font-icon-cog:before, .dc-font-icon-eye:before, .dc-font-icon-history:before, .dc-font-icon-info:before, .dc-font-icon-lock:before, .dc-font-icon-more:before, .dc-font-icon-msg-error:before, .dc-font-icon-msg-info:before, .dc-font-icon-msg-neutral:before, .dc-font-icon-msg-success:before, .dc-font-icon-msg-warning:before, .dc-font-icon-pencil:before, .dc-font-icon-play:before, .dc-font-icon-redo:before, .dc-font-icon-search:before, .dc-font-icon-trash:before, .dc-font-icon-undo:before {
   font-family: "DressCodeIcons";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1180,49 +1180,49 @@ table {
 .dc-font-icon-add:before {
   content: ""; }
 
-.dc-font-icon-alert-error:before {
+.dc-font-icon-arrow-left:before {
   content: ""; }
 
-.dc-font-icon-alert-info:before {
+.dc-font-icon-arrow-right:before {
   content: ""; }
 
-.dc-font-icon-alert-neutral:before {
+.dc-font-icon-check:before {
   content: ""; }
 
-.dc-font-icon-alert-success:before {
+.dc-font-icon-close:before {
   content: ""; }
 
-.dc-font-icon-alert-warning:before {
+.dc-font-icon-cog:before {
   content: ""; }
 
-.dc-font-icon-arrow-left:before {
+.dc-font-icon-eye:before {
   content: ""; }
 
-.dc-font-icon-arrow-right:before {
+.dc-font-icon-history:before {
   content: ""; }
 
-.dc-font-icon-check:before {
+.dc-font-icon-info:before {
   content: ""; }
 
-.dc-font-icon-close:before {
+.dc-font-icon-lock:before {
   content: ""; }
 
-.dc-font-icon-cog:before {
+.dc-font-icon-more:before {
   content: ""; }
 
-.dc-font-icon-eye:before {
+.dc-font-icon-msg-error:before {
   content: ""; }
 
-.dc-font-icon-history:before {
+.dc-font-icon-msg-info:before {
   content: ""; }
 
-.dc-font-icon-info:before {
+.dc-font-icon-msg-neutral:before {
   content: ""; }
 
-.dc-font-icon-lock:before {
+.dc-font-icon-msg-success:before {
   content: ""; }
 
-.dc-font-icon-more:before {
+.dc-font-icon-msg-warning:before {
   content: ""; }
 
 .dc-font-icon-pencil:before {
@@ -1243,11 +1243,11 @@ table {
 .dc-font-icon-undo:before {
   content: ""; }
 
-i[class^="dc-font-icon-"] {
+[class^="dc-font-icon-"] {
   color: #26aafe; }
-  i[class^="dc-font-icon-"].dc-font-icon--interactive {
+  [class^="dc-font-icon-"].dc-font-icon--interactive {
     cursor: pointer; }
-    i[class^="dc-font-icon-"].dc-font-icon--interactive:hover {
+    [class^="dc-font-icon-"].dc-font-icon--interactive:hover {
       color: #186698; }
 
 .dc-btn {
@@ -1697,11 +1697,22 @@ i[class^="dc-font-icon-"] {
   -webkit-box-flex: 0;
   -webkit-flex: 0 1 auto;
       -ms-flex: 0 1 auto;
-          flex: 0 1 auto; }
+          flex: 0 1 auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
-@media (min-width: 30em) {
-  .dc-msg__icon {
-    margin-right: 1.2rem; } }
+.dc-msg__icon {
+  height: 4rem;
+  min-width: 4rem; }
+  .dc-msg__icon [class^="dc-font-icon"] {
+    color: currentcolor;
+    line-height: 4rem;
+    padding: 0 1rem; }
+  @media (min-width: 30em) {
+    .dc-msg__icon {
+      margin-right: 1.2rem; } }
 
 .dc-msg__bd {
   -webkit-box-flex: 1;
@@ -1720,20 +1731,32 @@ i[class^="dc-font-icon-"] {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 2.4rem;
-  color: #186698; }
+  color: currentcolor; }
 
 .dc-msg__text {
   margin: 0; }
 
-.dc-msg__close .dc-svg {
-  cursor: pointer; }
-  .dc-msg__close .dc-svg [fill^='#'] {
-    fill: #1e87cb; }
-  .dc-msg__close .dc-svg:hover [fill^='#'] {
-    fill: #186698; }
-  @media (min-width: 30em) {
-    .dc-msg__close .dc-svg {
-      margin-left: 1.2rem; } }
+.dc-msg__close {
+  cursor: pointer;
+  min-width: 4rem; }
+  .dc-msg__close [class^="dc-font-icon-close"] {
+    color: currentcolor;
+    padding: 0 1.5rem;
+    line-height: 4rem; }
+  .dc-msg__close:active {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9); }
+
+.dc-msg--info {
+  background: rgba(177, 220, 254, 0.5);
+  border-color: #98d1fe;
+  color: #186698; }
+  .dc-msg--info .dc-font-icon-msg-info {
+    font-size: 2.75rem;
+    color: #26aafe; }
+  .dc-msg--info .dc-msg__close:hover [class^="dc-font-icon-close"] {
+    color: #124365; }
 
 .dc-msg--success {
   background: rgba(227, 255, 199, 0.95);
@@ -1741,43 +1764,31 @@ i[class^="dc-font-icon-"] {
   color: #4c9913; }
   .dc-msg--success .dc-msg__title {
     color: #4c9913; }
-  .dc-msg--success .dc-msg__close .dc-svg {
-    cursor: pointer; }
-    .dc-msg--success .dc-msg__close .dc-svg [fill^='#'] {
-      fill: #4c9913; }
-    .dc-msg--success .dc-msg__close .dc-svg:hover [fill^='#'] {
-      fill: #32650a; }
+  .dc-msg--success .dc-font-icon-msg-success {
+    font-size: 2.2rem;
+    color: #65cb1c; }
+  .dc-msg--success .dc-msg__close:hover [class^="dc-font-icon-close"] {
+    color: #32650a; }
 
 .dc-msg--error {
   background: rgba(251, 186, 170, 0.5);
   border-color: #ffa28d;
   color: #982c15; }
-  .dc-msg--error .dc-msg__title {
-    color: #982c15; }
-  .dc-msg--error .dc-msg__close .dc-svg {
-    cursor: pointer; }
-    .dc-msg--error .dc-msg__close .dc-svg [fill^='#'] {
-      fill: #982c15; }
-    .dc-msg--error .dc-msg__close .dc-svg:hover [fill^='#'] {
-      fill: #661d0e; }
+  .dc-msg--error .dc-font-icon-msg-error {
+    font-size: 1.8rem;
+    color: #ff4a25; }
+  .dc-msg--error .dc-msg__close:hover [class^="dc-font-icon-close"] {
+    color: #661d0e; }
 
 .dc-msg--warning {
   background: rgba(255, 244, 155, 0.5);
   border-color: #e8ce00;
   color: #99880e; }
-  .dc-msg--warning .dc-msg__title {
-    color: #99880e; }
-  .dc-msg--warning .dc-msg__close .dc-svg {
-    cursor: pointer; }
-    .dc-msg--warning .dc-msg__close .dc-svg [fill^='#'] {
-      fill: #99880e; }
-    .dc-msg--warning .dc-msg__close .dc-svg:hover [fill^='#'] {
-      fill: #665b05; }
-
-.dc-msg--info {
-  background: rgba(177, 220, 254, 0.5);
-  border-color: #98d1fe;
-  color: #186698; }
+  .dc-msg--warning .dc-font-icon-msg-warning {
+    font-size: 2.75rem;
+    color: #ccb616; }
+  .dc-msg--warning .dc-msg__close:hover [class^="dc-font-icon-close"] {
+    color: #665b05; }
 
 .dc-msg--is-animating {
   -webkit-animation: dc-notify 1.6s linear 1;
