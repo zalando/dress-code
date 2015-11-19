@@ -136,6 +136,12 @@
 
 	.#{$dc-prefix}-input {
 		padding-right: $dc-space150 + $dc-space50;
+
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button {
+			margin: 0;
+			-webkit-appearance: none;
+		}
 	}
 }
 
