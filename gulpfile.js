@@ -261,9 +261,7 @@ gulp.task('dist:clean', function (cb) {
 gulp.task('dist:styles', function () {
     return gulp.src(config.src.styles.toolkit)
         .pipe(sass().on('error', sass.logError))
-        .pipe(sourcemaps.init())
         .pipe(prefix('last 1 version'))
-        .pipe(sourcemaps.write())
         .pipe(rename(pkg.name + '.css'))
         .pipe(gulp.dest(path.join(config.dist, 'css')))
         // minified
