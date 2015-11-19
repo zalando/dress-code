@@ -26,5 +26,10 @@ $dc-header-accent-color: $dc-orange40;
     .dc-logo {
         max-height: $dc-touch-size - $dc-space150;
         padding-bottom: 2px;
+
+        ~ *
+        {
+            margin-left: $dc-space150;
+        }
     }
 }

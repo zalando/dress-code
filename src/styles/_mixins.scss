@@ -27,3 +27,65 @@
         z-index: 910;
     }
 }
+
+
+//  = GENERATE GRID HELPER CLASSES
+//  ---------------------------------------------------------------------------
+
+	@mixin dc-generate-grid-helper-classes
+	{
+		$layouts: $dc-tiny $dc-small $dc-large $dc-huge $dc-giant $dc-monstrous;
+		$breakpoints: $dc-tiny-width $dc-small-width $dc-medium-width $dc-large-width $dc-huge-width $dc-giant-width $dc-monstrous-width;
+
+		.#{$dc-prefix}-span--demo {
+			margin-bottom: $dc-space50;
+			background: rgba($dc-red60, .6);
+		}
+
+		.#{$dc-prefix}-the-grid
+		{
+			padding: $dc-space50;
+
+			@include breakpoint($dc-small-width)
+			{
+				padding: $dc-space100;
+			}
+
+			@include breakpoint($dc-giant-width)
+			{
+				padding: $dc-space150;
+			}
+
+			@include breakpoint($dc-monstrous-width)
+			{
+				padding: $dc-space200;
+			}
+		}
+
+		.#{$dc-prefix}-the-grid {
+			@for $j from 1 to length($breakpoints)
+			{
+				@include breakpoint(nth($breakpoints, $j))
+				{
+					@include container(nth($layouts, $j));
+
+					@for $i from 1 through 6
+					{
+						.#{$dc-prefix}-span#{$i}
+						{
+							@include span($i of nth($layouts, $j));
+						}
+
+						.#{$dc-prefix}-last {
+							@include last;
+
+							+ [class^='#{$dc-prefix}-span']
+							{
+								clear: both;
+							}
+						}
+					}
+				}
+			}
+		}
+	}

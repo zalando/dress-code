@@ -1,0 +1,50 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines boxes
+//
+//  ---------------------------------------------------------------------------
+
+//  = THE INVISIBLE BOX
+//  ---------------------------------------------------------------------------
+
+.#{$dc-prefix}-box {
+
+    @extend .dc-cf;
+
+    @include breakpoint($dc-large-width)
+    {
+        padding-right: $dc-space100;
+        padding-left: $dc-space100;
+    }
+
+    @include breakpoint($dc-huge-width)
+    {
+        padding-right: $dc-space150;
+        padding-left: $dc-space150;
+    }
+}
+
+//  = THE STANDARD BOX
+//  ---------------------------------------------------------------------------
+
+.#{$dc-prefix}-box--card {
+    @include bleed;
+    padding-top: $dc-space100;
+    padding-bottom: $dc-space100;
+    background: $dc-white;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+
+    @include breakpoint($dc-large-width)
+    {
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: $dc-space100;
+        padding-left: $dc-space100;
+        border-radius: 2px;
+    }
+
+    @include breakpoint($dc-huge-width)
+    {
+        padding: $dc-space150;
+    }
+}

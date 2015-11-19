@@ -194,57 +194,73 @@ $dc-border50: 1px;
 $dc-border100: 2px;
 $dc-border150: 4px;
 
-//  = BORDERS & RADII
+//  = BOX SHADOW
 //  ---------------------------------------------------------------------------
 $dc-box-shadow-color: rgba(0, 0, 0, .2);
 $dc-box-shadow100: 0 1px 1px $dc-box-shadow-color;
-
-//  = GRID SETTINGS
-//  ---------------------------------------------------------------------------
-
-// Base is 10px at this point
-
-// Relative column & gutter width
-$dc-r-column-width: 6;
-$dc-r-gutter-width: 4;
-$dc-r-grid-padding: 8;
-$dc-r-grid-padding-large: 4;
-$dc-r-grid-padding-huge: 5;
-
-// Columns for smallest screen
-$dc-total-columns: 2;
-
-$dc-container-style: fluid;
 
 //  = BREAKPOINTS
 //  ---------------------------------------------------------------------------
 
 // Base is 16px at this point
 
-// Feature phone: 						0px		 	 2 columns	-->	   0-UP
-$dc-tiny-width: 0;
-$dc-tiny-cols: 2;
+	// Feature phone: 						0px
+	$dc-tiny-width: 							0;
 
-// Smartphone: 								320px		 4 columns 	-->  320-UP
-$dc-small-width: 20em;
-$dc-small-cols: 4;
+	// Smartphone: 								320px
+	$dc-small-width: 							20em;
 
-// Smartphone landscape: 			480px 	 6 columns 	-->  480-UP
-$dc-medium-width: 30em;
-$dc-medium-cols: 6;
+	// Smartphone landscape: 			480px
+	$dc-medium-width: 						30em;
 
-// Tablet: 										600px, 	 8 columns 	-->  600-UP
-$dc-large-width: 37.5em;
-$dc-large-cols: 8;
+	// Tablet: 										600px
+	$dc-large-width: 							37.5em;
 
-// Tablet landscape: 1024px 12 columns --> 1024-UP
-$dc-huge-width: 64em;
-$dc-huge-cols: 12;
+	// Tablet landscape: 					1024px
+	$dc-huge-width: 							64em;
 
-// Desktop: 									1280px 	16 columns 	--> 1280-UP
-$dc-giant-width: 80em;
-$dc-giant-cols: 16;
+	// Desktop: 									1280px
+	$dc-giant-width: 							80em;
 
-// Desktop large: 						1600px 	20 columns 	--> 1600-UP
-$dc-monstrous-width: 100em;
-$dc-monstrous-cols: 20;
+	// Desktop large: 						1600px
+	$dc-monstrous-width: 					100em;
+
+
+
+//  = GRID LAYOUTS
+//  ---------------------------------------------------------------------------
+
+	$dc-tiny: (
+	  columns: 12,
+	  gutters: 1.5
+	);
+
+	$dc-small: (
+	  columns: 12,
+	  gutters: 11/12,
+	);
+
+	$dc-medium: (
+	  columns: 12,
+	  gutters: 1.5,
+	);
+
+	$dc-large: (
+	  columns: 12,
+	  gutters: 1,
+	);
+
+	$dc-huge: (
+	  columns: 12,
+	  gutters: 2/5,
+	);
+
+	$dc-giant: (
+	  columns: 12,
+	  gutters: 3/7,
+	);
+
+	$dc-monstrous: (
+	  columns: 12,
+	  gutters: 4/11,
+	);

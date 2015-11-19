@@ -1,0 +1,15 @@
+---
+fabricator: true
+---
+
+<h1 class="dc-h1" data-f-toggle="labels">Templates</h1>
+
+<ul class="dc-list">
+{{#each views.templates.items}}
+
+	<li>
+		<a class="dc-link" href="templates/{{@key}}.html" class="f-item-heading">{{name}}</a>
+	</li>
+
+{{/each}}
+</ul>
