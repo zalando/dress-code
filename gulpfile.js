@@ -23,6 +23,7 @@ var gulpFilter = require('gulp-filter');
 var gulpDebug = require('gulp-debug');
 var iconfont = require('gulp-iconfont');
 var iconfontCss = require('gulp-iconfont-css');
+var conventionalChangelog = require('gulp-conventional-changelog');
 var pkg = require('./package.json');
 
 // configuration
@@ -327,6 +328,18 @@ gulp.task('dist:bower:deploy', ['dist:bower'], function () {
             branch: 'master',
             remoteUrl: 'git@github.com:zalando/dress-code-bower'
         }));
+});
+
+gulp.task('dist:changelog', function() {
+    var changelogConfig = {
+        preset: 'angular'
+    };
+
+    return gulp.src('CHANGELOG.md', {
+        buffer: false
+    })
+    .pipe(conventionalChangelog(changelogConfig))
+    .pipe(gulp.dest('./'));
 });
 
 

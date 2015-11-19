@@ -42,6 +42,7 @@
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-compass": "^2.1.0",
+    "gulp-conventional-changelog": "^0.7.0",
     "gulp-csso": "^1.0.0",
     "gulp-debug": "^2.1.2",
     "gulp-filter": "^3.0.1",
