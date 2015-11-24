@@ -2,7 +2,8 @@ html {
 	height: 100%;
 
 	&.f-menu-active {
-		overflow-x: hidden;
+		// hide overflow to avoid a double sidebar in safari
+		overflow: hidden;
 
 		// @media (min-width: 60em) {
 		// 	overflow-x: auto;
