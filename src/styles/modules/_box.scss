@@ -29,6 +29,7 @@
 
 .#{$dc-prefix}-box--card {
     @include bleed;
+    margin-bottom: $dc-space150;
     padding-top: $dc-space100;
     padding-bottom: $dc-space100;
     background: $dc-white;

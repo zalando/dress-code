@@ -12,7 +12,7 @@ $layouts: $dc-tiny $dc-small $dc-medium $dc-large $dc-huge $dc-giant $dc-monstro
 $breakpoints: $dc-tiny-width $dc-small-width $dc-medium-width $dc-large-width $dc-huge-width $dc-giant-width $dc-monstrous-width;
 $breakpoint-names: "tiny" "small" "medium" "large" "huge" "giant" "monstrous";
 
-.dc-span--demo {
+.#{$dc-prefix}-span--demo {
     margin-bottom: $dc-space50;
     padding: $dc-space50/2;
     background: rgba($dc-orange60, .4);
@@ -22,7 +22,7 @@ $breakpoint-names: "tiny" "small" "medium" "large" "huge" "giant" "monstrous";
     color: $dc-orange20;
 }
 
-.dc-grid--padded
+.#{$dc-prefix}-grid--padded
 {
     padding: $dc-space50;
 
@@ -42,7 +42,7 @@ $breakpoint-names: "tiny" "small" "medium" "large" "huge" "giant" "monstrous";
     }
 }
 
-.dc-grid {
+.#{$dc-prefix}-grid {
 
     // For each breakpoint
     @for $j from 1 through length($breakpoints)
@@ -71,7 +71,7 @@ $breakpoint-names: "tiny" "small" "medium" "large" "huge" "giant" "monstrous";
             @for $i from 1 through 12
             {
                 // Generate classes like .dc-large-span4
-                .dc-#{nth($breakpoint-names, $j)}-span#{$i}
+                .#{$dc-prefix}-#{nth($breakpoint-names, $j)}-span#{$i}
                 {
                     @include span($i of nth($layouts, $j));
                 }
@@ -83,7 +83,7 @@ $breakpoint-names: "tiny" "small" "medium" "large" "huge" "giant" "monstrous";
             @for $i from 1 through 12
             {
                 // Generate classes for last columns like .dc-large-last
-                .dc-#{nth($breakpoint-names, $j)}-last
+                .#{$dc-prefix}-#{nth($breakpoint-names, $j)}-last
                 {
                     // Reset last column to prevent line break
                     @include last;
