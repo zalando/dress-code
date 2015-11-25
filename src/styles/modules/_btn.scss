@@ -152,6 +152,7 @@
 //  = BUTTON GROUPS
 //  ---------------------------------------------------------------------------
 
+
 .#{$dc-prefix}-btn-group {
     @extend .#{$dc-prefix}-cf;
 
@@ -159,21 +160,36 @@
         float: left;
         margin-right: 0;
         border-radius: 0;
-        border-left: 0 none;
+        border-right-width: 0;
 
         &:first-child {
-            border-radius: 2px 0 0 2px;
-            border-left: 1px solid $dc-gray50;
+            border-radius: $dc-radius100 0 0 $dc-radius100;
         }
 
         &:last-child {
-            border-radius: 0 2px 2px 0;
+            border-radius: 0 $dc-radius100 $dc-radius100 0;
+            border-right-width: 1px;
+        }
+
+        &.#{$dc-prefix}-btn--primary {
+            border-color: darken($dc-blue40, 7%);
+
+            + .dc-btn {
+              border-left-color: darken($dc-blue40, 7%);
+            }
         }
     }
 
-    .#{$dc-prefix}-btn--primary:first-child {
-        border-left: 1px solid darken($dc-blue40, 7%);
+    .#{$dc-prefix}-btn-group-row & {
+      float: left;
+      margin-right: 1.6rem;
+
     }
+
+}
+
+.#{$dc-prefix}-btn-group-row {
+  @extend .#{$dc-prefix}-cf;
 }
 
 //  = CREATE PAGE
