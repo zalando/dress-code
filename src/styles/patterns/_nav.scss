@@ -10,16 +10,15 @@
 //
 //  ---------------------------------------------------------------------------
 
+.#{$dc-prefix}-nav {
+    margin-left: 0;
+    list-style-type: none;
 
-	.#{$dc-prefix}-nav {
-		list-style-type:none;
-		margin-left:0;
+    .#{$dc-prefix}-li {
+        display: inline;
+    }
 
-		.#{$dc-prefix}-li {
-			display: inline;
-		}
-
-			.#{$dc-prefix}-link {
-				display: inline-block;
-			}
-	}
+    .#{$dc-prefix}-link {
+        display: inline-block;
+    }
+}

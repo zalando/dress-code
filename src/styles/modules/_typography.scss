@@ -4,335 +4,275 @@
 //
 //  ---------------------------------------------------------------------------
 
-
-
 //  = BOX SIZING
 //  ---------------------------------------------------------------------------
 
-	*
-	{
-		box-sizing:border-box;
-	}
-
-
+* {
+    box-sizing: border-box;
+}
 
 //  = VERTICAL RHYTHM
 //  ---------------------------------------------------------------------------
 
-	.#{$dc-prefix}-h1,.#{$dc-prefix}-h2,.#{$dc-prefix}-h3,.#{$dc-prefix}-h4,.#{$dc-prefix}-h5,.#{$dc-prefix}-h6,.#{$dc-prefix}-hgroup,
-	.#{$dc-prefix}-list,.#{$dc-prefix}-dd,
-	.#{$dc-prefix}-p,.#{$dc-prefix}-figure,.#{$dc-prefix}-object,
-	.#{$dc-prefix}-pre,.#{$dc-prefix}-table,.#{$dc-prefix}-fieldset,.#{$dc-prefix}-hr
-	{
-		margin:0;
-		margin-bottom: $dc-space150;
-	}
-
-
+.#{$dc-prefix}-h1, .#{$dc-prefix}-h2, .#{$dc-prefix}-h3, .#{$dc-prefix}-h4, .#{$dc-prefix}-h5, .#{$dc-prefix}-h6, .#{$dc-prefix}-hgroup,
+.#{$dc-prefix}-list, .#{$dc-prefix}-dd,
+.#{$dc-prefix}-p, .#{$dc-prefix}-figure, .#{$dc-prefix}-object,
+.#{$dc-prefix}-pre, .#{$dc-prefix}-table, .#{$dc-prefix}-fieldset, .#{$dc-prefix}-hr {
+    margin: 0;
+    margin-bottom: $dc-space150;
+}
 
 //  = BODY TEXT
 //  ---------------------------------------------------------------------------
 
+.#{$dc-prefix}-html {
+    height: 100%;
+    font-family: $dc-base-font-family;
+    font-size: $dc-html-font-size;
+    line-height: $dc-html-line-height;
+    font-weight: $dc-normal-font-weight;
+}
 
-	.#{$dc-prefix}-html
-	{
-		height:100%;
-		font-family:$dc-base-font-family;
-		font-size:$dc-html-font-size;
-		line-height:$dc-html-line-height;
-		font-weight:$dc-normal-font-weight;
-	}
+.#{$dc-prefix}-body {
+    font-size: $dc-body-font-size;
+    line-height: $dc-body-line-height;
+    background: $dc-body-background-color;
+    color: $dc-text-color;
+}
 
-	.#{$dc-prefix}-body
-	{
-		font-size: $dc-body-font-size;
-		line-height: $dc-body-line-height;
-		background: $dc-body-background-color;
-		color: $dc-text-color;
-	}
+.#{$dc-prefix}-pre {
+    // undo reset
+    word-wrap: normal;
+}
 
-	.#{$dc-prefix}-pre
-	{
-		// undo reset
-		word-wrap:normal;
-	}
+::-webkit-selection {
+    background-color: $dc-secondary-accent;
+    color: $dc-white;
+}
 
-	::-webkit-selection
-	{
-	    background-color:$dc-secondary-accent;
-	    color:$dc-white;
-	}
+::-moz-selection {
+    background-color: $dc-secondary-accent;
+    color: $dc-white;
+}
 
-	::-moz-selection
-	{
-	    background-color:$dc-secondary-accent;
-	    color:$dc-white;
-	}
+::selection {
+    background-color: $dc-secondary-accent;
+    color: $dc-white;
+}
 
-	::selection
-	{
-	    background-color:$dc-secondary-accent;
-	    color:$dc-white;
-	}
+.#{$dc-prefix}-strong {
+    font-weight: $dc-bold-font-weight;
+}
 
-	.#{$dc-prefix}-strong
-	{
-		font-weight:$dc-bold-font-weight;
-	}
+.#{$dc-prefix}-em {
+    font-style: italic;
+}
 
-	.#{$dc-prefix}-em
-	{
-		font-style:italic;
-	}
+.#{$dc-prefix}-nowrap {
+    white-space: nowrap;
+}
 
-
-	.#{$dc-prefix}-nowrap
-	{
-		white-space:nowrap;
-	}
-
-	.#{$dc-prefix}-styleguide .#{$dc-prefix}-p
-	{
-		max-width: 56em;
-	}
-
+.#{$dc-prefix}-styleguide .#{$dc-prefix}-p {
+    max-width: 56em;
+}
 
 //  = LINKS
 //  ---------------------------------------------------------------------------
 
-	.#{$dc-prefix}-link
-	{
-		text-decoration:none;
-		color:$dc-link-color;
-		cursor:pointer;
+.#{$dc-prefix}-link {
+    text-decoration: none;
+    color: $dc-link-color;
+    cursor: pointer;
 
-		transition: color .1s linear;
-		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	}
+    transition: color .1s linear;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
-	.#{$dc-prefix}-input
-	{
-		-webkit-tap-highlight-color:rgba(0,0,0,0);
-	}
+.#{$dc-prefix}-input {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
-	.no-touch .#{$dc-prefix}-link:hover,
-	.touch .#{$dc-prefix}-link:active
-	{
-		text-decoration:none;
-		color:$dc-link-color-hover;
-	}
+.no-touch .#{$dc-prefix}-link:hover,
+.touch .#{$dc-prefix}-link:active {
+    text-decoration: none;
+    color: $dc-link-color-hover;
+}
 
-	.no-touch .#{$dc-prefix}-link--success:hover,
-	.touch .#{$dc-prefix}-link--success:active
-	{
-		color:$dc-green30;
-	}
+.no-touch .#{$dc-prefix}-link--success:hover,
+.touch .#{$dc-prefix}-link--success:active {
+    color: $dc-green30;
+}
 
-	.no-touch .#{$dc-prefix}-link--destroy:hover,
-	.touch .#{$dc-prefix}-link--destroy:active
-	{
-		color:$dc-red40;
-	}
+.no-touch .#{$dc-prefix}-link--destroy:hover,
+.touch .#{$dc-prefix}-link--destroy:active {
+    color: $dc-red40;
+}
 
-	.#{$dc-prefix}-link--disabled,
-	.touch .#{$dc-prefix}-link--disabled:active,
-	.no-touch .#{$dc-prefix}-link--disabled:hover
-	{
-		color:$dc-gray50;
-		cursor:default;
-	}
+.#{$dc-prefix}-link--disabled,
+.touch .#{$dc-prefix}-link--disabled:active,
+.no-touch .#{$dc-prefix}-link--disabled:hover {
+    color: $dc-gray50;
+    cursor: default;
+}
 
-	.#{$dc-prefix}-has-tooltip[data-tooltip]
-	{
-		position: relative;
+.#{$dc-prefix}-has-tooltip[data-tooltip] {
+    position: relative;
 
-		&:before,
-		&:after
-		{
-			position:absolute;
-			content: " ";
-			opacity: 0;
-			pointer-events: none;
-			transform: translateY(4px);
-			transition: transform .3s .5s ease-out, opacity .2s .5s;
-		}
+    &:before,
+    &:after {
+        position: absolute;
+        content: " ";
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(4px);
+        transition: transform .3s .5s ease-out, opacity .2s .5s;
+    }
 
-		&:before
-		{
-			content: attr(data-tooltip);
-			bottom: calc(100% + 12px);
-			padding: .2rem $dc-space50;
-			background: rgba($dc-black, .7);
-			border-radius: 2px;
-			line-height: $dc-body-line-height;
-			color:$dc-white;
-		}
+    &:before {
+        content: attr(data-tooltip);
+        bottom: calc(100% + 12px);
+        padding: .2rem $dc-space50;
+        background: rgba($dc-black, .7);
+        border-radius: 2px;
+        line-height: $dc-body-line-height;
+        color: $dc-white;
+    }
 
-		&:after
-		{
-			bottom: 100%;
-			left: 20%;
-			height: 0;
-			width: 0;
-			border: solid transparent;
-			border-color: rgba($dc-black, 0);
-			border-top-color: rgba($dc-black, .7);
-			border-width: 6px;
-			margin-left: -6px;
-		}
+    &:after {
+        bottom: 100%;
+        left: 20%;
+        height: 0;
+        width: 0;
+        border: solid transparent;
+        border-color: rgba($dc-black, 0);
+        border-top-color: rgba($dc-black, .7);
+        border-width: 6px;
+        margin-left: -6px;
+    }
 
-		&:hover
-		{
-			&:before,
-			&:after
-			{
-				opacity: 1;
-				transform: translateY(0);
-			}
-		}
-	}
-
-
+    &:hover {
+        &:before,
+        &:after {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
 
 //  = LISTS
 //  ---------------------------------------------------------------------------
 
-	.#{$dc-prefix}-list {
-		padding-left: 3rem;
-	}
+.#{$dc-prefix}-list {
+    padding-left: 3rem;
+}
 
-	.#{$dc-prefix}-list--is-reset {
-		padding:0;
-		list-style-type:none;
-	}
+.#{$dc-prefix}-list--is-reset {
+    padding: 0;
+    list-style-type: none;
+}
 
-	.#{$dc-prefix}-dt
-	{
-		font-family:$dc-base-font-family;
-	}
-
-
+.#{$dc-prefix}-dt {
+    font-family: $dc-base-font-family;
+}
 
 //  = HEADINGS
 //  ---------------------------------------------------------------------------
 
-	.#{$dc-prefix}-h1,
-	.#{$dc-prefix}-h2,
-	.#{$dc-prefix}-h3,
-	.#{$dc-prefix}-h4,
-	.#{$dc-prefix}-h5,
-	.#{$dc-prefix}-h6
-	{
-		margin-bottom: $dc-space150;
-		font-family:$dc-headings-font-family;
-		font-weight:$dc-headings-font-weight;
-		color:$dc-headings-color;
+.#{$dc-prefix}-h1,
+.#{$dc-prefix}-h2,
+.#{$dc-prefix}-h3,
+.#{$dc-prefix}-h4,
+.#{$dc-prefix}-h5,
+.#{$dc-prefix}-h6 {
+    margin-bottom: $dc-space150;
+    font-family: $dc-headings-font-family;
+    font-weight: $dc-headings-font-weight;
+    color: $dc-headings-color;
 
-		.#{$dc-prefix}-small
-		{
-			display:block;
-			font-family:$dc-base-font-family;
-			font-size:60%;
-			color:$dc-gray50;
-		}
-	}
+    .#{$dc-prefix}-small {
+        display: block;
+        font-family: $dc-base-font-family;
+        font-size: 60%;
+        color: $dc-gray50;
+    }
+}
 
-	.#{$dc-prefix}-h1
-	{
-		font-size: $dc-h1-size;
-		line-height: $dc-h1-line-height;
-	}
+.#{$dc-prefix}-h1 {
+    font-size: $dc-h1-size;
+    line-height: $dc-h1-line-height;
+}
 
-	.#{$dc-prefix}-h2
-	{
-		font-size: $dc-h2-size;
-		line-height: $dc-h2-line-height;
-	}
+.#{$dc-prefix}-h2 {
+    font-size: $dc-h2-size;
+    line-height: $dc-h2-line-height;
+}
 
-	.#{$dc-prefix}-h3
-	{
-		font-size: $dc-h3-size;
-		line-height: $dc-h3-line-height;
-	}
+.#{$dc-prefix}-h3 {
+    font-size: $dc-h3-size;
+    line-height: $dc-h3-line-height;
+}
 
-	.#{$dc-prefix}-h4
-	{
-		font-size: $dc-h4-size;
-		line-height: $dc-h4-line-height;
-	}
+.#{$dc-prefix}-h4 {
+    font-size: $dc-h4-size;
+    line-height: $dc-h4-line-height;
+}
 
+//  = TEXT
+//  ---------------------------------------------------------------------------
 
+.#{$dc-prefix}-text--center {
+    text-align: center;
+}
 
-	//  = TEXT
-	//  ---------------------------------------------------------------------------
+.#{$dc-prefix}-text--small {
+    font-size: $dc-font50;
+    line-height: 1.8;
+}
 
-	.#{$dc-prefix}-text--center
-	{
-		text-align:center;
-	}
+.#{$dc-prefix}-less-important {
+    font-size: $dc-font50;
+    line-height: 1;
+    color: $dc-gray60;
+}
 
-	.#{$dc-prefix}-text--small
-	{
-		font-size: $dc-font50;
-		line-height: 1.8;
-	}
-
-	.#{$dc-prefix}-less-important
-	{
-		font-size: $dc-font50;
-		line-height:1;
-		color:$dc-gray60;
-	}
-
-	.#{$dc-prefix}-text--error
-	{
-		display:block;
-		margin-top: - $dc-space150;
-		margin-bottom: $dc-space150;
-		font-size: $dc-font50;
-		color:$dc-red40;
-	}
-
-
+.#{$dc-prefix}-text--error {
+    display: block;
+    margin-top: - $dc-space150;
+    margin-bottom: $dc-space150;
+    font-size: $dc-font50;
+    color: $dc-red40;
+}
 
 //  = ICONS
 //  ---------------------------------------------------------------------------
 
-		.#{$dc-prefix}-icon
-		{
-			display:inline-block;
-			vertical-align:middle;
-			cursor:pointer;
-			transform-origin: 50%;
+.#{$dc-prefix}-icon {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    transform-origin: 50%;
 
-			&:hover
-			{
-				[stroke^='#']
-				{
-					stroke:$dc-blue20;
-				}
+    &:hover {
+        [stroke^='#'] {
+            stroke: $dc-blue20;
+        }
 
-				[fill^='#']
-				{
-					fill:$dc-blue20;
-				}
-			}
+        [fill^='#'] {
+            fill: $dc-blue20;
+        }
+    }
 
-			&:active
-			{
-				transform: scale(.85);
-			}
-		}
+    &:active {
+        transform: scale(.85);
+    }
+}
 
-		.#{$dc-prefix}-icon--destroy:hover
-		{
-			[stroke^='#']
-			{
-				stroke:$dc-red40;
-			}
+.#{$dc-prefix}-icon--destroy:hover {
+    [stroke^='#'] {
+        stroke: $dc-red40;
+    }
 
-			[fill^='#']
-			{
-				fill:$dc-red40;
-			}
-		}
+    [fill^='#'] {
+        fill: $dc-red40;
+    }
+}

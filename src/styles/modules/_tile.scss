@@ -4,80 +4,67 @@
 //
 //  ---------------------------------------------------------------------------
 
-
-
-
 //  = BASE
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-tile
-{
-	margin-bottom: $dc-doubleSpace;
-	background:$dc-white;
-	border:2px solid $dc-grayLightest;
-	box-shadow:2px 2px 0 rgba($dc-black, .2);
-	text-align:center;
+.#{$dc-prefix}-tile {
+    margin-bottom: $dc-doubleSpace;
+    background: $dc-white;
+    border: 2px solid $dc-grayLightest;
+    box-shadow: 2px 2px 0 rgba($dc-black, .2);
+    text-align: center;
 }
 
-.#{$dc-prefix}-tile__link
-{
-	display:block;
-	padding: $dc-doubleSpace $dc-doubleSpace * 2;
-	color:$dc-text-color;
+.#{$dc-prefix}-tile__link {
+    display: block;
+    padding: $dc-doubleSpace $dc-doubleSpace * 2;
+    color: $dc-text-color;
 }
 
 .touch .#{$dc-prefix}-tile__link:active,
-.no-touch .#{$dc-prefix}-tile__link:hover
-{
-	background:$dc-grayLightest;
-	color:$dc-text-color;
+.no-touch .#{$dc-prefix}-tile__link:hover {
+    background: $dc-grayLightest;
+    color: $dc-text-color;
 }
 
-.#{$dc-prefix}-tile--positive
-{
-	border:2px solid $dc-greenLighter;
-	box-shadow:2px 2px 0 rgba($dc-greenDark, .5);
+.#{$dc-prefix}-tile--positive {
+    border: 2px solid $dc-greenLighter;
+    box-shadow: 2px 2px 0 rgba($dc-greenDark, .5);
 }
 
-.#{$dc-prefix}-tile--negative
-{
-	border:2px solid $dc-redLighter;
-	box-shadow:2px 2px 0 rgba($dc-redDark, .5);
+.#{$dc-prefix}-tile--negative {
+    border: 2px solid $dc-redLighter;
+    box-shadow: 2px 2px 0 rgba($dc-redDark, .5);
 }
 
-.#{$dc-prefix}-tile__title
-{
-	margin-bottom: $dc-singleSpace;
-	font-size: 2.4;
-	line-height:1.2;
-	text-transform:uppercase;
-	color:$dc-grayLight;
-	font-weight:300;
+.#{$dc-prefix}-tile__title {
+    margin-bottom: $dc-singleSpace;
+    font-size: 2.4;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $dc-grayLight;
+    font-weight: 300;
 }
 
-.#{$dc-prefix}-tile__text
-{
-	margin-bottom: $dc-singleSpace;
-	font-size: 1.6;
-	line-height:1.5;
+.#{$dc-prefix}-tile__text {
+    margin-bottom: $dc-singleSpace;
+    font-size: 1.6;
+    line-height: 1.5;
 }
 
-.#{$dc-prefix}-tile__kpi
-{
-	display:block;
-	font-size: 4.8;
-	line-height:1.5;
-	font-weight:bold;
+.#{$dc-prefix}-tile__kpi {
+    display: block;
+    font-size: 4.8;
+    line-height: 1.5;
+    font-weight: bold;
 }
 
-.#{$dc-prefix}-tile__positive
-{
-	color:$dc-green;
-	font-weight:bold;
+.#{$dc-prefix}-tile__positive {
+    color: $dc-green;
+    font-weight: bold;
 }
 
-.#{$dc-prefix}-tile__negative
-{
-	color:$dc-red;
-	font-weight:bold;
+.#{$dc-prefix}-tile__negative {
+    color: $dc-red;
+    font-weight: bold;
 }

@@ -2,5 +2,11 @@ scss_files: 'src/styles/**/*.scss'
 
 linters:
   StringQuotes:
-      enabled: true
-      style: double_quotes # or single_quotes
+    enabled: true
+    style: double_quotes
+  SelectorFormat:
+    convention: strict_BEM
+  PropertySortOrder:
+    order: smacss
+  Indentation:
+    width: 4

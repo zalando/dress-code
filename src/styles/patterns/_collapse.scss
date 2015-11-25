@@ -4,18 +4,14 @@
 //
 //  ---------------------------------------------------------------------------
 
-
-
 //  = BODY
 //  ---------------------------------------------------------------------------
 
-	.#{$dc-prefix}-collapse-bd
-	{
-		height:0;
-		overflow:hidden;
-	}
+.#{$dc-prefix}-collapse-bd {
+    height: 0;
+    overflow: hidden;
+}
 
-	.csstransitions .#{$dc-prefix}-collapsing
-	{
-		transition: height .3s ease-out;
-	}
+.csstransitions .#{$dc-prefix}-collapsing {
+    transition: height .3s ease-out;
+}

@@ -32,33 +32,27 @@
 //
 //  ---------------------------------------------------------------------------
 
+.#{$dc-prefix}-media {
+    margin: 0;
 
+    .#{$dc-prefix}-media__bd {
+        overflow: hidden;
+        // I use _ to make sure IE5.5 & 6 don’t see overflow:hidden because they clear floats automatically anyway (a bug).
+        // _overflow: visible;
+        zoom: 1;
+    }
 
-	.#{$dc-prefix}-media
-	{
-		margin:0;
+    .#{$dc-prefix}-media__img {
+        margin-right: $dc-space100;
+        float: left;
 
-		.#{$dc-prefix}-media__bd
-		{
-			overflow:hidden;
-			_overflow:visible;
-			zoom:1;
-		}
+        .#{$dc-prefix}-img {
+            display: block;
+        }
+    }
 
-		.#{$dc-prefix}-media__img
-		{
-			float:left;
-			margin-right: $dc-space100;
-
-			.#{$dc-prefix}-img
-			{
-				display:block;
-			}
-		}
-
-		.#{$dc-prefix}-media__img--rev
-		{
-			float:right;
-			margin-left: $dc-space100;
-		}
-	}
+    .#{$dc-prefix}-media__img--rev {
+        margin-left: $dc-space100;
+        float: right;
+    }
+}

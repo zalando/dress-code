@@ -12,19 +12,18 @@
     margin-right: $dc-space50;
     margin-bottom: $dc-space100;
     padding: $dc-space100 - .1 $dc-space100;
-    line-height: $dc-space100;
-    background: linear-gradient($dc-white, darken($dc-white, 7%));
+    transition: box-shadow .2s linear, border-color .2s linear;
     border: 1px solid $dc-gray50;
     border-radius: $dc-radius100;
-    text-transform: capitalize;
-    text-decoration: none;
-    text-align: center;
-    font-weight: $dc-normal-font-weight;
+    background: linear-gradient($dc-white, darken($dc-white, 7%));
     color: $dc-gray10;
+    font-weight: $dc-normal-font-weight;
+    line-height: $dc-space100;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
     box-shadow: 0 1px 1px transparent;
     cursor: default;
-
-    transition: box-shadow .2s linear, border-color .2s linear;
 
     &:focus {
         outline: 0;
@@ -35,28 +34,28 @@
 }
 
 .no-touch .#{$dc-prefix}-btn:hover {
-    box-shadow: 0 1px 1px rgba($dc-black, .2);
+    outline: 0;
     background: linear-gradient($dc-white, darken($dc-white, 5%));
     color: $dc-gray10;
     text-decoration: none;
-    outline: 0;
+    box-shadow: 0 1px 1px rgba($dc-black, .2);
 }
 
 .touch .#{$dc-prefix}-btn:active,
 .no-touch .#{$dc-prefix}-btn:active {
     background: darken($dc-white, 4%);
-    box-shadow: inset 0 1px 1px rgba($dc-black, .1);
     color: $dc-gray10;
     text-decoration: none;
+    box-shadow: inset 0 1px 1px rgba($dc-black, .1);
 }
 
 //  = ICON BUTTONS
 //  ---------------------------------------------------------------------------
 
 .#{$dc-prefix}-btn--icon {
-    padding: 0;
     width: $dc-touch-size;
     height: $dc-touch-size;
+    padding: 0;
 
     svg {
         position: relative;
@@ -107,8 +106,8 @@
 //  ---------------------------------------------------------------------------
 
 .#{$dc-prefix}-btn--primary {
-    background: linear-gradient($dc-blue40, darken($dc-blue40, 7%));
     border-color: darken($dc-blue40, 7%);
+    background: linear-gradient($dc-blue40, darken($dc-blue40, 7%));
     color: $dc-white;
 
     &:focus {
@@ -132,9 +131,9 @@
 
 .touch .#{$dc-prefix}-btn--destroy:active,
 .no-touch .#{$dc-prefix}-btn--destroy:hover {
-    color: $dc-white;
-    background: $dc-red50;
     border-color: $dc-red40;
+    background: $dc-red50;
+    color: $dc-white;
 }
 
 //  = DISABLED
@@ -143,24 +142,23 @@
 .#{$dc-prefix}-btn--disabled,
 .touch .#{$dc-prefix}-btn--disabled:active,
 .no-touch .#{$dc-prefix}-btn--disabled:hover {
-    color: $dc-gray50;
-    background: transparent;
     border-color: $dc-gray60;
+    background: transparent;
+    color: $dc-gray50;
     box-shadow: none;
 }
 
 //  = BUTTON GROUPS
 //  ---------------------------------------------------------------------------
 
-
 .#{$dc-prefix}-btn-group {
     @extend .#{$dc-prefix}-cf;
 
     .#{$dc-prefix}-btn {
-        float: left;
         margin-right: 0;
         border-radius: 0;
         border-right-width: 0;
+        float: left;
 
         &:first-child {
             border-radius: $dc-radius100 0 0 $dc-radius100;
@@ -175,21 +173,19 @@
             border-color: darken($dc-blue40, 7%);
 
             + .dc-btn {
-              border-left-color: darken($dc-blue40, 7%);
+                border-left-color: darken($dc-blue40, 7%);
             }
         }
     }
 
     .#{$dc-prefix}-btn-group-row & {
-      float: left;
-      margin-right: 1.6rem;
-
+        float: left;
+        margin-right: 1.6rem;
     }
-
 }
 
 .#{$dc-prefix}-btn-group-row {
-  @extend .#{$dc-prefix}-cf;
+    @extend .#{$dc-prefix}-cf;
 }
 
 //  = CREATE PAGE
@@ -216,6 +212,6 @@
     margin-bottom: 0;
 
     + .#{$dc-prefix}-btn--inline {
-        margin-left: .2; // Account for 4px inline margin
+        margin-left: .2rem; // Account for 4px inline margin
     }
 }
