@@ -112,7 +112,7 @@ $dc-monstrous-layout: (
 //  = BREAKPOINTS
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-body {
+.dc-body {
     @include dc-debugmessage("Tiny \2014 0-320px", $dc-red60);
 
     @include breakpoint($dc-small-width) {
@@ -140,14 +140,14 @@ $dc-monstrous-layout: (
     }
 }
 
-.#{$dc-prefix}-is-show-breakpoints .#{$dc-prefix}-body {
+.dc-is-show-breakpoints .dc-body {
     &::before {
         transform: translateY(-100%);
         opacity: 1;
     }
 }
 
-.#{$dc-prefix}-is-show-grid .#{$dc-prefix}-grid {
+.dc-is-show-grid .dc-grid {
     position: fixed;
     top: $dc-touch-size;
     right: 0;

@@ -10,13 +10,13 @@
 //scss-lint:disable ImportantRule
 // Use this class to set a larger
 // bottom margin than the default
-.#{$dc-prefix}-space-lover {
+.dc-space-lover {
     margin-bottom: $dc-space100 * 2 !important;
 }
 
 // Use this class to set an EVEN LARGER
 // bottom margin than the default
-.#{$dc-prefix}-space-lover--huge {
+.dc-space-lover--huge {
     margin-bottom: $dc-space100 * 4 !important;
 }
 
@@ -26,13 +26,13 @@
 // Use this class to give an element
 // more space to other elements, just
 // like an island.
-.#{$dc-prefix}-island {
+.dc-island {
     padding: $dc-space50 !important;
 }
 
 // Use this class to give an element
 // EVEN MORE space to other elements,
 // just like a far away island.
-.#{$dc-prefix}-island--far-away {
+.dc-island--far-away {
     padding: $dc-space100 !important;
 }

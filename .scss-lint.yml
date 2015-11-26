@@ -12,3 +12,5 @@ linters:
     order: smacss
   Indentation:
     width: 4
+  PseudoElement:
+    enabled: false

@@ -14,10 +14,22 @@
 //  = VERTICAL RHYTHM
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-h1, .#{$dc-prefix}-h2, .#{$dc-prefix}-h3, .#{$dc-prefix}-h4, .#{$dc-prefix}-h5, .#{$dc-prefix}-h6, .#{$dc-prefix}-hgroup,
-.#{$dc-prefix}-list, .#{$dc-prefix}-dd,
-.#{$dc-prefix}-p, .#{$dc-prefix}-figure, .#{$dc-prefix}-object,
-.#{$dc-prefix}-pre, .#{$dc-prefix}-table, .#{$dc-prefix}-fieldset, .#{$dc-prefix}-hr {
+.dc-h1,
+.dc-h2,
+.dc-h3,
+.dc-h4,
+.dc-h5,
+.dc-h6,
+.dc-hgroup,
+.dc-list,
+.dc-dd,
+.dc-p,
+.dc-figure,
+.dc-object,
+.dc-pre,
+.dc-table,
+.dc-fieldset,
+.dc-hr {
     margin: 0;
     margin-bottom: $dc-space150;
 }
@@ -25,7 +37,7 @@
 //  = BODY TEXT
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-html {
+.dc-html {
     height: 100%;
     font-family: $dc-base-font-family;
     font-size: $dc-html-font-size;
@@ -33,14 +45,14 @@
     line-height: $dc-html-line-height;
 }
 
-.#{$dc-prefix}-body {
+.dc-body {
     background: $dc-body-background-color;
     color: $dc-text-color;
     font-size: $dc-body-font-size;
     line-height: $dc-body-line-height;
 }
 
-.#{$dc-prefix}-pre {
+.dc-pre {
     // undo reset
     word-wrap: normal;
 }
@@ -62,26 +74,26 @@
 }
 // scss-lint:enable VendorPrefix
 
-.#{$dc-prefix}-strong {
+.dc-strong {
     font-weight: $dc-bold-font-weight;
 }
 
-.#{$dc-prefix}-em {
+.dc-em {
     font-style: italic;
 }
 
-.#{$dc-prefix}-nowrap {
+.dc-nowrap {
     white-space: nowrap;
 }
 
-.#{$dc-prefix}-styleguide .#{$dc-prefix}-p {
+.dc-styleguide .dc-p {
     max-width: 56em;
 }
 
 //  = LINKS
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-link {
+.dc-link {
     transition: color .1s linear;
     color: $dc-link-color;
     text-decoration: none;
@@ -91,36 +103,36 @@
     // scss-lint:enable ColorVariable
 }
 
-.#{$dc-prefix}-input {
+.dc-input {
     // scss-lint:disable ColorVariable
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     // scss-lint:enable ColorVariable
 }
 
-.no-touch .#{$dc-prefix}-link:hover,
-.touch .#{$dc-prefix}-link:active {
+.no-touch .dc-link:hover,
+.touch .dc-link:active {
     color: $dc-link-color-hover;
     text-decoration: none;
 }
 
-.no-touch .#{$dc-prefix}-link--success:hover,
-.touch .#{$dc-prefix}-link--success:active {
+.no-touch .dc-link--success:hover,
+.touch .dc-link--success:active {
     color: $dc-green30;
 }
 
-.no-touch .#{$dc-prefix}-link--destroy:hover,
-.touch .#{$dc-prefix}-link--destroy:active {
+.no-touch .dc-link--destroy:hover,
+.touch .dc-link--destroy:active {
     color: $dc-red40;
 }
 
-.#{$dc-prefix}-link--disabled,
-.touch .#{$dc-prefix}-link--disabled:active,
-.no-touch .#{$dc-prefix}-link--disabled:hover {
+.dc-link--disabled,
+.touch .dc-link--disabled:active,
+.no-touch .dc-link--disabled:hover {
     color: $dc-gray50;
     cursor: default;
 }
 
-.#{$dc-prefix}-has-tooltip[data-tooltip] {
+.dc-has-tooltip[data-tooltip] {
     position: relative;
 
     &:before,
@@ -167,34 +179,34 @@
 //  = LISTS
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-list {
+.dc-list {
     padding-left: 3rem;
 }
 
-.#{$dc-prefix}-list--is-reset {
+.dc-list--is-reset {
     padding: 0;
     list-style-type: none;
 }
 
-.#{$dc-prefix}-dt {
+.dc-dt {
     font-family: $dc-base-font-family;
 }
 
 //  = HEADINGS
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-h1,
-.#{$dc-prefix}-h2,
-.#{$dc-prefix}-h3,
-.#{$dc-prefix}-h4,
-.#{$dc-prefix}-h5,
-.#{$dc-prefix}-h6 {
+.dc-h1,
+.dc-h2,
+.dc-h3,
+.dc-h4,
+.dc-h5,
+.dc-h6 {
     margin-bottom: $dc-space150;
     color: $dc-headings-color;
     font-family: $dc-headings-font-family;
     font-weight: $dc-headings-font-weight;
 
-    .#{$dc-prefix}-small {
+    .dc-small {
         display: block;
         color: $dc-gray50;
         font-family: $dc-base-font-family;
@@ -202,22 +214,22 @@
     }
 }
 
-.#{$dc-prefix}-h1 {
+.dc-h1 {
     font-size: $dc-h1-size;
     line-height: $dc-h1-line-height;
 }
 
-.#{$dc-prefix}-h2 {
+.dc-h2 {
     font-size: $dc-h2-size;
     line-height: $dc-h2-line-height;
 }
 
-.#{$dc-prefix}-h3 {
+.dc-h3 {
     font-size: $dc-h3-size;
     line-height: $dc-h3-line-height;
 }
 
-.#{$dc-prefix}-h4 {
+.dc-h4 {
     font-size: $dc-h4-size;
     line-height: $dc-h4-line-height;
 }
@@ -225,22 +237,22 @@
 //  = TEXT
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-text--center {
+.dc-text--center {
     text-align: center;
 }
 
-.#{$dc-prefix}-text--small {
+.dc-text--small {
     font-size: $dc-font50;
     line-height: 1.8;
 }
 
-.#{$dc-prefix}-less-important {
+.dc-less-important {
     color: $dc-gray60;
     font-size: $dc-font50;
     line-height: 1;
 }
 
-.#{$dc-prefix}-text--error {
+.dc-text--error {
     display: block;
     margin-top: - $dc-space150;
     margin-bottom: $dc-space150;
@@ -251,7 +263,7 @@
 //  = ICONS
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-icon {
+.dc-icon {
     display: inline-block;
     cursor: pointer;
     vertical-align: middle;
@@ -272,7 +284,7 @@
     }
 }
 
-.#{$dc-prefix}-icon--destroy:hover {
+.dc-icon--destroy:hover {
     [stroke^='#'] {
         stroke: $dc-red40;
     }

@@ -1,5 +1,5 @@
 // Animation keyframes - you need to add prefixes
-@include keyframes(#{$dc-prefix}-spin) {
+@include keyframes(dc-spin) {
     from {
         @include transform(rotate(0deg));
     }
@@ -10,36 +10,33 @@
 }
 
 // Loading animation container
-.#{$dc-prefix}-loading {
+.dc-loading {
     display: inline-block;
     position: relative;
     width: 12px;
     height: 12px;
     margin: -6px 12px 0;
     vertical-align: middle;
-}
 
-// Spinning circle (inner circle)
-.#{$dc-prefix}-loading .#{$dc-prefix}-masked-circle {
-    width: 10px;
-    height: 10px;
-    border: 2px solid $dc-red20;
-    border-radius: 12px;
-}
+    .dc-masked-circle {
+        width: 10px;
+        height: 10px;
+        border: 2px solid $dc-red20;
+        border-radius: 12px;
+    }
 
-// Spinning circle mask
-.#{$dc-prefix}-loading .#{$dc-prefix}-mask {
-    width: 6px;
-    height: 6px;
-    overflow: hidden;
-}
+    .dc-mask {
+        width: 6px;
+        height: 6px;
+        overflow: hidden;
+    }
 
-// Spinner
-.#{$dc-prefix}-loading .#{$dc-prefix}-spinner {
-    @include animation(#{$dc-prefix}-spin 1s infinite linear);
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    width: 13px;
-    height: 13px;
+    .dc-spinner {
+        @include animation(dc-spin 1s infinite linear);
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: 13px;
+        height: 13px;
+    }
 }

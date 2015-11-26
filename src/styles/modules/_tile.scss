@@ -9,7 +9,7 @@
 
 // FIXME - XXX @xonic can we remove this file?
 
-.#{$dc-prefix}-tile {
+.dc-tile {
     margin-bottom: $dc-double-space;
     border: 2px solid $dc-gray-lightest;
     background: $dc-white;
@@ -17,29 +17,29 @@
     box-shadow: 2px 2px 0 rgba($dc-black, .2);
 }
 
-.#{$dc-prefix}-tile__link {
+.dc-tile__link {
     display: block;
     padding: $dc-double-space $dc-double-space * 2;
     color: $dc-text-color;
 }
 
-.touch .#{$dc-prefix}-tile__link:active,
-.no-touch .#{$dc-prefix}-tile__link:hover {
+.touch .dc-tile__link:active,
+.no-touch .dc-tile__link:hover {
     background: $dc-gray-lightest;
     color: $dc-text-color;
 }
 
-.#{$dc-prefix}-tile--positive {
+.dc-tile--positive {
     border: 2px solid $dc-green-lighter;
     box-shadow: 2px 2px 0 rgba($dc-greenDark, .5);
 }
 
-.#{$dc-prefix}-tile--negative {
+.dc-tile--negative {
     border: 2px solid $dc-red-lighter;
     box-shadow: 2px 2px 0 rgba($dc-redDark, .5);
 }
 
-.#{$dc-prefix}-tile__title {
+.dc-tile__title {
     margin-bottom: $dc-single-space;
     color: $dc-gray-light;
     font-size: 2.4rem;
@@ -48,25 +48,25 @@
     text-transform: uppercase;
 }
 
-.#{$dc-prefix}-tile__text {
+.dc-tile__text {
     margin-bottom: $dc-single-space;
     font-size: 1.6rem;
     line-height: 1.5;
 }
 
-.#{$dc-prefix}-tile__kpi {
+.dc-tile__kpi {
     display: block;
     font-size: 4.8rem;
     font-weight: bold;
     line-height: 1.5;
 }
 
-.#{$dc-prefix}-tile__positive {
+.dc-tile__positive {
     color: $dc-green;
     font-weight: bold;
 }
 
-.#{$dc-prefix}-tile__negative {
+.dc-tile__negative {
     color: $dc-red;
     font-weight: bold;
 }

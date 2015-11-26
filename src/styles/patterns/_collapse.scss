@@ -7,11 +7,11 @@
 //  = BODY
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-collapse-bd {
+.dc-collapse-bd {
     height: 0;
     overflow: hidden;
 }
 
-.csstransitions .#{$dc-prefix}-collapsing {
+.csstransitions .dc-collapsing {
     transition: height .3s ease-out;
 }

@@ -4,7 +4,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-dim {
+.dc-dim {
     position: absolute;
     top: $dc-space200;
     right: 0;
@@ -16,14 +16,14 @@
     pointer-events: none;
 }
 
-.#{$dc-prefix}-is-dimmed {
-    .#{$dc-prefix}-dim {
+.dc-is-dimmed {
+    .dc-dim {
         opacity: 1;
         pointer-events: auto;
     }
 }
 
-.#{$dc-prefix}-msg {
+.dc-msg {
     // position:absolute;
     // top:0;
     // right:0;
@@ -47,7 +47,7 @@
     }
 }
 
-.#{$dc-prefix}-msg__inner {
+.dc-msg__inner {
     display: flex;
     flex: 0 1 auto;
     // max-width: 600px;
@@ -55,7 +55,7 @@
     align-items: center;
 }
 
-.#{$dc-prefix}-msg__icon {
+.dc-msg__icon {
     min-width: 4rem;
     height: 4rem;
 
@@ -63,17 +63,17 @@
         margin-right: $dc-space100;
     }
 
-    [class^="#{$dc-prefix}-font-icon"] {
+    [class^="dc-font-icon"] {
         padding: 0 1rem;
         color: currentcolor;
         line-height: 4rem;
     }
 }
 
-.#{$dc-prefix}-msg__bd {
+.dc-msg__bd {
     flex: 1 1 auto;
 
-    .#{$dc-prefix}-link {
+    .dc-link {
         border-bottom: 1px solid currentColor;
         color: currentColor;
 
@@ -84,7 +84,7 @@
     }
 }
 
-.#{$dc-prefix}-msg__title {
+.dc-msg__title {
     margin: 0;
     color: currentcolor;
     font-size: $dc-font100;
@@ -92,15 +92,15 @@
     line-height: $dc-body-line-height;
 }
 
-.#{$dc-prefix}-msg__text {
+.dc-msg__text {
     margin: 0;
 }
 
-.#{$dc-prefix}-msg__close {
+.dc-msg__close {
     min-width: 4rem;
     cursor: pointer;
 
-    [class^="#{$dc-prefix}-font-icon-close"] {
+    [class^="dc-font-icon-close"] {
         padding: 0 1.5rem;
         color: currentcolor;
         line-height: 4rem;
@@ -114,18 +114,18 @@
 //  = INFO
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-msg--info {
+.dc-msg--info {
     border-color: darken($dc-blue70, 5%);
     background: rgba($dc-blue70, .5);
     color: $dc-blue20;
 
-    .#{$dc-prefix}-font-icon-msg-info {
+    .dc-font-icon-msg-info {
         color: $dc-blue40;
         font-size: 2.75rem;
     }
 
-    .#{$dc-prefix}-msg__close {
-        &:hover [class^="#{$dc-prefix}-font-icon-close"] {
+    .dc-msg__close {
+        &:hover [class^="dc-font-icon-close"] {
             color: $dc-blue10;
         }
     }
@@ -134,24 +134,24 @@
 //  = SUCCESS
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-msg--success {
+.dc-msg--success {
     // scss-lint:disable ColorVariable
     border-color: #84e440;
     background: rgba(#e3ffc7, .95);
     // scss-lint:enable ColorVariable
     color: $dc-green20;
 
-    .#{$dc-prefix}-msg__title {
+    .dc-msg__title {
         color: $dc-green20;
     }
 
-    .#{$dc-prefix}-font-icon-msg-success {
+    .dc-font-icon-msg-success {
         color: $dc-green30;
         font-size: 2.2rem;
     }
 
-    .#{$dc-prefix}-msg__close {
-        &:hover [class^="#{$dc-prefix}-font-icon-close"] {
+    .dc-msg__close {
+        &:hover [class^="dc-font-icon-close"] {
             color: $dc-green10;
         }
     }
@@ -160,18 +160,18 @@
 //  = ERROR
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-msg--error {
+.dc-msg--error {
     border-color: darken($dc-red70, 5%);
     background: rgba(desaturate($dc-red70, 10%), .5);
     color: $dc-red20;
 
-    .#{$dc-prefix}-font-icon-msg-error {
+    .dc-font-icon-msg-error {
         color: $dc-red40;
         font-size: 1.8rem;
     }
 
-    .#{$dc-prefix}-msg__close {
-        &:hover [class^="#{$dc-prefix}-font-icon-close"] {
+    .dc-msg__close {
+        &:hover [class^="dc-font-icon-close"] {
             color: $dc-red10;
         }
     }
@@ -180,18 +180,18 @@
 //  = WARNING
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-msg--warning {
+.dc-msg--warning {
     border-color: darken($dc-yellow70, 35%);
     background: rgba($dc-yellow70, .5);
     color: $dc-yellow20;
 
-    .#{$dc-prefix}-font-icon-msg-warning {
+    .dc-font-icon-msg-warning {
         color: $dc-yellow30;
         font-size: 2.75rem;
     }
 
-    .#{$dc-prefix}-msg__close {
-        &:hover [class^="#{$dc-prefix}-font-icon-close"] {
+    .dc-msg__close {
+        &:hover [class^="dc-font-icon-close"] {
             color: $dc-yellow10;
         }
     }
@@ -200,15 +200,15 @@
 //  = ANIMATION
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-msg--is-animating {
-    animation: #{$dc-prefix}-notify 1.6s linear 1;
+.dc-msg--is-animating {
+    animation: dc-notify 1.6s linear 1;
 }
 
-.#{$dc-prefix}-msg--is-animating-long {
-    animation: #{$dc-prefix}-notify-long 6s linear 1;
+.dc-msg--is-animating-long {
+    animation: dc-notify-long 6s linear 1;
 }
 
-@keyframes #{$dc-prefix}-notify {
+@keyframes dc-notify {
     0% {
         transform: translateY(-100%);
     }
@@ -226,7 +226,7 @@
     }
 }
 
-@keyframes #{$dc-prefix}-toparea {
+@keyframes dc-toparea {
     10% {
         -webkit-filter: blur(4px);
     }
@@ -236,7 +236,7 @@
     }
 }
 
-@keyframes #{$dc-prefix}-notify-long {
+@keyframes dc-notify-long {
     0% {
         transform: translateY(-100%);
     }
@@ -254,7 +254,7 @@
     }
 }
 
-@keyframes #{$dc-prefix}-toparea-long {
+@keyframes dc-toparea-long {
     1% {
         -webkit-filter: blur(4px);
     }

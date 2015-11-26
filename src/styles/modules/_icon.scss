@@ -7,7 +7,7 @@
 //  = BASE
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-icon {
+.dc-icon {
     display: inline-block;
     margin-bottom: $dc-font250;
     padding: $dc-space100;
@@ -15,13 +15,13 @@
     background-color: $dc-white;
     text-align: center;
 
-    .#{$dc-prefix}-svg {
+    .dc-svg {
         margin-bottom: $dc-font50;
         vertical-align: middle;
     }
 }
 
-.#{$dc-prefix}-icon--interactive {
+.dc-icon--interactive {
     &:hover {
         [fill^='#'] {
             fill: $dc-blue30;
@@ -39,7 +39,7 @@
     }
 }
 
-.#{$dc-prefix}-icon--alternate {
+.dc-icon--alternate {
     &:hover {
         [fill^='#'] {
             fill: $dc-orange40;

@@ -5,11 +5,11 @@
 //  ---------------------------------------------------------------------------
 
 // scss-lint:disable ImportantRule
-.#{$dc-prefix}-is-collapsed {
+.dc-is-collapsed {
     height: 0 !important;
 }
 
-.#{$dc-prefix}-is-expanded {
+.dc-is-expanded {
     height: auto !important;
 }
 
@@ -19,11 +19,11 @@
 //
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-is-hidden {
+.dc-is-hidden {
     display: none !important;
 }
 
-.#{$dc-prefix}-is-shown {
+.dc-is-shown {
     display: block !important;
 }
 
@@ -33,11 +33,11 @@
 //
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-is-invisible {
+.dc-is-invisible {
     opacity: 0;
 }
 
-.#{$dc-prefix}-is-visible {
+.dc-is-visible {
     opacity: 1;
 }
 
@@ -47,7 +47,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-is-inline {
+.dc-is-inline {
     display: inline-block !important;
 }
 
@@ -57,7 +57,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-is-fixed {
+.dc-is-fixed {
     position: fixed !important;
 }
 
@@ -67,7 +67,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-is-important {
+.dc-is-important {
     background: $dc-yellow60 !important;
 }
 
@@ -78,7 +78,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-less-important {
+.dc-less-important {
     color: $dc-gray50 !important;
 }
 
@@ -88,14 +88,14 @@
 //
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-text-left {
+.dc-text-left {
     text-align: left;
 }
 
-.#{$dc-prefix}-text-center {
+.dc-text-center {
     text-align: center;
 }
 
-.#{$dc-prefix}-text-right {
+.dc-text-right {
     text-align: right;
 }

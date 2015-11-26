@@ -19,17 +19,17 @@
 //
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-cf:before,
-.#{$dc-prefix}-cf:after {
+.dc-cf:before,
+.dc-cf:after {
     display: table; // 2
     content: " "; // 1
 }
 
-.#{$dc-prefix}-cf:after {
+.dc-cf:after {
     clear: both;
 }
 
 // scss-lint:disable PropertySpelling
-.#{$dc-prefix}-cf {
+.dc-cf {
     *zoom: 1; // 3
 }

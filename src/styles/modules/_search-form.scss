@@ -7,13 +7,13 @@
 //  = INPUT & BUTTON
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-search-form {
+.dc-search-form {
     display: inline-block;
     position: relative;
     margin-bottom: $dc-space150;
 }
 
-.#{$dc-prefix}-search-form__input {
+.dc-search-form__input {
 
     -webkit-appearance: none;
 
@@ -23,7 +23,7 @@
     }
 }
 
-.#{$dc-prefix}-search-form__btn {
+.dc-search-form__btn {
     position: absolute;
     top: 0;
     right: 0;
@@ -34,8 +34,8 @@
     // scss-lint:enable BorderZero
     background: transparent;
 
-    .#{$dc-prefix}-svg,
-    .#{$dc-prefix}-img {
+    .dc-svg,
+    .dc-img {
         display: block;
     }
 
@@ -58,7 +58,7 @@
 //  = AUTOSUGGEST
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-suggest {
+.dc-suggest {
     position: absolute;
     top: calc(100% - 1px);
     left: 0;
@@ -79,7 +79,7 @@
     pointer-events: none;
 }
 
-.#{$dc-prefix}-suggest__link {
+.dc-suggest__link {
     display: block;
     padding: 0 $dc-space75;
     color: $dc-text-color;
@@ -93,7 +93,7 @@
     }
 }
 
-.#{$dc-prefix}-search-form__input:focus ~ .#{$dc-prefix}-suggest {
+.dc-search-form__input:focus ~ .dc-suggest {
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;

@@ -4,17 +4,19 @@
 //
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-table {
+.dc-table {
+    width: 100%;
     border-radius: 2px;
     background: $dc-white;
+    text-align: left;
 }
 
-.#{$dc-prefix}-table__item-title {
+.dc-table__item-title {
     font-weight: $dc-bold-font-weight;
 }
 
 // FIXME!
-.#{$dc-prefix}-status {
+.dc-status {
     &:before {
         display: inline-block;
         width: $dc-space75;
@@ -25,46 +27,46 @@
     }
 }
 
-.#{$dc-prefix}-status--online:before {
+.dc-status--online:before {
     background: $dc-green30;
 }
 
-.#{$dc-prefix}-status--offline:before {
+.dc-status--offline:before {
     background: $dc-gray50;
 }
 
 //  = TABLE
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-table__tr {
+.dc-table__tr {
     // FIXME:  Prefer using placeholder selectors (e.g. %some-placeholder) with @extend
     // scss-lint:disable PlaceholderInExtend
-    @extend .#{$dc-prefix}-cf;
+    @extend .dc-cf;
     // scss-lint:enable PlaceholderInExtend
     cursor: pointer;
 }
 
-.#{$dc-prefix}-table__actions-wrapper {
+.dc-table__actions-wrapper {
     display: none;
 }
 
 @include breakpoint(0 $dc-huge-width - .1) {
-    .#{$dc-prefix}-table,
-    .#{$dc-prefix}-table__thead,
-    .#{$dc-prefix}-table__tbody,
-    .#{$dc-prefix}-table__tr,
-    .#{$dc-prefix}-table__th,
-    .#{$dc-prefix}-table__td {
+    .dc-table,
+    .dc-table__thead,
+    .dc-table__tbody,
+    .dc-table__tr,
+    .dc-table__th,
+    .dc-table__td {
         display: block;
         width: 100%;
         font-weight: $dc-normal-font-weight;
     }
 
-    .#{$dc-prefix}-table__thead > tr {
+    .dc-table__thead > tr {
         display: none;
     }
 
-    .#{$dc-prefix}-table__tr {
+    .dc-table__tr {
         position: relative;
         padding: $dc-space100 0;
         border-bottom: 1px solid $dc-gray70;
@@ -74,7 +76,7 @@
         }
     }
 
-    .#{$dc-prefix}-table__td {
+    .dc-table__td {
         padding-left: calc(30% + 12px);
         text-align: left;
 
@@ -92,7 +94,7 @@
         }
     }
 
-    .#{$dc-prefix}-page--dashboard .#{$dc-prefix}-table__td:last-child {
+    .dc-page--dashboard .dc-table__td:last-child {
         // FIXME
         padding-left: calc(30% + 12px);
 
@@ -102,25 +104,20 @@
     }
 }
 
-.#{$dc-prefix}-table {
-    width: 100%;
-    text-align: left;
-}
-
-.#{$dc-prefix}-table__th {
+.dc-table__th {
     font-weight: $dc-bold-font-weight;
     text-transform: uppercase;
 }
 
-.#{$dc-prefix}-table__td {
+.dc-table__td {
     font-weight: $dc-normal-font-weight;
 }
 
-.#{$dc-prefix}-table__actions-toggle {
+.dc-table__actions-toggle {
     display: none;
 }
 
-.#{$dc-prefix}-table__actions-label {
+.dc-table__actions-label {
     display: inline;
     color: $dc-link-color;
     cursor: pointer;
@@ -130,11 +127,11 @@
     }
 }
 
-:checked + .#{$dc-prefix}-table__actions-label {
+:checked + .dc-table__actions-label {
     color: $dc-link-color-hover;
 }
 
-.#{$dc-prefix}-table__actions {
+.dc-table__actions {
     display: none;
     position: absolute;
     top: 100%;
@@ -176,25 +173,25 @@
     }
 }
 
-.#{$dc-prefix}-table__actions-toggle:checked ~ .table__actions {
+.dc-table__actions-toggle:checked ~ .table__actions {
     display: inline-block;
 }
 
-.#{$dc-prefix}-table__action {
+.dc-table__action {
     padding: 0 $dc-space100;
 }
 
-.#{$dc-prefix}-table__action--disabled,
-.#{$dc-prefix}-table__action--disabled a,
-.touch .#{$dc-prefix}-table__action--disabled a:active,
-.no-touch .#{$dc-prefix}-table__action--disabled a:hover {
+.dc-table__action--disabled,
+.dc-table__action--disabled a,
+.touch .dc-table__action--disabled a:active,
+.no-touch .dc-table__action--disabled a:hover {
     color: $dc-gray60;
     text-decoration: none;
     cursor: default;
 }
 
 @include breakpoint($dc-large-width $dc-huge-width - .1) {
-    .#{$dc-prefix}-table__td {
+    .dc-table__td {
         position: relative;
         width: 50%;
         padding-left: calc(16% + 12px);
@@ -220,42 +217,42 @@
 }
 
 @include breakpoint($dc-huge-width) {
-    .#{$dc-prefix}-table__actions-wrapper {
+    .dc-table__actions-wrapper {
         display: block;
         position: relative;
         padding: .4rem 0;
     }
 
-    .#{$dc-prefix}-table__actions {
+    .dc-table__actions {
         padding: $dc-space50 $dc-space50 $dc-space50 0;
         line-height: 1;
     }
 
-    .#{$dc-prefix}-table__action {
+    .dc-table__action {
         display: inline-block;
         margin-left: $dc-space50;
         padding: 0;
     }
 
-    .#{$dc-prefix}-table__action-group-start {
+    .dc-table__action-group-start {
         padding-left: $dc-space100;
     }
 
-    .#{$dc-prefix}-table__action-group-end {
+    .dc-table__action-group-end {
         padding-right: $dc-space100;
     }
 
-    .#{$dc-prefix}-table__tr {
+    .dc-table__tr {
         border-bottom: 1px solid $dc-gray70;
     }
 
-    .#{$dc-prefix}-table__tbody > .table__tr {
+    .dc-table__tbody > .table__tr {
         &:hover {
             background: desaturate(lighten($dc-blue70, 12%), 10%);
         }
     }
 
-    body:not(.is-admin) .#{$dc-prefix}-table__tbody > .#{$dc-prefix}-table__tr--is-in-review {
+    body:not(.is-admin) .dc-table__tbody > .dc-table__tr--is-in-review {
         // FIXME
         &:hover {
             background: transparent;
@@ -263,8 +260,8 @@
         }
     }
 
-    .#{$dc-prefix}-table__th,
-    .#{$dc-prefix}-table__td {
+    .dc-table__th,
+    .dc-table__td {
         padding: $dc-space50 $dc-space50 / 2;
         line-height: 1.5;
 
@@ -277,18 +274,18 @@
         }
     }
 
-    .#{$dc-prefix}-page--dashboard .#{$dc-prefix}-table__th:last-child, // FIXME
-    .#{$dc-prefix}-page--dashboard .#{$dc-prefix}-table__td:last-child {
+    .dc-page--dashboard .dc-table__th:last-child, // FIXME
+    .dc-page--dashboard .dc-table__td:last-child {
         text-align: left;
     }
 
-    .#{$dc-prefix}-table__th {
+    .dc-table__th {
         @include breakpoint(1150px) {
             padding: $dc-space50 $dc-space100;
         }
     }
 
-    .#{$dc-prefix}-table__td {
+    .dc-table__td {
         padding-top: $dc-space75;
         padding-bottom: $dc-space75;
         white-space: nowrap;
@@ -300,13 +297,13 @@
         }
     }
 
-    .#{$dc-prefix}-table__item-title {
+    .dc-table__item-title {
         font-weight: $dc-normal-font-weight;
         white-space: normal;
     }
 }
 
-.touch .#{$dc-prefix}-page--dashboard .#{$dc-prefix}-table__tr {
+.touch .dc-page--dashboard .dc-table__tr {
     // FIXME
     position: relative;
 

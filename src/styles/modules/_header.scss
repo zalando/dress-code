@@ -10,7 +10,7 @@ $dc-header-accent-color: $dc-orange40;
 //  = HEADER
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-header {
+.dc-header {
     display: flex;
     position: fixed;
     top: 0;
@@ -23,7 +23,7 @@ $dc-header-accent-color: $dc-orange40;
     background: $dc-white;
     z-index: 900;
 
-    .#{$dc-prefix}-logo {
+    .dc-logo {
         max-height: $dc-touch-size - $dc-space150;
         padding-bottom: 2px;
     }
