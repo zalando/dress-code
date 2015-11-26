@@ -204,63 +204,63 @@ $dc-box-shadow100: 0 1px 1px $dc-box-shadow-color;
 
 // Base is 16px at this point
 
-	// Feature phone: 						0px
-	$dc-tiny-width: 							0;
+// Feature phone: 0px
+$dc-tiny-width: 0;
 
-	// Smartphone: 								320px
-	$dc-small-width: 							20em;
+// Smartphone: 320px
+$dc-small-width: 20em;
 
-	// Smartphone landscape: 			480px
-	$dc-medium-width: 						30em;
+// Smartphone landscape: 480px
+$dc-medium-width: 30em;
 
-	// Tablet: 										600px
-	$dc-large-width: 							37.5em;
+// Tablet: 600px
+$dc-large-width: 37.5em;
 
-	// Tablet landscape: 					1024px
-	$dc-huge-width: 							64em;
+// Tablet landscape: 1024px
+$dc-huge-width: 64em;
 
-	// Desktop: 									1280px
-	$dc-giant-width: 							80em;
+// Desktop: 1280px
+$dc-giant-width: 80em;
 
-	// Desktop large: 						1600px
-	$dc-monstrous-width: 					100em;
+// Desktop large: 1600px
+$dc-monstrous-width: 100em;
 
 
 
 //  = GRID LAYOUTS
 //  ---------------------------------------------------------------------------
 
-	$dc-tiny: (
-	  columns: 12,
-	  gutters: 1.5,
-	);
+$dc-tiny: (
+  columns: 12,
+  gutters: 1.5
+);
 
-	$dc-small: (
-	  columns: 12,
-	  gutters: 11/12,
-	);
+$dc-small: (
+  columns: 12,
+  gutters: 11 / 12
+);
 
-	$dc-medium: (
-	  columns: 12,
-	  gutters: 1.5,
-	);
+$dc-medium: (
+  columns: 12,
+  gutters: 1.5
+);
 
-	$dc-large: (
-	  columns: 12,
-	  gutters: 1,
-	);
+$dc-large: (
+  columns: 12,
+  gutters: 1
+);
 
-	$dc-huge: (
-	  columns: 12,
-	  gutters: 2/5,
-	);
+$dc-huge: (
+  columns: 12,
+  gutters: 2 / 5
+);
 
-	$dc-giant: (
-	  columns: 12,
-	  gutters: 3/7,
-	);
+$dc-giant: (
+  columns: 12,
+  gutters: 3 / 7
+);
 
-	$dc-monstrous: (
-	  columns: 12,
-	  gutters: 4/11,
-	);
+$dc-monstrous: (
+  columns: 12,
+  gutters: 4 / 11
+);

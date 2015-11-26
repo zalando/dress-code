@@ -12,7 +12,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-body--demo-breakpoints {
+.dc-body--demo-breakpoints {
     @include dc-debugmessage("Tiny \2014 0-320px", $dc-red60);
 
     @include breakpoint($dc-small-width) {
@@ -40,7 +40,7 @@
     }
 }
 
-.#{$dc-prefix}-is-show-breakpoints .#{$dc-prefix}-body--demo-breakpoints {
+.dc-is-show-breakpoints .dc-body--demo-breakpoints {
     &::before {
         transform: translateY(-100%);
         opacity: 1;

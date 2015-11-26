@@ -12,10 +12,6 @@ $dc-header-accent-color: $dc-orange40;
 
 .dc-header {
     display: flex;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     align-items: center;
     height: $dc-header-height;
     padding: $dc-space75 $dc-space100;
@@ -27,8 +23,7 @@ $dc-header-accent-color: $dc-orange40;
         max-height: $dc-touch-size - $dc-space150;
         padding-bottom: 2px;
 
-        ~ *
-        {
+        ~ * {
             margin-left: $dc-space150;
         }
     }
