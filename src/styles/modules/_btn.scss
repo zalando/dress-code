@@ -7,24 +7,23 @@
 //  = BASE
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-btn {
+.dc-btn {
     display: inline-block;
     margin-right: $dc-space50;
     margin-bottom: $dc-space100;
     padding: $dc-space100 - .1 $dc-space100;
-    line-height: $dc-space100;
-    background: linear-gradient($dc-white, darken($dc-white, 7%));
+    transition: box-shadow .2s linear, border-color .2s linear;
     border: 1px solid $dc-gray50;
     border-radius: $dc-radius100;
-    text-transform: capitalize;
-    text-decoration: none;
-    text-align: center;
-    font-weight: $dc-normal-font-weight;
+    background: linear-gradient($dc-white, darken($dc-white, 7%));
     color: $dc-gray10;
+    font-weight: $dc-normal-font-weight;
+    line-height: $dc-space100;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
     box-shadow: 0 1px 1px transparent;
     cursor: default;
-
-    transition: box-shadow .2s linear, border-color .2s linear;
 
     &:focus {
         outline: 0;
@@ -34,29 +33,29 @@
     }
 }
 
-.no-touch .#{$dc-prefix}-btn:hover {
-    box-shadow: 0 1px 1px rgba($dc-black, .2);
+.no-touch .dc-btn:hover {
+    outline: 0;
     background: linear-gradient($dc-white, darken($dc-white, 5%));
     color: $dc-gray10;
     text-decoration: none;
-    outline: 0;
+    box-shadow: 0 1px 1px rgba($dc-black, .2);
 }
 
-.touch .#{$dc-prefix}-btn:active,
-.no-touch .#{$dc-prefix}-btn:active {
+.touch .dc-btn:active,
+.no-touch .dc-btn:active {
     background: darken($dc-white, 4%);
-    box-shadow: inset 0 1px 1px rgba($dc-black, .1);
     color: $dc-gray10;
     text-decoration: none;
+    box-shadow: inset 0 1px 1px rgba($dc-black, .1);
 }
 
 //  = ICON BUTTONS
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-btn--icon {
-    padding: 0;
+.dc-btn--icon {
     width: $dc-touch-size;
     height: $dc-touch-size;
+    padding: 0;
 
     svg {
         position: relative;
@@ -72,7 +71,7 @@
         fill: $dc-text-color;
     }
 
-    &.#{$dc-prefix}-btn--primary {
+    &.dc-btn--primary {
         [stroke^='#'] {
             stroke: $dc-white;
         }
@@ -82,7 +81,7 @@
         }
     }
 
-    &.#{$dc-prefix}-btn--destroy:hover {
+    &.dc-btn--destroy:hover {
         [stroke^='#'] {
             stroke: $dc-white;
         }
@@ -92,7 +91,7 @@
         }
     }
 
-    &.#{$dc-prefix}-btn--disabled {
+    &.dc-btn--disabled {
         [stroke^='#'] {
             stroke: $dc-gray50;
         }
@@ -106,9 +105,9 @@
 //  = PRIMARY
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-btn--primary {
-    background: linear-gradient($dc-blue40, darken($dc-blue40, 7%));
+.dc-btn--primary {
     border-color: darken($dc-blue40, 7%);
+    background: linear-gradient($dc-blue40, darken($dc-blue40, 7%));
     color: $dc-white;
 
     &:focus {
@@ -117,8 +116,8 @@
     }
 }
 
-.touch .#{$dc-prefix}-btn--primary:active,
-.no-touch .#{$dc-prefix}-btn--primary:hover {
+.touch .dc-btn--primary:active,
+.no-touch .dc-btn--primary:hover {
     background: lighten($dc-blue40, 3%);
     color: $dc-white;
 }
@@ -126,76 +125,81 @@
 //  = DESTROY
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-btn--destroy {
+.dc-btn--destroy {
     transition: box-shadow .2s linear;
 }
 
-.touch .#{$dc-prefix}-btn--destroy:active,
-.no-touch .#{$dc-prefix}-btn--destroy:hover {
-    color: $dc-white;
-    background: $dc-red50;
+.touch .dc-btn--destroy:active,
+.no-touch .dc-btn--destroy:hover {
     border-color: $dc-red40;
+    background: $dc-red50;
+    color: $dc-white;
 }
 
 //  = DISABLED
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-btn--disabled,
-.touch .#{$dc-prefix}-btn--disabled:active,
-.no-touch .#{$dc-prefix}-btn--disabled:hover {
-    color: $dc-gray50;
-    background: transparent;
+.dc-btn--disabled,
+.touch .dc-btn--disabled:active,
+.no-touch .dc-btn--disabled:hover {
     border-color: $dc-gray60;
+    background: transparent;
+    color: $dc-gray50;
     box-shadow: none;
 }
 
 //  = BUTTON GROUPS
 //  ---------------------------------------------------------------------------
 
+.dc-btn-group {
+    // FIXME: Prefer using placeholder selectors (e.g. %some-placeholder) with @extend
+    // scss-lint:disable PlaceholderInExtend
+    @extend .dc-cf;
+    // scss-lint:enable PlaceholderInExtend
 
-.#{$dc-prefix}-btn-group {
-    @extend .#{$dc-prefix}-cf;
-
-    .#{$dc-prefix}-btn {
-        float: left;
+    .dc-btn {
         margin-right: 0;
-        border-radius: 0;
+        float: left;
         border-right-width: 0;
+        border-radius: 0;
 
         &:first-child {
             border-radius: $dc-radius100 0 0 $dc-radius100;
         }
 
         &:last-child {
-            border-radius: 0 $dc-radius100 $dc-radius100 0;
             border-right-width: 1px;
+            border-radius: 0 $dc-radius100 $dc-radius100 0;
         }
 
-        &.#{$dc-prefix}-btn--primary {
+        &.dc-btn--primary {
             border-color: darken($dc-blue40, 7%);
-
-            + .dc-btn {
-              border-left-color: darken($dc-blue40, 7%);
-            }
         }
+
+        // scss-lint:disable MergeableSelector
+        &.dc-btn--primary + .dc-btn {
+            border-left-color: darken($dc-blue40, 7%);
+        }
+        // scss-lint:enable MergeableSelector
     }
 
-    .#{$dc-prefix}-btn-group-row & {
-      float: left;
-      margin-right: 1.6rem;
-
+    .dc-btn-group-row & {
+        margin-right: 1.6rem;
+        float: left;
     }
-
 }
 
-.#{$dc-prefix}-btn-group-row {
-  @extend .#{$dc-prefix}-cf;
+.dc-btn-group-row {
+    // FIXME: Prefer using placeholder selectors (e.g. %some-placeholder) with @extend
+    // scss-lint:disable PlaceholderInExtend
+    @extend .dc-cf;
+    // scss-lint:enable PlaceholderInExtend
 }
 
 //  = CREATE PAGE
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-btn--create-page {
+.dc-btn--create-page {
     display: none;
 
     @include breakpoint($dc-huge-width) {
@@ -206,16 +210,16 @@
 //  = SMALL BUTTON
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-btn--small {
+.dc-btn--small {
     padding: $dc-space50 $dc-space75;
     font-size: $dc-font50;
     text-transform: uppercase;
 }
 
-.#{$dc-prefix}-btn--inline {
+.dc-btn--inline {
     margin-bottom: 0;
 
-    + .#{$dc-prefix}-btn--inline {
-        margin-left: .2; // Account for 4px inline margin
+    + .dc-btn--inline {
+        margin-left: .2rem; // Account for 4px inline margin
     }
 }
