@@ -1,11 +1,13 @@
 scss_files: 'src/styles/**/*.scss'
+exclude: 'src/styles/_generated/**'
+
 
 linters:
   StringQuotes:
     enabled: true
     style: double_quotes
   SelectorFormat:
-    convention: strict_BEM
+    convention: hyphenated_BEM
   PropertySortOrder:
     order: smacss
   Indentation:

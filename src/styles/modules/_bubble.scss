@@ -4,66 +4,60 @@
 //
 //  ---------------------------------------------------------------------------
 
-
 //  = BASE
 //  ---------------------------------------------------------------------------
 
-		.#{$dc-prefix}-bubble-wrap
-		{
-			position:relative;
+.#{$dc-prefix}-bubble-wrap {
+    position: relative;
 
-			.#{$dc-prefix}-input
-			{
-				display:none;
-			}
+    .#{$dc-prefix}-input {
+        display: none;
+    }
 
-			.#{$dc-prefix}-bubble-wrap__inner
-			{
-				position:absolute;
-				left: 6.5;
-				z-index:999;
-			}
-		}
+    .#{$dc-prefix}-bubble-wrap__inner {
+        position: absolute;
+        left: 6.5;
+        z-index: 999;
+    }
+}
 
-		.#{$dc-prefix}-bubble
-		{
-			position:absolute;
-			top: $dc-space150;
-			left: -17.2;
-			padding: $dc-space50 $dc-space75;
-			background:rgba(lighten($dc-black, 5%), .85);
-			border-radius:2px;
-			color:$dc-gray70;
-			pointer-events:none;
-			opacity:0;
-			transform: translateY(-10%);
-			transition: transform .3s ease-out, opacity .2s linear;
+.#{$dc-prefix}-bubble {
+    position: absolute;
+    top: $dc-space150;
+    left: -17.2;
+    padding: $dc-space50 $dc-space75;
+    transform: translateY(-10%);
+    transition: transform .3s ease-out, opacity .2s linear;
+    border-radius: 2px;
+    background: rgba(lighten($dc-black, 5%), .85);
+    color: $dc-gray70;
+    opacity: 0;
+    pointer-events: none;
 
-			&:after
-			{
-				bottom: 100%;
-				left: 50%;
-				border: solid transparent;
-				content: " ";
-				height: 0;
-				width: 0;
-				position: absolute;
-				pointer-events: none;
-				border-color: rgba(0, 0, 0, 0);
-				border-bottom-color: rgba(lighten($dc-black, 5%), .85);
-				border-width: 6px;
-				margin-left: -6px;
-			}
-		}
+    &:after {
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin-left: -6px;
+        border: solid transparent;
+        border-width: 6px;
+        // scss-lint:disable ColorVariable
+        border-color: rgba(0, 0, 0, 0);
+        // scss-lint:enable ColorVariable
+        border-bottom-color: rgba(lighten($dc-black, 5%), .85);
+        content: " ";
+        pointer-events: none;
+    }
+}
 
-		:checked + .#{$dc-prefix}-label .#{$dc-prefix}-bubble
-		{
-			opacity:1;
-			transform: translateY(0);
-		}
+:checked + .#{$dc-prefix}-label .#{$dc-prefix}-bubble {
+    transform: translateY(0);
+    opacity: 1;
+}
 
-		.#{$dc-prefix}-bubble__bd
-		{
-			font-weight:300;
-			text-transform:none;
-		}
+.#{$dc-prefix}-bubble__bd {
+    font-weight: 300;
+    text-transform: none;
+}

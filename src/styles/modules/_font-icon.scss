@@ -1,8 +1,9 @@
 [class^="dc-font-icon-"] {
     color: $dc-blue40;
 
-    &.dc-font-icon--interactive  {
+    &.dc-font-icon--interactive {
         cursor: pointer;
+
         &:hover {
             color: $dc-blue20;
         }
