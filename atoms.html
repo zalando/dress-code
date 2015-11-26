@@ -13,13 +13,12 @@
 	<!-- toolkit styles -->
 	<link rel="stylesheet" href="assets/toolkit/styles/toolkit.css">
 	<!-- /toolkit styles -->
-	<!-- <script src="/assets/toolkit/scripts/modernizr-custom.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
     <link rel="icon" href="favicon.ico">
 </head>
-<body class="dc-body">
-		<header class="dc-header">
+<body class="dc-body dc-body--demo-breakpoints">
+		<header class="dc-header f-header">
 			<img class="dc-logo" src="assets/toolkit/img/logo.svg" alt="Zalando Logo">
 			<!-- <div class="f-control-bar"> -->
 				<div class="f-control f-menu-toggle">
@@ -32,7 +31,7 @@
 				<a href class="dc-link js-toggle-breakpoints">Breakpoints</a>
 			</div>
 			<div class="f-control f-menu-toggle">
-				<a href class="dc-link js-toggle-grid">Grid</a>
+				<a href="templates/grid.html" class="dc-link">Grid</a>
 			</div>
             <div class="f-control">
                 <a class="dc-link" href="https://github.com/zalando/dress-code/" target="_blank">Github</a>
@@ -94,6 +93,9 @@
 							<a href="atoms.html#checkboxes">Checkboxes</a>
 						</li>
 						<li>
+							<a href="atoms.html#grid">Grid</a>
+						</li>
+						<li>
 							<a href="atoms.html#icons">Icons</a>
 						</li>
 						<li>
@@ -148,6 +150,14 @@
 					</ul>
 				</li>
 		
+				<li>
+					<a href="templates.html" class="f-menu__heading">Templates</a>
+					<ul>
+						<li>
+							<a href="templates/grid.html">Grid</a>
+						</li>
+					</ul>
+				</li>
 		
 				<li>
 					<a href="docs.html" class="f-menu__heading">Docs</a>
@@ -680,6 +690,105 @@
 </div>
 
 		</div>
+
+</div>
+
+
+<div class="f-item-group" id="grid">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+		<h2 class="dc-h2 f-item-heading">Grid</h2>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Alignment is key.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-grid">
+	<div class="dc-small-span6 dc-large-span4 dc-huge-span2 dc-giant-span3 dc-monstrous-span2 dc-span--demo">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis tempore id labore nemo praesentium, provident assumenda quod neque dolores excepturi rem veritatis atque libero officia blanditiis, dolorum nam quia dolorem.
+	</div>
+	<div class="[ dc-small-span6 dc-small-last ] dc-medium-last dc-large-span4 dc-huge-span2 dc-giant-span3 dc-monstrous-span2 dc-span--demo">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ad optio enim quibusdam ullam illum laboriosam magnam mollitia excepturi sunt nostrum amet.
+	</div>
+	<div class="dc-small-span6 [ dc-large-span4 dc-large-last ] dc-huge-span2 dc-giant-span3 dc-monstrous-span2 dc-span--demo">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nobis beatae explicabo molestiae eius nisi laudantium, reprehenderit est unde aperiam libero ipsum eveniet fugiat quae atque, error vitae consequatur, perspiciatis.
+	</div>
+	<div class="[ dc-small-span6 dc-small-last ] dc-medium-last dc-large-span4 dc-huge-span2 [ dc-giant-span3 dc-giant-last ] dc-monstrous-span2 dc-span--demo">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, obcaecati!
+	</div>
+	<div class="dc-small-span6 dc-large-span4 dc-huge-span2 dc-giant-span6 dc-monstrous-span2 dc-span--demo">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam consectetur distinctio excepturi blanditiis dolores nulla sunt, itaque, quos est molestias veritatis ipsam. Sequi nihil, beatae ipsam, voluptatem doloremque recusandae amet!
+	</div>
+	<div class="[ dc-small-span6 dc-small-last ] dc-medium-last [ dc-large-span4 dc-large-last ] [ dc-huge-span2 dc-huge-last ] [ dc-giant-span6 dc-giant-last ] [ dc-monstrous-span2 dc-monstrous-last ] dc-span--demo">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, consequatur. Inventore quibusdam, doloribus nostrum fugit maxime sequi repudiandae ipsam.
+	</div>
+</div>
+
+<div class="dc-grid">
+	<div class="dc-small-span8 dc-large-span3 dc-huge-span2 dc-giant-span3 dc-monstrous-span2 dc-span--demo">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis tempore id labore nemo praesentium, provident assumenda quod neque dolores excepturi rem veritatis atque libero officia blanditiis, dolorum nam quia dolorem.
+	</div>
+	<div class="[ dc-small-span4 dc-small-last ] dc-medium-last dc-large-span3 dc-huge-span2 dc-giant-span3 dc-monstrous-span2 dc-span--demo">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ad optio enim quibusdam ullam illum laboriosam magnam mollitia excepturi sunt nostrum amet.
+	</div>
+	<div class="dc-small-span6 dc-large-span3 dc-huge-span2 dc-giant-span3 dc-monstrous-span2 dc-span--demo">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nobis beatae explicabo molestiae eius nisi laudantium, reprehenderit est unde aperiam libero ipsum eveniet fugiat quae atque, error vitae consequatur, perspiciatis.
+	</div>
+	<div class="[ dc-small-span6 dc-small-last ] dc-medium-last [ dc-large-span3 dc-large-last ] dc-huge-span2 [ dc-giant-span3 dc-giant-last ] dc-monstrous-span2 dc-span--demo">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, obcaecati!
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-grid&quot;&gt;
+	&lt;div class=&quot;dc-small-span6 dc-large-span4 dc-huge-span2 dc-giant-span3 dc-monstrous-span2 dc-span--demo&quot;&gt;
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis tempore id labore nemo praesentium, provident assumenda quod neque dolores excepturi rem veritatis atque libero officia blanditiis, dolorum nam quia dolorem.
+	&lt;/div&gt;
+	&lt;div class=&quot;[ dc-small-span6 dc-small-last ] dc-medium-last dc-large-span4 dc-huge-span2 dc-giant-span3 dc-monstrous-span2 dc-span--demo&quot;&gt;
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ad optio enim quibusdam ullam illum laboriosam magnam mollitia excepturi sunt nostrum amet.
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-small-span6 [ dc-large-span4 dc-large-last ] dc-huge-span2 dc-giant-span3 dc-monstrous-span2 dc-span--demo&quot;&gt;
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nobis beatae explicabo molestiae eius nisi laudantium, reprehenderit est unde aperiam libero ipsum eveniet fugiat quae atque, error vitae consequatur, perspiciatis.
+	&lt;/div&gt;
+	&lt;div class=&quot;[ dc-small-span6 dc-small-last ] dc-medium-last dc-large-span4 dc-huge-span2 [ dc-giant-span3 dc-giant-last ] dc-monstrous-span2 dc-span--demo&quot;&gt;
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, obcaecati!
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-small-span6 dc-large-span4 dc-huge-span2 dc-giant-span6 dc-monstrous-span2 dc-span--demo&quot;&gt;
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam consectetur distinctio excepturi blanditiis dolores nulla sunt, itaque, quos est molestias veritatis ipsam. Sequi nihil, beatae ipsam, voluptatem doloremque recusandae amet!
+	&lt;/div&gt;
+	&lt;div class=&quot;[ dc-small-span6 dc-small-last ] dc-medium-last [ dc-large-span4 dc-large-last ] [ dc-huge-span2 dc-huge-last ] [ dc-giant-span6 dc-giant-last ] [ dc-monstrous-span2 dc-monstrous-last ] dc-span--demo&quot;&gt;
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, consequatur. Inventore quibusdam, doloribus nostrum fugit maxime sequi repudiandae ipsam.
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dc-grid&quot;&gt;
+	&lt;div class=&quot;dc-small-span8 dc-large-span3 dc-huge-span2 dc-giant-span3 dc-monstrous-span2 dc-span--demo&quot;&gt;
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis tempore id labore nemo praesentium, provident assumenda quod neque dolores excepturi rem veritatis atque libero officia blanditiis, dolorum nam quia dolorem.
+	&lt;/div&gt;
+	&lt;div class=&quot;[ dc-small-span4 dc-small-last ] dc-medium-last dc-large-span3 dc-huge-span2 dc-giant-span3 dc-monstrous-span2 dc-span--demo&quot;&gt;
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ad optio enim quibusdam ullam illum laboriosam magnam mollitia excepturi sunt nostrum amet.
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-small-span6 dc-large-span3 dc-huge-span2 dc-giant-span3 dc-monstrous-span2 dc-span--demo&quot;&gt;
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nobis beatae explicabo molestiae eius nisi laudantium, reprehenderit est unde aperiam libero ipsum eveniet fugiat quae atque, error vitae consequatur, perspiciatis.
+	&lt;/div&gt;
+	&lt;div class=&quot;[ dc-small-span6 dc-small-last ] dc-medium-last [ dc-large-span3 dc-large-last ] dc-huge-span2 [ dc-giant-span3 dc-giant-last ] dc-monstrous-span2 dc-span--demo&quot;&gt;
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, obcaecati!
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
 
 </div>
 
