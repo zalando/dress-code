@@ -351,52 +351,109 @@
 				<h3 class="dc-h3 f-item-heading">Button  Groups</h3>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Actions that logically belong together might be grouped with this component.</p>
+<p>Button group rows can be used to combine several button groups in one line.</p>
 <p>Alternatively, this component can be used as a radio button group where space is an issue.</p>
 <p>Please do not use the button group as tabs.</p>
 
 </div>
 <div class="f-item-preview">
 	<div class="dc-btn-group">
-	<button class="dc-btn">First</button>
-	<button class="dc-btn">Second</button>
-	<button class="dc-btn">Third</button>
-	<button class="dc-btn">Fourth</button>
+	<button class="dc-btn">One</button>
+	<button class="dc-btn">Two</button>
+	<button class="dc-btn">Three</button>
+	<button class="dc-btn">Four</button>
+</div>
+
+<div class="dc-btn-group-row">
+	<div class="dc-btn-group">
+		<button class="dc-btn">1</button>
+		<button class="dc-btn">2</button>
+		<button class="dc-btn">3</button>
+		<button class="dc-btn">4</button>
+	</div>
+	<div class="dc-btn-group">
+		<button class="dc-btn">5</button>
+		<button class="dc-btn">6</button>
+		<button class="dc-btn">7</button>
+	</div>
 </div>
 
 <div class="dc-btn-group">
 	<a href class="dc-btn dc-btn--primary">Primary</a>
-	<a href class="dc-btn">Secondary</a>
-	<a href class="dc-btn">Secondary</a>
+	<a href class="dc-btn">Standard</a>
+	<a href class="dc-btn">Standard</a>
 	<a href class="dc-btn dc-btn--destroy">Attention</a>
 </div>
 
 <div class="dc-btn-group">
-	<a href class="dc-btn dc-btn--small btn--primary">Primary</a>
-	<a href class="dc-btn dc-btn--small">Secondary</a>
-	<a href class="dc-btn dc-btn--small">Secondary</a>
+	<a href class="dc-btn dc-btn--small">Standard</a>
+	<a href class="dc-btn dc-btn--small">Standard</a>
+	<a href class="dc-btn dc-btn--small dc-btn--primary">Primary</a>
 	<a href class="dc-btn dc-btn--small dc-btn--destroy">Attention</a>
+</div>
+
+<div class="dc-btn-group-row">
+	<div class="dc-btn-group">
+		<button class="dc-btn dc-btn--small">1</button>
+		<button class="dc-btn dc-btn--small">2</button>
+		<button class="dc-btn dc-btn--small">3</button>
+		<button class="dc-btn dc-btn--small">4</button>
+	</div>
+	<div class="dc-btn-group">
+		<button class="dc-btn dc-btn--small">5</button>
+		<button class="dc-btn dc-btn--small">6</button>
+		<button class="dc-btn dc-btn--small">7</button>
+	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-btn-group&quot;&gt;
-	&lt;button class=&quot;dc-btn&quot;&gt;First&lt;/button&gt;
-	&lt;button class=&quot;dc-btn&quot;&gt;Second&lt;/button&gt;
-	&lt;button class=&quot;dc-btn&quot;&gt;Third&lt;/button&gt;
-	&lt;button class=&quot;dc-btn&quot;&gt;Fourth&lt;/button&gt;
+	&lt;button class=&quot;dc-btn&quot;&gt;One&lt;/button&gt;
+	&lt;button class=&quot;dc-btn&quot;&gt;Two&lt;/button&gt;
+	&lt;button class=&quot;dc-btn&quot;&gt;Three&lt;/button&gt;
+	&lt;button class=&quot;dc-btn&quot;&gt;Four&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dc-btn-group-row&quot;&gt;
+	&lt;div class=&quot;dc-btn-group&quot;&gt;
+		&lt;button class=&quot;dc-btn&quot;&gt;1&lt;/button&gt;
+		&lt;button class=&quot;dc-btn&quot;&gt;2&lt;/button&gt;
+		&lt;button class=&quot;dc-btn&quot;&gt;3&lt;/button&gt;
+		&lt;button class=&quot;dc-btn&quot;&gt;4&lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-btn-group&quot;&gt;
+		&lt;button class=&quot;dc-btn&quot;&gt;5&lt;/button&gt;
+		&lt;button class=&quot;dc-btn&quot;&gt;6&lt;/button&gt;
+		&lt;button class=&quot;dc-btn&quot;&gt;7&lt;/button&gt;
+	&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;dc-btn-group&quot;&gt;
 	&lt;a href class=&quot;dc-btn dc-btn--primary&quot;&gt;Primary&lt;/a&gt;
-	&lt;a href class=&quot;dc-btn&quot;&gt;Secondary&lt;/a&gt;
-	&lt;a href class=&quot;dc-btn&quot;&gt;Secondary&lt;/a&gt;
+	&lt;a href class=&quot;dc-btn&quot;&gt;Standard&lt;/a&gt;
+	&lt;a href class=&quot;dc-btn&quot;&gt;Standard&lt;/a&gt;
 	&lt;a href class=&quot;dc-btn dc-btn--destroy&quot;&gt;Attention&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;dc-btn-group&quot;&gt;
-	&lt;a href class=&quot;dc-btn dc-btn--small btn--primary&quot;&gt;Primary&lt;/a&gt;
-	&lt;a href class=&quot;dc-btn dc-btn--small&quot;&gt;Secondary&lt;/a&gt;
-	&lt;a href class=&quot;dc-btn dc-btn--small&quot;&gt;Secondary&lt;/a&gt;
+	&lt;a href class=&quot;dc-btn dc-btn--small&quot;&gt;Standard&lt;/a&gt;
+	&lt;a href class=&quot;dc-btn dc-btn--small&quot;&gt;Standard&lt;/a&gt;
+	&lt;a href class=&quot;dc-btn dc-btn--small dc-btn--primary&quot;&gt;Primary&lt;/a&gt;
 	&lt;a href class=&quot;dc-btn dc-btn--small dc-btn--destroy&quot;&gt;Attention&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dc-btn-group-row&quot;&gt;
+	&lt;div class=&quot;dc-btn-group&quot;&gt;
+		&lt;button class=&quot;dc-btn dc-btn--small&quot;&gt;1&lt;/button&gt;
+		&lt;button class=&quot;dc-btn dc-btn--small&quot;&gt;2&lt;/button&gt;
+		&lt;button class=&quot;dc-btn dc-btn--small&quot;&gt;3&lt;/button&gt;
+		&lt;button class=&quot;dc-btn dc-btn--small&quot;&gt;4&lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-btn-group&quot;&gt;
+		&lt;button class=&quot;dc-btn dc-btn--small&quot;&gt;5&lt;/button&gt;
+		&lt;button class=&quot;dc-btn dc-btn--small&quot;&gt;6&lt;/button&gt;
+		&lt;button class=&quot;dc-btn dc-btn--small&quot;&gt;7&lt;/button&gt;
+	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
