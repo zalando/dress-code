@@ -19,17 +19,17 @@
 //
 //  ---------------------------------------------------------------------------
 
-.dc-cf:before,
-.dc-cf:after {
+%dc-cf:before,
+%dc-cf:after {
     display: table; // 2
     content: " "; // 1
 }
 
-.dc-cf:after {
+%dc-cf:after {
     clear: both;
 }
 
 // scss-lint:disable PropertySpelling
-.dc-cf {
+%dc-cf {
     *zoom: 1; // 3
 }

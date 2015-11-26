@@ -346,7 +346,7 @@
     }
 }
 
-.#{$dc-prefix}-checkbox--alt[disabled] + .#{$dc-prefix}-label {
+.dc-checkbox--alt[disabled] + .dc-label {
     &:after {
         // scss-lint:disable ImportantRule
         background: none !important;
@@ -355,14 +355,14 @@
     }
 }
 
-.#{$dc-prefix}-checkbox--alt + .#{$dc-prefix}-label {
+.dc-checkbox--alt + .dc-label {
     line-height: $dc-space150;
 }
 
 //  = SELECT BOXES
 //  ---------------------------------------------------------------------------
 
-.#{$dc-prefix}-select {
+.dc-select {
     padding: $dc-space75 $dc-space200 $dc-space75 $dc-space75;
     transition: box-shadow .2s linear, border-color .2s linear;
     border: $dc-border50 solid $dc-gray60;
