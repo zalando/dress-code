@@ -2,6 +2,8 @@
 
 The Dress Code UI toolkit is a highly-modular design system for rapid web page development. It contains different materials that can be assembled into more complex page layouts.
 
+[![Build Status](https://travis-ci.org/zalando/dress-code.svg)](https://travis-ci.org/zalando/dress-code)
+
 ## Quick links
 
 * [Demo](http://zalando.github.io/dress-code/)
