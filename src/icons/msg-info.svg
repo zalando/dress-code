@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
-    <title>alert-info</title>
+    <title>msg-info</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="alert-info" sketch:type="MSArtboardGroup" fill="#000000">
-            <path d="M286,167 C286.5,199.560004 286,445 286,445 L305,445 L305,500 L194,500 L194,445 L212,445 L212,222 L194,222 L194,167 L286,167 Z M194,55.2061495 C194,38.9004542 199.318697,25.6231586 209.95625,15.3738644 C220.593803,5.12457023 233.774921,-2.84217094e-14 249.5,-1.42108547e-14 C264.762576,-1.42108547e-14 277.828071,5.12457023 288.696875,15.3738644 C299.565679,25.6231586 305,38.9004542 305,55.2061495 C305,71.5118449 299.565679,84.905608 288.696875,95.3878407 C277.828071,105.870073 264.762576,111.111111 249.5,111.111111 C233.774921,111.111111 220.593803,105.870073 209.95625,95.3878407 C199.318697,84.905608 194,71.5118449 194,55.2061495 L194,55.2061495 Z" id="!-copy" sketch:type="MSShapeGroup"></path>
+        <g id="msg-info" sketch:type="MSArtboardGroup" fill="#000000">
+            <path d="M288,160 L288,448 L304,448 L304,512 L176,512 L176,448 L192,448 L192.125475,224 L176,224 L176,160 L288,160 Z M184,79.6477987 C184,63.2116579 189.366613,49.8281439 200.1,39.4968553 C210.833387,29.1655668 224.133254,24 240,24 C255.400077,24 268.583279,29.1655668 279.55,39.4968553 C290.516722,49.8281439 296,63.2116579 296,79.6477987 C296,96.0839396 290.516722,109.584853 279.55,120.150943 C268.583279,130.717034 255.400077,136 240,136 C224.133254,136 210.833387,130.717034 200.1,120.150943 C189.366613,109.584853 184,96.0839396 184,79.6477987 L184,79.6477987 Z" id="!-copy" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

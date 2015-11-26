@@ -1,0 +1,49 @@
+---
+name: button group
+title: button group
+notes: |
+  Actions that logically belong together might be grouped by wrapping them in a container with <code>.dc-btn-group</code>.
+
+  Wrap several groups in a <code>.dc-btn-group-row</code> to keep them in one line.
+
+  Please do not use the button group as tabs.
+---
+
+
+<div class="dc-btn-group">
+  <button class="dc-btn dc-btn--large">1</button>
+  <button class="dc-btn dc-btn--large">
+    <i class="dc-font-icon-check"></i>
+  </button>
+  <button class="dc-btn dc-btn--large">2</button>
+  <button class="dc-btn dc-btn--large dc-btn--destroy ">
+    <i class="dc-font-icon-trash"></i>
+  </button>
+</div>
+
+<div class="dc-btn-group-row">
+  <div class="dc-btn-group">
+    <a href class="dc-btn dc-btn--primary">Primary</a>
+    <button class="dc-btn">Two</button>
+  </div>
+  <div class="dc-btn-group">
+    <button class="dc-btn">Three</button>
+    <button class="dc-btn dc-btn--destroy">
+      <i class="dc-font-icon-trash"></i>
+    </button>
+  </div>
+</div>
+
+<div class="dc-btn-group-row">
+  <div class="dc-btn-group">
+    <button class="dc-btn dc-btn--small">One</button>
+    <button class="dc-btn dc-btn--small">Two</button>
+    <button class="dc-btn dc-btn--small">Three</button>
+  </div>
+  <div class="dc-btn-group">
+    <button class="dc-btn dc-btn--small">Four</button>
+    <button class="dc-btn dc-btn--small">
+      <i class="dc-font-icon-history"></i>
+    </button>
+  </div>
+</div>
