@@ -7,28 +7,24 @@
 $dc-header-height: $dc-touch-size;
 $dc-header-accent-color: $dc-orange40;
 
-
-
 //  = HEADER
 //  ---------------------------------------------------------------------------
 
-		.#{$dc-prefix}-header
-		{
-			display: flex;
-			align-items: center;
-			position: fixed;
-			top: 0;
-			right: 0;
-			left: 0;
-			z-index: 900;
-			height: $dc-header-height;
-			padding: $dc-space75 $dc-space100;
-			background: $dc-white;
-			border-bottom: 1px solid $dc-gray60;
+.dc-header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    height: $dc-header-height;
+    padding: $dc-space75 $dc-space100;
+    border-bottom: 1px solid $dc-gray60;
+    background: $dc-white;
+    z-index: 900;
 
-			.#{$dc-prefix}-logo
-			{
-				padding-bottom: 2px;
-				max-height: $dc-touch-size - $dc-space150;
-			}
-		}
+    .dc-logo {
+        max-height: $dc-touch-size - $dc-space150;
+        padding-bottom: 2px;
+    }
+}
