@@ -317,6 +317,7 @@
 
 .dc-checkbox--alt + .dc-label {
     padding-left: $dc-space200;
+    line-height: $dc-space150;
 
     &:before,
     &:after {
@@ -353,10 +354,6 @@
         background-color: $dc-gray60 !important;
         // scss-lint:enable ImportantRule
     }
-}
-
-.dc-checkbox--alt + .dc-label {
-    line-height: $dc-space150;
 }
 
 //  = SELECT BOXES
