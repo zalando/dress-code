@@ -7,17 +7,16 @@
 
 	<title>{{title}}</title>
 
+
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic|Ubuntu+Mono" rel="stylesheet" type="text/css">
-	{{#if fabricator}}<link rel="stylesheet" href="assets/fabricator/styles/f.css">{{/if}}
+	<link rel="stylesheet" href="{{basePath}}/assets/fabricator/styles/f.css">
 
 	<!-- toolkit styles -->
-	{{#if fabricator}}
-	<link rel="stylesheet" href="assets/toolkit/styles/toolkit.css">
-	{{else}}
-	<link rel="stylesheet" href="../../assets/toolkit/styles/toolkit.css">
-	{{/if}}
+	<link rel="stylesheet" href="{{basePath}}/assets/toolkit/styles/toolkit.css">
 	<!-- /toolkit styles -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
 
     <link rel="icon" href="favicon.ico">
 </head>
@@ -48,7 +47,7 @@
 		</div>
 		<div class="dc-grid"></div>
 
-		<script src="assets/fabricator/scripts/f.js"></script>
+		<script src="{{basePath}}/assets/fabricator/scripts/f.js"></script>
 	{{/if}}
 
 </body>

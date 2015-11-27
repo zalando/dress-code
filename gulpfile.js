@@ -189,6 +189,8 @@ gulp.task('demo:favicon', function () {
 
 // assemble
 gulp.task('demo:assemble', function (done) {
+    var basePath = gutil.env['demo-base-path'] ? gutil.env['demo-base-path'] : '';
+
     assemble({
         layouts: 'docs/demo/views/layouts/*',
         layoutIncludes: 'docs/demo/views/layouts/includes/*',
@@ -197,7 +199,12 @@ gulp.task('demo:assemble', function (done) {
         data: 'docs/demo/data/**/*.{json,yml}',
         docs: ['docs/**/*.md', '!docs/BOWER-README.md'],
         logErrors: true,
-        dest: config.tmp.demo
+        dest: config.tmp.demo,
+        helpers: {
+            basePath: function () {
+                return basePath;
+            }
+        }
     });
     done();
 });
