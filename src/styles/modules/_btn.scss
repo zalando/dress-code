@@ -25,11 +25,16 @@
     box-shadow: 0 1px 1px transparent;
     cursor: default;
 
-    &:focus {
-        outline: 0;
+    > * {
+        margin-right: 10px;
+    }
 
-        // TODO: Validate whether we need visible :focus
-        // border-color:$dc-blue40;
+    [class^="dc-font-icon-"] {
+        display: block;
+        margin-top: .2rem;
+        margin-right: 0;
+        float: right;
+        line-height: .8rem;
     }
 }
 
@@ -53,9 +58,9 @@
 //  ---------------------------------------------------------------------------
 
 .dc-btn--icon {
-    width: $dc-touch-size;
-    height: $dc-touch-size;
-    padding: 0;
+    width: auto;
+    height: auto;
+    padding: $dc-space100 - .2;
 
     svg {
         position: relative;
@@ -109,17 +114,13 @@
     border-color: darken($dc-blue40, 7%);
     background: linear-gradient($dc-blue40, darken($dc-blue40, 7%));
     color: $dc-white;
-
-    &:focus {
-        // TODO: Validate whether we need visible :focus
-        // border-color:$dc-blue20;
-    }
 }
 
 .touch .dc-btn--primary:active,
 .no-touch .dc-btn--primary:hover {
     background: lighten($dc-blue40, 3%);
     color: $dc-white;
+
 }
 
 //  = DESTROY
@@ -135,7 +136,6 @@
     background: $dc-red50;
     color: $dc-white;
 }
-
 //  = DISABLED
 //  ---------------------------------------------------------------------------
 
@@ -173,6 +173,7 @@
         }
 
         &.dc-btn--primary {
+            border-right-width: 1px;
             border-color: darken($dc-blue40, 7%);
         }
 
@@ -187,6 +188,7 @@
         margin-right: 1.6rem;
         float: left;
     }
+
 }
 
 .dc-btn-group-row {
@@ -194,26 +196,29 @@
     // scss-lint:disable PlaceholderInExtend
     @extend .dc-cf;
     // scss-lint:enable PlaceholderInExtend
+    clear: both;
 }
 
-//  = CREATE PAGE
-//  ---------------------------------------------------------------------------
-
-.dc-btn--create-page {
-    display: none;
-
-    @include breakpoint($dc-huge-width) {
-        display: inline-block;
-    }
-}
 
 //  = SMALL BUTTON
 //  ---------------------------------------------------------------------------
 
 .dc-btn--small {
+    padding: $dc-space100 - .1 $dc-space100;
+    font-size: 1.4rem;
+
+    [class^="dc-font-icon-"] {
+        font-size: 1.2rem;
+        line-height: .8;
+    }
+}
+
+.no-touch .dc-btn--small {
     padding: $dc-space50 $dc-space75;
     font-size: $dc-font50;
+    font-weight: $dc-normal-font-weight;
     text-transform: uppercase;
+
 }
 
 .dc-btn--inline {
@@ -222,4 +227,27 @@
     + .dc-btn--inline {
         margin-left: .2rem; // Account for 4px inline margin
     }
+}
+
+
+//  = LARGE BUTTON
+//  ---------------------------------------------------------------------------
+
+.dc-btn--large {
+    padding: $dc-space125 $dc-space125 $dc-space125 + .1;
+    font-size: $dc-font150;
+    line-height: .8;
+
+    [class^="dc-font-icon-"] {
+        margin-top: .4rem;
+        font-size: 2.4rem;
+        line-height: .6rem;
+    }
+}
+//  = BLOCK BUTTON
+//  ---------------------------------------------------------------------------
+
+.dc-btn--block {
+    display: block;
+    width: 100%;
 }
