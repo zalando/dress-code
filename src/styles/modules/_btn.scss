@@ -8,118 +8,118 @@
 //  ---------------------------------------------------------------------------
 
 .dc-btn {
-  display: inline-block;
-  margin-right: $dc-space50;
-  margin-bottom: $dc-space100;
-  padding: $dc-space100 - .1 $dc-space100;
-  transition: box-shadow .2s linear, border-color .2s linear;
-  border: 1px solid $dc-gray50;
-  border-radius: $dc-radius100;
-  background: linear-gradient($dc-white, darken($dc-white, 7%));
-  color: $dc-gray10;
-  font-weight: $dc-normal-font-weight;
-  line-height: $dc-space100;
-  text-align: center;
-  text-decoration: none;
-  text-transform: capitalize;
-  box-shadow: 0 1px 1px transparent;
-  cursor: default;
+    display: inline-block;
+    margin-right: $dc-space50;
+    margin-bottom: $dc-space100;
+    padding: $dc-space100 - .1 $dc-space100;
+    transition: box-shadow .2s linear, border-color .2s linear;
+    border: 1px solid $dc-gray50;
+    border-radius: $dc-radius100;
+    background: linear-gradient($dc-white, darken($dc-white, 7%));
+    color: $dc-gray10;
+    font-weight: $dc-normal-font-weight;
+    line-height: $dc-space100;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-shadow: 0 1px 1px transparent;
+    cursor: default;
 
-  > * {
-    margin-right: 10px;
-  }
+    > * {
+        margin-right: 10px;
+    }
 
-  [class^="dc-font-icon-"] {
-    display: block;
-    float:right;
-    margin-top: .2rem;
-    margin-right: 0;
-    line-height: .8rem;
-  }
+    [class^="dc-font-icon-"] {
+        display: block;
+        margin-top: .2rem;
+        margin-right: 0;
+        float: right;
+        line-height: .8rem;
+    }
 }
 
 .no-touch .dc-btn:hover {
-  outline: 0;
-  background: linear-gradient($dc-white, darken($dc-white, 5%));
-  color: $dc-gray10;
-  text-decoration: none;
-  box-shadow: 0 1px 1px rgba($dc-black, .2);
+    outline: 0;
+    background: linear-gradient($dc-white, darken($dc-white, 5%));
+    color: $dc-gray10;
+    text-decoration: none;
+    box-shadow: 0 1px 1px rgba($dc-black, .2);
 }
 
 .touch .dc-btn:active,
 .no-touch .dc-btn:active {
-  background: darken($dc-white, 4%);
-  color: $dc-gray10;
-  text-decoration: none;
-  box-shadow: inset 0 1px 1px rgba($dc-black, .1);
+    background: darken($dc-white, 4%);
+    color: $dc-gray10;
+    text-decoration: none;
+    box-shadow: inset 0 1px 1px rgba($dc-black, .1);
 }
 
 //  = ICON BUTTONS
 //  ---------------------------------------------------------------------------
 
 .dc-btn--icon {
-  width: auto;
-  height: auto;
-  padding: $dc-space100 - .2;
+    width: auto;
+    height: auto;
+    padding: $dc-space100 - .2;
 
-  svg {
-    position: relative;
-    top: -1px;
-    left: -1px;
-  }
+    svg {
+        position: relative;
+        top: -1px;
+        left: -1px;
+    }
 
-  [stroke^='#'] {
-    stroke: $dc-text-color;
-  }
-
-  [fill^='#'] {
-    fill: $dc-text-color;
-  }
-
-  &.dc-btn--primary {
     [stroke^='#'] {
-      stroke: $dc-white;
+        stroke: $dc-text-color;
     }
 
     [fill^='#'] {
-      fill: $dc-white;
-    }
-  }
-
-  &.dc-btn--destroy:hover {
-    [stroke^='#'] {
-      stroke: $dc-white;
+        fill: $dc-text-color;
     }
 
-    [fill^='#'] {
-      fill: $dc-white;
-    }
-  }
+    &.dc-btn--primary {
+        [stroke^='#'] {
+            stroke: $dc-white;
+        }
 
-  &.dc-btn--disabled {
-    [stroke^='#'] {
-      stroke: $dc-gray50;
+        [fill^='#'] {
+            fill: $dc-white;
+        }
     }
 
-    [fill^='#'] {
-      fill: $dc-gray50;
+    &.dc-btn--destroy:hover {
+        [stroke^='#'] {
+            stroke: $dc-white;
+        }
+
+        [fill^='#'] {
+            fill: $dc-white;
+        }
     }
-  }
+
+    &.dc-btn--disabled {
+        [stroke^='#'] {
+            stroke: $dc-gray50;
+        }
+
+        [fill^='#'] {
+            fill: $dc-gray50;
+        }
+    }
 }
 
 //  = PRIMARY
 //  ---------------------------------------------------------------------------
 
 .dc-btn--primary {
-  border-color: darken($dc-blue40, 7%);
-  background: linear-gradient($dc-blue40, darken($dc-blue40, 7%));
-  color: $dc-white;
+    border-color: darken($dc-blue40, 7%);
+    background: linear-gradient($dc-blue40, darken($dc-blue40, 7%));
+    color: $dc-white;
 }
 
 .touch .dc-btn--primary:active,
 .no-touch .dc-btn--primary:hover {
-  background: lighten($dc-blue40, 3%);
-  color: $dc-white;
+    background: lighten($dc-blue40, 3%);
+    color: $dc-white;
 
 }
 
@@ -127,14 +127,14 @@
 //  ---------------------------------------------------------------------------
 
 .dc-btn--destroy {
-  transition: box-shadow .2s linear;
+    transition: box-shadow .2s linear;
 }
 
 .touch .dc-btn--destroy:active,
 .no-touch .dc-btn--destroy:hover {
-  border-color: $dc-red40;
-  background: $dc-red50;
-  color: $dc-white;
+    border-color: $dc-red40;
+    background: $dc-red50;
+    color: $dc-white;
 }
 //  = DISABLED
 //  ---------------------------------------------------------------------------
@@ -142,61 +142,61 @@
 .dc-btn--disabled,
 .touch .dc-btn--disabled:active,
 .no-touch .dc-btn--disabled:hover {
-  border-color: $dc-gray60;
-  background: transparent;
-  color: $dc-gray50;
-  box-shadow: none;
+    border-color: $dc-gray60;
+    background: transparent;
+    color: $dc-gray50;
+    box-shadow: none;
 }
 
 //  = BUTTON GROUPS
 //  ---------------------------------------------------------------------------
 
 .dc-btn-group {
-  // FIXME: Prefer using placeholder selectors (e.g. %some-placeholder) with @extend
-  // scss-lint:disable PlaceholderInExtend
-  @extend .dc-cf;
-  // scss-lint:enable PlaceholderInExtend
+    // FIXME: Prefer using placeholder selectors (e.g. %some-placeholder) with @extend
+    // scss-lint:disable PlaceholderInExtend
+    @extend .dc-cf;
+    // scss-lint:enable PlaceholderInExtend
 
-  .dc-btn {
-    margin-right: 0;
-    float: left;
-    border-right-width: 0;
-    border-radius: 0;
+    .dc-btn {
+        margin-right: 0;
+        float: left;
+        border-right-width: 0;
+        border-radius: 0;
 
-    &:first-child {
-      border-radius: $dc-radius100 0 0 $dc-radius100;
+        &:first-child {
+            border-radius: $dc-radius100 0 0 $dc-radius100;
+        }
+
+        &:last-child {
+            border-right-width: 1px;
+            border-radius: 0 $dc-radius100 $dc-radius100 0;
+        }
+
+        &.dc-btn--primary {
+            border-right-width: 1px;
+            border-color: darken($dc-blue40, 7%);
+        }
+
+        // scss-lint:disable MergeableSelector
+        &.dc-btn--primary + .dc-btn {
+            border-left-color: darken($dc-blue40, 7%);
+        }
+        // scss-lint:enable MergeableSelector
     }
 
-    &:last-child {
-      border-right-width: 1px;
-      border-radius: 0 $dc-radius100 $dc-radius100 0;
+    .dc-btn-group-row & {
+        margin-right: 1.6rem;
+        float: left;
     }
-
-    &.dc-btn--primary {
-      border-color: darken($dc-blue40, 7%);
-      border-right-width: 1px;
-    }
-
-
-    // scss-lint:disable MergeableSelector
-    &.dc-btn--primary + .dc-btn {
-      border-left-color: darken($dc-blue40, 7%);
-    }
-    // scss-lint:enable MergeableSelector
-  }
-
-  .dc-btn-group-row & {
-    margin-right: 1.6rem;
-    float: left;
-  }
 
 }
 
 .dc-btn-group-row {
-  // FIXME: Prefer using placeholder selectors (e.g. %some-placeholder) with @extend
-  // scss-lint:disable PlaceholderInExtend
-  @extend .dc-cf;
-  // scss-lint:enable PlaceholderInExtend
+    // FIXME: Prefer using placeholder selectors (e.g. %some-placeholder) with @extend
+    // scss-lint:disable PlaceholderInExtend
+    @extend .dc-cf;
+    // scss-lint:enable PlaceholderInExtend
+    clear: both;
 }
 
 
@@ -204,28 +204,29 @@
 //  ---------------------------------------------------------------------------
 
 .dc-btn--small {
-  padding: $dc-space100 - .1 $dc-space100;
-  font-size: 1.6rem;
+    padding: $dc-space100 - .1 $dc-space100;
+    font-size: 1.4rem;
 
-  [class^="dc-font-icon-"] {
-    font-size: 1.2rem;
-    line-height: .8;
-  }
+    [class^="dc-font-icon-"] {
+        font-size: 1.2rem;
+        line-height: .8;
+    }
 }
 
 .no-touch .dc-btn--small {
-  padding: $dc-space50 $dc-space75;
-  font-size: $dc-font50;
-  text-transform: uppercase;
+    padding: $dc-space50 $dc-space75;
+    font-size: $dc-font50;
+    font-weight: $dc-normal-font-weight;
+    text-transform: uppercase;
 
 }
 
 .dc-btn--inline {
-  margin-bottom: 0;
+    margin-bottom: 0;
 
-  + .dc-btn--inline {
-    margin-left: .2rem; // Account for 4px inline margin
-  }
+    + .dc-btn--inline {
+        margin-left: .2rem; // Account for 4px inline margin
+    }
 }
 
 
@@ -233,20 +234,20 @@
 //  ---------------------------------------------------------------------------
 
 .dc-btn--large {
-  padding: $dc-space125 $dc-space125 $dc-space125 + .1;
-  font-size: $dc-font150;
-  line-height: .8;
+    padding: $dc-space125 $dc-space125 $dc-space125 + .1;
+    font-size: $dc-font150;
+    line-height: .8;
 
-  [class^="dc-font-icon-"] {
-    font-size: 2.4rem;
-    line-height: .6rem;
-    margin-top: .4rem;
-  }
+    [class^="dc-font-icon-"] {
+        margin-top: .4rem;
+        font-size: 2.4rem;
+        line-height: .6rem;
+    }
 }
 //  = BLOCK BUTTON
 //  ---------------------------------------------------------------------------
 
 .dc-btn--block {
-  display: block;
-  width: 100%
+    display: block;
+    width: 100%;
 }
