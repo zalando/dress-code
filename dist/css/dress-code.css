@@ -1204,15 +1204,16 @@ table {
     .dc-grid .dc-monstrous-last + [class*='-span'] {
       clear: both; } }
 
-.dc-box:before,
-.dc-box:after {
+.dc-box:before, .dc-table__tr:before,
+.dc-box:after,
+.dc-table__tr:after {
   display: table;
   content: " "; }
 
-.dc-box:after {
+.dc-box:after, .dc-table__tr:after {
   clear: both; }
 
-.dc-box {
+.dc-box, .dc-table__tr {
   *zoom: 1; }
 
 .dc-nav {
