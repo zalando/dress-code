@@ -1,0 +1,7 @@
+// This file is to hold exceptions and overrides needed to present elements in the styleguide
+// but that should not be inside the final generated css
+
+.f-item-preview .dc-dialog__overlay {
+    position: relative;
+    opacity: 1;
+}

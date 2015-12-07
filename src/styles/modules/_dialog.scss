@@ -9,17 +9,17 @@
 
 .dc-dialog__overlay {
     display: flex;
-    // position: absolute;
-    // top: 0;
-    // right: 0;
-    // bottom: 0;
-    // left: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     align-items: center;
     justify-content: center;
     padding: $dc-space100;
     transition: opacity .2s .2s cubic-bezier(.39, .58, .57, 1);
     background: rgba($dc-black, .6);
-    //opacity: 0;
+    opacity: 0;
     z-index: 999;
     perspective: 600px;
 }
