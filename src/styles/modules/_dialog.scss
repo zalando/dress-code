@@ -7,66 +7,54 @@
 //  = DIM
 //  ---------------------------------------------------------------------------
 
-.dc-dim-dialog {
+.dc-dialog__overlay {
     display: flex;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
     align-items: center;
     justify-content: center;
     padding: $dc-space100;
     transition: opacity .2s .2s cubic-bezier(.39, .58, .57, 1);
     background: rgba($dc-black, .6);
-    opacity: 0;
+    //opacity: 0;
     z-index: 999;
-    pointer-events: none;
     perspective: 600px;
 }
 
-.dc-is-dimmed-dialog {
-    .dc-dim-dialog {
-        transition: opacity .2s cubic-bezier(.39, .58, .57, 1);
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    .dc-dialog {
-        transform: rotateX(0deg) translateY(0) translateZ(0);
-        transition: transform .3s .2s cubic-bezier(.24, 1.01, .43, 1.18), opacity .2s .2s cubic-bezier(.39, .58, .57, 1);
-        // scss-lint:disable ColorVariable
-        box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-        // scss-lint:enable ColorVariable
-        opacity: 1;
-    }
-}
 
 //  = BASE
 //  ---------------------------------------------------------------------------
 
 .dc-dialog {
-    transform: rotateX(-30deg) translateY(50px) translateZ(-100px);
+    transform: rotateX(0deg) translateY(0) translateZ(0);
     transition: transform 2s cubic-bezier(.25, .46, .45, .94), opacity .2s cubic-bezier(.39, .58, .57, 1);
     border-radius: 2px;
     background: $dc-white;
     // scss-lint:disable ColorVariable
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
     // scss-lint:enable ColorVariable
-    opacity: 0;
+
+    .dc-dialog__body {
+        padding: $dc-space150 $dc-space150 $dc-space100;
+    }
+
+    .dc-dialog__actions {
+        padding: $dc-space150 $dc-space150 $dc-space100;
+    }
 
 }
 
 .dc-dialog__close {
-    display: block;
-    margin: -1.4 -1.4 0 0;
+    margin-top: -1.6rem;
+    margin-right: -1rem;
     float: right;
 
-    .touch &:active,
-    .no-touch &:hover {
-        [fill^='#'] {
-            fill: $dc-blue30;
-        }
+    [class^=dc-font-icon-] {
+        color: $dc-gray30;
+        font-size: 1.2rem;
     }
 
     .touch &:active,
@@ -79,12 +67,25 @@
     // scss-lint:disable PlaceholderInExtend
     @extend .h3;
     // scss-lint:enable PlaceholderInExtend
+    display: inline-block;
+    margin: 0 0 $dc-space50;
+    color: $dc-gray10;
+    font-size: 22px;
+    font-weight: 300;
 }
 
-.dc-dialog__bd,
-.dc-dialog__actions {
-    padding: $dc-space150 $dc-space150 0;
+.dc-dialog__subtitle {
+    // scss-lint:disable PlaceholderInExtend
+    @extend .h4;
+    // scss-lint:enable PlaceholderInExtend
+    display: inline-block;
+    margin: 0 0 $dc-space50;
+    color: $dc-gray50;
+    font-size: 1.4rem;
+    font-weight: 300;
 }
+
+
 
 //  = ACTIONS
 //  ---------------------------------------------------------------------------
@@ -93,15 +94,14 @@
     display: flex;
     justify-content: flex-end;
     border-top: 1px solid $dc-gray60;
-    border-radius: 0 0 2px 2px;
+    border-radius: 0 0 $dc-radius100 $dc-radius100;
     background: $dc-gray70;
-}
 
-.dc-dialog__primary {
-    margin-bottom: $dc-space150;
-}
+    .dc-link {
+        // Ensure links align and space to buttons correctly;
+        display: block;
+        margin: 0 $dc-space100;
+        padding: $dc-space75 0;
+    }
 
-.dc-dialog__secondary {
-    margin-right: $dc-space150;
-    line-height: $dc-touch-size;
 }
