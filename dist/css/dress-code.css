@@ -2686,3 +2686,87 @@ table {
           transform: translateY(0);
   opacity: 1;
   pointer-events: auto; }
+
+.dc-dialog__overlay {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.2rem;
+  -webkit-transition: opacity 0.2s 0.2s cubic-bezier(0.39, 0.58, 0.57, 1);
+          transition: opacity 0.2s 0.2s cubic-bezier(0.39, 0.58, 0.57, 1);
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  z-index: 999;
+  -webkit-perspective: 600px;
+          perspective: 600px; }
+
+.dc-dialog {
+  -webkit-transform: rotateX(0deg) translateY(0) translateZ(0);
+          transform: rotateX(0deg) translateY(0) translateZ(0);
+  -webkit-transition: -webkit-transform 2s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.2s cubic-bezier(0.39, 0.58, 0.57, 1);
+          transition: transform 2s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.2s cubic-bezier(0.39, 0.58, 0.57, 1);
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+  .dc-dialog .dc-dialog__body {
+    padding: 2.4rem 2.4rem 1.2rem; }
+  .dc-dialog .dc-dialog__actions {
+    padding: 2.4rem 2.4rem 1.2rem; }
+
+.dc-dialog__close {
+  margin-top: -1.6rem;
+  margin-right: -1rem;
+  float: right; }
+  .dc-dialog__close [class^=dc-font-icon-] {
+    color: #807f80;
+    font-size: 1.2rem; }
+  .touch .dc-dialog__close:active,
+  .no-touch .dc-dialog__close:active {
+    -webkit-transform: scale(0.85);
+        -ms-transform: scale(0.85);
+            transform: scale(0.85); }
+
+.dc-dialog__title {
+  display: inline-block;
+  margin: 0 0 0.4rem;
+  color: #4a4a4a;
+  font-size: 22px;
+  font-weight: 300; }
+
+.dc-dialog__subtitle {
+  display: inline-block;
+  margin: 0 0 0.4rem;
+  color: #b6b6b6;
+  font-size: 1.4rem;
+  font-weight: 300; }
+
+.dc-dialog__actions {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-top: 1px solid #d1d1d1;
+  border-radius: 0 0 2px 2px;
+  background: #edeced; }
+  .dc-dialog__actions .dc-link {
+    display: block;
+    margin: 0 1.2rem;
+    padding: 0.8rem 0; }
