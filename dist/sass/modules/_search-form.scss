@@ -4,107 +4,97 @@
 //
 //  ---------------------------------------------------------------------------
 
-
-
 //  = INPUT & BUTTON
 //  ---------------------------------------------------------------------------
 
-		.#{$dc-prefix}-search-form
-		{
-			display: inline-block;
-			position:relative;
-			margin-bottom: $dc-space150;
-		}
+.dc-search-form {
+    display: inline-block;
+    position: relative;
+    margin-bottom: $dc-space150;
+}
 
-		.#{$dc-prefix}-search-form__input
-		{
-			.no-touch &[type='search'],
-			.touch &[type='search']
-			{
-				margin: 0;
-			}
-			-webkit-appearance: none;
-		}
+.dc-search-form__input {
 
-		.#{$dc-prefix}-search-form__btn
-		{
-			position:absolute;
-			top: 0;
-			right:0;
-			margin: 0;
-			padding: 0;
-			background: transparent;
-			border: none;
+    -webkit-appearance: none;
 
-			.#{$dc-prefix}-svg,
-			.#{$dc-prefix}-img
-			{
-				display: block;
-			}
+    .no-touch &[type='search'],
+    .touch &[type='search'] {
+        margin: 0;
+    }
+}
 
-			.no-touch &:hover,
-			.touch &:active,
-			&:focus
-			{
-				background: transparent;
-				box-shadow: none;
+.dc-search-form__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    // scss-lint:disable BorderZero
+    border: none;
+    // scss-lint:enable BorderZero
+    background: transparent;
 
-				[fill^='#']
-				{
-					fill: $dc-blue40;
-				}
+    .dc-svg,
+    .dc-img {
+        display: block;
+    }
 
-				[stroke^='#']
-				{
-					stroke: $dc-blue40;
-				}
-			}
-		}
+    .no-touch &:hover,
+    .touch &:active,
+    &:focus {
+        background: transparent;
+        box-shadow: none;
 
+        [fill^='#'] {
+            fill: $dc-blue40;
+        }
 
+        [stroke^='#'] {
+            stroke: $dc-blue40;
+        }
+    }
+}
 
-		//  = AUTOSUGGEST
-		//  ---------------------------------------------------------------------------
+//  = AUTOSUGGEST
+//  ---------------------------------------------------------------------------
 
-		.#{$dc-prefix}-suggest
-		{
-			position:absolute;
-			top: calc(100% - 1px);
-			left: 0;
-			z-index: 800;
-			margin: 0;
-			padding: 0;
-			min-width: 100%;
-			background: $dc-white;
-			border: 1px solid $dc-gray60;
-			border-radius: 0 0 2px 2px;
-			box-shadow: 0 1px 1px rgba(0,0,0,.2);
-			list-style-type: none;
-			opacity: 0;
-			transform: translateY(-4px);
-			transition: transform .3s ease-out, opacity .2s;
-			pointer-events: none;
-		}
+.dc-suggest {
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-4px);
+    transition: transform .3s ease-out, opacity .2s;
+    border: 1px solid $dc-gray60;
+    border-radius: 0 0 2px 2px;
+    background: $dc-white;
+    // scss-lint:disable ColorVariable
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    // scss-lint:enable ColorVariable
+    opacity: 0;
+    z-index: 800;
+    list-style-type: none;
+    pointer-events: none;
+}
 
-		.#{$dc-prefix}-suggest__link
-		{
-			display: block;
-			padding: 0 $dc-space75;
-			line-height: $dc-touch-size;
-			white-space: nowrap;
-			color: $dc-text-color;
+.dc-suggest__link {
+    display: block;
+    padding: 0 $dc-space75;
+    color: $dc-text-color;
+    line-height: $dc-touch-size;
+    white-space: nowrap;
 
-			.no-touch &:hover,
-			.touch &:active
-			{
-				background:desaturate(lighten($dc-blue70, 10%), 10%);
-				color: $dc-text-color;
-			}
-		}
+    .no-touch &:hover,
+    .touch &:active {
+        background: desaturate(lighten($dc-blue70, 10%), 10%);
+        color: $dc-text-color;
+    }
+}
 
-		.#{$dc-prefix}-search-form__input:focus ~ .#{$dc-prefix}-suggest
-		{
-			opacity: 1;
-			transform: translateY(0);
-			pointer-events: auto;
-		}
+.dc-search-form__input:focus ~ .dc-suggest {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}

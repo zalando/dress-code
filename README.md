@@ -2,6 +2,8 @@
 
 The Dress Code UI toolkit is a highly-modular design system for rapid web page development. It contains different materials that can be assembled into more complex page layouts.
 
+[![Build Status](https://travis-ci.org/zalando/dress-code.svg)](https://travis-ci.org/zalando/dress-code)
+
 ## Quick links
 
 * [Demo](http://zalando.github.io/dress-code/)
@@ -39,6 +41,14 @@ Developers interested in contributing should read the following guidelines:
 
 
 ### Install
+
+**Requirements**
+
+* [node.js](http://nodejs.org). Make sure your have `v0.10` or higher installed before proceeding.
+* [bower](http://bower.io/). Make sure you have bower installed globally with npm, if not, run this command:```npm install -g bower```
+* [Ruby](https://www.ruby-lang.org/en/documentation/installation/) 1.9.3+. If you are using OSX it should be already installed.
+* [Sass](http://sass-lang.com/install) 3.4.1+. to install: ```sudo gem install sass```
+* [scss-lint](https://github.com/brigade/scss-lint) 0.43.0+ to install: ```sudo gem install scss_lint```
 
 **Install**
 

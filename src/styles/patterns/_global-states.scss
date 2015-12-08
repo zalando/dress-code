@@ -1,22 +1,17 @@
-
 //  ---------------------------------------------------------------------------
 //
 //  Collapse/expand pattern
 //
 //  ---------------------------------------------------------------------------
 
+// scss-lint:disable ImportantRule
+.dc-is-collapsed {
+    height: 0 !important;
+}
 
-	.#{$dc-prefix}-is-collapsed
-	{
-		height:0!important;
-	}
-
-	.#{$dc-prefix}-is-expanded
-	{
-		height:auto!important;
-	}
-
-
+.dc-is-expanded {
+    height: auto !important;
+}
 
 //  ---------------------------------------------------------------------------
 //
@@ -24,18 +19,13 @@
 //
 //  ---------------------------------------------------------------------------
 
+.dc-is-hidden {
+    display: none !important;
+}
 
-	.#{$dc-prefix}-is-hidden
-	{
-		display:none!important;
-	}
-
-	.#{$dc-prefix}-is-shown
-	{
-		display:block!important;
-	}
-
-
+.dc-is-shown {
+    display: block !important;
+}
 
 //  ---------------------------------------------------------------------------
 //
@@ -43,18 +33,13 @@
 //
 //  ---------------------------------------------------------------------------
 
+.dc-is-invisible {
+    opacity: 0;
+}
 
-	.#{$dc-prefix}-is-invisible
-	{
-		opacity: 0;
-	}
-
-	.#{$dc-prefix}-is-visible
-	{
-		opacity: 1;
-	}
-
-
+.dc-is-visible {
+    opacity: 1;
+}
 
 //  ---------------------------------------------------------------------------
 //
@@ -62,12 +47,9 @@
 //
 //  ---------------------------------------------------------------------------
 
-	.#{$dc-prefix}-is-inline
-	{
-		display:inline-block !important;
-	}
-
-
+.dc-is-inline {
+    display: inline-block !important;
+}
 
 //  ---------------------------------------------------------------------------
 //
@@ -75,12 +57,9 @@
 //
 //  ---------------------------------------------------------------------------
 
-	.#{$dc-prefix}-is-fixed
-	{
-		position:fixed !important;
-	}
-
-
+.dc-is-fixed {
+    position: fixed !important;
+}
 
 //  ---------------------------------------------------------------------------
 //
@@ -88,11 +67,9 @@
 //
 //  ---------------------------------------------------------------------------
 
-	.#{$dc-prefix}-is-important
-	{
-		background:$dc-yellow60 !important;
-	}
-
+.dc-is-important {
+    background: $dc-yellow60 !important;
+}
 
 //  ---------------------------------------------------------------------------
 //
@@ -101,10 +78,9 @@
 //
 //  ---------------------------------------------------------------------------
 
-	.#{$dc-prefix}-less-important
-	{
-		color:$dc-gray50 !important;
-	}
+.dc-less-important {
+    color: $dc-gray50 !important;
+}
 
 //  ---------------------------------------------------------------------------
 //
@@ -112,18 +88,14 @@
 //
 //  ---------------------------------------------------------------------------
 
+.dc-text-left {
+    text-align: left;
+}
 
-	.#{$dc-prefix}-text-left
-	{
-		text-align:left;
-	}
+.dc-text-center {
+    text-align: center;
+}
 
-	.#{$dc-prefix}-text-center
-	{
-		text-align:center;
-	}
-
-	.#{$dc-prefix}-text-right
-	{
-		text-align:right;
-	}
+.dc-text-right {
+    text-align: right;
+}

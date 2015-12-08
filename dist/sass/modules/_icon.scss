@@ -4,63 +4,49 @@
 //
 //  ---------------------------------------------------------------------------
 
-
-
-
 //  = BASE
 //  ---------------------------------------------------------------------------
 
-		.#{$dc-prefix}-icon
-		{
-			display:inline-block;
-			margin-bottom: $dc-font250;
-			padding: $dc-space100;
-			background-color: $dc-white;
-			border:1px solid $dc-gray60;
-			text-align:center;
+.dc-icon {
+    display: inline-block;
+    margin-bottom: $dc-font250;
+    padding: $dc-space100;
+    border: 1px solid $dc-gray60;
+    background-color: $dc-white;
+    text-align: center;
 
-			.#{$dc-prefix}-svg
-			{
-				margin-bottom: $dc-font50;
-				vertical-align:middle;
-			}
-		}
+    .dc-svg {
+        margin-bottom: $dc-font50;
+        vertical-align: middle;
+    }
+}
 
-		.#{$dc-prefix}-icon--interactive
-		{
-			&:hover
-			{
-				[fill^='#']
-				{
-					fill:$dc-blue30;
-				}
+.dc-icon--interactive {
+    &:hover {
+        [fill^='#'] {
+            fill: $dc-blue30;
+        }
 
-				[stroke^='#']
-				{
-					stroke:$dc-blue30;
-				}
-			}
+        [stroke^='#'] {
+            stroke: $dc-blue30;
+        }
+    }
 
-			&:active
-			{
-				transform: scale(.85);
-				shape-rendering: optimizeSpeed;
-				-webkit-tap-highlight-color: transparent;
-			}
-		}
+    &:active {
+        transform: scale(.85);
+        shape-rendering: optimizeSpeed;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
 
-		.#{$dc-prefix}-icon--alternate
-		{
-			&:hover
-			{
-				[fill^='#']
-				{
-					fill:$dc-orange40;
-				}
+.dc-icon--alternate {
+    &:hover {
+        [fill^='#'] {
+            fill: $dc-orange40;
+        }
 
-				[stroke^='#']
-				{
-					stroke:$dc-orange40;
-				}
-			}
-		}
+        [stroke^='#'] {
+            stroke: $dc-orange40;
+        }
+    }
+}

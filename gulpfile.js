@@ -24,7 +24,9 @@ var gulpDebug = require('gulp-debug');
 var iconfont = require('gulp-iconfont');
 var iconfontCss = require('gulp-iconfont-css');
 var conventionalChangelog = require('gulp-conventional-changelog');
+var spawn = require('child_process').spawn;
 var pkg = require('./package.json');
+
 
 // configuration
 var config = {
@@ -57,6 +59,24 @@ var config = {
         iconfont: '.tmp/.iconfont'
     }
 };
+
+
+/**
+ *
+ *
+ * CODE QUALITY TASKS
+ *
+ *
+ */
+gulp.task('scss-lint', function(done) {
+    var scssLint = spawn('scss-lint', [], { stdio: [0, 1, 2] });
+
+    scssLint.on('exit', function (code) {
+        // Instantiate a PluginError seems to be the only way to fail the task
+        // without printing out the ugly stacktrace
+        code === 0 ? done() : done(new gutil.PluginError('scss-lint','scss-lint task fails'));
+    });
+});
 
 
 /**
@@ -169,6 +189,8 @@ gulp.task('demo:favicon', function () {
 
 // assemble
 gulp.task('demo:assemble', function (done) {
+    var basePath = gutil.env['demo-base-path'] ? gutil.env['demo-base-path'] : '';
+
     assemble({
         layouts: 'docs/demo/views/layouts/*',
         layoutIncludes: 'docs/demo/views/layouts/includes/*',
@@ -177,7 +199,12 @@ gulp.task('demo:assemble', function (done) {
         data: 'docs/demo/data/**/*.{json,yml}',
         docs: ['docs/**/*.md', '!docs/BOWER-README.md'],
         logErrors: true,
-        dest: config.tmp.demo
+        dest: config.tmp.demo,
+        helpers: {
+            basePath: function () {
+                return basePath;
+            }
+        }
     });
     done();
 });

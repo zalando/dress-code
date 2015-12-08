@@ -1,0 +1,48 @@
+//  ---------------------------------------------------------------------------
+//
+//  Demoes the different breakpoints.
+//
+//	Breakpoints:   0px -> Tiny
+//				 320px -> Small
+//				 480px -> Medium
+//				 600px -> Large
+//				1024px -> Huge
+//				1280px -> Giant
+//              1600px -> Monstrous
+//
+//  ---------------------------------------------------------------------------
+
+.dc-body--demo-breakpoints {
+    @include dc-debugmessage("Tiny \2014 0-320px", $dc-red60);
+
+    @include breakpoint($dc-small-width) {
+        @include dc-debugmessage("Small \2014 320-480px", $dc-orange60);
+    }
+
+    @include breakpoint($dc-medium-width) {
+        @include dc-debugmessage("Medium \2014 480-600px", $dc-yellow60);
+    }
+
+    @include breakpoint($dc-large-width) {
+        @include dc-debugmessage("Large \2014 600-1024px", $dc-green60);
+    }
+
+    @include breakpoint($dc-huge-width) {
+        @include dc-debugmessage("Huge \2014 1024-1280px", $dc-cyan60);
+    }
+
+    @include breakpoint($dc-giant-width) {
+        @include dc-debugmessage("Giant \2014 1280-1600px", $dc-blue60);
+    }
+
+    @include breakpoint($dc-monstrous-width) {
+        @include dc-debugmessage("Monstrous \2014 1600px and up", $dc-purple60);
+    }
+}
+
+.dc-is-show-breakpoints .dc-body--demo-breakpoints {
+    &::before {
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+}

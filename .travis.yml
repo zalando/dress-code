@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- 0.12
+before_install:
+- rvm install 2.0.0
+- rvm use 2.0.0
+- gem install sass
+- gem install scss_lint
+install:
+- npm install -g gulp
+- npm install
+script:
+- npm run lint
+- npm run build
+- npm run build:bower
+- npm run build:demo

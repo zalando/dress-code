@@ -5,9 +5,11 @@
   "homepage": "https://zalando.github.io/brand-solutions-dress-code",
   "main": "dist/sass/toolkit.scss",
   "scripts": {
+    "lint": "gulp scss-lint",
     "build": "gulp dist",
+    "build:bower": "gulp dist:bower",
     "build:demo": "gulp demo",
-    "deploy:demo": "gulp demo:deploy",
+    "deploy:demo": "gulp demo:deploy --demo-base-path=/dress-code",
     "deploy:bower": "gulp dist:bower:deploy",
     "start": "gulp"
   },
