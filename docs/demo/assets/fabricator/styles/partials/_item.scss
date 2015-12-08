@@ -60,6 +60,7 @@ h3.f-item-heading {
 	text-transform:uppercase;
 	color:$dc-gray40;
 	border-bottom:1px solid $dc-gray60;
+	margin-bottom: $dc-space75;
 
 	.sg-section__title + &
 	{
@@ -111,8 +112,14 @@ h3.f-item-heading {
 	font-size: $dc-font100;
 	color: $dc-gray20;
 
+	p {
+		margin-top: $dc-space50;
+	}
+
 	> * {
 		margin-bottom: 0;
+
+
 
 		&:before
 		{
