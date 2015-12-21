@@ -161,7 +161,7 @@ gulp.task('demo:icons', ['demo:icons:clean'], function () {
         .pipe(gulp.dest(path.join(config.tmp.iconfont, '/svg-icons')))
         .pipe(iconfontCss({
             fontName: fontName,
-            path: 'scss',
+            path: './src/templates/_font-icon.scss',
             targetPath: '../../../src/styles/_generated/_font-icon.scss', // this path to path.join(config.tmp.iconfont, '/fonts') ... weird
             fontPath: '../fonts/',
             cssClass: 'dc-font-icon'
