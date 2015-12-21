@@ -17,19 +17,66 @@ The Dress Code UI toolkit is a highly-modular design system for rapid web page d
 * [node.js](http://nodejs.org). Make sure your have `v0.10` or higher installed before proceeding.
 * [modernizer](https://modernizr.com/) included in the ```<head>``` of your web page
 
-**Install**
+#### Install
 
-with bower:
+with **Bower**:
 
 ```
 $ bower install git@github.com:zalando/dress-code-bower.git
 ```
 
-with npm:
+with **Npm**:
 
 ```
 $ npm install git+ssh://git@github.com:zalando/dress-code.git
 ```
+
+#### Usage
+
+with **Bower**
+
+- Using the pre-compiled version:
+
+Include this in your ```<head>```:
+
+```
+<link href="bower_components/dress-code/css/dress-code.min.css" rel="stylesheet">
+```
+
+- Compiling sass:
+
+```
+@import "bower_components/dress-code/sass/toolkit.scss" 
+```
+
+if you wanna use just mixins and variables...
+
+```
+@import "bower_components/dress-code/sass/_import.scss" 
+```
+
+with **Npm**
+
+- Using the pre-compiled version:
+
+Include this in your ```<head>```:
+
+```
+<link href="node_modules/dress-code/dist/css/dress-code.min.css" rel="stylesheet">
+```
+
+- Compiling sass:
+
+```
+@import "node_modules/dress-code/dist/sass/toolkit.scss" 
+```
+
+if you wanna use just mixins and variables...
+
+```
+@import "node_modules/dress-code/dist/sass/_import.scss" 
+```
+
 
 ## <a name="development"> Development & Contributing
 
