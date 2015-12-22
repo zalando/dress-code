@@ -29,11 +29,12 @@
   "licenses": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zalando/brand-solutions-dress-code.git"
+    "url": "https://github.com/zalando/dress-code.git"
   },
+  "engineStrict" : true,
   "engines": {
-    "node": ">=0.10.0",
-    "npm": ">=2.0.0"
+    "node": ">=0.10.0 <=4.x",
+    "npm": "^2.0.0"
   },
   "devDependencies": {
     "babel-core": "^5.2.17",

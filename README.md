@@ -14,8 +14,7 @@ The Dress Code UI toolkit is a highly-modular design system for rapid web page d
 
 #### Requirements
 
-* [node.js](http://nodejs.org). Make sure your have `v0.10` or higher installed before proceeding.
-* [modernizer](https://modernizr.com/) included in the ```<head>``` of your web page
+* [modernizer](https://modernizr.com/) included in the ```<head>``` of your web page.
 
 #### Install
 
@@ -30,6 +29,8 @@ with **Npm**:
 ```
 $ npm install git+ssh://git@github.com:zalando/dress-code.git
 ```
+
+> At the moment we don't support ```npm@3``` and ```node@5.x```
 
 #### Usage
 
