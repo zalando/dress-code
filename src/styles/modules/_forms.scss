@@ -275,6 +275,13 @@
     &:checked + .dc-label:after {
         background: $dc-blue40;
     }
+
+    + .dc-label {
+        font-size: $dc-body-font-size;
+        font-weight: $dc-normal-font-weight;
+        line-height: $dc-space150 - .2;
+        text-transform: none;
+    }
 }
 
 //  = CHECKBOX
