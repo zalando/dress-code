@@ -1,3 +1,35 @@
+<a name="0.1.1-alpha"></a>
+## [0.1.1-alpha](https://github.com/zalando/dress-code/compare/0.1.0-alpha...v0.1.1-alpha) (2015-12-30)
+
+
+### Bug Fixes
+
+* **font-icon:** use the new variable dc-font-path when generating fot-icon.scss ([730d01c](https://github.com/zalando/dress-code/commit/730d01c))
+* **forms:** Fix radio button label style ([e4a6fff](https://github.com/zalando/dress-code/commit/e4a6fff))
+* **messages:** Fix hover and click behavior to match original ([7c66677](https://github.com/zalando/dress-code/commit/7c66677))
+* **mix:** add minor fixes ([42ffbde](https://github.com/zalando/dress-code/commit/42ffbde))
+* **sass-lint:** fix all warnings and errors thrown by sass-lint ([b319a5f](https://github.com/zalando/dress-code/commit/b319a5f))
+* **table:** fix clearfix row table after scss-lint compliant refactor, close #52 ([220cdf0](https://github.com/zalando/dress-code/commit/220cdf0)), closes [#52](https://github.com/zalando/dress-code/issues/52)
+
+### Features
+
+* **button:** Fix dc prefix for button icons ([27e92e1](https://github.com/zalando/dress-code/commit/27e92e1))
+* **button:** Fixes & lint ([b11aadd](https://github.com/zalando/dress-code/commit/b11aadd))
+* **buttons:** Complete all buttons types ([01118c7](https://github.com/zalando/dress-code/commit/01118c7))
+* **buttons:** Improve and extend button groups #16 ([91e312f](https://github.com/zalando/dress-code/commit/91e312f))
+* **dialog:** Add dialog molecule ([18956d2](https://github.com/zalando/dress-code/commit/18956d2))
+* **grid:** closes #18 and #6. create a fully responsive 12 column grid, add generic grid he ([6c00c31](https://github.com/zalando/dress-code/commit/6c00c31)), closes [#18](https://github.com/zalando/dress-code/issues/18) [#6](https://github.com/zalando/dress-code/issues/6)
+* **grid:** Closes #18. switch to 12col grid, add grid demo page ([1280c21](https://github.com/zalando/dress-code/commit/1280c21)), closes [#18](https://github.com/zalando/dress-code/issues/18)
+* **messages:** Add a new view for the icon font #32 ([07f3db1](https://github.com/zalando/dress-code/commit/07f3db1))
+* **messages:** Beautified code #32 ([3504f3f](https://github.com/zalando/dress-code/commit/3504f3f))
+* **messages:** Change of icon size #32 ([0ac4ccc](https://github.com/zalando/dress-code/commit/0ac4ccc))
+* **messages:** Modify scss to reproduce current design ([ebd25df](https://github.com/zalando/dress-code/commit/ebd25df))
+* **messages:** Use icon font for messages ([269aa13](https://github.com/zalando/dress-code/commit/269aa13))
+* **spinner:** add dc-spinner, close #50 ([823bddc](https://github.com/zalando/dress-code/commit/823bddc)), closes [#50](https://github.com/zalando/dress-code/issues/50)
+* **spinner:** Use shorter notation for border colors ([a0cb1fa](https://github.com/zalando/dress-code/commit/a0cb1fa))
+
+
+
 <a name="0.1.0-alpha"></a>
 # 0.1.0-alpha (2015-11-19)
 
