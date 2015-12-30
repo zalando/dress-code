@@ -2,6 +2,8 @@
 
 The Dress Code UI toolkit is a highly-modular design system for rapid web page development. It contains different materials that can be assembled into more complex page layouts.
 
+[![Build Status](https://travis-ci.org/zalando/dress-code.svg)](https://travis-ci.org/zalando/dress-code)
+
 ## Quick links
 
 * [Demo](http://zalando.github.io/dress-code/)
@@ -12,22 +14,70 @@ The Dress Code UI toolkit is a highly-modular design system for rapid web page d
 
 #### Requirements
 
-* [node.js](http://nodejs.org). Make sure your have `v0.10` or higher installed before proceeding.
-* [modernizer](https://modernizr.com/) included in the ```<head>``` of your web page
+* [modernizer](https://modernizr.com/) included in the ```<head>``` of your web page.
 
-**Install**
+#### Install
 
-with bower:
+with **Bower**:
 
 ```
 $ bower install git@github.com:zalando/dress-code-bower.git
 ```
 
-with npm:
+with **Npm**:
 
 ```
 $ npm install git+ssh://git@github.com:zalando/dress-code.git
 ```
+
+> At the moment we don't support ```npm@3``` and ```node@5.x```
+
+#### Usage
+
+with **Bower**
+
+- Using the pre-compiled version:
+
+Include this in your ```<head>```:
+
+```
+<link href="bower_components/dress-code/css/dress-code.min.css" rel="stylesheet">
+```
+
+- Compiling sass:
+
+```
+@import "bower_components/dress-code/sass/toolkit.scss" 
+```
+
+if you wanna use just mixins and variables...
+
+```
+@import "bower_components/dress-code/sass/_import.scss" 
+```
+
+with **Npm**
+
+- Using the pre-compiled version:
+
+Include this in your ```<head>```:
+
+```
+<link href="node_modules/dress-code/dist/css/dress-code.min.css" rel="stylesheet">
+```
+
+- Compiling sass:
+
+```
+@import "node_modules/dress-code/dist/sass/toolkit.scss" 
+```
+
+if you wanna use just mixins and variables...
+
+```
+@import "node_modules/dress-code/dist/sass/_import.scss" 
+```
+
 
 ## <a name="development"> Development & Contributing
 
@@ -39,6 +89,14 @@ Developers interested in contributing should read the following guidelines:
 
 
 ### Install
+
+**Requirements**
+
+* [node.js](http://nodejs.org). Make sure your have `v0.10` or higher installed before proceeding.
+* [bower](http://bower.io/). Make sure you have bower installed globally with npm, if not, run this command:```npm install -g bower```
+* [Ruby](https://www.ruby-lang.org/en/documentation/installation/) 1.9.3+. If you are using OSX it should be already installed.
+* [Sass](http://sass-lang.com/install) 3.4.1+. to install: ```sudo gem install sass```
+* [scss-lint](https://github.com/brigade/scss-lint) 0.43.0+ to install: ```sudo gem install scss_lint```
 
 **Install**
 

@@ -1,232 +1,86 @@
 //  ---------------------------------------------------------------------------
 //
-//  Defines the grid and its behaviour
-//  on different breakpoints.
-//
-//	Breakpoints:   0px ->  1 column
-//				 320px ->  4 columns
-//				 480px ->  8 columns
-//				 600px -> 12 columns
-//				1024px -> 16 columns
-//				1280px -> 16 columns (= max-width)
+//  Defines the grid and generates helper classes.
 //
 //  ---------------------------------------------------------------------------
 
 
-
-
-//  = GRID SETTINGS
+//  = BUILD GRID HELPER CLASSES
 //  ---------------------------------------------------------------------------
 
-	// Base is 10px at this point
+$layouts: $dc-tiny $dc-small $dc-medium $dc-large $dc-huge $dc-giant $dc-monstrous;
+$breakpoints: $dc-tiny-width $dc-small-width $dc-medium-width $dc-large-width $dc-huge-width $dc-giant-width $dc-monstrous-width;
+$breakpoint-names: "tiny" "small" "medium" "large" "huge" "giant" "monstrous";
 
-	// Relative column & gutter width
-	$dc-r-column-width				: 6 !default;
-	$dc-r-gutter-width				: 4 !default;
-	$dc-r-grid-padding				: 8 !default;
-	$dc-r-grid-padding-large		: 4 !default;
-	$dc-r-grid-padding-huge		: 5 !default;
+.dc-span--demo {
+    margin-bottom: $dc-space50;
+    padding: $dc-space50 / 2;
+    border: 1px solid rgba($dc-orange40, .6);
+    background: rgba($dc-orange60, .4);
+    color: $dc-orange20;
+    font-size: $dc-font50;
+    line-height: 1.5;
+}
 
-	// Columns for smallest screen
-	$dc-total-columns		: 2 !default;
+.dc-grid--padded {
+    padding: $dc-space50;
 
-	// Column & gutter width in em (susy needs em)
-	$dc-column-width 		: convert-length($dc-r-column-width,em,$dc-body-font-size) !default; // convert to em
-	$dc-gutter-width		: convert-length($dc-r-gutter-width,em,$dc-body-font-size) !default; // convert to em
-	$dc-grid-padding		: convert-length($dc-r-grid-padding,em,$dc-body-font-size) !default; // convert to em
-	$dc-grid-padding-large	: convert-length($dc-r-grid-padding-large,em,$dc-body-font-size) !default; // convert to em
-	$dc-grid-padding-huge	: convert-length($dc-r-grid-padding-huge,em,$dc-body-font-size) !default; // convert to em
+    @include breakpoint($dc-small-width) {
+        padding: $dc-space100;
+    }
 
-	$dc-container-style	: fluid !default;
+    @include breakpoint($dc-giant-width) {
+        padding: $dc-space150;
+    }
 
+    @include breakpoint($dc-monstrous-width) {
+        padding: $dc-space200;
+    }
+}
 
+.dc-grid {
 
+    // For each breakpoint
+    @for $j from 1 through length($breakpoints) {
+        // Check if there is another breakpoint after
+        // the current one. If yes, limit the media query.
+        @if($j < length($breakpoints)) {
+            // E. g. "80em 99.9em"
+            $mq: nth($breakpoints, $j) nth($breakpoints, $j + 1) - .1;
+        } @else {
+            // E. g. "100em"
+            $mq: nth($breakpoints, $j);
+        }
 
-//  = BREAKPOINTS
-//  ---------------------------------------------------------------------------
+        // Add the media query
+        @include breakpoint(nth($breakpoints, $j)) {
+            // Set the layout on the grid itself
+            @include container(nth($layouts, $j));
 
-		// Feature phone		: 0px		 2 columns	-->	   0-UP
-		$dc-tiny-width				: 0px;
-		$dc-tiny-cols				: 2;
-		$dc-tiny-layout			: (
-													container: calc(100% - 16px),
-													columns: 2,
-													gutters: .1
-												);
+            // For each column size (1-12)
+            @for $i from 1 through 12 {
+                // Generate classes like .dc-large-span4
+                .dc-#{nth($breakpoint-names, $j)}-span#{$i} {
+                    @include span($i of nth($layouts, $j));
+                }
+            }
+        }
+        // Add the media query
+        @include breakpoint($mq) {
+            @for $i from 1 through 12 {
+                // Generate classes for last columns like .dc-large-last
+                .dc-#{nth($breakpoint-names, $j)}-last {
+                    // Reset last column to prevent line break
+                    @include last;
 
-		// Smartphone			: 320px		 4 columns 	-->  320-UP
-		$dc-small-width			: 20em;
-		$dc-small-cols				: 4;
-		$dc-small-layout			: (
-													container: calc(100% - 24px),
-													columns: 4,
-													gutters: .25
-												);
-
-		// Smartphone landscape	: 480px 	 6 columns 	-->  480-UP
-		$dc-medium-width			: 30em;
-		$dc-medium-cols			: 6;
-		$dc-medium-layout			: (
-													container: calc(100% - 24px),
-													columns: 6,
-													gutters: .25
-												);
-
-		// From large: fluid, max-width 700px 80px grid-padding
-		// Font size maybe 22px or perhaps micro breakpoint with 22px from 768px
-		// Tablet 				: 600px, 	 8 columns 	-->  600-UP
-		$dc-large-width			: 37.5em;
-		$dc-large-cols 			: 8;
-		$dc-large-layout			: (
-													container: calc(100% - 48px),
-													columns: 8,
-													gutters: .25
-												);
-
-		// Tablet landscape		: 1024px 	12 columns 	--> 1024-UP
-		$dc-huge-width				: 64em;
-		$dc-huge-cols				: 12;
-		$dc-huge-layout			: (
-													container: calc(100% - 48px),
-													columns: 12,
-													gutters: .25
-												);
-
-		// Desktop 				: 1280px 	16 columns 	--> 1280-UP
-		$dc-giant-width			: 80em;
-		$dc-giant-cols				: 16;
-		$dc-giant-layout			: (
-													container: calc(100% - 48px),
-													columns: 16,
-													gutters: .25
-												);
-
-		// Desktop large 		: 1600px 	20 columns 	--> 1600-UP
-		$dc-monstrous-width		: 100em;
-		$dc-monstrous-cols			: 20;
-		$dc-monstrous-layout			: (
-													container: calc(100% - 96px),
-													columns: 20,
-													gutters: .25
-												);
-
-
-//  = BREAKPOINTS
-//  ---------------------------------------------------------------------------
-
-	.#{$dc-prefix}-body
-	{
-		@include dc-debugmessage("Tiny \2014 0-320px", $dc-red60);
-
-		@include breakpoint($dc-small-width)
-		{
-			@include dc-debugmessage("Small \2014 320-480px", $dc-orange60);
-		}
-
-		@include breakpoint($dc-medium-width)
-		{
-			@include dc-debugmessage("Medium \2014 480-600px", $dc-yellow60);
-		}
-
-		@include breakpoint($dc-large-width)
-		{
-			@include dc-debugmessage("Large \2014 600-1024px", $dc-green60);
-		}
-
-		@include breakpoint($dc-huge-width)
-		{
-			@include dc-debugmessage("Huge \2014 1024-1280px", $dc-cyan60);
-		}
-
-		@include breakpoint($dc-giant-width)
-		{
-			@include dc-debugmessage("Giant \2014 1280-1600px", $dc-blue60);
-		}
-
-		@include breakpoint($dc-monstrous-width)
-		{
-			@include dc-debugmessage("Monstrous \2014 1600px and up", $dc-purple60);
-		}
-	}
-
-	.#{$dc-prefix}-is-show-breakpoints .#{$dc-prefix}-body
-	{
-		&::before
-		{
-			transform: translateY(-100%);
-			opacity: 1;
-		}
-	}
-
-	.#{$dc-prefix}-is-show-grid .#{$dc-prefix}-grid
-	{
-		position: fixed;
-		top: $dc-touch-size;
-		right: 0;
-		bottom : 0;
-		left: 0;
-		z-index: 909;
-		opacity: .5;
-		pointer-events: none;
-
-		@include container($dc-tiny-layout debug image show );
-
-
-	//  = 320-UP
-	//  ---------------------------------------------------------------------------
-
-		@include breakpoint($dc-small-width)
-		{
-			@include container($dc-small-layout debug image show);
-		}
-
-
-
-	//  = 480-UP
-	//  ---------------------------------------------------------------------------
-
-		@include breakpoint($dc-medium-width)
-		{
-			@include container($dc-medium-layout debug image show);
-		}
-
-
-
-	//  = 600-UP
-	//  ---------------------------------------------------------------------------
-
-		@include breakpoint($dc-large-width)
-		{
-			@include container($dc-large-layout debug image show);
-		}
-
-
-
-	//  = 1024-UP
-	//  ---------------------------------------------------------------------------
-
-		@include breakpoint($dc-huge-width)
-		{
-			@include container($dc-huge-layout debug image show);
-		}
-
-
-
-	//  = 1280-UP
-	//  ---------------------------------------------------------------------------
-
-		@include breakpoint($dc-giant-width)
-		{
-			@include container($dc-giant-layout debug image show);
-		}
-
-
-
-	//  = 1600-UP
-	//  ---------------------------------------------------------------------------
-
-		@include breakpoint($dc-monstrous-width)
-		{
-			@include container($dc-monstrous-layout debug image show);
-		}
-	}
+                    // The first element of a new row must clear floats
+                    // otherwise rows could get messed up when columns
+                    // do not have the same height.
+                    + [class*='-span'] {
+                        clear: both;
+                    }
+                }
+            }
+        }
+    }
+}

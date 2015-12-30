@@ -1,10 +1,18 @@
-i[class^="dc-font-icon-"] {
-    color: $dc-blue40;
+[class^="dc-font-icon-"] {
+    color: inherit;
 
-    &.dc-font-icon--interactive  {
+    &.dc-font-icon--interactive {
         cursor: pointer;
+
         &:hover {
             color: $dc-blue20;
         }
     }
+
+    &.dc-font-icon-trash {
+        margin-left: .125em;
+        // this is a fix to make the trash icon sharper, because the current version can =not be centered in the font bounding box.
+        // if you change the icon, check to see if this is still needed
+    }
+
 }

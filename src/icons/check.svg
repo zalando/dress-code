@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
     <title>check</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="check" sketch:type="MSArtboardGroup" fill="#000000">
-            <path d="M164.738571,481 L500,80.3832875 L435.049778,26 L164.346327,351.677575 L63.8245577,236.433922 L2.84217094e-14,292.134693 L164.738571,481 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <path d="M168.692297,492.544 L512,82.3124864 L445.490973,26.624 L168.290639,360.117837 L65.3563471,242.108336 L0,299.145926 L168.692297,492.544 Z" id="Shape" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

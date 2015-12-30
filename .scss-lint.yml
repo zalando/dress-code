@@ -1,0 +1,16 @@
+scss_files: 'src/styles/**/*.scss'
+exclude: 'src/styles/_generated/**'
+
+
+linters:
+  StringQuotes:
+    enabled: true
+    style: double_quotes
+  SelectorFormat:
+    convention: hyphenated_BEM
+  PropertySortOrder:
+    order: smacss
+  Indentation:
+    width: 4
+  PseudoElement:
+    enabled: false

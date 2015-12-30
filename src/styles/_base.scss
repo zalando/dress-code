@@ -3,31 +3,24 @@
 //  Base CSS file for media="screen" devices
 //
 //  ---------------------------------------------------------------------------
-
-
 //  = IMPORTS
 //  ---------------------------------------------------------------------------
 
-  // Reset
-  @import "../../node_modules/normalize-css/normalize";
+// Third party mixin and variables plus our mixin and variables
+@import "import";
 
-  // Third party mixin and variables plus our mixin and variables
-  @import "import";
+// The grid
+@import "modules/grid";
 
-  // The grid
-  @import "modules/grid";
+// Patterns
+@import "patterns/clearfix";
+@import "patterns/nav";
+@import "patterns/media";
+@import "patterns/global-states";
+@import "patterns/collapse";
+@import "patterns/style";
 
-  // Patterns
-  @import "patterns/clearfix";
-  @import "patterns/nav";
-  @import "patterns/media";
-  @import "patterns/global-states";
-  @import "patterns/collapse";
-  @import "patterns/style";
-
-  // Basic settings & vertical rhythm
-  @import "base/images";
-  @import "modules/typography";
-  @import "modules/forms";
-
-  // Portal navigation
+// Basic settings & vertical rhythm
+@import "base/images";
+@import "modules/typography";
+@import "modules/forms";

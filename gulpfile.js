@@ -24,7 +24,9 @@ var gulpDebug = require('gulp-debug');
 var iconfont = require('gulp-iconfont');
 var iconfontCss = require('gulp-iconfont-css');
 var conventionalChangelog = require('gulp-conventional-changelog');
+var spawn = require('child_process').spawn;
 var pkg = require('./package.json');
+
 
 // configuration
 var config = {
@@ -49,6 +51,7 @@ var config = {
     dist: 'dist',
     tmp: {
         tmp: '.tmp',
+        dist: '.tmp/.dist',
         demo: '.tmp/.demo',
         deployDemo: '.tmp/.deploy-demo',
         distBower: '.tmp/.dist-bower',
@@ -56,6 +59,24 @@ var config = {
         iconfont: '.tmp/.iconfont'
     }
 };
+
+
+/**
+ *
+ *
+ * CODE QUALITY TASKS
+ *
+ *
+ */
+gulp.task('scss-lint', function(done) {
+    var scssLint = spawn('scss-lint', [], { stdio: [0, 1, 2] });
+
+    scssLint.on('exit', function (code) {
+        // Instantiate a PluginError seems to be the only way to fail the task
+        // without printing out the ugly stacktrace
+        code === 0 ? done() : done(new gutil.PluginError('scss-lint','scss-lint task fails'));
+    });
+});
 
 
 /**
@@ -140,7 +161,7 @@ gulp.task('demo:icons', ['demo:icons:clean'], function () {
         .pipe(gulp.dest(path.join(config.tmp.iconfont, '/svg-icons')))
         .pipe(iconfontCss({
             fontName: fontName,
-            path: 'scss',
+            path: './src/templates/_font-icon.scss',
             targetPath: '../../../src/styles/_generated/_font-icon.scss', // this path to path.join(config.tmp.iconfont, '/fonts') ... weird
             fontPath: '../fonts/',
             cssClass: 'dc-font-icon'
@@ -168,6 +189,8 @@ gulp.task('demo:favicon', function () {
 
 // assemble
 gulp.task('demo:assemble', function (done) {
+    var basePath = gutil.env['demo-base-path'] ? gutil.env['demo-base-path'] : '';
+
     assemble({
         layouts: 'docs/demo/views/layouts/*',
         layoutIncludes: 'docs/demo/views/layouts/includes/*',
@@ -176,7 +199,12 @@ gulp.task('demo:assemble', function (done) {
         data: 'docs/demo/data/**/*.{json,yml}',
         docs: ['docs/**/*.md', '!docs/BOWER-README.md'],
         logErrors: true,
-        dest: config.tmp.demo
+        dest: config.tmp.demo,
+        helpers: {
+            basePath: function () {
+                return basePath;
+            }
+        }
     });
     done();
 });
@@ -250,12 +278,27 @@ gulp.task('demo:deploy', ['demo'], function () {
  *
  */
 
+// build and copy the result in the official versioned distribution folder (dist)
 gulp.task('dist', function (cb) {
-    runSequence('dist:clean', ['dist:styles', 'dist:styles:src', 'dist:images', 'dist:icons'], cb);
+    return runSequence('dist:build', 'dist:clean-dist', 'dist:copy-dist', cb);
+});
+
+// build all distribution artifacts in a tmp folder
+gulp.task('dist:build', function (cb) {
+    return runSequence('dist:clean', ['dist:styles', 'dist:styles:src', 'dist:images', 'dist:icons'], cb);
+});
+
+gulp.task('dist:copy-dist', function () {
+    return gulp.src(path.join(config.tmp.dist, '/**/*'))
+        .pipe(gulp.dest(config.dist));
+});
+
+gulp.task('dist:clean-dist', function (cb) {
+    return del([config.dist], cb);
 });
 
 gulp.task('dist:clean', function (cb) {
-    del([config.dist], cb);
+    return del([config.tmp.dist], cb);
 });
 
 gulp.task('dist:styles', function () {
@@ -263,67 +306,69 @@ gulp.task('dist:styles', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(prefix('last 1 version'))
         .pipe(rename(pkg.name + '.css'))
-        .pipe(gulp.dest(path.join(config.dist, 'css')))
+        .pipe(gulp.dest(path.join(config.tmp.dist, 'css')))
         // minified
         .pipe(rename(pkg.name + '.min.css'))
         .pipe(csso())
-        .pipe(gulp.dest(path.join(config.dist, 'css')));
+        .pipe(gulp.dest(path.join(config.tmp.dist, 'css')));
 });
 
 gulp.task('dist:styles:src', function () {
     return gulp.src(path.join(config.path.styles.toolkit, '/**/*'))
-        .pipe(gulp.dest(path.join(config.dist, 'sass')));
+        .pipe(gulp.dest(path.join(config.tmp.dist, 'sass')));
 });
 
 
 gulp.task('dist:images', function () {
     return gulp.src(config.src.images)
         .pipe(imagemin())
-        .pipe(gulp.dest(path.join(config.dist, '/img')));
+        .pipe(gulp.dest(path.join(config.tmp.dist, '/img')));
 });
 
 gulp.task('dist:icons', ['demo:icons'], function () {
     return gulp.src(path.join(config.tmp.iconfont, '/fonts/**'))
-        .pipe(gulp.dest(path.join(config.dist, '/fonts')));
+        .pipe(gulp.dest(path.join(config.tmp.dist, '/fonts')));
 });
 
 gulp.task('dist:bower:clean', function (cb) {
-    del([config.tmp.distBower], cb);
+    return del([config.tmp.distBower], cb);
 });
 
 
-gulp.task('dist:bower', ['dist:bower:clean', 'dist'], function () {
+gulp.task('dist:bower', ['dist:bower:clean', 'dist:build'], function () {
     var bowerReadmeFilter = gulpFilter(['BOWER-README.md'], {restore: true});
-    var importFilter = gulpFilter(['**/sass/_import.scss', '**/sass/_base.scss'], {restore: true})
+    var importFilter = gulpFilter(['**/sass/_import.scss', '**/sass/_base.scss'], {restore: true});
 
     return gulp.src([
-        path.join(config.dist, '/**/*'),
+        path.join(config.tmp.dist, '/**/*'),
         'bower.json',
         'LICENSE',
         'docs/BOWER-README.md',
         '.editorconfig'
     ])
-        .pipe(bowerReadmeFilter)
-        .pipe(rename('README.md'))
-        .pipe(gulp.dest(config.tmp.distBower))
-        .pipe(bowerReadmeFilter.restore)
-        .pipe(importFilter)
-        .pipe(replace(/@import "..\/..\/node_modules\/(.*)"/g, function (match, p1) {
-            if (p1.indexOf('breakpoint-sass') > -1) {
-                return '@import "../../compass-breakpoint/stylesheets/breakpoint"';
-            } else {
-                return '@import "../../' + p1 + '"';
-            }
-        }))
-        .pipe(importFilter.restore)
-        .pipe(gulp.dest(config.tmp.distBower));
+    .pipe(bowerReadmeFilter)
+    .pipe(rename('README.md'))
+    .pipe(gulp.dest(config.tmp.distBower))
+    .pipe(bowerReadmeFilter.restore)
+    .pipe(importFilter)
+    .pipe(replace(/@import "..\/..\/node_modules\/(.*)"/g, function (match, p1) {
+        if (p1.indexOf('breakpoint-sass') > -1) {
+            return '@import "../../compass-breakpoint/stylesheets/breakpoint"';
+        } else {
+            return '@import "../../' + p1 + '"';
+        }
+    }))
+    .pipe(importFilter.restore)
+    .pipe(gulp.dest(config.tmp.distBower));
 });
 
+// push bower dist to the bower version repo
+// use --dev to push to the develop branch (default: master)
 gulp.task('dist:bower:deploy', ['dist:bower'], function () {
     return gulp.src(path.join(config.tmp.distBower, '/**/*'))
         .pipe(ghPages({
             cacheDir: config.tmp.deployBower,
-            branch: 'master',
+            branch: gutil.env.dev ? 'develop' : 'master',
             remoteUrl: 'git@github.com:zalando/dress-code-bower'
         }));
 });

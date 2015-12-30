@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="500px" height="500px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
     <title>lock</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="lock" sketch:type="MSArtboardGroup" fill="#000000">
-            <path d="M83.7,208.333333 L417.3,208.333333 L417.3,166.666667 C417.3,74.6192084 342.621096,0 250.5,0 C158.378904,0 83.7,74.6192084 83.7,166.666667 L83.7,208.333333 Z M125.4,208.333333 L375.6,208.333333 L375.6,166.666667 C375.6,97.6310729 319.590822,41.6666667 250.5,41.6666667 C181.409178,41.6666667 125.4,97.6310729 125.4,166.666667 L125.4,208.333333 Z M42,250.005797 C42,226.990731 60.6596361,208.333333 83.6762229,208.333333 L417.323777,208.333333 C440.340919,208.333333 459,226.994219 459,250.005797 L459,458.327536 C459,481.342603 440.340364,500 417.323777,500 L83.6762229,500 C60.6590805,500 42,481.339114 42,458.327536 L42,250.005797 Z" id="Rectangle-11" sketch:type="MSShapeGroup"></path>
+            <path d="M352,224 L74.6645251,224 C51.1066857,224 32,243.103893 32,266.669739 L32,469.330261 C32,492.89445 51.1015585,512 74.6645251,512 L437.335475,512 C460.893314,512 480,492.896107 480,469.330261 L480,266.669739 C480,243.10555 460.898441,224 437.335475,224 L352,224 C352,223.9977 352,173.059304 352,161.391153 C352,107.603504 309.019336,64 256,64 C202.980664,64 160,107.603504 160,161.391153 C160,173.410411 160,224 160,224 L352,224 L96,224 L96,170 C96,76.2965329 167.63444,0 256,0 C344.36556,0 416,76.2965329 416,170 C416,184.491788 416,224 416,224 L352,224 Z" id="Rectangle-11" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

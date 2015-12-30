@@ -4,8 +4,11 @@ title: button
 notes: |
   Triggers an action and must not be used for navigation.
 
-  Several instances of this component might be used on a page.
+  It's recommended buttons be <code>&lt;button&gt;</code> or <code>&lt;a&gt;</code> tags.
+
+  Use different buttons with the <code>dc-btn--small</code> and <code>dc-btn--large</code> classes.
 ---
 
-<button class="dc-btn">Button Tag</button>
-<a href class="dc-btn">Anchor Tag</a>
+<button class="dc-btn dc-btn--large">Large Button</button><br>
+<button class="dc-btn">Default Button</button><br>
+<button class="dc-btn dc-btn--small"> small button </button>
