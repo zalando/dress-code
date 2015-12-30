@@ -13,12 +13,12 @@
     z-index: $dc-z-index100;
     animation: dc-toast-animation--top 4s 1 forwards;
 
-    .dc-toast-container-bottom & {
+    &-container-bottom & {
         padding: $dc-space75 $dc-space100 0;
         animation: dc-toast-animation--bottom 4s 1 forwards;
     }
 
-    .dc-toast__content {
+    &__content {
         width: 100%;
         padding: $dc-space100 0;
         border-width: 1px;
@@ -29,32 +29,32 @@
         line-height: 1.2;
         text-align: center;
         text-transform: uppercase;
-    }
 
-    .dc-toast__content--info {
-        border-color: darken($dc-blue70, 5%);
-        background: rgba($dc-blue70, .5);
-        color: $dc-blue20;
-    }
+        &--info {
+            border-color: $dc-blue70;
+            background: $dc-blue80;
+            color: $dc-blue20;
+        }
 
-    .dc-toast__content--success {
-        // scss-lint:disable ColorVariable
-        border-color: #84e440;
-        background: rgba(#e3ffc7, .95);
-        // scss-lint:enable ColorVariable
-        color: $dc-green20;
-    }
+        &--success {
+            // scss-lint:disable ColorVariable
+            border-color: $dc-green50;
+            background: $dc-green80;
+            // scss-lint:enable ColorVariable
+            color: $dc-green20;
+        }
 
-    .dc-toast__content--warning {
-        border-color: darken($dc-red70, 5%);
-        background: rgba(desaturate($dc-red70, 10%), .5);
-        color: $dc-red20;
-    }
+        &--warning {
+            border-color: $dc-red70;
+            background: $dc-red80;
+            color: $dc-red20;
+        }
 
-    .dc-toast__content--error {
-        border-color: darken($dc-yellow70, 35%);
-        background: rgba($dc-yellow70, .5);
-        color: $dc-yellow20;
+        &--error {
+            border-color: $dc-yellow40;
+            background: $dc-yellow80;
+            color: $dc-yellow20;
+        }
     }
 }
 
