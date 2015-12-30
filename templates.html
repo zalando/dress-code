@@ -189,118 +189,15 @@
 
 
 	
-<h1 class="dc-h1" data-f-toggle="labels">Docs</h1>
+<h1 class="dc-h1" data-f-toggle="labels">Templates</h1>
 
+<ul class="dc-list">
 
-<div class="f-item-group">
-	<h2 class="dc-h2" id="CODING"><a class="dc-link" href="#CODING">Coding</a></h2>
-	<h1>Coding Conventions and Guidelines</h1>
-<h2>Coding conventions:</h2>
-<ul>
-<li>We use the <a href="http://getbem.com/introduction/">BEM</a> approach to write css.</li>
-<li>Every css class must be prefixed with <code>dc-</code>.</li>
+	<li>
+		<a class="dc-link" href="templates/grid.html" class="f-item-heading">Grid</a>
+	</li>
+
 </ul>
-<h2>Sass conventions:</h2>
-<ul>
-<li>All variables and mixins must be prefixed with <code>dc-</code> and must use the <strong><em>snake-case</em></strong> (with dashes as separator).</li>
-</ul>
-
-</div>
-
-
-<div class="f-item-group">
-	<h2 class="dc-h2" id="CONTRIBUTING"><a class="dc-link" href="#CONTRIBUTING">Contributing</a></h2>
-	<h1>Contributing to Dress Code</h1>
-<h2>Git workflow</h2>
-<p>The git workflow that we use to contribute is mostly based and well explained in this article: <a href="http://nvie.com/posts/a-successful-git-branching-model/">a-successful-git-branching-model</a></p>
-<h4>Main branches:</h4>
-<ul>
-<li><strong>master</strong> : must point to the latest stable version</li>
-<li><strong>develop</strong>: the main development branch, never work on it directly, always merge <strong><em>topic</em></strong> branches and <strong><em>hotfix</em></strong> branches into this branch.</li>
-<li><strong>topic/[topic-name]</strong>: for every new feature or task, open a <strong><em>topic</em></strong> branch from <strong><em>develop</em></strong> and work on it, when you are done open a pull request and ask for review.</li>
-<li><strong>hotfix/[hotifx-name]</strong>: used to fix stable versions</li>
-<li><strong>release/[release-name]</strong>: used to work on release candidates</li>
-</ul>
-<blockquote>
-<p>If a github issue is related to a branch we suggest to append the number at the end of the branch name.<br>
-example: topic/dropdown-refactor-98</p>
-</blockquote>
-<h2><a name="commit"></a> Git Commit Guidelines</h2>
-<p>We have very precise rules over how our git commit messages can be formatted. This leads to <strong>more
-readable messages</strong> that are easy to follow when looking through the <strong>project history</strong>. It is
-important to note that we use the git commit messages to <strong>generate</strong> the Dress Code
-<a href="../../CHANGELOG.md">Changelog</a> document.</p>
-<blockquote>
-<p>A detailed explanation of guidelines and conventions can be found in this
-<a href="https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#">document</a>.</p>
-</blockquote>
-<h3><a name="commit-message-format"></a> Commit Message Format</h3>
-<p>Each commit message consists of a <strong>header</strong>, a <strong>body</strong> and a <strong>footer</strong>. The header has a special
-format that includes a <strong>type</strong>, a <strong>scope</strong> and a <strong>subject</strong>:</p>
-<pre><code class="language-html">&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;
-&lt;BLANK LINE&gt;
-&lt;body&gt;
-&lt;BLANK LINE&gt;
-&lt;footer&gt;
-</code></pre>
-<blockquote>
-<p>Any line of the commit message cannot be longer 100 characters!<br/>
-This allows the message to be easier to read on github as well as in various git tools.</p>
-</blockquote>
-<h4>Type</h4>
-<p>Must be one of the following:</p>
-<ul>
-<li><strong>feat</strong>: A new feature</li>
-<li><strong>fix</strong>: A bug fix</li>
-<li><strong>docs</strong>: Documentation only changes</li>
-<li><strong>style</strong>: Changes that do not affect the meaning of the code (white-space, formatting, missing
-semi-colons, etc)</li>
-<li><strong>refactor</strong>: A code change that neither fixes a bug nor adds a feature</li>
-<li><strong>perf</strong>: A code change that improves performance</li>
-<li><strong>test</strong>: Adding missing tests</li>
-<li><strong>chore</strong>: Changes to the build process or auxiliary tools and libraries such as documentation
-generation</li>
-</ul>
-<h4>Scope</h4>
-<p>The scope could be anything specifying the place of the commit change.</p>
-<h4>Subject</h4>
-<p>The subject contains succinct description of the change:</p>
-<ul>
-<li>use the imperative, present tense: &quot;change&quot; not &quot;changed&quot; nor &quot;changes&quot;</li>
-<li>don't capitalize first letter</li>
-<li>no dot (.) at the end</li>
-</ul>
-<h4>Body</h4>
-<p>Just as in the <strong>subject</strong>, use the imperative, present tense: &quot;change&quot; not &quot;changed&quot; nor &quot;changes&quot;
-The body should include the motivation for the change and contrast this with previous behavior.</p>
-<h4>Footer</h4>
-<p>The footer should contain any information about <strong>Breaking Changes</strong> and is also the place to
-reference GitHub issues that this commit <strong>Closes</strong>.</p>
-<blockquote>
-<p>Breaking Changes are intended to highlight (in the ChangeLog) changes that will require community
-users to modify their code with this commit.</p>
-</blockquote>
-<br/>
-<h4>Sample Commit message:</h4>
-<pre><code class="language-text">refactor(button): prefix btn class with dc-
-
-    BREAKING CHANGE: btn class now is prefixed with dc namespace.
-
-    Change your code from this:
-
-    ```html
-    &lt;button class=&quot;btn&quot;&gt;submit&lt;/button&gt;
-    ```
-
-    To this:
-
-    ```html
-    &lt;button class=&quot;dc-btn&quot;&gt;submit&lt;/button&gt;
-    ```
-</code></pre>
-
-</div>
-
 
 
 		</div>

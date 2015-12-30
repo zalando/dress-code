@@ -7,19 +7,21 @@
 
 	<title></title>
 
+
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic|Ubuntu+Mono" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="assets/fabricator/styles/f.css">
+	<link rel="stylesheet" href="/dress-code/assets/fabricator/styles/f.css">
 
 	<!-- toolkit styles -->
-	<link rel="stylesheet" href="assets/toolkit/styles/toolkit.css">
+	<link rel="stylesheet" href="/dress-code/assets/toolkit/styles/toolkit.css">
 	<!-- /toolkit styles -->
-	<!-- <script src="/assets/toolkit/scripts/modernizr-custom.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
 
     <link rel="icon" href="favicon.ico">
 </head>
-<body class="dc-body">
-		<header class="dc-header">
+<body class="dc-body dc-body--demo-breakpoints">
+		<header class="dc-header f-header">
 			<img class="dc-logo" src="assets/toolkit/img/logo.svg" alt="Zalando Logo">
 			<!-- <div class="f-control-bar"> -->
 				<div class="f-control f-menu-toggle">
@@ -32,7 +34,7 @@
 				<a href class="dc-link js-toggle-breakpoints">Breakpoints</a>
 			</div>
 			<div class="f-control f-menu-toggle">
-				<a href class="dc-link js-toggle-grid">Grid</a>
+				<a href="templates/grid.html" class="dc-link">Grid</a>
 			</div>
             <div class="f-control">
                 <a class="dc-link" href="https://github.com/zalando/dress-code/" target="_blank">Github</a>
@@ -94,6 +96,9 @@
 							<a href="atoms.html#checkboxes">Checkboxes</a>
 						</li>
 						<li>
+							<a href="atoms.html#grid">Grid</a>
+						</li>
+						<li>
 							<a href="atoms.html#icons">Icons</a>
 						</li>
 						<li>
@@ -110,6 +115,9 @@
 						</li>
 						<li>
 							<a href="atoms.html#select">Select</a>
+						</li>
+						<li>
+							<a href="atoms.html#spinner">Spinner</a>
 						</li>
 						<li>
 							<a href="atoms.html#table">Table</a>
@@ -137,6 +145,9 @@
 					<a href="molecules.html" class="f-menu__heading">Molecules</a>
 					<ul>
 						<li>
+							<a href="molecules.html#dialog">Dialog</a>
+						</li>
+						<li>
 							<a href="molecules.html#messages">Messages</a>
 						</li>
 						<li>
@@ -148,6 +159,14 @@
 					</ul>
 				</li>
 		
+				<li>
+					<a href="templates.html" class="f-menu__heading">Templates</a>
+					<ul>
+						<li>
+							<a href="templates/grid.html">Grid</a>
+						</li>
+					</ul>
+				</li>
 		
 				<li>
 					<a href="docs.html" class="f-menu__heading">Docs</a>
@@ -173,6 +192,58 @@
 <h1 class="dc-h1" data-f-toggle="labels">Molecules</h1>
 
 
+<div class="f-item-group" id="dialog">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+		<h2 class="dc-h2 f-item-heading">Dialog</h2>
+	</div>
+<div class="f-item-preview">
+	<div class="dc-dialog__overlay">
+	<div class="dc-dialog">
+		<div class="dc-dialog__body">
+			<div class="dc-dialog__close"><i class="dc-font-icon-close dc-font-icon--interactive"></i></div>
+			<h3 class="dc-dialog__title">This is a dialog</h3>
+			<h4 class="dc-dialog__subtitle">Subtitle or step</h4>
+			<p>This is the content area. Content goes here. Actions (buttons, most of the times) should go in the bottom part.
+			</p>
+		</div>
+		<div class="dc-dialog__actions">
+			<a href="#" class="dc-link">Action</a>
+			<button class="dc-btn dc-btn--primary dc-dialog__primary">Action</button>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-dialog__overlay&quot;&gt;
+	&lt;div class=&quot;dc-dialog&quot;&gt;
+		&lt;div class=&quot;dc-dialog__body&quot;&gt;
+			&lt;div class=&quot;dc-dialog__close&quot;&gt;&lt;i class=&quot;dc-font-icon-close dc-font-icon--interactive&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+			&lt;h3 class=&quot;dc-dialog__title&quot;&gt;This is a dialog&lt;/h3&gt;
+			&lt;h4 class=&quot;dc-dialog__subtitle&quot;&gt;Subtitle or step&lt;/h4&gt;
+			&lt;p&gt;This is the content area. Content goes here. Actions (buttons, most of the times) should go in the bottom part.
+			&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;dc-dialog__actions&quot;&gt;
+			&lt;a href=&quot;#&quot; class=&quot;dc-link&quot;&gt;Action&lt;/a&gt;
+			&lt;button class=&quot;dc-btn dc-btn--primary dc-dialog__primary&quot;&gt;Action&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="messages">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -187,20 +258,11 @@
 		<h2 class="dc-h2 f-item-heading">Messages</h2>
 	</div>
 <div class="f-item-preview">
-	<div class="dc-msg">
+	<div class="dc-msg dc-msg--info">
 	<div class="dc-msg__inner">
 
 		<div class="dc-msg__icon">
-			<svg class="dc-svg" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-				<title>
-					Info
-				</title>
-				<g fill="none" fill-rule="evenodd">
-					<path d="M0 0h44v44H0z" />
-					<path d="M19.326 16H22v15h1v3h-6v-3h1v-4.02c0-2.087.062-4 .186-5.735.053-.746.112-1.494.177-2.245H17v-3h2.326zM17 9.98c0-.88.287-1.596.863-2.15C18.438 7.277 19.15 7 20 7c.825 0 1.53.277 2.12.83.586.554.88 1.27.88 2.15 0 .882-.294 1.605-.88 2.17-.59.567-1.295.85-2.12.85-.85 0-1.562-.283-2.138-.85-.575-.565-.862-1.288-.862-2.17z"
-					fill="#25AAFF" />
-				</g>
-			</svg>
+			<i class="dc-font-icon-msg-info"></i>
 		</div>
 
 		<div class="dc-msg__bd">
@@ -214,16 +276,7 @@
 		</div>
 
 		<div class="dc-msg__close">
-			<svg class="dc-svg dc-icon--interactive" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-				<title>
-					Close
-				</title>
-				<g fill="none" fill-rule="evenodd">
-					<path d="M0 0h40v40H0z" />
-					<path d="M19.99 21.77c-.613.59-1.202 1.13-1.768 1.62-.836.724-1.692 1.44-2.567 2.148l-1.2-1.2c.7-.884 1.414-1.747 2.144-2.59.49-.566 1.028-1.152 1.61-1.758-.59-.613-1.13-1.202-1.62-1.768-.724-.836-1.44-1.692-2.148-2.568l1.2-1.2c.883.7 1.747 1.415 2.59 2.145.566.49 1.152 1.028 1.758 1.61.613-.59 1.202-1.13 1.768-1.62.836-.724 1.692-1.44 2.567-2.15l1.2 1.2c-.7.885-1.414 1.75-2.144 2.59-.49.568-1.028 1.154-1.61 1.76.59.612 1.13 1.202 1.62 1.768.724.836 1.44 1.692 2.148 2.567l-1.2 1.2c-.883-.7-1.747-1.414-2.59-2.145-.566-.49-1.152-1.028-1.758-1.61zm0-1.772l-.008-.008.008-.01.008.01-.008.008z"
-					fill="#808080" />
-				</g>
-			</svg>
+			<i class="dc-font-icon-close"></i>
 		</div>
 	</div>
 </div>
@@ -232,15 +285,7 @@
 	<div class="dc-msg__inner">
 
 		<div class="dc-msg__icon">
-			<svg class="dc-svg" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-				<title>
-					Success
-				</title>
-				<g fill="none" fill-rule="evenodd">
-					<path d="M0 0h44v44H0z" />
-					<path d="M11 20.72l5.46 6.26L29 12" stroke="#65CC1D" stroke-width="3.5" />
-				</g>
-			</svg>
+			<i class="dc-font-icon-msg-success"></i>
 		</div>
 
 		<div class="dc-msg__bd">
@@ -254,16 +299,7 @@
 		</div>
 
 		<div class="dc-msg__close">
-			<svg class="dc-svg dc-icon--interactive" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-				<title>
-					Close
-				</title>
-				<g fill="none" fill-rule="evenodd">
-					<path d="M0 0h40v40H0z" />
-					<path d="M19.99 21.77c-.613.59-1.202 1.13-1.768 1.62-.836.724-1.692 1.44-2.567 2.148l-1.2-1.2c.7-.884 1.414-1.747 2.144-2.59.49-.566 1.028-1.152 1.61-1.758-.59-.613-1.13-1.202-1.62-1.768-.724-.836-1.44-1.692-2.148-2.568l1.2-1.2c.883.7 1.747 1.415 2.59 2.145.566.49 1.152 1.028 1.758 1.61.613-.59 1.202-1.13 1.768-1.62.836-.724 1.692-1.44 2.567-2.15l1.2 1.2c-.7.885-1.414 1.75-2.144 2.59-.49.568-1.028 1.154-1.61 1.76.59.612 1.13 1.202 1.62 1.768.724.836 1.44 1.692 2.148 2.567l-1.2 1.2c-.883-.7-1.747-1.414-2.59-2.145-.566-.49-1.152-1.028-1.758-1.61zm0-1.772l-.008-.008.008-.01.008.01-.008.008z"
-					fill="#808080" />
-				</g>
-			</svg>
+			<i class="dc-font-icon-close"></i>
 		</div>
 	</div>
 </div>
@@ -272,16 +308,7 @@
 	<div class="dc-msg__inner">
 
 		<div class="dc-msg__icon">
-			<svg class="dc-svg" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-				<title>
-					Warning
-				</title>
-				<g fill="none" fill-rule="evenodd">
-					<path d="M0 0h44v44H0z" />
-					<path d="M22 14.02c0 2.087-.062 4-.186 5.735-.124 1.736-.28 3.484-.465 5.245H18.68c-.207-1.76-.372-3.516-.496-5.264-.124-1.75-.186-3.654-.186-5.717V7h4v7.02zm1 17c0 .88-.287 1.596-.863 2.15-.575.553-1.287.83-2.137.83-.825 0-1.53-.277-2.12-.83-.586-.554-.88-1.27-.88-2.15 0-.882.294-1.605.88-2.17.59-.567 1.295-.85 2.12-.85.85 0 1.562.283 2.137.85.576.565.863 1.288.863 2.17z"
-					fill="#CCB60F" />
-				</g>
-			</svg>
+			<i class="dc-font-icon-msg-warning"></i>
 		</div>
 
 		<div class="dc-msg__bd">
@@ -295,16 +322,7 @@
 		</div>
 
 		<div class="dc-msg__close">
-			<svg class="dc-svg dc-icon--interactive" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-				<title>
-					Close
-				</title>
-				<g fill="none" fill-rule="evenodd">
-					<path d="M0 0h40v40H0z" />
-					<path d="M19.99 21.77c-.613.59-1.202 1.13-1.768 1.62-.836.724-1.692 1.44-2.567 2.148l-1.2-1.2c.7-.884 1.414-1.747 2.144-2.59.49-.566 1.028-1.152 1.61-1.758-.59-.613-1.13-1.202-1.62-1.768-.724-.836-1.44-1.692-2.148-2.568l1.2-1.2c.883.7 1.747 1.415 2.59 2.145.566.49 1.152 1.028 1.758 1.61.613-.59 1.202-1.13 1.768-1.62.836-.724 1.692-1.44 2.567-2.15l1.2 1.2c-.7.885-1.414 1.75-2.144 2.59-.49.568-1.028 1.154-1.61 1.76.59.612 1.13 1.202 1.62 1.768.724.836 1.44 1.692 2.148 2.567l-1.2 1.2c-.883-.7-1.747-1.414-2.59-2.145-.566-.49-1.152-1.028-1.758-1.61zm0-1.772l-.008-.008.008-.01.008.01-.008.008z"
-					fill="#808080" />
-				</g>
-			</svg>
+			<i class="dc-font-icon-close"></i>
 		</div>
 	</div>
 </div>
@@ -314,16 +332,7 @@
 	<div class="dc-msg__inner">
 
 		<div class="dc-msg__icon">
-			<svg class="dc-svg" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-				<title>
-					Error
-				</title>
-				<g fill="none" fill-rule="evenodd">
-					<path d="M0 0h44v44H0z" />
-					<path d="M19.99 22.79c-.962.926-1.89 1.774-2.778 2.545-1.315 1.14-2.66 2.266-4.038 3.38L11.29 26.83c1.098-1.392 2.222-2.75 3.37-4.073.773-.892 1.617-1.814 2.53-2.766-.924-.963-1.772-1.89-2.543-2.78-1.14-1.314-2.266-2.66-3.38-4.036l1.885-1.885c1.392 1.098 2.75 2.22 4.073 3.37.89.773 1.813 1.617 2.766 2.53.964-.925 1.89-1.773 2.78-2.544 1.315-1.14 2.66-2.266 4.038-3.38l1.885 1.886c-1.1 1.39-2.223 2.75-3.37 4.073-.774.89-1.618 1.813-2.532 2.765.926.964 1.774 1.89 2.545 2.78 1.14 1.315 2.266 2.66 3.38 4.037l-1.885 1.886c-1.392-1.1-2.75-2.223-4.073-3.37-.89-.775-1.813-1.618-2.766-2.532zm0-2.786l-.012-.013.013-.013.014.014-.013.014z"
-					fill="#FF4A25" />
-				</g>
-			</svg>
+			<i class="dc-font-icon-msg-error"></i>
 		</div>
 
 		<div class="dc-msg__bd">
@@ -337,35 +346,17 @@
 		</div>
 
 		<div class="dc-msg__close">
-			<svg class="dc-svg dc-icon--interactive" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-				<title>
-					Close
-				</title>
-				<g fill="none" fill-rule="evenodd">
-					<path d="M0 0h40v40H0z" />
-					<path d="M19.99 21.77c-.613.59-1.202 1.13-1.768 1.62-.836.724-1.692 1.44-2.567 2.148l-1.2-1.2c.7-.884 1.414-1.747 2.144-2.59.49-.566 1.028-1.152 1.61-1.758-.59-.613-1.13-1.202-1.62-1.768-.724-.836-1.44-1.692-2.148-2.568l1.2-1.2c.883.7 1.747 1.415 2.59 2.145.566.49 1.152 1.028 1.758 1.61.613-.59 1.202-1.13 1.768-1.62.836-.724 1.692-1.44 2.567-2.15l1.2 1.2c-.7.885-1.414 1.75-2.144 2.59-.49.568-1.028 1.154-1.61 1.76.59.612 1.13 1.202 1.62 1.768.724.836 1.44 1.692 2.148 2.567l-1.2 1.2c-.883-.7-1.747-1.414-2.59-2.145-.566-.49-1.152-1.028-1.758-1.61zm0-1.772l-.008-.008.008-.01.008.01-.008.008z"
-					fill="#808080" />
-				</g>
-			</svg>
+			<i class="dc-font-icon-close"></i>
 		</div>
 	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-msg&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-msg dc-msg--info&quot;&gt;
 	&lt;div class=&quot;dc-msg__inner&quot;&gt;
 
 		&lt;div class=&quot;dc-msg__icon&quot;&gt;
-			&lt;svg class=&quot;dc-svg&quot; width=&quot;44&quot; height=&quot;44&quot; viewBox=&quot;0 0 44 44&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-				&lt;title&gt;
-					Info
-				&lt;/title&gt;
-				&lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
-					&lt;path d=&quot;M0 0h44v44H0z&quot; /&gt;
-					&lt;path d=&quot;M19.326 16H22v15h1v3h-6v-3h1v-4.02c0-2.087.062-4 .186-5.735.053-.746.112-1.494.177-2.245H17v-3h2.326zM17 9.98c0-.88.287-1.596.863-2.15C18.438 7.277 19.15 7 20 7c.825 0 1.53.277 2.12.83.586.554.88 1.27.88 2.15 0 .882-.294 1.605-.88 2.17-.59.567-1.295.85-2.12.85-.85 0-1.562-.283-2.138-.85-.575-.565-.862-1.288-.862-2.17z&quot;
-					fill=&quot;#25AAFF&quot; /&gt;
-				&lt;/g&gt;
-			&lt;/svg&gt;
+			&lt;i class=&quot;dc-font-icon-msg-info&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 
 		&lt;div class=&quot;dc-msg__bd&quot;&gt;
@@ -379,16 +370,7 @@
 		&lt;/div&gt;
 
 		&lt;div class=&quot;dc-msg__close&quot;&gt;
-			&lt;svg class=&quot;dc-svg dc-icon--interactive&quot; width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-				&lt;title&gt;
-					Close
-				&lt;/title&gt;
-				&lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
-					&lt;path d=&quot;M0 0h40v40H0z&quot; /&gt;
-					&lt;path d=&quot;M19.99 21.77c-.613.59-1.202 1.13-1.768 1.62-.836.724-1.692 1.44-2.567 2.148l-1.2-1.2c.7-.884 1.414-1.747 2.144-2.59.49-.566 1.028-1.152 1.61-1.758-.59-.613-1.13-1.202-1.62-1.768-.724-.836-1.44-1.692-2.148-2.568l1.2-1.2c.883.7 1.747 1.415 2.59 2.145.566.49 1.152 1.028 1.758 1.61.613-.59 1.202-1.13 1.768-1.62.836-.724 1.692-1.44 2.567-2.15l1.2 1.2c-.7.885-1.414 1.75-2.144 2.59-.49.568-1.028 1.154-1.61 1.76.59.612 1.13 1.202 1.62 1.768.724.836 1.44 1.692 2.148 2.567l-1.2 1.2c-.883-.7-1.747-1.414-2.59-2.145-.566-.49-1.152-1.028-1.758-1.61zm0-1.772l-.008-.008.008-.01.008.01-.008.008z&quot;
-					fill=&quot;#808080&quot; /&gt;
-				&lt;/g&gt;
-			&lt;/svg&gt;
+			&lt;i class=&quot;dc-font-icon-close&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
@@ -397,15 +379,7 @@
 	&lt;div class=&quot;dc-msg__inner&quot;&gt;
 
 		&lt;div class=&quot;dc-msg__icon&quot;&gt;
-			&lt;svg class=&quot;dc-svg&quot; width=&quot;44&quot; height=&quot;44&quot; viewBox=&quot;0 0 44 44&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-				&lt;title&gt;
-					Success
-				&lt;/title&gt;
-				&lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
-					&lt;path d=&quot;M0 0h44v44H0z&quot; /&gt;
-					&lt;path d=&quot;M11 20.72l5.46 6.26L29 12&quot; stroke=&quot;#65CC1D&quot; stroke-width=&quot;3.5&quot; /&gt;
-				&lt;/g&gt;
-			&lt;/svg&gt;
+			&lt;i class=&quot;dc-font-icon-msg-success&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 
 		&lt;div class=&quot;dc-msg__bd&quot;&gt;
@@ -419,16 +393,7 @@
 		&lt;/div&gt;
 
 		&lt;div class=&quot;dc-msg__close&quot;&gt;
-			&lt;svg class=&quot;dc-svg dc-icon--interactive&quot; width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-				&lt;title&gt;
-					Close
-				&lt;/title&gt;
-				&lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
-					&lt;path d=&quot;M0 0h40v40H0z&quot; /&gt;
-					&lt;path d=&quot;M19.99 21.77c-.613.59-1.202 1.13-1.768 1.62-.836.724-1.692 1.44-2.567 2.148l-1.2-1.2c.7-.884 1.414-1.747 2.144-2.59.49-.566 1.028-1.152 1.61-1.758-.59-.613-1.13-1.202-1.62-1.768-.724-.836-1.44-1.692-2.148-2.568l1.2-1.2c.883.7 1.747 1.415 2.59 2.145.566.49 1.152 1.028 1.758 1.61.613-.59 1.202-1.13 1.768-1.62.836-.724 1.692-1.44 2.567-2.15l1.2 1.2c-.7.885-1.414 1.75-2.144 2.59-.49.568-1.028 1.154-1.61 1.76.59.612 1.13 1.202 1.62 1.768.724.836 1.44 1.692 2.148 2.567l-1.2 1.2c-.883-.7-1.747-1.414-2.59-2.145-.566-.49-1.152-1.028-1.758-1.61zm0-1.772l-.008-.008.008-.01.008.01-.008.008z&quot;
-					fill=&quot;#808080&quot; /&gt;
-				&lt;/g&gt;
-			&lt;/svg&gt;
+			&lt;i class=&quot;dc-font-icon-close&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
@@ -437,16 +402,7 @@
 	&lt;div class=&quot;dc-msg__inner&quot;&gt;
 
 		&lt;div class=&quot;dc-msg__icon&quot;&gt;
-			&lt;svg class=&quot;dc-svg&quot; width=&quot;44&quot; height=&quot;44&quot; viewBox=&quot;0 0 44 44&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-				&lt;title&gt;
-					Warning
-				&lt;/title&gt;
-				&lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
-					&lt;path d=&quot;M0 0h44v44H0z&quot; /&gt;
-					&lt;path d=&quot;M22 14.02c0 2.087-.062 4-.186 5.735-.124 1.736-.28 3.484-.465 5.245H18.68c-.207-1.76-.372-3.516-.496-5.264-.124-1.75-.186-3.654-.186-5.717V7h4v7.02zm1 17c0 .88-.287 1.596-.863 2.15-.575.553-1.287.83-2.137.83-.825 0-1.53-.277-2.12-.83-.586-.554-.88-1.27-.88-2.15 0-.882.294-1.605.88-2.17.59-.567 1.295-.85 2.12-.85.85 0 1.562.283 2.137.85.576.565.863 1.288.863 2.17z&quot;
-					fill=&quot;#CCB60F&quot; /&gt;
-				&lt;/g&gt;
-			&lt;/svg&gt;
+			&lt;i class=&quot;dc-font-icon-msg-warning&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 
 		&lt;div class=&quot;dc-msg__bd&quot;&gt;
@@ -460,16 +416,7 @@
 		&lt;/div&gt;
 
 		&lt;div class=&quot;dc-msg__close&quot;&gt;
-			&lt;svg class=&quot;dc-svg dc-icon--interactive&quot; width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-				&lt;title&gt;
-					Close
-				&lt;/title&gt;
-				&lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
-					&lt;path d=&quot;M0 0h40v40H0z&quot; /&gt;
-					&lt;path d=&quot;M19.99 21.77c-.613.59-1.202 1.13-1.768 1.62-.836.724-1.692 1.44-2.567 2.148l-1.2-1.2c.7-.884 1.414-1.747 2.144-2.59.49-.566 1.028-1.152 1.61-1.758-.59-.613-1.13-1.202-1.62-1.768-.724-.836-1.44-1.692-2.148-2.568l1.2-1.2c.883.7 1.747 1.415 2.59 2.145.566.49 1.152 1.028 1.758 1.61.613-.59 1.202-1.13 1.768-1.62.836-.724 1.692-1.44 2.567-2.15l1.2 1.2c-.7.885-1.414 1.75-2.144 2.59-.49.568-1.028 1.154-1.61 1.76.59.612 1.13 1.202 1.62 1.768.724.836 1.44 1.692 2.148 2.567l-1.2 1.2c-.883-.7-1.747-1.414-2.59-2.145-.566-.49-1.152-1.028-1.758-1.61zm0-1.772l-.008-.008.008-.01.008.01-.008.008z&quot;
-					fill=&quot;#808080&quot; /&gt;
-				&lt;/g&gt;
-			&lt;/svg&gt;
+			&lt;i class=&quot;dc-font-icon-close&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
@@ -479,16 +426,7 @@
 	&lt;div class=&quot;dc-msg__inner&quot;&gt;
 
 		&lt;div class=&quot;dc-msg__icon&quot;&gt;
-			&lt;svg class=&quot;dc-svg&quot; width=&quot;44&quot; height=&quot;44&quot; viewBox=&quot;0 0 44 44&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-				&lt;title&gt;
-					Error
-				&lt;/title&gt;
-				&lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
-					&lt;path d=&quot;M0 0h44v44H0z&quot; /&gt;
-					&lt;path d=&quot;M19.99 22.79c-.962.926-1.89 1.774-2.778 2.545-1.315 1.14-2.66 2.266-4.038 3.38L11.29 26.83c1.098-1.392 2.222-2.75 3.37-4.073.773-.892 1.617-1.814 2.53-2.766-.924-.963-1.772-1.89-2.543-2.78-1.14-1.314-2.266-2.66-3.38-4.036l1.885-1.885c1.392 1.098 2.75 2.22 4.073 3.37.89.773 1.813 1.617 2.766 2.53.964-.925 1.89-1.773 2.78-2.544 1.315-1.14 2.66-2.266 4.038-3.38l1.885 1.886c-1.1 1.39-2.223 2.75-3.37 4.073-.774.89-1.618 1.813-2.532 2.765.926.964 1.774 1.89 2.545 2.78 1.14 1.315 2.266 2.66 3.38 4.037l-1.885 1.886c-1.392-1.1-2.75-2.223-4.073-3.37-.89-.775-1.813-1.618-2.766-2.532zm0-2.786l-.012-.013.013-.013.014.014-.013.014z&quot;
-					fill=&quot;#FF4A25&quot; /&gt;
-				&lt;/g&gt;
-			&lt;/svg&gt;
+			&lt;i class=&quot;dc-font-icon-msg-error&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 
 		&lt;div class=&quot;dc-msg__bd&quot;&gt;
@@ -502,16 +440,7 @@
 		&lt;/div&gt;
 
 		&lt;div class=&quot;dc-msg__close&quot;&gt;
-			&lt;svg class=&quot;dc-svg dc-icon--interactive&quot; width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-				&lt;title&gt;
-					Close
-				&lt;/title&gt;
-				&lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
-					&lt;path d=&quot;M0 0h40v40H0z&quot; /&gt;
-					&lt;path d=&quot;M19.99 21.77c-.613.59-1.202 1.13-1.768 1.62-.836.724-1.692 1.44-2.567 2.148l-1.2-1.2c.7-.884 1.414-1.747 2.144-2.59.49-.566 1.028-1.152 1.61-1.758-.59-.613-1.13-1.202-1.62-1.768-.724-.836-1.44-1.692-2.148-2.568l1.2-1.2c.883.7 1.747 1.415 2.59 2.145.566.49 1.152 1.028 1.758 1.61.613-.59 1.202-1.13 1.768-1.62.836-.724 1.692-1.44 2.567-2.15l1.2 1.2c-.7.885-1.414 1.75-2.144 2.59-.49.568-1.028 1.154-1.61 1.76.59.612 1.13 1.202 1.62 1.768.724.836 1.44 1.692 2.148 2.567l-1.2 1.2c-.883-.7-1.747-1.414-2.59-2.145-.566-.49-1.152-1.028-1.758-1.61zm0-1.772l-.008-.008.008-.01.008.01-.008.008z&quot;
-					fill=&quot;#808080&quot; /&gt;
-				&lt;/g&gt;
-			&lt;/svg&gt;
+			&lt;i class=&quot;dc-font-icon-close&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -658,7 +587,7 @@
 		</div>
 		<div class="dc-grid"></div>
 
-		<script src="assets/fabricator/scripts/f.js"></script>
+		<script src="/dress-code/assets/fabricator/scripts/f.js"></script>
 
 </body>
 </html>
