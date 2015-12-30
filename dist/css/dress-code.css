@@ -1706,6 +1706,12 @@ table {
 .dc-radio:checked + .dc-label:after {
   background: #26aafe; }
 
+.dc-radio + .dc-label {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2.2rem;
+  text-transform: none; }
+
 .dc-checkbox + .dc-label:after {
   top: .2rem;
   left: .2rem;
