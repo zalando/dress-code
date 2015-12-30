@@ -6,7 +6,7 @@
     z-index: 901;
     pointer-events: none;
 
-    .dc-loading-bar__bar {
+    &__bar {
         position: absolute;
         top: 0;
         left: 0;
@@ -15,7 +15,7 @@
         background: $dc-gray70;
     }
 
-    .dc-loading-bar__fill {
+    &__fill {
         position: absolute;
         top: 0;
         left: 0;
