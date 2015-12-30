@@ -16,6 +16,7 @@ $dc-font-path: "../fonts" !default;
 
 $dc-white: #fff;
 
+$dc-gray80: #f7f7f7;
 $dc-gray70: #edeced;
 $dc-gray60: #d1d1d1;
 $dc-gray50: #b6b6b6;
@@ -30,6 +31,7 @@ $dc-black: #000;
 //  ---------------------------------------------------------------------------
 
 // BLUE
+$dc-blue80: #e6f4ff;
 $dc-blue70: #b1dcfe;
 $dc-blue60: #88ccfe;
 $dc-blue50: #5cbbfe;
@@ -40,6 +42,7 @@ $dc-blue20: #186698;
 $dc-blue10: #124365;
 
 // CYAN
+$dc-cyan80: #e8fcff;
 $dc-cyan70: #b5f2ff;
 $dc-cyan60: #8decff;
 $dc-cyan50: #61e6fe;
@@ -50,6 +53,7 @@ $dc-cyan20: #1a8699;
 $dc-cyan10: #145966;
 
 // GREEN
+$dc-green80: #e7ffd6;
 $dc-green70: #ceff9e;
 $dc-green60: #b4ff70;
 $dc-green50: #9aff44;
@@ -60,6 +64,7 @@ $dc-green20: #4c9913;
 $dc-green10: #32650a;
 
 // YELLOW
+$dc-yellow80: #fff9d9;
 $dc-yellow70: #fff49b;
 $dc-yellow60: #ffef6a;
 $dc-yellow50: #ffe93d;
@@ -70,6 +75,7 @@ $dc-yellow20: #99880e;
 $dc-yellow10: #665b05;
 
 // ORANGE
+$dc-orange80: #ffefe0;
 $dc-orange70: #ffd2a6;
 $dc-orange60: #ffbc7a;
 $dc-orange50: #ffa54e;
@@ -80,7 +86,8 @@ $dc-orange20: #995516;
 $dc-orange10: #66380e;
 
 // RED
-$dc-red70: #ffb7a6;
+$dc-red80: #ffeae6;
+$dc-red70: #ffcabf;
 $dc-red60: #ff937b;
 $dc-red50: #ff6e4f;
 $dc-red40: #ff4a25;
@@ -90,6 +97,7 @@ $dc-red20: #982c15;
 $dc-red10: #661d0e;
 
 // MAGENTA
+$dc-magenta80: #f7e9f7;
 $dc-magenta70: #f7c8f5;
 $dc-magenta60: #f3acf1;
 $dc-magenta50: #ef8fed;
@@ -100,6 +108,7 @@ $dc-magenta20: #8d458b;
 $dc-magenta10: #5d2e5c;
 
 // PURPLE
+$dc-purple80: #f4edff;
 $dc-purple70: #d5bdfe;
 $dc-purple60: #c19cfe;
 $dc-purple50: #ac7afd;
