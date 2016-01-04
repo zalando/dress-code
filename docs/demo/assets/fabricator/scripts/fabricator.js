@@ -1,6 +1,7 @@
 'use strict';
 
 require('./prism');
+require('./interactions');
 
 /**
  * Global `fabricator` object
