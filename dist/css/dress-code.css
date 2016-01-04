@@ -2448,8 +2448,8 @@ table {
     color: #32650a; }
 
 .dc-msg--error {
-  border-color: #ffa28d;
-  background: rgba(251, 186, 170, 0.5);
+  border-color: #ffb5a6;
+  background: rgba(252, 204, 194, 0.5);
   color: #982c15; }
   .dc-msg--error .dc-font-icon-msg-error {
     color: #ff4a25;
@@ -2776,3 +2776,146 @@ table {
     display: block;
     margin: 0 1.2rem;
     padding: 0.8rem 0; }
+
+.dc-toast-container {
+  position: fixed;
+  top: 0; }
+  .dc-toast-container.dc-toast-container--bottom {
+    top: auto;
+    bottom: 0; }
+
+.dc-toast {
+  padding: 0 1.2rem 0.8rem;
+  z-index: 9999;
+  -webkit-animation: dc-toast-animation--top 4s 1 forwards;
+          animation: dc-toast-animation--top 4s 1 forwards; }
+  .dc-toast-container-bottom .dc-toast {
+    padding: 0.8rem 1.2rem 0;
+    -webkit-animation: dc-toast-animation--bottom 4s 1 forwards;
+            animation: dc-toast-animation--bottom 4s 1 forwards; }
+  .dc-toast__content {
+    width: 100%;
+    padding: 1.2rem 0;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 1px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase; }
+    .dc-toast__content--info {
+      border-color: #b1dcfe;
+      background: #e6f4ff;
+      color: #186698; }
+    .dc-toast__content--success {
+      border-color: #9aff44;
+      background: #e7ffd6;
+      color: #4c9913; }
+    .dc-toast__content--warning {
+      border-color: #ffcabf;
+      background: #ffeae6;
+      color: #982c15; }
+    .dc-toast__content--error {
+      border-color: #ffe41f;
+      background: #fff9d9;
+      color: #99880e; }
+
+@-webkit-keyframes dc-toast-animation--top {
+  0% {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%); }
+  25% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  100% {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%); } }
+
+@keyframes dc-toast-animation--top {
+  0% {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%); }
+  25% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  100% {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%); } }
+
+@-webkit-keyframes dc-toast-animation--bottom {
+  0% {
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%); }
+  25% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  100% {
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%); } }
+
+@keyframes dc-toast-animation--bottom {
+  0% {
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%); }
+  25% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  100% {
+    -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%); } }
+
+.dc-loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 901;
+  pointer-events: none; }
+  .dc-loading-bar__bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #edeced; }
+  .dc-loading-bar__fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ffa54e;
+    -webkit-animation: dc-loading-bar 3s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            animation: dc-loading-bar 3s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left; }
+
+@-webkit-keyframes dc-loading-bar {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0); }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); } }
+
+@keyframes dc-loading-bar {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0); }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1); } }
