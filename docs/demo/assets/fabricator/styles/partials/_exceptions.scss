@@ -1,9 +1,20 @@
 // This file is to hold exceptions and overrides needed to present elements in the styleguide
 // but that should not be inside the final generated css
 
-.f-item-preview .dc-dialog__overlay {
-    position: relative;
-    opacity: 1;
+.f-item-preview {
+
+    .dc-dialog__overlay {
+        position: relative;
+        opacity: 1;
+    }
+
+    .dc-toast-container {
+        position: relative;
+    }
+    .dc-toast {
+        animation: none;
+    }
+
 }
 
 .f-item-preview .dc-loading-bar {
