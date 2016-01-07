@@ -1,3 +1,15 @@
+<a name="0.2.0-alpha"></a>
+# [0.2.0-alpha](https://github.com/zalando/dress-code/compare/0.1.1-alpha...v0.2.0-alpha) (2016-01-07)
+
+### Features
+
+* **divider:** Create a simple section divider ([7fc3870](https://github.com/zalando/dress-code/commit/7fc3870))
+* **dropdown:** Add dropdown dropup button molecule ([a9d22d5](https://github.com/zalando/dress-code/commit/a9d22d5))
+* **forms:** Create input groups ([668a712](https://github.com/zalando/dress-code/commit/668a712))
+* **toasts:** Add toast molecule ([f5ad3d9](https://github.com/zalando/dress-code/commit/f5ad3d9))
+* **loading-bar:** Add loading bar atom ([pull request #69](https://github.com/zalando/dress-code/pull/69))
+
+
 <a name="0.1.1-alpha"></a>
 ## [0.1.1-alpha](https://github.com/zalando/dress-code/compare/0.1.0-alpha...v0.1.1-alpha) (2015-12-30)
 
