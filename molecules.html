@@ -15,7 +15,8 @@
 	<link rel="stylesheet" href="/dress-code/assets/toolkit/styles/toolkit.css">
 	<!-- /toolkit styles -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 
     <link rel="icon" href="favicon.ico">
@@ -96,6 +97,9 @@
 							<a href="atoms.html#checkboxes">Checkboxes</a>
 						</li>
 						<li>
+							<a href="atoms.html#divider">Divider</a>
+						</li>
+						<li>
 							<a href="atoms.html#grid">Grid</a>
 						</li>
 						<li>
@@ -106,6 +110,9 @@
 						</li>
 						<li>
 							<a href="atoms.html#lists">Lists</a>
+						</li>
+						<li>
+							<a href="atoms.html#loading-bar">Loading Bar</a>
 						</li>
 						<li>
 							<a href="atoms.html#paragraph">Paragraph</a>
@@ -145,13 +152,22 @@
 					<a href="molecules.html" class="f-menu__heading">Molecules</a>
 					<ul>
 						<li>
+							<a href="molecules.html#button-dropdown">Button Dropdown</a>
+						</li>
+						<li>
 							<a href="molecules.html#dialog">Dialog</a>
+						</li>
+						<li>
+							<a href="molecules.html#input-groups">Input Groups</a>
 						</li>
 						<li>
 							<a href="molecules.html#messages">Messages</a>
 						</li>
 						<li>
 							<a href="molecules.html#search-form">Search Form</a>
+						</li>
+						<li>
+							<a href="molecules.html#toast">Toast</a>
 						</li>
 						<li>
 							<a href="molecules.html#tooltip">Tooltip</a>
@@ -190,6 +206,83 @@
 
 	
 <h1 class="dc-h1" data-f-toggle="labels">Molecules</h1>
+
+
+<div class="f-item-group" id="button-dropdown">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+		<h2 class="dc-h2 f-item-heading">Button Dropdown</h2>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Wrap buttons and a list with <code>dc-btn-dropdown</code> to make dropdown that come from buttons.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-btn-dropdown">
+	<button class="dc-btn dc-btn--primary" id="dropdownExample">
+		Dropdown
+		<span class="dc-arrow-down"></span>
+	</button>
+	<ul class="dc-dropdown-list" id="dropdownExampleList">
+		<li><a href="#">The first option</a></li>
+		<li><a href="#">The second option</a></li>
+		<li class="disabled"><a href="#">Disabled option</a></li>
+	</ul>
+</div>
+
+<div class="dc-btn-dropup">
+	<button class="dc-btn dc-btn--primary" id="dropupExample">
+		Dropup
+		<span class="dc-arrow-up"></span>
+	</button>
+	<ul class="dc-dropdown-list" id="dropupExampleList">
+		<li><a href="#">The first option</a></li>
+		<li><a href="#">The second option</a></li>
+		<li class="dc-divider"></li>
+		<li><a href="#">Separated option</a></li>
+	</ul>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-btn-dropdown&quot;&gt;
+	&lt;button class=&quot;dc-btn dc-btn--primary&quot; id=&quot;dropdownExample&quot;&gt;
+		Dropdown
+		&lt;span class=&quot;dc-arrow-down&quot;&gt;&lt;/span&gt;
+	&lt;/button&gt;
+	&lt;ul class=&quot;dc-dropdown-list&quot; id=&quot;dropdownExampleList&quot;&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;The first option&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;The second option&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;Disabled option&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;dc-btn-dropup&quot;&gt;
+	&lt;button class=&quot;dc-btn dc-btn--primary&quot; id=&quot;dropupExample&quot;&gt;
+		Dropup
+		&lt;span class=&quot;dc-arrow-up&quot;&gt;&lt;/span&gt;
+	&lt;/button&gt;
+	&lt;ul class=&quot;dc-dropdown-list&quot; id=&quot;dropupExampleList&quot;&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;The first option&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;The second option&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&quot;dc-divider&quot;&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated option&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
 
 
 <div class="f-item-group" id="dialog">
@@ -244,11 +337,92 @@
 </div>
 
 
+<div class="f-item-group" id="input-groups">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+		<h2 class="dc-h2 f-item-heading">Input Groups</h2>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Create input groups by using <code>.dc-input-group</code> to wrap inputs, addons with the class <code>.dc-input-addon</code> and <code>button</code>.</p>
+
+</div>
+<div class="f-item-preview">
+	<label class="dc-label" for="priceInput">Addon - Appended</label>
+<div class="dc-input-group">
+	<input class="dc-input dc-input--text-right" type="text" id="priceInput" placeholder="e. g. 100" />
+	<div class="dc-input-addon">&euro;</div>
+</div>
+
+<label class="dc-label" for="urlInput">Addon - Prepended</label>
+<div class="dc-input-group">
+	<span class="dc-input-addon">http://</span>
+	<input class="dc-input" type="text" id="urlInput" placeholder="e. g. brands.zalando.com" />
+</div>
+
+<label class="dc-label" for="urlInput">Button - Appended</label>
+<div class="dc-input-group">
+	<input class="dc-input" type="text" id="urlInput" placeholder="e. g. brands.zalando.com" />
+	<button class="dc-btn dc-btn--primary"><i class="dc-font-icon-search"></i></button>
+</div>
+
+<label class="dc-label" for="urlInput">Addon - Prepended & Button - Appended</label>
+<div class="dc-input-group">
+	<span class="dc-input-addon">User 1</span>
+	<input class="dc-input" type="text" id="urlInput" placeholder="Full name" />
+	<a class="dc-btn dc-btn--primary">Add</a>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;label class=&quot;dc-label&quot; for=&quot;priceInput&quot;&gt;Addon - Appended&lt;/label&gt;
+&lt;div class=&quot;dc-input-group&quot;&gt;
+	&lt;input class=&quot;dc-input dc-input--text-right&quot; type=&quot;text&quot; id=&quot;priceInput&quot; placeholder=&quot;e. g. 100&quot; /&gt;
+	&lt;div class=&quot;dc-input-addon&quot;&gt;&amp;euro;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;label class=&quot;dc-label&quot; for=&quot;urlInput&quot;&gt;Addon - Prepended&lt;/label&gt;
+&lt;div class=&quot;dc-input-group&quot;&gt;
+	&lt;span class=&quot;dc-input-addon&quot;&gt;http://&lt;/span&gt;
+	&lt;input class=&quot;dc-input&quot; type=&quot;text&quot; id=&quot;urlInput&quot; placeholder=&quot;e. g. brands.zalando.com&quot; /&gt;
+&lt;/div&gt;
+
+&lt;label class=&quot;dc-label&quot; for=&quot;urlInput&quot;&gt;Button - Appended&lt;/label&gt;
+&lt;div class=&quot;dc-input-group&quot;&gt;
+	&lt;input class=&quot;dc-input&quot; type=&quot;text&quot; id=&quot;urlInput&quot; placeholder=&quot;e. g. brands.zalando.com&quot; /&gt;
+	&lt;button class=&quot;dc-btn dc-btn--primary&quot;&gt;&lt;i class=&quot;dc-font-icon-search&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;label class=&quot;dc-label&quot; for=&quot;urlInput&quot;&gt;Addon - Prepended &amp; Button - Appended&lt;/label&gt;
+&lt;div class=&quot;dc-input-group&quot;&gt;
+	&lt;span class=&quot;dc-input-addon&quot;&gt;User 1&lt;/span&gt;
+	&lt;input class=&quot;dc-input&quot; type=&quot;text&quot; id=&quot;urlInput&quot; placeholder=&quot;Full name&quot; /&gt;
+	&lt;a class=&quot;dc-btn dc-btn--primary&quot;&gt;Add&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="messages">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<div class="f-item-controls">
-			
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 				<svg class="dc-svg">
 					<use xlink:href="#f-icon-code" />
@@ -256,7 +430,10 @@
 			</span>
 		</div>
 		<h2 class="dc-h2 f-item-heading">Messages</h2>
-	</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Use messages for giving feedback to the user about the system or an action that was performed. Message have to be dismissed by the user.</p>
+
+</div>
 <div class="f-item-preview">
 	<div class="dc-msg dc-msg--info">
 	<div class="dc-msg__inner">
@@ -552,6 +729,86 @@
 			&lt;a class=&quot;dc-link dc-suggest__link&quot; href data-brand=&quot;Armani Jeans&quot;&gt;Armani Jeans&lt;/a&gt;
 		&lt;/li&gt;
 	&lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="toast">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+		<h2 class="dc-h2 f-item-heading">Toast</h2>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Toasts are used to give feedback about user action, but they are simpler than messages in that they have less information and no interaction.</p>
+<p>A toast's default position is fixed to the top of the screen. Default is top. Use <code>.dc-toast-container--bottom</code> to make it appear from the bottom.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-toast-container">
+	<div class="dc-toast">
+		<div class="dc-toast__content dc-toast__content--info">
+			Info toast. Be quick, this message will disappear!
+		</div>
+	</div>
+
+	<div class="dc-toast">
+		<div class="dc-toast__content dc-toast__content--success">
+			Success toast. Be quick, this message will disappear!
+		</div>
+	</div>
+
+	<div class="dc-toast">
+		<div class="dc-toast__content dc-toast__content--error">
+			Warning toast. Be quick, this message will disappear!
+		</div>
+	</div>
+
+	<div class="dc-toast">
+		<div class="dc-toast__content dc-toast__content--warning">
+			Error toast. Be quick, this message will disappear!
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-toast-container&quot;&gt;
+	&lt;div class=&quot;dc-toast&quot;&gt;
+		&lt;div class=&quot;dc-toast__content dc-toast__content--info&quot;&gt;
+			Info toast. Be quick, this message will disappear!
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;dc-toast&quot;&gt;
+		&lt;div class=&quot;dc-toast__content dc-toast__content--success&quot;&gt;
+			Success toast. Be quick, this message will disappear!
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;dc-toast&quot;&gt;
+		&lt;div class=&quot;dc-toast__content dc-toast__content--error&quot;&gt;
+			Warning toast. Be quick, this message will disappear!
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;dc-toast&quot;&gt;
+		&lt;div class=&quot;dc-toast__content dc-toast__content--warning&quot;&gt;
+			Error toast. Be quick, this message will disappear!
+		&lt;/div&gt;
+	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 

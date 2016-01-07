@@ -15,7 +15,8 @@
 	<link rel="stylesheet" href="/dress-code/assets/toolkit/styles/toolkit.css">
 	<!-- /toolkit styles -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 
     <link rel="icon" href="favicon.ico">
@@ -96,6 +97,9 @@
 							<a href="atoms.html#checkboxes">Checkboxes</a>
 						</li>
 						<li>
+							<a href="atoms.html#divider">Divider</a>
+						</li>
+						<li>
 							<a href="atoms.html#grid">Grid</a>
 						</li>
 						<li>
@@ -106,6 +110,9 @@
 						</li>
 						<li>
 							<a href="atoms.html#lists">Lists</a>
+						</li>
+						<li>
+							<a href="atoms.html#loading-bar">Loading Bar</a>
 						</li>
 						<li>
 							<a href="atoms.html#paragraph">Paragraph</a>
@@ -145,13 +152,22 @@
 					<a href="molecules.html" class="f-menu__heading">Molecules</a>
 					<ul>
 						<li>
+							<a href="molecules.html#button-dropdown">Button Dropdown</a>
+						</li>
+						<li>
 							<a href="molecules.html#dialog">Dialog</a>
+						</li>
+						<li>
+							<a href="molecules.html#input-groups">Input Groups</a>
 						</li>
 						<li>
 							<a href="molecules.html#messages">Messages</a>
 						</li>
 						<li>
 							<a href="molecules.html#search-form">Search Form</a>
+						</li>
+						<li>
+							<a href="molecules.html#toast">Toast</a>
 						</li>
 						<li>
 							<a href="molecules.html#tooltip">Tooltip</a>
@@ -569,6 +585,47 @@
 </div>
 
 		</div>
+
+</div>
+
+
+<div class="f-item-group" id="divider">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+		<h2 class="dc-h2 f-item-heading">Divider</h2>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Use <code>dc-divider</code> to create a lines to divide content sections width a light gray divider.</p>
+
+</div>
+<div class="f-item-preview">
+	<p class="dc-p">As Gregor Samsa awoke one morning from uneasy dreams he found himself transformed in his bed into a gigantic insect. He was lying on his hard, as it were armor-plated, back and when he lifted his head a little he could see his dome-like brown belly divided
+	into stiff arched segments on top of which the bed quilt could hardly keep in position and was about to slide off completely.</p>
+<hr class="dc-divider"></hr>
+<p class="dc-p">It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife. However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in
+	the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters
+	<p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;p class=&quot;dc-p&quot;&gt;As Gregor Samsa awoke one morning from uneasy dreams he found himself transformed in his bed into a gigantic insect. He was lying on his hard, as it were armor-plated, back and when he lifted his head a little he could see his dome-like brown belly divided
+	into stiff arched segments on top of which the bed quilt could hardly keep in position and was about to slide off completely.&lt;/p&gt;
+&lt;hr class=&quot;dc-divider&quot;&gt;&lt;/hr&gt;
+&lt;p class=&quot;dc-p&quot;&gt;It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife. However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in
+	the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters
+	&lt;p&gt;</code></pre>
+</div>
+
 
 </div>
 
@@ -1585,6 +1642,36 @@
 </div>
 
 
+<div class="f-item-group" id="loading-bar">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+		<h2 class="dc-h2 f-item-heading">Loading Bar</h2>
+	</div>
+<div class="f-item-preview">
+	<div class="dc-loading-bar">
+	<div class="dc-loading-bar__bar"></div>
+	<div class="dc-loading-bar__fill"></div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-loading-bar&quot;&gt;
+	&lt;div class=&quot;dc-loading-bar__bar&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;dc-loading-bar__fill&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="paragraph">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -1855,50 +1942,38 @@
 		<h2 class="dc-h2 f-item-heading">Text Input</h2>
 	</div>
 <div class="f-item-preview">
-	<label class="dc-label" for="optionalInput">Label</label>
+	<label class="dc-label" for="optionalInput">Text Input</label>
 <input class="dc-input" type="text" id="optionalInput" placeholder="e. g. give an example" />
 
-<label class="dc-label dc-label--required" for="requiredInput">Label</label>
+<label class="dc-label" for="numberInput">Number input</label>
+<input class="dc-input" type="number" id="numberInput" placeholder="e. g. 100" />
+
+<label class="dc-label dc-label--required" for="requiredInput">Required Input</label>
 <input class="dc-input" type="text" id="requiredInput" placeholder="e. g. give an example" />
 
-<label class="dc-label dc-label--required dc-label--is-error" for="errorInput">Label</label>
+<label class="dc-label dc-label--required dc-label--is-error" for="errorInput">Required Input – Error</label>
 <input class="dc-input dc-input--is-error" type="text" id="errorInput" placeholder="e. g. give an example" />
 <span class="dc-text--error">Please don't leave this empty.</span>
 
-<label class="dc-label" for="numberInput">Stock</label>
-<input class="dc-input" type="number" id="numberInput" placeholder="e. g. 100" />
-
 <label class="dc-label dc-label--disabled" for="disabledInput">Disabled input</label>
 <input class="dc-input dc-input--disabled" type="text" id="disabledInput" placeholder="e. g. give an example" disabled/>
-
-<label class="dc-label" for="priceInput">Price</label>
-<div class="dc-input-group dc-input-group--price">
-	<input class="dc-input dc-input--text-right" type="number" id="priceInput" placeholder="e. g. 1.000,00" />
-	<div class="dc-input-group__addon">&euro;</div>
-</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;label class=&quot;dc-label&quot; for=&quot;optionalInput&quot;&gt;Label&lt;/label&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;label class=&quot;dc-label&quot; for=&quot;optionalInput&quot;&gt;Text Input&lt;/label&gt;
 &lt;input class=&quot;dc-input&quot; type=&quot;text&quot; id=&quot;optionalInput&quot; placeholder=&quot;e. g. give an example&quot; /&gt;
 
-&lt;label class=&quot;dc-label dc-label--required&quot; for=&quot;requiredInput&quot;&gt;Label&lt;/label&gt;
+&lt;label class=&quot;dc-label&quot; for=&quot;numberInput&quot;&gt;Number input&lt;/label&gt;
+&lt;input class=&quot;dc-input&quot; type=&quot;number&quot; id=&quot;numberInput&quot; placeholder=&quot;e. g. 100&quot; /&gt;
+
+&lt;label class=&quot;dc-label dc-label--required&quot; for=&quot;requiredInput&quot;&gt;Required Input&lt;/label&gt;
 &lt;input class=&quot;dc-input&quot; type=&quot;text&quot; id=&quot;requiredInput&quot; placeholder=&quot;e. g. give an example&quot; /&gt;
 
-&lt;label class=&quot;dc-label dc-label--required dc-label--is-error&quot; for=&quot;errorInput&quot;&gt;Label&lt;/label&gt;
+&lt;label class=&quot;dc-label dc-label--required dc-label--is-error&quot; for=&quot;errorInput&quot;&gt;Required Input – Error&lt;/label&gt;
 &lt;input class=&quot;dc-input dc-input--is-error&quot; type=&quot;text&quot; id=&quot;errorInput&quot; placeholder=&quot;e. g. give an example&quot; /&gt;
 &lt;span class=&quot;dc-text--error&quot;&gt;Please don&#x27;t leave this empty.&lt;/span&gt;
 
-&lt;label class=&quot;dc-label&quot; for=&quot;numberInput&quot;&gt;Stock&lt;/label&gt;
-&lt;input class=&quot;dc-input&quot; type=&quot;number&quot; id=&quot;numberInput&quot; placeholder=&quot;e. g. 100&quot; /&gt;
-
 &lt;label class=&quot;dc-label dc-label--disabled&quot; for=&quot;disabledInput&quot;&gt;Disabled input&lt;/label&gt;
-&lt;input class=&quot;dc-input dc-input--disabled&quot; type=&quot;text&quot; id=&quot;disabledInput&quot; placeholder=&quot;e. g. give an example&quot; disabled/&gt;
-
-&lt;label class=&quot;dc-label&quot; for=&quot;priceInput&quot;&gt;Price&lt;/label&gt;
-&lt;div class=&quot;dc-input-group dc-input-group--price&quot;&gt;
-	&lt;input class=&quot;dc-input dc-input--text-right&quot; type=&quot;number&quot; id=&quot;priceInput&quot; placeholder=&quot;e. g. 1.000,00&quot; /&gt;
-	&lt;div class=&quot;dc-input-group__addon&quot;&gt;&amp;euro;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+&lt;input class=&quot;dc-input dc-input--disabled&quot; type=&quot;text&quot; id=&quot;disabledInput&quot; placeholder=&quot;e. g. give an example&quot; disabled/&gt;</code></pre>
 </div>
 
 
