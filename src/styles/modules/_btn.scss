@@ -196,10 +196,7 @@
 }
 
 .dc-btn-group-row {
-    // FIXME: Prefer using placeholder selectors (e.g. %some-placeholder) with @extend
-    // scss-lint:disable PlaceholderInExtend
-    @extend .dc-cf;
-    // scss-lint:enable PlaceholderInExtend
+    @extend %dc-cf;
     clear: both;
 }
 
