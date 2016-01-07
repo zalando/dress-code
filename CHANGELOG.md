@@ -1,3 +1,13 @@
+<a name="0.2.1-alpha"></a>
+## [0.2.1-alpha](https://github.com/zalando/dress-code/compare/0.2.0-alpha...v0.2.1-alpha) (2016-01-07)
+
+
+### BREAKING CHANGES
+
+* grid: grid was removed #80 ([7f5dcf9](https://github.com/zalando/dress-code/commit/7f5dcf9))
+
+
+
 <a name="0.2.0-alpha"></a>
 # [0.2.0-alpha](https://github.com/zalando/dress-code/compare/0.1.1-alpha...v0.2.0-alpha) (2016-01-07)
 
