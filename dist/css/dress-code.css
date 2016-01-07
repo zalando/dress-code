@@ -2919,3 +2919,9 @@ table {
   100% {
     -webkit-transform: scaleX(1);
             transform: scaleX(1); } }
+
+.dc-divider {
+  height: 1px;
+  margin-bottom: 2.4rem;
+  border: 0;
+  background: #d1d1d1; }
