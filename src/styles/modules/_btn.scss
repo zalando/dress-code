@@ -25,6 +25,10 @@
     box-shadow: 0 1px 1px transparent;
     cursor: default;
 
+    &:focus {
+        outline: none;
+    }
+
     > * {
         margin-right: 10px;
     }
