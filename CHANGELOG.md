@@ -1,3 +1,13 @@
+<a name="0.2.2-alpha"></a>
+## [0.2.2-alpha](https://github.com/zalando/dress-code/compare/0.2.1-alpha...v0.2.2-alpha) (2016-01-08)
+
+
+### Bug Fixes
+
+* **sass-versions-compatibility:** #82 use the placeholder syntax with dc-cf, remove normalize.css dep... ([fea826a](https://github.com/zalando/dress-code/commit/fea826a))
+
+
+
 <a name="0.2.1-alpha"></a>
 ## [0.2.1-alpha](https://github.com/zalando/dress-code/compare/0.2.0-alpha...v0.2.1-alpha) (2016-01-07)
 
