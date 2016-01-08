@@ -67,7 +67,6 @@
   },
   "dependencies": {
     "breakpoint-sass": "^2.6.1",
-    "normalize-css": "^2.3.1",
     "susy": "^2.2.6"
   }
 }

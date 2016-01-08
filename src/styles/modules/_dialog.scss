@@ -65,7 +65,7 @@
 
 .dc-dialog__title {
     // scss-lint:disable PlaceholderInExtend
-    @extend .h3;
+    @extend .dc-h3;
     // scss-lint:enable PlaceholderInExtend
     display: inline-block;
     margin: 0 0 $dc-space50;
@@ -76,7 +76,7 @@
 
 .dc-dialog__subtitle {
     // scss-lint:disable PlaceholderInExtend
-    @extend .h4;
+    @extend .dc-h4;
     // scss-lint:enable PlaceholderInExtend
     display: inline-block;
     margin: 0 0 $dc-space50;
