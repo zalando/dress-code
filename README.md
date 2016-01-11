@@ -21,16 +21,28 @@ The Dress Code UI toolkit is a highly-modular design system for rapid web page d
 #### with Bower
 
 ```
-$ bower install git@github.com:zalando/dress-code-bower.git
+$ bower install https://github.com/zalando/dress-code-bower.git --save
 ```
 
 #### with Npm
 
+Add the dress-code as a dependency in your package.json
+
 ```
-$ npm install git+ssh://git@github.com:zalando/dress-code.git
+{
+  "dependencies": {
+    "dress-code": "git+https://github.com/zalando/dress-code.git"
+  }  
+}
 ```
 
-> At the moment we don't support ```npm@3``` and ```node@5.x```
+and run
+
+```
+npm install
+```
+
+> **At the moment we don't support ```npm@3``` and ```node@5.x```**
 
 ### Usage
 
@@ -47,13 +59,13 @@ Include this in your ```<head>```:
 - Compiling sass:
 
 ```
-@import "bower_components/dress-code/sass/toolkit.scss" 
+@import "bower_components/dress-code/sass/toolkit" 
 ```
 
 if you wanna use just mixins and variables...
 
 ```
-@import "bower_components/dress-code/sass/_import.scss" 
+@import "bower_components/dress-code/sass/import" 
 ```
 
 > Note for those using compass. Add this to yours config.rb file: 
@@ -78,13 +90,13 @@ Include this in your ```<head>```:
 - Compiling sass:
 
 ```
-@import "node_modules/dress-code/dist/sass/toolkit.scss" 
+@import "node_modules/dress-code/dist/sass/toolkit" 
 ```
 
 if you wanna use just mixins and variables...
 
 ```
-@import "node_modules/dress-code/dist/sass/_import.scss" 
+@import "node_modules/dress-code/dist/sass/import" 
 ```
 
 
