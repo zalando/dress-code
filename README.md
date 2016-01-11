@@ -12,19 +12,19 @@ The Dress Code UI toolkit is a highly-modular design system for rapid web page d
 
 ## Getting Started
 
-#### Requirements
+### Requirements
 
 * [modernizer](https://modernizr.com/) included in the ```<head>``` of your web page.
 
-#### Install
+### Install
 
-with **Bower**:
+#### with Bower
 
 ```
 $ bower install git@github.com:zalando/dress-code-bower.git
 ```
 
-with **Npm**:
+#### with Npm
 
 ```
 $ npm install git+ssh://git@github.com:zalando/dress-code.git
@@ -32,9 +32,9 @@ $ npm install git+ssh://git@github.com:zalando/dress-code.git
 
 > At the moment we don't support ```npm@3``` and ```node@5.x```
 
-#### Usage
+### Usage
 
-with **Bower**
+#### with Bower
 
 - Using the pre-compiled version:
 
@@ -56,7 +56,16 @@ if you wanna use just mixins and variables...
 @import "bower_components/dress-code/sass/_import.scss" 
 ```
 
-with **Npm**
+> Note for those using compass. Add this to yours config.rb file: 
+```
+add_import_path "bower_components"
+```
+Then you can import the dress-code like so: 
+```
+@import "dress-code/sass/toolkit";
+```
+
+#### with Npm (<3.x)
 
 - Using the pre-compiled version:
 
