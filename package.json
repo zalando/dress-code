@@ -11,6 +11,7 @@
     "build:demo": "gulp demo",
     "deploy:demo": "gulp demo:deploy --demo-base-path=/dress-code",
     "deploy:bower": "gulp dist:bower:deploy",
+    "chengelog": "gulp dist:changelog",
     "start": "gulp"
   },
   "keywords": [

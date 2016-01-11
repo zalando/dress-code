@@ -86,7 +86,7 @@ Developers interested in contributing should read the following guidelines:
 - [Contributing Guidelines](docs/guides/CONTRIBUTING.md)
 - [Coding Guidelines](docs/guides/CODING.md)
 - [ChangeLog](CHANGELOG.md)
-
+- [Releasing](docs/guides/RELEASING.md)
 
 ### Install
 
