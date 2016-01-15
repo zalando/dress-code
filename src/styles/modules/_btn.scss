@@ -152,32 +152,32 @@
     box-shadow: none;
 }
 
-//  = BUTTON GROUPS
+//  = BUTTON GROUPS & BUTTONS IN INPUT GROUPS
 //  ---------------------------------------------------------------------------
 
-.dc-btn-group {
-    // FIXME: Prefer using placeholder selectors (e.g. %some-placeholder) with @extend
-    // scss-lint:disable PlaceholderInExtend
-    @extend .dc-cf;
-    // scss-lint:enable PlaceholderInExtend
+.dc-btn-group,
+.dc-input-group {
+    display: flex;
+    margin-bottom: $dc-space100;
 
     .dc-btn {
         margin-right: 0;
-        float: left;
-        border-right-width: 0;
+        margin-bottom: 0;
+        border-left-width: 0;
         border-radius: 0;
 
         &:first-child {
-            border-radius: $dc-radius100 0 0 $dc-radius100;
+            border-left-width: 1px;
+            border-top-left-radius: $dc-radius100;
+            border-bottom-left-radius: $dc-radius100;
         }
 
         &:last-child {
-            border-right-width: 1px;
-            border-radius: 0 $dc-radius100 $dc-radius100 0;
+            border-top-right-radius: $dc-radius100;
+            border-bottom-right-radius: $dc-radius100;
         }
 
         &.dc-btn--primary {
-            border-right-width: 1px;
             border-color: darken($dc-blue40, 7%);
         }
 
@@ -196,10 +196,7 @@
 }
 
 .dc-btn-group-row {
-    // FIXME: Prefer using placeholder selectors (e.g. %some-placeholder) with @extend
-    // scss-lint:disable PlaceholderInExtend
-    @extend .dc-cf;
-    // scss-lint:enable PlaceholderInExtend
+    @extend %dc-cf;
     clear: both;
 }
 

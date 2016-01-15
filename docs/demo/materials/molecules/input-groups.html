@@ -1,0 +1,28 @@
+---
+notes: |
+ Create input groups by using `.dc-input-group` to wrap inputs, addons with the class `.dc-input-addon` and `button`.
+---
+<label class="dc-label" for="priceInput">Addon - Appended</label>
+<div class="dc-input-group">
+    <input class="dc-input dc-input--text-right" type="text" id="priceInput" placeholder="e. g. 100"/>
+    <div class="dc-input-addon">&euro;</div>
+</div>
+
+<label class="dc-label" for="urlInput">Addon - Prepended</label>
+<div class="dc-input-group">
+    <span class="dc-input-addon">http://</span>
+    <input class="dc-input" type="text" id="urlInput"  placeholder="e. g. brands.zalando.com"/>
+</div>
+
+<label class="dc-label" for="urlInput">Button - Appended</label>
+<div class="dc-input-group">
+    <input class="dc-input" type="text" id="urlInput"  placeholder="e. g. brands.zalando.com"/>
+    <button class="dc-btn dc-btn--primary"><i class="dc-font-icon-search"></i></button>
+</div>
+
+<label class="dc-label" for="urlInput">Addon - Prepended & Button - Appended</label>
+<div class="dc-input-group">
+    <span class="dc-input-addon">User 1</span>
+    <input class="dc-input" type="text" id="urlInput"  placeholder="Full name"/>
+    <a class="dc-btn dc-btn--primary">Add</a>
+</div>

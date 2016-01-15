@@ -1,6 +1,6 @@
 {
   "name": "dress-code",
-  "version": "0.1.1-alpha",
+  "version": "0.2.2-alpha",
   "description": "he Dress Code is the official style guide/UI toolkit for all Brand Solutions products.",
   "homepage": "https://zalando.github.io/brand-solutions-dress-code",
   "main": "dist/sass/toolkit.scss",
@@ -11,6 +11,7 @@
     "build:demo": "gulp demo",
     "deploy:demo": "gulp demo:deploy --demo-base-path=/dress-code",
     "deploy:bower": "gulp dist:bower:deploy",
+    "chengelog": "gulp dist:changelog",
     "start": "gulp"
   },
   "keywords": [
@@ -67,7 +68,6 @@
   },
   "dependencies": {
     "breakpoint-sass": "^2.6.1",
-    "normalize-css": "^2.3.1",
     "susy": "^2.2.6"
   }
 }

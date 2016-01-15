@@ -12,29 +12,41 @@ The Dress Code UI toolkit is a highly-modular design system for rapid web page d
 
 ## Getting Started
 
-#### Requirements
+### Requirements
 
 * [modernizer](https://modernizr.com/) included in the ```<head>``` of your web page.
 
-#### Install
+### Install
 
-with **Bower**:
-
-```
-$ bower install git@github.com:zalando/dress-code-bower.git
-```
-
-with **Npm**:
+#### with Bower
 
 ```
-$ npm install git+ssh://git@github.com:zalando/dress-code.git
+$ bower install https://github.com/zalando/dress-code-bower.git --save
 ```
 
-> At the moment we don't support ```npm@3``` and ```node@5.x```
+#### with Npm
 
-#### Usage
+Add the dress-code as a dependency in your package.json
 
-with **Bower**
+```
+{
+  "dependencies": {
+    "dress-code": "git+https://github.com/zalando/dress-code.git"
+  }  
+}
+```
+
+and run
+
+```
+npm install
+```
+
+> **At the moment we don't support ```npm@3``` and ```node@5.x```**
+
+### Usage
+
+#### with Bower
 
 - Using the pre-compiled version:
 
@@ -47,16 +59,25 @@ Include this in your ```<head>```:
 - Compiling sass:
 
 ```
-@import "bower_components/dress-code/sass/toolkit.scss" 
+@import "bower_components/dress-code/sass/toolkit" 
 ```
 
 if you wanna use just mixins and variables...
 
 ```
-@import "bower_components/dress-code/sass/_import.scss" 
+@import "bower_components/dress-code/sass/import" 
 ```
 
-with **Npm**
+> Note for those using compass. Add this to yours config.rb file: 
+```
+add_import_path "bower_components"
+```
+Then you can import the dress-code like so: 
+```
+@import "dress-code/sass/toolkit";
+```
+
+#### with Npm (<3.x)
 
 - Using the pre-compiled version:
 
@@ -69,13 +90,13 @@ Include this in your ```<head>```:
 - Compiling sass:
 
 ```
-@import "node_modules/dress-code/dist/sass/toolkit.scss" 
+@import "node_modules/dress-code/dist/sass/toolkit" 
 ```
 
 if you wanna use just mixins and variables...
 
 ```
-@import "node_modules/dress-code/dist/sass/_import.scss" 
+@import "node_modules/dress-code/dist/sass/import" 
 ```
 
 
@@ -86,7 +107,7 @@ Developers interested in contributing should read the following guidelines:
 - [Contributing Guidelines](docs/guides/CONTRIBUTING.md)
 - [Coding Guidelines](docs/guides/CODING.md)
 - [ChangeLog](CHANGELOG.md)
-
+- [Releasing](docs/guides/RELEASING.md)
 
 ### Install
 
