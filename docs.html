@@ -179,6 +179,9 @@
 						<li>
 							<a href="docs.html#CONTRIBUTING">Contributing</a>
 						</li>
+						<li>
+							<a href="docs.html#RELEASING">Releasing</a>
+						</li>
 					</ul>
 				</li>
 		
@@ -299,6 +302,77 @@ users to modify their code with this commit.</p>
     ```html
     &lt;button class=&quot;dc-btn&quot;&gt;submit&lt;/button&gt;
     ```
+</code></pre>
+
+</div>
+
+
+<div class="f-item-group">
+	<h2 class="dc-h2" id="RELEASING"><a class="dc-link" href="#RELEASING">Releasing</a></h2>
+	<h1>RELEASING</h1>
+<h3>Step by step instructions to release a new version of the dress-code.</h3>
+<ol>
+<li>From the develop branch, move into a new release branch. The <code>&lt;semver&gt;</code> placeholder stay for a new semantic version (e.g. 0.4.1).
+For more info, please take a look <a href="http://semver.org/">here</a>.</li>
+</ol>
+<pre><code>git checkout -b release/&lt;semver&gt;
+</code></pre>
+<ol start="2">
+<li>Run the build.</li>
+</ol>
+<pre><code>npm run build
+</code></pre>
+<ol start="3">
+<li>Increase <code>bower.json</code> and <code>package.json</code> <semver> version and run the task that updates the changelog.</li>
+</ol>
+<pre><code>npm run changelog
+</code></pre>
+<ol start="4">
+<li>Check the result and if needed adjust the output (<code>CHANGELOG.md</code>).
+When done commit the changes and push the release branch.</li>
+</ol>
+<pre><code>git add --all;
+git commit -m &quot;chore(release): &lt;semver&gt;&quot;;
+git push -u;
+</code></pre>
+<ol start="5">
+<li><strong>Wait the CI job running on <a href="https://travis-ci.org/zalando/dress-code/builds">Travis</a>.</strong></li>
+</ol>
+<p>When the CI job pass with SUCCESS, merge or rebase the release branch on top of the master branch.</p>
+<pre><code>git checkout master;
+git pull;
+git rebase release/&lt;semver&gt;;
+</code></pre>
+<ol start="6">
+<li>Add a git tag, push the master branch and the new tag.</li>
+</ol>
+<pre><code>git tag -a &lt;semver&gt; -m &quot;&lt;semver&gt;&quot;;
+git push origin master;
+git push origin &lt;semver&gt;; # push the tag
+</code></pre>
+<ol start="7">
+<li>Sync the <code>bower</code> version.</li>
+</ol>
+<pre><code>npm run deploy:bower
+cd .tmp/.deploy-bower
+git tag -a &lt;semver&gt; -m &quot;&lt;semver&gt;&quot;;
+git push origin &lt;semver&gt;; # push the tag
+git checkout develop;
+git rebase master;
+git push origin develop;
+git checkout master;
+</code></pre>
+<ol start="8">
+<li>Build and deploy <a href="http://zalando.github.io/dress-code/">docs/demo</a> artifacts.</li>
+</ol>
+<pre><code>npm run deploy:demo;
+</code></pre>
+<ol start="9">
+<li>Keep in sync the develop branch.</li>
+</ol>
+<pre><code>git checkout develop;
+git rebase master;
+git push origin develop;
 </code></pre>
 
 </div>
