@@ -1970,6 +1970,12 @@ th {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 999;
   list-style-type: none; }
+  .dc-dropdown-list::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    content: " ";
+    pointer-events: none; }
   .dc-dropdown-list .dc-divider {
     height: 1px;
     margin: 0.4rem 0;
@@ -1997,7 +2003,19 @@ th {
       outline: none; }
   .dc-btn-dropdown .dc-dropdown-list {
     top: 100%;
-    margin-top: -0.8rem; }
+    margin-top: 0; }
+    .dc-btn-dropdown .dc-dropdown-list::after {
+      bottom: 100%;
+      left: 2.4rem;
+      margin-left: -8px;
+      border: 8px solid transparent;
+      border-bottom-color: #fff; }
   .dc-btn-dropup .dc-dropdown-list {
     bottom: 100%;
-    margin-bottom: 0.8rem; }
+    margin-bottom: 1.2rem; }
+    .dc-btn-dropup .dc-dropdown-list::after {
+      top: 100%;
+      left: 2.4rem;
+      margin-left: -8px;
+      border: 8px solid transparent;
+      border-top-color: #fff; }

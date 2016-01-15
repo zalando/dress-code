@@ -25,6 +25,7 @@ npm run changelog
 When done commit the changes and push the release branch.
 
 ```
+git add --all;
 git commit -m "chore(release): <semver>";
 git push -u;
 ```

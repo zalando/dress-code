@@ -1,3 +1,13 @@
+<a name="0.2.2-alpha.1"></a>
+## [0.2.2-alpha.1](https://github.com/zalando/dress-code/compare/0.2.2-alpha...v0.2.2-alpha.1) (2016-01-15)
+
+
+### Features
+
+* **dropdown:** Add dropdown dropup button molecule ([eb2960b](https://github.com/zalando/dress-code/commit/eb2960b))
+
+
+
 <a name="0.2.2-alpha"></a>
 ## [0.2.2-alpha](https://github.com/zalando/dress-code/compare/0.2.1-alpha...v0.2.2-alpha) (2016-01-08)
 
