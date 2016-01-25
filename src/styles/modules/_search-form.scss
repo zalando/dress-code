@@ -14,7 +14,6 @@
 }
 
 .dc-search-form__input {
-
     -webkit-appearance: none;
 
     .no-touch &[type='search'],
@@ -37,6 +36,7 @@
     .dc-svg,
     .dc-img {
         display: block;
+        margin-right: 0;
     }
 
     .no-touch &:hover,
@@ -60,7 +60,6 @@
 
 .dc-suggest {
     position: absolute;
-    top: calc(100% - 1px);
     left: 0;
     min-width: 100%;
     margin: 0;
@@ -79,8 +78,8 @@
     pointer-events: none;
 }
 
-.dc-suggest__link {
-    display: block;
+.dc-suggest__item {
+    display: flex;
     padding: 0 $dc-space75;
     color: $dc-text-color;
     line-height: $dc-touch-size;
@@ -93,7 +92,30 @@
     }
 }
 
-.dc-search-form__input:focus ~ .dc-suggest {
+.dc-suggest__item__img {
+    position: relative;
+    justify-content: center;
+    width: 30%;
+    max-width: 8rem;
+    margin-right: $dc-space100;
+
+    img {
+        position: absolute;
+        top: calc(50% - 1rem);
+        width: 100%;
+        height: 2rem;
+    }
+}
+
+.dc-suggest__item__label {
+    width: calc(70% - 1.2rem);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.dc-search-form__input:focus ~ .dc-suggest,
+.dc-suggest:hover {
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
