@@ -1,3 +1,10 @@
+//
+//
+// THIS FILE IS DEPRECATED AND ACTUALLY EXCLUDED FROM MAIN (toolkit.scss)
+// TODO: XXX
+//
+//
+
 //  ---------------------------------------------------------------------------
 //
 //  Defines the overview tiles
@@ -31,12 +38,12 @@
 
 .dc-tile--positive {
     border: 2px solid $dc-green-lighter;
-    box-shadow: 2px 2px 0 rgba($dc-greenDark, .5);
+    box-shadow: 2px 2px 0 rgba($dc-green-dark, .5);
 }
 
 .dc-tile--negative {
     border: 2px solid $dc-red-lighter;
-    box-shadow: 2px 2px 0 rgba($dc-redDark, .5);
+    box-shadow: 2px 2px 0 rgba($dc-red-dark, .5);
 }
 
 .dc-tile__title {

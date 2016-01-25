@@ -1,3 +1,10 @@
+//
+//
+// THIS FILE IS DEPRECATED AND ACTUALLY EXCLUDED FROM MAIN (toolkit.scss)
+// TODO: XXX
+//
+//
+
 //  ---------------------------------------------------------------------------
 //
 //  Defines the layout side flyout nav
@@ -19,7 +26,7 @@ $dc-nav-accent-color: $dc-orange40;
         color: $dc-text-color;
     }
 
-    dc-svg {
+    .dc-svg {
         transform-origin: 50% 50%;
 
         &:active {
@@ -27,8 +34,8 @@ $dc-nav-accent-color: $dc-orange40;
         }
     }
 
-    dc-svg:hover,
-    dc-svg:active {
+    .dc-svg:hover,
+    .dc-svg:active {
         [fill^='#'] {
             fill: $dc-orange40;
         }
@@ -220,13 +227,14 @@ $dc-nav-accent-color: $dc-orange40;
     right: 0;
     left: 0;
     transform: scaleY(0);
+    transform-origin: 0 0 0;
     transition: transform .2s .2s ease-in-out, opacity .1s .2s linear;
     border-top: $dc-border50 solid $dc-gray60;
     border-bottom: $dc-border50 solid $dc-gray60;
     background: rgba($dc-white, .85);
     opacity: 0;
     z-index: 998;
-    transform-origin: 0 0 0;
+
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
     pointer-events: none;

@@ -1,8 +1,20 @@
+// Third party mixins and variables, plus our mixins and variables
+@import "import";
 
-//  = IMPORTS
-//  ---------------------------------------------------------------------------
+// Patterns
+@import "patterns/clearfix";
+@import "patterns/nav";
+@import "patterns/media";
+@import "patterns/global-states";
+@import "patterns/collapse";
+@import "patterns/style";
+@import "patterns/images";
 
-@import "base";
+// Basic settings & vertical rhythm
+@import "modules/typography";
+@import "modules/forms";
+
+// Modules
 @import "_generated/font-icon";
 @import "modules/font-icon";
 @import "modules/btn";
