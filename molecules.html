@@ -637,8 +637,10 @@
 
 </div>
 <div class="f-item-preview">
-	<div class="dc-search-form">
-	<input class="dc-input dc-search-form__input" type="search" placeholder="Search...">
+	<label for="searchOnlyText" class="dc-label">Search box showing text results</label>
+
+<div class="dc-search-form">
+	<input class="dc-input dc-search-form__input" id="searchOnlyText" type="search" placeholder="Search...">
 	<button class="dc-btn dc-search-form__btn">
 		<svg class="dc-svg dc-icon--interactive" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
 			<title>
@@ -654,33 +656,99 @@
 		</svg>
 	</button>
 	<ul class="dc-list dc-suggest">
-		<li class="dc-suggest__item">
-			<a class="dc-link dc-suggest__link" href data-brand="Esprit">Esprit</a>
+		<li class="dc-suggest__item dc-link">
+			Esprit
 		</li>
-		<li class="dc-suggest__item">
-			<a class="dc-link dc-suggest__link" href data-brand="Hugo Boss">Hugo Boss</a>
+		<li class="dc-suggest__item dc-link">
+			Hugo Boss
 		</li>
-		<li class="dc-suggest__item">
-			<a class="dc-link dc-suggest__link" href data-brand="Michael Kors">Michael Kors</a>
+		<li class="dc-suggest__item dc-link">
+			Michael Kors
 		</li>
-		<li class="dc-suggest__item">
-			<a class="dc-link dc-suggest__link" href data-brand="adidas">adidas</a>
+		<li class="dc-suggest__item dc-link">
+			adidas
 		</li>
-		<li class="dc-suggest__item">
-			<a class="dc-link dc-suggest__link" href data-brand="Tommy Hilfiger">Tommy Hilfiger</a>
+		<li class="dc-suggest__item dc-link">
+			Tommy Hilfiger
 		</li>
-		<li class="dc-suggest__item">
-			<a class="dc-link dc-suggest__link" href data-brand="Diesel">Diesel</a>
+		<li class="dc-suggest__item dc-link">
+			Diesel
 		</li>
-		<li class="dc-suggest__item">
-			<a class="dc-link dc-suggest__link" href data-brand="Armani Jeans">Armani Jeans</a>
+		<li class="dc-suggest__item dc-link">
+			Armani Jeans
+		</li>
+	</ul>
+</div>
+
+<label for="searchWithImages" class="dc-label">Search box showing results with images</label>
+
+<div class="dc-search-form">
+	<input class="dc-input dc-search-form__input" id="searchWithImages" type="search" placeholder="Search...">
+	<button class="dc-btn dc-search-form__btn">
+		<svg class="dc-svg dc-icon--interactive" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+			<title>
+				Search
+			</title>
+			<g fill="none" fill-rule="evenodd">
+				<path fill="none" d="M0 0h36v36H0z" />
+				<g transform="translate(10 10)" stroke="#9B9B9B">
+					<path d="M10.75 10.75l4.95 4.95" stroke-linecap="round" />
+					<circle cx="6" cy="6" r="6" />
+				</g>
+			</g>
+		</svg>
+	</button>
+	<ul class="dc-list dc-suggest">
+		<li class="dc-suggest__item dc-link">
+			<div class="dc-suggest__item__img">
+				<img src="assets/toolkit/img/logo.svg">
+			</div>
+			<span class="dc-suggest__item__label">Esprit</span>
+		</li>
+		<li class="dc-suggest__item dc-link">
+			<div class="dc-suggest__item__img">
+				<img src="assets/toolkit/img/logo.svg">
+			</div>
+			<span class="dc-suggest__item__label">Hugo Boss</span>
+		</li>
+		<li class="dc-suggest__item dc-link">
+			<div class="dc-suggest__item__img">
+				<img src="assets/toolkit/img/logo.svg">
+			</div>
+			<span class="dc-suggest__item__label">Michael Kors</span>
+		</li>
+		<li class="dc-suggest__item dc-link">
+			<div class="dc-suggest__item__img">
+				<img src="assets/toolkit/img/logo.svg">
+			</div>
+			<span class="dc-suggest__item__label">adidas</span>
+		</li>
+		<li class="dc-suggest__item dc-link">
+			<div class="dc-suggest__item__img">
+				<img src="assets/toolkit/img/logo.svg">
+			</div>
+			<span class="dc-suggest__item__label">Tommy Hilfiger</span>
+		</li>
+		<li class="dc-suggest__item dc-link">
+			<div class="dc-suggest__item__img">
+				<img src="assets/toolkit/img/logo.svg">
+			</div>
+			<span class="dc-suggest__item__label">Diesel</span>
+		</li>
+		<li class="dc-suggest__item dc-link">
+			<div class="dc-suggest__item__img">
+				<img src="assets/toolkit/img/logo.svg">
+			</div>
+			<span class="dc-suggest__item__label">Armani Jeans</span>
 		</li>
 	</ul>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-search-form&quot;&gt;
-	&lt;input class=&quot;dc-input dc-search-form__input&quot; type=&quot;search&quot; placeholder=&quot;Search...&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;label for=&quot;searchOnlyText&quot; class=&quot;dc-label&quot;&gt;Search box showing text results&lt;/label&gt;
+
+&lt;div class=&quot;dc-search-form&quot;&gt;
+	&lt;input class=&quot;dc-input dc-search-form__input&quot; id=&quot;searchOnlyText&quot; type=&quot;search&quot; placeholder=&quot;Search...&quot;&gt;
 	&lt;button class=&quot;dc-btn dc-search-form__btn&quot;&gt;
 		&lt;svg class=&quot;dc-svg dc-icon--interactive&quot; width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 36 36&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
 			&lt;title&gt;
@@ -696,26 +764,90 @@
 		&lt;/svg&gt;
 	&lt;/button&gt;
 	&lt;ul class=&quot;dc-list dc-suggest&quot;&gt;
-		&lt;li class=&quot;dc-suggest__item&quot;&gt;
-			&lt;a class=&quot;dc-link dc-suggest__link&quot; href data-brand=&quot;Esprit&quot;&gt;Esprit&lt;/a&gt;
+		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+			Esprit
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-suggest__item&quot;&gt;
-			&lt;a class=&quot;dc-link dc-suggest__link&quot; href data-brand=&quot;Hugo Boss&quot;&gt;Hugo Boss&lt;/a&gt;
+		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+			Hugo Boss
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-suggest__item&quot;&gt;
-			&lt;a class=&quot;dc-link dc-suggest__link&quot; href data-brand=&quot;Michael Kors&quot;&gt;Michael Kors&lt;/a&gt;
+		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+			Michael Kors
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-suggest__item&quot;&gt;
-			&lt;a class=&quot;dc-link dc-suggest__link&quot; href data-brand=&quot;adidas&quot;&gt;adidas&lt;/a&gt;
+		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+			adidas
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-suggest__item&quot;&gt;
-			&lt;a class=&quot;dc-link dc-suggest__link&quot; href data-brand=&quot;Tommy Hilfiger&quot;&gt;Tommy Hilfiger&lt;/a&gt;
+		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+			Tommy Hilfiger
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-suggest__item&quot;&gt;
-			&lt;a class=&quot;dc-link dc-suggest__link&quot; href data-brand=&quot;Diesel&quot;&gt;Diesel&lt;/a&gt;
+		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+			Diesel
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-suggest__item&quot;&gt;
-			&lt;a class=&quot;dc-link dc-suggest__link&quot; href data-brand=&quot;Armani Jeans&quot;&gt;Armani Jeans&lt;/a&gt;
+		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+			Armani Jeans
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;label for=&quot;searchWithImages&quot; class=&quot;dc-label&quot;&gt;Search box showing results with images&lt;/label&gt;
+
+&lt;div class=&quot;dc-search-form&quot;&gt;
+	&lt;input class=&quot;dc-input dc-search-form__input&quot; id=&quot;searchWithImages&quot; type=&quot;search&quot; placeholder=&quot;Search...&quot;&gt;
+	&lt;button class=&quot;dc-btn dc-search-form__btn&quot;&gt;
+		&lt;svg class=&quot;dc-svg dc-icon--interactive&quot; width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 36 36&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+			&lt;title&gt;
+				Search
+			&lt;/title&gt;
+			&lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
+				&lt;path fill=&quot;none&quot; d=&quot;M0 0h36v36H0z&quot; /&gt;
+				&lt;g transform=&quot;translate(10 10)&quot; stroke=&quot;#9B9B9B&quot;&gt;
+					&lt;path d=&quot;M10.75 10.75l4.95 4.95&quot; stroke-linecap=&quot;round&quot; /&gt;
+					&lt;circle cx=&quot;6&quot; cy=&quot;6&quot; r=&quot;6&quot; /&gt;
+				&lt;/g&gt;
+			&lt;/g&gt;
+		&lt;/svg&gt;
+	&lt;/button&gt;
+	&lt;ul class=&quot;dc-list dc-suggest&quot;&gt;
+		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+			&lt;div class=&quot;dc-suggest__item__img&quot;&gt;
+				&lt;img src=&quot;assets/toolkit/img/logo.svg&quot;&gt;
+			&lt;/div&gt;
+			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Esprit&lt;/span&gt;
+		&lt;/li&gt;
+		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+			&lt;div class=&quot;dc-suggest__item__img&quot;&gt;
+				&lt;img src=&quot;assets/toolkit/img/logo.svg&quot;&gt;
+			&lt;/div&gt;
+			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Hugo Boss&lt;/span&gt;
+		&lt;/li&gt;
+		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+			&lt;div class=&quot;dc-suggest__item__img&quot;&gt;
+				&lt;img src=&quot;assets/toolkit/img/logo.svg&quot;&gt;
+			&lt;/div&gt;
+			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Michael Kors&lt;/span&gt;
+		&lt;/li&gt;
+		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+			&lt;div class=&quot;dc-suggest__item__img&quot;&gt;
+				&lt;img src=&quot;assets/toolkit/img/logo.svg&quot;&gt;
+			&lt;/div&gt;
+			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;adidas&lt;/span&gt;
+		&lt;/li&gt;
+		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+			&lt;div class=&quot;dc-suggest__item__img&quot;&gt;
+				&lt;img src=&quot;assets/toolkit/img/logo.svg&quot;&gt;
+			&lt;/div&gt;
+			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Tommy Hilfiger&lt;/span&gt;
+		&lt;/li&gt;
+		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+			&lt;div class=&quot;dc-suggest__item__img&quot;&gt;
+				&lt;img src=&quot;assets/toolkit/img/logo.svg&quot;&gt;
+			&lt;/div&gt;
+			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Diesel&lt;/span&gt;
+		&lt;/li&gt;
+		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+			&lt;div class=&quot;dc-suggest__item__img&quot;&gt;
+				&lt;img src=&quot;assets/toolkit/img/logo.svg&quot;&gt;
+			&lt;/div&gt;
+			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Armani Jeans&lt;/span&gt;
 		&lt;/li&gt;
 	&lt;/ul&gt;
 &lt;/div&gt;</code></pre>
