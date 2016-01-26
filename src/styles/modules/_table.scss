@@ -15,26 +15,6 @@
     font-weight: $dc-bold-font-weight;
 }
 
-// FIXME!
-.dc-status {
-    &:before {
-        display: inline-block;
-        width: $dc-space75;
-        height: $dc-space75;
-        margin-right: $dc-space75;
-        border-radius: 2px;
-        content: " ";
-    }
-}
-
-.dc-status--online:before {
-    background: $dc-green30;
-}
-
-.dc-status--offline:before {
-    background: $dc-gray50;
-}
-
 //  = TABLE
 //  ---------------------------------------------------------------------------
 
@@ -89,16 +69,9 @@
             text-transform: uppercase;
             content: attr(data-col);
         }
+
     }
 
-    .dc-page--dashboard .dc-table__td:last-child {
-        // FIXME
-        padding-left: calc(30% + 12px);
-
-        &::before {
-            content: attr(data-col);
-        }
-    }
 }
 
 .dc-table__th {
@@ -108,83 +81,6 @@
 
 .dc-table__td {
     font-weight: $dc-normal-font-weight;
-}
-
-.dc-table__actions-toggle {
-    display: none;
-}
-
-.dc-table__actions-label {
-    display: inline;
-    color: $dc-link-color;
-    cursor: pointer;
-
-    &:hover {
-        color: $dc-link-color-hover;
-    }
-}
-
-:checked + .dc-table__actions-label {
-    color: $dc-link-color-hover;
-}
-
-.dc-table__actions {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: -1;
-    border: 1px solid $dc-gray60;
-    border-radius: 2px;
-    background: $dc-white;
-    line-height: $dc-touch-size;
-    box-shadow: 0 1px 2px rgba($dc-black, .2);
-    z-index: 900;
-
-    &:after,
-    &:before {
-        position: absolute;
-        right: $dc-space100;
-        bottom: 100%;
-        width: 0;
-        height: 0;
-        border: solid transparent;
-        content: " ";
-        pointer-events: none;
-    }
-
-    &:after {
-        border-width: 6px;
-        // scss-lint:disable ColorVariable
-        border-color: rgba(255, 255, 255, 0);
-        border-bottom-color: #fff;
-        // scss-lint:enable ColorVariable
-    }
-
-    &:before {
-        margin-right: -1px;
-        border-width: 7px;
-        // scss-lint:disable ColorVariable
-        border-color: rgba(209, 209, 209, 0);
-        // scss-lint:enable ColorVariable
-        border-bottom-color: $dc-gray60;
-    }
-}
-
-.dc-table__actions-toggle:checked ~ .table__actions {
-    display: inline-block;
-}
-
-.dc-table__action {
-    padding: 0 $dc-space100;
-}
-
-.dc-table__action--disabled,
-.dc-table__action--disabled a,
-.touch .dc-table__action--disabled a:active,
-.no-touch .dc-table__action--disabled a:hover {
-    color: $dc-gray60;
-    text-decoration: none;
-    cursor: default;
 }
 
 @include breakpoint($dc-large-width $dc-huge-width - .1) {
@@ -214,31 +110,6 @@
 }
 
 @include breakpoint($dc-huge-width) {
-    .dc-table__actions-wrapper {
-        display: block;
-        position: relative;
-        padding: .4rem 0;
-    }
-
-    .dc-table__actions {
-        padding: $dc-space50 $dc-space50 $dc-space50 0;
-        line-height: 1;
-    }
-
-    .dc-table__action {
-        display: inline-block;
-        margin-left: $dc-space50;
-        padding: 0;
-    }
-
-    .dc-table__action-group-start {
-        padding-left: $dc-space100;
-    }
-
-    .dc-table__action-group-end {
-        padding-right: $dc-space100;
-    }
-
     .dc-table__tr {
         border-bottom: 1px solid $dc-gray70;
     }
@@ -246,14 +117,6 @@
     .dc-table__tbody > .table__tr {
         &:hover {
             background: desaturate(lighten($dc-blue70, 12%), 10%);
-        }
-    }
-
-    body:not(.is-admin) .dc-table__tbody > .dc-table__tr--is-in-review {
-        // FIXME
-        &:hover {
-            background: transparent;
-            cursor: default;
         }
     }
 
@@ -271,11 +134,6 @@
         }
     }
 
-    .dc-page--dashboard .dc-table__th:last-child, // FIXME
-    .dc-page--dashboard .dc-table__td:last-child {
-        text-align: left;
-    }
-
     .dc-table__th {
         @include breakpoint(1150px) {
             padding: $dc-space50 $dc-space100;
@@ -283,36 +141,43 @@
     }
 
     .dc-table__td {
-        padding-top: $dc-space75;
-        padding-bottom: $dc-space75;
+        // the added pixels are there to make the rows heights all be multiples of 4
+        padding-top: $dc-space75 + .1;
+        padding-bottom: $dc-space75 + .1;
         white-space: nowrap;
 
-        @include breakpoint(1280px) {
-            &:nth-child(5) {
-                padding-right: 10;
-            }
+        .dc-table--tight & {
+            padding-top: $dc-space50 + .1;
+            padding-bottom: $dc-space50 + .1;
         }
+
+        .dc-table--comfortable & {
+            padding-top: $dc-space100 - .1;
+            padding-bottom: $dc-space100 - .1;
+        }
+
+        .dc-table--spacious & {
+            padding-top: $dc-space125 + .1;
+            padding-bottom: $dc-space125 + .1;
+        }
+
     }
 
-    .dc-table__item-title {
-        font-weight: $dc-normal-font-weight;
-        white-space: normal;
-    }
 }
 
-.touch .dc-page--dashboard .dc-table__tr {
+.touch .dc-table__tr {
     // FIXME
+    // Currently using dataURL base64 to avoid dealing with the image URL. We have to fix it
     position: relative;
 
-    &::after {
+    &:after {
         position: absolute;
         top: 50%;
-        right: 0;
+        right: -12px;
         width: 3.6rem;
         height: 3.6rem;
-        margin-top: -1.8;
-        // FIXME: we need a customizable $dc-img-path!default variable
-        background: url("../img/i-arrow-right.min.svg");
+        margin-top: -1.8rem;
+        background-image: url(data:text/html;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDx0aXRsZT4KICAgICAgICBBcnJvdyBSaWdodAogICAgPC90aXRsZT4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgzNnYzNkgweiIvPgogICAgICAgIDxwYXRoIGQ9Ik0xNi41IDEwLjcyM2w1LjExIDcuNzc3LTUuMTEgNy43NzciIHN0cm9rZT0iIzk3OTc5NyIvPgogICAgPC9nPgo8L3N2Zz4K);
         content: " ";
     }
 }
