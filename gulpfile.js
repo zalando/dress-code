@@ -379,7 +379,7 @@ gulp.task('dist:changelog', function() {
     };
 
     return gulp.src('CHANGELOG.md', {
-        buffer: false
+        buffer: true
     })
     .pipe(conventionalChangelog(changelogConfig))
     .pipe(gulp.dest('./'));
