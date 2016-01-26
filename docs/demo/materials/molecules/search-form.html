@@ -3,8 +3,10 @@ notes: |
   These are notes associated with this `search-form` component.
 ---
 
+<label for="searchOnlyText" class="dc-label">Search box showing text results</label>
+
 <div class="dc-search-form">
-  <input class="dc-input dc-search-form__input" type="search" placeholder="Search...">
+  <input class="dc-input dc-search-form__input" id="searchOnlyText" type="search" placeholder="Search...">
   <button class="dc-btn dc-search-form__btn">
     <svg class="dc-svg dc-icon--interactive" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
         <title>
@@ -21,9 +23,39 @@ notes: |
   </button>
   <ul class="dc-list dc-suggest">
     {{#each autosuggest.brands}}
-        <li class="dc-suggest__item">
-          <a class="dc-link dc-suggest__link" href data-brand="{{this}}">{{this}}</a>
+        <li class="dc-suggest__item dc-link">
+          {{this}}
         </li>
     {{/each}}
   </ul>
+</div>
+
+<label for="searchWithImages" class="dc-label">Search box showing results with images</label>
+
+<div class="dc-search-form">
+    <input class="dc-input dc-search-form__input" id="searchWithImages" type="search" placeholder="Search...">
+    <button class="dc-btn dc-search-form__btn">
+        <svg class="dc-svg dc-icon--interactive" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+            <title>
+                Search
+            </title>
+            <g fill="none" fill-rule="evenodd">
+                <path fill="none" d="M0 0h36v36H0z"/>
+                <g transform="translate(10 10)" stroke="#9B9B9B">
+                    <path d="M10.75 10.75l4.95 4.95" stroke-linecap="round"/>
+                    <circle cx="6" cy="6" r="6"/>
+                </g>
+            </g>
+        </svg>
+    </button>
+    <ul class="dc-list dc-suggest">
+        {{#each autosuggest.brands}}
+        <li class="dc-suggest__item dc-link">
+            <div class="dc-suggest__item__img">
+                <img src="assets/toolkit/img/logo.svg">
+            </div>
+            <span class="dc-suggest__item__label">{{this}}</span>
+        </li>
+        {{/each}}
+    </ul>
 </div>
