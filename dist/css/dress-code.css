@@ -480,11 +480,11 @@ th {
 
 .dc-icon {
   display: inline-block;
-  cursor: pointer;
-  vertical-align: middle;
   -webkit-transform-origin: 50%;
       -ms-transform-origin: 50%;
-          transform-origin: 50%; }
+          transform-origin: 50%;
+  cursor: pointer;
+  vertical-align: middle; }
   .dc-icon:hover [stroke^='#'] {
     stroke: #186698; }
   .dc-icon:hover [fill^='#'] {
@@ -1655,7 +1655,8 @@ th {
   background: transparent; }
   .dc-search-form__btn .dc-svg,
   .dc-search-form__btn .dc-img {
-    display: block; }
+    display: block;
+    margin-right: 0; }
   .no-touch .dc-search-form__btn:hover,
   .touch .dc-search-form__btn:active, .dc-search-form__btn:focus {
     background: transparent;
@@ -1669,7 +1670,6 @@ th {
 
 .dc-suggest {
   position: absolute;
-  top: calc(100% - 1px);
   left: 0;
   min-width: 100%;
   margin: 0;
@@ -1688,18 +1688,43 @@ th {
   list-style-type: none;
   pointer-events: none; }
 
-.dc-suggest__link {
-  display: block;
+.dc-suggest__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   padding: 0 0.8rem;
   color: #4a4a4a;
   line-height: 4.4rem;
   white-space: nowrap; }
-  .no-touch .dc-suggest__link:hover,
-  .touch .dc-suggest__link:active {
+  .no-touch .dc-suggest__item:hover,
+  .touch .dc-suggest__item:active {
     background: #e5f2fd;
     color: #4a4a4a; }
 
-.dc-search-form__input:focus ~ .dc-suggest {
+.dc-suggest__item__img {
+  position: relative;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+  max-width: 8rem;
+  margin-right: 1.2rem; }
+  .dc-suggest__item__img img {
+    position: absolute;
+    top: calc(50% - 1rem);
+    width: 100%;
+    height: 2rem; }
+
+.dc-suggest__item__label {
+  width: calc(70% - 1.2rem);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.dc-search-form__input:focus ~ .dc-suggest,
+.dc-suggest:hover {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
@@ -1910,12 +1935,12 @@ th {
     left: 0;
     width: 100%;
     height: 2px;
-    background: #ffa54e;
-    -webkit-animation: dc-loading-bar 3s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
-            animation: dc-loading-bar 3s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
     -webkit-transform-origin: left;
         -ms-transform-origin: left;
-            transform-origin: left; }
+            transform-origin: left;
+    background: #ffa54e;
+    -webkit-animation: dc-loading-bar 3s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            animation: dc-loading-bar 3s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955); }
 
 @-webkit-keyframes dc-loading-bar {
   0% {

@@ -1,3 +1,17 @@
+<a name="0.2.2-alpha.2"></a>
+## [0.2.2-alpha.2](https://github.com/zalando/dress-code/compare/0.2.2-alpha.1...v0.2.2-alpha.2) (2016-01-26)
+
+
+### Bug Fixes
+
+* **scss-lint:** fix scss_lint errors after upgrading to 0.44.0 ([40f785a](https://github.com/zalando/dress-code/commit/40f785a))
+
+### Features
+
+* **search-form:** show search results which contain images and text labels #88 ([cc17d4e](https://github.com/zalando/dress-code/commit/cc17d4e))
+
+
+
 <a name="0.2.2-alpha.1"></a>
 ## [0.2.2-alpha.1](https://github.com/zalando/dress-code/compare/0.2.2-alpha...v0.2.2-alpha.1) (2016-01-15)
 

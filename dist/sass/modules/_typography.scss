@@ -265,9 +265,9 @@
 
 .dc-icon {
     display: inline-block;
+    transform-origin: 50%;
     cursor: pointer;
     vertical-align: middle;
-    transform-origin: 50%;
 
     &:hover {
         [stroke^='#'] {
