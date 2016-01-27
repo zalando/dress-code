@@ -1,0 +1,24 @@
+@mixin dc-html {
+    height: 100%;
+    font-family: $dc-base-font-family;
+    font-size: $dc-html-font-size;
+    font-weight: $dc-normal-font-weight;
+    line-height: $dc-html-line-height;
+}
+
+@mixin dc-body {
+    background: $dc-body-background-color;
+    color: $dc-text-color;
+    font-size: $dc-body-font-size;
+    line-height: $dc-body-line-height;
+}
+
+@mixin dc-html-classes {
+    .dc-html {  @include dc-html;  }
+}
+
+@mixin dc-body-classes {
+    .dc-html {  @include dc-body;  }
+}
+
+
