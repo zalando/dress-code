@@ -1,6 +1,6 @@
-@import "../core/variables";
+@import "../core/core";
 
-@mixin dc-btn($icon-font-selector-match : "dc-font-icon-") {
+@mixin dc-btn {
 
     display: inline-block;
     margin-right: $dc-space50;
@@ -28,13 +28,7 @@
         margin-right: 10px;
     }
 
-    [class^="#{$icon-font-selector-match}"] {
-        display: block;
-        margin-top: .2rem;
-        margin-right: 0;
-        float: right;
-        line-height: .8rem;
-    }
+    @content;
 }
 
 @mixin dc-btn--no-touch {
@@ -84,8 +78,24 @@
     }
 }
 
+@mixin dc-btn__font-icon {
+    display: block;
+    margin-top: .2rem;
+    margin-right: 0;
+    float: right;
+    line-height: .8rem;
+}
+
 @mixin dc-btn-classes {
-    .dc-btn {  @include dc-btn;  }
+
+    .dc-btn {
+        @include dc-btn {
+            // @deprecated use <i class="dc-btn__font-icon dc-font-icon-arrow"></i>
+            [class^="dc-font-icon-"] {
+               @include dc-btn__font-icon;
+            }
+        }
+    }
 
     .no-touch .dc-btn {  @include dc-btn--no-touch;  }
 
@@ -96,4 +106,8 @@
     .no-touch .dc-btn--primary {  @include dc-btn--primary--no-touch;  }
 
     .touch .dc-btn {  @include dc-btn--primary--touch;  }
+
+    .dc-btn__font-icon {
+        @include dc-btn__font-icon;
+    }
 }

@@ -1,0 +1,65 @@
+// FIXME - XXX ? not documented
+
+//  ---------------------------------------------------------------------------
+//
+//  Defines bubble wrap!
+//
+//  ---------------------------------------------------------------------------
+
+//  = BASE
+//  ---------------------------------------------------------------------------
+
+.dc-bubble-wrap {
+    position: relative;
+
+    .dc-input {
+        display: none;
+    }
+
+    .dc-bubble-wrap__inner {
+        position: absolute;
+        left: 6.5;
+        z-index: 999;
+    }
+}
+
+.dc-bubble {
+    position: absolute;
+    top: $dc-space150;
+    left: -17.2;
+    padding: $dc-space50 $dc-space75;
+    transform: translateY(-10%);
+    transition: transform .3s ease-out, opacity .2s linear;
+    border-radius: 2px;
+    background: rgba(lighten($dc-black, 5%), .85);
+    color: $dc-gray70;
+    opacity: 0;
+    pointer-events: none;
+
+    &:after {
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin-left: -6px;
+        border: solid transparent;
+        border-width: 6px;
+        // scss-lint:disable ColorVariable
+        border-color: rgba(0, 0, 0, 0);
+        // scss-lint:enable ColorVariable
+        border-bottom-color: rgba(lighten($dc-black, 5%), .85);
+        content: " ";
+        pointer-events: none;
+    }
+}
+
+:checked + .dc-label .dc-bubble {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.dc-bubble__bd {
+    font-weight: 300;
+    text-transform: none;
+}
