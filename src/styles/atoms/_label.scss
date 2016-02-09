@@ -30,7 +30,7 @@
 }
 
 @mixin dc-label-selectors {
-    .dc-label { @include dc-label }
+    .dc-label { @include dc-label; }
     .dc-label--disabled {  @include dc-label--disabled;  }
     .dc-label--required {  @include dc-label--required; }
     .dc-label--is-error {  @include dc-label--is-error; }

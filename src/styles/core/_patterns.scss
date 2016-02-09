@@ -16,9 +16,6 @@
     .dc-collapse-bd {
         @include dc-collapse-bd;
     }
-    .csstransitions .dc-collapsing {
-        transition: height .3s ease-out;
-    }
 }
 
 //  ---------------------------------------------------------------------------
@@ -127,7 +124,7 @@
     @include dc-collapse-bd-selectors;
 
     .dc-is-collapsed {
-       @include dc-is-collapsed;
+        @include dc-is-collapsed;
     }
 
     .dc-is-expanded {

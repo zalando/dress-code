@@ -1,6 +1,6 @@
 @import "../core/core";
 
-@mixin dc-checkbox($sibling-label-selector : '.dc-label') {
+@mixin dc-checkbox($sibling-label-selector : ".dc-label") {
     display: none;
 
     + #{$sibling-label-selector} {

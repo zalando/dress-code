@@ -146,10 +146,10 @@
 
 //  = INLINE BUTTON
 //  -----------------------------------------------------------------------------
-@mixin dc-btn--inline($sibling-selector: '.dc-btn--inline') {
+@mixin dc-btn--inline($sibling-selector: ".dc-btn--inline") {
     margin-bottom: 0;
 
-    + #{$sibling-selector}  {
+    + #{$sibling-selector} {
         margin-left: .2rem; // Account for 4px inline margin
     }
 }
@@ -176,7 +176,7 @@
 
 //  = FONT-ICON BUTTON
 //  -----------------------------------------------------------------------------
-
+// scss-lint:disable NameFormat
 @mixin dc-btn__font-icon {
     display: block;
     margin-top: .2rem;
@@ -195,6 +195,7 @@
     font-size: 2.4rem;
     line-height: .6rem;
 }
+// scss-lint:enable NameFormat
 
 //  = SVG ICON BUTTONS
 //  -----------------------------------------------------------------------------
@@ -254,14 +255,18 @@
 }
 
 @mixin dc-btn-selectors {
+
     .dc-btn {
         @include dc-btn {
             // @deprecated use <i class="dc-btn__font-icon dc-font-icon-arrow"></i>
             [class^="dc-font-icon-"] {
-               @include dc-btn__font-icon;
+                // scss-lint:disable NameFormat
+                @include dc-btn__font-icon;
+                // scss-lint:enable NameFormat
             }
         }
     }
+
     .no-touch .dc-btn {  @include dc-btn--no-touch;  }
     .touch .dc-btn {  @include dc-btn--touch;  }
 
@@ -269,24 +274,26 @@
     .no-touch .dc-btn--primary {  @include dc-btn--primary--no-touch;  }
     .touch .dc-btn-primary {  @include dc-btn--primary--touch;  }
 
-    .dc-btn--destroy {  @include dc-btn--destroy }
-    .no-touch .dc-btn--destroy { @include dc-btn--destroy--no-touch}
-    .touch .dc-btn--destroy { @include dc-btn--destroy--touch }
+    .dc-btn--destroy {  @include dc-btn--destroy; }
+    .no-touch .dc-btn--destroy { @include dc-btn--destroy--no-touch; }
+    .touch .dc-btn--destroy { @include dc-btn--destroy--touch; }
 
-    .dc-btn--disabled { @include dc-btn--disabled }
-    .touch .dc-btn--disabled { @include dc-btn--disabled--touch }
-    .no-touch .dc-btn--disabled { @include dc-btn--disabled--no-touch }
+    .dc-btn--disabled { @include dc-btn--disabled; }
+    .touch .dc-btn--disabled { @include dc-btn--disabled--touch; }
+    .no-touch .dc-btn--disabled { @include dc-btn--disabled--no-touch; }
 
     .dc-btn-small {
         @include dc-btn--small {
             // @deprecated use <i class="dc-btn__font-icon--small dc-font-icon-arrow"></i>
             [class^="dc-font-icon-"] {
+                // scss-lint:disable NameFormat
                 @include dc-btn__font-icon--small;
+                // scss-lint:enable NameFormat
             }
         }
     }
 
-    .no-touch .dc-btn-small { @include dc-btn--small--no-touch}
+    .no-touch .dc-btn-small { @include dc-btn--small--no-touch; }
 
     .dc-btn--inline {
         @include dc-btn--inline;
@@ -296,7 +303,9 @@
         @include dc-btn--large {
             [class^="dc-font-icon-"] {
                 // @deprecated use <i class="dc-btn__font-icon--large dc-font-icon-arrow"></i>
+                // scss-lint:disable NameFormat
                 @include dc-btn__font-icon--large;
+                // scss-lint:enable NameFormat
             }
         }
     }
@@ -305,19 +314,23 @@
         @include dc-btn--block;
     }
 
+    // scss-lint:disable NameFormat
     .dc-btn__font-icon {   @include dc-btn__font-icon;   }
+
     .dc-btn__font-icon--small {
         @include dc-btn__font-icon--small;
     }
+
     .dc-btn__font-icon--large {
         @include dc-btn__font-icon--large;
     }
+    // scss-lint:disable NameFormat
 
     .dc-btn-icon {
         @include dc-btn-icon {
             // @deprecated use <button class="dc-btn-icon dc-btn-icon--primary"><!-- svg --></button>
             &.dc-btn--primary {
-              @include dc-btn-icon--primary;
+                @include dc-btn-icon--primary;
             }
 
             // @deprecated use <button class="dc-btn-icon dc-btn-icon--destroy"><!-- svg --></button>

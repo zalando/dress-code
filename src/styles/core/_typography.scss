@@ -1,4 +1,4 @@
-@import './variables';
+@import "./variables";
 
 //  ---------------------------------------------------------------------------
 //
@@ -127,7 +127,7 @@
 //  = HEADINGS
 //  ---------------------------------------------------------------------------
 
-@mixin dc-heading-base($small-selector : '.dc-small') {
+@mixin dc-heading-base($small-selector : ".dc-small") {
     margin-bottom: $dc-space150;
     color: $dc-headings-color;
     font-family: $dc-headings-font-family;
@@ -139,10 +139,11 @@
         font-family: $dc-base-font-family;
         font-size: 60%;
     }
+
     @content;
 }
 
-@mixin dc-heading($font-size, $line-height, $small-selector: '.dc-small') {
+@mixin dc-heading($font-size, $line-height, $small-selector: ".dc-small") {
     @include dc-heading-base($small-selector);
     font-size: $font-size;
     line-height: $line-height;
