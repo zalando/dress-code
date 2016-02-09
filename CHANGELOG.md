@@ -1,3 +1,11 @@
+<a name="0.2.2-alpha.3"></a>
+## [0.2.2-alpha.3](https://github.com/zalando/dress-code/compare/0.2.2-alpha.2...v0.2.2-alpha.3) (2016-02-09)
+
+### Refactor
+ 
+* **tables**: Clean up and extend tables ([48705caf4f7c33deb91dff1a406b44af6187a1ca](https://github.com/zalando/dress-code/commit/48705caf4f7c33deb91dff1a406b44af6187a1ca))
+
+
 <a name="0.2.2-alpha.2"></a>
 ## [0.2.2-alpha.2](https://github.com/zalando/dress-code/compare/0.2.2-alpha.1...v0.2.2-alpha.2) (2016-01-26)
 
