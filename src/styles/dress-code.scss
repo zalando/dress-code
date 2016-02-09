@@ -1,5 +1,43 @@
-@import "core/variables";
-@import "core/mixins";
-@import "core/normalize";
-@import "core/typography";
+@import "core/core";
 @import "atoms/btn";
+@import "atoms/checkbox";
+@import "atoms/label";
+
+// TODO "mixinify" others atoms and molecules than move imports here from index.scss...
+@mixin dc-everything {
+    // "mixinified"
+    @include dc-normalize;
+    @include dc-typography-selectors;
+    @include dc-patterns-selectors;
+
+
+    //// "mixinified" atoms
+    @include dc-label-selectors;
+    @include dc-btn-selectors; // partially mixinified!!
+    @include dc-checkbox-selectors;
+
+    /// not "mixinified" atoms
+    @import "_generated/font-icon";
+    @import "atoms/icons";
+    @import "atoms/divider";
+    @import "atoms/input";
+    @import "atoms/label";
+    @import "atoms/link";
+    @import "atoms/list";
+    @import "atoms/loading-bar";
+    @import "atoms/placeholder";
+    @import "atoms/radio";
+    @import "atoms/select";
+    @import "atoms/spinner";
+    @import "atoms/table";
+    @import "atoms/textarea";
+
+    // not "mixinified" molecules
+    @import "molecules/dialog";
+    @import "molecules/dropdown";
+    @import "molecules/input-group";
+    @import "molecules/messages";
+    @import "molecules/search-form";
+    @import "molecules/toast";
+    @import "molecules/tooltip";
+}

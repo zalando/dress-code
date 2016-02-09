@@ -58,6 +58,9 @@
     }
 }
 
+//  = PRIMARY
+//  ---------------------------------------------------------------------------
+
 @mixin dc-btn--primary {
     border-color: darken($dc-blue40, 7%);
     background: linear-gradient($dc-blue40, darken($dc-blue40, 7%));
@@ -78,6 +81,102 @@
     }
 }
 
+//  = DESTROY
+//  ---------------------------------------------------------------------------
+
+@mixin dc-btn--destroy {
+    transition: box-shadow .2s linear;
+}
+
+@mixin dc-btn--destroy--touch {
+    &:active {
+        border-color: $dc-red40;
+        background: $dc-red50;
+        color: $dc-white;
+    }
+}
+
+@mixin dc-btn--destroy--no-touch {
+    &:hover {
+        border-color: $dc-red40;
+        background: $dc-red50;
+        color: $dc-white;
+    }
+}
+
+
+//  = DISABLED
+//  ---------------------------------------------------------------------------
+
+@mixin dc-btn--disabled {
+    border-color: $dc-gray60;
+    background: transparent;
+    color: $dc-gray50;
+    box-shadow: none;
+}
+
+@mixin dc-btn--disabled--touch {
+    &:active {
+        @include dc-btn--disabled;
+    }
+}
+
+@mixin dc-btn--disabled--no-touch {
+    &:hover {
+        @include dc-btn--disabled;
+    }
+}
+
+//  = SMALL BUTTON
+//  ---------------------------------------------------------------------------
+
+@mixin dc-btn--small {
+    padding: $dc-space100 - .1 $dc-space100;
+    font-size: 1.4rem;
+
+    @content;
+}
+
+@mixin dc-btn--small--no-touch {
+    padding: $dc-space50 $dc-space75;
+    font-size: $dc-font50;
+    font-weight: $dc-normal-font-weight;
+    text-transform: uppercase;
+}
+
+//  = INLINE BUTTON
+//  -----------------------------------------------------------------------------
+@mixin dc-btn--inline($sibling-selector: '.dc-btn--inline') {
+    margin-bottom: 0;
+
+    + #{$sibling-selector}  {
+        margin-left: .2rem; // Account for 4px inline margin
+    }
+}
+
+//  = LARGE BUTTON
+//  ---------------------------------------------------------------------------
+
+@mixin dc-btn--large {
+    padding: $dc-space125 $dc-space125 $dc-space125 + .1;
+    font-size: $dc-font150;
+    line-height: .8;
+
+    @content;
+}
+
+//  = BLOCK BUTTON
+//  ---------------------------------------------------------------------------
+
+@mixin dc-btn--block {
+    display: block;
+    width: 100%;
+}
+
+
+//  = FONT-ICON BUTTON
+//  -----------------------------------------------------------------------------
+
 @mixin dc-btn__font-icon {
     display: block;
     margin-top: .2rem;
@@ -86,8 +185,75 @@
     line-height: .8rem;
 }
 
-@mixin dc-btn-classes {
+@mixin dc-btn__font-icon--small {
+    font-size: 1.2rem;
+    line-height: .8;
+}
 
+@mixin dc-btn__font-icon--large {
+    margin-top: .4rem;
+    font-size: 2.4rem;
+    line-height: .6rem;
+}
+
+//  = SVG ICON BUTTONS
+//  -----------------------------------------------------------------------------
+
+@mixin dc-btn-icon {
+    width: auto;
+    height: auto;
+    padding: $dc-space100 - .2;
+
+    svg {
+        position: relative;
+        top: -1px;
+        left: -1px;
+    }
+
+    [stroke^='#'] {
+        stroke: $dc-text-color;
+    }
+
+    [fill^='#'] {
+        fill: $dc-text-color;
+    }
+
+    @content;
+}
+
+@mixin dc-btn-icon--primary {
+    [stroke^='#'] {
+        stroke: $dc-white;
+    }
+
+    [fill^='#'] {
+        fill: $dc-white;
+    }
+}
+
+@mixin dc-btn-icon--destroy {
+    &:hover {
+        [stroke^='#'] {
+            stroke: $dc-white;
+        }
+
+        [fill^='#'] {
+            fill: $dc-white;
+        }
+    }
+}
+
+@mixin dc-btn-icon--disabled {
+    [stroke^='#'] {
+        stroke: $dc-gray50;
+    }
+
+    [fill^='#'] {
+        fill: $dc-gray50;
+    }
+}
+
+@mixin dc-btn-selectors {
     .dc-btn {
         @include dc-btn {
             // @deprecated use <i class="dc-btn__font-icon dc-font-icon-arrow"></i>
@@ -96,18 +262,141 @@
             }
         }
     }
-
     .no-touch .dc-btn {  @include dc-btn--no-touch;  }
-
     .touch .dc-btn {  @include dc-btn--touch;  }
 
     .dc-btn--primary {  @include dc-btn--primary;  }
-
     .no-touch .dc-btn--primary {  @include dc-btn--primary--no-touch;  }
+    .touch .dc-btn-primary {  @include dc-btn--primary--touch;  }
 
-    .touch .dc-btn {  @include dc-btn--primary--touch;  }
+    .dc-btn--destroy {  @include dc-btn--destroy }
+    .no-touch .dc-btn--destroy { @include dc-btn--destroy--no-touch}
+    .touch .dc-btn--destroy { @include dc-btn--destroy--touch }
 
-    .dc-btn__font-icon {
-        @include dc-btn__font-icon;
+    .dc-btn--disabled { @include dc-btn--disabled }
+    .touch .dc-btn--disabled { @include dc-btn--disabled--touch }
+    .no-touch .dc-btn--disabled { @include dc-btn--disabled--no-touch }
+
+    .dc-btn-small {
+        @include dc-btn--small {
+            // @deprecated use <i class="dc-btn__font-icon--small dc-font-icon-arrow"></i>
+            [class^="dc-font-icon-"] {
+                @include dc-btn__font-icon--small;
+            }
+        }
     }
+
+    .no-touch .dc-btn-small { @include dc-btn--small--no-touch}
+
+    .dc-btn--inline {
+        @include dc-btn--inline;
+    }
+
+    .dc-btn--large {
+        @include dc-btn--large {
+            [class^="dc-font-icon-"] {
+                // @deprecated use <i class="dc-btn__font-icon--large dc-font-icon-arrow"></i>
+                @include dc-btn__font-icon--large;
+            }
+        }
+    }
+
+    .dc-btn--block {
+        @include dc-btn--block;
+    }
+
+    .dc-btn__font-icon {   @include dc-btn__font-icon;   }
+    .dc-btn__font-icon--small {
+        @include dc-btn__font-icon--small;
+    }
+    .dc-btn__font-icon--large {
+        @include dc-btn__font-icon--large;
+    }
+
+    .dc-btn-icon {
+        @include dc-btn-icon {
+            // @deprecated use <button class="dc-btn-icon dc-btn-icon--primary"><!-- svg --></button>
+            &.dc-btn--primary {
+              @include dc-btn-icon--primary;
+            }
+
+            // @deprecated use <button class="dc-btn-icon dc-btn-icon--destroy"><!-- svg --></button>
+            &.dc-btn--destroy {
+                @include dc-btn-icon--destroy;
+            }
+
+            // @deprecated use <button class="dc-btn-icon dc-btn-icon--disabled"><!-- svg --></button>
+            &.dc-btn--disabled {
+                @include dc-btn-icon--disabled;
+            }
+        }
+    }
+
+    .dc-btn-icon--primary {
+        @include dc-btn-icon--primary;
+    }
+
+    .dc-btn-icon--destroy {
+        @include dc-btn-icon--destroy;
+    }
+
+    .dc-btn-icon--disabled {
+        @include dc-btn-icon--disabled;
+    }
+
 }
+
+
+
+
+
+
+//  = BUTTON GROUPS & BUTTONS IN INPUT GROUPS
+//  ---------------------------------------------------------------------------
+
+.dc-btn-group,
+.dc-input-group {
+    display: flex;
+    margin-bottom: $dc-space100;
+
+    .dc-btn {
+        margin-right: 0;
+        margin-bottom: 0;
+        border-left-width: 0;
+        border-radius: 0;
+
+        &:first-child {
+            border-left-width: 1px;
+            border-top-left-radius: $dc-radius100;
+            border-bottom-left-radius: $dc-radius100;
+        }
+
+        &:last-child {
+            border-top-right-radius: $dc-radius100;
+            border-bottom-right-radius: $dc-radius100;
+        }
+
+        &.dc-btn--primary {
+            border-color: darken($dc-blue40, 7%);
+        }
+
+        // scss-lint:disable MergeableSelector
+        &.dc-btn--primary + .dc-btn {
+            border-left-color: darken($dc-blue40, 7%);
+        }
+        // scss-lint:enable MergeableSelector
+    }
+
+    .dc-btn-group-row & {
+        margin-right: 1.6rem;
+        float: left;
+    }
+
+}
+
+.dc-btn-group-row {
+    @extend %dc-cf;
+    clear: both;
+}
+
+

@@ -1,0 +1,25 @@
+//  = PLACEHOLDER
+//  ---------------------------------------------------------------------------
+
+// FIXME - those styles are global
+// scss-lint:disable VendorPrefix
+::-webkit-input-placeholder {
+    color: $dc-gray50;
+    font-weight: $dc-normal-font-weight;
+}
+
+:-moz-placeholder {
+    color: $dc-gray50;
+    font-weight: $dc-normal-font-weight;
+}
+
+::-moz-placeholder {
+    color: $dc-gray50;
+    font-weight: $dc-normal-font-weight;
+}
+
+:-ms-input-placeholder {
+    color: $dc-gray50;
+    font-weight: $dc-normal-font-weight;
+}
+// scss-lint:enable VendorPrefix

@@ -3,7 +3,7 @@
   "version": "0.2.2-alpha.3",
   "description": "The Dress Code is the official style guide and style framework for all Brand Solutions products.",
   "homepage": "https://zalando.github.io/brand-solutions-dress-code",
-  "main": "dist/sass/toolkit.scss",
+  "main": "dist/sass/dress-code.scss",
   "scripts": {
     "lint": "gulp scss-lint",
     "build": "gulp dist",
@@ -25,7 +25,8 @@
     "zalando brand solutions"
   ],
   "authors": [
-    "Thomas Nägele <thomas.naegele.extern@zalando.de>"
+    "Thomas Nägele <thomas.naegele.extern@zalando.de>",
+    "Ruben Barilani <ruben.barilani@zalando.de>"
   ],
   "licenses": "MIT",
   "repository": {

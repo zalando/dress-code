@@ -59,13 +59,14 @@ Include this in your ```<head>```:
 - Compiling sass:
 
 ```
-@import "bower_components/dress-code/sass/toolkit" 
+@import "bower_components/dress-code/sass/dress-code"
+@include dc-everything; 
 ```
 
-if you wanna use just mixins and variables...
+if you wanna use just mixins and variables don't call dress-code-everything mixin.
 
 ```
-@import "bower_components/dress-code/sass/import" 
+@import "node_modules/dress-code/dist/sass/dress-code" 
 ```
 
 > Note for those using compass. Add this to yours config.rb file: 
@@ -74,7 +75,7 @@ add_import_path "bower_components"
 ```
 Then you can import the dress-code like so: 
 ```
-@import "dress-code/sass/toolkit";
+@import "dress-code/sass/dress-code";
 ```
 
 #### with Npm (<3.x)
@@ -90,13 +91,14 @@ Include this in your ```<head>```:
 - Compiling sass:
 
 ```
-@import "node_modules/dress-code/dist/sass/toolkit" 
+@import "node_modules/dress-code/dist/sass/dress-code" 
+@include dc-everything; 
 ```
 
-if you wanna use just mixins and variables...
+if you wanna use just mixins and variables don't call dress-code-everything mixin.
 
 ```
-@import "node_modules/dress-code/dist/sass/import" 
+@import "node_modules/dress-code/dist/sass/dress-code" 
 ```
 
 

@@ -1,11 +1,3 @@
-//  ---------------------------------------------------------------------------
-//
-//  Defines all Sass functions.
-//
-//  ---------------------------------------------------------------------------
-
-//  = GENERIC DEBUG MESSAGE E.G. FOR MEDIA QUERIES
-//  ---------------------------------------------------------------------------
 @mixin dc-debugmessage($dc-message, $dc-color: $dc-debugmessage-color) {
     // margin-top: $dc-body-line-height;
 
@@ -26,4 +18,22 @@
         opacity: 0;
         z-index: 910;
     }
+}
+
+
+// mixins
+@mixin clearfix {
+    &:after {
+        clear: both;
+    }
+
+    &:before,
+    &:after {
+        display: table;
+        content: ' ';
+    }
+}
+
+@mixin border-box {
+    box-sizing: border-box;
 }

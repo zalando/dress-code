@@ -1,15 +1,38 @@
 //  ---------------------------------------------------------------------------
 //
+//  Collapsible element
+//
+//  ---------------------------------------------------------------------------
+
+//  = BODY
+//  ---------------------------------------------------------------------------
+
+@mixin dc-collapse-bd {
+    height: 0;
+    overflow: hidden;
+}
+
+@mixin dc-collapse-bd-selectors {
+    .dc-collapse-bd {
+        @include dc-collapse-bd;
+    }
+    .csstransitions .dc-collapsing {
+        transition: height .3s ease-out;
+    }
+}
+
+//  ---------------------------------------------------------------------------
+//
 //  Collapse/expand pattern
 //
 //  ---------------------------------------------------------------------------
 
 // scss-lint:disable ImportantRule
-.dc-is-collapsed {
+@mixin dc-is-collapsed {
     height: 0 !important;
 }
 
-.dc-is-expanded {
+@mixin dc-is-expanded {
     height: auto !important;
 }
 
@@ -19,11 +42,11 @@
 //
 //  ---------------------------------------------------------------------------
 
-.dc-is-hidden {
+@mixin dc-is-hidden {
     display: none !important;
 }
 
-.dc-is-shown {
+@mixin dc-is-shown {
     display: block !important;
 }
 
@@ -33,11 +56,11 @@
 //
 //  ---------------------------------------------------------------------------
 
-.dc-is-invisible {
+@mixin dc-is-invisible {
     opacity: 0;
 }
 
-.dc-is-visible {
+@mixin dc-is-visible {
     opacity: 1;
 }
 
@@ -47,7 +70,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-.dc-is-inline {
+@mixin dc-is-inline {
     display: inline-block !important;
 }
 
@@ -57,7 +80,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-.dc-is-fixed {
+@mixin dc-is-fixed {
     position: fixed !important;
 }
 
@@ -67,7 +90,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-.dc-is-important {
+@mixin dc-is-important {
     background: $dc-yellow60 !important;
 }
 
@@ -78,7 +101,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-.dc-less-important {
+@mixin dc-less-important {
     color: $dc-gray50 !important;
 }
 
@@ -88,14 +111,60 @@
 //
 //  ---------------------------------------------------------------------------
 
-.dc-text-left {
+@mixin dc-text-left {
     text-align: left;
 }
 
-.dc-text-center {
+@mixin dc-text-center {
     text-align: center;
 }
 
-.dc-text-right {
+@mixin dc-text-right {
     text-align: right;
 }
+
+@mixin dc-patterns-selectors {
+    @include dc-collapse-bd-selectors;
+
+    .dc-is-collapsed {
+       @include dc-is-collapsed;
+    }
+
+    .dc-is-expanded {
+        @include dc-is-expanded;
+    }
+
+    .dc-is-hidden {
+        @include dc-is-hidden;
+    }
+
+    .dc-is-shown {
+        @include dc-is-shown;
+    }
+
+    .dc-is-invisible {
+        @include dc-is-invisible;
+    }
+
+    .dc-is-visible {
+        @include dc-is-visible;
+    }
+
+    .dc-is-inline {
+        @include dc-is-inline;
+    }
+
+    .dc-is-fixed {
+        @include dc-is-fixed;
+    }
+
+    .dc-is-important {
+        @include dc-is-important;
+    }
+
+    .dc-less-important {
+        @include dc-less-important;
+    }
+}
+
+

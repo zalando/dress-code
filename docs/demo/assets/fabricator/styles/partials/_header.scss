@@ -1,32 +1,16 @@
-//
-//
-// THIS FILE IS DEPRECATED
-// TODO: XXX
-//
-//
-
-//  ---------------------------------------------------------------------------
-//
-//  Simple header
-//
-//  ---------------------------------------------------------------------------
-
-$dc-header-height: $dc-touch-size;
-$dc-header-accent-color: $dc-orange40;
-
 //  = HEADER
 //  ---------------------------------------------------------------------------
 
-.dc-header {
+.f-header {
     display: flex;
     align-items: center;
-    height: $dc-header-height;
+    height: $dc-touch-size;
     padding: $dc-space75 $dc-space100;
     border-bottom: 1px solid $dc-gray60;
     background: $dc-white;
     z-index: 900;
 
-    .dc-logo {
+    .f-logo {
         max-height: $dc-touch-size - $dc-space150;
         padding-bottom: 2px;
 

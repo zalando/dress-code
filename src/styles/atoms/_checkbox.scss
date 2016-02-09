@@ -87,8 +87,8 @@
     }
 }
 
-@mixin dc-checkbox-classes {
+@mixin dc-checkbox-selectors {
     .dc-checkbox {
-        @include dc-checkbox('label');
+        @include dc-checkbox;
     }
 }

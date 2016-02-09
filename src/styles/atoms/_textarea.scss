@@ -1,0 +1,13 @@
+//  = TEXT AREA
+//  ---------------------------------------------------------------------------
+
+.dc-textarea {
+    width: 100%;
+    min-height: $dc-space350 + $dc-space75;
+    padding: $dc-space50 $dc-space75;
+    resize: vertical;
+
+    &[disabled] {
+        resize: none;
+    }
+}
