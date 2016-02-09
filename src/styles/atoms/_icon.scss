@@ -1,4 +1,5 @@
 @import "../core/core";
+@import "../_generated/font-icon";
 
 @mixin dc-icon-selectors {
 
@@ -51,6 +52,8 @@
 
     //  = FONT ICON
     //  ---------------------------------------------------------------------------
+    @include dc-font-icon-selectors;
+
     [class^="dc-font-icon-"] {
         color: inherit;
 
