@@ -3,7 +3,7 @@
 @mixin dc-dropdown-selectors {
     .dc-btn-dropdown,
     .dc-btn-dropup {
-        @extend %dc-cf;
+        @include dc-cf;
         position: relative;
     }
 

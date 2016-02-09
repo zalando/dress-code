@@ -401,7 +401,7 @@
     }
 
     .dc-btn-group-row {
-        @extend %dc-cf;
+        @include dc-cf;
         clear: both;
     }
 }

@@ -1,35 +1,5 @@
-//  ---------------------------------------------------------------------------
-//
-//  The clearfix
-//	For modern browsers
-//
-//		1. 	The space content is one way to avoid an Opera bug when the
-//			contenteditable attribute is included anywhere else in the document.
-//			Otherwise it causes space to appear at the top and bottom of elements
-//			that are clearfixed.
-//
-//		2. 	The use of `table` rather than `block` is only necessary if using
-//			`:before` to contain the top-margins of child elements.
-//
-//		3. 	For IE 6/7 only
-//			Include this rule to trigger hasLayout and contain floats.
-//
-//	Developed by Nicolas Gallagher
-//	http://nicolasgallagher.com/micro-clearfix-hack/
-//
-//  ---------------------------------------------------------------------------
+@import "./mixins";
 
-%dc-cf:before,
-%dc-cf:after {
-    display: table; // 2
-    content: " "; // 1
-}
-
-%dc-cf:after {
-    clear: both;
-}
-
-// scss-lint:disable PropertySpelling
 %dc-cf {
-    *zoom: 1; // 3
+    @include dc-cf;
 }
