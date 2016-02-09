@@ -21,7 +21,7 @@ The Dress Code is the official style guide and style framework for all Brand Sol
 #### with Bower
 
 ```
-$ bower install https://github.com/zalando/dress-code-bower.git --save
+bower install https://github.com/zalando/dress-code-bower.git --save
 ```
 
 #### with Npm
@@ -52,29 +52,29 @@ npm install
 
 Include this in your ```<head>```:
 
-```
+```html
 <link href="bower_components/dress-code/css/dress-code.min.css" rel="stylesheet">
 ```
 
 - Compiling sass:
 
-```
+```scss
 @import "bower_components/dress-code/sass/dress-code"
 @include dc-everything; 
 ```
 
-if you wanna use just mixins and variables don't call dress-code-everything mixin.
+if you wanna use just mixins and variables don't call ```dc-everything``` mixin.
 
-```
-@import "node_modules/dress-code/dist/sass/dress-code" 
+```scss
+@import "bower_components/dress-code/sass/dress-code" 
 ```
 
 > Note for those using compass. Add this to yours config.rb file: 
-```
+```rb
 add_import_path "bower_components"
 ```
 Then you can import the dress-code like so: 
-```
+```scss
 @import "dress-code/sass/dress-code";
 ```
 
@@ -84,22 +84,23 @@ Then you can import the dress-code like so:
 
 Include this in your ```<head>```:
 
-```
+```html
 <link href="node_modules/dress-code/dist/css/dress-code.min.css" rel="stylesheet">
 ```
 
 - Compiling sass:
 
-```
+```scss
 @import "node_modules/dress-code/dist/sass/dress-code" 
 @include dc-everything; 
 ```
 
-if you wanna use just mixins and variables don't call dress-code-everything mixin.
+if you wanna use just mixins and variables don't call ```dc-everything``` mixin.
 
-```
+```scss
 @import "node_modules/dress-code/dist/sass/dress-code" 
 ```
+
 
 
 ## <a name="development"> Development & Contributing
