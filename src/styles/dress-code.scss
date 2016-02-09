@@ -1,43 +1,66 @@
 @import "core/core";
+
+// atoms
 @import "atoms/btn";
 @import "atoms/checkbox";
+@import "atoms/divider";
+@import "atoms/icon";
+@import "atoms/input";
 @import "atoms/label";
+@import "atoms/link";
+@import "atoms/list";
+@import "atoms/loading-bar";
+@import "atoms/placeholder";
+@import "atoms/radio";
+@import "atoms/select";
+@import "atoms/spinner";
+@import "atoms/table";
+@import "atoms/textarea";
 
-// TODO "mixinify" others atoms and molecules than move imports here from index.scss...
+// molecules
+@import "molecules/dialog";
+@import "molecules/dropdown";
+@import "molecules/input-group";
+@import "molecules/messages";
+@import "molecules/search-form";
+@import "molecules/toast";
+@import "molecules/tooltip";
+
 @mixin dc-everything {
-    // "mixinified"
+    // core
     @include dc-normalize;
     @include dc-typography-selectors;
     @include dc-patterns-selectors;
 
-
-    //// "mixinified" atoms
-    @include dc-label-selectors;
-    @include dc-btn-selectors; // partially mixinified!!
+    // atoms
+    @include dc-btn-selectors;         // !!! partially mixinified
     @include dc-checkbox-selectors;
+    @include dc-divider-selectors;     // !!! partially mixinified
+    @include dc-label-selectors;
+    @include dc-icon-selectors;        // !!! partially mixinified
+    @include dc-input-selectors;       // !!! partially mixinified
+    @include dc-link-selectors;        // !!! partially mixinified
+    @include dc-list-selectors;        // !!! partially mixinified
+    @include dc-loading-bar-selectors; // !!! partially mixinified
+    @include dc-placeholder-selectors; // !!! partially mixinified
+    @include dc-radio-selectors;       // !!! partially mixinified
+    @include dc-select-selectors;      // !!! partially mixinified
+    @include dc-spinner-selectors;     // !!! partially mixinified
+    @include dc-table-selectors;       // !!! partially mixinified
+    @include dc-textarea-selectors;    // !!! partially mixinified
 
-    /// not "mixinified" atoms
-    @import "_generated/font-icon";
-    @import "atoms/icons";
-    @import "atoms/divider";
-    @import "atoms/input";
-    @import "atoms/label";
-    @import "atoms/link";
-    @import "atoms/list";
-    @import "atoms/loading-bar";
-    @import "atoms/placeholder";
-    @import "atoms/radio";
-    @import "atoms/select";
-    @import "atoms/spinner";
-    @import "atoms/table";
-    @import "atoms/textarea";
-
-    // not "mixinified" molecules
-    @import "molecules/dialog";
-    @import "molecules/dropdown";
-    @import "molecules/input-group";
-    @import "molecules/messages";
-    @import "molecules/search-form";
-    @import "molecules/toast";
-    @import "molecules/tooltip";
+    // molecules
+    @include dc-dialog-selectors;       // !!! partially mixinified
+    @include dc-dropdown-selectors;     // !!! partially mixinified
+    @include dc-input-group-selectors;  // !!! partially mixinified
+    @include dc-msg-selectors;          // !!! partially mixinified
+    @include dc-search-form-selectors;  // !!! partially mixinified
+    @include dc-toast-selectors;        // !!! partially mixinified
+    @include dc-tooltip-selectors;      // !!! partially mixinified
 }
+
+// _generated
+@import "_generated/font-icon"; /// not "mixinified"!!!
+
+
+

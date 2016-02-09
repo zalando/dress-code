@@ -1,15 +1,18 @@
+@import "../core/core";
+
 //  = LISTS
 //  ---------------------------------------------------------------------------
+@mixin dc-list-selectors {
+    .dc-list {
+        padding-left: 3rem;
+    }
 
-.dc-list {
-    padding-left: 3rem;
-}
+    .dc-list--is-reset {
+        padding: 0;
+        list-style-type: none;
+    }
 
-.dc-list--is-reset {
-    padding: 0;
-    list-style-type: none;
-}
-
-.dc-dt {
-    font-family: $dc-base-font-family;
+    .dc-dt {
+        font-family: $dc-base-font-family;
+    }
 }

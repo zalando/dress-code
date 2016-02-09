@@ -1,41 +1,39 @@
+@import "../core/core";
+
 //  = LINKS
 //  ---------------------------------------------------------------------------
 
-.dc-link {
-    transition: color .1s linear;
-    color: $dc-link-color;
-    text-decoration: none;
-    cursor: pointer;
-    // scss-lint:disable ColorVariable
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    // scss-lint:enable ColorVariable
-}
+@mixin dc-link-selectors {
+    .dc-link {
+        transition: color .1s linear;
+        color: $dc-link-color;
+        text-decoration: none;
+        cursor: pointer;
+        // scss-lint:disable ColorVariable
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        // scss-lint:enable ColorVariable
+    }
 
-.dc-input {
-    // scss-lint:disable ColorVariable
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    // scss-lint:enable ColorVariable
-}
+    .no-touch .dc-link:hover,
+    .touch .dc-link:active {
+        color: $dc-link-color-hover;
+        text-decoration: none;
+    }
 
-.no-touch .dc-link:hover,
-.touch .dc-link:active {
-    color: $dc-link-color-hover;
-    text-decoration: none;
-}
+    .no-touch .dc-link--success:hover,
+    .touch .dc-link--success:active {
+        color: $dc-green30;
+    }
 
-.no-touch .dc-link--success:hover,
-.touch .dc-link--success:active {
-    color: $dc-green30;
-}
+    .no-touch .dc-link--destroy:hover,
+    .touch .dc-link--destroy:active {
+        color: $dc-red40;
+    }
 
-.no-touch .dc-link--destroy:hover,
-.touch .dc-link--destroy:active {
-    color: $dc-red40;
-}
-
-.dc-link--disabled,
-.touch .dc-link--disabled:active,
-.no-touch .dc-link--disabled:hover {
-    color: $dc-gray50;
-    cursor: default;
+    .dc-link--disabled,
+    .touch .dc-link--disabled:active,
+    .no-touch .dc-link--disabled:hover {
+        color: $dc-gray50;
+        cursor: default;
+    }
 }

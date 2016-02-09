@@ -1,55 +1,59 @@
-//  = INPUT GROUPS
-//  ---------------------------------------------------------------------------
+@import "../core/core";
 
-.dc-input-group {
-    display: flex;
-    margin-bottom: $dc-space100;
+@mixin dc-input-group-selectors {
+    //  = INPUT GROUPS
+    //  ---------------------------------------------------------------------------
 
-    .dc-input {
-        margin-right: 0;
+    .dc-input-group {
+        display: flex;
+        margin-bottom: $dc-space100;
+
+        .dc-input {
+            margin-right: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+            border-radius: 0;
+            // &::-webkit-inner-spin-button,
+            // &::-webkit-outer-spin-button {
+            //     margin: 0;
+            //     -webkit-appearance: none;
+            // }
+
+            &:first-child {
+                border-top-left-radius: $dc-radius100;
+                border-bottom-left-radius: $dc-radius100;
+            }
+
+            &:last-child {
+                border-top-right-radius: $dc-radius100;
+                border-bottom-left-radius: $dc-radius100;
+            }
+
+
+        }
+
+    }
+
+    .dc-input-addon {
         margin-bottom: 0;
-        margin-left: 0;
-        border-radius: 0;
-        // &::-webkit-inner-spin-button,
-        // &::-webkit-outer-spin-button {
-        //     margin: 0;
-        //     -webkit-appearance: none;
-        // }
+        padding: $dc-space75 + .2 $dc-space100 $dc-space75;
+        border: 1px solid $dc-gray60;
+        background-color: $dc-gray80;
+        color: $dc-gray20;
+        line-height: 1;
 
         &:first-child {
+            border-right-width: 0;
             border-top-left-radius: $dc-radius100;
             border-bottom-left-radius: $dc-radius100;
         }
 
         &:last-child {
+            border-left-width: 0;
             border-top-right-radius: $dc-radius100;
             border-bottom-left-radius: $dc-radius100;
         }
-
-
     }
 
 }
 
-.dc-input-addon {
-    margin-bottom: 0;
-    padding: $dc-space75 + .2 $dc-space100 $dc-space75;
-    border: 1px solid $dc-gray60;
-    background-color: $dc-gray80;
-    color: $dc-gray20;
-    line-height: 1;
-
-    &:first-child {
-        border-right-width: 0;
-        border-top-left-radius: $dc-radius100;
-        border-bottom-left-radius: $dc-radius100;
-    }
-
-    &:last-child {
-        border-left-width: 0;
-        border-top-right-radius: $dc-radius100;
-        border-bottom-left-radius: $dc-radius100;
-    }
-
-
-}

@@ -357,59 +357,57 @@
         @include dc-btn-icon--disabled;
     }
 
-}
+    //  = BUTTON GROUPS & BUTTONS IN INPUT GROUPS
+    //  ---------------------------------------------------------------------------
 
+    .dc-btn-group,
+    .dc-input-group {
+        display: flex;
+        margin-bottom: $dc-space100;
 
+        .dc-btn {
+            margin-right: 0;
+            margin-bottom: 0;
+            border-left-width: 0;
+            border-radius: 0;
 
+            &:first-child {
+                border-left-width: 1px;
+                border-top-left-radius: $dc-radius100;
+                border-bottom-left-radius: $dc-radius100;
+            }
 
+            &:last-child {
+                border-top-right-radius: $dc-radius100;
+                border-bottom-right-radius: $dc-radius100;
+            }
 
+            &.dc-btn--primary {
+                border-color: darken($dc-blue40, 7%);
+            }
 
-//  = BUTTON GROUPS & BUTTONS IN INPUT GROUPS
-//  ---------------------------------------------------------------------------
-
-.dc-btn-group,
-.dc-input-group {
-    display: flex;
-    margin-bottom: $dc-space100;
-
-    .dc-btn {
-        margin-right: 0;
-        margin-bottom: 0;
-        border-left-width: 0;
-        border-radius: 0;
-
-        &:first-child {
-            border-left-width: 1px;
-            border-top-left-radius: $dc-radius100;
-            border-bottom-left-radius: $dc-radius100;
+            // scss-lint:disable MergeableSelector
+            &.dc-btn--primary + .dc-btn {
+                border-left-color: darken($dc-blue40, 7%);
+            }
+            // scss-lint:enable MergeableSelector
         }
 
-        &:last-child {
-            border-top-right-radius: $dc-radius100;
-            border-bottom-right-radius: $dc-radius100;
+        .dc-btn-group-row & {
+            margin-right: 1.6rem;
+            float: left;
         }
 
-        &.dc-btn--primary {
-            border-color: darken($dc-blue40, 7%);
-        }
-
-        // scss-lint:disable MergeableSelector
-        &.dc-btn--primary + .dc-btn {
-            border-left-color: darken($dc-blue40, 7%);
-        }
-        // scss-lint:enable MergeableSelector
     }
 
-    .dc-btn-group-row & {
-        margin-right: 1.6rem;
-        float: left;
+    .dc-btn-group-row {
+        @extend %dc-cf;
+        clear: both;
     }
-
 }
 
-.dc-btn-group-row {
-    @extend %dc-cf;
-    clear: both;
-}
+
+
+
 
 
