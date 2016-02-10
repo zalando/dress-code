@@ -176,7 +176,6 @@
 
 //  = FONT-ICON BUTTON
 //  -----------------------------------------------------------------------------
-// scss-lint:disable NameFormat
 @mixin dc-btn__font-icon {
     display: block;
     margin-top: .2rem;
@@ -195,7 +194,6 @@
     font-size: 2.4rem;
     line-height: .6rem;
 }
-// scss-lint:enable NameFormat
 
 //  = SVG ICON BUTTONS
 //  -----------------------------------------------------------------------------
@@ -260,9 +258,7 @@
         @include dc-btn {
             // @deprecated use <i class="dc-btn__font-icon dc-font-icon-arrow"></i>
             [class^="dc-font-icon-"] {
-                // scss-lint:disable NameFormat
                 @include dc-btn__font-icon;
-                // scss-lint:enable NameFormat
             }
         }
     }
@@ -286,9 +282,7 @@
         @include dc-btn--small {
             // @deprecated use <i class="dc-btn__font-icon--small dc-font-icon-arrow"></i>
             [class^="dc-font-icon-"] {
-                // scss-lint:disable NameFormat
                 @include dc-btn__font-icon--small;
-                // scss-lint:enable NameFormat
             }
         }
     }
@@ -303,9 +297,7 @@
         @include dc-btn--large {
             [class^="dc-font-icon-"] {
                 // @deprecated use <i class="dc-btn__font-icon--large dc-font-icon-arrow"></i>
-                // scss-lint:disable NameFormat
                 @include dc-btn__font-icon--large;
-                // scss-lint:enable NameFormat
             }
         }
     }
@@ -314,7 +306,6 @@
         @include dc-btn--block;
     }
 
-    // scss-lint:disable NameFormat
     .dc-btn__font-icon {   @include dc-btn__font-icon;   }
 
     .dc-btn__font-icon--small {
@@ -324,7 +315,6 @@
     .dc-btn__font-icon--large {
         @include dc-btn__font-icon--large;
     }
-    // scss-lint:disable NameFormat
 
     .dc-btn-icon {
         @include dc-btn-icon {

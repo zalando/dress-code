@@ -1,4 +1,13 @@
 @import "../core/core";
+@import "../molecules/btn-group";
+
+@mixin dc-input-group__btn {
+    @include dc-btn-group__btn;
+}
+
+@mixin dc-input-group__btn--primary {
+    @include dc-btn-group__btn--primary;
+}
 
 @mixin dc-input-group-selectors {
     //  = INPUT GROUPS
@@ -7,6 +16,10 @@
     .dc-input-group {
         display: flex;
         margin-bottom: $dc-space100;
+
+        .dc-btn { // @deprecated.. use <button class="dc-btn dc-input-group__btn">submit</button>
+            @include dc-input-group__btn;
+        }
 
         .dc-input {
             margin-right: 0;
@@ -28,10 +41,7 @@
                 border-top-right-radius: $dc-radius100;
                 border-bottom-left-radius: $dc-radius100;
             }
-
-
         }
-
     }
 
     .dc-input-addon {
@@ -55,5 +65,8 @@
         }
     }
 
+    .dc-input-group__btn {
+        @include dc-input-group__btn;
+    }
 }
 

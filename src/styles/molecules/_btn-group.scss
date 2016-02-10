@@ -1,4 +1,4 @@
-@import '../atoms/btn';
+@import "../atoms/btn";
 
 //  = BUTTONS GROUP
 //  -----------------------------------------------------------------------------
@@ -9,7 +9,6 @@
     @content;
 }
 
-// scss-lint:disable NameFormat
 @mixin dc-btn-group__btn {
     margin-right: 0;
     margin-bottom: 0;
@@ -32,7 +31,6 @@
     border-color: darken($dc-blue40, 7%);
     @content;
 }
-// scss-lint:enable NameFormat
 
 @mixin dc-btn-group-row {
     @include dc-cf;
@@ -40,6 +38,7 @@
 }
 
 @mixin dc-btn-group-selectors {
+
     .dc-btn-group {
         @include dc-btn-group {
             .dc-btn {
