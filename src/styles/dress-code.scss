@@ -33,7 +33,7 @@
     @include dc-patterns-selectors;
 
     // atoms
-    @include dc-btn-selectors;         // !!! partially mixinified
+    @include dc-btn-selectors;
     @include dc-checkbox-selectors;
     @include dc-divider-selectors;     // !!! partially mixinified
     @include dc-label-selectors;

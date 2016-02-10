@@ -254,8 +254,44 @@
     }
 }
 
-@mixin dc-btn-selectors {
+//  = BUTTONS GROUP
+//  -----------------------------------------------------------------------------
 
+@mixin dc-btn-group {
+    display: flex;
+    margin-bottom: $dc-space100;
+    @content;
+}
+
+@mixin dc-btn-group__btn {
+    margin-right: 0;
+    margin-bottom: 0;
+    border-left-width: 0;
+    border-radius: 0;
+
+    &:first-child {
+        border-left-width: 1px;
+        border-top-left-radius: $dc-radius100;
+        border-bottom-left-radius: $dc-radius100;
+    }
+
+    &:last-child {
+        border-top-right-radius: $dc-radius100;
+        border-bottom-right-radius: $dc-radius100;
+    }
+}
+
+@mixin dc-btn-group__btn--primary {
+    border-color: darken($dc-blue40, 7%);
+    @content;
+}
+
+@mixin dc-btn-group-row {
+    @include dc-cf;
+    clear: both;
+}
+
+@mixin dc-btn-selectors {
     .dc-btn {
         @include dc-btn {
             // @deprecated use <i class="dc-btn__font-icon dc-font-icon-arrow"></i>
@@ -282,7 +318,7 @@
     .touch .dc-btn--disabled { @include dc-btn--disabled--touch; }
     .no-touch .dc-btn--disabled { @include dc-btn--disabled--no-touch; }
 
-    .dc-btn-small {
+    .dc-btn--small {
         @include dc-btn--small {
             // @deprecated use <i class="dc-btn__font-icon--small dc-font-icon-arrow"></i>
             [class^="dc-font-icon-"] {
@@ -293,7 +329,7 @@
         }
     }
 
-    .no-touch .dc-btn-small { @include dc-btn--small--no-touch; }
+    .no-touch .dc-btn--small { @include dc-btn--small--no-touch; }
 
     .dc-btn--inline {
         @include dc-btn--inline;
@@ -357,52 +393,34 @@
         @include dc-btn-icon--disabled;
     }
 
-    //  = BUTTON GROUPS & BUTTONS IN INPUT GROUPS
-    //  ---------------------------------------------------------------------------
-
-    .dc-btn-group,
-    .dc-input-group {
-        display: flex;
-        margin-bottom: $dc-space100;
-
-        .dc-btn {
-            margin-right: 0;
-            margin-bottom: 0;
-            border-left-width: 0;
-            border-radius: 0;
-
-            &:first-child {
-                border-left-width: 1px;
-                border-top-left-radius: $dc-radius100;
-                border-bottom-left-radius: $dc-radius100;
+    .dc-btn-group {
+        @include dc-btn-group {
+            .dc-btn {
+                @include dc-btn-group__btn;
             }
 
-            &:last-child {
-                border-top-right-radius: $dc-radius100;
-                border-bottom-right-radius: $dc-radius100;
+            .dc-btn-group-row & {
+                margin-right: 1.6rem;
+                float: left;
             }
-
-            &.dc-btn--primary {
-                border-color: darken($dc-blue40, 7%);
-            }
-
-            // scss-lint:disable MergeableSelector
-            &.dc-btn--primary + .dc-btn {
-                border-left-color: darken($dc-blue40, 7%);
-            }
-            // scss-lint:enable MergeableSelector
         }
+    }
 
-        .dc-btn-group-row & {
-            margin-right: 1.6rem;
-            float: left;
-        }
+    .dc-btn-group__btn {
+        @include dc-btn-group__btn;
 
     }
 
+    .dc-btn-group__btn--primary {
+        @include dc-btn-group__btn--primary {
+            & + .dc-btn {
+                border-left-color: darken($dc-blue40, 7%);
+            }
+        }
+    }
+
     .dc-btn-group-row {
-        @include dc-cf;
-        clear: both;
+        @include dc-btn-group-row;
     }
 }
 
