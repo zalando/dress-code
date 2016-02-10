@@ -80,10 +80,4 @@ colors:
     $dc-gray30: "#807f80"
     $dc-gray20: "#646464"
     $dc-gray10: "#4a4a4a"
-menu:
-  - Environment
-  - Atoms
-  - Molecules
-  - Organisms
-  - Templates
-  - Pages
+
