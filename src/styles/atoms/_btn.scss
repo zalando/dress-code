@@ -263,6 +263,7 @@
     @content;
 }
 
+// scss-lint:disable NameFormat
 @mixin dc-btn-group__btn {
     margin-right: 0;
     margin-bottom: 0;
@@ -285,6 +286,7 @@
     border-color: darken($dc-blue40, 7%);
     @content;
 }
+// scss-lint:enable NameFormat
 
 @mixin dc-btn-group-row {
     @include dc-cf;
@@ -413,7 +415,7 @@
 
     .dc-btn-group__btn--primary {
         @include dc-btn-group__btn--primary {
-            & + .dc-btn {
+            + .dc-btn {
                 border-left-color: darken($dc-blue40, 7%);
             }
         }
