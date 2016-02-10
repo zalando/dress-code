@@ -6,28 +6,41 @@ notes: |
 
   For buttons with icon and text, the icon will always display at the right side. The button text must be wrapped in an element (any element works).
 ---
-<div class="dc-btn-group-row">
-  <div class="dc-btn-group">
-    <button class="dc-btn">
-      <i class="dc-font-icon-history"></i>
-    </button>
 
-    <button class="dc-btn dc-btn--primary">
-      <i class="dc-font-icon-pencil"></i>
-    </button>
+<button class="dc-btn">
+    <i class="dc-font-icon-history"></i>
+</button>
 
-    <button class="dc-btn dc-btn--destroy">
-      <i class="dc-font-icon-trash"></i>
-    </button>
-  </div>
+<button class="dc-btn dc-btn--primary">
+    <i class="dc-font-icon-pencil"></i>
+</button>
 
-  <div class="dc-btn-group">
-    <button class="dc-btn">
-      <span>Undo</span><i class="dc-font-icon-undo"></i>
-    </button>
-  	<button class="dc-btn dc-btn--disabled">
+<button class="dc-btn dc-btn--destroy">
+    <i class="dc-font-icon-trash"></i>
+</button>
+
+<button class="dc-btn">
+    <span>Undo</span><i class="dc-font-icon-undo"></i>
+</button>
+
+<button class="dc-btn dc-btn--disabled">
     <span>Redo</span> <i class="dc-font-icon-redo"></i>
-  	</button>
-  </div>
+</button>
 
-</div>
+
+<h4>New BEM way</h4>
+
+<!-- New BEM way -->
+<button class="dc-btn dc-btn--large dc-btn--disabled">
+    <span>Time</span> <i class="dc-btn__font-icon dc-btn__font-icon--large dc-font-icon--history"></i>
+</button>
+
+
+<button class="dc-btn">
+    <span>Time</span> <i class="dc-btn__font-icon dc-font-icon--history"></i>
+</button>
+
+
+<button class="dc-btn dc-btn--small">
+    <span>View</span> <i class="dc-btn__font-icon dc-btn__font-icon--small dc-font-icon--eye"></i>
+</button>

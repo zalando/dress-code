@@ -34,11 +34,11 @@
 
 @mixin <%= cssClass%>($filename, $insert: before, $extend: true) {
     &:#{$insert} {
-        //@if $extend {
-        //    @extend %<%= cssClass%>;
-        //} @else {
-        //    @include <%= cssClass%>-styles;
-        //}
+        @if $extend {
+            @extend %<%= cssClass%>;
+        } @else {
+            @include <%= cssClass%>-styles;
+        }
         content: <%= cssClass%>-char($filename);
     }
 }
@@ -53,11 +53,13 @@
         url('#{$dc-font-path}/DressCodeIcons.svg#DressCodeIcons') format('svg');
     }
 
-    [class^="dc-font-icon-"] {
-        @include <%= cssClass%>-styles;
-    }
-
     <% _.each(glyphs, function(glyph) { %>.<%= cssClass%>-<%= glyph.fileName %> {
+        @include <%= cssClass%>(<%= glyph.fileName %>);
+    }
+    <% }); %>
+
+    // BEM
+    <% _.each(glyphs, function(glyph) { %>.<%= cssClass%>--<%= glyph.fileName %> {
         @include <%= cssClass%>(<%= glyph.fileName %>);
     }
     <% }); %>

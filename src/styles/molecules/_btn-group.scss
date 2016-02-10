@@ -41,7 +41,17 @@
 
     .dc-btn-group {
         @include dc-btn-group {
-            .dc-btn {
+            //
+            // FIXME @deprecated will be removed soon
+            // Use .dc-btn-group__btn plus .dc-btn not just .dc-btn
+            //
+            // @example
+            // <div class="dc-btn-group">
+            //    <button class="dc-btn-group__btn dc-btn dc-btn--large">My Button</button>
+            //    <button class="dc-btn-group__btn dc-btn dc-btn--large dc-btn--primary">My Button 2</button>
+            // </div>
+            //
+            .dc-btn:not(.dc-btn-group__btn) {
                 @include dc-btn-group__btn;
             }
 

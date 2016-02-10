@@ -186,7 +186,7 @@
 
 @mixin dc-btn__font-icon--small {
     font-size: 1.2rem;
-    line-height: .8;
+    line-height: .8rem;
 }
 
 @mixin dc-btn__font-icon--large {
@@ -256,8 +256,13 @@
 @mixin dc-btn-selectors {
     .dc-btn {
         @include dc-btn {
-            // @deprecated use <i class="dc-btn__font-icon dc-font-icon-arrow"></i>
-            [class^="dc-font-icon-"] {
+            //
+            // FIXME @deprecated will be removed soon
+            // Use .dc-btn__font-icon plus .dc-font-icon-* not just .dc-font-icon-*
+            // @example
+            // <i class="dc-btn__font-icon dc-font-icon-arrow"></i>
+            //
+            [class^="dc-font-icon-"]:not(.dc-btn__font-icon) {
                 @include dc-btn__font-icon;
             }
         }
@@ -280,8 +285,14 @@
 
     .dc-btn--small {
         @include dc-btn--small {
-            // @deprecated use <i class="dc-btn__font-icon--small dc-font-icon-arrow"></i>
-            [class^="dc-font-icon-"] {
+            //
+            // FIXME @deprecated will be removed soon
+            // Use .dc-btn__font-icon plus .dc-btn__font-icon--small plus dc-font-icon-*  not just .dc-btn--small .dc-font-icon-*
+            //
+            // @example
+            // <i class="dc-btn__font-icon dc-btn__font-icon--small dc-font-icon-arrow"></i>
+            //
+            [class^="dc-font-icon-"]:not(.dc-btn__font-icon--small) {
                 @include dc-btn__font-icon--small;
             }
         }
