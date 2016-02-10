@@ -254,44 +254,6 @@
     }
 }
 
-//  = BUTTONS GROUP
-//  -----------------------------------------------------------------------------
-
-@mixin dc-btn-group {
-    display: flex;
-    margin-bottom: $dc-space100;
-    @content;
-}
-
-// scss-lint:disable NameFormat
-@mixin dc-btn-group__btn {
-    margin-right: 0;
-    margin-bottom: 0;
-    border-left-width: 0;
-    border-radius: 0;
-
-    &:first-child {
-        border-left-width: 1px;
-        border-top-left-radius: $dc-radius100;
-        border-bottom-left-radius: $dc-radius100;
-    }
-
-    &:last-child {
-        border-top-right-radius: $dc-radius100;
-        border-bottom-right-radius: $dc-radius100;
-    }
-}
-
-@mixin dc-btn-group__btn--primary {
-    border-color: darken($dc-blue40, 7%);
-    @content;
-}
-// scss-lint:enable NameFormat
-
-@mixin dc-btn-group-row {
-    @include dc-cf;
-    clear: both;
-}
 
 @mixin dc-btn-selectors {
     .dc-btn {
@@ -393,36 +355,6 @@
 
     .dc-btn-icon--disabled {
         @include dc-btn-icon--disabled;
-    }
-
-    .dc-btn-group {
-        @include dc-btn-group {
-            .dc-btn {
-                @include dc-btn-group__btn;
-            }
-
-            .dc-btn-group-row & {
-                margin-right: 1.6rem;
-                float: left;
-            }
-        }
-    }
-
-    .dc-btn-group__btn {
-        @include dc-btn-group__btn;
-
-    }
-
-    .dc-btn-group__btn--primary {
-        @include dc-btn-group__btn--primary {
-            + .dc-btn {
-                border-left-color: darken($dc-blue40, 7%);
-            }
-        }
-    }
-
-    .dc-btn-group-row {
-        @include dc-btn-group-row;
     }
 }
 
