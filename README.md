@@ -1,8 +1,8 @@
 # The Dress Code
 
-The Dress Code UI toolkit is a highly-modular design system for rapid web page development. It contains different materials that can be assembled into more complex page layouts.
+The Dress Code is the official style guide and style framework for all Brand Solutions products.
 
-[![Build Status](https://travis-ci.org/zalando/dress-code.svg)](https://travis-ci.org/zalando/dress-code)
+[![Build Status](https://travis-ci.org/zalando/dress-code.svg?branch=master)](https://travis-ci.org/zalando/dress-code)
 
 ## Quick links
 
