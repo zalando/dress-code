@@ -29,7 +29,7 @@
     $char: "\<%= glyph.codePoint %>";
 }<% }); %>
 
-@return $char;
+    @return $char;
 }
 
 @mixin <%= cssClass%>($filename, $insert: before, $extend: true) {
@@ -43,14 +43,14 @@
     }
 }
 
-@mixin dc-font-icon-selectors {
+@mixin <%= cssClass%>-selectors {
     @font-face {
-        font-family: "DressCodeIcons";
-        src: url('#{$dc-font-path}/DressCodeIcons.eot');
-        src: url('#{$dc-font-path}/DressCodeIcons.eot?#iefix') format('eot'),
-        url('#{$dc-font-path}/DressCodeIcons.woff') format('woff'),
-        url('#{$dc-font-path}/DressCodeIcons.ttf') format('truetype'),
-        url('#{$dc-font-path}/DressCodeIcons.svg#DressCodeIcons') format('svg');
+        font-family: "<%= fontName %>";
+        src: url('#{$dc-font-path}/<%= fontName %>.eot');
+        src: url('#{$dc-font-path}/<%= fontName %>.eot?#iefix') format('eot'),
+        url('#{$dc-font-path}/<%= fontName %>.woff') format('woff'),
+        url('#{$dc-font-path}/<%= fontName %>.ttf') format('truetype'),
+        url('#{$dc-font-path}/<%= fontName %>.svg#<%= fontName %>') format('svg');
     }
 
     <% _.each(glyphs, function(glyph) { %>.<%= cssClass%>-<%= glyph.fileName %> {

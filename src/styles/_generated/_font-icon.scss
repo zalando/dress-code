@@ -92,7 +92,7 @@
     $char: "\E016";
 }
 
-@return $char;
+    @return $char;
 }
 
 @mixin dc-font-icon($filename, $insert: before, $extend: true) {
@@ -184,6 +184,7 @@
     }
     
 
+    // BEM
     .dc-font-icon--add {
         @include dc-font-icon(add);
     }
