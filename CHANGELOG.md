@@ -1,3 +1,12 @@
+<a name="0.2.2-alpha.4"></a>
+## [0.2.2-alpha.4](https://github.com/zalando/dress-code/compare/0.2.2-alpha.3...v0.2.2-alpha.4) (2016-02-11)
+
+### Bug Fixes
+
+* **spinner**: Match spinner stroke to prod. Close #94 ([5aa6864](https://github.com/zalando/dress-code/commit/5aa6864))
+* **demo/colors**: Match colors in toolkit YAML to SCSS vars ([ff4ce55](https://github.com/zalando/dress-code/commit/ff4ce55))
+
+
 <a name="0.2.2-alpha.3"></a>
 ## [0.2.2-alpha.3](https://github.com/zalando/dress-code/compare/0.2.2-alpha.2...v0.2.2-alpha.3) (2016-02-09)
 
