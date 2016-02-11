@@ -22,15 +22,15 @@
     line-height: .6rem;
 }
 
-//  = SVG ICON BUTTONS @deprecated
+//  = SVG ICON BUTTONS
 //  -----------------------------------------------------------------------------
 
-@mixin dc-btn-icon {
+@mixin dc-btn-icon($svg-selector: "svg, .dc-svg") {
     width: auto;
     height: auto;
     padding: $dc-space100 - .2;
 
-    svg {
+    #{$svg-selector} {
         position: relative;
         top: -1px;
         left: -1px;

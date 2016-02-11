@@ -1,75 +1,77 @@
 @import "../core/core";
 @import "../_generated/font-icon";
 
+//  = SVG ICON
+//  ---------------------------------------------------------------------------
+@mixin dc-icon($svg-selector: "svg, .dc-svg") {
+    display: inline-block;
+    margin-bottom: $dc-font250;
+    padding: $dc-space100;
+    border: 1px solid $dc-gray60;
+    background-color: $dc-white;
+    text-align: center;
+
+    .#{$svg-selector} {
+        margin-bottom: $dc-font50;
+        vertical-align: middle;
+    }
+}
+
+@mixin dc-icon--interactive {
+    &:hover {
+        [fill^='#'] {
+            fill: $dc-blue30;
+        }
+
+        [stroke^='#'] {
+            stroke: $dc-blue30;
+        }
+    }
+
+    &:active {
+        transform: scale(.85);
+        shape-rendering: optimizeSpeed;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+@mixin dc-icon--alternate {
+    &:hover {
+        [fill^='#'] {
+            fill: $dc-orange40;
+        }
+
+        [stroke^='#'] {
+            stroke: $dc-orange40;
+        }
+    }
+}
+
+//  = FONT ICON
+//  (others mixins are generated with iconfont plugin @see _generated/_font-icon.scss)
+//  ---------------------------------------------------------------------------------
+@mixin dc-font-icon--interactive {
+    cursor: pointer;
+    &:hover {  color: $dc-blue20;  }
+}
+
 @mixin dc-icon-selectors {
 
-    //  = BASE ICON SVG
-    //  ---------------------------------------------------------------------------
-
     .dc-icon {
-        display: inline-block;
-        margin-bottom: $dc-font250;
-        padding: $dc-space100;
-        border: 1px solid $dc-gray60;
-        background-color: $dc-white;
-        text-align: center;
-
-        .dc-svg {
-            margin-bottom: $dc-font50;
-            vertical-align: middle;
-        }
+        @include dc-icon;
     }
 
     .dc-icon--interactive {
-        &:hover {
-            [fill^='#'] {
-                fill: $dc-blue30;
-            }
-
-            [stroke^='#'] {
-                stroke: $dc-blue30;
-            }
-        }
-
-        &:active {
-            transform: scale(.85);
-            shape-rendering: optimizeSpeed;
-            -webkit-tap-highlight-color: transparent;
-        }
+        @include dc-icon--interactive;
     }
 
     .dc-icon--alternate {
-        &:hover {
-            [fill^='#'] {
-                fill: $dc-orange40;
-            }
-
-            [stroke^='#'] {
-                stroke: $dc-orange40;
-            }
-        }
+        @include dc-icon--alternate;
     }
 
-    //  = FONT ICON
-    //  ---------------------------------------------------------------------------
     @include dc-font-icon-selectors;
 
-    [class^="dc-font-icon-"] {
-        color: inherit;
-
-        &.dc-font-icon--interactive {
-            cursor: pointer;
-
-            &:hover {
-                color: $dc-blue20;
-            }
-        }
-
-        &.dc-font-icon-trash {
-            margin-left: .125em;
-            // this is a fix to make the trash icon sharper, because the current version can =not be centered in the font bounding box.
-            // if you change the icon, check to see if this is still needed
-        }
-
+    .dc-font-icon--interactive {
+        @include dc-font-icon--interactive;
     }
 }
