@@ -91,4 +91,50 @@
     .dc-checkbox {
         @include dc-checkbox;
     }
+
+    //  FIXME "mixinify"
+    //  = CHECKBOX SWITCH
+    //  ---------------------------------------------------------------------------
+
+    .dc-checkbox--alt + .dc-label {
+        padding-left: $dc-space200;
+        line-height: $dc-space150;
+
+        &:before,
+        &:after {
+            width: 2.6rem;
+            height: 1.3rem;
+            margin-top: .5rem;
+            transition: background-color .3s linear,
+            transform .1s cubic-bezier(.105, .420, .425, 1);
+        }
+
+        &:after {
+            width: 1.1rem;
+            height: 1.1rem;
+            transform: scale3d(1, 1, 1);
+            border-radius: 1px;
+            background: $dc-gray50;
+            opacity: 1;
+        }
+    }
+
+    .dc-checkbox--alt:checked + .dc-label {
+        &:after {
+            transform: translateX(1.3rem);
+            transition: background-color .1s linear, transform .1s cubic-bezier(.105, .420, .425, 1);
+            background: none;
+            background-color: $dc-green30;
+        }
+    }
+
+    .dc-checkbox--alt[disabled] + .dc-label {
+        &:after {
+            // scss-lint:disable ImportantRule
+            background: none !important;
+            background-color: $dc-gray60 !important;
+            // scss-lint:enable ImportantRule
+        }
+    }
+
 }
