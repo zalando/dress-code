@@ -2,26 +2,19 @@
 
 //  = PLACEHOLDER
 //  ---------------------------------------------------------------------------
+
+@mixin dc-placeholder {
+    color: $dc-gray50;
+    font-weight: $dc-normal-font-weight;
+}
+
 @mixin dc-placeholder-selectors {
     // scss-lint:disable VendorPrefix
-    ::-webkit-input-placeholder {
-        color: $dc-gray50;
-        font-weight: $dc-normal-font-weight;
-    }
-
-    :-moz-placeholder {
-        color: $dc-gray50;
-        font-weight: $dc-normal-font-weight;
-    }
-
-    ::-moz-placeholder {
-        color: $dc-gray50;
-        font-weight: $dc-normal-font-weight;
-    }
-
+    ::-webkit-input-placeholder,
+    :-moz-placeholder,
+    ::-moz-placeholder,
     :-ms-input-placeholder {
-        color: $dc-gray50;
-        font-weight: $dc-normal-font-weight;
+        @include dc-placeholder;
     }
     // scss-lint:enable VendorPrefix
 }

@@ -43,8 +43,8 @@
     @include dc-input-selectors;       // !!! partially mixinified
     @include dc-link-selectors;
     @include dc-list-selectors;
-    @include dc-loading-bar-selectors; // !!! partially mixinified
-    @include dc-placeholder-selectors; // !!! partially mixinified
+    @include dc-loading-bar-selectors;
+    @include dc-placeholder-selectors;
     @include dc-radio-selectors;       // !!! partially mixinified
     @include dc-select-selectors;      // !!! partially mixinified
     @include dc-spinner-selectors;     // !!! partially mixinified
