@@ -35,9 +35,9 @@
     @include dc-patterns-selectors;
 
     // atoms
-    @include dc-btn-selectors;         // !!! partially mixinified
-    @include dc-checkbox-selectors;
-    @include dc-divider-selectors;     // !!! partially mixinified
+    @include dc-btn-selectors;
+    @include dc-checkbox-selectors;    // !!! partially mixinified
+    @include dc-divider-selectors;
     @include dc-label-selectors;
     @include dc-icon-selectors;        // !!! partially mixinified
     @include dc-input-selectors;       // !!! partially mixinified
