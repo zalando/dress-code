@@ -236,7 +236,7 @@ gulp.task('demo:serve', function () {
     gulp.task('demo:styles:fabricator:watch', ['demo:styles:fabricator']);
     gulp.watch('docs/demo/assets/fabricator/styles/**/*.scss', ['demo:styles:fabricator:watch']);
 
-    gulp.watch('src/styles/**/*.scss', ['demo:styles:fabricator:watch']);
+    gulp.watch('src/styles/**/*.scss', ['demo:styles:fabricator:watch', 'scss-lint']);
 
     gulp.task('demo:scripts:watch', ['demo:scripts'], reload);
     gulp.watch('docs/demo/assets/fabricator/scripts/**/*.js', ['demo:scripts:watch']).on('change', webpackCache);
@@ -269,7 +269,7 @@ gulp.task('demo:deploy', ['demo'], function () {
 
 // build and copy the result in the official versioned distribution folder (dist)
 gulp.task('dist', function (cb) {
-    return runSequence('dist:build', 'dist:clean-dist', 'dist:copy-dist', cb);
+    return runSequence('scss-lint', 'dist:build', 'dist:clean-dist', 'dist:copy-dist', cb);
 });
 
 // build all distribution artifacts in a tmp folder
