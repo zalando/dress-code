@@ -19,7 +19,7 @@
     color: inherit;
 }
 
-%<%= cssClass%> {
+%<%= cssClass%>-styles {
     @include <%= cssClass%>-styles;
 }
 
@@ -33,13 +33,8 @@
     @return $char;
 }
 
-@mixin <%= cssClass%>($filename, $insert: before, $extend: true) {
-    &:#{$insert} {
-        @if $extend {
-            @extend %<%= cssClass%>;
-        } @else {
-            @include <%= cssClass%>-styles;
-        }
+@mixin <%= cssClass%>($filename) {
+    &:before {
         content: <%= cssClass%>-char($filename);
     }
 }
@@ -52,6 +47,10 @@
         url('#{$dc-font-path}/<%= fontName %>.woff') format('woff'),
         url('#{$dc-font-path}/<%= fontName %>.ttf') format('truetype'),
         url('#{$dc-font-path}/<%= fontName %>.svg#<%= fontName %>') format('svg');
+    }
+
+    [class^="<%= cssClass%>-"]:before {
+        @include <%= cssClass%>-styles;
     }
 
     <% _.each(glyphs, function(glyph) { %>.<%= cssClass%>-<%= glyph.fileName %> {

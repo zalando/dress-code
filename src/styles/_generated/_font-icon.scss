@@ -16,9 +16,10 @@
     // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
     text-decoration: none;
     text-transform: none;
+    color: inherit;
 }
 
-%dc-font-icon {
+%dc-font-icon-styles {
     @include dc-font-icon-styles;
 }
 
@@ -95,13 +96,8 @@
     @return $char;
 }
 
-@mixin dc-font-icon($filename, $insert: before, $extend: true) {
-    &:#{$insert} {
-        @if $extend {
-            @extend %dc-font-icon;
-        } @else {
-            @include dc-font-icon-styles;
-        }
+@mixin dc-font-icon($filename) {
+    &:before {
         content: dc-font-icon-char($filename);
     }
 }
@@ -114,6 +110,10 @@
         url('#{$dc-font-path}/DressCodeIcons.woff') format('woff'),
         url('#{$dc-font-path}/DressCodeIcons.ttf') format('truetype'),
         url('#{$dc-font-path}/DressCodeIcons.svg#DressCodeIcons') format('svg');
+    }
+
+    [class^="dc-font-icon-"]:before {
+        @include dc-font-icon-styles;
     }
 
     .dc-font-icon-add {
