@@ -87,16 +87,8 @@
     }
 }
 
-@mixin dc-checkbox-selectors {
-    .dc-checkbox {
-        @include dc-checkbox;
-    }
-
-    //  FIXME "mixinify"
-    //  = CHECKBOX SWITCH
-    //  ---------------------------------------------------------------------------
-
-    .dc-checkbox--alt + .dc-label {
+@mixin dc-checkbox--alt($sibling-label-selector: ".dc-label") {
+    + #{$sibling-label-selector} {
         padding-left: $dc-space200;
         line-height: $dc-space150;
 
@@ -119,7 +111,7 @@
         }
     }
 
-    .dc-checkbox--alt:checked + .dc-label {
+    &:checked + #{$sibling-label-selector} {
         &:after {
             transform: translateX(1.3rem);
             transition: background-color .1s linear, transform .1s cubic-bezier(.105, .420, .425, 1);
@@ -128,7 +120,7 @@
         }
     }
 
-    .dc-checkbox--alt[disabled] + .dc-label {
+    &[disabled] + #{$sibling-label-selector} {
         &:after {
             // scss-lint:disable ImportantRule
             background: none !important;
@@ -137,4 +129,13 @@
         }
     }
 
+}
+
+@mixin dc-checkbox-selectors {
+    .dc-checkbox {
+        @include dc-checkbox;
+    }
+    .dc-checkbox--alt {
+        @include dc-checkbox--alt;
+    }
 }
