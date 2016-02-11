@@ -2,16 +2,21 @@
 
 //  = TEXT AREA
 //  ---------------------------------------------------------------------------
+
+@mixin dc-textarea {
+    width: 100%;
+    min-height: $dc-space350 + $dc-space75;
+    padding: $dc-space50 $dc-space75;
+    resize: vertical;
+
+    &[disabled] {
+        resize: none;
+    }
+}
+
 @mixin dc-textarea-selectors {
     .dc-textarea {
-        width: 100%;
-        min-height: $dc-space350 + $dc-space75;
-        padding: $dc-space50 $dc-space75;
-        resize: vertical;
-
-        &[disabled] {
-            resize: none;
-        }
+        @include dc-textarea;
     }
 }
 

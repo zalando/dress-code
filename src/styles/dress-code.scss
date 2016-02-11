@@ -49,7 +49,7 @@
     @include dc-select-selectors;
     @include dc-spinner-selectors;
     @include dc-table-selectors;       // !!! partially mixinified
-    @include dc-textarea-selectors;    // !!! partially mixinified
+    @include dc-textarea-selectors;
 
     // molecules
     @include dc-btn-icon-selectors;
