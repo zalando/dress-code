@@ -174,98 +174,9 @@
 }
 
 
-//  = FONT-ICON BUTTON
-//  -----------------------------------------------------------------------------
-@mixin dc-btn__font-icon {
-    display: block;
-    margin-top: .2rem;
-    margin-right: 0;
-    float: right;
-    line-height: .8rem;
-}
-
-@mixin dc-btn__font-icon--small {
-    font-size: 1.2rem;
-    line-height: .8rem;
-}
-
-@mixin dc-btn__font-icon--large {
-    margin-top: .4rem;
-    font-size: 2.4rem;
-    line-height: .6rem;
-}
-
-//  = SVG ICON BUTTONS
-//  -----------------------------------------------------------------------------
-
-@mixin dc-btn-icon {
-    width: auto;
-    height: auto;
-    padding: $dc-space100 - .2;
-
-    svg {
-        position: relative;
-        top: -1px;
-        left: -1px;
-    }
-
-    [stroke^='#'] {
-        stroke: $dc-text-color;
-    }
-
-    [fill^='#'] {
-        fill: $dc-text-color;
-    }
-
-    @content;
-}
-
-@mixin dc-btn-icon--primary {
-    [stroke^='#'] {
-        stroke: $dc-white;
-    }
-
-    [fill^='#'] {
-        fill: $dc-white;
-    }
-}
-
-@mixin dc-btn-icon--destroy {
-    &:hover {
-        [stroke^='#'] {
-            stroke: $dc-white;
-        }
-
-        [fill^='#'] {
-            fill: $dc-white;
-        }
-    }
-}
-
-@mixin dc-btn-icon--disabled {
-    [stroke^='#'] {
-        stroke: $dc-gray50;
-    }
-
-    [fill^='#'] {
-        fill: $dc-gray50;
-    }
-}
-
-
 @mixin dc-btn-selectors {
     .dc-btn {
-        @include dc-btn {
-            //
-            // FIXME @deprecated will be removed soon
-            // Use .dc-btn__font-icon plus .dc-font-icon-* not just .dc-font-icon-*
-            // @example
-            // <i class="dc-btn__font-icon dc-font-icon-arrow"></i>
-            //
-            [class^="dc-font-icon-"]:not(.dc-btn__font-icon) {
-                @include dc-btn__font-icon;
-            }
-        }
+        @include dc-btn;
     }
 
     .no-touch .dc-btn {  @include dc-btn--no-touch;  }
@@ -284,18 +195,7 @@
     .no-touch .dc-btn--disabled { @include dc-btn--disabled--no-touch; }
 
     .dc-btn--small {
-        @include dc-btn--small {
-            //
-            // FIXME @deprecated will be removed soon
-            // Use .dc-btn__font-icon plus .dc-btn__font-icon--small plus dc-font-icon-*  not just .dc-btn--small .dc-font-icon-*
-            //
-            // @example
-            // <i class="dc-btn__font-icon dc-btn__font-icon--small dc-font-icon-arrow"></i>
-            //
-            [class^="dc-font-icon-"]:not(.dc-btn__font-icon--small) {
-                @include dc-btn__font-icon--small;
-            }
-        }
+        @include dc-btn--small;
     }
 
     .no-touch .dc-btn--small { @include dc-btn--small--no-touch; }
@@ -305,57 +205,11 @@
     }
 
     .dc-btn--large {
-        @include dc-btn--large {
-            [class^="dc-font-icon-"] {
-                // @deprecated use <i class="dc-btn__font-icon--large dc-font-icon-arrow"></i>
-                @include dc-btn__font-icon--large;
-            }
-        }
+        @include dc-btn--large;
     }
 
     .dc-btn--block {
         @include dc-btn--block;
-    }
-
-    .dc-btn__font-icon {   @include dc-btn__font-icon;   }
-
-    .dc-btn__font-icon--small {
-        @include dc-btn__font-icon--small;
-    }
-
-    .dc-btn__font-icon--large {
-        @include dc-btn__font-icon--large;
-    }
-
-    .dc-btn-icon {
-        @include dc-btn-icon {
-            // @deprecated use <button class="dc-btn-icon dc-btn-icon--primary"><!-- svg --></button>
-            &.dc-btn--primary {
-                @include dc-btn-icon--primary;
-            }
-
-            // @deprecated use <button class="dc-btn-icon dc-btn-icon--destroy"><!-- svg --></button>
-            &.dc-btn--destroy {
-                @include dc-btn-icon--destroy;
-            }
-
-            // @deprecated use <button class="dc-btn-icon dc-btn-icon--disabled"><!-- svg --></button>
-            &.dc-btn--disabled {
-                @include dc-btn-icon--disabled;
-            }
-        }
-    }
-
-    .dc-btn-icon--primary {
-        @include dc-btn-icon--primary;
-    }
-
-    .dc-btn-icon--destroy {
-        @include dc-btn-icon--destroy;
-    }
-
-    .dc-btn-icon--disabled {
-        @include dc-btn-icon--disabled;
     }
 }
 

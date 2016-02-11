@@ -18,6 +18,7 @@
 @import "atoms/textarea";
 
 // molecules
+@import "molecules/btn-icon";
 @import "molecules/btn-group";
 @import "molecules/dialog";
 @import "molecules/dropdown";
@@ -51,6 +52,7 @@
     @include dc-textarea-selectors;    // !!! partially mixinified
 
     // molecules
+    @include dc-btn-icon-selectors;
     @include dc-btn-group-selectors;
     @include dc-dialog-selectors;       // !!! partially mixinified
     @include dc-dropdown-selectors;     // !!! partially mixinified
