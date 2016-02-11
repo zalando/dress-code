@@ -2,17 +2,30 @@
 
 //  = LISTS
 //  ---------------------------------------------------------------------------
+@mixin dc-list {
+    padding-left: 3rem;
+}
+
+@mixin dc-list--is-reset {
+    padding: 0;
+    list-style-type: none;
+}
+
+@mixin dc-dt {
+    font-family: $dc-base-font-family;
+}
+
+
 @mixin dc-list-selectors {
     .dc-list {
-        padding-left: 3rem;
+        @include dc-list;
     }
 
     .dc-list--is-reset {
-        padding: 0;
-        list-style-type: none;
+        @include dc-list--is-reset;
     }
 
     .dc-dt {
-        font-family: $dc-base-font-family;
+        @include dc-dt;
     }
 }
