@@ -5,26 +5,35 @@ notes: |
   Wrap buttons and a list with `dc-btn-dropdown` to make dropdown that come from buttons.
 ---
 <div class="dc-btn-dropdown">
-  <button class="dc-btn dc-btn--primary" id="dropdownExample">
-      Dropdown
-      <span class="dc-arrow-down"></span>
-</button>
-<ul class="dc-dropdown-list" id="dropdownExampleList">
-    <li><a href="#">The first option</a></li>
-    <li><a href="#">The second option</a></li>
-    <li class="disabled"><a href="#">Disabled option</a></li>
-</ul>
+    <button class="dc-btn dc-btn--primary" id="dropdown-example">
+        Dropdown
+        <span class="dc-btn-dropdown__arrow dc-btn-dropdown__arrow--down"></span>
+    </button>
+    <ul class="dc-btn-dropdown__list dc-btn-dropdown__list--down" id="dropdown-example-list">
+        <li class="dc-btn-dropdown__item">The first option</li>
+        <li class="dc-btn-dropdown__item">The second option</li>
+        <li class="dc-btn-dropdown__item dc-btn-dropdown__item--disabled">Disabled option</li>
+    </ul>
 </div>
 
-<div class="dc-btn-dropup">
-  <button class="dc-btn dc-btn--primary" id="dropupExample">
+<div class="dc-btn-dropdown">
+    <button class="dc-btn dc-btn--primary" id="dropup-example">
       Dropup
-      <span class="dc-arrow-up"></span>
-</button>
-<ul class="dc-dropdown-list" id="dropupExampleList">
-    <li><a href="#">The first option</a></li>
-    <li><a href="#">The second option</a></li>
-    <li class="dc-divider"></li>
-    <li><a href="#">Separated option</a></li>
-</ul>
+      <span class="dc-btn-dropdown__arrow dc-btn-dropdown__arrow--up"></span>
+    </button>
+    <ul class="dc-btn-dropdown__list dc-btn-dropdown__list--up" id="dropup-example-list">
+        <li class="dc-btn-dropdown__item">
+            <a href="#" class="dc-link">The first option</a>
+        </li>
+        <li class="dc-btn-dropdown__item">
+            <a href="#" class="dc-link">The second option</a>
+        </li>
+        <li class="dc-btn-dropdown__item dc-btn-dropdown__item--disabled">
+            <a href="#" class="dc-link">Disabled option</a>
+        </li>
+        <li class="dc-btn-dropdown__divider"></li>
+        <li class="dc-btn-dropdown__item">
+            <a href="#" class="dc-link">Separated option</a>
+        </li>
+    </ul>
 </div>
