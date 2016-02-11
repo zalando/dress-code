@@ -1505,11 +1505,11 @@ th {
 
 .dc-spinner {
   display: inline-block;
-  margin: -2px 8px 0;
-  border-top: 2px solid rgba(128, 127, 128, 0.3);
-  border-right: 2px solid rgba(128, 127, 128, 0.3);
-  border-bottom: 2px solid rgba(128, 127, 128, 0.3);
-  border-left: 2px solid #807f80;
+  margin: -4px 8px 0;
+  border-top: 4px solid rgba(128, 127, 128, 0.3);
+  border-right: 4px solid rgba(128, 127, 128, 0.3);
+  border-bottom: 4px solid rgba(128, 127, 128, 0.3);
+  border-left: 4px solid #807f80;
   vertical-align: middle;
   -webkit-animation: dc-spinner-load 1.1s infinite linear;
           animation: dc-spinner-load 1.1s infinite linear; }
