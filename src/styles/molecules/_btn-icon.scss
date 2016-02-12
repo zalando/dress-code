@@ -83,9 +83,11 @@
     .dc-btn {
         //
         // FIXME @deprecated will be removed soon
+        // FIXME @controversial BEM
+        //
         // @example
         //
-        // <!-- old way: @deprecated -->
+        // <!-- old way -->
         // <button class="dc-btn">
         //   <i class="dc-font-icon-arrow"></i>
         // </button>
@@ -103,9 +105,11 @@
     .dc-btn--small {
         //
         // FIXME @deprecated will be removed soon
+        // FIXME @controversial BEM
+        //
         // @example
         //
-        // <!-- old way: @deprecated -->
+        // <!-- old way -->
         // <button class="dc-btn dc-btn--small">
         //   <i class="dc-font-icon-arrow"></i>
         // </button>
@@ -123,9 +127,11 @@
     .dc-btn--large {
         //
         // FIXME @deprecated will be removed soon
+        // FIXME @controversial BEM
+        //
         // @example
         //
-        // <!-- old way: @deprecated  -->
+        // <!-- old way  -->
         // <button class="dc-btn dc-btn--large">
         //   <i class="dc-font-icon-arrow"></i>
         // </button>
@@ -150,7 +156,8 @@
         @include dc-font-icon--btn-large;
     }
 
-    // @deprecated
+    // FIXME
+    // @controversial SVG icons (RB maybe rename as svg icon?)
     .dc-btn-icon {
         @include dc-btn-icon {
             // @deprecated use <button class="dc-btn-icon dc-btn-icon--primary"><!-- svg --></button>

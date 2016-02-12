@@ -43,12 +43,15 @@
         @include dc-btn-group {
             //
             // FIXME @deprecated will be removed soon
-            // Use .dc-btn-group__btn plus .dc-btn not just .dc-btn
+            // FIXME @controversial BEM
             //
             // @example
             //
             // <!-- old way -->
-            //
+            // <div class="dc-btn-group">
+            //   <button class="dc-btn dc-btn--large">My button</button>
+            //   <button class="dc-btn dc-btn--large">My button 2</button>
+            // </div>
             //
             // <!-- new way -->
             // <div class="dc-btn-group">

@@ -1,6 +1,49 @@
 @import "../core/core";
 @import "../molecules/btn-group";
 
+@mixin dc-input-group {
+    display: flex;
+    margin-bottom: $dc-space100;
+}
+
+@mixin dc-input-addon {
+    margin-bottom: 0;
+    padding: $dc-space75 + .2 $dc-space100 $dc-space75;
+    border: 1px solid $dc-gray60;
+    background-color: $dc-gray80;
+    color: $dc-gray20;
+    line-height: 1;
+
+    &:first-child {
+        border-right-width: 0;
+        border-top-left-radius: $dc-radius100;
+        border-bottom-left-radius: $dc-radius100;
+    }
+
+    &:last-child {
+        border-left-width: 0;
+        border-top-right-radius: $dc-radius100;
+        border-bottom-left-radius: $dc-radius100;
+    }
+}
+
+@mixin dc-input-group__input {
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-radius: 0;
+
+    &:first-child {
+        border-top-left-radius: $dc-radius100;
+        border-bottom-left-radius: $dc-radius100;
+    }
+
+    &:last-child {
+        border-top-right-radius: $dc-radius100;
+        border-bottom-left-radius: $dc-radius100;
+    }
+}
+
 @mixin dc-input-group__btn {
     @include dc-btn-group__btn;
 }
@@ -14,59 +57,46 @@
     //  ---------------------------------------------------------------------------
 
     .dc-input-group {
-        display: flex;
-        margin-bottom: $dc-space100;
+        @include dc-input-group;
 
-        .dc-btn { // @deprecated.. use <button class="dc-btn dc-input-group__btn">submit</button>
+        //
+        // FIXME @deprecated will be removed soon
+        // FIXME @controversial BEM
+        //
+        // @example
+        //
+        // <!-- old way -->
+        // <div class="dc-input-group">
+        //   <input class="dc-input" type="text" />
+        //   <button class="dc-btn dc-btn--primary"><i class="dc-font-icon-search"></i></button>
+        // </div>
+        //
+        // <!-- new way -->
+        // <div class="dc-input-group">
+        //   <input class="dc-input-group__input dc-input" type="text" />
+        //   <button class="dc-input-group__btn dc-btn dc-btn--primary"><i class="dc-font-icon--btn dc-font-icon--search"></i></button>
+        // </div>
+        //
+        .dc-btn:not(.dc-input-group__btn) { // @deprecated.. use <button class="dc-btn dc-input-group__btn">submit</button>
             @include dc-input-group__btn;
         }
 
-        .dc-input {
-            margin-right: 0;
-            margin-bottom: 0;
-            margin-left: 0;
-            border-radius: 0;
-            // &::-webkit-inner-spin-button,
-            // &::-webkit-outer-spin-button {
-            //     margin: 0;
-            //     -webkit-appearance: none;
-            // }
-
-            &:first-child {
-                border-top-left-radius: $dc-radius100;
-                border-bottom-left-radius: $dc-radius100;
-            }
-
-            &:last-child {
-                border-top-right-radius: $dc-radius100;
-                border-bottom-left-radius: $dc-radius100;
-            }
+        .dc-input:not(.dc-input-group__input) {
+            @include dc-input-group__input;
         }
     }
 
     .dc-input-addon {
-        margin-bottom: 0;
-        padding: $dc-space75 + .2 $dc-space100 $dc-space75;
-        border: 1px solid $dc-gray60;
-        background-color: $dc-gray80;
-        color: $dc-gray20;
-        line-height: 1;
+        @include dc-input-addon;
+    }
 
-        &:first-child {
-            border-right-width: 0;
-            border-top-left-radius: $dc-radius100;
-            border-bottom-left-radius: $dc-radius100;
-        }
-
-        &:last-child {
-            border-left-width: 0;
-            border-top-right-radius: $dc-radius100;
-            border-bottom-left-radius: $dc-radius100;
-        }
+    .dc-input-group__input {
+        @include dc-input-group__input;
     }
 
     .dc-input-group__btn {
         @include dc-input-group__btn;
     }
+
 }
 

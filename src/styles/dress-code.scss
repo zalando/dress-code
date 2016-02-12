@@ -52,11 +52,11 @@
     @include dc-textarea-selectors;
 
     // molecules
-    @include dc-btn-icon-selectors;
-    @include dc-btn-group-selectors;
+    @include dc-btn-icon-selectors;     // !!! FIXME @controversial BEM
+    @include dc-btn-group-selectors;    // !!! FIXME @controversial BEM
     @include dc-dialog-selectors;       // !!! partially mixinified
     @include dc-dropdown-selectors;
-    @include dc-input-group-selectors;  // !!! partially mixinified
+    @include dc-input-group-selectors;  // !!! FIXME @controversial BEM
     @include dc-msg-selectors;          // !!! partially mixinified
     @include dc-search-form-selectors;  // !!! partially mixinified
     @include dc-toast-selectors;        // !!! partially mixinified
