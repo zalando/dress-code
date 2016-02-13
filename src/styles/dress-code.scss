@@ -54,7 +54,7 @@
     // molecules
     @include dc-btn-icon-selectors;     // !!! FIXME @controversial BEM
     @include dc-btn-group-selectors;    // !!! FIXME @controversial BEM
-    @include dc-dialog-selectors;       // !!! partially mixinified
+    @include dc-dialog-selectors;       // !!! FIXME @controversial BEM
     @include dc-dropdown-selectors;
     @include dc-input-group-selectors;  // !!! FIXME @controversial BEM
     @include dc-msg-selectors;          // !!! partially mixinified
