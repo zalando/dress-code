@@ -57,7 +57,7 @@
     @include dc-dialog-selectors;       // !!! FIXME @controversial BEM
     @include dc-dropdown-selectors;
     @include dc-input-group-selectors;  // !!! FIXME @controversial BEM
-    @include dc-msg-selectors;          // !!! partially mixinified
+    @include dc-msg-selectors;          // !!! FIXME @controversial BEM
     @include dc-search-form-selectors;  // !!! partially mixinified
     @include dc-toast-selectors;        // !!! partially mixinified
     @include dc-tooltip-selectors;      // !!! partially mixinified
