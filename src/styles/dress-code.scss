@@ -49,7 +49,7 @@
     @include dc-radio-selectors;
     @include dc-select-selectors;
     @include dc-spinner-selectors;
-    @include dc-table-selectors;       // !!! partially mixinified
+    @include dc-table-selectors;       // !!! partially mixinified ( complexity: +++++ )
     @include dc-textarea-selectors;
 
     // molecules
@@ -59,9 +59,9 @@
     @include dc-dropdown-selectors;
     @include dc-input-group-selectors;  // !!! FIXME @controversial BEM
     @include dc-msg-selectors;          // !!! FIXME @controversial BEM
-    @include dc-search-form-selectors;  // !!! partially mixinified
-    @include dc-toast-selectors;        // !!! partially mixinified
-    @include dc-tooltip-selectors;      // !!! partially mixinified
+    @include dc-search-form-selectors;  // !!! partially mixinified ( complexity: +++ )
+    @include dc-toast-selectors;        // !!! partially mixinified ( complexity: + )
+    @include dc-tooltip-selectors;      // !!! FIXME @controversial BEM
 }
 
 
