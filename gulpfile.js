@@ -208,7 +208,8 @@ gulp.task('demo:serve', function () {
             baseDir: config.tmp.demo
         },
         notify: false,
-        logPrefix: 'FABRICATOR'
+        logPrefix: 'FABRICATOR',
+        open: gutil.env.open || false
     });
 
     /**

@@ -135,6 +135,11 @@ $ npm install
 $ npm start
 ```
 
+> To open a new browser window or to pass a value to [browserSync open option](https://www.browsersync.io/docs/options/#option-open): 
+```
+npm start -- --open
+```
+
 ### Development Environment Features
 
 - Live preview sever (using [BrowserSync](http://www.browsersync.io/))
