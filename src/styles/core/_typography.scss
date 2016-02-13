@@ -169,6 +169,11 @@
     @include dc-heading($dc-h4-size, $dc-h4-line-height);
 }
 
+%dc-h1 { @include dc-h1; }
+%dc-h2 { @include dc-h2; }
+%dc-h3 { @include dc-h3; }
+%dc-h4 { @include dc-h4; }
+
 @mixin dc-heading-selectors {
     .dc-h1 {
         @include dc-h1;
