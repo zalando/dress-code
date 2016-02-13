@@ -142,11 +142,14 @@ npm start -- --open
 
 ### Development Environment Features
 
-- Live preview sever (using [BrowserSync](http://www.browsersync.io/))
-- CSS Autoprefixing
-- Sass compilation
-- Browserify bundling
+- Sass compilation (using [node-sass](https://github.com/sass/node-sass))
+- Sass linting (using [scss-lint](https://github.com/brigade/scss-lint))
+- CSS Auto-prefixing / Optimization
 - Image optimization
+- Icon Font generator
+- Demo/docs site generator
+- Live preview sever (using [BrowserSync](http://www.browsersync.io/)) 
+- CHANGELOG generator
 
 ## <a name="build-and-deploy"> Build & Deploy
 
