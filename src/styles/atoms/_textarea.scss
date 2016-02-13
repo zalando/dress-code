@@ -1,4 +1,5 @@
 @import "../core/core";
+@import "../atoms/input";
 
 //  = TEXT AREA
 //  ---------------------------------------------------------------------------
@@ -16,7 +17,12 @@
 
 @mixin dc-textarea-selectors {
     .dc-textarea {
+        @extend %dc-input;
         @include dc-textarea;
+
+        .no-touch & {
+            @include dc-input--no-touch;
+        }
     }
 }
 
