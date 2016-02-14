@@ -67,7 +67,7 @@
 }
 
 @mixin dc-dialog__title {
-    @extend %dc-h3;
+    @include dc-h3;
     display: inline-block;
     margin: 0 0 $dc-space50;
     color: $dc-gray10;
@@ -76,7 +76,7 @@
 }
 
 @mixin dc-dialog__subtitle {
-    @extend %dc-h4;
+    @include dc-h4;
     display: inline-block;
     margin: 0 0 $dc-space50;
     color: $dc-gray50;
