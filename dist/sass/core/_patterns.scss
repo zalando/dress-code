@@ -1,0 +1,167 @@
+//  ---------------------------------------------------------------------------
+//
+//  Collapsible element
+//
+//  ---------------------------------------------------------------------------
+
+//  = BODY
+//  ---------------------------------------------------------------------------
+
+@mixin dc-collapse-bd {
+    height: 0;
+    overflow: hidden;
+}
+
+@mixin dc-collapse-bd-selectors {
+    .dc-collapse-bd {
+        @include dc-collapse-bd;
+    }
+}
+
+//  ---------------------------------------------------------------------------
+//
+//  Collapse/expand pattern
+//
+//  ---------------------------------------------------------------------------
+
+// scss-lint:disable ImportantRule
+@mixin dc-is-collapsed {
+    height: 0 !important;
+}
+
+@mixin dc-is-expanded {
+    height: auto !important;
+}
+
+//  ---------------------------------------------------------------------------
+//
+//  Show/hide pattern
+//
+//  ---------------------------------------------------------------------------
+
+@mixin dc-is-hidden {
+    display: none !important;
+}
+
+@mixin dc-is-shown {
+    display: block !important;
+}
+
+//  ---------------------------------------------------------------------------
+//
+//  Visible/invisible pattern
+//
+//  ---------------------------------------------------------------------------
+
+@mixin dc-is-invisible {
+    opacity: 0;
+}
+
+@mixin dc-is-visible {
+    opacity: 1;
+}
+
+//  ---------------------------------------------------------------------------
+//
+//  Block/inline pattern
+//
+//  ---------------------------------------------------------------------------
+
+@mixin dc-is-inline {
+    display: inline-block !important;
+}
+
+//  ---------------------------------------------------------------------------
+//
+//  Fixed elements
+//
+//  ---------------------------------------------------------------------------
+
+@mixin dc-is-fixed {
+    position: fixed !important;
+}
+
+//  ---------------------------------------------------------------------------
+//
+//  You know you'll want some highlighted text, don't cha?
+//
+//  ---------------------------------------------------------------------------
+
+@mixin dc-is-important {
+    background: $dc-yellow60 !important;
+}
+
+//  ---------------------------------------------------------------------------
+//
+//  This class is for text elements that are not so important and
+//	appear in a less intrusive way
+//
+//  ---------------------------------------------------------------------------
+
+@mixin dc-less-important {
+    color: $dc-gray50 !important;
+}
+
+//  ---------------------------------------------------------------------------
+//
+//  Alignment Classes - left - center - right
+//
+//  ---------------------------------------------------------------------------
+
+@mixin dc-text-left {
+    text-align: left;
+}
+
+@mixin dc-text-center {
+    text-align: center;
+}
+
+@mixin dc-text-right {
+    text-align: right;
+}
+
+@mixin dc-patterns-selectors {
+    @include dc-collapse-bd-selectors;
+
+    .dc-is-collapsed {
+        @include dc-is-collapsed;
+    }
+
+    .dc-is-expanded {
+        @include dc-is-expanded;
+    }
+
+    .dc-is-hidden {
+        @include dc-is-hidden;
+    }
+
+    .dc-is-shown {
+        @include dc-is-shown;
+    }
+
+    .dc-is-invisible {
+        @include dc-is-invisible;
+    }
+
+    .dc-is-visible {
+        @include dc-is-visible;
+    }
+
+    .dc-is-inline {
+        @include dc-is-inline;
+    }
+
+    .dc-is-fixed {
+        @include dc-is-fixed;
+    }
+
+    .dc-is-important {
+        @include dc-is-important;
+    }
+
+    .dc-less-important {
+        @include dc-less-important;
+    }
+}
+
+

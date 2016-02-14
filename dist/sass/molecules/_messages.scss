@@ -1,0 +1,285 @@
+@import "../core/core";
+
+@mixin dc-msg {
+    margin-bottom: $dc-space150;
+    padding: $dc-space100 0;
+    transition: transform .2s ease-out;
+    // scss-lint:disable ColorVariable
+    border: 1px solid #55b6fe;
+    background: rgba(#cce9ff, .95);
+    // scss-lint:enable ColorVariable
+    color: $dc-blue20;
+    font-size: $dc-font50;
+    line-height: $dc-font100 + .2;
+    // transform: translateY(-100%);
+
+    @include breakpoint($dc-medium-width) {
+        padding: $dc-space100;
+    }
+}
+
+@mixin dc-msg__inner {
+    display: flex;
+    flex: 0 1 auto;
+    // max-width: 600px;
+    // margin: 0 auto;
+    align-items: center;
+}
+
+@mixin dc-msg__icon {
+    min-width: 4rem;
+    height: 4rem;
+
+    @include breakpoint($dc-medium-width) {
+        margin-right: $dc-space100;
+    }
+
+    // FIXME - @controversial BEM
+    [class^="#{$dc-font-icon-class-begins-with}"] {
+        padding: 0 1rem;
+        color: currentcolor;
+        line-height: 4rem;
+    }
+}
+
+@mixin dc-msg__bd {
+    flex: 1 1 auto;
+}
+
+@mixin dc-msg__bd__link {
+    border-bottom: 1px solid currentColor;
+    color: currentColor;
+
+    &:hover {
+        border-bottom: 1px dashed currentColor;
+        color: currentColor;
+    }
+}
+
+@mixin dc-msg__title {
+    margin: 0;
+    color: currentcolor;
+    font-size: $dc-font100;
+    font-weight: $dc-normal-font-weight;
+    line-height: $dc-body-line-height;
+}
+
+@mixin dc-msg__text {
+    margin: 0;
+}
+
+@mixin dc-msg__close {
+    min-width: 4rem;
+    cursor: pointer;
+
+    &:active {
+        transform: scale(.9);
+    }
+}
+
+@mixin dc-msg__close__icon {
+    padding: 0 1.5rem;
+    color: currentcolor;
+    line-height: 4rem;
+}
+
+
+@mixin dc-msg--info {
+    border-color: darken($dc-blue70, 5%);
+    background: rgba($dc-blue70, .5);
+    color: $dc-blue20;
+
+    // FIXME - @controversial BEM
+    .dc-font-icon-msg-info {
+        color: $dc-blue40;
+        font-size: 2.75rem;
+    }
+
+    // FIXME - @controversial BEM
+    .dc-msg__close {
+        &:hover .dc-font-icon-close {
+            color: $dc-blue10;
+        }
+    }
+}
+
+@mixin dc-msg--success {
+    // scss-lint:disable ColorVariable
+    border-color: #84e440;
+    background: rgba(#e3ffc7, .95);
+    // scss-lint:enable ColorVariable
+    color: $dc-green20;
+
+    // FIXME - @controversial BEM
+    .dc-msg__title {
+        color: $dc-green20;
+    }
+
+    // FIXME - @controversial BEM
+    .dc-font-icon-msg-success {
+        color: $dc-green30;
+        font-size: 2.2rem;
+    }
+
+    // FIXME - @controversial BEM
+    .dc-msg__close {
+        &:hover .dc-font-icon-close {
+            color: $dc-green10;
+        }
+    }
+}
+
+@mixin dc-msg--error {
+    border-color: darken($dc-red70, 5%);
+    background: rgba(desaturate($dc-red70, 10%), .5);
+    color: $dc-red20;
+
+    // FIXME - @controversial BEM
+    .dc-font-icon-msg-error {
+        color: $dc-red40;
+        font-size: 1.8rem;
+    }
+
+    // FIXME - @controversial BEM
+    .dc-msg__close {
+        &:hover .dc-font-icon-close {
+            color: $dc-red10;
+        }
+    }
+}
+
+@mixin dc-msg--warning {
+    border-color: darken($dc-yellow70, 35%);
+    background: rgba($dc-yellow70, .5);
+    color: $dc-yellow20;
+
+    // FIXME - @controversial BEM
+    .dc-font-icon-msg-warning {
+        color: $dc-yellow30;
+        font-size: 2.75rem;
+    }
+
+    // FIXME - @controversial BEM
+    .dc-msg__close {
+        &:hover .dc-font-icon-close {
+            color: $dc-yellow10;
+        }
+    }
+}
+
+//  = ANIMATION
+//  ---------------------------------------------------------------------------
+@mixin dc-msg--is-animating {
+    animation: dc-notify 1.6s linear 1;
+
+    @keyframes dc-notify {
+        0% {
+            transform: translateY(-100%);
+        }
+
+        10% {
+            transform: translateY(0);
+        }
+
+        90% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-100%);
+        }
+    }
+}
+
+@mixin dc-msg--is-animating-long {
+    animation: dc-notify-long 6s linear 1;
+
+    @keyframes dc-notify-long {
+        0% {
+            transform: translateY(-100%);
+        }
+
+        1% {
+            transform: translateY(0);
+        }
+
+        99% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-100%);
+        }
+    }
+}
+
+@mixin dc-msg-selectors {
+
+    .dc-msg {
+        @include dc-msg;
+    }
+
+    .dc-msg__inner {
+        @include dc-msg__inner;
+    }
+
+    .dc-msg__icon {
+        @include dc-msg__icon;
+    }
+
+    .dc-msg__bd {
+        @include dc-msg__bd;
+        // FIXME - @controversial BEM
+        .dc-link:not(.dc-msg__bd__link) {
+            @include dc-msg__bd__link;
+        }
+    }
+
+    .dc-msg__bd__link {
+        @include dc-msg__bd__link;
+    }
+
+    .dc-msg__title {
+        @include dc-msg__title;
+    }
+
+    .dc-msg__text {
+        @include dc-msg__text;
+    }
+
+    .dc-msg__close {
+        @include dc-msg__close;
+        // FIXME @controversial BEM
+        .dc-font-icon-close:not(.dc-msg__close__icon) {
+            @include dc-msg__close__icon;
+        }
+    }
+
+    .dc-msg__close__icon {
+        @include dc-msg__close__icon;
+    }
+
+    .dc-msg--info {
+        @include dc-msg--info;
+    }
+
+    .dc-msg--success {
+        @include dc-msg--success;
+    }
+
+    .dc-msg--error {
+        @include dc-msg--error;
+    }
+
+    .dc-msg--warning {
+        @include dc-msg--warning;
+    }
+
+    .dc-msg--is-animating {
+        @include dc-msg--is-animating;
+    }
+
+    .dc-msg--is-animating-long {
+        @include dc-msg--is-animating-long;
+    }
+}

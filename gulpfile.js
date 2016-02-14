@@ -42,7 +42,7 @@ var config = {
         },
         styles: {
             fabricator: './docs/demo/assets/fabricator/styles/fabricator.scss',
-            toolkit: './src/styles/_index.scss'
+            toolkit: './src/styles/index.scss'
         },
         images: 'src/img/**/*',
         icons: 'src/icons/*.svg'

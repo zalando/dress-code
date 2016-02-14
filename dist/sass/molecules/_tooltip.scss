@@ -1,0 +1,113 @@
+@import "../core/core";
+
+//
+// = TOOLTIP BASE
+// -------------------------------------------------
+@mixin dc-tooltip {
+    display: inline-flex;
+    position: relative;
+    padding: .2rem $dc-space50;
+    border-radius: 2px;
+    background: rgba($dc-black, .7);
+    color: $dc-white;
+    line-height: $dc-body-line-height;
+}
+
+@mixin dc-tooltip__triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    border-width: 6px;
+    border-color: rgba($dc-black, 0);
+    border-top-color: rgba($dc-black, .7);
+}
+
+@mixin dc-tooltip__triangle--lb($triangle-width: 6px) {
+    left: 20%;
+    bottom: -($triangle-width * 2);
+    margin-left: -($triangle-width);
+}
+
+
+//
+// = HAS TOOLTIP
+// =========================================================
+@mixin dc-tooltip--has-tooltip($content-attribute) {
+    display: block;
+    position: absolute;
+    bottom: calc(100% + 12px);
+    content: attr(#{$content-attribute});
+}
+
+@mixin dc-tooltip__triangle--lb-has-tooltip {
+    bottom: 100%;
+}
+
+@mixin dc-has-tooltip--hide {
+    position: absolute;
+    transform: translateY(4px);
+    transition: transform .3s .5s ease-out, opacity .2s .5s;
+    content: " ";
+    opacity: 0;
+    pointer-events: none;
+}
+
+@mixin dc-has-tooltip--show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@mixin dc-has-tooltip($content-attribute: data-dc-has-tooltip) {
+    position: relative;
+
+    // hide tooltip and tooltip triangle
+    &:before,
+    &:after {
+        @include dc-has-tooltip--hide;
+    }
+
+    // tooltip
+    &:before {
+        @include dc-tooltip;
+        @include dc-tooltip--has-tooltip($content-attribute)
+    }
+
+    // triangle
+    &:after {
+        @include dc-tooltip__triangle;
+        @include dc-tooltip__triangle--lb;
+        @include dc-tooltip__triangle--lb-has-tooltip;
+    }
+
+    // show tooltip and tooltip triangle on hover
+    &:hover {
+        &:before,
+        &:after {
+            @include dc-has-tooltip--show;
+        }
+    }
+}
+
+//
+// = TOOLTIP SELECTORS
+// ------------------------------------------------------------
+@mixin dc-tooltip-selectors {
+
+    .dc-tooltip {
+        @include dc-tooltip;
+    }
+
+    .dc-tooltip__triangle {
+        @include dc-tooltip__triangle;
+    }
+
+    .dc-tooltip__triangle--lb {
+        @include dc-tooltip__triangle--lb;
+    }
+
+    .dc-has-tooltip {
+        @include dc-has-tooltip;
+    }
+}
+
