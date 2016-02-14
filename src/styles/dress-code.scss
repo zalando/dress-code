@@ -49,7 +49,7 @@
     @include dc-radio-selectors;
     @include dc-select-selectors;
     @include dc-spinner-selectors;
-    @include dc-table-selectors;       // !!! partially mixinified ( complexity: +++++ )
+    @include dc-table-selectors;       // !!! partially mixinified !!! FIXME @controversial BEM
     @include dc-textarea-selectors;
 
     // molecules
