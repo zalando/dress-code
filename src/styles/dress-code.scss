@@ -60,7 +60,7 @@
     @include dc-input-group-selectors;  // !!! FIXME @controversial BEM
     @include dc-msg-selectors;          // !!! FIXME @controversial BEM
     @include dc-search-form-selectors;  // !!! partially mixinified ( complexity: +++ )
-    @include dc-toast-selectors;        // !!! partially mixinified ( complexity: + )
+    @include dc-toast-selectors;        // !!! FIXME @controversial BEM
     @include dc-tooltip-selectors;      // !!! FIXME @controversial BEM
 }
 
