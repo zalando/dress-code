@@ -1,5 +1,40 @@
 @import "../core/core";
 
+@mixin _dc-table-element--is-block {
+    display: block;
+    width: 100%;
+    font-weight: $dc-normal-font-weight;
+}
+
+@mixin dc-table {
+    width: 100%;
+    border-radius: 2px;
+    background: $dc-white;
+    text-align: left;
+}
+
+@mixin dc-table__th {
+    font-weight: $dc-bold-font-weight;
+    text-transform: uppercase;
+}
+
+@mixin dc-table__tr {
+    @include dc-cf;
+    cursor: pointer;
+}
+
+@mixin dc-table__td {
+    font-weight: $dc-normal-font-weight;
+}
+
+@mixin dc-table__item-title {
+    font-weight: $dc-bold-font-weight;
+}
+
+@mixin dc-table__actions-wrapper {
+    display: none;
+}
+
 @mixin dc-table-selectors {
     //  ---------------------------------------------------------------------------
     //
@@ -7,29 +42,34 @@
     //
     //  ---------------------------------------------------------------------------
 
+
     .dc-table {
-        width: 100%;
-        border-radius: 2px;
-        background: $dc-white;
-        text-align: left;
+        @include dc-table;
     }
 
     .dc-table__item-title {
-        font-weight: $dc-bold-font-weight;
+        @include dc-table__item-title;
     }
 
-    //  = TABLE
-    //  ---------------------------------------------------------------------------
+    .dc-table__th {
+        @include dc-table__th;
+    }
 
     .dc-table__tr {
-        @include dc-cf;
-        cursor: pointer;
+        @include dc-table__tr;
+    }
+
+    .dc-table__td {
+        @include dc-table__td;
     }
 
     .dc-table__actions-wrapper {
-        display: none;
+        @include dc-table__actions-wrapper;
     }
 
+    //
+    // Mediaqueries
+    //
     @include breakpoint(0 $dc-huge-width - .1) {
         .dc-table,
         .dc-table__thead,
@@ -37,9 +77,7 @@
         .dc-table__tr,
         .dc-table__th,
         .dc-table__td {
-            display: block;
-            width: 100%;
-            font-weight: $dc-normal-font-weight;
+            @include _dc-table-element--is-block;
         }
 
         .dc-table__thead > tr {
@@ -75,15 +113,6 @@
 
         }
 
-    }
-
-    .dc-table__th {
-        font-weight: $dc-bold-font-weight;
-        text-transform: uppercase;
-    }
-
-    .dc-table__td {
-        font-weight: $dc-normal-font-weight;
     }
 
     @include breakpoint($dc-large-width $dc-huge-width - .1) {
@@ -168,21 +197,22 @@
 
     }
 
-    .touch .dc-table__tr {
-        // FIXME
-        // Currently using dataURL base64 to avoid dealing with the image URL. We have to fix it
-        position: relative;
-
-        &:after {
-            position: absolute;
-            top: 50%;
-            right: -12px;
-            width: 3.6rem;
-            height: 3.6rem;
-            margin-top: -1.8rem;
-            background-image: url(data:text/html;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDx0aXRsZT4KICAgICAgICBBcnJvdyBSaWdodAogICAgPC90aXRsZT4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgzNnYzNkgweiIvPgogICAgICAgIDxwYXRoIGQ9Ik0xNi41IDEwLjcyM2w1LjExIDcuNzc3LTUuMTEgNy43NzciIHN0cm9rZT0iIzk3OTc5NyIvPgogICAgPC9nPgo8L3N2Zz4K);
-            content: " ";
-        }
-    }
+    // FIXME - broken in current stable version
+    //.touch .dc-table__tr {
+    //    // FIXME
+    //    // Currently using dataURL base64 to avoid dealing with the image URL. We have to fix it
+    //    position: relative;
+    //
+    //    &:after {
+    //        position: absolute;
+    //        top: 50%;
+    //        right: -12px;
+    //        width: 3.6rem;
+    //        height: 3.6rem;
+    //        margin-top: -1.8rem;
+    //        background-image: url(data:text/html;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDx0aXRsZT4KICAgICAgICBBcnJvdyBSaWdodAogICAgPC90aXRsZT4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgzNnYzNkgweiIvPgogICAgICAgIDxwYXRoIGQ9Ik0xNi41IDEwLjcyM2w1LjExIDcuNzc3LTUuMTEgNy43NzciIHN0cm9rZT0iIzk3OTc5NyIvPgogICAgPC9nPgo8L3N2Zz4K);
+    //        content: " ";
+    //    }
+    //}
 }
 

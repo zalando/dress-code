@@ -1096,6 +1096,10 @@ th {
 .dc-table__item-title {
   font-weight: 500; }
 
+.dc-table__th {
+  font-weight: 500;
+  text-transform: uppercase; }
+
 .dc-table__tr {
   *zoom: 1;
   cursor: pointer; }
@@ -1104,6 +1108,9 @@ th {
     content: " "; }
   .dc-table__tr:after {
     clear: both; }
+
+.dc-table__td {
+  font-weight: 300; }
 
 .dc-table__actions-wrapper {
   display: none; }
@@ -1140,13 +1147,6 @@ th {
       text-align: right;
       text-transform: uppercase;
       content: attr(data-col); } }
-
-.dc-table__th {
-  font-weight: 500;
-  text-transform: uppercase; }
-
-.dc-table__td {
-  font-weight: 300; }
 
 @media (min-width: 37.5em) and (max-width: 63.9em) {
   .dc-table__td {
@@ -1201,18 +1201,6 @@ th {
     .dc-table--spacious .dc-table__td {
       padding-top: 1.7rem;
       padding-bottom: 1.7rem; } }
-
-.touch .dc-table__tr {
-  position: relative; }
-  .touch .dc-table__tr:after {
-    position: absolute;
-    top: 50%;
-    right: -12px;
-    width: 3.6rem;
-    height: 3.6rem;
-    margin-top: -1.8rem;
-    background-image: url(data:text/html;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDx0aXRsZT4KICAgICAgICBBcnJvdyBSaWdodAogICAgPC90aXRsZT4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgzNnYzNkgweiIvPgogICAgICAgIDxwYXRoIGQ9Ik0xNi41IDEwLjcyM2w1LjExIDcuNzc3LTUuMTEgNy43NzciIHN0cm9rZT0iIzk3OTc5NyIvPgogICAgPC9nPgo8L3N2Zz4K);
-    content: " "; }
 
 .dc-textarea {
   width: 100%;
