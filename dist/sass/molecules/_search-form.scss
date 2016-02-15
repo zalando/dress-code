@@ -52,7 +52,7 @@
     }
 }
 
-@mixin dc-font-icon--is-search-form {
+@mixin dc-icon--is-search-form {
     display: block;
     margin-right: 0;
     width: 3.6rem;
@@ -149,7 +149,7 @@
     }
 
     .dc-font-icon--is-search-form {
-        @include dc-font-icon--is-search-form;
+        @include dc-icon--is-search-form;
     }
 
     .dc-suggest {
