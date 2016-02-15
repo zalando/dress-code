@@ -46,50 +46,62 @@
     @if $filename == eye {
     $char: "\E007";
 }
-    @if $filename == history {
+    @if $filename == feedback {
     $char: "\E008";
 }
-    @if $filename == info {
+    @if $filename == help {
     $char: "\E009";
 }
-    @if $filename == lock {
+    @if $filename == history {
     $char: "\E00A";
 }
-    @if $filename == more {
+    @if $filename == info {
     $char: "\E00B";
 }
-    @if $filename == msg-error {
+    @if $filename == lock {
     $char: "\E00C";
 }
-    @if $filename == msg-info {
+    @if $filename == menu {
     $char: "\E00D";
 }
-    @if $filename == msg-neutral {
+    @if $filename == more {
     $char: "\E00E";
 }
-    @if $filename == msg-success {
+    @if $filename == msg-error {
     $char: "\E00F";
 }
-    @if $filename == msg-warning {
+    @if $filename == msg-info {
     $char: "\E010";
 }
-    @if $filename == pencil {
+    @if $filename == msg-neutral {
     $char: "\E011";
 }
-    @if $filename == play {
+    @if $filename == msg-success {
     $char: "\E012";
 }
-    @if $filename == redo {
+    @if $filename == msg-warning {
     $char: "\E013";
 }
-    @if $filename == search {
+    @if $filename == pencil {
     $char: "\E014";
 }
-    @if $filename == trash {
+    @if $filename == play {
     $char: "\E015";
 }
-    @if $filename == undo {
+    @if $filename == redo {
     $char: "\E016";
+}
+    @if $filename == search {
+    $char: "\E017";
+}
+    @if $filename == trash {
+    $char: "\E018";
+}
+    @if $filename == undo {
+    $char: "\E019";
+}
+    @if $filename == user {
+    $char: "\E01A";
 }
 
 @return $char;
@@ -131,6 +143,16 @@
         content: dc-icon-char(eye);
     }
 }
+@mixin dc-icon--feedback {
+    &:before {
+        content: dc-icon-char(feedback);
+    }
+}
+@mixin dc-icon--help {
+    &:before {
+        content: dc-icon-char(help);
+    }
+}
 @mixin dc-icon--history {
     &:before {
         content: dc-icon-char(history);
@@ -144,6 +166,11 @@
 @mixin dc-icon--lock {
     &:before {
         content: dc-icon-char(lock);
+    }
+}
+@mixin dc-icon--menu {
+    &:before {
+        content: dc-icon-char(menu);
     }
 }
 @mixin dc-icon--more {
@@ -206,6 +233,11 @@
         content: dc-icon-char(undo);
     }
 }
+@mixin dc-icon--user {
+    &:before {
+        content: dc-icon-char(user);
+    }
+}
 
 
 @mixin dc-icon-generated-selectors {
@@ -252,6 +284,14 @@
         @include dc-icon--eye;
     }
 
+    .dc-icon--feedback {
+        @include dc-icon--feedback;
+    }
+
+    .dc-icon--help {
+        @include dc-icon--help;
+    }
+
     .dc-icon--history {
         @include dc-icon--history;
     }
@@ -262,6 +302,10 @@
 
     .dc-icon--lock {
         @include dc-icon--lock;
+    }
+
+    .dc-icon--menu {
+        @include dc-icon--menu;
     }
 
     .dc-icon--more {
@@ -310,6 +354,10 @@
 
     .dc-icon--undo {
         @include dc-icon--undo;
+    }
+
+    .dc-icon--user {
+        @include dc-icon--user;
     }
 
     
