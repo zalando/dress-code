@@ -1,9 +1,17 @@
 @import "../core/core";
-@import "../_generated/font-icon";
+@import "../_generated/icon";
 
-//  = SVG ICON
+//  = ICONS (font)
+//  (others mixins are generated with iconfont plugin @see _generated/_icon.scss)
+//  ---------------------------------------------------------------------------------
+@mixin dc-icon--interactive {
+    cursor: pointer;
+    &:hover {  color: $dc-blue20;  }
+}
+
+//  = SVG ICON (FIXME  - to be removed, heare for legacy reasons)
 //  ---------------------------------------------------------------------------
-@mixin dc-icon($svg-selector: "svg, .dc-svg") {
+@mixin dc-svg-icon($svg-selector: "svg, .dc-svg") {
     display: inline-block;
     margin-bottom: $dc-font250;
     padding: $dc-space100;
@@ -17,7 +25,7 @@
     }
 }
 
-@mixin dc-icon--interactive {
+@mixin dc-svg-icon--interactive {
     &:hover {
         [fill^='#'] {
             fill: $dc-blue30;
@@ -35,7 +43,7 @@
     }
 }
 
-@mixin dc-icon--alternate {
+@mixin dc-svg-icon--alternate {
     &:hover {
         [fill^='#'] {
             fill: $dc-orange40;
@@ -47,31 +55,19 @@
     }
 }
 
-//  = FONT ICON
-//  (others mixins are generated with iconfont plugin @see _generated/_font-icon.scss)
-//  ---------------------------------------------------------------------------------
-@mixin dc-font-icon--interactive {
-    cursor: pointer;
-    &:hover {  color: $dc-blue20;  }
-}
-
 @mixin dc-icon-selectors {
 
-    .dc-icon {
-        @include dc-icon;
-    }
+    @include dc-icon-generated-selectors;
 
     .dc-icon--interactive {
         @include dc-icon--interactive;
     }
 
-    .dc-icon--alternate {
-        @include dc-icon--alternate;
+    .dc-svg-icon--interactive {
+        @include dc-svg-icon--interactive;
     }
 
-    @include dc-font-icon-selectors;
-
-    .dc-font-icon--interactive {
-        @include dc-font-icon--interactive;
+    .dc-svg-icon--alternate {
+        @include dc-svg-icon--alternate;
     }
 }

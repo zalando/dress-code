@@ -1,66 +1,31 @@
 //  ---------------------------------------------------------------------------
 //
-//  Defines icon grids for the styleguide
+//  Defines icon "grids" for the styleguide
 //
 //  ---------------------------------------------------------------------------
 
+.sg-icons i {
+    position:relative;
+    font-size:3.0rem;
+    width: 10.0rem;
+    height: 10.0rem;
+    text-align:center;
+    line-height: 2;
+    display: inline-block;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    background: #fff;
 
-
-
-//  = BASE
-//  ---------------------------------------------------------------------------
-
-		.sg-icon
-		{
-			display:inline-block;
-			margin-bottom: $dc-font250;
-			padding: $dc-space100;
-			background-color: $dc-white;
-			border:1px solid $dc-gray60;
-			text-align:center;
-
-			svg
-			{
-				margin-bottom: $dc-font50;
-				vertical-align:middle;
-			}
-
-			.i--interactive
-			{
-				&:hover
-				{
-					[fill^='#']
-					{
-						fill:$dc-blue30;
-					}
-
-					[stroke^='#']
-					{
-						stroke:$dc-blue30;
-					}
-				}
-
-				&:active
-				{
-					transform: scale(.85);
-					shape-rendering: optimizeSpeed;
-					-webkit-tap-highlight-color: transparent;
-				}
-			}
-
-			.i--portal
-			{
-				&:hover
-				{
-					[fill^='#']
-					{
-						fill:$dc-orange40;
-					}
-
-					[stroke^='#']
-					{
-						stroke:$dc-orange40;
-					}
-				}
-			}
-		}
+    span {
+        position: absolute;
+        bottom:0;
+        left:0;
+        font-size:1.3rem;
+        width: 100%;
+        text-align:center;
+        word-break: break-all;
+        padding: 0.8rem;
+        line-height: normal;
+        font-style: normal;
+    }
+}

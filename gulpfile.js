@@ -151,10 +151,10 @@ gulp.task('demo:icons', ['demo:icons:clean'], function () {
         .pipe(gulp.dest(path.join(config.tmp.iconfont, '/svg-icons')))
         .pipe(iconfontCss({
             fontName: fontName,
-            path: './src/templates/_font-icon.scss',
-            targetPath: '../../../src/styles/_generated/_font-icon.scss', // this path to path.join(config.tmp.iconfont, '/fonts') ... weird
+            path: './src/templates/_icon.scss',
+            targetPath: '../../../src/styles/_generated/_icon.scss', // this path to path.join(config.tmp.iconfont, '/fonts') ... weird
             fontPath: '../fonts/',
-            cssClass: 'dc-font-icon'
+            cssClass: 'dc-icon'
         }))
         .pipe(iconfont({
             fontName: fontName, // required
