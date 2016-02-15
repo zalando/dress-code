@@ -24,19 +24,3 @@ $dc-colors: map-merge($dc-base-colors, $dc-theme);
 $dc-menu-width: 20rem;
 
 
-// mixins
-@mixin clearfix {
-	&:after {
-		clear: both;
-	}
-
-	&:before,
-	&:after {
-		display: table;
-		content: ' ';
-	}
-}
-
-@mixin border-box {
-	box-sizing: border-box;
-}

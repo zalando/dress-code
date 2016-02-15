@@ -1,0 +1,110 @@
+@import "../core/core";
+
+//  = LINKS
+//  ---------------------------------------------------------------------------
+@mixin dc-link {
+    transition: color .1s linear;
+    color: $dc-link-color;
+    text-decoration: none;
+    cursor: pointer;
+    // scss-lint:disable ColorVariable
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    // scss-lint:enable ColorVariable
+}
+
+@mixin dc-link--no-touch {
+    &:hover {
+        color: $dc-link-color-hover;
+        text-decoration: none;
+    }
+}
+
+@mixin dc-link--touch {
+    &:active {
+        color: $dc-link-color-hover;
+        text-decoration: none;
+    }
+}
+
+@mixin dc-link--success--no-touch {
+    &:hover {
+        color: $dc-green30;
+    }
+}
+
+@mixin dc-link--success--touch {
+    &:active {
+        color: $dc-green30;
+    }
+}
+
+@mixin dc-link--destroy--no-touch {
+    &:hover {
+        color: $dc-red40;
+    }
+}
+
+@mixin dc-link--destroy--touch {
+    &:active {
+        color: $dc-red40;
+    }
+}
+
+@mixin dc-link--disabled {
+    color: $dc-gray50;
+    cursor: default;
+}
+
+@mixin dc-link--disabled--no-touch {
+    &:hover {
+        @include dc-link--disabled;
+    }
+}
+
+@mixin dc-link--disabled--touch {
+    &:active {
+        @include dc-link--disabled;
+    }
+}
+
+@mixin dc-link-selectors {
+    .dc-link {
+        @include dc-link;
+    }
+
+    .no-touch .dc-link {
+        @include dc-link--no-touch;
+    }
+
+    .touch .dc-link {
+        @include dc-link--touch;
+    }
+
+    .no-touch .dc-link--success {
+        @include dc-link--success--no-touch;
+    }
+
+    .touch .dc-link--success {
+        @include dc-link--success--touch;
+    }
+
+    .no-touch .dc-link--destroy {
+        @include dc-link--destroy--no-touch;
+    }
+
+    .touch .dc-link--destroy {
+        @include dc-link--destroy--touch;
+    }
+
+    .dc-link--disabled {
+        @include dc-link--disabled;
+    }
+
+    .no-touch .dc-link--disabled {
+        @include dc-link--disabled--no-touch;
+    }
+
+    .touch .dc-link--disabled {
+        @include dc-link--disabled--touch;
+    }
+}

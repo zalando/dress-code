@@ -1,0 +1,77 @@
+@import "../core/core";
+@import "../_generated/font-icon";
+
+//  = SVG ICON
+//  ---------------------------------------------------------------------------
+@mixin dc-icon($svg-selector: "svg, .dc-svg") {
+    display: inline-block;
+    margin-bottom: $dc-font250;
+    padding: $dc-space100;
+    border: 1px solid $dc-gray60;
+    background-color: $dc-white;
+    text-align: center;
+
+    .#{$svg-selector} {
+        margin-bottom: $dc-font50;
+        vertical-align: middle;
+    }
+}
+
+@mixin dc-icon--interactive {
+    &:hover {
+        [fill^='#'] {
+            fill: $dc-blue30;
+        }
+
+        [stroke^='#'] {
+            stroke: $dc-blue30;
+        }
+    }
+
+    &:active {
+        transform: scale(.85);
+        shape-rendering: optimizeSpeed;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+@mixin dc-icon--alternate {
+    &:hover {
+        [fill^='#'] {
+            fill: $dc-orange40;
+        }
+
+        [stroke^='#'] {
+            stroke: $dc-orange40;
+        }
+    }
+}
+
+//  = FONT ICON
+//  (others mixins are generated with iconfont plugin @see _generated/_font-icon.scss)
+//  ---------------------------------------------------------------------------------
+@mixin dc-font-icon--interactive {
+    cursor: pointer;
+    &:hover {  color: $dc-blue20;  }
+}
+
+@mixin dc-icon-selectors {
+
+    .dc-icon {
+        @include dc-icon;
+    }
+
+    .dc-icon--interactive {
+        @include dc-icon--interactive;
+    }
+
+    .dc-icon--alternate {
+        @include dc-icon--alternate;
+    }
+
+    @include dc-font-icon-selectors;
+
+    .dc-font-icon--interactive {
+        @include dc-font-icon--interactive;
+    }
+}

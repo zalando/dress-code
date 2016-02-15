@@ -21,7 +21,7 @@ The Dress Code is the official style guide and style framework for all Brand Sol
 #### with Bower
 
 ```
-$ bower install https://github.com/zalando/dress-code-bower.git --save
+bower install https://github.com/zalando/dress-code-bower.git --save
 ```
 
 #### with Npm
@@ -52,29 +52,30 @@ npm install
 
 Include this in your ```<head>```:
 
-```
+```html
 <link href="bower_components/dress-code/css/dress-code.min.css" rel="stylesheet">
 ```
 
 - Compiling sass:
 
-```
-@import "bower_components/dress-code/sass/toolkit" 
+```scss
+@import "bower_components/dress-code/sass/dress-code"
+@include dc-everything; 
 ```
 
-if you wanna use just mixins and variables...
+if you wanna use just mixins and variables don't call ```dc-everything``` mixin.
 
-```
-@import "bower_components/dress-code/sass/import" 
+```scss
+@import "bower_components/dress-code/sass/dress-code" 
 ```
 
 > Note for those using compass. Add this to yours config.rb file: 
-```
+```rb
 add_import_path "bower_components"
 ```
 Then you can import the dress-code like so: 
-```
-@import "dress-code/sass/toolkit";
+```scss
+@import "dress-code/sass/dress-code";
 ```
 
 #### with Npm (<3.x)
@@ -83,21 +84,23 @@ Then you can import the dress-code like so:
 
 Include this in your ```<head>```:
 
-```
+```html
 <link href="node_modules/dress-code/dist/css/dress-code.min.css" rel="stylesheet">
 ```
 
 - Compiling sass:
 
-```
-@import "node_modules/dress-code/dist/sass/toolkit" 
+```scss
+@import "node_modules/dress-code/dist/sass/dress-code" 
+@include dc-everything; 
 ```
 
-if you wanna use just mixins and variables...
+if you wanna use just mixins and variables don't call ```dc-everything``` mixin.
 
+```scss
+@import "node_modules/dress-code/dist/sass/dress-code" 
 ```
-@import "node_modules/dress-code/dist/sass/import" 
-```
+
 
 
 ## <a name="development"> Development & Contributing
@@ -132,13 +135,21 @@ $ npm install
 $ npm start
 ```
 
+> To open a new browser window or to pass a value to [browserSync open option](https://www.browsersync.io/docs/options/#option-open): 
+```
+npm start -- --open
+```
+
 ### Development Environment Features
 
-- Live preview sever (using [BrowserSync](http://www.browsersync.io/))
-- CSS Autoprefixing
-- Sass compilation
-- Browserify bundling
+- Sass compilation (using [node-sass](https://github.com/sass/node-sass))
+- Sass linting (using [scss-lint](https://github.com/brigade/scss-lint))
+- CSS Auto-prefixing / Optimization
 - Image optimization
+- Icon Font generator
+- Demo/docs site generator
+- Live preview sever (using [BrowserSync](http://www.browsersync.io/)) 
+- CHANGELOG generator
 
 ## <a name="build-and-deploy"> Build & Deploy
 

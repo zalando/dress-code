@@ -1,0 +1,39 @@
+@mixin dc-debugmessage($dc-message, $dc-color: $dc-debugmessage-color) {
+    // margin-top: $dc-body-line-height;
+
+    &::before {
+
+        display: block;
+        position: fixed;
+        top: 100%;
+        right: 0;
+        left: 0;
+        height: $dc-body-line-height;
+        transform: translateY(100%);
+        transition: transform .2s ease-out, opacity .2s;
+        background: #{$dc-color};
+        font-weight: $dc-bold-font-weight;
+        text-align: center;
+        content: $dc-message;
+        opacity: 0;
+        z-index: 910;
+    }
+}
+
+
+// mixins
+@mixin clearfix {
+    &:after {
+        clear: both;
+    }
+
+    &:before,
+    &:after {
+        display: table;
+        content: ' ';
+    }
+}
+
+@mixin border-box {
+    box-sizing: border-box;
+}

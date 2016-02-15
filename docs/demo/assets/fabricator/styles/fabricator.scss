@@ -4,29 +4,18 @@
  * Class selectors are namespaced with "f-"
  */
 
-// Reset
-@import "../../../../../src/styles/normalize";
+// dress code
+@import "../../../../../src/styles/index";
 
-// Breakpoint framework
-@import "../../../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
-
-// Susy grid framework
-@import "../../../../../node_modules/susy/sass/susy";
-
-@import '../../../../../src/styles/mixins';
-@import '../../../../../src/styles/variables';
-
-// Import typography from toolkit for @extend
-@import "../../../../../src/styles/modules/typography";
+@import 'partials/mixins';
+@import 'partials/variables';
 
 // Custom Styleguide components
 @import 'partials/sg-icon';
 @import 'partials/sg-section';
 @import 'partials/sg-breakpoint';
-// @import 'partials/icon';
-
-@import 'partials/variables';
 @import 'partials/code';
+@import 'partials/header';
 @import 'partials/color-chips';
 @import 'partials/controls';
 @import 'partials/item';

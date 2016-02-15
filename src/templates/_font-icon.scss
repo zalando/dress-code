@@ -1,12 +1,11 @@
-@font-face {
-    font-family: "<%= fontName %>";
-    src: url('#{$dc-font-path}/<%= fontName %>.eot');
-    src: url('#{$dc-font-path}/<%= fontName %>.eot?#iefix') format('eot'),
-    url('#{$dc-font-path}/<%= fontName %>.woff') format('woff'),
-    url('#{$dc-font-path}/<%= fontName %>.ttf') format('truetype'),
-    url('#{$dc-font-path}/<%= fontName %>.svg#<%= fontName %>') format('svg');
-}
-
+//
+// !!!
+// This file is generated with a gulp task.
+// DO NOT TOUCH this file directly.
+// !!!
+//
+// The template for the generation is located under src/templates/_font-icon.scss
+//
 @mixin <%= cssClass%>-styles {
     font-family: "<%= fontName %>";
     -webkit-font-smoothing: antialiased;
@@ -17,9 +16,10 @@
     // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
     text-decoration: none;
     text-transform: none;
+    color: inherit;
 }
 
-%<%= cssClass%> {
+%<%= cssClass%>-styles {
     @include <%= cssClass%>-styles;
 }
 
@@ -30,21 +30,38 @@
     $char: "\<%= glyph.codePoint %>";
 }<% }); %>
 
-@return $char;
+    @return $char;
 }
 
-@mixin <%= cssClass%>($filename, $insert: before, $extend: true) {
-&:#{$insert} {
-    @if $extend {
-        @extend %<%= cssClass%>;
-    } @else {
+@mixin <%= cssClass%>($filename) {
+    &:before {
+        content: <%= cssClass%>-char($filename);
+    }
+}
+
+@mixin <%= cssClass%>-selectors {
+    @font-face {
+        font-family: "<%= fontName %>";
+        src: url('#{$dc-font-path}/<%= fontName %>.eot');
+        src: url('#{$dc-font-path}/<%= fontName %>.eot?#iefix') format('eot'),
+        url('#{$dc-font-path}/<%= fontName %>.woff') format('woff'),
+        url('#{$dc-font-path}/<%= fontName %>.ttf') format('truetype'),
+        url('#{$dc-font-path}/<%= fontName %>.svg#<%= fontName %>') format('svg');
+    }
+
+    [class^="<%= cssClass%>-"]:before {
         @include <%= cssClass%>-styles;
     }
-    content: <%= cssClass%>-char($filename);
-}
+
+    <% _.each(glyphs, function(glyph) { %>.<%= cssClass%>-<%= glyph.fileName %> {
+        @include <%= cssClass%>(<%= glyph.fileName %>);
+    }
+    <% }); %>
+
+    // BEM
+    <% _.each(glyphs, function(glyph) { %>.<%= cssClass%>--<%= glyph.fileName %> {
+        @include <%= cssClass%>(<%= glyph.fileName %>);
+    }
+    <% }); %>
 }
 
-<% _.each(glyphs, function(glyph) { %>.<%= cssClass%>-<%= glyph.fileName %> {
-    @include <%= cssClass%>(<%= glyph.fileName %>);
-}
-<% }); %>

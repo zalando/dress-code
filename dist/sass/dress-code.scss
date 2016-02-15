@@ -1,0 +1,68 @@
+// core
+@import "core/core";
+
+// atoms
+@import "atoms/btn";
+@import "atoms/checkbox";
+@import "atoms/divider";
+@import "atoms/icon";
+@import "atoms/input";
+@import "atoms/label";
+@import "atoms/link";
+@import "atoms/list";
+@import "atoms/loading-bar";
+@import "atoms/placeholder";
+@import "atoms/radio";
+@import "atoms/select";
+@import "atoms/spinner";
+@import "atoms/table";
+@import "atoms/textarea";
+
+// molecules
+@import "molecules/btn-icon";
+@import "molecules/btn-group";
+@import "molecules/dialog";
+@import "molecules/dropdown";
+@import "molecules/input-group";
+@import "molecules/messages";
+@import "molecules/search-form";
+@import "molecules/toast";
+@import "molecules/tooltip";
+
+@mixin dc-everything {
+    // core
+    @include dc-normalize;
+    @include dc-typography-selectors;
+    @include dc-patterns-selectors;
+
+    // atoms
+    @include dc-btn-selectors;
+    @include dc-checkbox-selectors;
+    @include dc-divider-selectors;
+    @include dc-label-selectors;
+    @include dc-icon-selectors;
+    @include dc-input-selectors;
+    @include dc-link-selectors;
+    @include dc-list-selectors;
+    @include dc-loading-bar-selectors;
+    @include dc-placeholder-selectors;
+    @include dc-radio-selectors;
+    @include dc-select-selectors;
+    @include dc-spinner-selectors;
+    @include dc-table-selectors;       // !!! partially mixinified !!! FIXME @controversial BEM
+    @include dc-textarea-selectors;
+
+    // molecules
+    @include dc-btn-icon-selectors;     // !!! FIXME @controversial BEM
+    @include dc-btn-group-selectors;    // !!! FIXME @controversial BEM
+    @include dc-dialog-selectors;       // !!! FIXME @controversial BEM
+    @include dc-dropdown-selectors;
+    @include dc-input-group-selectors;  // !!! FIXME @controversial BEM
+    @include dc-msg-selectors;          // !!! FIXME @controversial BEM
+    @include dc-search-form-selectors;  // !!! FIXME @controversial BEM
+    @include dc-toast-selectors;        // !!! FIXME @controversial BEM
+    @include dc-tooltip-selectors;      // !!! FIXME @controversial BEM
+}
+
+
+

@@ -42,7 +42,7 @@ var config = {
         },
         styles: {
             fabricator: './docs/demo/assets/fabricator/styles/fabricator.scss',
-            toolkit: './src/styles/toolkit.scss'
+            toolkit: './src/styles/index.scss'
         },
         images: 'src/img/**/*',
         icons: 'src/icons/*.svg'
@@ -114,17 +114,7 @@ gulp.task('demo:styles:fabricator', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('demo:styles:toolkit', function () {
-    gulp.src(config.src.styles.toolkit)
-        .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
-        .pipe(prefix('last 1 version'))
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest(path.join(config.tmp.demo, '/assets/toolkit/styles')))
-        .pipe(reload({stream: true}));
-});
-
-gulp.task('demo:styles', ['demo:styles:fabricator', 'demo:styles:toolkit']);
+gulp.task('demo:styles', ['demo:styles:fabricator']);
 
 
 // scripts
@@ -174,7 +164,7 @@ gulp.task('demo:icons', ['demo:icons:clean'], function () {
             centerHorizontally: true
         }))
         .pipe(gulp.dest(path.join(config.tmp.iconfont, '/fonts')))
-        .pipe(gulp.dest(path.join(config.tmp.demo, '/assets/toolkit/fonts')))
+        .pipe(gulp.dest(path.join(config.tmp.demo, '/assets/fabricator/fonts')))
 });
 
 gulp.task('demo:icons:clean', function (cb) {
@@ -218,7 +208,8 @@ gulp.task('demo:serve', function () {
             baseDir: config.tmp.demo
         },
         notify: false,
-        logPrefix: 'FABRICATOR'
+        logPrefix: 'FABRICATOR',
+        open: gutil.env.open || false
     });
 
     /**
@@ -246,8 +237,7 @@ gulp.task('demo:serve', function () {
     gulp.task('demo:styles:fabricator:watch', ['demo:styles:fabricator']);
     gulp.watch('docs/demo/assets/fabricator/styles/**/*.scss', ['demo:styles:fabricator:watch']);
 
-    gulp.task('demo:styles:toolkit:watch', ['demo:styles:toolkit']);
-    gulp.watch('src/styles/**/*.scss', ['demo:styles:toolkit:watch']);
+    gulp.watch('src/styles/**/*.scss', ['demo:styles:fabricator:watch', 'scss-lint']);
 
     gulp.task('demo:scripts:watch', ['demo:scripts'], reload);
     gulp.watch('docs/demo/assets/fabricator/scripts/**/*.js', ['demo:scripts:watch']).on('change', webpackCache);
@@ -280,7 +270,7 @@ gulp.task('demo:deploy', ['demo'], function () {
 
 // build and copy the result in the official versioned distribution folder (dist)
 gulp.task('dist', function (cb) {
-    return runSequence('dist:build', 'dist:clean-dist', 'dist:copy-dist', cb);
+    return runSequence('scss-lint', 'dist:build', 'dist:clean-dist', 'dist:copy-dist', cb);
 });
 
 // build all distribution artifacts in a tmp folder
@@ -337,7 +327,7 @@ gulp.task('dist:bower:clean', function (cb) {
 
 gulp.task('dist:bower', ['dist:bower:clean', 'dist:build'], function () {
     var bowerReadmeFilter = gulpFilter(['BOWER-README.md'], {restore: true});
-    var importFilter = gulpFilter(['**/sass/_import.scss', '**/sass/_base.scss'], {restore: true});
+    var importFilter = gulpFilter(['**/sass/core/_mixins.scss'], {restore: true});
 
     return gulp.src([
         path.join(config.tmp.dist, '/**/*'),
@@ -351,11 +341,11 @@ gulp.task('dist:bower', ['dist:bower:clean', 'dist:build'], function () {
     .pipe(gulp.dest(config.tmp.distBower))
     .pipe(bowerReadmeFilter.restore)
     .pipe(importFilter)
-    .pipe(replace(/@import "..\/..\/node_modules\/(.*)"/g, function (match, p1) {
+    .pipe(replace(/@import "..\/..\/..\/node_modules\/(.*)"/g, function (match, p1) {
         if (p1.indexOf('breakpoint-sass') > -1) {
-            return '@import "../../compass-breakpoint/stylesheets/breakpoint"';
+            return '@import "../../../compass-breakpoint/stylesheets/breakpoint"';
         } else {
-            return '@import "../../' + p1 + '"';
+            return '@import "../../../' + p1 + '"';
         }
     }))
     .pipe(importFilter.restore)

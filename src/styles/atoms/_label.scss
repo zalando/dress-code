@@ -1,0 +1,37 @@
+@import "../core/core";
+
+@mixin dc-label {
+    display: block;
+    margin-bottom: $dc-space50;
+    font-size: $dc-font50;
+    font-weight: 500;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+}
+
+@mixin dc-label--disabled {
+    color: $dc-gray50;
+}
+
+@mixin dc-label--required {
+    &:after {
+        margin-left: $dc-space50;
+        color: $dc-gray50;
+        font-weight: 300;
+        text-transform: capitalize;
+        content: "Required";
+    }
+}
+
+@mixin dc-label--is-error {
+    &:after {
+        color: $dc-red40;
+    }
+}
+
+@mixin dc-label-selectors {
+    .dc-label { @include dc-label; }
+    .dc-label--disabled {  @include dc-label--disabled;  }
+    .dc-label--required {  @include dc-label--required; }
+    .dc-label--is-error {  @include dc-label--is-error; }
+}

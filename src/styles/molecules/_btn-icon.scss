@@ -1,0 +1,192 @@
+@import "../atoms/btn";
+@import "../atoms/icon";
+
+//  = FONT-ICON BUTTON
+//  -----------------------------------------------------------------------------
+@mixin dc-font-icon--btn {
+    display: block;
+    margin-top: .2rem;
+    margin-right: 0;
+    float: right;
+    line-height: .8rem;
+}
+
+@mixin dc-font-icon--btn-small {
+    font-size: 1.2rem;
+    line-height: .8rem;
+}
+
+@mixin dc-font-icon--btn-large {
+    margin-top: .4rem;
+    font-size: 2.4rem;
+    line-height: .6rem;
+}
+
+//  = SVG ICON BUTTONS
+//  -----------------------------------------------------------------------------
+
+@mixin dc-btn-icon($svg-selector: "svg, .dc-svg") {
+    width: auto;
+    height: auto;
+    padding: $dc-space100 - .2;
+
+    #{$svg-selector} {
+        position: relative;
+        top: -1px;
+        left: -1px;
+    }
+
+    [stroke^='#'] {
+        stroke: $dc-text-color;
+    }
+
+    [fill^='#'] {
+        fill: $dc-text-color;
+    }
+
+    @content;
+}
+
+@mixin dc-btn-icon--primary {
+    [stroke^='#'] {
+        stroke: $dc-white;
+    }
+
+    [fill^='#'] {
+        fill: $dc-white;
+    }
+}
+
+@mixin dc-btn-icon--destroy {
+    &:hover {
+        [stroke^='#'] {
+            stroke: $dc-white;
+        }
+
+        [fill^='#'] {
+            fill: $dc-white;
+        }
+    }
+}
+
+@mixin dc-btn-icon--disabled {
+    [stroke^='#'] {
+        stroke: $dc-gray50;
+    }
+
+    [fill^='#'] {
+        fill: $dc-gray50;
+    }
+}
+
+@mixin dc-btn-icon-selectors {
+    .dc-btn {
+        //
+        // FIXME @deprecated will be removed soon
+        // FIXME @controversial BEM
+        //
+        // @example
+        //
+        // <!-- old way -->
+        // <button class="dc-btn">
+        //   <i class="dc-font-icon-arrow"></i>
+        // </button>
+        //
+        // <!-- new way -->
+        // <button class="dc-btn dc-btn--small">
+        //   <i class="dc-font-icon--btn dc-font-icon--arrow"></i>
+        // </button>
+        //
+        [class^="#{$dc-font-icon-class-begins-with}"]:not(.dc-font-icon--btn) {
+            @include dc-font-icon--btn;
+        }
+    }
+
+    .dc-btn--small {
+        //
+        // FIXME @deprecated will be removed soon
+        // FIXME @controversial BEM
+        //
+        // @example
+        //
+        // <!-- old way -->
+        // <button class="dc-btn dc-btn--small">
+        //   <i class="dc-font-icon-arrow"></i>
+        // </button>
+        //
+        // <!-- new way -->
+        // <button class="dc-btn dc-btn--small">
+        //   <i class="dc-font-icon--btn dc-font-icon--btn-small dc-font-icon--arrow"></i>
+        // </button>
+        //
+        [class^="#{$dc-font-icon-class-begins-with}"]:not(.dc-font-icon--btn-small) {
+            @include dc-font-icon--btn-small;
+        }
+    }
+
+    .dc-btn--large {
+        //
+        // FIXME @deprecated will be removed soon
+        // FIXME @controversial BEM
+        //
+        // @example
+        //
+        // <!-- old way  -->
+        // <button class="dc-btn dc-btn--large">
+        //   <i class="dc-font-icon-arrow"></i>
+        // </button>
+        //
+        // <!-- new way -->
+        // <button class="dc-btn dc-btn--large">
+        //   <i class="dc-font-icon--btn dc-font-icon--btn-large dc-font-icon--arrow"></i>
+        // </button>
+        //
+        [class^="#{$dc-font-icon-class-begins-with}"]:not(.dc-font-icon--btn-large) {
+            @include dc-font-icon--btn-large;
+        }
+    }
+
+    .dc-font-icon--btn {  @include dc-font-icon--btn; }
+
+    .dc-font-icon--btn-small {
+        @include dc-font-icon--btn-small;
+    }
+
+    .dc-font-icon--btn-large {
+        @include dc-font-icon--btn-large;
+    }
+
+    // FIXME
+    // @controversial SVG icons (RB maybe rename as svg icon?)
+    .dc-btn-icon {
+        @include dc-btn-icon {
+            // @deprecated use <button class="dc-btn-icon dc-btn-icon--primary"><!-- svg --></button>
+            &.dc-btn--primary {
+                @include dc-btn-icon--primary;
+            }
+
+            // @deprecated use <button class="dc-btn-icon dc-btn-icon--destroy"><!-- svg --></button>
+            &.dc-btn--destroy {
+                @include dc-btn-icon--destroy;
+            }
+
+            // @deprecated use <button class="dc-btn-icon dc-btn-icon--disabled"><!-- svg --></button>
+            &.dc-btn--disabled {
+                @include dc-btn-icon--disabled;
+            }
+        }
+    }
+
+    .dc-btn-icon--primary {
+        @include dc-btn-icon--primary;
+    }
+
+    .dc-btn-icon--destroy {
+        @include dc-btn-icon--destroy;
+    }
+
+    .dc-btn-icon--disabled {
+        @include dc-btn-icon--disabled;
+    }
+
+}

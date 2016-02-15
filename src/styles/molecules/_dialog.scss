@@ -1,0 +1,121 @@
+@import "../core/core";
+
+@mixin dc-dialog {
+    transform: rotateX(0deg) translateY(0) translateZ(0);
+    transition: transform 2s cubic-bezier(.25, .46, .45, .94), opacity .2s cubic-bezier(.39, .58, .57, 1);
+    border-radius: 2px;
+    background: $dc-white;
+    // scss-lint:disable ColorVariable
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    // scss-lint:enable ColorVariable
+}
+
+@mixin dc-dialog-overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    padding: $dc-space100;
+    transition: opacity .2s .2s cubic-bezier(.39, .58, .57, 1);
+    background: rgba($dc-black, .6);
+    opacity: 0;
+    z-index: 999;
+    perspective: 600px;
+}
+
+@mixin dc-dialog__body {
+    padding: $dc-space150 $dc-space150 $dc-space100;
+}
+
+@mixin dc-dialog__close {
+    margin-top: -1.6rem;
+    margin-right: -1rem;
+    float: right;
+
+    // FIXME @controversial BEM
+    [class^="#{$dc-font-icon-class-begins-with}"] {
+        color: $dc-gray30;
+        font-size: 1.2rem;
+    }
+
+    // FIXME @controversial BEM
+    .touch &:active,
+    .no-touch &:active {
+        transform: scale(.85);
+    }
+}
+
+@mixin dc-dialog__actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: $dc-space150 $dc-space150 $dc-space100;
+    border-top: 1px solid $dc-gray60;
+    border-radius: 0 0 $dc-radius100 $dc-radius100;
+    background: $dc-gray70;
+
+    // FIXME @controversial BEM
+    .dc-link {
+        // Ensure links align and space to buttons correctly;
+        display: block;
+        margin: 0 $dc-space100;
+        padding: $dc-space75 0;
+    }
+}
+
+@mixin dc-dialog__title {
+    @include dc-h3;
+    display: inline-block;
+    margin: 0 0 $dc-space50;
+    color: $dc-gray10;
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+@mixin dc-dialog__subtitle {
+    @include dc-h4;
+    display: inline-block;
+    margin: 0 0 $dc-space50;
+    color: $dc-gray50;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+@mixin dc-dialog-selectors {
+    .dc-dialog {
+        @include dc-dialog;
+    }
+
+    .dc-dialog__overlay {
+        @include dc-dialog-overlay;
+    }
+
+    .dc-dialog__body {
+        @include dc-dialog__body;
+    }
+
+    .dc-dialog__actions {
+        @include dc-dialog__actions;
+    }
+
+    .dc-dialog__close {
+        @include dc-dialog__close;
+    }
+
+    .dc-dialog__title {
+        @include dc-dialog__title;
+    }
+
+    .dc-dialog__subtitle {
+        @include dc-dialog__subtitle;
+    }
+
+    .dc-dialog__actions {
+        @include dc-dialog__actions;
+    }
+}
+
+

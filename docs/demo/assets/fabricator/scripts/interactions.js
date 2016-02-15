@@ -1,11 +1,11 @@
 // /* Demo Dropdowns and Dropups (button-dropdown.html) */
 $(document).ready(function() {
-    $("#dropdownExample").click(function(e){
+    $("#dropdown-example").click(function(e){
         e.preventDefault();
-        $("#dropdownExampleList").toggle();
+        $("#dropdown-example-list").toggle();
     });
-    $("#dropupExample").click(function(e){
+    $("#dropup-example").click(function(e){
         e.preventDefault();
-        $("#dropupExampleList").toggle();
+        $("#dropup-example-list").toggle();
     });
 });

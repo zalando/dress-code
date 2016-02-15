@@ -11,20 +11,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic|Ubuntu+Mono" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="{{basePath}}/assets/fabricator/styles/f.css">
 
-	<!-- toolkit styles -->
-	<link rel="stylesheet" href="{{basePath}}/assets/toolkit/styles/toolkit.css">
-	<!-- /toolkit styles -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
 
     <link rel="icon" href="favicon.ico">
 </head>
 <body class="dc-body dc-body--demo-breakpoints">
 	{{#if fabricator}}
-		<header class="dc-header f-header">
-			<img class="dc-logo" src="assets/toolkit/img/logo.svg" alt="Zalando Logo">
+		<header class="f-header">
+			<img class="f-logo" src="assets/toolkit/img/logo.svg" alt="Zalando Logo">
 			{{> f-control-bar}}
 			<div class="f-control f-menu-toggle">
 				<a href class="dc-link js-toggle-breakpoints">Breakpoints</a>

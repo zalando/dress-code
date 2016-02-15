@@ -6,6 +6,10 @@ linters:
   StringQuotes:
     enabled: true
     style: double_quotes
+  NameFormat:
+    enabled: true
+    convention: ^([\.\%]?[a-z]*[-]?[a-z0-9\-]*)(\.[a-z0-9\-]*)?(__[a-z0-9]*[-]?[a-z0-9\-]*)?(__[a-z0-9]*[-]?[a-z0-9\-]*)?(--[a-z0-9]*[-]?[a-z0-9\-]*)?(\:[a-z]*)*$
+    convention_explanation: should follow hyphenated_BEM convention
   SelectorFormat:
     convention: hyphenated_BEM
   PropertySortOrder:

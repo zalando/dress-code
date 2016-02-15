@@ -1,0 +1,220 @@
+@import "../core/core";
+
+@mixin dc-btn {
+
+    display: inline-block;
+    margin-right: $dc-space50;
+    margin-bottom: $dc-space100;
+    padding: $dc-space100 - .1 $dc-space100;
+    transition: box-shadow .2s linear, border-color .2s linear;
+    border: 1px solid $dc-gray50;
+    border-radius: $dc-radius100;
+    background: linear-gradient($dc-white, darken($dc-white, 7%));
+    color: $dc-gray10;
+    font-size: $dc-body-font-size;
+    font-weight: $dc-normal-font-weight;
+    line-height: $dc-space100;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-shadow: 0 1px 1px transparent;
+    cursor: default;
+
+    &:focus {
+        outline: none;
+    }
+
+    > * {
+        margin-right: 10px;
+    }
+
+    @content;
+}
+
+@mixin dc-btn--no-touch {
+    &:hover {
+        outline: 0;
+        background: linear-gradient($dc-white, darken($dc-white, 5%));
+        color: $dc-gray10;
+        text-decoration: none;
+        box-shadow: 0 1px 1px rgba($dc-black, .2);
+    }
+
+    &:active {
+        background: darken($dc-white, 4%);
+        color: $dc-gray10;
+        text-decoration: none;
+        box-shadow: inset 0 1px 1px rgba($dc-black, .1);
+    }
+}
+
+
+@mixin dc-btn--touch {
+    &:active {
+        background: darken($dc-white, 4%);
+        color: $dc-gray10;
+        text-decoration: none;
+        box-shadow: inset 0 1px 1px rgba($dc-black, .1);
+    }
+}
+
+//  = PRIMARY
+//  ---------------------------------------------------------------------------
+
+@mixin dc-btn--primary {
+    border-color: darken($dc-blue40, 7%);
+    background: linear-gradient($dc-blue40, darken($dc-blue40, 7%));
+    color: $dc-white;
+}
+
+@mixin dc-btn--primary--touch {
+    &:active {
+        background: lighten($dc-blue40, 3%);
+        color: $dc-white;
+    }
+}
+
+@mixin dc-btn--primary--no-touch {
+    &:hover {
+        background: lighten($dc-blue40, 3%);
+        color: $dc-white;
+    }
+}
+
+//  = DESTROY
+//  ---------------------------------------------------------------------------
+
+@mixin dc-btn--destroy {
+    transition: box-shadow .2s linear;
+}
+
+@mixin dc-btn--destroy--touch {
+    &:active {
+        border-color: $dc-red40;
+        background: $dc-red50;
+        color: $dc-white;
+    }
+}
+
+@mixin dc-btn--destroy--no-touch {
+    &:hover {
+        border-color: $dc-red40;
+        background: $dc-red50;
+        color: $dc-white;
+    }
+}
+
+
+//  = DISABLED
+//  ---------------------------------------------------------------------------
+
+@mixin dc-btn--disabled {
+    border-color: $dc-gray60;
+    background: transparent;
+    color: $dc-gray50;
+    box-shadow: none;
+}
+
+@mixin dc-btn--disabled--touch {
+    &:active {
+        @include dc-btn--disabled;
+    }
+}
+
+@mixin dc-btn--disabled--no-touch {
+    &:hover {
+        @include dc-btn--disabled;
+    }
+}
+
+//  = SMALL BUTTON
+//  ---------------------------------------------------------------------------
+
+@mixin dc-btn--small {
+    padding: $dc-space100 - .1 $dc-space100;
+    font-size: 1.4rem;
+
+    @content;
+}
+
+@mixin dc-btn--small--no-touch {
+    padding: $dc-space50 $dc-space75;
+    font-size: $dc-font50;
+    font-weight: $dc-normal-font-weight;
+    text-transform: uppercase;
+}
+
+//  = INLINE BUTTON
+//  -----------------------------------------------------------------------------
+@mixin dc-btn--inline($sibling-selector: ".dc-btn--inline") {
+    margin-bottom: 0;
+
+    + #{$sibling-selector} {
+        margin-left: .2rem; // Account for 4px inline margin
+    }
+}
+
+//  = LARGE BUTTON
+//  ---------------------------------------------------------------------------
+
+@mixin dc-btn--large {
+    padding: $dc-space125 $dc-space125 $dc-space125 + .1;
+    font-size: $dc-font150;
+    line-height: .8;
+
+    @content;
+}
+
+//  = BLOCK BUTTON
+//  ---------------------------------------------------------------------------
+
+@mixin dc-btn--block {
+    display: block;
+    width: 100%;
+}
+
+
+@mixin dc-btn-selectors {
+    .dc-btn {
+        @include dc-btn;
+    }
+
+    .no-touch .dc-btn {  @include dc-btn--no-touch;  }
+    .touch .dc-btn {  @include dc-btn--touch;  }
+
+    .dc-btn--primary {  @include dc-btn--primary;  }
+    .no-touch .dc-btn--primary {  @include dc-btn--primary--no-touch;  }
+    .touch .dc-btn-primary {  @include dc-btn--primary--touch;  }
+
+    .dc-btn--destroy {  @include dc-btn--destroy; }
+    .no-touch .dc-btn--destroy { @include dc-btn--destroy--no-touch; }
+    .touch .dc-btn--destroy { @include dc-btn--destroy--touch; }
+
+    .dc-btn--disabled { @include dc-btn--disabled; }
+    .touch .dc-btn--disabled { @include dc-btn--disabled--touch; }
+    .no-touch .dc-btn--disabled { @include dc-btn--disabled--no-touch; }
+
+    .dc-btn--small {
+        @include dc-btn--small;
+    }
+
+    .no-touch .dc-btn--small { @include dc-btn--small--no-touch; }
+
+    .dc-btn--inline {
+        @include dc-btn--inline;
+    }
+
+    .dc-btn--large {
+        @include dc-btn--large;
+    }
+
+    .dc-btn--block {
+        @include dc-btn--block;
+    }
+}
+
+
+
+
+
+
