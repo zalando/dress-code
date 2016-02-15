@@ -37,7 +37,7 @@
     float: right;
 
     // FIXME @controversial BEM
-    [class^="#{$dc-font-icon-class-begins-with}"] {
+    .dc-icon {
         color: $dc-gray30;
         font-size: 1.2rem;
     }

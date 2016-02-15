@@ -35,7 +35,7 @@
     }
 
     // FIXME - @controversial BEM
-    [class^="#{$dc-font-icon-class-begins-with}"] {
+    .dc-icon {
         padding: 0 1rem;
         color: currentcolor;
         line-height: 4rem;
@@ -90,14 +90,14 @@
     color: $dc-blue20;
 
     // FIXME - @controversial BEM
-    .dc-font-icon-msg-info {
+    .dc-icon--msg-info {
         color: $dc-blue40;
         font-size: 2.75rem;
     }
 
     // FIXME - @controversial BEM
     .dc-msg__close {
-        &:hover .dc-font-icon-close {
+        &:hover .dc-icon--close {
             color: $dc-blue10;
         }
     }
@@ -116,14 +116,14 @@
     }
 
     // FIXME - @controversial BEM
-    .dc-font-icon-msg-success {
+    .dc-icon--msg-success {
         color: $dc-green30;
         font-size: 2.2rem;
     }
 
     // FIXME - @controversial BEM
     .dc-msg__close {
-        &:hover .dc-font-icon-close {
+        &:hover .dc-icon--close {
             color: $dc-green10;
         }
     }
@@ -135,14 +135,14 @@
     color: $dc-red20;
 
     // FIXME - @controversial BEM
-    .dc-font-icon-msg-error {
+    .dc-icon--msg-error {
         color: $dc-red40;
         font-size: 1.8rem;
     }
 
     // FIXME - @controversial BEM
     .dc-msg__close {
-        &:hover .dc-font-icon-close {
+        &:hover .dc-icon--close {
             color: $dc-red10;
         }
     }
@@ -154,14 +154,14 @@
     color: $dc-yellow20;
 
     // FIXME - @controversial BEM
-    .dc-font-icon-msg-warning {
+    .dc-icon--msg-warning {
         color: $dc-yellow30;
         font-size: 2.75rem;
     }
 
     // FIXME - @controversial BEM
     .dc-msg__close {
-        &:hover .dc-font-icon-close {
+        &:hover .dc-icon--close {
             color: $dc-yellow10;
         }
     }
@@ -250,7 +250,7 @@
     .dc-msg__close {
         @include dc-msg__close;
         // FIXME @controversial BEM
-        .dc-font-icon-close:not(.dc-msg__close__icon) {
+        .dc-icon--close:not(.dc-msg__close__icon) {
             @include dc-msg__close__icon;
         }
     }

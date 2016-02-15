@@ -7,45 +7,32 @@ notes: |
     For buttons with icon and text, the icon will always display at the right side. The button text must be wrapped in an element (any element works).
 ---
 <button class="dc-btn">
-    <i class="dc-font-icon-history"></i>
+    <i class="dc-icon dc-icon--history dc-icon--btn"></i>
 </button>
 
 <button class="dc-btn dc-btn--primary">
-    <i class="dc-font-icon-pencil"></i>
+    <i class="dc-icon dc-icon--pencil dc-icon--btn"></i>
 </button>
 
 <button class="dc-btn dc-btn--destroy">
-    <i class="dc-font-icon-trash"></i>
+    <i class="dc-icon dc-icon--trash dc-icon--btn"></i>
 </button>
 
 <button class="dc-btn">
-    <span>Undo</span><i class="dc-font-icon-undo"></i>
+    <span>Undo</span><i class="dc-icon dc-icon--undo dc-icon--btn"></i>
 </button>
 
 <button class="dc-btn dc-btn--disabled">
-    <span>Redo</span> <i class="dc-font-icon-redo"></i>
+    <span>Redo</span> <i class="dc-icon dc-icon--redo dc-icon--btn"></i>
 </button>
 
 
-<h4>BEM way (controversial)</h4>
+<br>
 
-<!-- BEM way -->
-<button class="dc-btn">
-    <i class="dc-font-icon--btn dc-font-icon--history"></i>
+<button class="dc-btn dc-btn--small">
+    <span>Redo</span> <i class="dc-icon dc-icon--redo dc-icon--btn dc-icon--btn-small"></i>
 </button>
 
-<button class="dc-btn dc-btn--primary">
-    <i class="dc-font-icon--btn dc-font-icon--pencil"></i>
-</button>
-
-<button class="dc-btn dc-btn--destroy">
-    <i class="dc-font-icon--btn dc-font-icon--trash"></i>
-</button>
-
-<button class="dc-btn">
-    <span>Undo</span><i class="dc-font-icon--btn dc-font-icon-undo"></i>
-</button>
-
-<button class="dc-btn dc-btn--disabled">
-    <span>Redo</span> <i class="dc-font-icon--btn dc-font-icon--redo"></i>
+<button class="dc-btn dc-btn--destroy dc-btn--large">
+    <span>Lock</span> <i class="dc-icon dc-icon--lock dc-icon--btn dc-icon--btn-large"></i>
 </button>
