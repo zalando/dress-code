@@ -17,7 +17,7 @@
 
 @mixin dc-textarea-selectors {
     .dc-textarea {
-        @extend %dc-input;
+        @include dc-input;
         @include dc-textarea;
 
         .no-touch & {
