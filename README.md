@@ -42,13 +42,11 @@ and run
 npm install
 ```
 
-> **At the moment we don't support ```npm@3``` and ```node@5.x```**
+> **At the moment we don't support ```npm@3```**
 
 ### Usage
 
 #### with Bower
-
-- Using the pre-compiled version:
 
 Include this in your ```<head>```:
 
@@ -56,18 +54,27 @@ Include this in your ```<head>```:
 <link href="bower_components/dress-code/css/dress-code.min.css" rel="stylesheet">
 ```
 
-- Compiling sass:
+#### with Npm (<3.x)
 
-```scss
-@import "bower_components/dress-code/sass/dress-code"
-@include dc-everything; 
+Include this in your ```<head>```:
+
+```html
+<link href="node_modules/dress-code/dist/css/dress-code.min.css" rel="stylesheet">
 ```
 
-if you wanna use just mixins and variables don't call ```dc-everything``` mixin.
+#### How to use dress-code SASS 
+
+You can compile the dress code by your own using a sass compiler.
 
 ```scss
-@import "bower_components/dress-code/sass/dress-code" 
+@import "node_modules/dress-code/dist/sass/dress-code" // or bower_components/dress-code/sass/dress-code
+@include dc-everything; // output dc-* selectors
 ```
+
+**IMPORTANT NOTE: ALWAYS use IMPORT ONCE plugin when compile:**
+
+* [compass/ruby-sass](https://github.com/Compass/compass/tree/stable/import-once)
+* [node-sass](https://github.com/at-import/node-sass-import-once)
 
 > Note for those using compass. Add this to yours config.rb file: 
 ```rb
@@ -77,31 +84,6 @@ Then you can import the dress-code like so:
 ```scss
 @import "dress-code/sass/dress-code";
 ```
-
-#### with Npm (<3.x)
-
-- Using the pre-compiled version:
-
-Include this in your ```<head>```:
-
-```html
-<link href="node_modules/dress-code/dist/css/dress-code.min.css" rel="stylesheet">
-```
-
-- Compiling sass:
-
-```scss
-@import "node_modules/dress-code/dist/sass/dress-code" 
-@include dc-everything; 
-```
-
-if you wanna use just mixins and variables don't call ```dc-everything``` mixin.
-
-```scss
-@import "node_modules/dress-code/dist/sass/dress-code" 
-```
-
-
 
 ## <a name="development"> Development & Contributing
 
