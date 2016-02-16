@@ -13,6 +13,7 @@
     .f-logo {
         max-height: $dc-touch-size - $dc-space150;
         padding-bottom: 2px;
+        width: 9.35rem; // ie 10 fix
 
         ~ * {
             margin-left: $dc-space150;
