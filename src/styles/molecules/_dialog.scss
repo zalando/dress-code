@@ -5,9 +5,7 @@
     transition: transform 2s cubic-bezier(.25, .46, .45, .94), opacity .2s cubic-bezier(.39, .58, .57, 1);
     border-radius: 2px;
     background: $dc-white;
-    // scss-lint:disable ColorVariable
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-    // scss-lint:enable ColorVariable
+    box-shadow: 0 5px 10px rgba($dc-black, .2);
 }
 
 @mixin dc-dialog-overlay {
@@ -53,9 +51,9 @@
     display: flex;
     justify-content: flex-end;
     padding: $dc-space150 $dc-space150 $dc-space100;
-    border-top: 1px solid $dc-gray60;
+    border-top: 1px solid $dc-gray70;
     border-radius: 0 0 $dc-radius100 $dc-radius100;
-    background: $dc-gray70;
+    background: $dc-gray80;
 
     // FIXME @controversial BEM
     .dc-link {
@@ -117,5 +115,3 @@
         @include dc-dialog__actions;
     }
 }
-
-
