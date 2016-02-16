@@ -1,0 +1,13 @@
+@mixin dc-card {
+    // scss-lint:disable ColorVariable
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+}
+
+@mixin dc-card-selectors {
+    .dc-card {
+        @include dc-card;
+    }
+}
