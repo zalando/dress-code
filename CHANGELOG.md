@@ -1,3 +1,13 @@
+<a name="1.0.1-alpha"></a>
+## [1.0.1-alpha](https://github.com/zalando/dress-code/compare/1.0.0-alpha...v1.0.1-alpha) (2016-02-16)
+
+
+### Bug Fixes
+
+* **patterns:** fix missing patterns classes ([28ee3f0](https://github.com/zalando/dress-code/commit/28ee3f0))
+
+
+
 <a name="1.0.0-alpha"></a>
 # [1.0.0-alpha](https://github.com/zalando/dress-code/compare/0.2.2-alpha.4...v1.0.0-alpha) (2016-02-16)
 

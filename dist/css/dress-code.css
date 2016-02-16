@@ -418,6 +418,18 @@ th {
   color: #b6b6b6 !important;
 }
 
+.dc-text-left {
+  text-align: left;
+}
+
+.dc-text-center {
+  text-align: center;
+}
+
+.dc-text-right {
+  text-align: right;
+}
+
 .dc-btn {
   display: inline-block;
   margin-right: 0.4rem;
