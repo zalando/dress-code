@@ -65,7 +65,7 @@ var config = {
 var helper = {
     sass: function (options) {
         var opt = _.extend({
-            importer: sassImportOnce,
+            //importer: sassImportOnce,
             outputStyle: 'expanded'
         }, options);
         return sass(opt).on('error', sass.logError);
