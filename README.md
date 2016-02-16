@@ -70,12 +70,6 @@ You can compile the dress code by your own using a sass compiler.
 @include dc-everything; // output dc-* selectors
 ```
 
-**IMPORTANT NOTE: ALWAYS use IMPORT ONCE plugin when compile:**
-
-* [compass/ruby-sass](https://github.com/Compass/compass/tree/stable/import-once)
-* [node-sass](https://github.com/at-import/node-sass-import-once)
-
-
 ##### Compass notes
 
 > Note for those using compass. Add this to yours config.rb file: 
