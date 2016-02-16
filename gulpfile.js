@@ -7,6 +7,7 @@ var browserSync = require('browser-sync');
 var csso = require('gulp-csso');
 var del = require('del');
 var gutil = require('gulp-util');
+var _ = require('lodash');
 var gulpif = require('gulp-if');
 var imagemin = require('gulp-imagemin');
 var prefix = require('gulp-autoprefixer');
@@ -15,6 +16,7 @@ var replace = require('gulp-replace');
 var reload = browserSync.reload;
 var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
+var sassImportOnce = require('node-sass-import-once');
 var sourcemaps = require('gulp-sourcemaps');
 var webpack = require('webpack');
 var gulp = require('gulp');
@@ -57,6 +59,16 @@ var config = {
         distBower: '.tmp/.dist-bower',
         deployBower: '.tmp/.deploy-bower',
         iconfont: '.tmp/.iconfont'
+    }
+};
+
+var helper = {
+    sass: function (options) {
+        var opt = _.extend({
+            importer: sassImportOnce,
+            outputStyle: 'expanded'
+        }, options);
+        return sass(opt).on('error', sass.logError);
     }
 };
 
@@ -106,7 +118,7 @@ gulp.task('demo:clean', function (cb) {
 gulp.task('demo:styles:fabricator', function () {
     gulp.src(config.src.styles.fabricator)
         .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
+        .pipe(helper.sass())
         .pipe(prefix('last 1 version'))
         .pipe(rename('f.css'))
         .pipe(sourcemaps.write())
@@ -293,7 +305,7 @@ gulp.task('dist:clean', function (cb) {
 
 gulp.task('dist:styles', function () {
     return gulp.src(config.src.styles.toolkit)
-        .pipe(sass().on('error', sass.logError))
+        .pipe(helper.sass())
         .pipe(prefix('last 1 version'))
         .pipe(rename(pkg.name + '.css'))
         .pipe(gulp.dest(path.join(config.tmp.dist, 'css')))
