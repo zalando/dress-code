@@ -6,6 +6,7 @@
 @import "atoms/card";
 @import "atoms/checkbox";
 @import "atoms/divider";
+@import "_generated/icon"; // generated icon sass partial @required by atoms/icon
 @import "atoms/icon";
 @import "atoms/input";
 @import "atoms/label";
