@@ -42,11 +42,8 @@ and run
 npm install
 ```
 
-> **At the moment we don't support ```npm@3```**
-
 ### Usage
 
-#### with Bower
 
 Include this in your ```<head>```:
 
@@ -54,15 +51,17 @@ Include this in your ```<head>```:
 <link href="bower_components/dress-code/css/dress-code.min.css" rel="stylesheet">
 ```
 
-#### with Npm (<3.x)
+or if installed with **npm**:
 
-Include this in your ```<head>```:
 
 ```html
 <link href="node_modules/dress-code/dist/css/dress-code.min.css" rel="stylesheet">
 ```
 
+
 #### How to use dress-code SASS 
+
+> **At the moment we don't support ```npm@3```**
 
 You can compile the dress code by your own using a sass compiler.
 
@@ -75,6 +74,9 @@ You can compile the dress code by your own using a sass compiler.
 
 * [compass/ruby-sass](https://github.com/Compass/compass/tree/stable/import-once)
 * [node-sass](https://github.com/at-import/node-sass-import-once)
+
+
+##### Compass notes
 
 > Note for those using compass. Add this to yours config.rb file: 
 ```rb
