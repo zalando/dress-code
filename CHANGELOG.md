@@ -1,3 +1,117 @@
+<a name="1.0.0-alpha"></a>
+# [1.0.0-alpha](https://github.com/zalando/dress-code/compare/0.2.2-alpha.4...v1.0.0-alpha) (2016-02-16)
+
+### Bug Fixes
+
+* **demo/toast:** #86 fix error and warning toast modifiers, were exchanged by mistake ([eb64ef5](https://github.com/zalando/dress-code/commit/eb64ef5))
+* **logo:** fix broken demo logo in ie10, close #103 ([a50958e](https://github.com/zalando/dress-code/commit/a50958e)), closes [#103](https://github.com/zalando/dress-code/issues/103)
+
+### Features
+
+* **dc-tooltip**: add dc-tooltip #86 ([6e977c0d6bab127af6dada9139a81fc852b1f050](https://github.com/zalando/dress-code/commit/6e977c0d6bab127af6dada9139a81fc852b1f050))
+* **card:** add card atom, close #107 ([a9be85f](https://github.com/zalando/dress-code/commit/a9be85f)), closes [#107](https://github.com/zalando/dress-code/issues/107)
+* **core/variables:** use !default for all the variables #86 ([7f3a401](https://github.com/zalando/dress-code/commit/7f3a401))
+* **typography:** add dc-* placehoders, demo: update molecules order #86 ([59c79ed](https://github.com/zalando/dress-code/commit/59c79ed))
+
+### BREAKING CHANGES
+
+* sass: how to compiling sass changed.
+
+    Change your code from this:
+
+    ```scss
+    @import bower_components/dress-code/sass/toolkit.scss
+    // with npm: @import node_modules/dress-code/dist/sass/toolkit.scss
+    ```
+    
+    To this:
+    
+    ```scss
+    @import bower_components/dress-code/sass/dress-code.scss
+    // with npm:  @import node_modules/dress-code/dist/sass/dress-code.scss
+    @include dc-everything;
+    ```
+
+* icons: dc-font-icon was removed #80 ([6a5b430a26b2f23aca9ef6472ed29792c76724b2](https://github.com/zalando/dress-code/commit/6a5b430a26b2f23aca9ef6472ed29792c76724b2))
+    
+    If you were using dc-font-icon
+    
+    Replace this:
+    
+    ```
+    <i class="dc-font-icon-add dc-font-icon--interactive"></i>
+    ```
+    
+    With:
+    
+    ```
+    <i class="dc-icon dc-icon--add dc-icon--interactive"></i>
+    ```
+    
+    If you were using icons button
+    
+    Replace this:
+    
+    ```
+    <button class="dc-btn dc-btn--large">
+        <i class="dc-font-icon-add"></i>
+    </button>
+    ```
+    
+    With:
+    
+    ```
+    <button class="dc-btn dc-btn--large">
+        <i class="dc-icon dc-icon--add dc-icon--btn dc-icon--btn-large"></i>
+    </button>
+    ```
+    
+* dropdown: dc-dropdown radically changed #86 ([7fd01962faf33df62a5c52a0a1589f49e13664e8](https://github.com/zalando/dress-code/commit/7fd01962faf33df62a5c52a0a1589f49e13664e8))
+
+    Replace this:
+    
+    ```html
+    <div class="dc-btn-dropup">
+        <button class="dc-btn dc-btn--primary">
+            Dropup
+            <span class="dc-arrow-up"></span>
+        </button>
+        <ul class="dc-dropdown-list">
+            <li><a href="#">The first option</a></li>
+            <li><a href="#">The second option</a></li>
+            <li class="dc-divider"></li>
+            <li><a href="#">Separated option</a></li>
+        </ul>
+    </div>
+    ```
+    
+    with this:
+    
+    ```html
+    <div class="dc-btn-dropdown">
+        <button class="dc-btn dc-btn--primary">
+            Dropup
+            <span class="dc-btn-dropdown__arrow dc-btn-dropdown__arrow--up"></span>
+        </button>
+        <ul class="dc-btn-dropdown__list dc-btn-dropdown__list--up">
+            <li class="dc-btn-dropdown__item">
+                <a href="#" class="dc-link">The first option</a>
+            </li>
+            <li class="dc-btn-dropdown__item">
+                <a href="#" class="dc-link">The second option</a>
+            </li>
+            <li class="dc-btn-dropdown__item dc-btn-dropdown__item--disabled">
+                <a href="#" class="dc-link">Disabled option</a>
+            </li>
+            <li class="dc-btn-dropdown__divider"></li>
+            <li class="dc-btn-dropdown__item">
+                <a href="#" class="dc-link">Separated option</a>
+            </li>
+        </ul>
+    </div>
+    ```
+
+
 <a name="0.2.2-alpha.4"></a>
 ## [0.2.2-alpha.4](https://github.com/zalando/dress-code/compare/0.2.2-alpha.3...v0.2.2-alpha.4) (2016-02-11)
 

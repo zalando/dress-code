@@ -1,6 +1,6 @@
 {
   "name": "dress-code",
-  "version": "0.2.2-alpha.4",
+  "version": "1.0.0-alpha",
   "homepage": "https://zalando.github.io/dress-code",
   "description": "The Dress Code is the official style guide/UI toolkit for all Brand Solutions products.",
   "main": "sass/dress-code.scss",
