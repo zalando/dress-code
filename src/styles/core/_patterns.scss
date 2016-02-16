@@ -162,6 +162,18 @@
     .dc-less-important {
         @include dc-less-important;
     }
+
+    .dc-text-left {
+        @include dc-text-left;
+    }
+
+    .dc-text-center {
+        @include dc-text-center;
+    }
+
+    .dc-text-right {
+        @include dc-text-right;
+    }
 }
 
 
