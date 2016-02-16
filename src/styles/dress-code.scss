@@ -16,6 +16,7 @@
 @import "atoms/placeholder";
 @import "atoms/radio";
 @import "atoms/select";
+@import "atoms/status";
 @import "atoms/spinner";
 @import "atoms/table";
 @import "atoms/textarea";
@@ -52,6 +53,7 @@
     @include dc-radio-selectors;
     @include dc-select-selectors;
     @include dc-spinner-selectors;
+    @include dc-status-selectors;
     @include dc-table-selectors;       // !!! partially mixinified !!! FIXME @controversial BEM
     @include dc-textarea-selectors;
 
@@ -66,6 +68,3 @@
     @include dc-toast-selectors;        // !!! FIXME @controversial BEM
     @include dc-tooltip-selectors;      // !!! FIXME @controversial BEM
 }
-
-
-
