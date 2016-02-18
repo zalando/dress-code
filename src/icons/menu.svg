@@ -6,9 +6,9 @@
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="menu" sketch:type="MSArtboardGroup" fill="#000000">
-            <rect id="Rectangle-11" sketch:type="MSShapeGroup" x="0" y="64" width="512" height="32"></rect>
-            <rect id="Rectangle-11" sketch:type="MSShapeGroup" x="0" y="256" width="512" height="32"></rect>
-            <rect id="Rectangle-11" sketch:type="MSShapeGroup" x="0" y="448" width="512" height="32"></rect>
+            <path d="M95.65625,117 L415.34375,117 L426,117 L426,96 L415.34375,96 L95.65625,96 L85,96 L85,117 L95.65625,117 L95.65625,117 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <path d="M96,267 L415,267 L426,267 L426,246 L415,246 L96,246 L85,246 L85,267 L96,267 L96,267 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <path d="M95.65625,416 L415.34375,416 L426,416 L426,395 L415.34375,395 L95.65625,395 L85,395 L85,416 L95.65625,416 L95.65625,416 Z" id="Shape" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>
