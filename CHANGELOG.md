@@ -1,3 +1,51 @@
+<a name="1.1.0-alpha"></a>
+# [1.1.0-alpha](https://github.com/zalando/dress-code/compare/1.0.1-alpha...v1.1.0-alpha) (2016-02-18)
+
+
+### Bug Fixes
+
+* **demo:** Fix typo in demo ([c00dd59](https://github.com/zalando/dress-code/commit/c00dd59))
+* **dialog:** Fix bgcolor of dialog actions area ([f929142](https://github.com/zalando/dress-code/commit/f929142))
+* **icons:** Fix header icons ([5304fd6](https://github.com/zalando/dress-code/commit/5304fd6))
+
+### Features
+
+* **status:** Define status indicator atom. Close #96. ([5ec9ef2](https://github.com/zalando/dress-code/commit/5ec9ef2)), closes [#96](https://github.com/zalando/dress-code/issues/96)
+
+### BREAKING CHANGES
+
+* **dialog**: style has been changed from a markup which used to look like this: ([f929142](https://github.com/zalando/dress-code/commit/f929142))
+
+```html
+<div class="dc-dialog__overlay">
+ <div class="dc-dialog">
+    <div class="dc-dialog__body">
+       ...
+    </div>
+    <div class="dc-dialog__actions">
+       ...
+    </div>
+ </div>
+</div>
+```
+
+to a new more logical one which looks like this:
+
+```html
+<div class="dc-dialog">
+ <div class="dc-dialog__overlay">
+    <div class="dc-dialog__content">
+       <div class="dc-dialog__body">
+          ...
+       </div>
+       <div class="dc-dialog__actions">
+          ...
+       </div>
+    </div>
+ </div>
+</div>
+```
+
 <a name="1.0.1-alpha"></a>
 ## [1.0.1-alpha](https://github.com/zalando/dress-code/compare/1.0.0-alpha...v1.0.1-alpha) (2016-02-16)
 
@@ -33,9 +81,9 @@
     @import bower_components/dress-code/sass/toolkit.scss
     // with npm: @import node_modules/dress-code/dist/sass/toolkit.scss
     ```
-    
+
     To this:
-    
+
     ```scss
     @import bower_components/dress-code/sass/dress-code.scss
     // with npm:  @import node_modules/dress-code/dist/sass/dress-code.scss
@@ -43,43 +91,43 @@
     ```
 
 * icons: dc-font-icon was removed #80 ([6a5b430a26b2f23aca9ef6472ed29792c76724b2](https://github.com/zalando/dress-code/commit/6a5b430a26b2f23aca9ef6472ed29792c76724b2))
-    
+
     If you were using dc-font-icon
-    
+
     Replace this:
-    
+
     ```
     <i class="dc-font-icon-add dc-font-icon--interactive"></i>
     ```
-    
+
     With:
-    
+
     ```
     <i class="dc-icon dc-icon--add dc-icon--interactive"></i>
     ```
-    
+
     If you were using icons button
-    
+
     Replace this:
-    
+
     ```
     <button class="dc-btn dc-btn--large">
         <i class="dc-font-icon-add"></i>
     </button>
     ```
-    
+
     With:
-    
+
     ```
     <button class="dc-btn dc-btn--large">
         <i class="dc-icon dc-icon--add dc-icon--btn dc-icon--btn-large"></i>
     </button>
     ```
-    
+
 * dropdown: dc-dropdown radically changed #86 ([7fd01962faf33df62a5c52a0a1589f49e13664e8](https://github.com/zalando/dress-code/commit/7fd01962faf33df62a5c52a0a1589f49e13664e8))
 
     Replace this:
-    
+
     ```html
     <div class="dc-btn-dropup">
         <button class="dc-btn dc-btn--primary">
@@ -94,9 +142,9 @@
         </ul>
     </div>
     ```
-    
+
     with this:
-    
+
     ```html
     <div class="dc-btn-dropdown">
         <button class="dc-btn dc-btn--primary">
@@ -135,7 +183,7 @@
 ## [0.2.2-alpha.3](https://github.com/zalando/dress-code/compare/0.2.2-alpha.2...v0.2.2-alpha.3) (2016-02-09)
 
 ### Refactor
- 
+
 * **tables**: Clean up and extend tables ([48705caf4f7c33deb91dff1a406b44af6187a1ca](https://github.com/zalando/dress-code/commit/48705caf4f7c33deb91dff1a406b44af6187a1ca))
 
 
@@ -253,6 +301,3 @@
 * **price-input:** resolves #37. Add price input field. ([bd254fe](https://github.com/zalando/brand-solutions-dress-code/commit/bd254fe)), closes [#37](https://github.com/zalando/brand-solutions-dress-code/issues/37)
 * **text-input:** resolves #21. Add number input field ([c8f58e1](https://github.com/zalando/brand-solutions-dress-code/commit/c8f58e1)), closes [#21](https://github.com/zalando/brand-solutions-dress-code/issues/21)
 * **text-input:** resolves #24. Add disabled input field. ([0aa06c0](https://github.com/zalando/brand-solutions-dress-code/commit/0aa06c0)), closes [#24](https://github.com/zalando/brand-solutions-dress-code/issues/24)
-
-
-
