@@ -1,3 +1,13 @@
+<a name="1.1.1-alpha"></a>
+## [1.1.1-alpha](https://github.com/zalando/dress-code/compare/1.1.0-alpha...v1.1.1-alpha) (2016-02-18)
+
+
+### Bug Fixes
+
+* **bower.json:** fix extra comma in bower.json, we should somehow test this before building ([325a183](https://github.com/zalando/dress-code/commit/325a183))
+
+
+
 <a name="1.1.0-alpha"></a>
 # [1.1.0-alpha](https://github.com/zalando/dress-code/compare/1.0.1-alpha...v1.1.0-alpha) (2016-02-18)
 
