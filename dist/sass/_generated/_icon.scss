@@ -46,62 +46,59 @@
     @if $filename == eye {
     $char: "\E007";
 }
-    @if $filename == feedback {
+    @if $filename == help {
     $char: "\E008";
 }
-    @if $filename == help {
+    @if $filename == history {
     $char: "\E009";
 }
-    @if $filename == history {
+    @if $filename == info {
     $char: "\E00A";
 }
-    @if $filename == info {
+    @if $filename == lock {
     $char: "\E00B";
 }
-    @if $filename == lock {
+    @if $filename == menu {
     $char: "\E00C";
 }
-    @if $filename == menu {
+    @if $filename == more {
     $char: "\E00D";
 }
-    @if $filename == more {
+    @if $filename == msg-error {
     $char: "\E00E";
 }
-    @if $filename == msg-error {
+    @if $filename == msg-info {
     $char: "\E00F";
 }
-    @if $filename == msg-info {
+    @if $filename == msg-neutral {
     $char: "\E010";
 }
-    @if $filename == msg-neutral {
+    @if $filename == msg-success {
     $char: "\E011";
 }
-    @if $filename == msg-success {
+    @if $filename == msg-warning {
     $char: "\E012";
 }
-    @if $filename == msg-warning {
+    @if $filename == pencil {
     $char: "\E013";
 }
-    @if $filename == pencil {
+    @if $filename == play {
     $char: "\E014";
 }
-    @if $filename == play {
+    @if $filename == redo {
     $char: "\E015";
 }
-    @if $filename == redo {
+    @if $filename == search {
     $char: "\E016";
 }
-    @if $filename == search {
+    @if $filename == trash {
     $char: "\E017";
 }
-    @if $filename == trash {
+    @if $filename == undo {
     $char: "\E018";
 }
-    @if $filename == undo {
-    $char: "\E019";
-}
     @if $filename == user {
-    $char: "\E01A";
+    $char: "\E019";
 }
 
 @return $char;
@@ -141,11 +138,6 @@
 @mixin dc-icon--eye {
     &:before {
         content: dc-icon-char(eye);
-    }
-}
-@mixin dc-icon--feedback {
-    &:before {
-        content: dc-icon-char(feedback);
     }
 }
 @mixin dc-icon--help {
@@ -282,10 +274,6 @@
 
     .dc-icon--eye {
         @include dc-icon--eye;
-    }
-
-    .dc-icon--feedback {
-        @include dc-icon--feedback;
     }
 
     .dc-icon--help {

@@ -15,11 +15,11 @@ $dc-font-path: "../fonts" !default;
 $dc-white: #fff !default;
 
 $dc-gray80: #f7f7f7 !default;
-$dc-gray70: #edeced !default;
+$dc-gray70: #ededed !default;
 $dc-gray60: #d1d1d1 !default;
 $dc-gray50: #b6b6b6 !default;
 $dc-gray40: #9b9b9b !default;
-$dc-gray30: #807f80 !default;
+$dc-gray30: #808080 !default;
 $dc-gray20: #646464 !default;
 $dc-gray10: #4a4a4a !default;
 
@@ -30,88 +30,80 @@ $dc-black: #000 !default;
 
 // BLUE
 $dc-blue80: #e6f4ff !default;
-$dc-blue70: #b1dcfe !default;
-$dc-blue60: #88ccfe !default;
-$dc-blue50: #5cbbfe !default;
+$dc-blue70: #d1ebff !default;
+$dc-blue60: #a3d9ff !default;
+$dc-blue50: #75c6ff !default;
 $dc-blue40: #26aafe !default;
-// Base color
 $dc-blue30: #1e87cb !default;
 $dc-blue20: #186698 !default;
 $dc-blue10: #124365 !default;
 
 // CYAN
 $dc-cyan80: #e8fcff !default;
-$dc-cyan70: #b5f2ff !default;
-$dc-cyan60: #8decff !default;
-$dc-cyan50: #61e6fe !default;
+$dc-cyan70: #b5f5ff !default;
+$dc-cyan60: #8cf0ff !default;
+$dc-cyan50: #61eaff !default;
 $dc-cyan40: #24e0fe !default;
-// Base color
 $dc-cyan30: #1fb3cb !default;
-$dc-cyan20: #1a8699 !default;
-$dc-cyan10: #145966 !default;
+$dc-cyan20: #1a8899 !default;
+$dc-cyan10: #145b66 !default;
 
 // GREEN
 $dc-green80: #e7ffd6 !default;
-$dc-green70: #ceff9e !default;
-$dc-green60: #b4ff70 !default;
-$dc-green50: #9aff44 !default;
-$dc-green40: #7fff25 !default;
-// Base color
+$dc-green70: #c6ff9e !default;
+$dc-green60: #acff70 !default;
+$dc-green50: #8bfa3c !default;
+$dc-green40: #72e620 !default;
 $dc-green30: #65cb1c !default;
-$dc-green20: #4c9913 !default;
-$dc-green10: #32650a !default;
+$dc-green20: #4a9912 !default;
+$dc-green10: #30660a !default;
 
 // YELLOW
 $dc-yellow80: #fff9d9 !default;
-$dc-yellow70: #fff49b !default;
-$dc-yellow60: #ffef6a !default;
-$dc-yellow50: #ffe93d !default;
-$dc-yellow40: #ffe41f !default;
-// Base color
-$dc-yellow30: #ccb616 !default;
-$dc-yellow20: #99880e !default;
-$dc-yellow10: #665b05 !default;
+$dc-yellow70: #fff09e !default;
+$dc-yellow60: #ffeb7a !default;
+$dc-yellow50: #ffe347 !default;
+$dc-yellow40: #ffda0a !default;
+$dc-yellow30: #ccb116 !default;
+$dc-yellow20: #99840e !default;
+$dc-yellow10: #665705 !default;
 
 // ORANGE
 $dc-orange80: #ffefe0 !default;
-$dc-orange70: #ffd2a6 !default;
-$dc-orange60: #ffbc7a !default;
+$dc-orange70: #ffd1a6 !default;
+$dc-orange60: #ffba7a !default;
 $dc-orange50: #ffa54e !default;
 $dc-orange40: #ff8e25 !default;
-// Base color
-$dc-orange30: #cc611d !default;
+$dc-orange30: #cc711d !default;
 $dc-orange20: #995516 !default;
 $dc-orange10: #66380e !default;
 
 // RED
 $dc-red80: #ffeae6 !default;
 $dc-red70: #ffcabf !default;
-$dc-red60: #ff937b !default;
-$dc-red50: #ff6e4f !default;
+$dc-red60: #ff9985 !default;
+$dc-red50: #ff6c4f !default;
 $dc-red40: #ff4a25 !default;
-// Base color
 $dc-red30: #cc3a1d !default;
-$dc-red20: #982c15 !default;
+$dc-red20: #992b15 !default;
 $dc-red10: #661d0e !default;
 
 // MAGENTA
 $dc-magenta80: #f7e9f7 !default;
-$dc-magenta70: #f7c8f5 !default;
-$dc-magenta60: #f3acf1 !default;
-$dc-magenta50: #ef8fed !default;
+$dc-magenta70: #f7c8f7 !default;
+$dc-magenta60: #f7b2f6 !default;
+$dc-magenta50: #f296f1 !default;
 $dc-magenta40: #eb74e9 !default;
-// Base color
 $dc-magenta30: #bb5cba !default;
-$dc-magenta20: #8d458b !default;
+$dc-magenta20: #8c458b !default;
 $dc-magenta10: #5d2e5c !default;
 
 // PURPLE
 $dc-purple80: #f4edff !default;
-$dc-purple70: #d5bdfe !default;
-$dc-purple60: #c19cfe !default;
+$dc-purple70: #e1cfff !default;
+$dc-purple60: #c8a6ff !default;
 $dc-purple50: #ac7afd !default;
 $dc-purple40: #9757fd !default;
-// Base color
 $dc-purple30: #7845cb !default;
 $dc-purple20: #5a3498 !default;
 $dc-purple10: #3c2365 !default;

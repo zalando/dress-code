@@ -1,13 +1,13 @@
 {
   "name": "dress-code",
-  "version": "1.0.1-alpha",
+  "version": "1.1.0-alpha",
   "homepage": "https://zalando.github.io/dress-code",
   "description": "The Dress Code is the official style guide/UI toolkit for all Brand Solutions products.",
   "main": "sass/dress-code.scss",
   "moduleType": [],
   "authors": [
     "Thomas Nägele <thomas.naegele.extern@zalando.de>",
-    "Ruben Barilani <ruben.barilani@zalando.de>"
+    "Ruben Barilani <ruben.barilani@zalando.de>",
   ],
   "license": "MIT",
   "private": true,
