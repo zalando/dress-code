@@ -1,11 +1,15 @@
 // @import "../core/core";
 
 @mixin dc-dialog {
+    padding: $dc-space100;
+    align-items: center;
+    justify-content: center;
     transform: rotateX(0deg) translateY(0) translateZ(0);
     transition: transform 2s cubic-bezier(.25, .46, .45, .94), opacity .2s cubic-bezier(.39, .58, .57, 1);
     border-radius: 2px;
-    background: $dc-white;
     box-shadow: 0 5px 10px rgba($dc-black, .2);
+    overflow: auto;
+    z-index: 10000;
 }
 
 @mixin dc-dialog-overlay {
@@ -15,18 +19,20 @@
     right: 0;
     bottom: 0;
     left: 0;
-    align-items: center;
-    justify-content: center;
-    padding: $dc-space100;
     transition: opacity .2s .2s cubic-bezier(.39, .58, .57, 1);
     background: rgba($dc-black, .6);
     opacity: 0;
-    z-index: 999;
+    z-index: -1;
     perspective: 600px;
+}
+
+@mixin dc-dialog__content {
+    margin: $dc-space150;
 }
 
 @mixin dc-dialog__body {
     padding: $dc-space150 $dc-space150 $dc-space100;
+    background: $dc-white;
 }
 
 @mixin dc-dialog__close {
@@ -89,6 +95,10 @@
 
     .dc-dialog__overlay {
         @include dc-dialog-overlay;
+    }
+
+    .dc-dialog__content {
+        @include dc-dialog__content;
     }
 
     .dc-dialog__body {
