@@ -19,16 +19,6 @@
 }
 
 @mixin dc-loading-bar__fill {
-    @keyframes dc-loading-bar__fill {
-        0% {
-            transform: scaleX(0);
-        }
-
-        100% {
-            transform: scaleX(1);
-        }
-    }
-
     position: absolute;
     top: 0;
     left: 0;
@@ -39,7 +29,21 @@
     animation: dc-loading-bar__fill 3s infinite cubic-bezier(.455, .03, .515, .955);
 }
 
+@mixin dc-loading-bar-animations {
+    @keyframes dc-loading-bar__fill {
+        0% {
+            transform: scaleX(0);
+        }
+
+        100% {
+            transform: scaleX(1);
+        }
+    }
+}
+
 @mixin dc-loading-bar-selectors {
+
+    @include dc-loading-bar-animations;
 
     .dc-loading-bar {
         @include dc-loading-bar;
