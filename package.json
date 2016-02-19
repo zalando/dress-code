@@ -38,6 +38,9 @@
     "node": ">=0.10.0 <=4.x",
     "npm": "^2.0.0"
   },
+  "dependencies": {
+    "breakpoint-sass": "^2.6.1"
+  },
   "devDependencies": {
     "babel-core": "^5.2.17",
     "babel-loader": "5.0.0",
@@ -64,12 +67,9 @@
     "gulp-util": "^3.0.4",
     "imports-loader": "^0.6.3",
     "lodash": "^4.3.0",
-    "run-sequence": "^1.0.2",
     "script-loader": "^0.6.1",
+    "susy": "~2.2.6",
+    "run-sequence": "^1.0.2",
     "webpack": "^1.8.11"
-  },
-  "dependencies": {
-    "breakpoint-sass": "^2.6.1",
-    "susy": "^2.2.6"
   }
 }
