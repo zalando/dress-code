@@ -3,7 +3,7 @@
   "version": "1.1.1-alpha",
   "homepage": "https://zalando.github.io/dress-code",
   "description": "The Dress Code is the official style guide/UI toolkit for all Brand Solutions products.",
-  "main": "sass/dress-code.scss",
+  "main": "dist/sass/dress-code.scss",
   "moduleType": [],
   "authors": [
     "Thomas Nägele <thomas.naegele.extern@zalando.de>",
@@ -20,6 +20,6 @@
   ],
   "dependencies": {
     "compass-breakpoint": "breakpoint-sass#~2.6.1",
-    "modernizer": "~2.8.2"
+    "modernizr": "~2.8.2"
   }
 }

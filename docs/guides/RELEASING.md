@@ -37,7 +37,7 @@ When the CI job pass with SUCCESS, merge or rebase the release branch on top of 
 ```
 git checkout master;
 git pull;
-git rebase release/<semver>;
+git rebase release/<semver>; # or open a pull request to master
 ```
 
 6) Add a git tag, push the master branch and the new tag.
@@ -48,26 +48,14 @@ git push origin master;
 git push origin <semver>; # push the tag
 ```
 
-7) Sync the ```bower``` version.
-
 ```
-npm run deploy:bower
-cd .tmp/.deploy-bower
-git tag -a <semver> -m "<semver>";
-git push origin <semver>; # push the tag
-git checkout develop;
-git rebase master;
-git push origin develop;
-git checkout master;
-```
-
-8) Build and deploy [docs/demo](http://zalando.github.io/dress-code/) artifacts. 
+7) Build and deploy demo [docs/demo](http://zalando.github.io/dress-code/) artifacts. 
 
 ```
 npm run deploy:demo;
 ```
 
-9) Keep in sync the develop branch.
+8) Keep in sync the develop branch.
 
 ```
 git checkout develop;
