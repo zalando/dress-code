@@ -12,6 +12,7 @@
     font-weight: $dc-normal-font-weight;
     line-height: 1;
     -webkit-appearance: none;
+    -moz-appearance: none;
 
     &:hover {
         border-color: $dc-blue40;
