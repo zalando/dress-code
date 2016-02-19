@@ -12,7 +12,7 @@
     z-index: 10000;
 }
 
-@mixin dc-dialog-overlay {
+@mixin dc-dialog__overlay {
     display: flex;
     position: fixed;
     top: 0;
@@ -94,7 +94,7 @@
     }
 
     .dc-dialog__overlay {
-        @include dc-dialog-overlay;
+        @include dc-dialog__overlay;
     }
 
     .dc-dialog__content {
