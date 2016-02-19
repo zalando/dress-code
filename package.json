@@ -38,9 +38,6 @@
   "dependencies": {
     "breakpoint-sass": "^2.6.1"
   },
-  "dependencies": {
-    "breakpoint-sass": "^2.6.1"
-  },
   "devDependencies": {
     "babel-core": "^5.2.17",
     "babel-loader": "5.0.0",
