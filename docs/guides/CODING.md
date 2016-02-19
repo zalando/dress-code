@@ -7,8 +7,8 @@
 
 ## Sass conventions:
 
-* All variables and mixins must be prefixed with ```dc-``` and must use the ***snake-case*** (with dashes as separator).
-
+* All variables and mixins must be prefixed with ```dc-``` and must use the ***hyphen-case*** (with hyphens as separators).
+* To mark a function/variable/mixins/placeholder/selector as private, its name should start with one underscore. ```_dc-*```  
 
 ## Notes
 
