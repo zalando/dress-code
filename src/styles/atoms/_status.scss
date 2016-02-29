@@ -1,7 +1,12 @@
 // @import "../core/core";
 
-@mixin dc-status {
+@mixin _before__background-color ($background-color) {
+    &:before {
+        background-color: $background-color;
+    }
+}
 
+@mixin _dc-status {
     &:before {
         display: inline-block;
         width: 10px;
@@ -10,39 +15,26 @@
         border-radius: 2px;
         content: "";
     }
+}
 
+@mixin dc-status {
+    @include _dc-status;
 }
 
 @mixin dc-status--active {
-
-    &:before {
-        background-color: $dc-green30;
-    }
-
+    @include _before__background-color($dc-green30);
 }
 
 @mixin dc-status--inactive {
-
-    &:before {
-        background-color: $dc-gray50;
-    }
-
+    @include _before__background-color($dc-gray50);
 }
 
 @mixin dc-status--new {
-
-    &:before {
-        background-color: $dc-orange60;
-    }
-
+    @include _before__background-color($dc-orange60);
 }
 
 @mixin dc-status--error {
-
-    &:before {
-        background-color: $dc-red50;
-    }
-
+    @include _before__background-color($dc-red50);
 }
 
 @mixin dc-status-selectors {
@@ -66,5 +58,4 @@
     .dc-status--error {
         @include dc-status--error;
     }
-
 }
