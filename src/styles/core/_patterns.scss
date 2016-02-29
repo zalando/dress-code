@@ -25,11 +25,11 @@
 //  ---------------------------------------------------------------------------
 
 // scss-lint:disable ImportantRule
-@mixin dc-is-collapsed {
+@mixin dc--is-collapsed {
     height: 0 !important;
 }
 
-@mixin dc-is-expanded {
+@mixin dc--is-expanded {
     height: auto !important;
 }
 
@@ -39,11 +39,11 @@
 //
 //  ---------------------------------------------------------------------------
 
-@mixin dc-is-hidden {
+@mixin dc--is-hidden {
     display: none !important;
 }
 
-@mixin dc-is-shown {
+@mixin dc--is-shown {
     display: block !important;
 }
 
@@ -53,11 +53,11 @@
 //
 //  ---------------------------------------------------------------------------
 
-@mixin dc-is-invisible {
+@mixin dc--is-invisible {
     opacity: 0;
 }
 
-@mixin dc-is-visible {
+@mixin dc--is-visible {
     opacity: 1;
 }
 
@@ -67,7 +67,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-@mixin dc-is-inline {
+@mixin dc--is-inline {
     display: inline-block !important;
 }
 
@@ -77,7 +77,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-@mixin dc-is-fixed {
+@mixin dc--is-fixed {
     position: fixed !important;
 }
 
@@ -87,92 +87,47 @@
 //
 //  ---------------------------------------------------------------------------
 
-@mixin dc-is-important {
+@mixin dc--is-important {
     background: $dc-yellow60 !important;
-}
-
-//  ---------------------------------------------------------------------------
-//
-//  This class is for text elements that are not so important and
-//	appear in a less intrusive way
-//
-//  ---------------------------------------------------------------------------
-
-@mixin dc-less-important {
-    color: $dc-gray50 !important;
-}
-
-//  ---------------------------------------------------------------------------
-//
-//  Alignment Classes - left - center - right
-//
-//  ---------------------------------------------------------------------------
-
-@mixin dc-text-left {
-    text-align: left;
-}
-
-@mixin dc-text-center {
-    text-align: center;
-}
-
-@mixin dc-text-right {
-    text-align: right;
 }
 
 @mixin dc-patterns-selectors {
     @include dc-collapse-bd-selectors;
 
-    .dc-is-collapsed {
-        @include dc-is-collapsed;
+    .dc--is-collapsed {
+        @include dc--is-collapsed;
     }
 
-    .dc-is-expanded {
-        @include dc-is-expanded;
+    .dc--is-expanded {
+        @include dc--is-expanded;
     }
 
-    .dc-is-hidden {
-        @include dc-is-hidden;
+    .dc--is-hidden {
+        @include dc--is-hidden;
     }
 
-    .dc-is-shown {
-        @include dc-is-shown;
+    .dc--is-shown {
+        @include dc--is-shown;
     }
 
-    .dc-is-invisible {
-        @include dc-is-invisible;
+    .dc--is-invisible {
+        @include dc--is-invisible;
     }
 
-    .dc-is-visible {
-        @include dc-is-visible;
+    .dc--is-visible {
+        @include dc--is-visible;
     }
 
-    .dc-is-inline {
-        @include dc-is-inline;
+    .dc--is-inline {
+        @include dc--is-inline;
     }
 
-    .dc-is-fixed {
-        @include dc-is-fixed;
+    .dc--is-fixed {
+        @include dc--is-fixed;
     }
 
-    .dc-is-important {
-        @include dc-is-important;
-    }
-
-    .dc-less-important {
-        @include dc-less-important;
-    }
-
-    .dc-text-left {
-        @include dc-text-left;
-    }
-
-    .dc-text-center {
-        @include dc-text-center;
-    }
-
-    .dc-text-right {
-        @include dc-text-right;
+    .dc--is-important {
+        @include dc--is-important;
     }
 }
 
