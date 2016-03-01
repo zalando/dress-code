@@ -173,6 +173,26 @@
     width: 100%;
 }
 
+//  = GROUPED BUTTON
+//  ---------------------------------------------------------------------------
+
+@mixin dc-btn--grouped {
+    margin-right: 0;
+    margin-bottom: 0;
+    border-left-width: 0;
+    border-radius: 0;
+
+    &:first-child {
+        border-left-width: 1px;
+        border-top-left-radius: $dc-radius100;
+        border-bottom-left-radius: $dc-radius100;
+    }
+
+    &:last-child {
+        border-top-right-radius: $dc-radius100;
+        border-bottom-right-radius: $dc-radius100;
+    }
+}
 
 @mixin dc-btn-selectors {
     .dc-btn {
@@ -210,6 +230,10 @@
 
     .dc-btn--block {
         @include dc-btn--block;
+    }
+
+    .dc-btn--grouped {
+        @include dc-btn--grouped;
     }
 }
 
