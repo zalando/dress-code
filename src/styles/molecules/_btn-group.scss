@@ -22,7 +22,7 @@
 @mixin dc-btn-group-selectors {
 
     .dc-btn-group {
-        @include dc-btn-group
+        @include dc-btn-group;
     }
 
     .dc-btn-group-row {
