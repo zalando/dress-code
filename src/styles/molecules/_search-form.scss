@@ -30,13 +30,11 @@
     border: none;
     // scss-lint:enable BorderZero
     background: transparent;
+}
 
-    // FIXME @controversial BEM
-    .dc-svg,
-    .dc-img {
-        display: block;
-        margin-right: 0;
-    }
+@mixin dc-search-form__btn__icon {
+    display: block;
+    margin-right: 0;
 }
 
 @mixin dc-search-form__btn--is-active {
@@ -105,20 +103,19 @@
     color: $dc-text-color;
 }
 
-@mixin dc-suggest__item__img {
+@mixin dc-suggest__item__img-frame {
     position: relative;
     justify-content: center;
     width: 30%;
     max-width: 8rem;
     margin-right: $dc-space100;
+}
 
-    // FIXME @controversial BEM
-    img {
-        position: absolute;
-        top: calc(50% - 1rem);
-        width: 100%;
-        height: 2rem;
-    }
+@mixin dc-suggest__item__img {
+    position: absolute;
+    top: calc(50% - 1rem);
+    width: 100%;
+    height: 2rem;
 }
 
 @mixin dc-suggest__item__label {
@@ -127,7 +124,6 @@
     white-space: nowrap;
     overflow: hidden;
 }
-
 
 @mixin dc-search-form-selectors {
     .dc-search-form {
@@ -148,12 +144,21 @@
         }
     }
 
+    .dc-search-form__btn__icon {
+        @include dc-search-form__btn__icon;
+    }
+
     .dc-font-icon--is-search-form {
         @include dc-icon--is-search-form;
     }
 
     .dc-suggest {
         @include dc-suggest;
+
+        .no-touch &:hover,
+        .touch &:active {
+            @include dc-suggest--is-visible;
+        }
     }
 
     .dc-suggest--is-visible {
@@ -169,6 +174,10 @@
         }
     }
 
+    .dc-suggest__item__img-frame {
+        @include dc-suggest__item__img-frame;
+    }
+
     .dc-suggest__item__img {
         @include dc-suggest__item__img;
     }
@@ -178,8 +187,7 @@
     }
 
     // FIXME - @controversial BEM maybe better a dc-search-form--interactive modifier ?
-    .dc-search-form__input:focus ~ .dc-suggest,
-    .dc-suggest:hover {
+    .dc-search-form__input:focus ~ .dc-suggest {
         @include dc-suggest--is-visible;
     }
 }

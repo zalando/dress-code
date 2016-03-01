@@ -8,7 +8,7 @@ notes: |
 <div class="dc-search-form">
   <input class="dc-input dc-search-form__input" id="searchOnlyText" type="search" placeholder="Search...">
   <button class="dc-btn dc-search-form__btn">
-    <svg class="dc-svg dc-icon--interactive" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+    <svg class="dc-svg dc-search-form__btn__icon dc-icon--interactive" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
         <title>
             Search
         </title>
@@ -35,7 +35,7 @@ notes: |
 <div class="dc-search-form">
     <input class="dc-input dc-search-form__input" id="searchWithImages" type="search" placeholder="Search...">
     <button class="dc-btn dc-search-form__btn">
-        <svg class="dc-svg dc-icon--interactive" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+        <svg class="dc-svg dc-search-form__btn__icon dc-icon--interactive" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
             <title>
                 Search
             </title>
@@ -51,8 +51,8 @@ notes: |
     <ul class="dc-list dc-suggest">
         {{#each autosuggest.brands}}
         <li class="dc-suggest__item dc-link">
-            <div class="dc-suggest__item__img">
-                <img src="assets/toolkit/img/logo.svg">
+            <div class="dc-suggest__item__img-frame">
+                <img class="dc-suggest__item__img" src="assets/toolkit/img/logo.svg">
             </div>
             <span class="dc-suggest__item__label">{{this}}</span>
         </li>
