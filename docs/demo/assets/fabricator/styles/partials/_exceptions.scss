@@ -7,15 +7,19 @@
         opacity: 1;
     }
 
-    .dc-toast-container {
+    .dc-toast-container--top, .dc-toast-container--bottom {
         position: relative;
     }
-    .dc-toast {
+    .dc-toast--top, .dc-toast--bottom {
         animation: none;
     }
-
 }
 
 .f-item-preview .dc-loading-bar {
     position: relative;
+}
+
+.f-item-notes > ul:before {
+    content: '';
+    margin: 0;
 }
