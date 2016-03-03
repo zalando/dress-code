@@ -1,16 +1,14 @@
 {
   "name": "dress-code",
-  "version": "1.0.1-alpha",
+  "version": "1.1.1-alpha",
   "description": "The Dress Code is the official style guide and style framework for all Brand Solutions products.",
   "homepage": "https://zalando.github.io/brand-solutions-dress-code",
   "main": "dist/sass/dress-code.scss",
   "scripts": {
     "lint": "gulp scss-lint",
     "build": "gulp dist",
-    "build:bower": "gulp dist:bower",
     "build:demo": "gulp demo",
     "deploy:demo": "gulp demo:deploy --demo-base-path=/dress-code",
-    "deploy:bower": "gulp dist:bower:deploy",
     "changelog": "gulp dist:changelog",
     "start": "gulp"
   },
@@ -33,10 +31,12 @@
     "type": "git",
     "url": "https://github.com/zalando/dress-code.git"
   },
-  "engineStrict": true,
   "engines": {
-    "node": ">=0.10.0 <=4.x",
-    "npm": "^2.0.0"
+    "node": ">=0.12.0 <=5.x",
+    "npm": ">=2.x.x"
+  },
+  "dependencies": {
+    "breakpoint-sass": "^2.6.1"
   },
   "devDependencies": {
     "babel-core": "^5.2.17",
@@ -64,12 +64,9 @@
     "gulp-util": "^3.0.4",
     "imports-loader": "^0.6.3",
     "lodash": "^4.3.0",
-    "run-sequence": "^1.0.2",
     "script-loader": "^0.6.1",
+    "susy": "~2.2.6",
+    "run-sequence": "^1.0.2",
     "webpack": "^1.8.11"
-  },
-  "dependencies": {
-    "breakpoint-sass": "^2.6.1",
-    "susy": "^2.2.6"
   }
 }
