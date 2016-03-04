@@ -63,8 +63,8 @@
     @include dc-dialog-selectors;
     @include dc-dropdown-selectors;
     @include dc-input-group-selectors;
-    @include dc-msg-selectors;          // !!! FIXME @controversial BEM
+    @include dc-msg-selectors;
     @include dc-search-form-selectors;  // !!! FIXME @controversial BEM
     @include dc-toast-selectors;
-    @include dc-tooltip-selectors;      // !!! FIXME @controversial BEM
+    @include dc-tooltip-selectors;
 }
