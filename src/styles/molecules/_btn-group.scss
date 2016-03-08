@@ -19,6 +19,10 @@
     float: left;
 }
 
+@mixin dc-btn--in-btn-group {
+    @include _dc-btn--grouped;
+}
+
 @mixin dc-btn-group-selectors {
 
     .dc-btn-group {
@@ -31,5 +35,9 @@
 
     .dc-btn-group--in-row {
         @include dc-btn-group--in-row;
+    }
+
+    .dc-btn--in-btn-group {
+        @include dc-btn--in-btn-group;
     }
 }

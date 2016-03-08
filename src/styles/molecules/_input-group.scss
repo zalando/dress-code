@@ -27,7 +27,7 @@
     }
 }
 
-@mixin dc-input-group__input {
+@mixin dc-input--in-input-group {
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
@@ -44,6 +44,10 @@
     }
 }
 
+@mixin dc-btn--in-input-group {
+    @include _dc-btn--grouped;
+}
+
 @mixin dc-input-group-selectors {
 
     .dc-input-group {
@@ -54,8 +58,12 @@
         @include dc-input-addon;
     }
 
-    .dc-input-group__input {
-        @include dc-input-group__input;
+    .dc-input--in-input-group {
+        @include dc-input--in-input-group;
+    }
+
+    .dc-btn--in-input-group {
+        @include dc-btn--in-input-group;
     }
 }
 

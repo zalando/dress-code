@@ -176,7 +176,7 @@
 //  = GROUPED BUTTON
 //  ---------------------------------------------------------------------------
 
-@mixin dc-btn--grouped {
+@mixin _dc-btn--grouped {
     margin-right: 0;
     margin-bottom: 0;
     border-left-width: 0;
@@ -230,10 +230,6 @@
 
     .dc-btn--block {
         @include dc-btn--block;
-    }
-
-    .dc-btn--grouped {
-        @include dc-btn--grouped;
     }
 }
 
