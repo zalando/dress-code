@@ -16,12 +16,10 @@ var replace = require('gulp-replace');
 var reload = browserSync.reload;
 var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
-// var sassImportOnce = require('node-sass-import-once');
 var sourcemaps = require('gulp-sourcemaps');
 var webpack = require('webpack');
 var gulp = require('gulp');
 var ghPages = require('gulp-gh-pages');
-var gulpFilter = require('gulp-filter');
 var gulpDebug = require('gulp-debug');
 var iconfont = require('gulp-iconfont');
 var iconfontCss = require('gulp-iconfont-css');
@@ -44,7 +42,7 @@ var config = {
         },
         styles: {
             fabricator: './docs/demo/assets/fabricator/styles/fabricator.scss',
-            toolkit: './src/styles/index.scss'
+            toolkit: './src/styles/_index.scss'
         },
         images: 'src/img/**/*',
         icons: 'src/icons/*.svg'
@@ -332,53 +330,8 @@ gulp.task('dist:icons', ['demo:icons'], function () {
         .pipe(gulp.dest(path.join(config.tmp.dist, '/fonts')));
 });
 
-gulp.task('dist:bower:clean', function (cb) {
-    return del([config.tmp.distBower], cb);
-});
-
-
-gulp.task('dist:bower', ['dist:bower:clean', 'dist:build'], function () {
-    var bowerReadmeFilter = gulpFilter(['BOWER-README.md'], {restore: true});
-    var vendorsFilter = gulpFilter(['**/sass/core/_vendors.scss'], {restore: true});
-
-    return gulp.src([
-        path.join(config.tmp.dist, '/**/*'),
-        'bower.json',
-        'LICENSE',
-        'docs/BOWER-README.md',
-        '.editorconfig'
-    ])
-    .pipe(bowerReadmeFilter)
-    .pipe(rename('README.md'))
-    .pipe(gulp.dest(config.tmp.distBower))
-    .pipe(bowerReadmeFilter.restore)
-    .pipe(vendorsFilter)
-    .pipe(replace(/@import "..\/..\/..\/node_modules\/(.*)"/g, function (match, p1) {
-        if (p1.indexOf('breakpoint-sass') > -1) {
-            return '@import "../../../compass-breakpoint/stylesheets/breakpoint"';
-        } else {
-            return '@import "../../../' + p1 + '"';
-        }
-    }))
-    .pipe(vendorsFilter.restore)
-    .pipe(gulp.dest(config.tmp.distBower));
-});
-
-// push bower dist to the bower version repo
-// use --dev to push to the develop branch (default: master)
-gulp.task('dist:bower:deploy', ['dist:bower'], function () {
-    return gulp.src(path.join(config.tmp.distBower, '/**/*'))
-        .pipe(ghPages({
-            cacheDir: config.tmp.deployBower,
-            branch: gutil.env.dev ? 'develop' : 'master',
-            remoteUrl: 'git@github.com:zalando/dress-code-bower'
-        }));
-});
-
 gulp.task('dist:changelog', function() {
-    var changelogConfig = {
-        preset: 'angular'
-    };
+    var changelogConfig = { preset: 'angular' };
 
     return gulp.src('CHANGELOG.md', {
         buffer: true
