@@ -1,3 +1,27 @@
+<a name="1.2.0-alpha"></a>
+# [1.2.0-alpha](https://github.com/zalando/dress-code/compare/1.1.1-alpha...v1.2.0-alpha) (2016-03-14)
+
+### Features
+
+* **npm**: add npm3 support
+* **button-icon**: add the possibility to put the icon inside a button at the right or at the left of text.
+
+### Bug Fixes
+
+* **dialog:** change dc-dialog overlay mixin name to be consistent with the global selector on ([7c2e8d6](https://github.com/zalando/dress-code/commit/7c2e8d6))
+* **dialog:** make dialog scrollable when hovering outside of it #142 ([9d99b44](https://github.com/zalando/dress-code/commit/9d99b44))
+
+### BREAKING CHANGES
+
+* **bower:** the specific bower version will not be updated anymore and after a deprecation period will be removed.
+In your bower.json, replace ```https://github.com/zalando/dress-code-bower.git``` with ```https://github.com/zalando/dress-code.git```.<br><br>
+When using minified/built artifacts replace this ```<link href="bower_components/dress-code/css/dress-code.css" rel="stylesheets" />``` with ```<link href="bower_components/dress-code/dist/css/dress-code.css" rel="stylesheets" />```.<br><br>
+When including dress-code with sass replace this ```@import bower_components/dress-code/sass/dress-code``` with ```@import bower_components/dress-code/dist/sass/dress-code```.
+
+* **button-icon:** an icon placed in a button with text now require also positioning modifiers: ```dc-icon--btn--right``` or ```dc-icon--btn-left```
+
+* **breakpoint-sass:** to use the sass version you have to include breakpoint-sass plugin before dress-code is loaded. see [#129](https://github.com/zalando/dress-code/issues/129).
+
 <a name="1.1.1-alpha"></a>
 ## [1.1.1-alpha](https://github.com/zalando/dress-code/compare/1.1.0-alpha...v1.1.1-alpha) (2016-02-18)
 

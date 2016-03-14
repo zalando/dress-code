@@ -1,7 +1,6 @@
 // @import "../core/core";
 
 @mixin dc-btn {
-
     display: inline-block;
     margin-right: $dc-space50;
     margin-bottom: $dc-space100;
@@ -19,13 +18,10 @@
     text-transform: capitalize;
     box-shadow: 0 1px 1px transparent;
     cursor: default;
+    vertical-align: top;
 
     &:focus {
         outline: none;
-    }
-
-    > * {
-        margin-right: 10px;
     }
 
     @content;
@@ -212,9 +208,3 @@
         @include dc-btn--block;
     }
 }
-
-
-
-
-
-
