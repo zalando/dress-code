@@ -223,71 +223,69 @@
 		<h2 class="dc-h2 f-item-heading">Button Icon</h2>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Use icon buttons with caution. Their meanings are sometimes difficult to understand.</p>
-<p>For buttons with icon and text, the icon will always display at the right side. The button text must be wrapped in an element (any element works).</p>
+<p>For buttons with icon and text, use the modifiers <code>dc-icon--btn--left</code> and <code>dc-icon--btn--right</code> to set the position of the icon.</p>
 
 </div>
 <div class="f-item-preview">
 	<button class="dc-btn">
-	<i class="dc-icon dc-icon--history dc-icon--btn"></i>
+    <i class="dc-icon dc-icon--history dc-icon--btn"></i>
 </button>
-
 <button class="dc-btn dc-btn--primary">
-	<i class="dc-icon dc-icon--pencil dc-icon--btn"></i>
+    <i class="dc-icon dc-icon--pencil dc-icon--btn"></i>
 </button>
-
-<button class="dc-btn dc-btn--destroy">
-	<i class="dc-icon dc-icon--trash dc-icon--btn"></i>
-</button>
-
 <button class="dc-btn">
-	<span>Undo</span><i class="dc-icon dc-icon--undo dc-icon--btn"></i>
+    <a>Undo</a><i class="dc-icon dc-icon--undo dc-icon--btn dc-icon--btn--left"></i>
 </button>
+<button class="dc-btn dc-btn--destroy">
+    <i class="dc-icon dc-icon--trash dc-icon--btn"></i>
+</button>
+
+
 
 <button class="dc-btn dc-btn--disabled">
-	<span>Redo</span> <i class="dc-icon dc-icon--redo dc-icon--btn"></i>
+    <span>Redo</span> <i class="dc-icon dc-icon--redo dc-icon--btn dc-icon--btn--right"></i>
 </button>
 
 
 <br>
 
 <button class="dc-btn dc-btn--small">
-	<span>Redo</span> <i class="dc-icon dc-icon--redo dc-icon--btn dc-icon--btn-small"></i>
+    <span>Redo</span> <i class="dc-icon dc-icon--redo dc-icon--btn dc-icon--btn-small dc-icon--btn--left"></i>
 </button>
 
 <button class="dc-btn dc-btn--destroy dc-btn--large">
-	<span>Lock</span> <i class="dc-icon dc-icon--lock dc-icon--btn dc-icon--btn-large"></i>
+    <span>Lock</span> <i class="dc-icon dc-icon--lock dc-icon--btn dc-icon--btn-large dc-icon--btn--right"></i>
 </button>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre class="dc-pre"><code class="language-markup">&lt;button class=&quot;dc-btn&quot;&gt;
-	&lt;i class=&quot;dc-icon dc-icon--history dc-icon--btn&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;dc-icon dc-icon--history dc-icon--btn&quot;&gt;&lt;/i&gt;
 &lt;/button&gt;
-
 &lt;button class=&quot;dc-btn dc-btn--primary&quot;&gt;
-	&lt;i class=&quot;dc-icon dc-icon--pencil dc-icon--btn&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;dc-icon dc-icon--pencil dc-icon--btn&quot;&gt;&lt;/i&gt;
 &lt;/button&gt;
-
-&lt;button class=&quot;dc-btn dc-btn--destroy&quot;&gt;
-	&lt;i class=&quot;dc-icon dc-icon--trash dc-icon--btn&quot;&gt;&lt;/i&gt;
-&lt;/button&gt;
-
 &lt;button class=&quot;dc-btn&quot;&gt;
-	&lt;span&gt;Undo&lt;/span&gt;&lt;i class=&quot;dc-icon dc-icon--undo dc-icon--btn&quot;&gt;&lt;/i&gt;
+    &lt;a&gt;Undo&lt;/a&gt;&lt;i class=&quot;dc-icon dc-icon--undo dc-icon--btn dc-icon--btn--left&quot;&gt;&lt;/i&gt;
 &lt;/button&gt;
+&lt;button class=&quot;dc-btn dc-btn--destroy&quot;&gt;
+    &lt;i class=&quot;dc-icon dc-icon--trash dc-icon--btn&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+
 
 &lt;button class=&quot;dc-btn dc-btn--disabled&quot;&gt;
-	&lt;span&gt;Redo&lt;/span&gt; &lt;i class=&quot;dc-icon dc-icon--redo dc-icon--btn&quot;&gt;&lt;/i&gt;
+    &lt;span&gt;Redo&lt;/span&gt; &lt;i class=&quot;dc-icon dc-icon--redo dc-icon--btn dc-icon--btn--right&quot;&gt;&lt;/i&gt;
 &lt;/button&gt;
 
 
 &lt;br&gt;
 
 &lt;button class=&quot;dc-btn dc-btn--small&quot;&gt;
-	&lt;span&gt;Redo&lt;/span&gt; &lt;i class=&quot;dc-icon dc-icon--redo dc-icon--btn dc-icon--btn-small&quot;&gt;&lt;/i&gt;
+    &lt;span&gt;Redo&lt;/span&gt; &lt;i class=&quot;dc-icon dc-icon--redo dc-icon--btn dc-icon--btn-small dc-icon--btn--left&quot;&gt;&lt;/i&gt;
 &lt;/button&gt;
 
 &lt;button class=&quot;dc-btn dc-btn--destroy dc-btn--large&quot;&gt;
-	&lt;span&gt;Lock&lt;/span&gt; &lt;i class=&quot;dc-icon dc-icon--lock dc-icon--btn dc-icon--btn-large&quot;&gt;&lt;/i&gt;
+    &lt;span&gt;Lock&lt;/span&gt; &lt;i class=&quot;dc-icon dc-icon--lock dc-icon--btn dc-icon--btn-large dc-icon--btn--right&quot;&gt;&lt;/i&gt;
 &lt;/button&gt;</code></pre>
 </div>
 
@@ -321,12 +319,12 @@
 	<div class="dc-btn-group">
 	<button class="dc-btn dc-btn--large">1</button>
 	<button class="dc-btn dc-btn--large">
-		<i class="dc-icon dc-icon--check dc-icon--btn dc-icon--btn-large"></i>
-	</button>
+    <i class="dc-icon dc-icon--check dc-icon--btn dc-icon--btn-large"></i>
+  </button>
 	<button class="dc-btn dc-btn--large">2</button>
 	<button class="dc-btn dc-btn--large dc-btn--destroy">
-		<i class="dc-icon dc-icon--trash dc-icon--btn dc-icon--btn-large"></i>
-	</button>
+    <i class="dc-icon dc-icon--trash dc-icon--btn dc-icon--btn-large"></i>
+  </button>
 </div>
 
 <div class="dc-btn-group-row">
@@ -337,8 +335,8 @@
 	<div class="dc-btn-group">
 		<button class="dc-btn">Three</button>
 		<button class="dc-btn dc-btn--destroy">
-			<i class="dc-icon dc-icon--trash dc-icon--btn"></i>
-		</button>
+      <i class="dc-icon dc-icon--trash dc-icon--btn"></i>
+    </button>
 	</div>
 </div>
 </div>
@@ -346,12 +344,12 @@
 	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-btn-group&quot;&gt;
 	&lt;button class=&quot;dc-btn dc-btn--large&quot;&gt;1&lt;/button&gt;
 	&lt;button class=&quot;dc-btn dc-btn--large&quot;&gt;
-		&lt;i class=&quot;dc-icon dc-icon--check dc-icon--btn dc-icon--btn-large&quot;&gt;&lt;/i&gt;
-	&lt;/button&gt;
+    &lt;i class=&quot;dc-icon dc-icon--check dc-icon--btn dc-icon--btn-large&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
 	&lt;button class=&quot;dc-btn dc-btn--large&quot;&gt;2&lt;/button&gt;
 	&lt;button class=&quot;dc-btn dc-btn--large dc-btn--destroy&quot;&gt;
-		&lt;i class=&quot;dc-icon dc-icon--trash dc-icon--btn dc-icon--btn-large&quot;&gt;&lt;/i&gt;
-	&lt;/button&gt;
+    &lt;i class=&quot;dc-icon dc-icon--trash dc-icon--btn dc-icon--btn-large&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;dc-btn-group-row&quot;&gt;
@@ -362,8 +360,8 @@
 	&lt;div class=&quot;dc-btn-group&quot;&gt;
 		&lt;button class=&quot;dc-btn&quot;&gt;Three&lt;/button&gt;
 		&lt;button class=&quot;dc-btn dc-btn--destroy&quot;&gt;
-			&lt;i class=&quot;dc-icon dc-icon--trash dc-icon--btn&quot;&gt;&lt;/i&gt;
-		&lt;/button&gt;
+      &lt;i class=&quot;dc-icon dc-icon--trash dc-icon--btn&quot;&gt;&lt;/i&gt;
+    &lt;/button&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -395,9 +393,9 @@
 <div class="f-item-preview">
 	<div class="dc-btn-dropdown">
 	<button class="dc-btn dc-btn--primary" id="dropdown-example">
-		Dropdown
-		<span class="dc-btn-dropdown__arrow dc-btn-dropdown__arrow--down"></span>
-	</button>
+        Dropdown
+        <span class="dc-btn-dropdown__arrow dc-btn-dropdown__arrow--down"></span>
+    </button>
 	<ul class="dc-btn-dropdown__list dc-btn-dropdown__list--down" id="dropdown-example-list">
 		<li class="dc-btn-dropdown__item">The first option</li>
 		<li class="dc-btn-dropdown__item">The second option</li>
@@ -407,9 +405,9 @@
 
 <div class="dc-btn-dropdown">
 	<button class="dc-btn dc-btn--primary" id="dropup-example">
-		Dropup
-		<span class="dc-btn-dropdown__arrow dc-btn-dropdown__arrow--up"></span>
-	</button>
+      Dropup
+      <span class="dc-btn-dropdown__arrow dc-btn-dropdown__arrow--up"></span>
+    </button>
 	<ul class="dc-btn-dropdown__list dc-btn-dropdown__list--up" id="dropup-example-list">
 		<li class="dc-btn-dropdown__item">
 			<a href="#" class="dc-link">The first option</a>
@@ -430,9 +428,9 @@
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-btn-dropdown&quot;&gt;
 	&lt;button class=&quot;dc-btn dc-btn--primary&quot; id=&quot;dropdown-example&quot;&gt;
-		Dropdown
-		&lt;span class=&quot;dc-btn-dropdown__arrow dc-btn-dropdown__arrow--down&quot;&gt;&lt;/span&gt;
-	&lt;/button&gt;
+        Dropdown
+        &lt;span class=&quot;dc-btn-dropdown__arrow dc-btn-dropdown__arrow--down&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
 	&lt;ul class=&quot;dc-btn-dropdown__list dc-btn-dropdown__list--down&quot; id=&quot;dropdown-example-list&quot;&gt;
 		&lt;li class=&quot;dc-btn-dropdown__item&quot;&gt;The first option&lt;/li&gt;
 		&lt;li class=&quot;dc-btn-dropdown__item&quot;&gt;The second option&lt;/li&gt;
@@ -442,9 +440,9 @@
 
 &lt;div class=&quot;dc-btn-dropdown&quot;&gt;
 	&lt;button class=&quot;dc-btn dc-btn--primary&quot; id=&quot;dropup-example&quot;&gt;
-		Dropup
-		&lt;span class=&quot;dc-btn-dropdown__arrow dc-btn-dropdown__arrow--up&quot;&gt;&lt;/span&gt;
-	&lt;/button&gt;
+      Dropup
+      &lt;span class=&quot;dc-btn-dropdown__arrow dc-btn-dropdown__arrow--up&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
 	&lt;ul class=&quot;dc-btn-dropdown__list dc-btn-dropdown__list--up&quot; id=&quot;dropup-example-list&quot;&gt;
 		&lt;li class=&quot;dc-btn-dropdown__item&quot;&gt;
 			&lt;a href=&quot;#&quot; class=&quot;dc-link&quot;&gt;The first option&lt;/a&gt;
@@ -520,8 +518,8 @@
 <div class="dc-input-group">
 	<input class="dc-input-group__input dc-input" type="text" id="urlInput2" placeholder="e. g. brands.zalando.com" />
 	<button class="dc-input-group__btn dc-btn dc-btn--primary">
-		<i class="dc-icon dc-icon--search dc-icon--btn"></i>
-	</button>
+        <i class="dc-icon dc-icon--search dc-icon--btn"></i>
+    </button>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -557,8 +555,8 @@
 &lt;div class=&quot;dc-input-group&quot;&gt;
 	&lt;input class=&quot;dc-input-group__input dc-input&quot; type=&quot;text&quot; id=&quot;urlInput2&quot; placeholder=&quot;e. g. brands.zalando.com&quot; /&gt;
 	&lt;button class=&quot;dc-input-group__btn dc-btn dc-btn--primary&quot;&gt;
-		&lt;i class=&quot;dc-icon dc-icon--search dc-icon--btn&quot;&gt;&lt;/i&gt;
-	&lt;/button&gt;
+        &lt;i class=&quot;dc-icon dc-icon--search dc-icon--btn&quot;&gt;&lt;/i&gt;
+    &lt;/button&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -592,19 +590,19 @@
 <div class="dc-search-form">
 	<input class="dc-input dc-search-form__input" id="searchOnlyText" type="search" placeholder="Search...">
 	<button class="dc-btn dc-search-form__btn">
-		<svg class="dc-svg dc-icon--interactive" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-			<title>
-				Search
-			</title>
-			<g fill="none" fill-rule="evenodd">
-				<path fill="none" d="M0 0h36v36H0z" />
-				<g transform="translate(10 10)" stroke="#9B9B9B">
-					<path d="M10.75 10.75l4.95 4.95" stroke-linecap="round" />
-					<circle cx="6" cy="6" r="6" />
-				</g>
-			</g>
-		</svg>
-	</button>
+    <svg class="dc-svg dc-icon--interactive" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+        <title>
+            Search
+        </title>
+        <g fill="none" fill-rule="evenodd">
+            <path fill="none" d="M0 0h36v36H0z"/>
+            <g transform="translate(10 10)" stroke="#9B9B9B">
+                <path d="M10.75 10.75l4.95 4.95" stroke-linecap="round"/>
+                <circle cx="6" cy="6" r="6"/>
+            </g>
+        </g>
+    </svg>
+  </button>
 	<ul class="dc-list dc-suggest">
 		<li class="dc-suggest__item dc-link">
 			Esprit
@@ -635,19 +633,19 @@
 <div class="dc-search-form">
 	<input class="dc-input dc-search-form__input" id="searchWithImages" type="search" placeholder="Search...">
 	<button class="dc-btn dc-search-form__btn">
-		<svg class="dc-svg dc-icon--interactive" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-			<title>
-				Search
-			</title>
-			<g fill="none" fill-rule="evenodd">
-				<path fill="none" d="M0 0h36v36H0z" />
-				<g transform="translate(10 10)" stroke="#9B9B9B">
-					<path d="M10.75 10.75l4.95 4.95" stroke-linecap="round" />
-					<circle cx="6" cy="6" r="6" />
-				</g>
-			</g>
-		</svg>
-	</button>
+        <svg class="dc-svg dc-icon--interactive" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+            <title>
+                Search
+            </title>
+            <g fill="none" fill-rule="evenodd">
+                <path fill="none" d="M0 0h36v36H0z"/>
+                <g transform="translate(10 10)" stroke="#9B9B9B">
+                    <path d="M10.75 10.75l4.95 4.95" stroke-linecap="round"/>
+                    <circle cx="6" cy="6" r="6"/>
+                </g>
+            </g>
+        </svg>
+    </button>
 	<ul class="dc-list dc-suggest">
 		<li class="dc-suggest__item dc-link">
 			<div class="dc-suggest__item__img">
@@ -700,19 +698,19 @@
 &lt;div class=&quot;dc-search-form&quot;&gt;
 	&lt;input class=&quot;dc-input dc-search-form__input&quot; id=&quot;searchOnlyText&quot; type=&quot;search&quot; placeholder=&quot;Search...&quot;&gt;
 	&lt;button class=&quot;dc-btn dc-search-form__btn&quot;&gt;
-		&lt;svg class=&quot;dc-svg dc-icon--interactive&quot; width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 36 36&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-			&lt;title&gt;
-				Search
-			&lt;/title&gt;
-			&lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
-				&lt;path fill=&quot;none&quot; d=&quot;M0 0h36v36H0z&quot; /&gt;
-				&lt;g transform=&quot;translate(10 10)&quot; stroke=&quot;#9B9B9B&quot;&gt;
-					&lt;path d=&quot;M10.75 10.75l4.95 4.95&quot; stroke-linecap=&quot;round&quot; /&gt;
-					&lt;circle cx=&quot;6&quot; cy=&quot;6&quot; r=&quot;6&quot; /&gt;
-				&lt;/g&gt;
-			&lt;/g&gt;
-		&lt;/svg&gt;
-	&lt;/button&gt;
+    &lt;svg class=&quot;dc-svg dc-icon--interactive&quot; width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 36 36&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+        &lt;title&gt;
+            Search
+        &lt;/title&gt;
+        &lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
+            &lt;path fill=&quot;none&quot; d=&quot;M0 0h36v36H0z&quot;/&gt;
+            &lt;g transform=&quot;translate(10 10)&quot; stroke=&quot;#9B9B9B&quot;&gt;
+                &lt;path d=&quot;M10.75 10.75l4.95 4.95&quot; stroke-linecap=&quot;round&quot;/&gt;
+                &lt;circle cx=&quot;6&quot; cy=&quot;6&quot; r=&quot;6&quot;/&gt;
+            &lt;/g&gt;
+        &lt;/g&gt;
+    &lt;/svg&gt;
+  &lt;/button&gt;
 	&lt;ul class=&quot;dc-list dc-suggest&quot;&gt;
 		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
 			Esprit
@@ -743,19 +741,19 @@
 &lt;div class=&quot;dc-search-form&quot;&gt;
 	&lt;input class=&quot;dc-input dc-search-form__input&quot; id=&quot;searchWithImages&quot; type=&quot;search&quot; placeholder=&quot;Search...&quot;&gt;
 	&lt;button class=&quot;dc-btn dc-search-form__btn&quot;&gt;
-		&lt;svg class=&quot;dc-svg dc-icon--interactive&quot; width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 36 36&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
-			&lt;title&gt;
-				Search
-			&lt;/title&gt;
-			&lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
-				&lt;path fill=&quot;none&quot; d=&quot;M0 0h36v36H0z&quot; /&gt;
-				&lt;g transform=&quot;translate(10 10)&quot; stroke=&quot;#9B9B9B&quot;&gt;
-					&lt;path d=&quot;M10.75 10.75l4.95 4.95&quot; stroke-linecap=&quot;round&quot; /&gt;
-					&lt;circle cx=&quot;6&quot; cy=&quot;6&quot; r=&quot;6&quot; /&gt;
-				&lt;/g&gt;
-			&lt;/g&gt;
-		&lt;/svg&gt;
-	&lt;/button&gt;
+        &lt;svg class=&quot;dc-svg dc-icon--interactive&quot; width=&quot;36&quot; height=&quot;36&quot; viewBox=&quot;0 0 36 36&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+            &lt;title&gt;
+                Search
+            &lt;/title&gt;
+            &lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
+                &lt;path fill=&quot;none&quot; d=&quot;M0 0h36v36H0z&quot;/&gt;
+                &lt;g transform=&quot;translate(10 10)&quot; stroke=&quot;#9B9B9B&quot;&gt;
+                    &lt;path d=&quot;M10.75 10.75l4.95 4.95&quot; stroke-linecap=&quot;round&quot;/&gt;
+                    &lt;circle cx=&quot;6&quot; cy=&quot;6&quot; r=&quot;6&quot;/&gt;
+                &lt;/g&gt;
+            &lt;/g&gt;
+        &lt;/svg&gt;
+    &lt;/button&gt;
 	&lt;ul class=&quot;dc-list dc-suggest&quot;&gt;
 		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
 			&lt;div class=&quot;dc-suggest__item__img&quot;&gt;
@@ -826,8 +824,7 @@
 	<div class="dc-tooltip__triangle dc-tooltip__triangle--lb"></div>
 </div>
 
-<br>
-<br>
+<br><br>
 <h4 class="dc-h4">HAS TOOLTIP</h4>
 <button class="dc-btn dc-has-tooltip" data-dc-has-tooltip="Hi. I'm a tooltip.">This button has a tooltip</button>
 </div>
@@ -837,8 +834,7 @@
 	&lt;div class=&quot;dc-tooltip__triangle dc-tooltip__triangle--lb&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;br&gt;
-&lt;br&gt;
+&lt;br&gt;&lt;br&gt;
 &lt;h4 class=&quot;dc-h4&quot;&gt;HAS TOOLTIP&lt;/h4&gt;
 &lt;button class=&quot;dc-btn dc-has-tooltip&quot; data-dc-has-tooltip=&quot;Hi. I&#x27;m a tooltip.&quot;&gt;This button has a tooltip&lt;/button&gt;</code></pre>
 </div>

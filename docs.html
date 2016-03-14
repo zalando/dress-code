@@ -349,7 +349,7 @@ git push -u;
 <p>When the CI job pass with SUCCESS, merge or rebase the release branch on top of the master branch.</p>
 <pre><code>git checkout master;
 git pull;
-git rebase release/&lt;semver&gt;;
+git rebase release/&lt;semver&gt;; # or open a pull request to master
 </code></pre>
 <ol start="6">
 <li>Add a git tag, push the master branch and the new tag.</li>
@@ -358,30 +358,18 @@ git rebase release/&lt;semver&gt;;
 git push origin master;
 git push origin &lt;semver&gt;; # push the tag
 </code></pre>
-<ol start="7">
-<li>Sync the <code>bower</code> version.</li>
-</ol>
-<pre><code>npm run deploy:bower
-cd .tmp/.deploy-bower
-git tag -a &lt;semver&gt; -m &quot;&lt;semver&gt;&quot;;
-git push origin &lt;semver&gt;; # push the tag
-git checkout develop;
+<pre><code>7) Build and deploy demo [docs/demo](http://zalando.github.io/dress-code/) artifacts. 
+
+</code></pre>
+<p>npm run deploy:demo;</p>
+<pre><code>
+8) Keep in sync the develop branch.
+
+</code></pre>
+<p>git checkout develop;
 git rebase master;
-git push origin develop;
-git checkout master;
-</code></pre>
-<ol start="8">
-<li>Build and deploy <a href="http://zalando.github.io/dress-code/">docs/demo</a> artifacts.</li>
-</ol>
-<pre><code>npm run deploy:demo;
-</code></pre>
-<ol start="9">
-<li>Keep in sync the develop branch.</li>
-</ol>
-<pre><code>git checkout develop;
-git rebase master;
-git push origin develop;
-</code></pre>
+git push origin develop;</p>
+<pre><code></code></pre>
 
 </div>
 
