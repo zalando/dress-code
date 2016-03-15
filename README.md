@@ -14,14 +14,14 @@ The Dress Code is the official style guide and style framework for all Brand Sol
 
 ### Requirements
 
-* [modernizer](https://modernizr.com/) included in the ```<head>``` of your web page.
+* [modernizer](https://modernizr.com/) ~2.8.2 included in the ```<head>``` of your web page.
 
 ### Install
 
 #### with Bower
 
 ```
-bower install https://github.com/zalando/dress-code-bower.git --save
+bower install https://github.com/zalando/dress-code.git --save
 ```
 
 #### with Npm
@@ -48,27 +48,22 @@ npm install
 Include this in your ```<head>```:
 
 ```html
-<link href="bower_components/dress-code/css/dress-code.min.css" rel="stylesheet">
+<link href="bower_components/dress-code/dist/css/dress-code.min.css" rel="stylesheet">
 ```
-
-or if installed with **npm**:
-
-
-```html
-<link href="node_modules/dress-code/dist/css/dress-code.min.css" rel="stylesheet">
-```
-
 
 #### How to use dress-code SASS 
-
-> **At the moment we don't support ```npm@3```**
 
 You can compile the dress code by your own using a sass compiler.
 
 ```scss
+@import "node_modules/breakpoint-sass/stylesheets" // this a required dependency, load this before loading the dress-code
 @import "node_modules/dress-code/dist/sass/dress-code" // or bower_components/dress-code/sass/dress-code
 @include dc-everything; // output dc-* selectors
 ```
+
+> the dress-code rely on [breakpoint-sass](https://github.com/at-import/breakpoint) to manage media queries
+more easily, please be sure that the plugin/scss module is loaded before trying to compile the dress-code stuff. Thanks.
+
 
 ##### Compass notes
 
@@ -159,14 +154,6 @@ $ npm run deploy:demo
 
 Publish the demo as github-pages website @ https://zalando.github.io/dress-code
 
-
-**Deploy bower package:**
-
-```
-$ npm run deploy:bower
-```
-
-Publish the distribution version for bower @ https://github.com/zalando/dress-code-bower  
 
 ## License
 
