@@ -45,7 +45,7 @@ You can compile the dress code by your own using a sass compiler.
 
 ```scss
 @import "node_modules/breakpoint-sass/stylesheets/breakpoint" // this a required dependency, load this before loading the dress-code
-@import "node_modules/dress-code/dist/sass/dress-code" // or bower_components/dress-code/sass/dress-code
+@import "node_modules/dress-code/dist/sass/dress-code" // or bower_components/dress-code/dist/sass/dress-code
 @include dc-everything; // output dc-* selectors
 ```
 
