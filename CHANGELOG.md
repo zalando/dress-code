@@ -1,3 +1,11 @@
+<a name="1.2.1-alpha"></a>
+## [1.2.1-alpha](https://github.com/zalando/dress-code/compare/1.2.0-alpha...v1.2.1-alpha) (2016-03-16)
+
+### Features
+
+* **npm/bower:** publish bower and npm package. You should be able to install the package with ```npm install dress-code``` or ```bower install dress-code```
+
+
 <a name="1.2.0-alpha"></a>
 # [1.2.0-alpha](https://github.com/zalando/dress-code/compare/1.1.1-alpha...v1.2.0-alpha) (2016-03-14)
 

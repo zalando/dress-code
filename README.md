@@ -21,25 +21,13 @@ The Dress Code is the official style guide and style framework for all Brand Sol
 #### with Bower
 
 ```
-bower install https://github.com/zalando/dress-code.git --save
+bower install dress-code --save
 ```
 
 #### with Npm
 
-Add the dress-code as a dependency in your package.json
-
 ```
-{
-  "dependencies": {
-    "dress-code": "git+https://github.com/zalando/dress-code.git"
-  }  
-}
-```
-
-and run
-
-```
-npm install
+npm install dress-code --save
 ```
 
 ### Usage
@@ -56,13 +44,13 @@ Include this in your ```<head>```:
 You can compile the dress code by your own using a sass compiler.
 
 ```scss
-@import "node_modules/breakpoint-sass/stylesheets" // this a required dependency, load this before loading the dress-code
+@import "node_modules/breakpoint-sass/stylesheets/breakpoint" // this a required dependency, load this before loading the dress-code
 @import "node_modules/dress-code/dist/sass/dress-code" // or bower_components/dress-code/sass/dress-code
 @include dc-everything; // output dc-* selectors
 ```
 
 > the dress-code rely on [breakpoint-sass](https://github.com/at-import/breakpoint) to manage media queries
-more easily, please be sure that the plugin/scss module is loaded before trying to compile the dress-code stuff. Thanks.
+more easily, please be sure that the plugin/scss module is loaded before trying to compile the dress-code stuff. 
 
 
 ##### Compass notes
@@ -73,7 +61,7 @@ add_import_path "bower_components"
 ```
 Then you can import the dress-code like so: 
 ```scss
-@import "dress-code/sass/dress-code";
+@import "dress-code/dist/sass/dress-code";
 ```
 
 ## <a name="development"> Development & Contributing
@@ -157,4 +145,9 @@ Publish the demo as github-pages website @ https://zalando.github.io/dress-code
 
 ## License
 
+Copyright 2015 Zalando SE
+
 The Dress Code is released under the MIT license. See LICENSE for details.
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, 
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
