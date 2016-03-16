@@ -2,7 +2,7 @@
   "name": "dress-code",
   "version": "1.2.1-alpha",
   "homepage": "https://zalando.github.io/dress-code",
-  "description": "The Dress Code is the official style guide/UI toolkit for all Brand Solutions products.",
+  "description": "The Dress Code is the official style guide and style framework for all Brand Solutions products.",
   "main": "dist/sass/dress-code.scss",
   "moduleType": [],
   "authors": [
@@ -15,7 +15,11 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "docs",
+    "src",
+    "webpack.demo.config.js",
+    "gulpfile.js"
   ],
   "dependencies": {
     "compass-breakpoint": "breakpoint-sass#~2.6.1",

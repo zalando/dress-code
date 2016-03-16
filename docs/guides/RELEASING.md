@@ -22,7 +22,7 @@ npm run changelog
 ```
 
 4) Check the result and if needed adjust the output (```CHANGELOG.md```).
-When done commit the changes and push the release branch.
+When done, commit the changes and push the release branch.
 
 ```
 git add --all;
@@ -48,17 +48,23 @@ git push origin master;
 git push origin <semver>; # push the tag
 ```
 
-```
 7) Build and deploy demo [docs/demo](http://zalando.github.io/dress-code/) artifacts. 
 
 ```
 npm run deploy:demo;
 ```
 
-8) Keep in sync the develop branch.
+8) Publish on npm registry.
+
+```
+npm publish
+```
+
+9) Keep in sync the develop branch.
 
 ```
 git checkout develop;
-git rebase master;
+git rebase master; # or git merge
 git push origin develop;
 ```
+
