@@ -337,7 +337,7 @@ For more info, please take a look <a href="http://semver.org/">here</a>.</li>
 </code></pre>
 <ol start="4">
 <li>Check the result and if needed adjust the output (<code>CHANGELOG.md</code>).
-When done commit the changes and push the release branch.</li>
+When done, commit the changes and push the release branch.</li>
 </ol>
 <pre><code>git add --all;
 git commit -m &quot;chore(release): &lt;semver&gt;&quot;;
@@ -358,18 +358,23 @@ git rebase release/&lt;semver&gt;; # or open a pull request to master
 git push origin master;
 git push origin &lt;semver&gt;; # push the tag
 </code></pre>
-<pre><code>7) Build and deploy demo [docs/demo](http://zalando.github.io/dress-code/) artifacts. 
-
+<ol start="7">
+<li>Build and deploy demo <a href="http://zalando.github.io/dress-code/">docs/demo</a> artifacts.</li>
+</ol>
+<pre><code>npm run deploy:demo;
 </code></pre>
-<p>npm run deploy:demo;</p>
-<pre><code>
-8) Keep in sync the develop branch.
-
+<ol start="8">
+<li>Publish on npm registry.</li>
+</ol>
+<pre><code>npm publish
 </code></pre>
-<p>git checkout develop;
-git rebase master;
-git push origin develop;</p>
-<pre><code></code></pre>
+<ol start="9">
+<li>Keep in sync the develop branch.</li>
+</ol>
+<pre><code>git checkout develop;
+git rebase master; # or git merge
+git push origin develop;
+</code></pre>
 
 </div>
 
