@@ -1,3 +1,13 @@
+<a name="1.2.2-alpha"></a>
+## [1.2.2-alpha](https://github.com/zalando/dress-code/compare/1.2.1-alpha...v1.2.2-alpha) (2016-03-16)
+
+
+### Bug Fixes
+
+* **css-dist:** restore missing css dist ([af69f08](https://github.com/zalando/dress-code/commit/af69f08))
+
+
+
 <a name="1.2.1-alpha"></a>
 ## [1.2.1-alpha](https://github.com/zalando/dress-code/compare/1.2.0-alpha...v1.2.1-alpha) (2016-03-16)
 
