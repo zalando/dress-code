@@ -6,25 +6,176 @@
     font-weight: $dc-normal-font-weight;
 }
 
+@mixin _dc-table__td--when-huge-width {
+    padding: $dc-space50 $dc-space50 / 2;
+    line-height: 1.5;
+
+    &:first-child {
+        padding-left: $dc-space100 / 2;
+    }
+}
+
+@mixin _dc-table__tr--spacing-modifier($padding, $child-column-selector : ".dc-table__td") {
+    @include breakpoint($dc-huge-width) {
+        > #{$child-column-selector} {
+            padding-top: $padding + .1;
+            padding-bottom: $padding + .1;
+        }
+
+    }
+}
+
 @mixin dc-table {
     width: 100%;
     border-radius: 2px;
     background: $dc-white;
     text-align: left;
+
+    @include breakpoint(0 $dc-huge-width - .1) {
+        @include _dc-table-element--is-block;
+    }
+}
+
+@mixin dc-table__thead($child-row-selector : ".dc-table__tr") {
+    @include breakpoint(0 $dc-huge-width - .1) {
+        @include _dc-table-element--is-block;
+
+        > #{$child-row-selector} {
+            display: none;
+        }
+    }
 }
 
 @mixin dc-table__th {
     font-weight: $dc-bold-font-weight;
     text-transform: uppercase;
+
+    @include breakpoint(0 $dc-huge-width - .1) {
+        @include _dc-table-element--is-block;
+    }
+
+    @include breakpoint($dc-huge-width) {
+        @include _dc-table__td--when-huge-width;
+    }
+}
+
+@mixin dc-table__tbody($child-row-selector : ".dc-table__tr") {
+    @include breakpoint(0 $dc-huge-width - .1) {
+        @include _dc-table-element--is-block;
+    }
 }
 
 @mixin dc-table__tr {
     @include dc-cf;
+    cursor: default;
+
+    @include breakpoint(0 $dc-huge-width - .1) {
+        @include _dc-table-element--is-block;
+
+        position: relative;
+        padding: $dc-space100 0;
+        border-bottom: 1px solid $dc-gray70;
+
+        &:last-child {
+            border-bottom: 0 none;
+        }
+    }
+
+    @include breakpoint($dc-huge-width) {
+        border-bottom: 1px solid $dc-gray70;
+    }
+}
+
+@mixin dc-table__tr--interactive {
     cursor: pointer;
+
+    @include breakpoint(0 $dc-large-width - .1) {
+        &:after {
+            position: absolute;
+            top: 50%;
+            right: -.6rem;
+            width: 3.6rem;
+            height: 3.6rem;
+            margin-top: -1.8rem;
+            background-image: url("#{$dc-image-path}/i-arrow-right.min.svg");
+            content: " ";
+        }
+    }
+
+    @include breakpoint($dc-huge-width) {
+        &:hover {
+            background: $dc-blue70;
+        }
+    }
+}
+
+@mixin dc-table__tr--tight {
+    @include _dc-table__tr--spacing-modifier($dc-space50);
+}
+
+@mixin dc-table__tr--comfortable {
+    @include _dc-table__tr--spacing-modifier($dc-space100);
+}
+
+@mixin dc-table__tr--spacious {
+    @include _dc-table__tr--spacing-modifier($dc-space125);
 }
 
 @mixin dc-table__td {
     font-weight: $dc-normal-font-weight;
+
+    @include breakpoint(0 $dc-huge-width - .1) {
+        @include _dc-table-element--is-block;
+
+        padding-left: calc(30% + 12px);
+        text-align: left;
+
+        &:before {
+            display: block;
+            position: absolute;
+            right: 70%;
+            left: 0;
+            font-size: $dc-font50;
+            font-weight: $dc-bold-font-weight;
+            line-height: 2.6rem;
+            text-align: right;
+            text-transform: uppercase;
+            content: attr(data-col);
+        }
+    }
+
+    @include breakpoint($dc-large-width $dc-huge-width - .1) {
+        position: relative;
+        width: 50%;
+        padding-left: calc(16% + 12px);
+        float: left;
+
+        &:before {
+            right: 69%;
+        }
+
+        &:nth-child(2) {
+            clear: left;
+        }
+
+        &:first-child {
+            width: 100%;
+            margin-bottom: $dc-space50;
+
+            &:before {
+                right: 84.5%;
+            }
+        }
+    }
+
+    @include breakpoint($dc-huge-width) {
+        @include _dc-table__td--when-huge-width;
+
+        // the added pixels are there to make the rows heights all be multiples of 4
+        padding-top: $dc-space75 + .1;
+        padding-bottom: $dc-space75 + .1;
+        white-space: nowrap;
+    }
 }
 
 @mixin dc-table__item-title {
@@ -36,15 +187,17 @@
 }
 
 @mixin dc-table-selectors {
-    //  ---------------------------------------------------------------------------
-    //
-    //  Defines all table styles
-    //
-    //  ---------------------------------------------------------------------------
-
 
     .dc-table {
         @include dc-table;
+    }
+
+    .dc-table__tbody {
+        @include dc-table__tbody;
+    }
+
+    .dc-table__thead {
+        @include dc-table__thead;
     }
 
     .dc-table__item-title {
@@ -59,6 +212,22 @@
         @include dc-table__tr;
     }
 
+    .dc-table__tr--tight {
+        @include dc-table__tr--tight;
+    }
+
+    .dc-table__tr--comfortable {
+        @include dc-table__tr--comfortable;
+    }
+
+    .dc-table__tr--spacious {
+        @include dc-table__tr--spacious;
+    }
+
+    .dc-table__tr--interactive {
+        @include dc-table__tr--interactive;
+    }
+
     .dc-table__td {
         @include dc-table__td;
     }
@@ -66,153 +235,5 @@
     .dc-table__actions-wrapper {
         @include dc-table__actions-wrapper;
     }
-
-    //
-    // Mediaqueries
-    //
-    @include breakpoint(0 $dc-huge-width - .1) {
-        .dc-table,
-        .dc-table__thead,
-        .dc-table__tbody,
-        .dc-table__tr,
-        .dc-table__th,
-        .dc-table__td {
-            @include _dc-table-element--is-block;
-        }
-
-        .dc-table__thead > tr {
-            display: none;
-        }
-
-        .dc-table__tr {
-            position: relative;
-            padding: $dc-space100 0;
-            border-bottom: 1px solid $dc-gray70;
-
-            &:last-child {
-                border-bottom: 0 none;
-            }
-        }
-
-        .dc-table__td {
-            padding-left: calc(30% + 12px);
-            text-align: left;
-
-            &:before {
-                display: block;
-                position: absolute;
-                right: 70%;
-                left: 0;
-                font-size: $dc-font50;
-                font-weight: $dc-bold-font-weight;
-                line-height: 2.6;
-                text-align: right;
-                text-transform: uppercase;
-                content: attr(data-col);
-            }
-
-        }
-
-    }
-
-    @include breakpoint($dc-large-width $dc-huge-width - .1) {
-        .dc-table__td {
-            position: relative;
-            width: 50%;
-            padding-left: calc(16% + 12px);
-            float: left;
-
-            &:before {
-                right: 69%;
-            }
-
-            &:nth-child(2) {
-                clear: left;
-            }
-
-            &:first-child {
-                width: 100%;
-                margin-bottom: $dc-space50;
-
-                &:before {
-                    right: 84.5%;
-                }
-            }
-        }
-    }
-
-    @include breakpoint($dc-huge-width) {
-        .dc-table__tr {
-            border-bottom: 1px solid $dc-gray70;
-        }
-
-        .dc-table__tbody > .table__tr {
-            &:hover {
-                background: desaturate(lighten($dc-blue70, 12%), 10%);
-            }
-        }
-
-        .dc-table__th,
-        .dc-table__td {
-            padding: $dc-space50 $dc-space50 / 2;
-            line-height: 1.5;
-
-            @include breakpoint(1150px) {
-                padding: 0 $dc-space100;
-            }
-
-            &:first-child {
-                padding-left: $dc-space100 / 2;
-            }
-        }
-
-        .dc-table__th {
-            @include breakpoint(1150px) {
-                padding: $dc-space50 $dc-space100;
-            }
-        }
-
-        .dc-table__td {
-            // the added pixels are there to make the rows heights all be multiples of 4
-            padding-top: $dc-space75 + .1;
-            padding-bottom: $dc-space75 + .1;
-            white-space: nowrap;
-
-            .dc-table--tight & {
-                padding-top: $dc-space50 + .1;
-                padding-bottom: $dc-space50 + .1;
-            }
-
-            .dc-table--comfortable & {
-                padding-top: $dc-space100 - .1;
-                padding-bottom: $dc-space100 - .1;
-            }
-
-            .dc-table--spacious & {
-                padding-top: $dc-space125 + .1;
-                padding-bottom: $dc-space125 + .1;
-            }
-
-        }
-
-    }
-
-    // FIXME - broken in current stable version
-    //.touch .dc-table__tr {
-    //    // FIXME
-    //    // Currently using dataURL base64 to avoid dealing with the image URL. We have to fix it
-    //    position: relative;
-    //
-    //    &:after {
-    //        position: absolute;
-    //        top: 50%;
-    //        right: -12px;
-    //        width: 3.6rem;
-    //        height: 3.6rem;
-    //        margin-top: -1.8rem;
-    //        background-image: url(data:text/html;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDx0aXRsZT4KICAgICAgICBBcnJvdyBSaWdodAogICAgPC90aXRsZT4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgzNnYzNkgweiIvPgogICAgICAgIDxwYXRoIGQ9Ik0xNi41IDEwLjcyM2w1LjExIDcuNzc3LTUuMTEgNy43NzciIHN0cm9rZT0iIzk3OTc5NyIvPgogICAgPC9nPgo8L3N2Zz4K);
-    //        content: " ";
-    //    }
-    //}
 }
 

@@ -148,7 +148,7 @@ gulp.task('demo:scripts', function (done) {
 gulp.task('demo:images', ['demo:favicon'], function () {
     return gulp.src(config.src.images)
         .pipe(imagemin())
-        .pipe(gulp.dest(path.join(config.tmp.demo, '/assets/toolkit/img')));
+        .pipe(gulp.dest(path.join(config.tmp.demo, '/assets/fabricator/img')));
 });
 
 // Generate the font by using what is found in the src/icons folder

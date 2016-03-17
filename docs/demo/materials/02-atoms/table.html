@@ -2,7 +2,8 @@
 name: Table
 title: Table
 notes: |
-    Use `dc-table` to style tables. Use the varians `dc-table--tight`, `dc-table--comfortable` and `dc-table--spacious` for additional padding options.
+    Use `dc-table__tr--interactive` modifier if the row is "clickable".
+    Use the `dc-table__tr--tight`, `dc-table__tr--comfortable` and `dc-table__tr--spacious` modifiers to adjust spacing between rows.
 ---
 <table class="dc-table">
 	<thead class="dc-table__thead">
@@ -19,40 +20,40 @@ notes: |
 			<td class="dc-table__td" data-col="First Name">Eileen</td>
 			<td class="dc-table__td" data-col="Last Name">Holland</td>
 			<td class="dc-table__td" data-col="Email">eileen.holland42@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap status--active">Active</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
 			<td class="dc-table__td" data-col="First Name">Duane</td>
 			<td class="dc-table__td" data-col="Last Name">Holmes</td>
 			<td class="dc-table__td" data-col="Email">duane.holmes21@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--active">Active</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
 			<td class="dc-table__td" data-col="First Name">Kitty</td>
 			<td class="dc-table__td" data-col="Last Name">Murray</td>
 			<td class="dc-table__td" data-col="Email">kitty.murray88@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--new" status="New">New</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
 			<td class="dc-table__td" data-col="First Name">Austin</td>
 			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
 			<td class="dc-table__td" data-col="Email">austin.carpenter87@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap status--new" status="New">New</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
 			<td class="dc-table__td" data-col="First Name">Toni</td>
 			<td class="dc-table__td" data-col="Last Name">Nichols</td>
 			<td class="dc-table__td" data-col="Email">toni.nichols83@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--active">Active</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--error">Error</span></td>
 		</tr>
 	</tbody>
 </table>
 
-<table class="dc-table dc-table--tight">
+<table class="dc-table">
 	<thead class="dc-table__thead">
 		<tr class="dc-table__tr">
 			<th class="dc-table__th" data-col="First Name">First Name</th>
@@ -63,45 +64,45 @@ notes: |
 	</thead>
 
 	<tbody class="dc-table__tbody">
-		<tr class="dc-table__tr">
+		<tr class="dc-table__tr dc-table__tr--tight dc-table__tr--interactive">
 			<td class="dc-table__td" data-col="First Name">Eileen</td>
 			<td class="dc-table__td" data-col="Last Name">Holland</td>
 			<td class="dc-table__td" data-col="Email">eileen.holland42@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap status--active">Active</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
-		<tr class="dc-table__tr">
+		<tr class="dc-table__tr dc-table__tr--tight dc-table__tr--interactive">
 			<td class="dc-table__td" data-col="First Name">Duane</td>
 			<td class="dc-table__td" data-col="Last Name">Holmes</td>
 			<td class="dc-table__td" data-col="Email">duane.holmes21@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--active">Active</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
-		<tr class="dc-table__tr">
+		<tr class="dc-table__tr dc-table__tr--tight dc-table__tr--interactive">
 			<td class="dc-table__td" data-col="First Name">Kitty</td>
 			<td class="dc-table__td" data-col="Last Name">Murray</td>
 			<td class="dc-table__td" data-col="Email">kitty.murray88@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--new" status="New">New</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
 		</tr>
 
-		<tr class="dc-table__tr">
+		<tr class="dc-table__tr dc-table__tr--tight dc-table__tr--interactive">
 			<td class="dc-table__td" data-col="First Name">Austin</td>
 			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
 			<td class="dc-table__td" data-col="Email">austin.carpenter87@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap status--new" status="New">New</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
 		</tr>
 
-		<tr class="dc-table__tr">
+		<tr class="dc-table__tr dc-table__tr--tight dc-table__tr--interactive">
 			<td class="dc-table__td" data-col="First Name">Toni</td>
 			<td class="dc-table__td" data-col="Last Name">Nichols</td>
 			<td class="dc-table__td" data-col="Email">toni.nichols83@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--active">Active</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 	</tbody>
 </table>
 
 
-<table class="dc-table dc-table--comfortable">
+<table class="dc-table">
 	<thead class="dc-table__thead">
 		<tr class="dc-table__tr">
 			<th class="dc-table__th">First Name</th>
@@ -112,45 +113,45 @@ notes: |
 	</thead>
 
 	<tbody class="dc-table__tbody">
-		<tr class="dc-table__tr">
+		<tr class="dc-table__tr dc-table__tr--comfortable">
 			<td class="dc-table__td" data-col="First Name">Eileen</td>
 			<td class="dc-table__td" data-col="Last Name">Holland</td>
 			<td class="dc-table__td" data-col="Email">eileen.holland42@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap status--active">Active</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
-		<tr class="dc-table__tr">
+		<tr class="dc-table__tr dc-table__tr--comfortable">
 			<td class="dc-table__td" data-col="First Name">Duane</td>
 			<td class="dc-table__td" data-col="Last Name">Holmes</td>
 			<td class="dc-table__td" data-col="Email">duane.holmes21@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--active">Active</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
-		<tr class="dc-table__tr">
+		<tr class="dc-table__tr dc-table__tr--comfortable">
 			<td class="dc-table__td" data-col="First Name">Kitty</td>
 			<td class="dc-table__td" data-col="Last Name">Murray</td>
 			<td class="dc-table__td" data-col="Email">kitty.murray88@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--new" status="New">New</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
 		</tr>
 
-		<tr class="dc-table__tr">
+		<tr class="dc-table__tr dc-table__tr--comfortable">
 			<td class="dc-table__td" data-col="First Name">Austin</td>
 			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
 			<td class="dc-table__td" data-col="Email">austin.carpenter87@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap status--new" status="New">New</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
 		</tr>
 
-		<tr class="dc-table__tr">
+		<tr class="dc-table__tr dc-table__tr--comfortable">
 			<td class="dc-table__td" data-col="First Name">Toni</td>
 			<td class="dc-table__td" data-col="Last Name">Nichols</td>
 			<td class="dc-table__td" data-col="Email">toni.nichols83@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--active">Active</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 	</tbody>
 </table>
 
 
-<table class="dc-table dc-table--spacious">
+<table class="dc-table">
 	<thead class="dc-table__thead">
 		<tr class="dc-table__tr">
 			<th class="dc-table__th">First Name</th>
@@ -161,39 +162,39 @@ notes: |
 	</thead>
 
 	<tbody class="dc-table__tbody">
-		<tr class="dc-table__tr">
+		<tr class="dc-table__tr dc-table__tr--spacious dc-table__tr--interactive">
 			<td class="dc-table__td" data-col="First Name">Eileen</td>
 			<td class="dc-table__td" data-col="Last Name">Holland</td>
 			<td class="dc-table__td" data-col="Email">eileen.holland42@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap status--active">Active</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
-		<tr class="dc-table__tr">
+		<tr class="dc-table__tr dc-table__tr--spacious dc-table__tr--interactive">
 			<td class="dc-table__td" data-col="First Name">Duane</td>
 			<td class="dc-table__td" data-col="Last Name">Holmes</td>
 			<td class="dc-table__td" data-col="Email">duane.holmes21@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--active">Active</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
-		<tr class="dc-table__tr">
+		<tr class="dc-table__tr dc-table__tr--spacious dc-table__tr--interactive">
 			<td class="dc-table__td" data-col="First Name">Kitty</td>
 			<td class="dc-table__td" data-col="Last Name">Murray</td>
 			<td class="dc-table__td" data-col="Email">kitty.murray88@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--new" status="New">New</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
 		</tr>
 
-		<tr class="dc-table__tr">
+		<tr class="dc-table__tr dc-table__tr--spacious dc-table__tr--interactive">
 			<td class="dc-table__td" data-col="First Name">Austin</td>
 			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
 			<td class="dc-table__td" data-col="Email">austin.carpenter87@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap status--new" status="New">New</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
 		</tr>
 
-		<tr class="dc-table__tr">
+		<tr class="dc-table__tr dc-table__tr--spacious dc-table__tr--interactive">
 			<td class="dc-table__td" data-col="First Name">Toni</td>
 			<td class="dc-table__td" data-col="Last Name">Nichols</td>
 			<td class="dc-table__td" data-col="Email">toni.nichols83@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--active">Active</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--error">Error</span></td>
 		</tr>
 	</tbody>
 </table>
