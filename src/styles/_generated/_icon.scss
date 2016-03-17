@@ -43,59 +43,62 @@
     @if $filename == cog {
     $char: "\E006";
 }
-    @if $filename == error {
+    @if $filename == eye {
     $char: "\E007";
 }
-    @if $filename == eye {
+    @if $filename == help {
     $char: "\E008";
 }
-    @if $filename == help {
+    @if $filename == history {
     $char: "\E009";
 }
-    @if $filename == history {
+    @if $filename == info {
     $char: "\E00A";
 }
-    @if $filename == info-large {
+    @if $filename == lock {
     $char: "\E00B";
 }
-    @if $filename == info {
+    @if $filename == menu {
     $char: "\E00C";
 }
-    @if $filename == lock {
+    @if $filename == more {
     $char: "\E00D";
 }
-    @if $filename == menu {
+    @if $filename == msg-error {
     $char: "\E00E";
 }
-    @if $filename == more {
+    @if $filename == msg-info {
     $char: "\E00F";
 }
-    @if $filename == pencil {
+    @if $filename == msg-neutral {
     $char: "\E010";
 }
-    @if $filename == play {
+    @if $filename == msg-success {
     $char: "\E011";
 }
-    @if $filename == redo {
+    @if $filename == msg-warning {
     $char: "\E012";
 }
-    @if $filename == search {
+    @if $filename == pencil {
     $char: "\E013";
 }
-    @if $filename == success {
+    @if $filename == play {
     $char: "\E014";
 }
-    @if $filename == trash {
+    @if $filename == redo {
     $char: "\E015";
 }
-    @if $filename == undo {
+    @if $filename == search {
     $char: "\E016";
 }
-    @if $filename == user {
+    @if $filename == trash {
     $char: "\E017";
 }
-    @if $filename == warning {
+    @if $filename == undo {
     $char: "\E018";
+}
+    @if $filename == user {
+    $char: "\E019";
 }
 
 @return $char;
@@ -132,11 +135,6 @@
         content: dc-icon-char(cog);
     }
 }
-@mixin dc-icon--error {
-    &:before {
-        content: dc-icon-char(error);
-    }
-}
 @mixin dc-icon--eye {
     &:before {
         content: dc-icon-char(eye);
@@ -150,11 +148,6 @@
 @mixin dc-icon--history {
     &:before {
         content: dc-icon-char(history);
-    }
-}
-@mixin dc-icon--info-large {
-    &:before {
-        content: dc-icon-char(info-large);
     }
 }
 @mixin dc-icon--info {
@@ -177,6 +170,31 @@
         content: dc-icon-char(more);
     }
 }
+@mixin dc-icon--msg-error {
+    &:before {
+        content: dc-icon-char(msg-error);
+    }
+}
+@mixin dc-icon--msg-info {
+    &:before {
+        content: dc-icon-char(msg-info);
+    }
+}
+@mixin dc-icon--msg-neutral {
+    &:before {
+        content: dc-icon-char(msg-neutral);
+    }
+}
+@mixin dc-icon--msg-success {
+    &:before {
+        content: dc-icon-char(msg-success);
+    }
+}
+@mixin dc-icon--msg-warning {
+    &:before {
+        content: dc-icon-char(msg-warning);
+    }
+}
 @mixin dc-icon--pencil {
     &:before {
         content: dc-icon-char(pencil);
@@ -197,11 +215,6 @@
         content: dc-icon-char(search);
     }
 }
-@mixin dc-icon--success {
-    &:before {
-        content: dc-icon-char(success);
-    }
-}
 @mixin dc-icon--trash {
     &:before {
         content: dc-icon-char(trash);
@@ -215,11 +228,6 @@
 @mixin dc-icon--user {
     &:before {
         content: dc-icon-char(user);
-    }
-}
-@mixin dc-icon--warning {
-    &:before {
-        content: dc-icon-char(warning);
     }
 }
 
@@ -264,10 +272,6 @@
         @include dc-icon--cog;
     }
 
-    .dc-icon--error {
-        @include dc-icon--error;
-    }
-
     .dc-icon--eye {
         @include dc-icon--eye;
     }
@@ -278,10 +282,6 @@
 
     .dc-icon--history {
         @include dc-icon--history;
-    }
-
-    .dc-icon--info-large {
-        @include dc-icon--info-large;
     }
 
     .dc-icon--info {
@@ -300,6 +300,26 @@
         @include dc-icon--more;
     }
 
+    .dc-icon--msg-error {
+        @include dc-icon--msg-error;
+    }
+
+    .dc-icon--msg-info {
+        @include dc-icon--msg-info;
+    }
+
+    .dc-icon--msg-neutral {
+        @include dc-icon--msg-neutral;
+    }
+
+    .dc-icon--msg-success {
+        @include dc-icon--msg-success;
+    }
+
+    .dc-icon--msg-warning {
+        @include dc-icon--msg-warning;
+    }
+
     .dc-icon--pencil {
         @include dc-icon--pencil;
     }
@@ -316,10 +336,6 @@
         @include dc-icon--search;
     }
 
-    .dc-icon--success {
-        @include dc-icon--success;
-    }
-
     .dc-icon--trash {
         @include dc-icon--trash;
     }
@@ -330,10 +346,6 @@
 
     .dc-icon--user {
         @include dc-icon--user;
-    }
-
-    .dc-icon--warning {
-        @include dc-icon--warning;
     }
 
     
