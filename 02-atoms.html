@@ -19,7 +19,7 @@
 </head>
 <body class="dc-body dc-body--demo-breakpoints">
 		<header class="f-header">
-			<img class="f-logo" src="assets/toolkit/img/logo.svg" alt="Zalando Logo">
+			<img class="f-logo" src="/dress-code/assets/fabricator/img/logo.svg" alt="Zalando Logo">
 			<!-- <div class="f-control-bar"> -->
 				<div class="f-control f-menu-toggle">
 					<svg class="dc-svg">
@@ -521,11 +521,10 @@
 	<i class="dc-icon dc-icon--play dc-icon--interactive"><span>play</span></i>
 	<i class="dc-icon dc-icon--search dc-icon--interactive"><span>search</span></i>
 	<i class="dc-icon dc-icon--trash dc-icon--interactive"><span>trash</span></i>
-	<i class="dc-icon dc-icon--msg-error dc-icon--interactive"><span>msg-error</span></i>
-	<i class="dc-icon dc-icon--msg-info dc-icon--interactive"><span>msg-info</span></i>
-	<i class="dc-icon dc-icon--msg-neutral dc-icon--interactive"><span>msg-neutral</span></i>
-	<i class="dc-icon dc-icon--msg-success dc-icon--interactive"><span>msg-success</span></i>
-	<i class="dc-icon dc-icon--msg-warning dc-icon--interactive"><span>msg-warning</span></i>
+	<i class="dc-icon dc-icon--error dc-icon--interactive"><span>error</span></i>
+	<i class="dc-icon dc-icon--info-large dc-icon--interactive"><span>info-large</span></i>
+	<i class="dc-icon dc-icon--success dc-icon--interactive"><span>success</span></i>
+	<i class="dc-icon dc-icon--warning dc-icon--interactive"><span>warning</span></i>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -549,11 +548,10 @@
 	&lt;i class=&quot;dc-icon dc-icon--play dc-icon--interactive&quot;&gt;&lt;span&gt;play&lt;/span&gt;&lt;/i&gt;
 	&lt;i class=&quot;dc-icon dc-icon--search dc-icon--interactive&quot;&gt;&lt;span&gt;search&lt;/span&gt;&lt;/i&gt;
 	&lt;i class=&quot;dc-icon dc-icon--trash dc-icon--interactive&quot;&gt;&lt;span&gt;trash&lt;/span&gt;&lt;/i&gt;
-	&lt;i class=&quot;dc-icon dc-icon--msg-error dc-icon--interactive&quot;&gt;&lt;span&gt;msg-error&lt;/span&gt;&lt;/i&gt;
-	&lt;i class=&quot;dc-icon dc-icon--msg-info dc-icon--interactive&quot;&gt;&lt;span&gt;msg-info&lt;/span&gt;&lt;/i&gt;
-	&lt;i class=&quot;dc-icon dc-icon--msg-neutral dc-icon--interactive&quot;&gt;&lt;span&gt;msg-neutral&lt;/span&gt;&lt;/i&gt;
-	&lt;i class=&quot;dc-icon dc-icon--msg-success dc-icon--interactive&quot;&gt;&lt;span&gt;msg-success&lt;/span&gt;&lt;/i&gt;
-	&lt;i class=&quot;dc-icon dc-icon--msg-warning dc-icon--interactive&quot;&gt;&lt;span&gt;msg-warning&lt;/span&gt;&lt;/i&gt;
+	&lt;i class=&quot;dc-icon dc-icon--error dc-icon--interactive&quot;&gt;&lt;span&gt;error&lt;/span&gt;&lt;/i&gt;
+	&lt;i class=&quot;dc-icon dc-icon--info-large dc-icon--interactive&quot;&gt;&lt;span&gt;info-large&lt;/span&gt;&lt;/i&gt;
+	&lt;i class=&quot;dc-icon dc-icon--success dc-icon--interactive&quot;&gt;&lt;span&gt;success&lt;/span&gt;&lt;/i&gt;
+	&lt;i class=&quot;dc-icon dc-icon--warning dc-icon--interactive&quot;&gt;&lt;span&gt;warning&lt;/span&gt;&lt;/i&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -927,7 +925,7 @@
 		</div>
 		<h2 class="dc-h2 f-item-heading">Table</h2>
 	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Use <code>dc-table</code> to style tables. Use the varians <code>dc-table--tight</code>, <code>dc-table--comfortable</code> and <code>dc-table--spacious</code> for additional padding options.</p>
+	<p>Use the <code>dc-table__td--tight</code>, <code>dc-table__td--comfortable</code> and <code>dc-table__td--spacious</code> modifiers to adjust spacing between rows.</p>
 
 </div>
 <div class="f-item-preview">
@@ -946,40 +944,40 @@
 			<td class="dc-table__td" data-col="First Name">Eileen</td>
 			<td class="dc-table__td" data-col="Last Name">Holland</td>
 			<td class="dc-table__td" data-col="Email">eileen.holland42@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap status--active">Active</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
 			<td class="dc-table__td" data-col="First Name">Duane</td>
 			<td class="dc-table__td" data-col="Last Name">Holmes</td>
 			<td class="dc-table__td" data-col="Email">duane.holmes21@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--active">Active</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
 			<td class="dc-table__td" data-col="First Name">Kitty</td>
 			<td class="dc-table__td" data-col="Last Name">Murray</td>
 			<td class="dc-table__td" data-col="Email">kitty.murray88@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--new" status="New">New</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
 			<td class="dc-table__td" data-col="First Name">Austin</td>
 			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
 			<td class="dc-table__td" data-col="Email">austin.carpenter87@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap status--new" status="New">New</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
 			<td class="dc-table__td" data-col="First Name">Toni</td>
 			<td class="dc-table__td" data-col="Last Name">Nichols</td>
 			<td class="dc-table__td" data-col="Email">toni.nichols83@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--active">Active</span></td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--error">Error</span></td>
 		</tr>
 	</tbody>
 </table>
 
-<table class="dc-table dc-table--tight">
+<table class="dc-table">
 	<thead class="dc-table__thead">
 		<tr class="dc-table__tr">
 			<th class="dc-table__th" data-col="First Name">First Name</th>
@@ -991,44 +989,44 @@
 
 	<tbody class="dc-table__tbody">
 		<tr class="dc-table__tr">
-			<td class="dc-table__td" data-col="First Name">Eileen</td>
-			<td class="dc-table__td" data-col="Last Name">Holland</td>
-			<td class="dc-table__td" data-col="Email">eileen.holland42@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap status--active">Active</span></td>
+			<td class="dc-table__td dc-table__td--tight" data-col="First Name">Eileen</td>
+			<td class="dc-table__td dc-table__td--tight" data-col="Last Name">Holland</td>
+			<td class="dc-table__td dc-table__td--tight" data-col="Email">eileen.holland42@example.com</td>
+			<td class="dc-table__td dc-table__td--tight" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
-			<td class="dc-table__td" data-col="First Name">Duane</td>
-			<td class="dc-table__td" data-col="Last Name">Holmes</td>
-			<td class="dc-table__td" data-col="Email">duane.holmes21@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--active">Active</span></td>
+			<td class="dc-table__td dc-table__td--tight" data-col="First Name">Duane</td>
+			<td class="dc-table__td dc-table__td--tight" data-col="Last Name">Holmes</td>
+			<td class="dc-table__td dc-table__td--tight" data-col="Email">duane.holmes21@example.com</td>
+			<td class="dc-table__td dc-table__td--tight" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
-			<td class="dc-table__td" data-col="First Name">Kitty</td>
-			<td class="dc-table__td" data-col="Last Name">Murray</td>
-			<td class="dc-table__td" data-col="Email">kitty.murray88@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--new" status="New">New</span></td>
+			<td class="dc-table__td dc-table__td--tight" data-col="First Name">Kitty</td>
+			<td class="dc-table__td dc-table__td--tight" data-col="Last Name">Murray</td>
+			<td class="dc-table__td dc-table__td--tight" data-col="Email">kitty.murray88@example.com</td>
+			<td class="dc-table__td dc-table__td--tight" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
-			<td class="dc-table__td" data-col="First Name">Austin</td>
-			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
-			<td class="dc-table__td" data-col="Email">austin.carpenter87@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap status--new" status="New">New</span></td>
+			<td class="dc-table__td dc-table__td--tight" data-col="First Name">Austin</td>
+			<td class="dc-table__td dc-table__td--tight" data-col="Last Name">Carpenter</td>
+			<td class="dc-table__td dc-table__td--tight" data-col="Email">austin.carpenter87@example.com</td>
+			<td class="dc-table__td dc-table__td--tight" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
-			<td class="dc-table__td" data-col="First Name">Toni</td>
-			<td class="dc-table__td" data-col="Last Name">Nichols</td>
-			<td class="dc-table__td" data-col="Email">toni.nichols83@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--active">Active</span></td>
+			<td class="dc-table__td dc-table__td--tight" data-col="First Name">Toni</td>
+			<td class="dc-table__td dc-table__td--tight" data-col="Last Name">Nichols</td>
+			<td class="dc-table__td dc-table__td--tight" data-col="Email">toni.nichols83@example.com</td>
+			<td class="dc-table__td dc-table__td--tight" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 	</tbody>
 </table>
 
 
-<table class="dc-table dc-table--comfortable">
+<table class="dc-table">
 	<thead class="dc-table__thead">
 		<tr class="dc-table__tr">
 			<th class="dc-table__th">First Name</th>
@@ -1040,44 +1038,44 @@
 
 	<tbody class="dc-table__tbody">
 		<tr class="dc-table__tr">
-			<td class="dc-table__td" data-col="First Name">Eileen</td>
-			<td class="dc-table__td" data-col="Last Name">Holland</td>
-			<td class="dc-table__td" data-col="Email">eileen.holland42@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap status--active">Active</span></td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="First Name">Eileen</td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="Last Name">Holland</td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="Email">eileen.holland42@example.com</td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
-			<td class="dc-table__td" data-col="First Name">Duane</td>
-			<td class="dc-table__td" data-col="Last Name">Holmes</td>
-			<td class="dc-table__td" data-col="Email">duane.holmes21@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--active">Active</span></td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="First Name">Duane</td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="Last Name">Holmes</td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="Email">duane.holmes21@example.com</td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
-			<td class="dc-table__td" data-col="First Name">Kitty</td>
-			<td class="dc-table__td" data-col="Last Name">Murray</td>
-			<td class="dc-table__td" data-col="Email">kitty.murray88@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--new" status="New">New</span></td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="First Name">Kitty</td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="Last Name">Murray</td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="Email">kitty.murray88@example.com</td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
-			<td class="dc-table__td" data-col="First Name">Austin</td>
-			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
-			<td class="dc-table__td" data-col="Email">austin.carpenter87@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap status--new" status="New">New</span></td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="First Name">Austin</td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="Last Name">Carpenter</td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="Email">austin.carpenter87@example.com</td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
-			<td class="dc-table__td" data-col="First Name">Toni</td>
-			<td class="dc-table__td" data-col="Last Name">Nichols</td>
-			<td class="dc-table__td" data-col="Email">toni.nichols83@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--active">Active</span></td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="First Name">Toni</td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="Last Name">Nichols</td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="Email">toni.nichols83@example.com</td>
+			<td class="dc-table__td dc-table__td--comfortable" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 	</tbody>
 </table>
 
 
-<table class="dc-table dc-table--spacious">
+<table class="dc-table">
 	<thead class="dc-table__thead">
 		<tr class="dc-table__tr">
 			<th class="dc-table__th">First Name</th>
@@ -1089,38 +1087,38 @@
 
 	<tbody class="dc-table__tbody">
 		<tr class="dc-table__tr">
-			<td class="dc-table__td" data-col="First Name">Eileen</td>
-			<td class="dc-table__td" data-col="Last Name">Holland</td>
-			<td class="dc-table__td" data-col="Email">eileen.holland42@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap status--active">Active</span></td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="First Name">Eileen</td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="Last Name">Holland</td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="Email">eileen.holland42@example.com</td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
-			<td class="dc-table__td" data-col="First Name">Duane</td>
-			<td class="dc-table__td" data-col="Last Name">Holmes</td>
-			<td class="dc-table__td" data-col="Email">duane.holmes21@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--active">Active</span></td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="First Name">Duane</td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="Last Name">Holmes</td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="Email">duane.holmes21@example.com</td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
-			<td class="dc-table__td" data-col="First Name">Kitty</td>
-			<td class="dc-table__td" data-col="Last Name">Murray</td>
-			<td class="dc-table__td" data-col="Email">kitty.murray88@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--new" status="New">New</span></td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="First Name">Kitty</td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="Last Name">Murray</td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="Email">kitty.murray88@example.com</td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
-			<td class="dc-table__td" data-col="First Name">Austin</td>
-			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
-			<td class="dc-table__td" data-col="Email">austin.carpenter87@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap status--new" status="New">New</span></td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="First Name">Austin</td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="Last Name">Carpenter</td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="Email">austin.carpenter87@example.com</td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
 		</tr>
 
 		<tr class="dc-table__tr">
-			<td class="dc-table__td" data-col="First Name">Toni</td>
-			<td class="dc-table__td" data-col="Last Name">Nichols</td>
-			<td class="dc-table__td" data-col="Email">toni.nichols83@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="status nowrap  status--active">Active</span></td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="First Name">Toni</td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="Last Name">Nichols</td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="Email">toni.nichols83@example.com</td>
+			<td class="dc-table__td dc-table__td--spacious" data-col="Status"><span class="dc-status dc-status--error">Error</span></td>
 		</tr>
 	</tbody>
 </table>
@@ -1141,40 +1139,40 @@
 			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Eileen&lt;/td&gt;
 			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Holland&lt;/td&gt;
 			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;eileen.holland42@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
 			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Duane&lt;/td&gt;
 			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Holmes&lt;/td&gt;
 			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;duane.holmes21@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap  status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
 			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Kitty&lt;/td&gt;
 			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Murray&lt;/td&gt;
 			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;kitty.murray88@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap  status--new&quot; status=&quot;New&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
 			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Austin&lt;/td&gt;
 			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Carpenter&lt;/td&gt;
 			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;austin.carpenter87@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap status--new&quot; status=&quot;New&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
 			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Toni&lt;/td&gt;
 			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Nichols&lt;/td&gt;
 			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;toni.nichols83@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap  status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--error&quot;&gt;Error&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;table class=&quot;dc-table dc-table--tight&quot;&gt;
+&lt;table class=&quot;dc-table&quot;&gt;
 	&lt;thead class=&quot;dc-table__thead&quot;&gt;
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
 			&lt;th class=&quot;dc-table__th&quot; data-col=&quot;First Name&quot;&gt;First Name&lt;/th&gt;
@@ -1186,44 +1184,44 @@
 
 	&lt;tbody class=&quot;dc-table__tbody&quot;&gt;
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Eileen&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Holland&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;eileen.holland42@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;First Name&quot;&gt;Eileen&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;Last Name&quot;&gt;Holland&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;Email&quot;&gt;eileen.holland42@example.com&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Duane&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Holmes&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;duane.holmes21@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap  status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;First Name&quot;&gt;Duane&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;Last Name&quot;&gt;Holmes&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;Email&quot;&gt;duane.holmes21@example.com&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Kitty&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Murray&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;kitty.murray88@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap  status--new&quot; status=&quot;New&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;First Name&quot;&gt;Kitty&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;Last Name&quot;&gt;Murray&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;Email&quot;&gt;kitty.murray88@example.com&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Austin&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Carpenter&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;austin.carpenter87@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap status--new&quot; status=&quot;New&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;First Name&quot;&gt;Austin&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;Last Name&quot;&gt;Carpenter&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;Email&quot;&gt;austin.carpenter87@example.com&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Toni&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Nichols&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;toni.nichols83@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap  status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;First Name&quot;&gt;Toni&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;Last Name&quot;&gt;Nichols&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;Email&quot;&gt;toni.nichols83@example.com&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--tight&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
 
 
-&lt;table class=&quot;dc-table dc-table--comfortable&quot;&gt;
+&lt;table class=&quot;dc-table&quot;&gt;
 	&lt;thead class=&quot;dc-table__thead&quot;&gt;
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
 			&lt;th class=&quot;dc-table__th&quot;&gt;First Name&lt;/th&gt;
@@ -1235,44 +1233,44 @@
 
 	&lt;tbody class=&quot;dc-table__tbody&quot;&gt;
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Eileen&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Holland&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;eileen.holland42@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;First Name&quot;&gt;Eileen&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;Last Name&quot;&gt;Holland&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;Email&quot;&gt;eileen.holland42@example.com&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Duane&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Holmes&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;duane.holmes21@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap  status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;First Name&quot;&gt;Duane&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;Last Name&quot;&gt;Holmes&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;Email&quot;&gt;duane.holmes21@example.com&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Kitty&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Murray&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;kitty.murray88@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap  status--new&quot; status=&quot;New&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;First Name&quot;&gt;Kitty&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;Last Name&quot;&gt;Murray&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;Email&quot;&gt;kitty.murray88@example.com&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Austin&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Carpenter&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;austin.carpenter87@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap status--new&quot; status=&quot;New&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;First Name&quot;&gt;Austin&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;Last Name&quot;&gt;Carpenter&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;Email&quot;&gt;austin.carpenter87@example.com&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Toni&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Nichols&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;toni.nichols83@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap  status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;First Name&quot;&gt;Toni&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;Last Name&quot;&gt;Nichols&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;Email&quot;&gt;toni.nichols83@example.com&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--comfortable&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
 
 
-&lt;table class=&quot;dc-table dc-table--spacious&quot;&gt;
+&lt;table class=&quot;dc-table&quot;&gt;
 	&lt;thead class=&quot;dc-table__thead&quot;&gt;
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
 			&lt;th class=&quot;dc-table__th&quot;&gt;First Name&lt;/th&gt;
@@ -1284,38 +1282,38 @@
 
 	&lt;tbody class=&quot;dc-table__tbody&quot;&gt;
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Eileen&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Holland&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;eileen.holland42@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;First Name&quot;&gt;Eileen&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;Last Name&quot;&gt;Holland&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;Email&quot;&gt;eileen.holland42@example.com&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Duane&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Holmes&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;duane.holmes21@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap  status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;First Name&quot;&gt;Duane&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;Last Name&quot;&gt;Holmes&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;Email&quot;&gt;duane.holmes21@example.com&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Kitty&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Murray&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;kitty.murray88@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap  status--new&quot; status=&quot;New&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;First Name&quot;&gt;Kitty&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;Last Name&quot;&gt;Murray&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;Email&quot;&gt;kitty.murray88@example.com&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Austin&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Carpenter&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;austin.carpenter87@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap status--new&quot; status=&quot;New&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;First Name&quot;&gt;Austin&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;Last Name&quot;&gt;Carpenter&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;Email&quot;&gt;austin.carpenter87@example.com&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
 		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;First Name&quot;&gt;Toni&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Last Name&quot;&gt;Nichols&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Email&quot;&gt;toni.nichols83@example.com&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;status nowrap  status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;First Name&quot;&gt;Toni&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;Last Name&quot;&gt;Nichols&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;Email&quot;&gt;toni.nichols83@example.com&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td dc-table__td--spacious&quot; data-col=&quot;Status&quot;&gt;&lt;span class=&quot;dc-status dc-status--error&quot;&gt;Error&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
