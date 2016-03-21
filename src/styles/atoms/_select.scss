@@ -12,6 +12,7 @@
     font-weight: $dc-normal-font-weight;
     line-height: 1;
     -webkit-appearance: none;
+    border-radius: $dc-radius100;
 
     &:hover {
         border-color: $dc-blue40;
@@ -22,6 +23,10 @@
         border-color: $dc-blue40;
         outline: 0;
     }
+
+    &::-ms-expand {
+        display: none;
+    }
 }
 
 @mixin dc-select-selectors {
@@ -29,4 +34,3 @@
         @include dc-select;
     }
 }
-
