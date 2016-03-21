@@ -37,7 +37,9 @@
     display: block;
     position: absolute;
     bottom: calc(100% + 12px);
+    left: 0;
     content: attr(#{$content-attribute});
+    white-space: nowrap;
 }
 
 @mixin dc-tooltip__triangle--lb-has-tooltip {
@@ -110,4 +112,3 @@
         @include dc-has-tooltip;
     }
 }
-
