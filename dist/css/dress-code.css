@@ -765,80 +765,84 @@ th {
   content: "";
 }
 
-.dc-icon--eye:before {
+.dc-icon--drag:before {
   content: "";
 }
 
-.dc-icon--help:before {
+.dc-icon--eye:before {
   content: "";
 }
 
-.dc-icon--history:before {
+.dc-icon--help:before {
   content: "";
 }
 
-.dc-icon--info:before {
+.dc-icon--history:before {
   content: "";
 }
 
-.dc-icon--lock:before {
+.dc-icon--info:before {
   content: "";
 }
 
-.dc-icon--menu:before {
+.dc-icon--lock:before {
   content: "";
 }
 
-.dc-icon--more:before {
+.dc-icon--menu:before {
   content: "";
 }
 
-.dc-icon--msg-error:before {
+.dc-icon--more:before {
   content: "";
 }
 
-.dc-icon--msg-info:before {
+.dc-icon--msg-error:before {
   content: "";
 }
 
-.dc-icon--msg-neutral:before {
+.dc-icon--msg-info:before {
   content: "";
 }
 
-.dc-icon--msg-success:before {
+.dc-icon--msg-neutral:before {
   content: "";
 }
 
-.dc-icon--msg-warning:before {
+.dc-icon--msg-success:before {
   content: "";
 }
 
-.dc-icon--pencil:before {
+.dc-icon--msg-warning:before {
   content: "";
 }
 
-.dc-icon--play:before {
+.dc-icon--pencil:before {
   content: "";
 }
 
-.dc-icon--redo:before {
+.dc-icon--play:before {
   content: "";
 }
 
-.dc-icon--search:before {
+.dc-icon--redo:before {
   content: "";
 }
 
-.dc-icon--trash:before {
+.dc-icon--search:before {
   content: "";
 }
 
-.dc-icon--undo:before {
+.dc-icon--trash:before {
   content: "";
 }
 
-.dc-icon--user:before {
+.dc-icon--undo:before {
   content: "";
+}
+
+.dc-icon--user:before {
+  content: "";
 }
 
 .dc-icon--interactive {
@@ -2542,7 +2546,9 @@ th {
   display: block;
   position: absolute;
   bottom: calc(100% + 12px);
+  left: 0;
   content: attr(data-dc-has-tooltip);
+  white-space: nowrap;
 }
 
 .dc-has-tooltip:after {

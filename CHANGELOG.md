@@ -1,3 +1,17 @@
+<a name="1.3.0-alpha"></a>
+# [1.3.0-alpha](https://github.com/zalando/dress-code/compare/1.2.2-alpha...v1.3.0-alpha) (2016-03-21)
+
+
+### Bug Fixes
+
+* **tooltip:** Fix tooltip display for small elements. Close #150 ([c6d19c3](https://github.com/zalando/dress-code/commit/c6d19c3)), closes [#150](https://github.com/zalando/dress-code/issues/150)
+
+### Features
+
+* **icons:** Add drag icon ([7fb66a1](https://github.com/zalando/dress-code/commit/7fb66a1))
+
+
+
 <a name="1.2.2-alpha"></a>
 ## [1.2.2-alpha](https://github.com/zalando/dress-code/compare/1.2.1-alpha...v1.2.2-alpha) (2016-03-16)
 
