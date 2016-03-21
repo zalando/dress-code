@@ -11,6 +11,7 @@
     background: rgba($dc-black, .7);
     color: $dc-white;
     line-height: $dc-body-line-height;
+    min-height: $dc-space150;
 }
 
 @mixin dc-tooltip__triangle {
@@ -40,6 +41,7 @@
     left: 0;
     content: attr(#{$content-attribute});
     white-space: nowrap;
+    line-height: 1.6;
 }
 
 @mixin dc-tooltip__triangle--lb-has-tooltip {
