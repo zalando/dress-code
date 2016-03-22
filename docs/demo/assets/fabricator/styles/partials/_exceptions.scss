@@ -3,9 +3,13 @@
 
 .f-item-preview {
 
+    .dc-dialog {
+        position: relative;
+    }
+
     .dc-dialog__overlay {
         opacity: 1;
-        position: relative;
+        position: absolute;
     }
 
     .dc-toast-container {
