@@ -41,7 +41,7 @@
     left: 0;
     content: attr(#{$content-attribute});
     white-space: nowrap;
-    line-height: 1.6;
+    line-height: 1.6; // IE 10 fix (without unit)
 }
 
 @mixin dc-tooltip__triangle--lb-has-tooltip {
