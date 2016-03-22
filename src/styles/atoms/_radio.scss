@@ -10,7 +10,7 @@
         display: inline-block;
         position: relative;
         margin-right: $dc-space150;
-        margin-bottom: $dc-space50;
+        margin-bottom: 0;
         padding-left: $dc-space200 - $dc-space75;
         font-size: $dc-body-font-size;
         font-weight: $dc-normal-font-weight;
@@ -78,4 +78,3 @@
         @include dc-radio;
     }
 }
-

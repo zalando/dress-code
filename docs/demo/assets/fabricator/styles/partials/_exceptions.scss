@@ -7,6 +7,10 @@
         position: relative;
     }
 
+    > .dc-btn {
+        margin-bottom: $dc-space100;
+    }
+
     .dc-dialog__overlay {
         opacity: 1;
         position: absolute;
