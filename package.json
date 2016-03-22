@@ -42,7 +42,7 @@
     "babel-loader": "5.0.0",
     "browser-sync": "^2.7.1",
     "del": "^1.1.1",
-    "fabricator-assemble": "^1.1.9",
+    "fabricator-assemble": "1.1.10",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-conventional-changelog": "^0.7.0",

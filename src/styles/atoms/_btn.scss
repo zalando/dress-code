@@ -1,4 +1,5 @@
 // @import "../core/core";
+// @import "../atoms/link";
 
 @mixin dc-btn {
     display: inline-block;
@@ -128,7 +129,6 @@
 @mixin dc-btn--small {
     padding: $dc-space100 - .1 $dc-space100;
     font-size: 1.4rem;
-
     @content;
 }
 
@@ -168,6 +168,24 @@
     width: 100%;
 }
 
+//  = FLAT BUTTON
+//  ---------------------------------------------------------------------------
+@mixin dc-btn--link {
+    @include dc-link;
+
+    background: transparent;
+    border-color: transparent;
+}
+
+@mixin dc-btn--link--no-touch {
+    &:hover {
+        border-color: transparent;
+        background: none;
+        box-shadow: none;
+    }
+
+    @include dc-link--no-touch;
+}
 
 @mixin dc-btn-selectors {
     .dc-btn {
@@ -205,5 +223,53 @@
 
     .dc-btn--block {
         @include dc-btn--block;
+    }
+
+    .dc-btn--link {
+        @include dc-btn--link;
+    }
+
+    .no-touch .dc-btn--link {
+        @include dc-btn--link--no-touch;
+    }
+
+    .dc-btn--link-large {
+        @include dc-btn--large;
+    }
+
+    .dc-btn--link-small {
+        @include dc-btn--small;
+    }
+
+    .no-touch .dc-btn--link-small {
+        @include dc-btn--small--no-touch;
+    }
+
+    .no-touch .dc-btn--link-success {
+        @include dc-link--success--no-touch;
+    }
+
+    .touch .dc-btn--link-success {
+        @include dc-link--success--touch;
+    }
+
+    .no-touch .dc-btn--link-destroy {
+        @include dc-link--destroy--no-touch;
+    }
+
+    .touch .dc-btn--link-destroy {
+        @include dc-link--destroy--touch;
+    }
+
+    .dc-btn--link-disabled {
+        @include dc-link--disabled;
+    }
+
+    .no-touch .dc-btn--link-disabled {
+        @include dc-link--disabled--no-touch;
+    }
+
+    .touch .dc-btn--link-disabled {
+        @include dc-link--disabled--touch;
     }
 }
