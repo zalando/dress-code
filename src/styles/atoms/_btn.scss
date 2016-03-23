@@ -168,7 +168,7 @@
     width: 100%;
 }
 
-//  = FLAT BUTTON
+//  = LINK BUTTON
 //  ---------------------------------------------------------------------------
 @mixin dc-btn--link {
     @include dc-link;
@@ -231,18 +231,6 @@
 
     .no-touch .dc-btn--link {
         @include dc-btn--link--no-touch;
-    }
-
-    .dc-btn--link-large {
-        @include dc-btn--large;
-    }
-
-    .dc-btn--link-small {
-        @include dc-btn--small;
-    }
-
-    .no-touch .dc-btn--link-small {
-        @include dc-btn--small--no-touch;
     }
 
     .no-touch .dc-btn--link-success {
