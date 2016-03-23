@@ -205,21 +205,25 @@
 
 @mixin dc-text--small {
     font-size: $dc-font50;
-    line-height: 1.8;
+    line-height: $dc-space125;
 }
 
 @mixin dc-text--less-important {
     color: $dc-gray60;
-    font-size: $dc-font50;
-    line-height: 1;
+}
+
+@mixin dc-text--success {
+    color: $dc-green30;
 }
 
 @mixin dc-text--error {
-    display: block;
-    margin-top: - $dc-space150;
-    margin-bottom: $dc-space150;
     color: $dc-red40;
-    font-size: $dc-font50;
+}
+
+@mixin dc-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @mixin dc-text-selectors {
@@ -235,8 +239,16 @@
         @include dc-text--less-important;
     }
 
+    .dc-text--success {
+        @include dc-text--success;
+    }
+
     .dc-text--error {
         @include dc-text--error;
+    }
+
+    .dc-truncate {
+        @include dc-truncate;
     }
 }
 
@@ -253,6 +265,3 @@
     @include dc-heading-selectors;
     @include dc-text-selectors;
 }
-
-
-

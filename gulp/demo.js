@@ -60,7 +60,6 @@ gulp.task('demo:scripts', function () {
 // images
 gulp.task('demo:images', ['demo:favicon'], function () {
     return gulp.src(path.join('docs/demo', '/assets/img/*'))
-        .pipe(imagemin())
         .pipe(gulp.dest(path.join('.tmp/demo', '/assets/img')));
 });
 
