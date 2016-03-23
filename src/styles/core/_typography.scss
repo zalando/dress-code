@@ -23,11 +23,15 @@
 }
 
 @mixin dc-html-selectors {
-    .dc-html {  @include dc-html;  }
+    html {
+        @include dc-html;
+    }
 }
 
 @mixin dc-body-selectors {
-    .dc-body {  @include dc-body;  }
+    body {
+        @include dc-body;
+    }
 }
 
 @mixin dc-box-sizing {

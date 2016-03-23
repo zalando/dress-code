@@ -43,59 +43,62 @@
     @if $filename == cog {
     $char: "\E006";
 }
-    @if $filename == error {
+    @if $filename == drag {
     $char: "\E007";
 }
-    @if $filename == eye {
+    @if $filename == error {
     $char: "\E008";
 }
-    @if $filename == help {
+    @if $filename == eye {
     $char: "\E009";
 }
-    @if $filename == history {
+    @if $filename == help {
     $char: "\E00A";
 }
-    @if $filename == info-large {
+    @if $filename == history {
     $char: "\E00B";
 }
-    @if $filename == info {
+    @if $filename == info-large {
     $char: "\E00C";
 }
-    @if $filename == lock {
+    @if $filename == info {
     $char: "\E00D";
 }
-    @if $filename == menu {
+    @if $filename == lock {
     $char: "\E00E";
 }
-    @if $filename == more {
+    @if $filename == menu {
     $char: "\E00F";
 }
-    @if $filename == pencil {
+    @if $filename == more {
     $char: "\E010";
 }
-    @if $filename == play {
+    @if $filename == pencil {
     $char: "\E011";
 }
-    @if $filename == redo {
+    @if $filename == play {
     $char: "\E012";
 }
-    @if $filename == search {
+    @if $filename == redo {
     $char: "\E013";
 }
-    @if $filename == success {
+    @if $filename == search {
     $char: "\E014";
 }
-    @if $filename == trash {
+    @if $filename == success {
     $char: "\E015";
 }
-    @if $filename == undo {
+    @if $filename == trash {
     $char: "\E016";
 }
-    @if $filename == user {
+    @if $filename == undo {
     $char: "\E017";
 }
-    @if $filename == warning {
+    @if $filename == user {
     $char: "\E018";
+}
+    @if $filename == warning {
+    $char: "\E019";
 }
 
 @return $char;
@@ -130,6 +133,11 @@
 @mixin dc-icon--cog {
     &:before {
         content: dc-icon-char(cog);
+    }
+}
+@mixin dc-icon--drag {
+    &:before {
+        content: dc-icon-char(drag);
     }
 }
 @mixin dc-icon--error {
@@ -262,6 +270,10 @@
 
     .dc-icon--cog {
         @include dc-icon--cog;
+    }
+
+    .dc-icon--drag {
+        @include dc-icon--drag;
     }
 
     .dc-icon--error {

@@ -49,6 +49,7 @@
 @mixin dc-table__th {
     font-weight: $dc-bold-font-weight;
     text-transform: uppercase;
+    text-align: left;
 
     @include breakpoint(0 $dc-huge-width - .1) {
         @include _dc-table-element--is-block;
@@ -236,4 +237,3 @@
         @include dc-table__actions-wrapper;
     }
 }
-

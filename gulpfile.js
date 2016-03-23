@@ -1,32 +1,31 @@
 'use strict';
 
-// modules
+var pkg = require('./package.json');
 var path = require('path');
+var spawn = require('child_process').spawn;
+var _ = require('lodash');
+var del = require('del');
 var assemble = require('fabricator-assemble');
 var browserSync = require('browser-sync');
+var reload = browserSync.reload;
+var webpack = require('webpack');
+
+// gulp & gulp plugins
+var gulp = require('gulp');
+var runSequence = require('run-sequence');
 var csso = require('gulp-csso');
-var del = require('del');
 var gutil = require('gulp-util');
-var _ = require('lodash');
-var gulpif = require('gulp-if');
 var imagemin = require('gulp-imagemin');
 var prefix = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
 var replace = require('gulp-replace');
-var reload = browserSync.reload;
-var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-var webpack = require('webpack');
-var gulp = require('gulp');
 var ghPages = require('gulp-gh-pages');
-var gulpDebug = require('gulp-debug');
+var debug = require('gulp-debug');
 var iconfont = require('gulp-iconfont');
 var iconfontCss = require('gulp-iconfont-css');
 var conventionalChangelog = require('gulp-conventional-changelog');
-var spawn = require('child_process').spawn;
-var pkg = require('./package.json');
-
 
 // configuration
 var config = {
