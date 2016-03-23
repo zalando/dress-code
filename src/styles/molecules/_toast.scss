@@ -2,6 +2,9 @@
 
 @mixin dc-toast-container {
     position: fixed;
+}
+
+@mixin dc-toast-container--top {
     top: 0;
 }
 
@@ -63,46 +66,7 @@
     color: $dc-red20;
 }
 
-@mixin dc-toast-selectors {
-    .dc-toast-container {
-        @include dc-toast-container;
-
-        &--bottom {
-            @include dc-toast-container--bottom;
-        }
-    }
-
-    .dc-toast {
-        @include dc-toast;
-        @include dc-toast--top; // FIXME @controversial BEM
-
-        &-container-bottom & { // FIXME @controversial BEM
-            @include dc-toast--bottom;
-        }
-
-        &__content {
-            @include dc-toast__content;
-
-            &--info {
-                @include dc-toast__content--info;
-            }
-
-            &--success {
-                @include dc-toast__content--success;
-            }
-
-            &--warning {
-                @include dc-toast__content--warning;
-            }
-
-            &--error {
-                @include dc-toast__content--error;
-            }
-        }
-    }
-
-
-    // FIXME @controversial BEM
+@mixin dc-toast-animations {
     @keyframes dc-toast-animation--bottom {
         0% {
             transform: translate(0, 100%);
@@ -121,7 +85,6 @@
         }
     }
 
-
     @keyframes dc-toast-animation--top {
         0% {
             transform: translate(0, -100%);
@@ -138,6 +101,55 @@
         100% {
             transform: translate(0, -100%);
         }
+    }
+}
+
+@mixin dc-toast-selectors {
+
+    @include dc-toast-animations;
+
+    .dc-toast-container {
+        @include dc-toast-container;
+    }
+
+    .dc-toast-container--top {
+        @include dc-toast-container--top;
+    }
+
+    .dc-toast-container--bottom {
+        @include dc-toast-container--bottom;
+    }
+
+    .dc-toast {
+        @include dc-toast;
+    }
+
+    .dc-toast--top {
+        @include dc-toast--top;
+    }
+
+    .dc-toast--bottom {
+        @include dc-toast--bottom;
+    }
+
+    .dc-toast__content {
+        @include dc-toast__content;
+    }
+
+    .dc-toast__content--info {
+        @include dc-toast__content--info;
+    }
+
+    .dc-toast__content--success {
+        @include dc-toast__content--success;
+    }
+
+    .dc-toast__content--warning {
+        @include dc-toast__content--warning;
+    }
+
+    .dc-toast__content--error {
+        @include dc-toast__content--error;
     }
 }
 

@@ -3,7 +3,6 @@
 @mixin dc-btn {
     display: inline-block;
     margin-right: $dc-space50;
-    margin-bottom: $dc-space100;
     padding: $dc-space100 - .1 $dc-space100;
     transition: box-shadow .2s linear, border-color .2s linear;
     border: 1px solid $dc-gray50;
@@ -169,6 +168,26 @@
     width: 100%;
 }
 
+//  = GROUPED BUTTON
+//  ---------------------------------------------------------------------------
+
+@mixin _dc-btn--grouped {
+    margin-right: 0;
+    margin-bottom: 0;
+    border-left-width: 0;
+    border-radius: 0;
+
+    &:first-child {
+        border-left-width: 1px;
+        border-top-left-radius: $dc-radius100;
+        border-bottom-left-radius: $dc-radius100;
+    }
+
+    &:last-child {
+        border-top-right-radius: $dc-radius100;
+        border-bottom-right-radius: $dc-radius100;
+    }
+}
 
 @mixin dc-btn-selectors {
     .dc-btn {

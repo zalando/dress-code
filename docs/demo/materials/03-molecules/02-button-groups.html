@@ -4,32 +4,33 @@ title: button group
 notes: |
   Actions that logically belong together might be grouped by wrapping them in a container with <code>.dc-btn-group</code>.
 
-  Wrap several groups in a <code>.dc-btn-group-row</code> to keep them in one line.
+  Each action button must have the modifier class <code>.dc-btn--grouped</code>
+
+  Wrap several groups in a <code>.dc-btn-group-row</code> to keep them in one line. Each one must have the modifier class <code>.dc-btn-group--in-row</code>
 
   Please do not use the button group as tabs.
 ---
 
-
 <div class="dc-btn-group">
-  <button class="dc-btn dc-btn--large">1</button>
-  <button class="dc-btn dc-btn--large">
-    <i class="dc-icon dc-icon--check dc-icon--btn dc-icon--btn-large"></i>
-  </button>
-  <button class="dc-btn dc-btn--large">2</button>
-  <button class="dc-btn dc-btn--large dc-btn--destroy">
-    <i class="dc-icon dc-icon--trash dc-icon--btn dc-icon--btn-large"></i>
-  </button>
+    <button class="dc-btn dc-btn--in-btn-group dc-btn--large">1</button>
+    <button class="dc-btn dc-btn--in-btn-group dc-btn--large">
+        <i class="dc-icon dc-icon--check dc-icon--btn dc-icon--btn-large"></i>
+    </button>
+    <button class="dc-btn dc-btn--in-btn-group dc-btn--large">2</button>
+    <button class="dc-btn dc-btn--in-btn-group dc-btn--large dc-btn--destroy">
+        <i class="dc-icon dc-icon--trash dc-icon--btn dc-icon--btn-large"></i>
+    </button>
 </div>
 
 <div class="dc-btn-group-row">
-  <div class="dc-btn-group">
-    <a href class="dc-btn dc-btn--primary">Primary</a>
-    <button class="dc-btn">Two</button>
-  </div>
-  <div class="dc-btn-group">
-    <button class="dc-btn">Three</button>
-    <button class="dc-btn dc-btn--destroy">
-      <i class="dc-icon dc-icon--trash dc-icon--btn"></i>
-    </button>
-  </div>
+    <div class="dc-btn-group dc-btn-group--in-row">
+        <a href class="dc-btn dc-btn--in-btn-group dc-btn--primary">Primary</a>
+        <button class="dc-btn dc-btn--in-btn-group">Two</button>
+    </div>
+    <div class="dc-btn-group dc-btn-group--in-row">
+        <button class="dc-btn dc-btn--in-btn-group">Three</button>
+        <button class="dc-btn dc-btn--in-btn-group dc-btn--destroy">
+            <i class="dc-icon dc-icon--trash dc-icon--btn"></i>
+        </button>
+    </div>
 </div>

@@ -1,4 +1,4 @@
-@import "./variables";
+// @import "./variables";
 
 //  ---------------------------------------------------------------------------
 //
@@ -208,8 +208,11 @@
     line-height: 1.8;
 }
 
+//  This class is for text elements that are not so important and
+//	appear in a less intrusive way
+//  ---------------------------------------------------------------------------
 @mixin dc-text--less-important {
-    color: $dc-gray60;
+    color: $dc-gray50;
     font-size: $dc-font50;
     line-height: 1;
 }
@@ -220,6 +223,21 @@
     margin-bottom: $dc-space150;
     color: $dc-red40;
     font-size: $dc-font50;
+}
+
+//  Alignment Classes - left - center - right
+//  ---------------------------------------------------------------------------
+
+@mixin dc-text--left {
+    text-align: left;
+}
+
+@mixin dc-text--center {
+    text-align: center;
+}
+
+@mixin dc-text--right {
+    text-align: right;
 }
 
 @mixin dc-text-selectors {
@@ -237,6 +255,18 @@
 
     .dc-text--error {
         @include dc-text--error;
+    }
+
+    .dc-text--left {
+        @include dc-text--left;
+    }
+
+    .dc-text--center {
+        @include dc-text--center;
+    }
+
+    .dc-text--right {
+        @include dc-text--right;
     }
 }
 

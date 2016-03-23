@@ -2,28 +2,32 @@
 notes: |
   Toasts are used to give feedback about user action, but they are simpler than messages in that they have less information and no interaction.
 
-  A toast's default position is fixed to the top of the screen. Default is top. Use `.dc-toast-container--bottom` to make it appear from the bottom.
+  A toast's position depends on its class, there is not default value, you must choose between top or bottom using:
+
+  - either `.dc-toast-container--top` plus `.dc-toast--top` to make it appear from the top
+
+  - or `.dc-toast-container--bottom` plus `.dc-toast--bottom` to make it appear from the bottom
 ---
-<div class="dc-toast-container">
-    <div class="dc-toast">
+<div class="dc-toast-container dc-toast-container--top">
+    <div class="dc-toast dc-toast--top">
         <div class="dc-toast__content dc-toast__content--info">
             Info toast. Be quick, this message will disappear!
         </div>
     </div>
 
-    <div class="dc-toast">
+    <div class="dc-toast dc-toast--top">
         <div class="dc-toast__content dc-toast__content--success">
             Success toast. Be quick, this message will disappear!
         </div>
     </div>
 
-    <div class="dc-toast">
+    <div class="dc-toast dc-toast--top">
         <div class="dc-toast__content dc-toast__content--warning">
             Error toast. Be quick, this message will disappear!
         </div>
     </div>
 
-    <div class="dc-toast">
+    <div class="dc-toast dc-toast--top">
         <div class="dc-toast__content dc-toast__content--error">
             Warning toast. Be quick, this message will disappear!
         </div>

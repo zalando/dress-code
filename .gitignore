@@ -6,3 +6,4 @@ bower_components
 /demo
 .demo
 .tmp
+npm-debug.log

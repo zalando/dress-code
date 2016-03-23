@@ -3,19 +3,32 @@
 
 .f-item-preview {
 
-    .dc-dialog__overlay {
-        opacity: 1;
-    }
-
-    .dc-toast-container {
+    .dc-dialog {
         position: relative;
     }
-    .dc-toast {
-        animation: none;
+
+    > .dc-btn, .dc-btn-dropdown {
+        margin-bottom: $dc-space100;
     }
 
+    .dc-dialog__overlay {
+        opacity: 1;
+        position: absolute;
+    }
+
+    .dc-toast-container--top, .dc-toast-container--bottom {
+        position: relative;
+    }
+    .dc-toast--top, .dc-toast--bottom {
+        animation: none;
+    }
 }
 
 .f-item-preview .dc-loading-bar {
     position: relative;
+}
+
+.f-item-notes > ul:before {
+    content: '';
+    margin: 0;
 }
