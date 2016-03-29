@@ -1,5 +1,4 @@
 // @import "../core/core";
-// @import "../atoms/link";
 
 @mixin dc-btn {
     display: inline-block;
@@ -54,6 +53,44 @@
     }
 }
 
+//  = LINK BUTTON
+//  ---------------------------------------------------------------------------
+@mixin _dc-btn--link-reset {
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid transparent;
+}
+
+@mixin dc-btn--link {
+    @include _dc-btn--link-reset;
+    color: $dc-link-color;
+    transition: color .1s linear;
+}
+
+@mixin dc-btn--link--no-touch {
+    &:hover {
+        @include _dc-btn--link-reset;
+        color: $dc-link-color-hover;
+    }
+}
+
+@mixin dc-btn--link--touch {
+    &:active {
+        @include _dc-btn--link-reset;
+        color: $dc-link-color-hover;
+    }
+}
+
+@mixin dc-btn--link-disabled {
+    @include _dc-btn--link-reset;
+    color: $dc-gray50;
+
+    &:hover,
+    &:active {
+        border: 1px solid transparent;
+    }
+}
+
 //  = PRIMARY
 //  ---------------------------------------------------------------------------
 
@@ -99,7 +136,6 @@
         color: $dc-white;
     }
 }
-
 
 //  = DISABLED
 //  ---------------------------------------------------------------------------
@@ -168,25 +204,6 @@
     width: 100%;
 }
 
-//  = LINK BUTTON
-//  ---------------------------------------------------------------------------
-@mixin dc-btn--link {
-    @include dc-link;
-
-    background: transparent;
-    border-color: transparent;
-}
-
-@mixin dc-btn--link--no-touch {
-    &:hover {
-        border-color: transparent;
-        background: none;
-        box-shadow: none;
-    }
-
-    @include dc-link--no-touch;
-}
-
 @mixin dc-btn-selectors {
     .dc-btn {
         @include dc-btn;
@@ -194,6 +211,11 @@
 
     .no-touch .dc-btn {  @include dc-btn--no-touch;  }
     .touch .dc-btn {  @include dc-btn--touch;  }
+
+    .dc-btn--link {  @include dc-btn--link;  }
+    .touch .dc-btn--link {  @include dc-btn--link--touch;  }
+    .no-touch .dc-btn--link {  @include dc-btn--link--no-touch;  }
+
 
     .dc-btn--primary {  @include dc-btn--primary;  }
     .no-touch .dc-btn--primary {  @include dc-btn--primary--no-touch;  }
@@ -225,39 +247,6 @@
         @include dc-btn--block;
     }
 
-    .dc-btn--link {
-        @include dc-btn--link;
-    }
-
-    .no-touch .dc-btn--link {
-        @include dc-btn--link--no-touch;
-    }
-
-    .no-touch .dc-btn--link-success {
-        @include dc-link--success--no-touch;
-    }
-
-    .touch .dc-btn--link-success {
-        @include dc-link--success--touch;
-    }
-
-    .no-touch .dc-btn--link-destroy {
-        @include dc-link--destroy--no-touch;
-    }
-
-    .touch .dc-btn--link-destroy {
-        @include dc-link--destroy--touch;
-    }
-
-    .dc-btn--link-disabled {
-        @include dc-link--disabled;
-    }
-
-    .no-touch .dc-btn--link-disabled {
-        @include dc-link--disabled--no-touch;
-    }
-
-    .touch .dc-btn--link-disabled {
-        @include dc-link--disabled--touch;
-    }
+    // special case (usually this kind of selectors should be avoided)
+    .dc-btn--link.dc-btn--disabled {  @include dc-btn--link-disabled;  }
 }
