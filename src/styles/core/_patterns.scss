@@ -120,6 +120,24 @@
     text-align: right;
 }
 
+//  ---------------------------------------------------------------------------
+//
+//  ISLANDS - used to add paddings to elements
+//
+//  ---------------------------------------------------------------------------
+
+@mixin dc-island-50 {
+    padding: $dc-space50;
+}
+
+@mixin dc-island-75 {
+    padding: $dc-space75;
+}
+
+@mixin dc-island-100 {
+    padding: $dc-space100;
+}
+
 @mixin dc-patterns-selectors {
     @include dc-collapse-bd-selectors;
 
@@ -174,6 +192,16 @@
     .dc-text-right {
         @include dc-text-right;
     }
+
+    .dc-island-50 {
+        @include dc-island-50;
+    }
+
+    .dc-island-75 {
+        @include dc-island-75;
+    }
+
+    .dc-island-100 {
+        @include dc-island-100;
+    }
 }
-
-
