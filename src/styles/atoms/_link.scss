@@ -26,18 +26,6 @@
     }
 }
 
-@mixin dc-link--success--no-touch {
-    &:hover {
-        color: $dc-green30;
-    }
-}
-
-@mixin dc-link--success--touch {
-    &:active {
-        color: $dc-green30;
-    }
-}
-
 @mixin dc-link--destroy--no-touch {
     &:hover {
         color: $dc-red40;
@@ -78,14 +66,6 @@
 
     .touch .dc-link {
         @include dc-link--touch;
-    }
-
-    .no-touch .dc-link--success {
-        @include dc-link--success--no-touch;
-    }
-
-    .touch .dc-link--success {
-        @include dc-link--success--touch;
     }
 
     .no-touch .dc-link--destroy {
