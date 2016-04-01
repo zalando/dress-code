@@ -1,3 +1,48 @@
+<a name="1.4.0-alpha"></a>
+# [1.4.0-alpha](https://github.com/zalando/dress-code/compare/1.3.0-alpha...v1.4.0-alpha) (2016-04-01)
+
+
+### Bug Fixes
+
+* **demo-dialog:** fix dialog preview, broken after IE fix pull request was merged, see #156 ([d25757d](https://github.com/zalando/dress-code/commit/d25757d)), closes [#156](https://github.com/zalando/dress-code/issues/156)
+* **icons:** Fix icon font for IE. Close #98 ([0f9a7c2](https://github.com/zalando/dress-code/commit/0f9a7c2)), closes [#98](https://github.com/zalando/dress-code/issues/98)
+* **inputs:** Fix input groups for IE. Close #101 ([15035ba](https://github.com/zalando/dress-code/commit/15035ba)), closes [#101](https://github.com/zalando/dress-code/issues/101)
+* **select:** Fix select for IE. Close #99 ([af36277](https://github.com/zalando/dress-code/commit/af36277)), closes [#99](https://github.com/zalando/dress-code/issues/99)
+* **table:** Fix table for IE. Close #100 ([4b2eeeb](https://github.com/zalando/dress-code/commit/4b2eeeb)), closes [#100](https://github.com/zalando/dress-code/issues/100)
+* **tooltip:** Fix tooltip for IE. Close #102 ([0a5943c](https://github.com/zalando/dress-code/commit/0a5943c)), closes [#102](https://github.com/zalando/dress-code/issues/102)
+
+### Code Refactoring
+
+* **icons:** Match svg-icons to font-icons. Move svg-icons to subfolder. Close #128 ([95689ea](https://github.com/zalando/dress-code/commit/95689ea)), closes [#128](https://github.com/zalando/dress-code/issues/128)
+* **typography:** solve #140, remove .dc-html .dc-body classes, apply style directly on html and body because they are in any case required. ([bb80424](https://github.com/zalando/dress-code/commit/bb80424))
+
+### Features
+
+* **breadcrumbs:** Add breadcrumbs molecule ([e74ef87](https://github.com/zalando/dress-code/commit/e74ef87)), closes [#162](https://github.com/zalando/dress-code/issues/162)
+* **button-link:** add button link and button link with icon #137 ([b84496c](https://github.com/zalando/dress-code/commit/b84496c))
+* **button-link:** update button link destroy and disabled behavior, remove success link #137 ([7f63c69](https://github.com/zalando/dress-code/commit/7f63c69))
+* **icons:** add contact font icon ([5d71e0b](https://github.com/zalando/dress-code/commit/5d71e0b))
+* **lists:** closes #163. add simple and interactive scrollable lists ([d10a8e6](https://github.com/zalando/dress-code/commit/d10a8e6)), closes [#163](https://github.com/zalando/dress-code/issues/163)
+* **table:** Add compatibility btwn table and atoms. Close #90 ([9dd23da](https://github.com/zalando/dress-code/commit/9dd23da)), closes [#90](https://github.com/zalando/dress-code/issues/90)
+
+
+### BREAKING CHANGES
+
+* icons: Rich SVG icons have been moved from /img to /img/svg-icons
+* lists: .dc-list--is-reset is now .dc-list
+
+	Use .dc-list instead of .dc-list--is-reset
+	Use .dc-list--is-unordered or .dc-list--is-ordered for unordered and ordered lists
+* button-link: dc-link--success was removed.
+* table: Removed bottom-margin in buttons, checkboxes and radios.
+Check your layouts and reinsert margins manually as needed.
+* typography: .dc-html and .dc-body classes were removed.
+
+	If you @include dc-typography-selectors (already included when import dress-code and @include dc-everything)
+	you don't need anymore to use dc-html and dc-body classes, style is already applied to html and body.
+
+
+
 <a name="1.3.0-alpha"></a>
 # [1.3.0-alpha](https://github.com/zalando/dress-code/compare/1.2.2-alpha...v1.3.0-alpha) (2016-03-21)
 

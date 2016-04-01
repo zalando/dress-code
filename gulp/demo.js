@@ -22,7 +22,9 @@ var autoprefixer = require('gulp-autoprefixer');
 var imagemin = require('gulp-imagemin');
 var runSequence = require('run-sequence');
 var sourcemaps = require('gulp-sourcemaps');
+var ghPages = require('gulp-gh-pages');
 var helper = require('./util/helper');
+var debug = require('gulp-debug');
 
 
 gulp.task('demo:build', function (done) {
@@ -126,14 +128,16 @@ gulp.task('demo:serve', ['demo:build'], function () {
 // Generate the font by using what is found in the src/icons folder
 // Generate the scss _generated/icons.scss to use icons as classes
 gulp.task('demo:icon-font', ['icons'], function () {
-        gulp.src('./.tmp/iconfont/fonts/**/*')
-            .pipe(gulp.dest(path.join('.tmp/demo', '/assets/fonts')))
+    return gulp.src('./.tmp/iconfont/fonts/**/*')
+        .pipe(gulp.dest(path.join('.tmp/demo', '/assets/fonts')))
 });
 
 gulp.task('demo:deploy', ['demo:build'], function () {
     return gulp.src(path.join('.tmp/demo', '/**/*'))
+        .pipe(debug())
         .pipe(ghPages({
-            cacheDir: '.tmp/demo-deploy',
-            remoteUrl: 'https://github.com/zalando/dress-code.git'
+            push: gutil.env['dry-run'] ? false : true,
+            cacheDir: '.tmp/deploy-demo',
+            remoteUrl: 'git@github.com:zalando/dress-code.git'
         }));
 });

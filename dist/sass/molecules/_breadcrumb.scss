@@ -1,0 +1,35 @@
+// @import "../atoms/link";
+
+//  = BREADCRUMBS
+//  -----------------------------------------------------------------------------
+
+@mixin dc-breadcrumb {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin dc-breadcrumb__item {
+    display: inline-block;
+
+    &:after {
+        padding: 0 $dc-space50 0 $dc-space75;
+        color: $dc-gray40;
+        content: "\003E";
+    }
+
+    &:last-child:after {
+        content: "";
+    }
+}
+
+@mixin dc-breadcrumb-selectors {
+
+    .dc-breadcrumb {
+        @include dc-breadcrumb;
+    }
+
+    .dc-breadcrumb__item {
+        @include dc-breadcrumb__item;
+    }
+}
