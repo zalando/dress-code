@@ -1,0 +1,9 @@
+<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        More
+    </title>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="none" d="M0 0h36v36H0z"/>
+        <path d="M11 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm16-2c0-1.105-.895-2-2-2s-2 .895-2 2 .895 2 2 2 2-.895 2-2zm-9 2c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z" fill="#25AAFF"/>
+    </g>
+</svg>

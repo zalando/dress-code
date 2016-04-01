@@ -1,0 +1,10 @@
+<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        History
+    </title>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="none" d="M0 0h36v36H0z"/>
+        <path d="M18 26c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2.286c3.156 0 5.714-2.558 5.714-5.714 0-3.156-2.558-5.714-5.714-5.714-3.156 0-5.714 2.558-5.714 5.714 0 3.156 2.558 5.714 5.714 5.714z" fill="#4A4A4A"/>
+        <path d="M18 18v-3M18 18h2" stroke="#4A4A4A" stroke-width="2" stroke-linecap="square"/>
+    </g>
+</svg>

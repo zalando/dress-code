@@ -1,0 +1,9 @@
+<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        Undo
+    </title>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="none" d="M0 0h36v36H0z"/>
+        <path d="M18 14.552c5.116.865 9 5.11 9 10.216 0 .246-.01.49-.027.732-1.744-3.176-5.065-5.44-8.973-5.853v3.824l-9-6.485 9-6.485v4.052z" fill="#4A4A4A"/>
+    </g>
+</svg>
