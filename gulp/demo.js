@@ -122,14 +122,22 @@ gulp.task('demo:serve', ['demo:build'], function () {
     gulp.task('icons:watch', reload);
     gulp.watch('src/icons/**/*.svg', ['icons:watch']);
 
+    gulp.task('demo:svg-icons:watch', ['demo:svg-icons'], reload);
+    gulp.watch('./src/img/svg-icons/**/*.svg', ['demo:svg-icons:watch']);
+
 });
 
 
 // Generate the font by using what is found in the src/icons folder
 // Generate the scss _generated/icons.scss to use icons as classes
-gulp.task('demo:icon-font', ['icons'], function () {
+gulp.task('demo:icon-font', ['icons', 'demo:svg-icons'], function () {
     return gulp.src('./.tmp/iconfont/fonts/**/*')
         .pipe(gulp.dest(path.join('.tmp/demo', '/assets/fonts')))
+});
+
+gulp.task('demo:svg-icons',  function () {
+    return gulp.src('./src/img/svg-icons/**/*.svg')
+        .pipe(gulp.dest(path.join('.tmp/demo', '/assets/img/svg-icons')))
 });
 
 gulp.task('demo:deploy', ['demo:build'], function () {
