@@ -178,14 +178,14 @@
     }
 
     .dc--island-50 {
-        @include dc-island-50;
+        @include dc--island-50;
     }
 
     .dc--island-75 {
-        @include dc-island-75;
+        @include dc--island-75;
     }
 
     .dc--island-100 {
-        @include dc-island-100;
+        @include dc--island-100;
     }
 }
