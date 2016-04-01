@@ -12,6 +12,10 @@ The Dress Code is the official style guide and style framework for all Brand Sol
 * [Development & Contributing](#development)
 * [Build and Deploy](#build-and-deploy)
 
+## Browser Compatibility
+
+Chrome 48+, Firefox 44+, Safari 8+, IE 10+.
+
 ## Getting Started
 
 ### Requirements

@@ -16,6 +16,7 @@
 @mixin dc-table__th {
     font-weight: $dc-bold-font-weight;
     text-transform: uppercase;
+    text-align: left;
 }
 
 @mixin dc-table__tr {
@@ -215,4 +216,3 @@
     //    }
     //}
 }
-

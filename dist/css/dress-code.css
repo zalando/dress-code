@@ -220,7 +220,7 @@ th {
   box-sizing: border-box;
 }
 
-.dc-html {
+html {
   height: 100%;
   font-family: "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 62.5%;
@@ -228,7 +228,7 @@ th {
   line-height: 1;
 }
 
-.dc-body {
+body {
   background: #ededed;
   color: #4a4a4a;
   font-size: 1.4rem;
@@ -356,21 +356,25 @@ th {
 
 .dc-text--small {
   font-size: 1.1rem;
-  line-height: 1.8;
+  line-height: 1.6rem;
 }
 
 .dc-text--less-important {
   color: #d1d1d1;
-  font-size: 1.1rem;
-  line-height: 1;
+}
+
+.dc-text--success {
+  color: #65cb1c;
 }
 
 .dc-text--error {
-  display: block;
-  margin-top: -2.4rem;
-  margin-bottom: 2.4rem;
   color: #ff4a25;
-  font-size: 1.1rem;
+}
+
+.dc-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .dc-collapse-bd {
@@ -430,10 +434,21 @@ th {
   text-align: right;
 }
 
+.dc-island-50 {
+  padding: 0.4rem;
+}
+
+.dc-island-75 {
+  padding: 0.8rem;
+}
+
+.dc-island-100 {
+  padding: 1.2rem;
+}
+
 .dc-btn {
   display: inline-block;
   margin-right: 0.4rem;
-  margin-bottom: 1.2rem;
   padding: 1.1rem 1.2rem;
   -webkit-transition: box-shadow .2s linear, border-color .2s linear;
           transition: box-shadow .2s linear, border-color .2s linear;
@@ -478,6 +493,29 @@ th {
   color: #4a4a4a;
   text-decoration: none;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.dc-btn--link {
+  background: transparent;
+  box-shadow: none;
+  border: 1px solid transparent;
+  color: #26aafe;
+  -webkit-transition: color .1s linear;
+          transition: color .1s linear;
+}
+
+.touch .dc-btn--link:active {
+  background: transparent;
+  box-shadow: none;
+  border: 1px solid transparent;
+  color: #1e87cb;
+}
+
+.no-touch .dc-btn--link:hover {
+  background: transparent;
+  box-shadow: none;
+  border: 1px solid transparent;
+  color: #1e87cb;
 }
 
 .dc-btn--primary {
@@ -566,6 +604,17 @@ th {
   width: 100%;
 }
 
+.dc-btn--link.dc-btn--disabled {
+  background: transparent;
+  box-shadow: none;
+  border: 1px solid transparent;
+  color: #b6b6b6;
+}
+
+.dc-btn--link.dc-btn--disabled:hover, .dc-btn--link.dc-btn--disabled:active {
+  border: 1px solid transparent;
+}
+
 .dc-card {
   padding: 20px;
   background-color: #fff;
@@ -581,7 +630,7 @@ th {
   display: inline-block;
   position: relative;
   margin-right: 2.4rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0;
   padding-left: 2.8rem;
 }
 
@@ -765,84 +814,88 @@ th {
   content: "";
 }
 
-.dc-icon--drag:before {
+.dc-icon--contact:before {
   content: "";
 }
 
-.dc-icon--eye:before {
+.dc-icon--drag:before {
   content: "";
 }
 
-.dc-icon--help:before {
+.dc-icon--eye:before {
   content: "";
 }
 
-.dc-icon--history:before {
+.dc-icon--help:before {
   content: "";
 }
 
-.dc-icon--info:before {
+.dc-icon--history:before {
   content: "";
 }
 
-.dc-icon--lock:before {
+.dc-icon--info:before {
   content: "";
 }
 
-.dc-icon--menu:before {
+.dc-icon--lock:before {
   content: "";
 }
 
-.dc-icon--more:before {
+.dc-icon--menu:before {
   content: "";
 }
 
-.dc-icon--msg-error:before {
+.dc-icon--more:before {
   content: "";
 }
 
-.dc-icon--msg-info:before {
+.dc-icon--msg-error:before {
   content: "";
 }
 
-.dc-icon--msg-neutral:before {
+.dc-icon--msg-info:before {
   content: "";
 }
 
-.dc-icon--msg-success:before {
+.dc-icon--msg-neutral:before {
   content: "";
 }
 
-.dc-icon--msg-warning:before {
+.dc-icon--msg-success:before {
   content: "";
 }
 
-.dc-icon--pencil:before {
+.dc-icon--msg-warning:before {
   content: "";
 }
 
-.dc-icon--play:before {
+.dc-icon--pencil:before {
   content: "";
 }
 
-.dc-icon--redo:before {
+.dc-icon--play:before {
   content: "";
 }
 
-.dc-icon--search:before {
+.dc-icon--redo:before {
   content: "";
 }
 
-.dc-icon--trash:before {
+.dc-icon--search:before {
   content: "";
 }
 
-.dc-icon--undo:before {
+.dc-icon--trash:before {
   content: "";
 }
 
-.dc-icon--user:before {
+.dc-icon--undo:before {
   content: "";
+}
+
+.dc-icon--user:before {
+  content: "";
 }
 
 .dc-icon--interactive {
@@ -982,14 +1035,6 @@ th {
   text-decoration: none;
 }
 
-.no-touch .dc-link--success:hover {
-  color: #65cb1c;
-}
-
-.touch .dc-link--success:active {
-  color: #65cb1c;
-}
-
 .no-touch .dc-link--destroy:hover {
   color: #ff4a25;
 }
@@ -1014,16 +1059,115 @@ th {
 }
 
 .dc-list {
-  padding-left: 3rem;
-}
-
-.dc-list--is-reset {
+  margin: 0 0 2.4rem;
   padding: 0;
   list-style-type: none;
 }
 
+.dc-list--is-ordered {
+  padding-left: 2.4rem;
+  list-style-type: decimal;
+}
+
+.dc-list--is-unordered {
+  padding-left: 2.4rem;
+  list-style-type: disc;
+}
+
 .dc-dt {
   font-family: "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.dc-list__item--is-interactive:hover {
+  border-top-color: #a3d9ff;
+  border-bottom-color: #a3d9ff;
+  background: #d1ebff;
+  cursor: pointer;
+}
+
+.dc-list__item--is-interactive:hover + .dc-list__item--is-interactive {
+  border-top-color: #a3d9ff;
+}
+
+.dc-list--is-scrollable {
+  height: 21.6rem;
+  border: 1px solid #d1d1d1;
+  background: #fff;
+  border-radius: 2px;
+  overflow-y: scroll;
+}
+
+.dc-list__item {
+  margin-top: -1px;
+  padding: 0.4rem 0.8rem;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.dc-list__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin: -0.4rem -0.8rem;
+}
+
+.dc-list__inner > * {
+  min-width: 0;
+}
+
+.dc-list__img {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.dc-list__body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dc-list__title {
+  line-height: 2.2rem;
+}
+
+.dc-list__action {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4.4rem;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 .dc-loading-bar {
@@ -1095,7 +1239,7 @@ th {
   display: inline-block;
   position: relative;
   margin-right: 2.4rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0;
   padding-left: 2.8rem;
   font-size: 1.4rem;
   font-weight: 300;
@@ -1164,6 +1308,7 @@ th {
   font-weight: 300;
   line-height: 1;
   -webkit-appearance: none;
+  border-radius: 2px;
 }
 
 .dc-select:hover {
@@ -1173,6 +1318,10 @@ th {
 .dc-select:focus, .dc-select:active {
   border-color: #26aafe;
   outline: 0;
+}
+
+.dc-select::-ms-expand {
+  display: none;
 }
 
 .dc-spinner {
@@ -1275,6 +1424,7 @@ th {
 .dc-table__th {
   font-weight: 500;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .dc-table__tr {
@@ -1475,6 +1625,26 @@ th {
 
 .no-touch .dc-textarea {
   font-size: 1.4rem;
+}
+
+.dc-breadcrumb {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dc-breadcrumb__item {
+  display: inline-block;
+}
+
+.dc-breadcrumb__item:after {
+  padding: 0 0.4rem 0 0.8rem;
+  color: #9b9b9b;
+  content: "\003E";
+}
+
+.dc-breadcrumb__item:last-child:after {
+  content: "";
 }
 
 .dc-icon--btn {
@@ -1900,12 +2070,12 @@ th {
 }
 
 .dc-input-addon {
-  margin-bottom: 0;
   padding: 1rem 1.2rem 0.8rem;
   border: 1px solid #d1d1d1;
   background-color: #f7f7f7;
   color: #646464;
   line-height: 1;
+  display: inline-block;
 }
 
 .dc-input-addon:first-child {
@@ -2499,6 +2669,7 @@ th {
   background: rgba(0, 0, 0, 0.7);
   color: #fff;
   line-height: 2.4rem;
+  min-height: 2.4rem;
 }
 
 .dc-tooltip__triangle {
@@ -2543,12 +2714,14 @@ th {
   background: rgba(0, 0, 0, 0.7);
   color: #fff;
   line-height: 2.4rem;
+  min-height: 2.4rem;
   display: block;
   position: absolute;
   bottom: calc(100% + 12px);
   left: 0;
   content: attr(data-dc-has-tooltip);
   white-space: nowrap;
+  line-height: 1.6;
 }
 
 .dc-has-tooltip:after {

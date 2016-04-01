@@ -43,10 +43,14 @@
     @if $filename == cog {
     $char: "\E006";
 }
-    @if $filename == drag {
+    @if $filename == contact {
     $char: "\E007";
 }
+<<<<<<< HEAD
     @if $filename == error {
+=======
+    @if $filename == drag {
+>>>>>>> develop
     $char: "\E008";
 }
     @if $filename == eye {
@@ -58,6 +62,7 @@
     @if $filename == history {
     $char: "\E00B";
 }
+<<<<<<< HEAD
     @if $filename == info-large {
     $char: "\E00C";
 }
@@ -100,6 +105,56 @@
     @if $filename == warning {
     $char: "\E019";
 }
+=======
+    @if $filename == info {
+    $char: "\E00C";
+}
+    @if $filename == lock {
+    $char: "\E00D";
+}
+    @if $filename == menu {
+    $char: "\E00E";
+}
+    @if $filename == more {
+    $char: "\E00F";
+}
+    @if $filename == msg-error {
+    $char: "\E010";
+}
+    @if $filename == msg-info {
+    $char: "\E011";
+}
+    @if $filename == msg-neutral {
+    $char: "\E012";
+}
+    @if $filename == msg-success {
+    $char: "\E013";
+}
+    @if $filename == msg-warning {
+    $char: "\E014";
+}
+    @if $filename == pencil {
+    $char: "\E015";
+}
+    @if $filename == play {
+    $char: "\E016";
+}
+    @if $filename == redo {
+    $char: "\E017";
+}
+    @if $filename == search {
+    $char: "\E018";
+}
+    @if $filename == trash {
+    $char: "\E019";
+}
+    @if $filename == undo {
+    $char: "\E01A";
+}
+    @if $filename == user {
+    $char: "\E01B";
+}
+>>>>>>> develop
 
 @return $char;
 }
@@ -133,6 +188,11 @@
 @mixin dc-icon--cog {
     &:before {
         content: dc-icon-char(cog);
+    }
+}
+@mixin dc-icon--contact {
+    &:before {
+        content: dc-icon-char(contact);
     }
 }
 @mixin dc-icon--drag {
@@ -270,6 +330,10 @@
 
     .dc-icon--cog {
         @include dc-icon--cog;
+    }
+
+    .dc-icon--contact {
+        @include dc-icon--contact;
     }
 
     .dc-icon--drag {

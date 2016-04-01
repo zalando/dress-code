@@ -1,0 +1,22 @@
+---
+name: button modifiers
+title: button modifiers
+notes: |
+  Buttons can have modifier classes applied to them. Different modifier classes have different meanings, use them wisely.
+
+  `dc-btn--primary`: Triggers the primary action of the page it is placed on. Place only one primary button on each page/dialog.
+
+  `dc-btn--destroy`: Triggers a destructive action which can't be undone and might involve loss of data.
+
+  `dc-btn--disabled`: When a button is disabled. Buttons using this modifier should not be clickable.
+
+  `dc-btn--link`: Has the appearance of a link but the dimensions and modifiers of a button.
+---
+<button class="dc-btn dc-btn--primary">Primary Button</button>
+<button class="dc-btn dc-btn--destroy">Destroy Button</button>
+<button class="dc-btn dc-btn--disabled">Disabled Button</button>
+<br>
+<button class="dc-btn dc-btn--link">Button Link</button>
+<button class="dc-btn dc-btn--link dc-btn--destroy">Button Link - Destroy</button>
+<button class="dc-btn dc-btn--link dc-btn--disabled">Button Link - Disabled</button>
+<br>

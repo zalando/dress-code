@@ -53,6 +53,44 @@
     }
 }
 
+//  = LINK BUTTON
+//  ---------------------------------------------------------------------------
+@mixin _dc-btn--link-reset {
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid transparent;
+}
+
+@mixin dc-btn--link {
+    @include _dc-btn--link-reset;
+    color: $dc-link-color;
+    transition: color .1s linear;
+}
+
+@mixin dc-btn--link--no-touch {
+    &:hover {
+        @include _dc-btn--link-reset;
+        color: $dc-link-color-hover;
+    }
+}
+
+@mixin dc-btn--link--touch {
+    &:active {
+        @include _dc-btn--link-reset;
+        color: $dc-link-color-hover;
+    }
+}
+
+@mixin dc-btn--link-disabled {
+    @include _dc-btn--link-reset;
+    color: $dc-gray50;
+
+    &:hover,
+    &:active {
+        border: 1px solid transparent;
+    }
+}
+
 //  = PRIMARY
 //  ---------------------------------------------------------------------------
 
@@ -99,7 +137,6 @@
     }
 }
 
-
 //  = DISABLED
 //  ---------------------------------------------------------------------------
 
@@ -128,7 +165,6 @@
 @mixin dc-btn--small {
     padding: $dc-space100 - .1 $dc-space100;
     font-size: 1.4rem;
-
     @content;
 }
 
@@ -190,12 +226,13 @@
 }
 
 @mixin dc-btn-selectors {
-    .dc-btn {
-        @include dc-btn;
-    }
-
+    .dc-btn {  @include dc-btn;  }
     .no-touch .dc-btn {  @include dc-btn--no-touch;  }
     .touch .dc-btn {  @include dc-btn--touch;  }
+
+    .dc-btn--link {  @include dc-btn--link;  }
+    .touch .dc-btn--link {  @include dc-btn--link--touch;  }
+    .no-touch .dc-btn--link {  @include dc-btn--link--no-touch;  }
 
     .dc-btn--primary {  @include dc-btn--primary;  }
     .no-touch .dc-btn--primary {  @include dc-btn--primary--no-touch;  }
@@ -209,21 +246,16 @@
     .touch .dc-btn--disabled { @include dc-btn--disabled--touch; }
     .no-touch .dc-btn--disabled { @include dc-btn--disabled--no-touch; }
 
-    .dc-btn--small {
-        @include dc-btn--small;
-    }
+    .dc-btn--small {  @include dc-btn--small;  }
 
     .no-touch .dc-btn--small { @include dc-btn--small--no-touch; }
 
-    .dc-btn--inline {
-        @include dc-btn--inline;
-    }
+    .dc-btn--inline {  @include dc-btn--inline;  }
 
-    .dc-btn--large {
-        @include dc-btn--large;
-    }
+    .dc-btn--large {  @include dc-btn--large;  }
 
-    .dc-btn--block {
-        @include dc-btn--block;
-    }
+    .dc-btn--block {  @include dc-btn--block;  }
+
+    // special case (usually this kind of selectors should be avoided)
+    .dc-btn--link.dc-btn--disabled {  @include dc-btn--link-disabled;  }
 }

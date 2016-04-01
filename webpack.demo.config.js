@@ -1,16 +1,16 @@
 var path = require('path');
 var webpack = require('webpack');
 
-module.exports = function(_config) {
+module.exports = function(mode) {
 
 	"use strict";
 
 	var config = {
 		entry: {
-			'fabricator/scripts/f': _config.src.scripts.fabricator
+			'scripts/main': './docs/demo/assets/scripts/fabricator.js'
 		},
 		output: {
-			path: path.resolve(__dirname, _config.tmp.demo, 'assets'),
+			path: path.resolve(__dirname, '.tmp/.demo', 'assets'),
 			filename: '[name].js'
 		},
 		module: {
@@ -26,7 +26,7 @@ module.exports = function(_config) {
 		cache: {}
 	};
 
-	if (!_config.dev) {
+	if (mode === 'dist') {
 		config.plugins.push(
 			new webpack.optimize.UglifyJsPlugin()
 		);
