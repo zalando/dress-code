@@ -218,23 +218,8 @@
 </ul>
 <h2>Sass conventions:</h2>
 <ul>
-<li>All variables and mixins must be prefixed with <code>dc-</code> and must use the <strong><em>hyphen-case</em></strong> (with hyphens as separators).</li>
-<li>To mark a function/variable/mixins/placeholder/selector as private, its name should start with one underscore. <code>_dc-*</code></li>
+<li>All variables and mixins must be prefixed with <code>dc-</code> and must use the <strong><em>snake-case</em></strong> (with dashes as separator).</li>
 </ul>
-<h2>Notes</h2>
-<h3>Future compatibility</h3>
-<p>Each atom/molecules/module is prepared to be independently loaded, by requiring its own dependencies.
-So you will notice at the top of each file a commented import directive, something like this:</p>
-<pre><code class="language-scss">
-// @import &quot;../core/core&quot;;
-
-@mixin dc-checkbox($sibling-label-selector : &quot;.dc-label&quot;) {
-    // ...
-}
-
-</code></pre>
-<p>We hope that sass 4 brings us a new cool import directive that works as the less one (import once by default).
-We are not the only one requesting that <a href="https://github.com/sass/sass/issues/156">feature</a></p>
 
 </div>
 
