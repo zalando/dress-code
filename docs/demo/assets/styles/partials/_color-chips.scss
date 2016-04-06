@@ -14,11 +14,13 @@
 	background-color: #fff;
 	font-size: $dc-body-font-size;
 	font-weight: $dc-bold-font-weight;
-	padding: 1em;
+	padding: .5em;
 	margin-bottom: 2em;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
 
 	@media (min-width: 60em) {
-		flex-basis: 13em;
+		flex-basis: 0;
 	}
 
 	.f-color-chip__color {
