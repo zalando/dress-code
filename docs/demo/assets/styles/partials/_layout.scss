@@ -45,8 +45,7 @@ body {
 	transition: transform .2s ease-out, padding .2s ease-out;
 
 	.f-menu-active & {
-		transform: translate(calc(#{span(1 of 2)} + #{$dc-space75} + #{gutter(4)}), 0);
-		padding-left: 0;
+		transform: translate(calc(#{span(1 of 2)} + #{gutter(4)}), 0);
 
 		@include breakpoint($dc-small-width)
 		{
@@ -55,18 +54,18 @@ body {
 
 		@include breakpoint($dc-medium-width)
 		{
-			transform: translate(calc(#{span(2 of 6)} + #{$dc-space75} + #{gutter(6)}), 0);
+			transform: translate(calc(#{span(2 of 6)} + #{gutter(6)}), 0);
 		}
 
 		@include breakpoint($dc-large-width)
 		{
-			transform: translate(calc(#{span(2 of 8)} + #{$dc-space100} + #{gutter(8)}), 0);
+			transform: translate(calc(#{span(2 of 8)} + #{gutter(8)}), 0);
 		}
 
 		@include breakpoint($dc-huge-width)
 		{
-			margin-left: calc(#{span(2 of 12)} + #{$dc-space100} + #{gutter(12)});
-			padding: $dc-touch-size $dc-space150 0 0;
+			margin-left: calc(#{span(2 of 12)} + #{gutter(12)});
+			//padding: $dc-touch-size $dc-space150 0 $dc-space150;
 			height: calc(100vh - #{$dc-touch-size};
 			overflow-y: scroll;
 			-webkit-overflow-scrolling: touch;
@@ -75,14 +74,14 @@ body {
 
 		@include breakpoint($dc-giant-width)
 		{
-			margin-left: calc(#{span(2 of 16)} + #{$dc-space150} + #{gutter(16)});
-            padding: $dc-touch-size $dc-space150 0 0;
+			margin-left: calc(#{span(2 of 16)} + #{gutter(16)});
+            //padding: $dc-touch-size $dc-space150 0 $dc-space150;
 		}
 
 		@include breakpoint($dc-monstrous-width)
 		{
-			margin-left: calc(#{span(2 of 20)} + #{$dc-space200} + #{gutter(20)});
-            padding: $dc-touch-size $dc-space150 0 0;
+			margin-left: calc(#{span(2 of 20)} + #{gutter(20)});
+            //padding: $dc-touch-size $dc-space150 0 0;
 		}
 	}
 
