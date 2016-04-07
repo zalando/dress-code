@@ -118,15 +118,7 @@
     }
 }
 
-@mixin dc-no-wrap {
-    white-space: nowrap;
-}
 
-@mixin dc-no-wrap-selectors {
-    .dc-no-wrap {
-        @include dc-no-wrap;
-    }
-}
 
 //  = HEADINGS
 //  ---------------------------------------------------------------------------
@@ -196,91 +188,6 @@
     }
 }
 
-//  = TEXT
-//  ---------------------------------------------------------------------------
-
-@mixin dc-text--center {
-    text-align: center;
-}
-
-@mixin dc-text--small {
-    font-size: $dc-font50;
-    line-height: $dc-space125;
-}
-
-//  This class is for text elements that are not so important and
-//	appear in a less intrusive way
-//  ---------------------------------------------------------------------------
-@mixin dc-text--less-important {
-    color: $dc-gray60;
-    font-size: $dc-font50;
-    line-height: 1;
-}
-
-@mixin dc-text--success {
-    color: $dc-green30;
-}
-
-@mixin dc-text--error {
-    color: $dc-red40;
-}
-
-@mixin dc-text--truncate {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-//  Alignment Classes - left - center - right
-//  ---------------------------------------------------------------------------
-
-@mixin dc-text--left {
-    text-align: left;
-}
-
-@mixin dc-text--center {
-    text-align: center;
-}
-
-@mixin dc-text--right {
-    text-align: right;
-}
-
-@mixin dc-text-selectors {
-
-    .dc-text--small {
-        @include dc-text--small;
-    }
-
-    .dc-text--less-important {
-        @include dc-text--less-important;
-    }
-
-    .dc-text--success {
-        @include dc-text--success;
-    }
-
-    .dc-text--error {
-        @include dc-text--error;
-    }
-
-    .dc-text--left {
-        @include dc-text--left;
-    }
-
-    .dc-text--center {
-        @include dc-text--center;
-    }
-
-    .dc-text--right {
-        @include dc-text--right;
-    }
-
-    .dc-text--truncate {
-        @include dc-text--truncate;
-    }
-}
-
 @mixin dc-typography-selectors {
     @include dc-box-sizing;
     @include dc-html-selectors;
@@ -290,7 +197,5 @@
     @include dc-selection-selectors;
     @include dc-strong-selectors;
     @include dc-em-selectors;
-    @include dc-no-wrap-selectors;
     @include dc-heading-selectors;
-    @include dc-text-selectors;
 }
