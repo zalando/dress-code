@@ -20,13 +20,10 @@
 <body class="dc-body--demo-breakpoints">
 		<header class="f-header">
 			<img class="f-logo" src="/dress-code/assets/img/logo.svg" alt="Zalando Logo">
-			<!-- <div class="f-control-bar"> -->
-				<div class="f-control f-menu-toggle">
-					<svg class="dc-svg">
-						<use xlink:href="#f-icon-menu" />
-					</svg>
-				</div>
-			<!-- </div> -->
+			<div class="f-control f-menu-toggle">
+			    <i class="dc-icon dc-icon--menu"></i>
+			</div>
+			
 			<div class="f-control f-menu-toggle">
 				<a href class="dc-link js-toggle-breakpoints">Breakpoints</a>
 			</div>
@@ -351,57 +348,58 @@
 		<h2 class="dc-h2 f-item-heading">Button Groups</h2>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Actions that logically belong together might be grouped by wrapping them in a container with <code>.dc-btn-group</code>.</p>
-<p>Wrap several groups in a <code>.dc-btn-group-row</code> to keep them in one line.</p>
+<p>Each action button must have the modifier class <code>.dc-btn--grouped</code></p>
+<p>Wrap several groups in a <code>.dc-btn-group-row</code> to keep them in one line. Each one must have the modifier class <code>.dc-btn-group--in-row</code></p>
 <p>Please do not use the button group as tabs.</p>
 
 </div>
 <div class="f-item-preview">
 	<div class="dc-btn-group">
-	<button class="dc-btn dc-btn--large">1</button>
-	<button class="dc-btn dc-btn--large">
-    <i class="dc-icon dc-icon--check dc-icon--btn dc-icon--btn-large"></i>
-  </button>
-	<button class="dc-btn dc-btn--large">2</button>
-	<button class="dc-btn dc-btn--large dc-btn--destroy">
-    <i class="dc-icon dc-icon--trash dc-icon--btn dc-icon--btn-large"></i>
-  </button>
+	<button class="dc-btn dc-btn--in-btn-group dc-btn--large">1</button>
+	<button class="dc-btn dc-btn--in-btn-group dc-btn--large">
+        <i class="dc-icon dc-icon--check dc-icon--btn dc-icon--btn-large"></i>
+    </button>
+	<button class="dc-btn dc-btn--in-btn-group dc-btn--large">2</button>
+	<button class="dc-btn dc-btn--in-btn-group dc-btn--large dc-btn--destroy">
+        <i class="dc-icon dc-icon--trash dc-icon--btn dc-icon--btn-large"></i>
+    </button>
 </div>
 
 <div class="dc-btn-group-row">
-	<div class="dc-btn-group">
-		<a href class="dc-btn dc-btn--primary">Primary</a>
-		<button class="dc-btn">Two</button>
+	<div class="dc-btn-group dc-btn-group--in-row">
+		<a href class="dc-btn dc-btn--in-btn-group dc-btn--primary">Primary</a>
+		<button class="dc-btn dc-btn--in-btn-group">Two</button>
 	</div>
-	<div class="dc-btn-group">
-		<button class="dc-btn">Three</button>
-		<button class="dc-btn dc-btn--destroy">
-      <i class="dc-icon dc-icon--trash dc-icon--btn"></i>
-    </button>
+	<div class="dc-btn-group dc-btn-group--in-row">
+		<button class="dc-btn dc-btn--in-btn-group">Three</button>
+		<button class="dc-btn dc-btn--in-btn-group dc-btn--destroy">
+            <i class="dc-icon dc-icon--trash dc-icon--btn"></i>
+        </button>
 	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-btn-group&quot;&gt;
-	&lt;button class=&quot;dc-btn dc-btn--large&quot;&gt;1&lt;/button&gt;
-	&lt;button class=&quot;dc-btn dc-btn--large&quot;&gt;
-    &lt;i class=&quot;dc-icon dc-icon--check dc-icon--btn dc-icon--btn-large&quot;&gt;&lt;/i&gt;
-  &lt;/button&gt;
-	&lt;button class=&quot;dc-btn dc-btn--large&quot;&gt;2&lt;/button&gt;
-	&lt;button class=&quot;dc-btn dc-btn--large dc-btn--destroy&quot;&gt;
-    &lt;i class=&quot;dc-icon dc-icon--trash dc-icon--btn dc-icon--btn-large&quot;&gt;&lt;/i&gt;
-  &lt;/button&gt;
+	&lt;button class=&quot;dc-btn dc-btn--in-btn-group dc-btn--large&quot;&gt;1&lt;/button&gt;
+	&lt;button class=&quot;dc-btn dc-btn--in-btn-group dc-btn--large&quot;&gt;
+        &lt;i class=&quot;dc-icon dc-icon--check dc-icon--btn dc-icon--btn-large&quot;&gt;&lt;/i&gt;
+    &lt;/button&gt;
+	&lt;button class=&quot;dc-btn dc-btn--in-btn-group dc-btn--large&quot;&gt;2&lt;/button&gt;
+	&lt;button class=&quot;dc-btn dc-btn--in-btn-group dc-btn--large dc-btn--destroy&quot;&gt;
+        &lt;i class=&quot;dc-icon dc-icon--trash dc-icon--btn dc-icon--btn-large&quot;&gt;&lt;/i&gt;
+    &lt;/button&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;dc-btn-group-row&quot;&gt;
-	&lt;div class=&quot;dc-btn-group&quot;&gt;
-		&lt;a href class=&quot;dc-btn dc-btn--primary&quot;&gt;Primary&lt;/a&gt;
-		&lt;button class=&quot;dc-btn&quot;&gt;Two&lt;/button&gt;
+	&lt;div class=&quot;dc-btn-group dc-btn-group--in-row&quot;&gt;
+		&lt;a href class=&quot;dc-btn dc-btn--in-btn-group dc-btn--primary&quot;&gt;Primary&lt;/a&gt;
+		&lt;button class=&quot;dc-btn dc-btn--in-btn-group&quot;&gt;Two&lt;/button&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-btn-group&quot;&gt;
-		&lt;button class=&quot;dc-btn&quot;&gt;Three&lt;/button&gt;
-		&lt;button class=&quot;dc-btn dc-btn--destroy&quot;&gt;
-      &lt;i class=&quot;dc-icon dc-icon--trash dc-icon--btn&quot;&gt;&lt;/i&gt;
-    &lt;/button&gt;
+	&lt;div class=&quot;dc-btn-group dc-btn-group--in-row&quot;&gt;
+		&lt;button class=&quot;dc-btn dc-btn--in-btn-group&quot;&gt;Three&lt;/button&gt;
+		&lt;button class=&quot;dc-btn dc-btn--in-btn-group dc-btn--destroy&quot;&gt;
+            &lt;i class=&quot;dc-icon dc-icon--trash dc-icon--btn&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -522,81 +520,63 @@
 		</div>
 		<h2 class="dc-h2 f-item-heading">Input Groups</h2>
 	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Create input groups by using <code>.dc-input-group</code> to wrap inputs, addons with the class <code>.dc-input-addon</code> and <code>button</code>.</p>
+	<p>Create input groups by using <code>.dc-input-group</code> to wrap inputs with the class <code>.dc-input--in-input-group</code>, addons with the class <code>.dc-input-addon</code> and buttons with the class <code>dc-btn--grouped</code>.</p>
 
 </div>
 <div class="f-item-preview">
 	<label class="dc-label" for="priceInput">Addon - Appended</label>
 <div class="dc-input-group">
-	<input class="dc-input dc-input--text-right" type="text" id="priceInput" placeholder="e. g. 100" />
+	<input class="dc-input dc-input--in-input-group dc-input--text-right" type="text" id="priceInput" placeholder="e. g. 100" />
 	<div class="dc-input-addon">&euro;</div>
 </div>
 
 <label class="dc-label" for="urlInput1">Addon - Prepended</label>
 <div class="dc-input-group">
 	<span class="dc-input-addon">http://</span>
-	<input class="dc-input" type="text" id="urlInput1" placeholder="e. g. brands.zalando.com" />
+	<input class="dc-input dc-input--in-input-group" type="text" id="urlInput1" placeholder="e. g. brands.zalando.com" />
 </div>
 
 <label class="dc-label" for="urlInput2">Button - Appended</label>
 <div class="dc-input-group">
-	<input class="dc-input" type="text" id="urlInput2" placeholder="e. g. brands.zalando.com" />
-	<button class="dc-btn dc-btn--primary"><i class="dc-icon dc-icon--search dc-icon--btn"></i></button>
+	<input class="dc-input dc-input--in-input-group" type="text" id="urlInput2" placeholder="e. g. brands.zalando.com" />
+	<button class="dc-btn dc-btn--in-input-group dc-btn--primary">
+        <i class="dc-icon dc-icon--search dc-icon--btn"></i>
+    </button>
 </div>
 
 <label class="dc-label" for="userInput">Addon - Prepended & Button - Appended</label>
 <div class="dc-input-group">
-	<div class="dc-input-addon">User 1</div>
-	<input class="dc-input" type="text" id="userInput" placeholder="Full name" />
-	<a class="dc-btn dc-btn--primary">Add</a>
-</div>
-
-<h4>BEM way (controversial)</h4>
-
-<!-- BEM way -->
-<label class="dc-label" for="urlInput3">Button - Appended</label>
-<div class="dc-input-group">
-	<input class="dc-input-group__input dc-input" type="text" id="urlInput3" placeholder="e. g. brands.zalando.com" />
-	<button class="dc-input-group__btn dc-btn dc-btn--primary">
-        <i class="dc-icon dc-icon--search dc-icon--btn"></i>
-    </button>
+	<span class="dc-input-addon">User 1</span>
+	<input class="dc-input dc-input--in-input-group" type="text" id="userInput" placeholder="Full name" />
+	<a class="dc-btn dc-btn--in-input-group dc-btn--primary">Add</a>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre class="dc-pre"><code class="language-markup">&lt;label class=&quot;dc-label&quot; for=&quot;priceInput&quot;&gt;Addon - Appended&lt;/label&gt;
 &lt;div class=&quot;dc-input-group&quot;&gt;
-	&lt;input class=&quot;dc-input dc-input--text-right&quot; type=&quot;text&quot; id=&quot;priceInput&quot; placeholder=&quot;e. g. 100&quot; /&gt;
+	&lt;input class=&quot;dc-input dc-input--in-input-group dc-input--text-right&quot; type=&quot;text&quot; id=&quot;priceInput&quot; placeholder=&quot;e. g. 100&quot; /&gt;
 	&lt;div class=&quot;dc-input-addon&quot;&gt;&amp;euro;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;label class=&quot;dc-label&quot; for=&quot;urlInput1&quot;&gt;Addon - Prepended&lt;/label&gt;
 &lt;div class=&quot;dc-input-group&quot;&gt;
 	&lt;span class=&quot;dc-input-addon&quot;&gt;http://&lt;/span&gt;
-	&lt;input class=&quot;dc-input&quot; type=&quot;text&quot; id=&quot;urlInput1&quot; placeholder=&quot;e. g. brands.zalando.com&quot; /&gt;
+	&lt;input class=&quot;dc-input dc-input--in-input-group&quot; type=&quot;text&quot; id=&quot;urlInput1&quot; placeholder=&quot;e. g. brands.zalando.com&quot; /&gt;
 &lt;/div&gt;
 
 &lt;label class=&quot;dc-label&quot; for=&quot;urlInput2&quot;&gt;Button - Appended&lt;/label&gt;
 &lt;div class=&quot;dc-input-group&quot;&gt;
-	&lt;input class=&quot;dc-input&quot; type=&quot;text&quot; id=&quot;urlInput2&quot; placeholder=&quot;e. g. brands.zalando.com&quot; /&gt;
-	&lt;button class=&quot;dc-btn dc-btn--primary&quot;&gt;&lt;i class=&quot;dc-icon dc-icon--search dc-icon--btn&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+	&lt;input class=&quot;dc-input dc-input--in-input-group&quot; type=&quot;text&quot; id=&quot;urlInput2&quot; placeholder=&quot;e. g. brands.zalando.com&quot; /&gt;
+	&lt;button class=&quot;dc-btn dc-btn--in-input-group dc-btn--primary&quot;&gt;
+        &lt;i class=&quot;dc-icon dc-icon--search dc-icon--btn&quot;&gt;&lt;/i&gt;
+    &lt;/button&gt;
 &lt;/div&gt;
 
 &lt;label class=&quot;dc-label&quot; for=&quot;userInput&quot;&gt;Addon - Prepended &amp; Button - Appended&lt;/label&gt;
 &lt;div class=&quot;dc-input-group&quot;&gt;
-	&lt;div class=&quot;dc-input-addon&quot;&gt;User 1&lt;/div&gt;
-	&lt;input class=&quot;dc-input&quot; type=&quot;text&quot; id=&quot;userInput&quot; placeholder=&quot;Full name&quot; /&gt;
-	&lt;a class=&quot;dc-btn dc-btn--primary&quot;&gt;Add&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;h4&gt;BEM way (controversial)&lt;/h4&gt;
-
-&lt;!-- BEM way --&gt;
-&lt;label class=&quot;dc-label&quot; for=&quot;urlInput3&quot;&gt;Button - Appended&lt;/label&gt;
-&lt;div class=&quot;dc-input-group&quot;&gt;
-	&lt;input class=&quot;dc-input-group__input dc-input&quot; type=&quot;text&quot; id=&quot;urlInput3&quot; placeholder=&quot;e. g. brands.zalando.com&quot; /&gt;
-	&lt;button class=&quot;dc-input-group__btn dc-btn dc-btn--primary&quot;&gt;
-        &lt;i class=&quot;dc-icon dc-icon--search dc-icon--btn&quot;&gt;&lt;/i&gt;
-    &lt;/button&gt;
+	&lt;span class=&quot;dc-input-addon&quot;&gt;User 1&lt;/span&gt;
+	&lt;input class=&quot;dc-input dc-input--in-input-group&quot; type=&quot;text&quot; id=&quot;userInput&quot; placeholder=&quot;Full name&quot; /&gt;
+	&lt;a class=&quot;dc-btn dc-btn--in-input-group dc-btn--primary&quot;&gt;Add&lt;/a&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -608,11 +588,7 @@
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg class="dc-svg">
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
+			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 				<svg class="dc-svg">
 					<use xlink:href="#f-icon-code" />
@@ -620,13 +596,9 @@
 			</span>
 		</div>
 		<h2 class="dc-h2 f-item-heading">Search Form</h2>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>These are notes associated with this <code>search-form</code> component.</p>
-
-</div>
+	</div>
 <div class="f-item-preview">
 	<label for="searchOnlyText" class="dc-label">Search box showing text results</label>
-
 <div class="dc-search-form">
 	<input class="dc-input dc-search-form__input" id="searchOnlyText" type="search" placeholder="Search...">
 	<button class="dc-btn dc-search-form__btn">
@@ -658,7 +630,6 @@
 </div>
 
 <label for="searchWithImages" class="dc-label">Search box showing results with images</label>
-
 <div class="dc-search-form">
 	<input class="dc-input dc-search-form__input" id="searchWithImages" type="search" placeholder="Search...">
 	<button class="dc-btn dc-search-form__btn">
@@ -666,44 +637,44 @@
     </button>
 	<ul class="dc-list dc-suggest">
 		<li class="dc-suggest__item dc-link">
-			<div class="dc-suggest__item__img">
-				<img src="assets/img/logo.svg">
+			<div class="dc-suggest__item__img-frame">
+				<img class="dc-suggest__item__img" src="/dress-code/assets/img/logo.svg">
 			</div>
 			<span class="dc-suggest__item__label">Esprit</span>
 		</li>
 		<li class="dc-suggest__item dc-link">
-			<div class="dc-suggest__item__img">
-				<img src="assets/img/logo.svg">
+			<div class="dc-suggest__item__img-frame">
+				<img class="dc-suggest__item__img" src="/dress-code/assets/img/logo.svg">
 			</div>
 			<span class="dc-suggest__item__label">Hugo Boss</span>
 		</li>
 		<li class="dc-suggest__item dc-link">
-			<div class="dc-suggest__item__img">
-				<img src="assets/img/logo.svg">
+			<div class="dc-suggest__item__img-frame">
+				<img class="dc-suggest__item__img" src="/dress-code/assets/img/logo.svg">
 			</div>
 			<span class="dc-suggest__item__label">Michael Kors</span>
 		</li>
 		<li class="dc-suggest__item dc-link">
-			<div class="dc-suggest__item__img">
-				<img src="assets/img/logo.svg">
+			<div class="dc-suggest__item__img-frame">
+				<img class="dc-suggest__item__img" src="/dress-code/assets/img/logo.svg">
 			</div>
 			<span class="dc-suggest__item__label">adidas</span>
 		</li>
 		<li class="dc-suggest__item dc-link">
-			<div class="dc-suggest__item__img">
-				<img src="assets/img/logo.svg">
+			<div class="dc-suggest__item__img-frame">
+				<img class="dc-suggest__item__img" src="/dress-code/assets/img/logo.svg">
 			</div>
 			<span class="dc-suggest__item__label">Tommy Hilfiger</span>
 		</li>
 		<li class="dc-suggest__item dc-link">
-			<div class="dc-suggest__item__img">
-				<img src="assets/img/logo.svg">
+			<div class="dc-suggest__item__img-frame">
+				<img class="dc-suggest__item__img" src="/dress-code/assets/img/logo.svg">
 			</div>
 			<span class="dc-suggest__item__label">Diesel</span>
 		</li>
 		<li class="dc-suggest__item dc-link">
-			<div class="dc-suggest__item__img">
-				<img src="assets/img/logo.svg">
+			<div class="dc-suggest__item__img-frame">
+				<img class="dc-suggest__item__img" src="/dress-code/assets/img/logo.svg">
 			</div>
 			<span class="dc-suggest__item__label">Armani Jeans</span>
 		</li>
@@ -712,7 +683,6 @@
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre class="dc-pre"><code class="language-markup">&lt;label for=&quot;searchOnlyText&quot; class=&quot;dc-label&quot;&gt;Search box showing text results&lt;/label&gt;
-
 &lt;div class=&quot;dc-search-form&quot;&gt;
 	&lt;input class=&quot;dc-input dc-search-form__input&quot; id=&quot;searchOnlyText&quot; type=&quot;search&quot; placeholder=&quot;Search...&quot;&gt;
 	&lt;button class=&quot;dc-btn dc-search-form__btn&quot;&gt;
@@ -744,7 +714,6 @@
 &lt;/div&gt;
 
 &lt;label for=&quot;searchWithImages&quot; class=&quot;dc-label&quot;&gt;Search box showing results with images&lt;/label&gt;
-
 &lt;div class=&quot;dc-search-form&quot;&gt;
 	&lt;input class=&quot;dc-input dc-search-form__input&quot; id=&quot;searchWithImages&quot; type=&quot;search&quot; placeholder=&quot;Search...&quot;&gt;
 	&lt;button class=&quot;dc-btn dc-search-form__btn&quot;&gt;
@@ -752,44 +721,44 @@
     &lt;/button&gt;
 	&lt;ul class=&quot;dc-list dc-suggest&quot;&gt;
 		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
-			&lt;div class=&quot;dc-suggest__item__img&quot;&gt;
-				&lt;img src=&quot;assets/img/logo.svg&quot;&gt;
+			&lt;div class=&quot;dc-suggest__item__img-frame&quot;&gt;
+				&lt;img class=&quot;dc-suggest__item__img&quot; src=&quot;/dress-code/assets/img/logo.svg&quot;&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Esprit&lt;/span&gt;
 		&lt;/li&gt;
 		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
-			&lt;div class=&quot;dc-suggest__item__img&quot;&gt;
-				&lt;img src=&quot;assets/img/logo.svg&quot;&gt;
+			&lt;div class=&quot;dc-suggest__item__img-frame&quot;&gt;
+				&lt;img class=&quot;dc-suggest__item__img&quot; src=&quot;/dress-code/assets/img/logo.svg&quot;&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Hugo Boss&lt;/span&gt;
 		&lt;/li&gt;
 		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
-			&lt;div class=&quot;dc-suggest__item__img&quot;&gt;
-				&lt;img src=&quot;assets/img/logo.svg&quot;&gt;
+			&lt;div class=&quot;dc-suggest__item__img-frame&quot;&gt;
+				&lt;img class=&quot;dc-suggest__item__img&quot; src=&quot;/dress-code/assets/img/logo.svg&quot;&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Michael Kors&lt;/span&gt;
 		&lt;/li&gt;
 		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
-			&lt;div class=&quot;dc-suggest__item__img&quot;&gt;
-				&lt;img src=&quot;assets/img/logo.svg&quot;&gt;
+			&lt;div class=&quot;dc-suggest__item__img-frame&quot;&gt;
+				&lt;img class=&quot;dc-suggest__item__img&quot; src=&quot;/dress-code/assets/img/logo.svg&quot;&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;adidas&lt;/span&gt;
 		&lt;/li&gt;
 		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
-			&lt;div class=&quot;dc-suggest__item__img&quot;&gt;
-				&lt;img src=&quot;assets/img/logo.svg&quot;&gt;
+			&lt;div class=&quot;dc-suggest__item__img-frame&quot;&gt;
+				&lt;img class=&quot;dc-suggest__item__img&quot; src=&quot;/dress-code/assets/img/logo.svg&quot;&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Tommy Hilfiger&lt;/span&gt;
 		&lt;/li&gt;
 		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
-			&lt;div class=&quot;dc-suggest__item__img&quot;&gt;
-				&lt;img src=&quot;assets/img/logo.svg&quot;&gt;
+			&lt;div class=&quot;dc-suggest__item__img-frame&quot;&gt;
+				&lt;img class=&quot;dc-suggest__item__img&quot; src=&quot;/dress-code/assets/img/logo.svg&quot;&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Diesel&lt;/span&gt;
 		&lt;/li&gt;
 		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
-			&lt;div class=&quot;dc-suggest__item__img&quot;&gt;
-				&lt;img src=&quot;assets/img/logo.svg&quot;&gt;
+			&lt;div class=&quot;dc-suggest__item__img-frame&quot;&gt;
+				&lt;img class=&quot;dc-suggest__item__img&quot; src=&quot;/dress-code/assets/img/logo.svg&quot;&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Armani Jeans&lt;/span&gt;
 		&lt;/li&gt;
@@ -803,38 +772,196 @@
 
 <div class="f-item-group" id="06-tooltip">
 
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg class="dc-svg">
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-		<h2 class="dc-h2 f-item-heading">Tooltip</h2>
+	<div class="f-item-heading-group">
+		<h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Tooltip</h2>
 	</div>
-<div class="f-item-preview">
-	<div class="dc-tooltip">
-	Hi. I'm a tooltip.
-	<div class="dc-tooltip__triangle dc-tooltip__triangle--lb"></div>
-</div>
+		<div class="f-item-group" id="06-tooltip.01-has-tooltip">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Has Tooltip</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Apply the base <code>dc--has-tooltip</code> class and a positioning class (ex. <code>dc--has-tooltip--left</code>) to show a nice tooltip when &quot;hovering&quot; the element.</p>
+<p>The attribute <code>data--dc-has-tooltip</code> must be present and not empty, the value will be used as the content for the tooltip body.</p>
+<p>The tooltip implementation is based significantly on <a href="http://kushagragour.in/lab/hint/">hint.css</a>.</p>
 
-<br><br>
-<h4 class="dc-h4">HAS TOOLTIP</h4>
-<button class="dc-btn dc-has-tooltip" data-dc-has-tooltip="Hi. I'm a tooltip.">Has tooltip</button>
+</div>
+<div class="f-item-preview">
+	<div class="sg-has-tooltip-section">
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--bottom-right" data-dc-has-tooltip="Hi. I'm a tooltip">
+            bottom-right
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--bottom" data-dc-has-tooltip="Hi. I'm a tooltip">
+            bottom
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--bottom-left" data-dc-has-tooltip="Hi. I'm a tooltip">
+            bottom-left
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--right" data-dc-has-tooltip="Hi. I'm a tooltip">
+            right
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn">
+            .
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--left" data-dc-has-tooltip="Hi. I'm a tooltip">
+            left
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top-right" data-dc-has-tooltip="Hi. I'm a tooltip">
+            top-right
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top" data-dc-has-tooltip="Hi. I'm a tooltip">
+            top
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top-left" data-dc-has-tooltip="Hi. I'm a tooltip">
+            top-left
+        </button>
+	</div>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-tooltip&quot;&gt;
-	Hi. I&#x27;m a tooltip.
-	&lt;div class=&quot;dc-tooltip__triangle dc-tooltip__triangle--lb&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;br&gt;&lt;br&gt;
-&lt;h4 class=&quot;dc-h4&quot;&gt;HAS TOOLTIP&lt;/h4&gt;
-&lt;button class=&quot;dc-btn dc-has-tooltip&quot; data-dc-has-tooltip=&quot;Hi. I&#x27;m a tooltip.&quot;&gt;Has tooltip&lt;/button&gt;</code></pre>
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;sg-has-tooltip-section&quot;&gt;
+	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--bottom-right&quot; data-dc-has-tooltip=&quot;Hi. I&#x27;m a tooltip&quot;&gt;
+            bottom-right
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--bottom&quot; data-dc-has-tooltip=&quot;Hi. I&#x27;m a tooltip&quot;&gt;
+            bottom
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--bottom-left&quot; data-dc-has-tooltip=&quot;Hi. I&#x27;m a tooltip&quot;&gt;
+            bottom-left
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--right&quot; data-dc-has-tooltip=&quot;Hi. I&#x27;m a tooltip&quot;&gt;
+            right
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class=&quot;dc-btn&quot;&gt;
+            .
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--left&quot; data-dc-has-tooltip=&quot;Hi. I&#x27;m a tooltip&quot;&gt;
+            left
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--top-right&quot; data-dc-has-tooltip=&quot;Hi. I&#x27;m a tooltip&quot;&gt;
+            top-right
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--top&quot; data-dc-has-tooltip=&quot;Hi. I&#x27;m a tooltip&quot;&gt;
+            top
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--top-left&quot; data-dc-has-tooltip=&quot;Hi. I&#x27;m a tooltip&quot;&gt;
+            top-left
+        &lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
+		</div>
+		<div class="f-item-group" id="06-tooltip.02-sizing">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Sizing</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>You can use a sizing modifier to define the width of a tooltip.</p>
+<p>Available sizing modifiers are <code>dc--has-tooltip--large</code>, <code>dc--has-tooltip--medium</code> and <code>dc--has-tooltip--small</code>.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="sg-has-tooltip-section">
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--large" data-dc-has-tooltip="Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst. Nullam posuere condimentum cursus.">
+            large
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--medium" data-dc-has-tooltip="Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst. Nullam posuere condimentum cursus.">
+            medium
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--small" data-dc-has-tooltip="Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst.">
+            small
+        </button>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;sg-has-tooltip-section&quot;&gt;
+	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--large&quot; data-dc-has-tooltip=&quot;Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst. Nullam posuere condimentum cursus.&quot;&gt;
+            large
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--medium&quot; data-dc-has-tooltip=&quot;Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst. Nullam posuere condimentum cursus.&quot;&gt;
+            medium
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--small&quot; data-dc-has-tooltip=&quot;Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst.&quot;&gt;
+            small
+        &lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
 
 </div>
 
@@ -857,14 +984,16 @@
 	<div class="dc-dialog__overlay"> </div>
 	<div class="dc-dialog__content">
 		<div class="dc-dialog__body">
-			<div class="dc-dialog__close"><i class="dc-icon dc-icon--close dc-icon--interactive"></i></div>
+			<div class="dc-dialog__close">
+				<i class="dc-icon dc-icon--close dc-icon--interactive dc-dialog__close__icon"></i>
+			</div>
 			<h3 class="dc-dialog__title">This is a dialog</h3>
 			<h4 class="dc-dialog__subtitle">Subtitle or step</h4>
 			<p>This is the content area. Content goes here. Actions (buttons, most of the times) should go in the bottom part.</p>
 		</div>
 		<div class="dc-dialog__actions">
-			<a href="#" class="dc-link">Action</a>
-			<button class="dc-btn dc-btn--primary dc-dialog__primary">Action</button>
+			<a href="#" class="dc-link dc-dialog__actions__link">Action</a>
+			<button class="dc-btn dc-btn--primary">Action</button>
 		</div>
 	</div>
 </div>
@@ -874,14 +1003,16 @@
 	&lt;div class=&quot;dc-dialog__overlay&quot;&gt; &lt;/div&gt;
 	&lt;div class=&quot;dc-dialog__content&quot;&gt;
 		&lt;div class=&quot;dc-dialog__body&quot;&gt;
-			&lt;div class=&quot;dc-dialog__close&quot;&gt;&lt;i class=&quot;dc-icon dc-icon--close dc-icon--interactive&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+			&lt;div class=&quot;dc-dialog__close&quot;&gt;
+				&lt;i class=&quot;dc-icon dc-icon--close dc-icon--interactive dc-dialog__close__icon&quot;&gt;&lt;/i&gt;
+			&lt;/div&gt;
 			&lt;h3 class=&quot;dc-dialog__title&quot;&gt;This is a dialog&lt;/h3&gt;
 			&lt;h4 class=&quot;dc-dialog__subtitle&quot;&gt;Subtitle or step&lt;/h4&gt;
 			&lt;p&gt;This is the content area. Content goes here. Actions (buttons, most of the times) should go in the bottom part.&lt;/p&gt;
 		&lt;/div&gt;
 		&lt;div class=&quot;dc-dialog__actions&quot;&gt;
-			&lt;a href=&quot;#&quot; class=&quot;dc-link&quot;&gt;Action&lt;/a&gt;
-			&lt;button class=&quot;dc-btn dc-btn--primary dc-dialog__primary&quot;&gt;Action&lt;/button&gt;
+			&lt;a href=&quot;#&quot; class=&quot;dc-link dc-dialog__actions__link&quot;&gt;Action&lt;/a&gt;
+			&lt;button class=&quot;dc-btn dc-btn--primary&quot;&gt;Action&lt;/button&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -909,30 +1040,39 @@
 		<h2 class="dc-h2 f-item-heading">Toast</h2>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Toasts are used to give feedback about user action, but they are simpler than messages in that they have less information and no interaction.</p>
-<p>A toast's default position is fixed to the top of the screen. Default is top. Use <code>.dc-toast-container--bottom</code> to make it appear from the bottom.</p>
+<p>Toasts have no default position, you must choose between top or bottom using:</p>
+<ul>
+<li>
+<p><code>.dc-toast-container--top</code> plus <code>.dc-toast--top</code> to make it appear from the top</p>
+</li>
+<li>
+<p><code>.dc-toast-container--bottom</code> plus <code>.dc-toast--bottom</code> to make it appear from the bottom</p>
+</li>
+</ul>
+<p>Note: the animation duration is not defined by the dress code and must be passed by you.</p>
 
 </div>
 <div class="f-item-preview">
-	<div class="dc-toast-container">
-	<div class="dc-toast">
+	<div class="dc-toast-container dc-toast-container--top">
+	<div class="dc-toast dc-toast--top">
 		<div class="dc-toast__content dc-toast__content--info">
 			Info toast. Be quick, this message will disappear!
 		</div>
 	</div>
 
-	<div class="dc-toast">
+	<div class="dc-toast dc-toast--top">
 		<div class="dc-toast__content dc-toast__content--success">
 			Success toast. Be quick, this message will disappear!
 		</div>
 	</div>
 
-	<div class="dc-toast">
+	<div class="dc-toast dc-toast--top">
 		<div class="dc-toast__content dc-toast__content--warning">
 			Error toast. Be quick, this message will disappear!
 		</div>
 	</div>
 
-	<div class="dc-toast">
+	<div class="dc-toast dc-toast--top">
 		<div class="dc-toast__content dc-toast__content--error">
 			Warning toast. Be quick, this message will disappear!
 		</div>
@@ -940,26 +1080,26 @@
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-toast-container&quot;&gt;
-	&lt;div class=&quot;dc-toast&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-toast-container dc-toast-container--top&quot;&gt;
+	&lt;div class=&quot;dc-toast dc-toast--top&quot;&gt;
 		&lt;div class=&quot;dc-toast__content dc-toast__content--info&quot;&gt;
 			Info toast. Be quick, this message will disappear!
 		&lt;/div&gt;
 	&lt;/div&gt;
 
-	&lt;div class=&quot;dc-toast&quot;&gt;
+	&lt;div class=&quot;dc-toast dc-toast--top&quot;&gt;
 		&lt;div class=&quot;dc-toast__content dc-toast__content--success&quot;&gt;
 			Success toast. Be quick, this message will disappear!
 		&lt;/div&gt;
 	&lt;/div&gt;
 
-	&lt;div class=&quot;dc-toast&quot;&gt;
+	&lt;div class=&quot;dc-toast dc-toast--top&quot;&gt;
 		&lt;div class=&quot;dc-toast__content dc-toast__content--warning&quot;&gt;
 			Error toast. Be quick, this message will disappear!
 		&lt;/div&gt;
 	&lt;/div&gt;
 
-	&lt;div class=&quot;dc-toast&quot;&gt;
+	&lt;div class=&quot;dc-toast dc-toast--top&quot;&gt;
 		&lt;div class=&quot;dc-toast__content dc-toast__content--error&quot;&gt;
 			Warning toast. Be quick, this message will disappear!
 		&lt;/div&gt;
@@ -995,22 +1135,19 @@
 	<div class="dc-msg dc-msg--info">
 	<div class="dc-msg__inner">
 
-		<div class="dc-msg__icon">
-			<i class="dc-icon dc-icon--msg-info"></i>
+		<div class="dc-msg__icon-frame">
+			<i class="dc-icon dc-msg__icon dc-icon--info-large"></i>
 		</div>
 
 		<div class="dc-msg__bd">
-
 			<h1 class="dc-msg__title">Info message</h1>
-
 			<p class="dc-msg__text">
-				Give some more information about what happened. <a href class="dc-link" title="tooltip">Also, here's a link. Boo!</a>
+				Give some more information about what happened. <a href class="dc-link dc-msg__bd__link" title="tooltip">Also, here's a link. Boo!</a>
 			</p>
-
 		</div>
 
 		<div class="dc-msg__close">
-			<i class="dc-icon dc-icon--close"></i>
+			<i class="dc-icon dc-icon--close dc-msg__close__icon"></i>
 		</div>
 	</div>
 </div>
@@ -1018,22 +1155,19 @@
 <div class="dc-msg dc-msg--success">
 	<div class="dc-msg__inner">
 
-		<div class="dc-msg__icon">
-			<i class="dc-icon dc-icon--msg-success"></i>
+		<div class="dc-msg__icon-frame">
+			<i class="dc-icon dc-msg__icon dc-icon--success"></i>
 		</div>
 
 		<div class="dc-msg__bd">
-
 			<h1 class="dc-msg__title">Success message</h1>
-
 			<p class="dc-msg__text">
-				Give some more information about what happened. <a href class="dc-link" title="tooltip">Also, here's a link. Boo!</a>
+				Give some more information about what happened. <a href class="dc-link dc-msg__bd__link" title="tooltip">Also, here's a link. Boo!</a>
 			</p>
-
 		</div>
 
 		<div class="dc-msg__close">
-			<i class="dc-icon dc-icon--close"></i>
+			<i class="dc-icon dc-icon--close dc-msg__close__icon"></i>
 		</div>
 	</div>
 </div>
@@ -1041,22 +1175,19 @@
 <div class="dc-msg dc-msg--warning">
 	<div class="dc-msg__inner">
 
-		<div class="dc-msg__icon">
-			<i class="dc-icon dc-icon--msg-warning"></i>
+		<div class="dc-msg__icon-frame">
+			<i class="dc-icon dc-msg__icon dc-icon--warning"></i>
 		</div>
 
 		<div class="dc-msg__bd">
-
 			<h1 class="dc-msg__title">Warning message</h1>
-
 			<p class="dc-msg__text">
-				Give some more information about what happened. <a href class="dc-link" title="tooltip">Also, here's a link. Boo!</a>
+				Give some more information about what happened. <a href class="dc-link dc-msg__bd__link" title="tooltip">Also, here's a link. Boo!</a>
 			</p>
-
 		</div>
 
 		<div class="dc-msg__close">
-			<i class="dc-icon dc-icon--close"></i>
+			<i class="dc-icon dc-icon--close dc-msg__close__icon"></i>
 		</div>
 	</div>
 </div>
@@ -1065,22 +1196,19 @@
 <div class="dc-msg dc-msg--error">
 	<div class="dc-msg__inner">
 
-		<div class="dc-msg__icon">
-			<i class="dc-icon dc-icon--msg-error"></i>
+		<div class="dc-msg__icon-frame">
+			<i class="dc-icon dc-msg__icon dc-icon--error"></i>
 		</div>
 
 		<div class="dc-msg__bd">
-
 			<h1 class="dc-msg__title">Error message</h1>
-
 			<p class="dc-msg__text">
-				Give some more information about what happened. <a href class="dc-link" title="tooltip">Also, here's a link. Boo!</a>
+				Give some more information about what happened. <a href class="dc-link dc-msg__bd__link" title="tooltip">Also, here's a link. Boo!</a>
 			</p>
-
 		</div>
 
 		<div class="dc-msg__close">
-			<i class="dc-icon dc-icon--close"></i>
+			<i class="dc-icon dc-icon--close dc-msg__close__icon"></i>
 		</div>
 	</div>
 </div>
@@ -1089,22 +1217,19 @@
 	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-msg dc-msg--info&quot;&gt;
 	&lt;div class=&quot;dc-msg__inner&quot;&gt;
 
-		&lt;div class=&quot;dc-msg__icon&quot;&gt;
-			&lt;i class=&quot;dc-icon dc-icon--msg-info&quot;&gt;&lt;/i&gt;
+		&lt;div class=&quot;dc-msg__icon-frame&quot;&gt;
+			&lt;i class=&quot;dc-icon dc-msg__icon dc-icon--info-large&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 
 		&lt;div class=&quot;dc-msg__bd&quot;&gt;
-
 			&lt;h1 class=&quot;dc-msg__title&quot;&gt;Info message&lt;/h1&gt;
-
 			&lt;p class=&quot;dc-msg__text&quot;&gt;
-				Give some more information about what happened. &lt;a href class=&quot;dc-link&quot; title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
+				Give some more information about what happened. &lt;a href class=&quot;dc-link dc-msg__bd__link&quot; title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
 			&lt;/p&gt;
-
 		&lt;/div&gt;
 
 		&lt;div class=&quot;dc-msg__close&quot;&gt;
-			&lt;i class=&quot;dc-icon dc-icon--close&quot;&gt;&lt;/i&gt;
+			&lt;i class=&quot;dc-icon dc-icon--close dc-msg__close__icon&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
@@ -1112,22 +1237,19 @@
 &lt;div class=&quot;dc-msg dc-msg--success&quot;&gt;
 	&lt;div class=&quot;dc-msg__inner&quot;&gt;
 
-		&lt;div class=&quot;dc-msg__icon&quot;&gt;
-			&lt;i class=&quot;dc-icon dc-icon--msg-success&quot;&gt;&lt;/i&gt;
+		&lt;div class=&quot;dc-msg__icon-frame&quot;&gt;
+			&lt;i class=&quot;dc-icon dc-msg__icon dc-icon--success&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 
 		&lt;div class=&quot;dc-msg__bd&quot;&gt;
-
 			&lt;h1 class=&quot;dc-msg__title&quot;&gt;Success message&lt;/h1&gt;
-
 			&lt;p class=&quot;dc-msg__text&quot;&gt;
-				Give some more information about what happened. &lt;a href class=&quot;dc-link&quot; title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
+				Give some more information about what happened. &lt;a href class=&quot;dc-link dc-msg__bd__link&quot; title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
 			&lt;/p&gt;
-
 		&lt;/div&gt;
 
 		&lt;div class=&quot;dc-msg__close&quot;&gt;
-			&lt;i class=&quot;dc-icon dc-icon--close&quot;&gt;&lt;/i&gt;
+			&lt;i class=&quot;dc-icon dc-icon--close dc-msg__close__icon&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
@@ -1135,22 +1257,19 @@
 &lt;div class=&quot;dc-msg dc-msg--warning&quot;&gt;
 	&lt;div class=&quot;dc-msg__inner&quot;&gt;
 
-		&lt;div class=&quot;dc-msg__icon&quot;&gt;
-			&lt;i class=&quot;dc-icon dc-icon--msg-warning&quot;&gt;&lt;/i&gt;
+		&lt;div class=&quot;dc-msg__icon-frame&quot;&gt;
+			&lt;i class=&quot;dc-icon dc-msg__icon dc-icon--warning&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 
 		&lt;div class=&quot;dc-msg__bd&quot;&gt;
-
 			&lt;h1 class=&quot;dc-msg__title&quot;&gt;Warning message&lt;/h1&gt;
-
 			&lt;p class=&quot;dc-msg__text&quot;&gt;
-				Give some more information about what happened. &lt;a href class=&quot;dc-link&quot; title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
+				Give some more information about what happened. &lt;a href class=&quot;dc-link dc-msg__bd__link&quot; title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
 			&lt;/p&gt;
-
 		&lt;/div&gt;
 
 		&lt;div class=&quot;dc-msg__close&quot;&gt;
-			&lt;i class=&quot;dc-icon dc-icon--close&quot;&gt;&lt;/i&gt;
+			&lt;i class=&quot;dc-icon dc-icon--close dc-msg__close__icon&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
@@ -1159,22 +1278,19 @@
 &lt;div class=&quot;dc-msg dc-msg--error&quot;&gt;
 	&lt;div class=&quot;dc-msg__inner&quot;&gt;
 
-		&lt;div class=&quot;dc-msg__icon&quot;&gt;
-			&lt;i class=&quot;dc-icon dc-icon--msg-error&quot;&gt;&lt;/i&gt;
+		&lt;div class=&quot;dc-msg__icon-frame&quot;&gt;
+			&lt;i class=&quot;dc-icon dc-msg__icon dc-icon--error&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 
 		&lt;div class=&quot;dc-msg__bd&quot;&gt;
-
 			&lt;h1 class=&quot;dc-msg__title&quot;&gt;Error message&lt;/h1&gt;
-
 			&lt;p class=&quot;dc-msg__text&quot;&gt;
-				Give some more information about what happened. &lt;a href class=&quot;dc-link&quot; title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
+				Give some more information about what happened. &lt;a href class=&quot;dc-link dc-msg__bd__link&quot; title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
 			&lt;/p&gt;
-
 		&lt;/div&gt;
 
 		&lt;div class=&quot;dc-msg__close&quot;&gt;
-			&lt;i class=&quot;dc-icon dc-icon--close&quot;&gt;&lt;/i&gt;
+			&lt;i class=&quot;dc-icon dc-icon--close dc-msg__close__icon&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>

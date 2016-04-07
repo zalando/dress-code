@@ -1,0 +1,12 @@
+<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+    <title>
+        Search
+    </title>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="none" d="M0 0h36v36H0z"/>
+        <g transform="translate(10 10)" stroke="#9B9B9B">
+            <path d="M10.75 10.75l4.95 4.95" stroke-linecap="round"/>
+            <circle cx="6" cy="6" r="6"/>
+        </g>
+    </g>
+</svg>
