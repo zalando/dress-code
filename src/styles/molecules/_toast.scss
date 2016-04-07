@@ -19,12 +19,16 @@
 }
 
 @mixin dc-toast--top {
-    animation: dc-toast-animation--top 4s 1 forwards;
+    animation: dc-toast-animation--top;
+    animation-iteration-count: 1;
+    animation-direction: forwards;
 }
 
 @mixin dc-toast--bottom {
     padding: $dc-space75 $dc-space100 0;
-    animation: dc-toast-animation--bottom 4s 1 forwards;
+    animation-name: dc-toast-animation--bottom;
+    animation-iteration-count: 1;
+    animation-direction: forwards;
 }
 
 @mixin dc-toast__content {
@@ -152,4 +156,3 @@
         @include dc-toast__content--error;
     }
 }
-
