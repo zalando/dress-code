@@ -28,7 +28,7 @@
     }
 }
 
-@mixin dc-input-group__input {
+@mixin dc-input--in-input-group {
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
@@ -45,58 +45,25 @@
     }
 }
 
-@mixin dc-input-group__btn {
-    @include dc-btn-group__btn;
-}
-
-@mixin dc-input-group__btn--primary {
-    @include dc-btn-group__btn--primary;
+@mixin dc-btn--in-input-group {
+    @include _dc-btn--grouped;
 }
 
 @mixin dc-input-group-selectors {
-    //  = INPUT GROUPS
-    //  ---------------------------------------------------------------------------
 
     .dc-input-group {
         @include dc-input-group;
-
-        //
-        // FIXME @deprecated will be removed soon
-        // FIXME @controversial BEM
-        //
-        // @example
-        //
-        // <!-- old way -->
-        // <div class="dc-input-group">
-        //   <input class="dc-input" type="text" />
-        //   <button class="dc-btn dc-btn--primary"><i class="dc-font-icon-search"></i></button>
-        // </div>
-        //
-        // <!-- new way -->
-        // <div class="dc-input-group">
-        //   <input class="dc-input-group__input dc-input" type="text" />
-        //   <button class="dc-input-group__btn dc-btn dc-btn--primary"><i class="dc-font-icon--btn dc-font-icon--search"></i></button>
-        // </div>
-        //
-        .dc-btn:not(.dc-input-group__btn) { // @deprecated.. use <button class="dc-btn dc-input-group__btn">submit</button>
-            @include dc-input-group__btn;
-        }
-
-        .dc-input:not(.dc-input-group__input) {
-            @include dc-input-group__input;
-        }
     }
 
     .dc-input-addon {
         @include dc-input-addon;
     }
 
-    .dc-input-group__input {
-        @include dc-input-group__input;
+    .dc-input--in-input-group {
+        @include dc-input--in-input-group;
     }
 
-    .dc-input-group__btn {
-        @include dc-input-group__btn;
+    .dc-btn--in-input-group {
+        @include dc-btn--in-input-group;
     }
-
 }

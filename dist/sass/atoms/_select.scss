@@ -12,7 +12,10 @@
     font-weight: $dc-normal-font-weight;
     line-height: 1;
     -webkit-appearance: none;
+    -moz-appearance: none;
+
     border-radius: $dc-radius100;
+
 
     &:hover {
         border-color: $dc-blue40;

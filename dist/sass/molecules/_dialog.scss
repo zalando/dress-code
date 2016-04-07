@@ -40,18 +40,23 @@
     margin-top: -1.6rem;
     margin-right: -1rem;
     float: right;
+}
 
-    // FIXME @controversial BEM
-    .dc-icon {
-        color: $dc-gray30;
-        font-size: 1.2rem;
-    }
-
-    // FIXME @controversial BEM
-    .touch &:active,
-    .no-touch &:active {
+@mixin dc-dialog__close--no-touch {
+    &:active {
         transform: scale(.85);
     }
+}
+
+@mixin dc-dialog__close--touch {
+    &:active {
+        transform: scale(.85);
+    }
+}
+
+@mixin dc-dialog__close__icon {
+    color: $dc-gray30;
+    font-size: 1.2rem;
 }
 
 @mixin dc-dialog__actions {
@@ -61,14 +66,13 @@
     border-top: 1px solid $dc-gray70;
     border-radius: 0 0 $dc-radius100 $dc-radius100;
     background: $dc-gray80;
+}
 
-    // FIXME @controversial BEM
-    .dc-link {
-        // Ensure links align and space to buttons correctly;
-        display: block;
-        margin: 0 $dc-space100;
-        padding: $dc-space75 0;
-    }
+@mixin dc-dialog__actions__link {
+    // Ensure links align and space to buttons correctly;
+    display: block;
+    margin: 0 $dc-space100;
+    padding: $dc-space75 0;
 }
 
 @mixin dc-dialog__title {
@@ -110,8 +114,24 @@
         @include dc-dialog__actions;
     }
 
+    .dc-dialog__actions__link {
+        @include dc-dialog__actions__link;
+    }
+
     .dc-dialog__close {
         @include dc-dialog__close;
+    }
+
+    .no-touch .dc-dialog__close {
+        @include dc-dialog__close--no-touch;
+    }
+
+    .touch .dc-dialog__close {
+        @include dc-dialog__close--touch;
+    }
+
+    .dc-dialog__close__icon {
+        @include dc-dialog__close__icon;
     }
 
     .dc-dialog__title {

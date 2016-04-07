@@ -4,20 +4,6 @@
 //
 //  ---------------------------------------------------------------------------
 
-//  = BODY
-//  ---------------------------------------------------------------------------
-
-@mixin dc-collapse-bd {
-    height: 0;
-    overflow: hidden;
-}
-
-@mixin dc-collapse-bd-selectors {
-    .dc-collapse-bd {
-        @include dc-collapse-bd;
-    }
-}
-
 //  ---------------------------------------------------------------------------
 //
 //  Collapse/expand pattern
@@ -25,11 +11,11 @@
 //  ---------------------------------------------------------------------------
 
 // scss-lint:disable ImportantRule
-@mixin dc-is-collapsed {
+@mixin dc--is-collapsed {
     height: 0 !important;
 }
 
-@mixin dc-is-expanded {
+@mixin dc--is-expanded {
     height: auto !important;
 }
 
@@ -39,11 +25,11 @@
 //
 //  ---------------------------------------------------------------------------
 
-@mixin dc-is-hidden {
+@mixin dc--is-hidden {
     display: none !important;
 }
 
-@mixin dc-is-shown {
+@mixin dc--is-shown {
     display: block !important;
 }
 
@@ -53,11 +39,11 @@
 //
 //  ---------------------------------------------------------------------------
 
-@mixin dc-is-invisible {
+@mixin dc--is-invisible {
     opacity: 0;
 }
 
-@mixin dc-is-visible {
+@mixin dc--is-visible {
     opacity: 1;
 }
 
@@ -67,7 +53,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-@mixin dc-is-inline {
+@mixin dc--is-inline {
     display: inline-block !important;
 }
 
@@ -77,7 +63,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-@mixin dc-is-fixed {
+@mixin dc--is-fixed {
     position: fixed !important;
 }
 
@@ -87,7 +73,7 @@
 //
 //  ---------------------------------------------------------------------------
 
-@mixin dc-is-important {
+@mixin dc--is-important {
     background: $dc-yellow60 !important;
 }
 
@@ -98,27 +84,11 @@
 //
 //  ---------------------------------------------------------------------------
 
-@mixin dc-less-important {
+@mixin dc--less-important {
     color: $dc-gray50 !important;
 }
 
-//  ---------------------------------------------------------------------------
-//
-//  Alignment Classes - left - center - right
-//
-//  ---------------------------------------------------------------------------
 
-@mixin dc-text-left {
-    text-align: left;
-}
-
-@mixin dc-text-center {
-    text-align: center;
-}
-
-@mixin dc-text-right {
-    text-align: right;
-}
 
 //  ---------------------------------------------------------------------------
 //
@@ -126,82 +96,156 @@
 //
 //  ---------------------------------------------------------------------------
 
-@mixin dc-island-50 {
+@mixin dc--island-50 {
     padding: $dc-space50;
 }
 
-@mixin dc-island-75 {
+@mixin dc--island-75 {
     padding: $dc-space75;
 }
 
-@mixin dc-island-100 {
+@mixin dc--island-100 {
     padding: $dc-space100;
 }
 
+
+//  = TEXT
+//  ---------------------------------------------------------------------------
+
+//  ---------------------------------------------------------------------------
+//
+//  Alignment Classes - left - center - right
+//
+//  ---------------------------------------------------------------------------
+
+@mixin dc--text-left {
+    text-align: left;
+}
+
+@mixin dc--text-center {
+    text-align: center;
+}
+
+@mixin dc--text-right {
+    text-align: right;
+}
+
+
+//  This class is for text elements that are not so important and
+//	appear in a less intrusive way
+//  ---------------------------------------------------------------------------
+@mixin dc--text-less-important {
+    color: $dc-gray60;
+    font-size: $dc-font50;
+    line-height: 1;
+}
+
+@mixin dc--text-small {
+    font-size: $dc-font50;
+    line-height: $dc-space125;
+}
+
+@mixin dc--text-success {
+    color: $dc-green30;
+}
+
+@mixin dc--text-error {
+    color: $dc-red40;
+}
+
+@mixin dc--text-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin dc--no-wrap {
+    white-space: nowrap;
+}
+
 @mixin dc-patterns-selectors {
-    @include dc-collapse-bd-selectors;
 
-    .dc-is-collapsed {
-        @include dc-is-collapsed;
+    .dc--is-collapsed {
+        @include dc--is-collapsed;
     }
 
-    .dc-is-expanded {
-        @include dc-is-expanded;
+    .dc--is-expanded {
+        @include dc--is-expanded;
     }
 
-    .dc-is-hidden {
-        @include dc-is-hidden;
+    .dc--is-hidden {
+        @include dc--is-hidden;
     }
 
-    .dc-is-shown {
-        @include dc-is-shown;
+    .dc--is-shown {
+        @include dc--is-shown;
     }
 
-    .dc-is-invisible {
-        @include dc-is-invisible;
+    .dc--is-invisible {
+        @include dc--is-invisible;
     }
 
-    .dc-is-visible {
-        @include dc-is-visible;
+    .dc--is-visible {
+        @include dc--is-visible;
     }
 
-    .dc-is-inline {
-        @include dc-is-inline;
+    .dc--is-inline {
+        @include dc--is-inline;
     }
 
-    .dc-is-fixed {
-        @include dc-is-fixed;
+    .dc--is-fixed {
+        @include dc--is-fixed;
     }
 
-    .dc-is-important {
-        @include dc-is-important;
+    .dc--is-important {
+        @include dc--is-important;
     }
 
-    .dc-less-important {
-        @include dc-less-important;
+    .dc--island-50 {
+        @include dc--island-50;
     }
 
-    .dc-text-left {
-        @include dc-text-left;
+    .dc--island-75 {
+        @include dc--island-75;
     }
 
-    .dc-text-center {
-        @include dc-text-center;
+    .dc--island-100 {
+        @include dc--island-100;
     }
 
-    .dc-text-right {
-        @include dc-text-right;
+    .dc--text-small {
+        @include dc--text-small;
     }
 
-    .dc-island-50 {
-        @include dc-island-50;
+    .dc--text-less-important {
+        @include dc--text-less-important;
     }
 
-    .dc-island-75 {
-        @include dc-island-75;
+    .dc--text-success {
+        @include dc--text-success;
     }
 
-    .dc-island-100 {
-        @include dc-island-100;
+    .dc--text-error {
+        @include dc--text-error;
+    }
+
+    .dc--text--eft {
+        @include dc--text-left;
+    }
+
+    .dc--text-center {
+        @include dc--text-center;
+    }
+
+    .dc--text-right {
+        @include dc--text-right;
+    }
+
+    .dc--text-truncate {
+        @include dc--text-truncate;
+    }
+
+    .dc--no-wrap {
+        @include dc--no-wrap;
     }
 }

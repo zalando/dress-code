@@ -1,3 +1,209 @@
+<a name="2.0.0-alpha"></a>
+# [2.0.0-alpha](https://github.com/zalando/dress-code/compare/1.4.0-alpha...v2.0.0-alpha) (2016-04-07)
+
+
+### Bug Fixes
+
+* **demo:** Fix color chips in screen width ~50em ([09bb52e](https://github.com/zalando/dress-code/commit/09bb52e))
+* **demo:** Fix left-margin overflow display in demo. ([77a28b7](https://github.com/zalando/dress-code/commit/77a28b7)), closes [#120](https://github.com/zalando/dress-code/issues/120)
+* **lists:** Closes #180 ([5147c67](https://github.com/zalando/dress-code/commit/5147c67)), closes [#180](https://github.com/zalando/dress-code/issues/180)
+* **lists:** move scrollable list item action icon to right side. Closes #170 ([90614e4](https://github.com/zalando/dress-code/commit/90614e4)), closes [#170](https://github.com/zalando/dress-code/issues/170)
+* **select:** hide native arrow on firefox #110 ([ff8362d](https://github.com/zalando/dress-code/commit/ff8362d))
+* **toast:** do not use modifier classes without block ones #110 ([95d0d23](https://github.com/zalando/dress-code/commit/95d0d23))
+* **toast:** Remove CSS timing in toast animation. ([9d7ca71](https://github.com/zalando/dress-code/commit/9d7ca71)), closes [#169](https://github.com/zalando/dress-code/issues/169)
+
+### Code Refactoring
+
+* **btn-group:** use composition to fix controversial BEM #110 ([c4aaad0](https://github.com/zalando/dress-code/commit/c4aaad0)), closes [#110](https://github.com/zalando/dress-code/issues/110)
+* **btn, btn-group, input-group:** use grouped modifiers in a more flexible way ([1fbd15c](https://github.com/zalando/dress-code/commit/1fbd15c))
+* **dialog:** fix controversial BEM by using composition #110 ([8bb002c](https://github.com/zalando/dress-code/commit/8bb002c)), closes [#110](https://github.com/zalando/dress-code/issues/110)
+* **input-groups:** use composition to fix controversial BEM #110 ([740c46e](https://github.com/zalando/dress-code/commit/740c46e)), closes [#110](https://github.com/zalando/dress-code/issues/110)
+* **messages:** fix controversial BEM by using composition #110 ([a32dac7](https://github.com/zalando/dress-code/commit/a32dac7)), closes [#110](https://github.com/zalando/dress-code/issues/110)
+* **patterns:** change names to be consistent with typography modifiers #110 ([1a87c8a](https://github.com/zalando/dress-code/commit/1a87c8a))
+* **patterns:** use one naming conventions for patterns, introduce BC, close #172 ([6d8f62f](https://github.com/zalando/dress-code/commit/6d8f62f)), closes [#172](https://github.com/zalando/dress-code/issues/172)
+* **search-form:** use composition to fix controversial BEM #110 ([80cebb3](https://github.com/zalando/dress-code/commit/80cebb3)), closes [#110](https://github.com/zalando/dress-code/issues/110)
+* **toast:** fix controversial BEM by using composition #110 ([da6d3fe](https://github.com/zalando/dress-code/commit/da6d3fe)), closes [#110](https://github.com/zalando/dress-code/issues/110)
+
+### Features
+
+* **dc-table:** add dc-table__tr--interactive, refactor dc-table, see #110, add $dc-image-path ([fe3288f](https://github.com/zalando/dress-code/commit/fe3288f))
+* **tooltip:** add dc--has-tooltip enhanced version based on hint.css, close #157 ([82a03b9](https://github.com/zalando/dress-code/commit/82a03b9)), closes [#157](https://github.com/zalando/dress-code/issues/157)
+
+
+### BREAKING CHANGES
+
+
+
+* patterns: patterns have been renamed from ```dc-is-xxx``` to ```dc--is-xxx```
+
+* tooltip: ```dc-tooltip``` and its sub-elements were removed.
+    ```dc-has-tooltip``` was renamed to ```dc--has-tooltip```. A positioning class must be always applied.
+    
+    Replace this:
+    
+    ```html
+    <button class="dc-btn dc-has-tooltip" data-dc-has-tooltip="Tooltip content">Button label<button>
+    ```
+    
+    With this:
+    
+    ```html
+    <button class="dc-btn dc--has-tooltip dc--has-tooltip-top-right" data-dc-has-tooltip="Tooltip content">
+        Button label
+    <button>
+    ```
+
+* dc-table: ```dc-table--spacious```, ```dc-table--comfortable```, etc. were removed in favor of ```dc-table__tr--spacious```, ```dc-table__tr--comfortable```, etc.
+
+* btn, btn-group, input-group:
+
+    ```dc-btn--grouped``` modifier becomes a partial ```_dc-btn--grouped``` which is extended in every molecule that uses it, for instance ```dc-btn--in-input-group``` or ```dc-btn--in-btn-group```.
+    
+    ```dc-input-group__input``` becomes ```dc-input--in-input-group```.
+    
+    Change your code from this:
+
+    ```html
+    <div class="dc-input-group">
+       <span class="dc-input-addon">User</span>
+       <input class="dc-input dc-input-group__input"/>
+       <a class="dc-btn dc-btn--grouped dc-btn--primary">Add</a>
+    </div>
+    ```
+
+    To this:
+
+    ```html
+    <div class="dc-input-group">
+       <span class="dc-input-addon">User</span>
+       <input class="dc-input dc-input--in-input-group"/>
+       <a class="dc-btn dc-btn--in-input-group dc-btn--primary">Add</a>
+    </div>
+    ```
+    
+* messages: some classes were renamed
+    ```dc-icon--msg-success``` has been renamed to ```dc-icon--success```
+    ```dc-icon--msg-info``` has been renamed to ```dc-icon--info```
+    ```dc-icon--msg-error``` has been renamed to ```dc-icon--error```
+    ```dc-icon--msg-warning``` has been renamed to ```dc-icon--warning```
+
+         
+* patterns: some patterns classes/mixins were removed, move patterns from typography to patterns file.
+
+* replace ```dc-text--truncate``` with ```dc--text-truncate```
+
+* replace ```dc-text--less-important``` with ```dc--text-less-important```
+
+* replace ```dc-text--small``` with ```dc--text-small```
+
+* replace ```dc-text--<error|success|center|left|right>``` with ```dc--text-<error|success|center|left|right>```
+
+* ```dc-collapse-bd``` mixin and selectors were removed
+
+* replace ```dc-no-wrap``` with ```dc--no-wrap```, ```dc-no-wrap-selectors``` mixin was removed
+
+* search-form: introduced ```dc-search-form__btn__icon``` and ```dc-suggest__item__img-frame```
+
+      Change your code from this:
+
+      ```html
+        <div class="dc-search-form">
+            <input class="dc-input dc-search-form__input" type="search" placeholder="Search...">
+            <button class="dc-btn dc-search-form__btn">
+                <svg class="dc-svg dc-icon--interactive">
+                        ............
+            </button>
+            <ul class="dc-list dc-suggest">
+                <li class="dc-suggest__item dc-link">
+                    <div class="dc-suggest__item__img">
+                        <img src=".....">
+                    </div>
+                    <span class="dc-suggest__item__label">.....</span>
+                </li>
+            </ul>
+        </div>
+      ```
+
+      To this:
+
+      ```html
+        <div class="dc-search-form">
+            <input class="dc-input dc-search-form__input" type="search" placeholder="Search...">
+            <button class="dc-btn dc-search-form__btn">
+                <svg class="dc-svg dc-search-form__btn__icon dc-icon--interactive">
+                        ............
+            </button>
+            <ul class="dc-list dc-suggest">
+                <li class="dc-suggest__item dc-link">
+                    <div class="dc-suggest__item__img-frame">
+                        <img class="dc-suggest__item__img" src=".....">
+                    </div>
+                    <span class="dc-suggest__item__label">.....</span>
+                </li>
+            </ul>
+        </div>
+      ```
+* dialog: introduced ```dc-dialog__actions__link``` and ```dc-dialog__close__icon```
+
+* input-groups: input-groups now use ```dc-btn--grouped``` instead of ```dc-input-group__button``` (which has been deleted) and must explicitly specify input class as ```dc-input-group__input```
+
+    Change your code from this:
+
+    ```html
+    <div class="dc-input-group">
+       <span class="dc-input-addon">User</span>
+       <input class="dc-input" type="text"/>
+       <a class="dc-btn dc-input-group__btn dc-btn--primary">Add</a>
+    </div>
+    ```
+
+    To this:
+
+    ```html
+    <div class="dc-input-group">
+       <span class="dc-input-addon">User</span>
+       <input class="dc-input dc-input-group__input"/>
+       <a class="dc-btn dc-btn--grouped dc-btn--primary">Add</a>
+    </div>
+    ```
+* btn-group: introduced dc-btn--grouped and dc-btn-group--in-row
+
+    Change your code from this:
+
+    ```html
+    <div class="dc-btn-group-row">
+       <div class="dc-btn-group">
+          <button class="dc-btn dc-btn--primary">Primary</button>
+    ```
+
+    To this:
+
+    ```html
+    <div class="dc-btn-group-row">
+       <div class="dc-btn-group dc-btn-group--in-row">
+          <button class="dc-btn dc-btn--grouped dc-btn--primary">Primary</button>
+    ```
+
+* toast: toast animation duration was removed, you have to provide the duration.    
+* toast: toast and toast container have no default position anymore, either top or bottom has to be explicitly specified using the specific class names.
+
+     Replace this code:
+
+     ```html
+     <div class="dc-toast-container">
+	<div class="dc-toast">
+		<div class="dc-toast__content dc-toast__content--info">
+     ```
+
+     With this:
+
+     ```html
+      <div class="dc-toast-container--top"> 
+	<div class="dc-toast--top"> 
+		<div class="dc-toast__content dc-toast__content--info">
+     ```
+
+
 <a name="1.4.0-alpha"></a>
 # [1.4.0-alpha](https://github.com/zalando/dress-code/compare/1.3.0-alpha...v1.4.0-alpha) (2016-04-01)
 

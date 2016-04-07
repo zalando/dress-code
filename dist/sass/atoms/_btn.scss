@@ -204,18 +204,35 @@
     width: 100%;
 }
 
-@mixin dc-btn-selectors {
-    .dc-btn {
-        @include dc-btn;
+//  = GROUPED BUTTON
+//  ---------------------------------------------------------------------------
+
+@mixin _dc-btn--grouped {
+    margin-right: 0;
+    margin-bottom: 0;
+    border-left-width: 0;
+    border-radius: 0;
+
+    &:first-child {
+        border-left-width: 1px;
+        border-top-left-radius: $dc-radius100;
+        border-bottom-left-radius: $dc-radius100;
     }
 
+    &:last-child {
+        border-top-right-radius: $dc-radius100;
+        border-bottom-right-radius: $dc-radius100;
+    }
+}
+
+@mixin dc-btn-selectors {
+    .dc-btn {  @include dc-btn;  }
     .no-touch .dc-btn {  @include dc-btn--no-touch;  }
     .touch .dc-btn {  @include dc-btn--touch;  }
 
     .dc-btn--link {  @include dc-btn--link;  }
     .touch .dc-btn--link {  @include dc-btn--link--touch;  }
     .no-touch .dc-btn--link {  @include dc-btn--link--no-touch;  }
-
 
     .dc-btn--primary {  @include dc-btn--primary;  }
     .no-touch .dc-btn--primary {  @include dc-btn--primary--no-touch;  }
@@ -229,23 +246,15 @@
     .touch .dc-btn--disabled { @include dc-btn--disabled--touch; }
     .no-touch .dc-btn--disabled { @include dc-btn--disabled--no-touch; }
 
-    .dc-btn--small {
-        @include dc-btn--small;
-    }
+    .dc-btn--small {  @include dc-btn--small;  }
 
     .no-touch .dc-btn--small { @include dc-btn--small--no-touch; }
 
-    .dc-btn--inline {
-        @include dc-btn--inline;
-    }
+    .dc-btn--inline {  @include dc-btn--inline;  }
 
-    .dc-btn--large {
-        @include dc-btn--large;
-    }
+    .dc-btn--large {  @include dc-btn--large;  }
 
-    .dc-btn--block {
-        @include dc-btn--block;
-    }
+    .dc-btn--block {  @include dc-btn--block;  }
 
     // special case (usually this kind of selectors should be avoided)
     .dc-btn--link.dc-btn--disabled {  @include dc-btn--link-disabled;  }

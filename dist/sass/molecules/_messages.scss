@@ -11,7 +11,6 @@
     color: $dc-blue20;
     font-size: $dc-font50;
     line-height: $dc-font100 + .2;
-    // transform: translateY(-100%);
 
     @include breakpoint($dc-medium-width) {
         padding: $dc-space100;
@@ -21,24 +20,15 @@
 @mixin dc-msg__inner {
     display: flex;
     flex: 0 1 auto;
-    // max-width: 600px;
-    // margin: 0 auto;
     align-items: center;
 }
 
-@mixin dc-msg__icon {
+@mixin dc-msg__icon-frame {
     min-width: 4rem;
     height: 4rem;
 
     @include breakpoint($dc-medium-width) {
         margin-right: $dc-space100;
-    }
-
-    // FIXME - @controversial BEM
-    .dc-icon {
-        padding: 0 1rem;
-        color: currentcolor;
-        line-height: 4rem;
     }
 }
 
@@ -70,7 +60,6 @@
 
 @mixin dc-msg__close {
     min-width: 4rem;
-    cursor: pointer;
 
     &:active {
         transform: scale(.9);
@@ -79,29 +68,35 @@
 
 @mixin dc-msg__close__icon {
     padding: 0 1.5rem;
-    color: currentcolor;
+    color: currentColor;
     line-height: 4rem;
+    cursor: pointer;
+    opacity: .5;
+
+    &:hover {
+        opacity: .7;
+    }
 }
 
+@mixin dc-msg__icon {
+    padding: 0 1rem;
+    color: currentcolor;
+    line-height: 4rem;
+    opacity: .8;
+    font-size: 2.6rem;
+}
+
+//  = INFO MESSAGE
+//  -----------------------------------------------------------------------------
 
 @mixin dc-msg--info {
     border-color: darken($dc-blue70, 5%);
     background: rgba($dc-blue70, .5);
     color: $dc-blue20;
-
-    // FIXME - @controversial BEM
-    .dc-icon--msg-info {
-        color: $dc-blue40;
-        font-size: 2.75rem;
-    }
-
-    // FIXME - @controversial BEM
-    .dc-msg__close {
-        &:hover .dc-icon--close {
-            color: $dc-blue10;
-        }
-    }
 }
+
+//  = SUCCESS MESSAGE
+//  -----------------------------------------------------------------------------
 
 @mixin dc-msg--success {
     // scss-lint:disable ColorVariable
@@ -109,62 +104,24 @@
     background: rgba(#e3ffc7, .95);
     // scss-lint:enable ColorVariable
     color: $dc-green20;
-
-    // FIXME - @controversial BEM
-    .dc-msg__title {
-        color: $dc-green20;
-    }
-
-    // FIXME - @controversial BEM
-    .dc-icon--msg-success {
-        color: $dc-green30;
-        font-size: 2.2rem;
-    }
-
-    // FIXME - @controversial BEM
-    .dc-msg__close {
-        &:hover .dc-icon--close {
-            color: $dc-green10;
-        }
-    }
 }
+
+//  = ERROR MESSAGE
+//  -----------------------------------------------------------------------------
 
 @mixin dc-msg--error {
     border-color: darken($dc-red70, 5%);
     background: rgba(desaturate($dc-red70, 10%), .5);
-    color: $dc-red20;
-
-    // FIXME - @controversial BEM
-    .dc-icon--msg-error {
-        color: $dc-red40;
-        font-size: 1.8rem;
-    }
-
-    // FIXME - @controversial BEM
-    .dc-msg__close {
-        &:hover .dc-icon--close {
-            color: $dc-red10;
-        }
-    }
+    color: $dc-red30;
 }
+
+//  = WARNING MESSAGE
+//  -----------------------------------------------------------------------------
 
 @mixin dc-msg--warning {
     border-color: darken($dc-yellow70, 35%);
     background: rgba($dc-yellow70, .5);
     color: $dc-yellow20;
-
-    // FIXME - @controversial BEM
-    .dc-icon--msg-warning {
-        color: $dc-yellow30;
-        font-size: 2.75rem;
-    }
-
-    // FIXME - @controversial BEM
-    .dc-msg__close {
-        &:hover .dc-icon--close {
-            color: $dc-yellow10;
-        }
-    }
 }
 
 //  = ANIMATION
@@ -223,16 +180,16 @@
         @include dc-msg__inner;
     }
 
+    .dc-msg__icon-frame {
+        @include dc-msg__icon-frame;
+    }
+
     .dc-msg__icon {
         @include dc-msg__icon;
     }
 
     .dc-msg__bd {
         @include dc-msg__bd;
-        // FIXME - @controversial BEM
-        .dc-link:not(.dc-msg__bd__link) {
-            @include dc-msg__bd__link;
-        }
     }
 
     .dc-msg__bd__link {
@@ -249,10 +206,6 @@
 
     .dc-msg__close {
         @include dc-msg__close;
-        // FIXME @controversial BEM
-        .dc-icon--close:not(.dc-msg__close__icon) {
-            @include dc-msg__close__icon;
-        }
     }
 
     .dc-msg__close__icon {

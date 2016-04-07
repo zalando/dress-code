@@ -16,6 +16,7 @@
 
 @mixin dc-search-form__input {
     margin: 0;
+    padding-right: 30px;
     -moz-appearance: none;
     -webkit-appearance: none;
 }
@@ -32,26 +33,17 @@
     height: 36px;
     width: 32px;
     font-size: 1.6rem;
+}
 
-    // FIXME @controversial BEM
-    .dc-svg,
-    .dc-img {
-        display: block;
-        margin-right: 0;
-    }
+
+@mixin dc-search-form__btn__icon {
+    display: block;
+    margin-right: 0;
 }
 
 @mixin dc-search-form__btn--is-active {
     background: transparent;
     box-shadow: none;
-
-    [fill^='#'] {
-        fill: $dc-blue40;
-    }
-
-    [stroke^='#'] {
-        stroke: $dc-blue40;
-    }
 }
 
 @mixin dc-icon--is-search-form {
@@ -103,24 +95,23 @@
 }
 
 @mixin dc-suggest__item--is-active {
-    background: desaturate(lighten($dc-blue70, 10%), 10%);
+    background: $dc-blue70;
     color: $dc-text-color;
 }
 
-@mixin dc-suggest__item__img {
+@mixin dc-suggest__item__img-frame {
     position: relative;
     justify-content: center;
     width: 30%;
     max-width: 8rem;
     margin-right: $dc-space100;
+}
 
-    // FIXME @controversial BEM
-    img {
-        position: absolute;
-        top: calc(50% - 1rem);
-        width: 100%;
-        height: 2rem;
-    }
+@mixin dc-suggest__item__img {
+    position: absolute;
+    top: calc(50% - 1rem);
+    width: 100%;
+    height: 2rem;
 }
 
 @mixin dc-suggest__item__label {
@@ -129,7 +120,6 @@
     white-space: nowrap;
     overflow: hidden;
 }
-
 
 @mixin dc-search-form-selectors {
     .dc-search-form {
@@ -150,12 +140,21 @@
         }
     }
 
+    .dc-search-form__btn__icon {
+        @include dc-search-form__btn__icon;
+    }
+
     .dc-font-icon--is-search-form {
         @include dc-icon--is-search-form;
     }
 
     .dc-suggest {
         @include dc-suggest;
+
+        .no-touch &:hover,
+        .touch &:active {
+            @include dc-suggest--is-visible;
+        }
     }
 
     .dc-suggest--is-visible {
@@ -171,6 +170,10 @@
         }
     }
 
+    .dc-suggest__item__img-frame {
+        @include dc-suggest__item__img-frame;
+    }
+
     .dc-suggest__item__img {
         @include dc-suggest__item__img;
     }
@@ -180,8 +183,8 @@
     }
 
     // FIXME - @controversial BEM maybe better a dc-search-form--interactive modifier ?
-    .dc-search-form__input:focus ~ .dc-suggest,
-    .dc-suggest:hover {
+    // @deprecated
+    .dc-search-form__input:focus ~ .dc-suggest {
         @include dc-suggest--is-visible;
     }
 }

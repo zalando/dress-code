@@ -56,7 +56,7 @@
     @include dc-select-selectors;
     @include dc-spinner-selectors;
     @include dc-status-selectors;
-    @include dc-table-selectors;       // !!! partially mixinified !!! FIXME @controversial BEM
+    @include dc-table-selectors;
     @include dc-textarea-selectors;
 
     // molecules
@@ -67,7 +67,7 @@
     @include dc-dropdown-selectors;
     @include dc-input-group-selectors;
     @include dc-msg-selectors;
-    @include dc-search-form-selectors;  // !!! FIXME @controversial BEM
+    @include dc-search-form-selectors;
     @include dc-toast-selectors;
     @include dc-tooltip-selectors;
 }

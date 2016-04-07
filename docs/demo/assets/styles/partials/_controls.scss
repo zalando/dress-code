@@ -76,19 +76,14 @@
 	cursor: pointer;
 	vertical-align: middle;
 
-	svg {
-		display: block;
-		float: left;
-		margin-bottom: -1px;
+    // menu icon
+    i {
+        display: inline-block;
+        font-size: 2rem;
+        padding-top: 0.5rem;
 
-		use {
-			fill: $dc-gray40;
-		}
-
-		&:hover {
-			use {
-				fill: darken($dc-orange40, 10%);
-			}
-		}
-	}
+        &:hover {
+            color: darken($dc-orange40, 10%);
+        }
+    }
 }

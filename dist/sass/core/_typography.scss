@@ -1,4 +1,4 @@
-@import "./variables";
+// @import "./variables";
 
 //  ---------------------------------------------------------------------------
 //
@@ -118,15 +118,7 @@
     }
 }
 
-@mixin dc-no-wrap {
-    white-space: nowrap;
-}
 
-@mixin dc-no-wrap-selectors {
-    .dc-no-wrap {
-        @include dc-no-wrap;
-    }
-}
 
 //  = HEADINGS
 //  ---------------------------------------------------------------------------
@@ -196,62 +188,6 @@
     }
 }
 
-//  = TEXT
-//  ---------------------------------------------------------------------------
-
-@mixin dc-text--center {
-    text-align: center;
-}
-
-@mixin dc-text--small {
-    font-size: $dc-font50;
-    line-height: $dc-space125;
-}
-
-@mixin dc-text--less-important {
-    color: $dc-gray60;
-}
-
-@mixin dc-text--success {
-    color: $dc-green30;
-}
-
-@mixin dc-text--error {
-    color: $dc-red40;
-}
-
-@mixin dc-truncate {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-@mixin dc-text-selectors {
-    .dc-text--center {
-        @include dc-text--center;
-    }
-
-    .dc-text--small {
-        @include dc-text--small;
-    }
-
-    .dc-text--less-important {
-        @include dc-text--less-important;
-    }
-
-    .dc-text--success {
-        @include dc-text--success;
-    }
-
-    .dc-text--error {
-        @include dc-text--error;
-    }
-
-    .dc-truncate {
-        @include dc-truncate;
-    }
-}
-
 @mixin dc-typography-selectors {
     @include dc-box-sizing;
     @include dc-html-selectors;
@@ -261,7 +197,5 @@
     @include dc-selection-selectors;
     @include dc-strong-selectors;
     @include dc-em-selectors;
-    @include dc-no-wrap-selectors;
     @include dc-heading-selectors;
-    @include dc-text-selectors;
 }

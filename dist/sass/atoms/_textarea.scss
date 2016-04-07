@@ -5,6 +5,7 @@
 //  ---------------------------------------------------------------------------
 
 @mixin dc-textarea {
+    @include _dc-input;
     width: 100%;
     min-height: $dc-space350 + $dc-space75;
     padding: $dc-space50 $dc-space75;
@@ -17,9 +18,7 @@
 
 @mixin dc-textarea-selectors {
     .dc-textarea {
-        @include dc-input;
         @include dc-textarea;
-
         .no-touch & {
             @include dc-input--no-touch;
         }

@@ -46,7 +46,6 @@ body {
 		@include breakpoint($dc-huge-width)
 		{
 			margin-left: calc(#{span(2 of 12)} + #{gutter(12)});
-			//padding: $dc-touch-size $dc-space150 0 $dc-space150;
 			-webkit-overflow-scrolling: touch;
 			transform: translate(0, 0);
 		}
@@ -54,13 +53,11 @@ body {
 		@include breakpoint($dc-giant-width)
 		{
 			margin-left: calc(#{span(2 of 16)} + #{gutter(16)});
-            //padding: $dc-touch-size $dc-space150 0 $dc-space150;
 		}
 
 		@include breakpoint($dc-monstrous-width)
 		{
 			margin-left: calc(#{span(2 of 20)} + #{gutter(20)});
-            //padding: $dc-touch-size $dc-space150 0 0;
 		}
 	}
 

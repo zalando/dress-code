@@ -56,18 +56,18 @@
     @include dc-select-selectors;
     @include dc-spinner-selectors;
     @include dc-status-selectors;
-    @include dc-table-selectors;       // !!! partially mixinified !!! FIXME @controversial BEM
+    @include dc-table-selectors;
     @include dc-textarea-selectors;
 
     // molecules
     @include dc-breadcrumb-selectors;
     @include dc-btn-icon-selectors;
-    @include dc-btn-group-selectors;    // !!! FIXME @controversial BEM
-    @include dc-dialog-selectors;       // !!! FIXME @controversial BEM
+    @include dc-btn-group-selectors;
+    @include dc-dialog-selectors;
     @include dc-dropdown-selectors;
-    @include dc-input-group-selectors;  // !!! FIXME @controversial BEM
-    @include dc-msg-selectors;          // !!! FIXME @controversial BEM
-    @include dc-search-form-selectors;  // !!! FIXME @controversial BEM
-    @include dc-toast-selectors;        // !!! FIXME @controversial BEM
-    @include dc-tooltip-selectors;      // !!! FIXME @controversial BEM
+    @include dc-input-group-selectors;
+    @include dc-msg-selectors;
+    @include dc-search-form-selectors;
+    @include dc-toast-selectors;
+    @include dc-tooltip-selectors;
 }

@@ -44,14 +44,6 @@
 @mixin dc-search-form__btn--is-active {
     background: transparent;
     box-shadow: none;
-
-    [fill^='#'] {
-        fill: $dc-blue40;
-    }
-
-    [stroke^='#'] {
-        stroke: $dc-blue40;
-    }
 }
 
 @mixin dc-icon--is-search-form {
@@ -191,6 +183,7 @@
     }
 
     // FIXME - @controversial BEM maybe better a dc-search-form--interactive modifier ?
+    // @deprecated
     .dc-search-form__input:focus ~ .dc-suggest {
         @include dc-suggest--is-visible;
     }

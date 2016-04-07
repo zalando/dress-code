@@ -61,7 +61,7 @@
     @if $filename == history {
     $char: "\E00C";
 }
-    @if $filename == info-large {
+    @if $filename == info-circle {
     $char: "\E00D";
 }
     @if $filename == info {
@@ -168,9 +168,9 @@
         content: dc-icon-char(history);
     }
 }
-@mixin dc-icon--info-large {
+@mixin dc-icon--info-circle {
     &:before {
-        content: dc-icon-char(info-large);
+        content: dc-icon-char(info-circle);
     }
 }
 @mixin dc-icon--info {
@@ -304,8 +304,8 @@
         @include dc-icon--history;
     }
 
-    .dc-icon--info-large {
-        @include dc-icon--info-large;
+    .dc-icon--info-circle {
+        @include dc-icon--info-circle;
     }
 
     .dc-icon--info {
