@@ -1,29 +1,10 @@
 html {
 	height: 100%;
-
-	&.f-menu-active {
-		// hide overflow to avoid a double sidebar in safari
-		overflow: hidden;
-
-		// @media (min-width: 60em) {
-		// 	overflow-x: auto;
-		// }
-	}
 }
 
 body {
 	margin: 0;
 	position: relative;
-
-	.f-menu-active & {
-		width:100%;
-		height: 100%;
-		// overflow: hidden;
-
-		// @media (min-width: 60em) {
-		// 	overflow: auto;
-		// }
-	}
 }
 
 .f-header {
@@ -66,8 +47,6 @@ body {
 		{
 			margin-left: calc(#{span(2 of 12)} + #{gutter(12)});
 			//padding: $dc-touch-size $dc-space150 0 $dc-space150;
-			height: calc(100vh - #{$dc-touch-size};
-			overflow-y: scroll;
 			-webkit-overflow-scrolling: touch;
 			transform: translate(0, 0);
 		}
