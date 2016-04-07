@@ -25,5 +25,8 @@
 @import 'partials/layout';
 @import 'partials/menu';
 
+// Custom styleguide sections
+@import 'partials/_sg-tooltip-section';
+
 // Exceptions to the elements' CSS
 @import 'partials/exceptions';
