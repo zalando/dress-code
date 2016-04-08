@@ -524,6 +524,23 @@
 		<h2 class="dc-h2 f-item-heading">Icons</h2>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>All Icons are included in one icon font for easy usage. Icons can be made hoverable by using of the <code>dc-icon--interactive</code> class.</p>
+<h4>Changing the icon font location</h4>
+<p>Dress-code assumes icon font files will be located in the <code>../fonts/</code> directory, relative to the compiled CSS files.
+Moving or renaming those font files means updating the CSS in one of two ways:</p>
+<ul>
+<li>Change the <code>$dc-font-path</code> variable in the source SASS files.</li>
+<li>Change the <code>url()</code> path in the compiled CSS.</li>
+</ul>
+<p>Use whatever option best suits your specific development setup.</p>
+<h4>Svg-icons</h4>
+<p>Together with the icon font, Dress-code distribute also the corresponding svg files. Those svg files are used in some components.</p>
+<p>Dress-code assumes that the svg files will be located in the <code>../img/svg-icons/</code> directory, relative to the compiled CSS files.</p>
+<p>Moving or renaming the image folder means updating the CSS in one of two ways:</p>
+<ul>
+<li>Change the <code>$dc-image-path</code> variable in the source SASS files.</li>
+<li>Change the <code>url()</code> path in the compiled CSS.</li>
+</ul>
+<p>Use whatever option best suits your specific development setup.</p>
 
 </div>
 <div class="f-item-preview">
