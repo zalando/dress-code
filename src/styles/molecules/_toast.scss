@@ -16,11 +16,13 @@
 @mixin dc-toast {
     padding: 0 $dc-space100 $dc-space75;
     z-index: $dc-z-index100;
+    animation-duration: 4s;
 }
 
 @mixin dc-toast--top {
     animation: dc-toast-animation--top;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
     animation-direction: forwards;
 }
 
@@ -35,13 +37,20 @@
     width: 100%;
     padding: $dc-space100 0;
     border-width: 1px;
-    border-style: solid;
+    border-style: none;
     border-radius: $dc-radius50;
     font-size: $dc-font50;
     font-weight: $dc-bold-font-weight;
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
+
+    &--success,
+    &--info,
+    &--warning,
+    &--error {
+        border-style: solid;
+    }
 }
 
 @mixin dc-toast__content--info {
