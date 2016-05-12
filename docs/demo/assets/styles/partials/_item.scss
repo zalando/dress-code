@@ -47,14 +47,14 @@
 }
 
 h2.f-item-heading {
-	@extend .h2;
+	@extend .dc-h2;
 
 	font-weight:500;
 	text-transform:uppercase;
 }
 
 h3.f-item-heading {
-	@extend .h3;
+	@extend .dc-h3;
 
 	// margin-top: $dc-space350;
 	text-transform:uppercase;
