@@ -16,13 +16,11 @@
 @mixin dc-toast {
     padding: 0 $dc-space100 $dc-space75;
     z-index: $dc-z-index100;
-    animation-duration: 4s;
 }
 
 @mixin dc-toast--top {
     animation: dc-toast-animation--top;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
+    animation-iteration-count: 1;
     animation-direction: forwards;
 }
 
