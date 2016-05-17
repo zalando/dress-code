@@ -42,22 +42,17 @@
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
-
-    &--success,
-    &--info,
-    &--warning,
-    &--error {
-        border-style: solid;
-    }
 }
 
 @mixin dc-toast__content--info {
+    border-style: solid;
     border-color: $dc-blue70;
     background: $dc-blue80;
     color: $dc-blue20;
 }
 
 @mixin dc-toast__content--success {
+    border-style: solid;
     // scss-lint:disable ColorVariable
     border-color: $dc-green50;
     background: $dc-green80;
@@ -66,12 +61,14 @@
 }
 
 @mixin dc-toast__content--warning {
+    border-style: solid;
     border-color: $dc-yellow40;
     background: $dc-yellow80;
     color: $dc-yellow20;
 }
 
 @mixin dc-toast__content--error {
+    border-style: solid;
     border-color: $dc-red70;
     background: $dc-red80;
     color: $dc-red20;
