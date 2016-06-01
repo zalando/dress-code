@@ -1,0 +1,13 @@
+.f-item-preview {
+  .dc-column__contents {
+    border: 1px dashed rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.08);
+  }
+
+  .dc-column__contents--center {
+    text-align: center;
+  }
+  .dc-row + .dc-row{
+    margin-top: 20px;
+  }
+}
