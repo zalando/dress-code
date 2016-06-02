@@ -4,6 +4,16 @@
     flex-flow: row wrap;
 }
 
+@mixin dc-row--collapse ($column-selector: ".dc-column") {
+    margin-right: 0;
+    margin-left: 0;
+
+    > #{$column-selector} {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
 @mixin dc-row--align--right {
     justify-content: flex-end;
 }
@@ -55,6 +65,10 @@
 @mixin dc-grid-selectors {
     .dc-row {
         @include dc-row;
+    }
+
+    .dc-row--collapse {
+        @include dc-row--collapse;
     }
 
     .dc-row--align--center {
