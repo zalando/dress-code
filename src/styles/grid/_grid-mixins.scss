@@ -1,3 +1,8 @@
+// Grid column mixin for Dress Code
+//
+// @param {Map} $gutter
+// Sets the negative right and left margin for the row to align the columns inside a row
+// As each column has padding (for gutter), negative margin on row is applied.
 @mixin dc-grid-row ($gutter: $dc-grid-gutter) {
     @if type-of($gutter) == "map" {
         @each $br, $value in $gutter {
@@ -11,6 +16,10 @@
     }
 }
 
+// Grid column mixin for Dress Code
+//
+// @param {Mixed} $columns [null | number]
+// Sets the flex property and the padding (gutter) value for the column
 @mixin dc-grid-column (
     $columns: null,
     $gutter: $dc-grid-gutter
@@ -29,6 +38,10 @@
     }
 }
 
+// Calculates the flex value for a column
+//
+// @param {Mixed} $columns [null | number]
+// @returns flex property value based on the number of columns supplied.
 @function grid-column-flex($columns: null) {
     $flex: 1 1 0;
 
@@ -39,6 +52,11 @@
     @return $flex;
 }
 
+// Calculates the width of a column in percentage.
+// This is used for calculating flex percentage, max-widths, and offset widths
+//
+// @param {Number} $columns - number of columns
+// @returns width in percentage
 @function grid-column-size($columns: null) {
     $width: 0;
 

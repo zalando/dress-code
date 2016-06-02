@@ -119,6 +119,7 @@
         @include dc-column--align-self--bottom;
     }
 
+    // For each breakpoint make the required column and offset classes.
     @each $br, $value in $dc-grid-breakpoints {
         @include breakpoint(map-get($dc-grid-breakpoints, $br)) {
             @for $i from 1 through $dc-grid-column-count {
@@ -136,6 +137,4 @@
             }
         }
     }
-
-
 }

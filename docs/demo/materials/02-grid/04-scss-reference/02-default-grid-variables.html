@@ -1,0 +1,37 @@
+---
+notes: |
+    Variables used in Dress Code Grid and their default values
+---
+
+<table class="dc-table">
+  <thead class="dc-table__thead">
+    <tr class="dc-table__tr">
+      <th class="dc-table__th">Variable</th>
+      <th class="dc-table__th">Type</th>
+      <th class="dc-table__th">Default</th>
+      <th class="dc-table__th">Description</th>
+    </tr>
+  </thead>
+  <tbody class="dc-table__tbody">
+    <tr class="dc-table__tr">
+      <td class="dc-table__td">$dc-grid-column-count</td>
+      <td class="dc-table__td">Number</td>
+      <td class="dc-table__td">12</td>
+      <td class="dc-table__td">Number of total columns in the grid.</td>
+    </tr>
+    <tr class="dc-table__tr">
+      <td class="dc-table__td">$dc-grid-gutter</td>
+      <td class="dc-table__td">Map</td>
+      <td class="dc-table__td">(small: 16px, medium: 24px, large: 32px)</td>
+      <td class="dc-table__td">Gutter size at different breakpoints.</td>
+    </tr>
+    <tr class="dc-table__tr">
+      <td class="dc-table__td">$dc-grid-breakpoints</td>
+      <td class="dc-table__td">Map</td>
+      <td class="dc-table__td">(small: 20em, medium: 37.5em, large: 64em, huge: 80em)</td>
+      <td class="dc-table__td">Breakpoint sizes.
+        <br>The names of column classes are based on these breakpoint names.
+        <br>This bloats the generated CSS so use only what you need.</td>
+    </tr>
+  </tbody>
+</table>
