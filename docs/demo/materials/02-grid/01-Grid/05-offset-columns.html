@@ -1,0 +1,67 @@
+---
+notes: |
+    Use `dc-column-offset--[small|medium|large|huge]-[1-11]` to apply an offset (left margin) to the a column.
+
+    Example below shows various implementations of offsets
+---
+<h3 class="dc-h3">
+  Offset first column by 3 columns only on large and huge screens:
+</h3>
+<div class="dc-row">
+  <div class="dc-column dc-column--small-2 dc-column-offset--large-3">
+    <div class="dc-column__contents dc-column__contents--center">
+      2
+    </div>
+  </div>
+  <div class="dc-column dc-column--small-2">
+    <div class="dc-column__contents dc-column__contents--center">
+      2
+    </div>
+  </div>
+  <div class="dc-column dc-column--small-2">
+    <div class="dc-column__contents dc-column__contents--center">
+      2
+    </div>
+  </div>
+</div>
+
+<h3 class="dc-h3">Offset last column by 2 columns on all sizes</h3>
+<div class="dc-row">
+  <div class="dc-column dc-column--small-2">
+    <div class="dc-column__contents dc-column__contents--center">
+      2
+    </div>
+  </div>
+  <div class="dc-column dc-column--small-2">
+    <div class="dc-column__contents dc-column__contents--center">
+      2
+    </div>
+  </div>
+  <div class="dc-column dc-column--small-2 dc-column-offset--small-2">
+    <div class="dc-column__contents dc-column__contents--center">
+      2
+    </div>
+  </div>
+</div>
+<h3 class="dc-h3">No offset on large and huge screens, offset by 2 columns on medium</h3>
+<p class="dc-p">
+  Offsets are applied from the breakpoint used + higher. This means that an offset applied for medium size will apply for medium, large, and, huge screen sizes.
+  To remove an offset for higher screen sizes, an offset of `0` can be applied, as shown below. Resize the screen to see how offsets are applied and removed.
+</p>
+<div class="dc-row">
+  <div class="dc-column dc-column--small-2 dc-column-offset--medium-2 dc-column-offset--large-0">
+    <div class="dc-column__contents dc-column__contents--center">
+      2
+    </div>
+  </div>
+  <div class="dc-column dc-column--small-2">
+    <div class="dc-column__contents dc-column__contents--center">
+      2
+    </div>
+  </div>
+  <div class="dc-column dc-column--small-2">
+    <div class="dc-column__contents dc-column__contents--center">
+      2
+    </div>
+  </div>
+</div>
