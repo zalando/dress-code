@@ -21,11 +21,12 @@
     </button>
     <ul class="dc-list dc-suggest">
         {{#each autosuggest.suggestions}}
-        <li class="dc-suggest__item dc-link">
+        <li class="dc-suggest__item">
             <div class="dc-suggest__item__img-frame">
                 <img class="dc-suggest__item__img" src="{{this.image}}">
             </div>
             <span class="dc-suggest__item__label">{{this.name}}</span>
+            <span class="dc-suggest__item__action"><a class="dc-link" href="#">Item Action</a></span>
         </li>
         {{/each}}
     </ul>
