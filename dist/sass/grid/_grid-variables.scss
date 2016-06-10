@@ -1,0 +1,24 @@
+///the default column count for the grid
+$dc-grid-column-count: 12 !default;
+
+/// The amount of space between columns at different screen sizes. To use just one size, set the variable to a number instead of a map.
+/// @type Map | Length
+$dc-grid-gutter: (
+    small: 16px,
+    medium: 24px,
+    large: 32px
+) !default;
+
+/// This bloats the CSS use only those which you need
+///
+/// small : 320px {Smartphones}
+/// medium : 600px {Tablets}
+/// large : 1024px {Desktops}
+/// huge : 1280px {Full HD}
+/// @type Map | Length
+$dc-grid-breakpoints: (
+    small: 20em,
+    medium: 37.5em,
+    large: 64em,
+    huge: 80em
+) !default;
