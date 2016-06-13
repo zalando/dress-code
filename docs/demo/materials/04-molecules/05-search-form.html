@@ -5,9 +5,9 @@
       <i class="dc-icon dc-icon--search dc-icon--interactive"></i>
   </button>
   <ul class="dc-list dc-suggest">
-    {{#each autosuggest.brands}}
+    {{#each autosuggest.suggestions}}
         <li class="dc-suggest__item dc-link">
-          {{this}}
+          {{this.name}}
         </li>
     {{/each}}
   </ul>
@@ -20,12 +20,13 @@
         <i class="dc-icon dc-icon--search dc-icon--interactive"></i>
     </button>
     <ul class="dc-list dc-suggest">
-        {{#each autosuggest.brands}}
-        <li class="dc-suggest__item dc-link">
+        {{#each autosuggest.suggestions}}
+        <li class="dc-suggest__item">
             <div class="dc-suggest__item__img-frame">
-                <img class="dc-suggest__item__img" src="{{basePath}}/assets/img/logo.svg">
+                <img class="dc-suggest__item__img" src="{{this.image}}">
             </div>
-            <span class="dc-suggest__item__label">{{this}}</span>
+            <span class="dc-suggest__item__label">{{this.name}}</span>
+            <span class="dc-suggest__item__action"><a class="dc-link" href="#">Item Action</a></span>
         </li>
         {{/each}}
     </ul>
