@@ -159,6 +159,20 @@
     }
 }
 
+//  = ACTIVE
+//  ---------------------------------------------------------------------------
+
+@mixin dc-btn--active {
+    background: darken($dc-gray70, 3%);
+    box-shadow: inset 0 1px 1px rgba($dc-black, .2);
+}
+
+@mixin dc-btn--active--no-touch {
+    &:hover {
+        @include dc-btn--active;
+    }
+}
+
 //  = SMALL BUTTON
 //  ---------------------------------------------------------------------------
 
@@ -245,6 +259,9 @@
     .dc-btn--disabled { @include dc-btn--disabled; }
     .touch .dc-btn--disabled { @include dc-btn--disabled--touch; }
     .no-touch .dc-btn--disabled { @include dc-btn--disabled--no-touch; }
+
+    .dc-btn--active { @include dc-btn--active; }
+    .no-touch .dc-btn--active { @include dc-btn--active--no-touch; }
 
     .dc-btn--small {  @include dc-btn--small;  }
 

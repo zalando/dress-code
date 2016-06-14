@@ -1,6 +1,9 @@
 // core
 @import "core/core";
 
+// grid
+@import "grid/grid";
+
 // atoms
 @import "atoms/btn";
 @import "atoms/card";
@@ -39,6 +42,9 @@
     @include dc-normalize;
     @include dc-typography-selectors;
     @include dc-patterns-selectors;
+
+    // grid
+    @include dc-grid-selectors;
 
     // atoms
     @include dc-btn-selectors;

@@ -1,8 +1,22 @@
-brands:
-  - Esprit
-  - Hugo Boss
-  - Michael Kors
-  - adidas
-  - Tommy Hilfiger
-  - Diesel
-  - Armani Jeans
+suggestions:
+  -
+    name: Suggestion 1
+    image: http://lorempixel.com/100/100/
+  -
+    name: Suggestion 2
+    image: http://lorempixel.com/50/100/
+  -
+    name: Suggestion 3
+    image: http://lorempixel.com/100/50/
+  -
+    name: Suggestion 4
+    image: http://lorempixel.com/100/25/
+  -
+    name: Suggestion 5
+    image: http://lorempixel.com/25/100/
+  -
+    name: Suggestion 6
+    image: http://lorempixel.com/100/10/
+  -
+    name: Suggestion 7
+    image: http://lorempixel.com/10/100/

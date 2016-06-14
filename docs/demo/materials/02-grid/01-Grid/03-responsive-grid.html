@@ -1,0 +1,31 @@
+---
+notes: |
+    By default there are 4 breakpoints for the media queries, which are as follows :
+
+    'small' for phones (320px);
+    'medium' for tablet sizes (600px);
+    'large' for desktop sizes (1024px); and;
+    'huge' for larger screens (1280px);
+
+    You can use classes for columns as :
+
+    `dc-column--[small|medium|large|huge]-[1-12]`
+
+    examples: `dc-column--large-6` OR `dc-column--medium-12`
+
+    Example below shows columns which will show as 3 columns (of size 4) on large screen but will take full width on medium and small screens
+
+    Resize your browser window to see it take effect.
+---
+
+<div class="dc-row">
+    <div class="dc-column dc-column--large-4 dc-column--medium-12">
+      <div class="dc-column__contents">Column large-4 / medium-12</div>
+    </div>
+    <div class="dc-column dc-column--large-4 dc-column--medium-12">
+      <div class="dc-column__contents">Column large-4 / medium-12</div>
+    </div>
+    <div class="dc-column dc-column--large-4 dc-column--medium-12">
+      <div class="dc-column__contents">Column large-4 / medium-12</div>
+    </div>
+</div>

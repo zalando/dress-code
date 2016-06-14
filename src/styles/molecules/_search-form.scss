@@ -71,9 +71,7 @@
     border: 1px solid $dc-gray60;
     border-radius: 0 0 2px 2px;
     background: $dc-white;
-    // scss-lint:disable ColorVariable
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-    // scss-lint:enable ColorVariable
+    box-shadow: 0 1px 1px rgba($dc-black, .2);
     opacity: 0;
     z-index: 800;
     list-style-type: none;
@@ -88,7 +86,8 @@
 
 @mixin dc-suggest__item {
     display: flex;
-    padding: 0 $dc-space75;
+    align-items: flex-start;
+    padding: 0 $dc-space100;
     color: $dc-text-color;
     line-height: $dc-touch-size;
     white-space: nowrap;
@@ -100,25 +99,33 @@
 }
 
 @mixin dc-suggest__item__img-frame {
-    position: relative;
+    display: flex;
     justify-content: center;
-    width: 30%;
-    max-width: 8rem;
-    margin-right: $dc-space100;
+    width: 48px;
+    height: $dc-space150;
+    margin: 1rem $dc-space100 0 0;
+    overflow: hidden;
 }
 
 @mixin dc-suggest__item__img {
-    position: absolute;
-    top: calc(50% - 1rem);
     width: 100%;
-    height: 2rem;
+    height: 100%;
+    object-fit: scale-down;
 }
 
 @mixin dc-suggest__item__label {
-    width: calc(70% - 1.2rem);
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    flex: 1 1 0;
+}
+
+@mixin dc-suggest__item__action {
+    white-space: nowrap;
+    margin-left: $dc-space100;
+    display: block;
+    align-self: flex-end;
+    flex-grow: 0;
 }
 
 @mixin dc-search-form-selectors {
@@ -178,12 +185,15 @@
         @include dc-suggest__item__img;
     }
 
+    .dc-suggest__item__action {
+        @include dc-suggest__item__action;
+    }
+
     .dc-suggest__item__label {
         @include dc-suggest__item__label;
     }
 
     // FIXME - @controversial BEM maybe better a dc-search-form--interactive modifier ?
-    // @deprecated
     .dc-search-form__input:focus ~ .dc-suggest {
         @include dc-suggest--is-visible;
     }
