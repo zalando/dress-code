@@ -1,14 +1,18 @@
-# The Dress Code
-
-The Dress Code is the official style guide and style framework for all Brand Solutions products.
 
 [![Build Status](https://travis-ci.org/zalando/dress-code.svg?branch=master)](https://travis-ci.org/zalando/dress-code)
 [![Dependency Status](https://david-dm.org/zalando/dress-code.svg)](https://david-dm.org/zalando/dress-code)
 [![devDependency Status](https://david-dm.org/zalando/dress-code/dev-status.svg)](https://david-dm.org/zalando/dress-code#info=devDependencies)
+# The Dress Code
+
+The Dress Code is a framework agnostic, atomic design, BEM, style library which is designed for maintainability and modularity.
+
+Quickly create prototypes and sites or apps that work on all devices. See the Demo & Documentation for more details.
+
+Dress Code follows BEM naming convention. Read more about BEM [here](http://getbem.com/introduction/).
 
 ## Quick links
 
-* [Demo](http://zalando.github.io/dress-code/)
+* [Demo & Documentation](http://zalando.github.io/dress-code/)
 * [Development & Contributing](#development)
 * [Build and Deploy](#build-and-deploy)
 
@@ -45,27 +49,27 @@ Include this in your ```<head>```:
 <link href="bower_components/dress-code/dist/css/dress-code.min.css" rel="stylesheet">
 ```
 
-#### How to use dress-code SASS 
+#### How to use dress-code SASS
 
 You can compile the dress code by your own using a sass compiler.
 
 ```scss
-@import "node_modules/breakpoint-sass/stylesheets/breakpoint" // this a required dependency, load this before loading the dress-code
+@import "node_modules/breakpoint-sass/stylesheets/breakpoint" // this is a required dependency, load this before loading the dress-code
 @import "node_modules/dress-code/dist/sass/dress-code" // or bower_components/dress-code/dist/sass/dress-code
 @include dc-everything; // output dc-* selectors
 ```
 
 > the dress-code rely on [breakpoint-sass](https://github.com/at-import/breakpoint) to manage media queries
-more easily, please be sure that the plugin/scss module is loaded before trying to compile the dress-code stuff. 
+more easily, please be sure that the plugin/scss module is loaded before trying to compile the dress-code stuff.
 
 
 ##### Compass notes
 
-> Note for those using compass. Add this to yours config.rb file: 
+> Note for those using compass. Add this to yours config.rb file:
 ```rb
 add_import_path "bower_components"
 ```
-Then you can import the dress-code like so: 
+Then you can import the dress-code like so:
 ```scss
 @import "dress-code/dist/sass/dress-code";
 ```
@@ -102,7 +106,7 @@ $ npm install
 $ npm start
 ```
 
-> To open a new browser window or to pass a value to [browserSync open option](https://www.browsersync.io/docs/options/#option-open): 
+> To open a new browser window or to pass a value to [browserSync open option](https://www.browsersync.io/docs/options/#option-open):
 ```
 npm start -- --open
 ```
@@ -115,7 +119,7 @@ npm start -- --open
 - Image optimization
 - Icon Font generator
 - Demo/docs site generator
-- Live preview sever (using [BrowserSync](http://www.browsersync.io/)) 
+- Live preview sever (using [BrowserSync](http://www.browsersync.io/))
 - CHANGELOG generator
 
 ## <a name="build-and-deploy"> Build & Deploy
@@ -151,9 +155,9 @@ Publish the demo as github-pages website @ https://zalando.github.io/dress-code
 
 ## License
 
-Copyright 2015 Zalando SE
+Copyright 2016 Zalando SE
 
 The Dress Code is released under the MIT license. See LICENSE for details.
 
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, 
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.

@@ -1,7 +1,7 @@
 {
   "name": "dress-code",
   "version": "2.0.0-alpha",
-  "description": "The Dress Code is the official style guide and style framework for all Brand Solutions products.",
+  "description": "The Dress Code is a framework agnostic, atomic design, BEM, style library which is designed for maintainability and modularity.",
   "homepage": "https://zalando.github.io/brand-solutions-dress-code",
   "main": "dist/sass/dress-code.scss",
   "scripts": {
@@ -13,14 +13,14 @@
     "start": "gulp"
   },
   "keywords": [
-    "toolkit",
-    "styleguide",
-    "framework",
-    "scaffold",
-    "patterns",
-    "library",
-    "zalando",
-    "zalando brand solutions"
+      "toolkit",
+      "styleguide",
+      "framework",
+      "scaffold",
+      "patterns",
+      "css library",
+      "BEM",
+      "atomic design"
   ],
   "authors": [
     "Thomas Nägele <thomas.naegele.extern@zalando.de>",
