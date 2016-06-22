@@ -44,11 +44,12 @@
 // @param {String} $column-selector - Selector for column within the row.
 @mixin dc-block-grid (
     $columns,
-    $column-selector: '.dc-column'
+    $column-selector: ".dc-column"
 ) {
     flex-wrap: wrap;
+
     > #{$column-selector} {
-        $flex-percent: percentage(1/$columns);
+        $flex-percent: percentage(1 / $columns);
 
         flex: 0 0 $flex-percent;
         max-width: $flex-percent;
