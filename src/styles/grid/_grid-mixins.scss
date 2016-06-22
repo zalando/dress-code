@@ -38,6 +38,23 @@
     }
 }
 
+// Block grid mixin for Dress Code
+//
+// @param {Number} $columns - Number of columns in each row
+// @param {String} $column-selector - Selector for column within the row.
+@mixin dc-block-grid (
+    $columns,
+    $column-selector: '.dc-column'
+) {
+    flex-wrap: wrap;
+    > #{$column-selector} {
+        $flex-percent: percentage(1/$columns);
+
+        flex: 0 0 $flex-percent;
+        max-width: $flex-percent;
+    }
+}
+
 // Calculates the flex value for a column
 //
 // @param {Mixed} $columns [null | number]

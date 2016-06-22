@@ -1,0 +1,27 @@
+---
+notes: |
+    Block grids are great for making responsive pages.
+
+    Use `.dc-block-grid--[small|medium|large|huge]-[1-12]` on the `.dc-row` to create a block grid. The columns inside only need `.dc-column` class applied to them.
+
+    Block grids allow you to define how many columns per row you need based on the screen size. Block grids also facilitate you to add non-standard number of columns in a row like 5 columns.
+
+    Example below shows that the columns below will be placed as "1 per row" on small screens, "3 per row" on meduim screens, and "5 per row" on large screens.
+---
+<div class="dc-row dc-block-grid--small-1 dc-block-grid--medium-3 dc-block-grid--large-5">
+  <div class="dc-column">
+    <div class="dc-column__contents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quisquam, sit a.</div>
+  </div>
+  <div class="dc-column">
+    <div class="dc-column__contents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt maxime aut recusandae.</div>
+  </div>
+  <div class="dc-column">
+    <div class="dc-column__contents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ratione hic, obcaecati!</div>
+  </div>
+  <div class="dc-column">
+    <div class="dc-column__contents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eum, error soluta.</div>
+  </div>
+  <div class="dc-column">
+    <div class="dc-column__contents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, ab. Libero, deserunt.</div>
+  </div>
+</div>
