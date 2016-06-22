@@ -1,0 +1,20 @@
+approvals:
+  # PR needs at least 1 approval
+  minimum: 1
+  # approval = comment that matches this regex
+  pattern: "^(:\\+1:|👍)$"
+  # note that `from` is by default empty,
+  # accepting any matching comment as approval
+  from:
+    # commenter must be either one of:
+    orgs:
+      # a member of norris organization
+      # (any org in here counts)
+      - norris
+    # OR a collaborator of the repo
+    collaborators: true
+
+commit:
+  message:
+    patterns: # commit message has to:
+      - "^BSCS-[0-9]+\s[a-zA-Z0-9\s]+" # start with BSCS-{NUMBER}{BLANK}{TEXT}
