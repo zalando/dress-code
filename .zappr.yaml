@@ -13,8 +13,3 @@ approvals:
       - norris
     # OR a collaborator of the repo
     collaborators: true
-
-commit:
-  message:
-    patterns: # commit message has to:
-      - "^BSCS-[0-9]+\s[a-zA-Z0-9\s]+" # start with BSCS-{NUMBER}{BLANK}{TEXT}
