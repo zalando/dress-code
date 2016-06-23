@@ -1,0 +1,2120 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic|Ubuntu+Mono" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="/dress-code/assets/styles/main.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <link rel="icon" href="favicon.ico">
+</head>
+<body class="dc-body--demo-breakpoints">
+		<header class="f-header">
+			<img class="f-logo" src="/dress-code/assets/img/zalando-logo.svg" alt="Zalando Logo">
+			<div class="f-control f-menu-toggle">
+			    <i class="dc-icon dc-icon--menu"></i>
+			</div>
+			
+			<div class="f-control f-menu-toggle">
+				<a href class="dc-link js-toggle-breakpoints">Breakpoints</a>
+			</div>
+            <div class="f-control">
+                <a class="dc-link" href="https://github.com/zalando/dress-code/" target="_blank">Github</a>
+            </div>
+		</header>
+		<!-- fabricator icons -->
+		<svg class="dc-svg" style="display: none;">
+			<symbol id="f-icon-code" viewBox="0 0 512 512">
+				<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
+			</symbol>
+			<symbol id="f-icon-notes" viewBox="0 0 512 512">
+				<path d="M443.8 0H68.2C30.6 0 0 30.5 0 68v264.2c0 16.6 8.9 29.5 25.9 37.5 15.3 7.2 33.1 8.4 40.1 8.5V512l201.6-134h176.1c37.6 0 68.2-30.3 68.2-67.8V68c.1-37.5-30.5-68-68.1-68zM114 438V330H68.2c-11.1 0-19.2-8.8-19.2-19.8V68c0-11 8.2-20 19.2-20h375.5c11.1 0 19.2 9 19.2 20v242.2c0 11-8.2 19.8-19.2 19.8H244.2L114 438z"/>
+			</symbol>
+			<symbol id="f-icon-labels" viewBox="0 0 512 512">
+				<path d="M304 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM464 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM144 280c0 13.2-10.8 24-24 24H72c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48z"/>
+			</symbol>
+			<symbol id="f-icon-menu" viewBox="0 0 512 512">
+				<path d="M512 100c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 212c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 324c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 436c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24z"/>
+			</symbol>
+			<symbol id="f-icon-settings" viewBox="0 0 512 512">
+				<path d="M256 377.3c-67.5 0-121.6-53.9-121.6-121.3s54-121.3 121.6-121.3S377.6 188.6 377.6 256 323.5 377.3 256 377.3zm0-215.6c-52.7 0-94.6 41.8-94.6 94.3s41.9 94.3 94.6 94.3 94.6-41.8 94.6-94.3-41.9-94.3-94.6-94.3zM293.2 512h-72.9L200 450c-13.5-4-27-9.4-39.2-16.2l-59.4 29.6L50 412.3 79.7 353c-6.8-12.1-12.2-25.6-16.2-39.1L0 292.4v-72.8l62.1-20.2c4.1-13.5 9.5-26.9 16.2-39.1L48.6 101 100 49.9l59.4 29.6c12.2-6.7 25.7-12.1 39.2-16.2L220.2 0h72.9l20.3 62c13.5 4 27 9.4 39.2 16.2L412 48.5l51.3 51.2-29.7 59.3c6.8 12.1 12.2 25.6 16.2 39.1l62.1 20.2V291l-62.1 20.2c-4.1 13.5-9.5 26.9-16.2 39.1l29.7 59.3-51.3 51.2-59.4-29.6c-12.2 6.7-25.7 12.1-39.2 16.2L293.2 512zm-54.1-26.9h35.1l18.9-57.9 6.8-1.3c16.2-4 31.1-10.8 45.9-18.9l6.8-4 54 26.9 24.3-24.3-27-53.9 4.1-6.7c8.1-13.5 14.9-29.6 18.9-45.8l1.4-6.7 58.1-18.9v-35l-58.1-18.9-1.4-6.7c-4.1-16.2-10.8-31-18.9-45.8l-4.1-6.7 27-53.9-24.3-24.3-54 26.9-6.8-4c-14.8-8.2-29.7-14.9-45.9-19l-6.8-1.3L274.2 27h-35.1l-18.9 57.9-6.8 1.3c-16.2 4-31.1 10.8-45.9 18.9l-6.8 4-54-26.9-24.3 24.3 27 53.9-4.1 6.7c-8.1 13.5-14.9 29.6-18.9 45.8l-1.4 6.7-58 18.9v35l58.1 18.9 1.4 6.7c4.1 16.2 10.8 31 18.9 45.8l4.1 6.7-27 53.9 24.3 24.3 54-26.9 6.8 4c14.9 8.1 29.7 14.8 45.9 18.9l6.8 1.3 18.8 58z"/>
+			</symbol>
+		</svg>
+		<!-- /fabricator icons -->
+		<!-- fabricator menu -->
+		<div class="f-menu">
+		
+			<div class="f-controls">
+				<div class="f-control f-global-control" data-f-toggle-control="labels" title="Toggle Labels">
+					<svg class="dc-svg">
+						<use xlink:href="#f-icon-labels" />
+					</svg>
+				</div>
+				<div class="f-control f-global-control" data-f-toggle-control="notes" title="Toggle Notes">
+					<svg class="dc-svg">
+						<use xlink:href="#f-icon-notes" />
+					</svg>
+				</div>
+				<div class="f-control f-global-control" data-f-toggle-control="code" title="Toggle Code">
+					<svg class="dc-svg">
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</div>
+			</div>
+		
+			<ul>
+		
+				<li>
+					<a href="index.html" class="f-menu__heading">The Dress Code</a>
+				</li>
+		
+				<li>
+					<a href="01-core.html" class="f-menu__heading">Core</a>
+					<ul>
+						<li>
+							<a href="01-core.html#01-typography">Typography</a>
+						</li>
+						<li>
+							<a href="01-core.html#02-colors">Colors</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="02-grid.html" class="f-menu__heading">Grid</a>
+					<ul>
+						<li>
+							<a href="02-grid.html#01-Grid">Grid</a>
+						</li>
+						<li>
+							<a href="02-grid.html#02-horizontal-alignment">Horizontal Alignment</a>
+						</li>
+						<li>
+							<a href="02-grid.html#03-vertical-alignment">Vertical Alignment</a>
+						</li>
+						<li>
+							<a href="02-grid.html#04-scss-reference">Scss Reference</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="03-atoms.html" class="f-menu__heading">Atoms</a>
+					<ul>
+						<li>
+							<a href="03-atoms.html#buttons">Buttons</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#card">Card</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#checkboxes">Checkboxes</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#divider">Divider</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#icons">Icons</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#link">Link</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#lists">Lists</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#loading-bar">Loading Bar</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#paragraph">Paragraph</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#radio-button">Radio Button</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#select">Select</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#spinner">Spinner</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#status">Status</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#table">Table</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#text-input">Text Input</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#textarea">Textarea</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="04-molecules.html" class="f-menu__heading">Molecules</a>
+					<ul>
+						<li>
+							<a href="04-molecules.html#01-button-icon">Button Icon</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#02-button-groups">Button Groups</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#03-dropdown">Dropdown</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#04-input-groups">Input Groups</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#05-search-form">Search Form</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#06-tooltip">Tooltip</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#07-dialog">Dialog</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#08-toast">Toast</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#09-messages">Messages</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#10-breadcrumb">Breadcrumb</a>
+						</li>
+					</ul>
+				</li>
+		
+		
+				<li>
+					<a href="docs.html" class="f-menu__heading">Docs</a>
+					<ul>
+						<li>
+							<a href="docs.html#CODING">Coding</a>
+						</li>
+						<li>
+							<a href="docs.html#CONTRIBUTING">Contributing</a>
+						</li>
+						<li>
+							<a href="docs.html#RELEASING">Releasing</a>
+						</li>
+					</ul>
+				</li>
+		
+			</ul>
+		
+		
+		</div>
+		<!-- /fabricator menu -->
+		<div class="f-container">
+
+
+	
+<h1 class="dc-h1" data-f-toggle="labels">Dress Code Grid</h1>
+
+
+<div class="f-item-group" id="01-Grid">
+
+	<div class="f-item-heading-group">
+		<h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Grid</h2>
+	</div>
+		<div class="f-item-group" id="01-Grid.01-basic-grid">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Basic Grid</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Use <code>dc-row</code> for rows and <code>dc-column</code> for columns.</p>
+<p>All the columns are sized equally based on how many total columns are there in a row.</p>
+<p>Gutter space is calulated based on display sizes. 16px for small (320px), 24px for medium (600px), and, 32 px for large (1024px) and above.</p>
+<p>Example below shows 5 columns in a row.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-row">
+	<div class="dc-column">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, eveniet.
+		</div>
+	</div>
+	<div class="dc-column">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, repudiandae.
+		</div>
+	</div>
+	<div class="dc-column">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, ut.
+		</div>
+	</div>
+	<div class="dc-column">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, animi.
+		</div>
+	</div>
+	<div class="dc-column">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, cum.
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, eveniet.
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, repudiandae.
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, ut.
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, animi.
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, cum.
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="01-Grid.02-shrink-columns">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Shrink Columns</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Use <code>dc-column--shrink</code> in order to shrink a column to the size of its contents. Other column(s) fill up the remaining space of the row.</p>
+
+</div>
+<div class="f-item-preview">
+	<h3>Shrink one column</h3>
+<div class="dc-row">
+	<div class="dc-column dc-column--shrink">
+		<div class="dc-column__contents">
+			This column shrinks
+		</div>
+	</div>
+	<div class="dc-column">
+		<div class="dc-column__contents">
+			This Column fills up the space
+		</div>
+	</div>
+</div>
+
+<h3>Shrink two columns</h3>
+<div class="dc-row">
+	<div class="dc-column dc-column--shrink">
+		<div class="dc-column__contents">
+			This column shrinks
+		</div>
+	</div>
+	<div class="dc-column dc-column--shrink">
+		<div class="dc-column__contents">
+			This shrinks as well!
+		</div>
+	</div>
+	<div class="dc-column">
+		<div class="dc-column__contents">
+			This one fills the reamaining space
+		</div>
+	</div>
+</div>
+
+<h3>Shrinking first column with two more columns to fill up the space:</h3>
+<div class="dc-row">
+	<div class="dc-column dc-column--shrink">
+		<div class="dc-column__contents">
+			This column shrinks
+		</div>
+	</div>
+	<div class="dc-column">
+		<div class="dc-column__contents">
+			These Other two columns...
+		</div>
+	</div>
+	<div class="dc-column">
+		<div class="dc-column__contents">
+			... take the remaininig space equally!
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;h3&gt;Shrink one column&lt;/h3&gt;
+&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--shrink&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			This column shrinks
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			This Column fills up the space
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Shrink two columns&lt;/h3&gt;
+&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--shrink&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			This column shrinks
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--shrink&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			This shrinks as well!
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			This one fills the reamaining space
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Shrinking first column with two more columns to fill up the space:&lt;/h3&gt;
+&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--shrink&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			This column shrinks
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			These Other two columns...
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			... take the remaininig space equally!
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="01-Grid.03-responsive-grid">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Responsive Grid</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>By default there are 4 breakpoints for the media queries, which are as follows :</p>
+<p>'small' for phones (320px);
+'medium' for tablet sizes (600px);
+'large' for desktop sizes (1024px); and;
+'huge' for larger screens (1280px);</p>
+<p>You can use classes for columns as :</p>
+<p><code>dc-column--[small|medium|large|huge]-[1-12]</code></p>
+<p>examples: <code>dc-column--large-6</code> OR <code>dc-column--medium-12</code></p>
+<p>Example below shows columns which will show as 3 columns (of size 4) on large screen but will take full width on medium and small screens</p>
+<p>Resize your browser window to see it take effect.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-row">
+	<div class="dc-column dc-column--large-4 dc-column--medium-12">
+		<div class="dc-column__contents">Column large-4 / medium-12</div>
+	</div>
+	<div class="dc-column dc-column--large-4 dc-column--medium-12">
+		<div class="dc-column__contents">Column large-4 / medium-12</div>
+	</div>
+	<div class="dc-column dc-column--large-4 dc-column--medium-12">
+		<div class="dc-column__contents">Column large-4 / medium-12</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--large-4 dc-column--medium-12&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;Column large-4 / medium-12&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--large-4 dc-column--medium-12&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;Column large-4 / medium-12&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--large-4 dc-column--medium-12&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;Column large-4 / medium-12&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="01-Grid.04-grid-column-sizes">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Grid Column Sizes</h3>
+			</div>
+<div class="f-item-preview">
+	<div class="dc-row">
+	<div class="dc-column dc-column--small-2">
+		<div class="dc-column__contents dc-column__contents--center">2</div>
+	</div>
+	<div class="dc-column dc-column--small-10">
+		<div class="dc-column__contents dc-column__contents--center">10</div>
+	</div>
+</div>
+<div class="dc-row">
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents dc-column__contents--center">3</div>
+	</div>
+	<div class="dc-column dc-column--small-9">
+		<div class="dc-column__contents dc-column__contents--center">9</div>
+	</div>
+</div>
+<div class="dc-row">
+	<div class="dc-column dc-column--small-4">
+		<div class="dc-column__contents dc-column__contents--center">4</div>
+	</div>
+	<div class="dc-column dc-column--small-8">
+		<div class="dc-column__contents dc-column__contents--center">8</div>
+	</div>
+</div>
+<div class="dc-row">
+	<div class="dc-column dc-column--small-5">
+		<div class="dc-column__contents dc-column__contents--center">5</div>
+	</div>
+	<div class="dc-column dc-column--small-7">
+		<div class="dc-column__contents dc-column__contents--center">7</div>
+	</div>
+</div>
+<div class="dc-row">
+	<div class="dc-column dc-column--small-6">
+		<div class="dc-column__contents dc-column__contents--center">6</div>
+	</div>
+	<div class="dc-column dc-column--small-6">
+		<div class="dc-column__contents dc-column__contents--center">6</div>
+	</div>
+</div>
+<div class="dc-row">
+	<div class="dc-column dc-column--small-4">
+		<div class="dc-column__contents dc-column__contents--center">4</div>
+	</div>
+	<div class="dc-column dc-column--small-4">
+		<div class="dc-column__contents dc-column__contents--center">4</div>
+	</div>
+	<div class="dc-column dc-column--small-4">
+		<div class="dc-column__contents dc-column__contents--center">4</div>
+	</div>
+</div>
+<div class="dc-row">
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents dc-column__contents--center">3</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents dc-column__contents--center">3</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents dc-column__contents--center">3</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents dc-column__contents--center">3</div>
+	</div>
+</div>
+<div class="dc-row">
+	<div class="dc-column dc-column--small-2">
+		<div class="dc-column__contents dc-column__contents--center">2</div>
+	</div>
+	<div class="dc-column dc-column--small-2">
+		<div class="dc-column__contents dc-column__contents--center">2</div>
+	</div>
+	<div class="dc-column dc-column--small-2">
+		<div class="dc-column__contents dc-column__contents--center">2</div>
+	</div>
+	<div class="dc-column dc-column--small-2">
+		<div class="dc-column__contents dc-column__contents--center">2</div>
+	</div>
+	<div class="dc-column dc-column--small-2">
+		<div class="dc-column__contents dc-column__contents--center">2</div>
+	</div>
+	<div class="dc-column dc-column--small-2">
+		<div class="dc-column__contents dc-column__contents--center">2</div>
+	</div>
+</div>
+<div class="dc-row">
+	<div class="dc-column dc-column--small-1">
+		<div class="dc-column__contents dc-column__contents--center">1</div>
+	</div>
+	<div class="dc-column dc-column--small-1">
+		<div class="dc-column__contents dc-column__contents--center">1</div>
+	</div>
+	<div class="dc-column dc-column--small-1">
+		<div class="dc-column__contents dc-column__contents--center">1</div>
+	</div>
+	<div class="dc-column dc-column--small-1">
+		<div class="dc-column__contents dc-column__contents--center">1</div>
+	</div>
+	<div class="dc-column dc-column--small-1">
+		<div class="dc-column__contents dc-column__contents--center">1</div>
+	</div>
+	<div class="dc-column dc-column--small-1">
+		<div class="dc-column__contents dc-column__contents--center">1</div>
+	</div>
+	<div class="dc-column dc-column--small-1">
+		<div class="dc-column__contents dc-column__contents--center">1</div>
+	</div>
+	<div class="dc-column dc-column--small-1">
+		<div class="dc-column__contents dc-column__contents--center">1</div>
+	</div>
+	<div class="dc-column dc-column--small-1">
+		<div class="dc-column__contents dc-column__contents--center">1</div>
+	</div>
+	<div class="dc-column dc-column--small-1">
+		<div class="dc-column__contents dc-column__contents--center">1</div>
+	</div>
+	<div class="dc-column dc-column--small-1">
+		<div class="dc-column__contents dc-column__contents--center">1</div>
+	</div>
+	<div class="dc-column dc-column--small-1">
+		<div class="dc-column__contents dc-column__contents--center">1</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-10&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;10&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;3&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-9&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;9&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-4&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;4&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-8&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;8&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-5&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;5&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-7&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;7&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-6&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;6&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-6&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;6&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-4&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;4&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-4&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;4&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-4&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;4&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;3&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;3&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;3&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;3&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="01-Grid.05-offset-columns">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Offset Columns</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Use <code>dc-column-offset--[small|medium|large|huge]-[1-11]</code> to apply an offset (left margin) to the a column.</p>
+<p>Example below shows various implementations of offsets</p>
+
+</div>
+<div class="f-item-preview">
+	<h3 class="dc-h3">
+  Offset first column by 3 columns only on large and huge screens:
+</h3>
+<div class="dc-row">
+	<div class="dc-column dc-column--small-2 dc-column-offset--large-3">
+		<div class="dc-column__contents dc-column__contents--center">
+			2
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-2">
+		<div class="dc-column__contents dc-column__contents--center">
+			2
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-2">
+		<div class="dc-column__contents dc-column__contents--center">
+			2
+		</div>
+	</div>
+</div>
+
+<h3 class="dc-h3">Offset last column by 2 columns on all sizes</h3>
+<div class="dc-row">
+	<div class="dc-column dc-column--small-2">
+		<div class="dc-column__contents dc-column__contents--center">
+			2
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-2">
+		<div class="dc-column__contents dc-column__contents--center">
+			2
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-2 dc-column-offset--small-2">
+		<div class="dc-column__contents dc-column__contents--center">
+			2
+		</div>
+	</div>
+</div>
+<h3 class="dc-h3">No offset on large and huge screens, offset by 2 columns on medium</h3>
+<p class="dc-p">
+	Offsets are applied from the breakpoint used + higher. This means that an offset applied for medium size will apply for medium, large, and, huge screen sizes. To remove an offset for higher screen sizes, an offset of `0` can be applied, as shown below.
+	Resize the screen to see how offsets are applied and removed.
+</p>
+<div class="dc-row">
+	<div class="dc-column dc-column--small-2 dc-column-offset--medium-2 dc-column-offset--large-0">
+		<div class="dc-column__contents dc-column__contents--center">
+			2
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-2">
+		<div class="dc-column__contents dc-column__contents--center">
+			2
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-2">
+		<div class="dc-column__contents dc-column__contents--center">
+			2
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;h3 class=&quot;dc-h3&quot;&gt;
+  Offset first column by 3 columns only on large and huge screens:
+&lt;/h3&gt;
+&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2 dc-column-offset--large-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;
+			2
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;
+			2
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;
+			2
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 class=&quot;dc-h3&quot;&gt;Offset last column by 2 columns on all sizes&lt;/h3&gt;
+&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;
+			2
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;
+			2
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2 dc-column-offset--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;
+			2
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 class=&quot;dc-h3&quot;&gt;No offset on large and huge screens, offset by 2 columns on medium&lt;/h3&gt;
+&lt;p class=&quot;dc-p&quot;&gt;
+	Offsets are applied from the breakpoint used + higher. This means that an offset applied for medium size will apply for medium, large, and, huge screen sizes. To remove an offset for higher screen sizes, an offset of &#x60;0&#x60; can be applied, as shown below.
+	Resize the screen to see how offsets are applied and removed.
+&lt;/p&gt;
+&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2 dc-column-offset--medium-2 dc-column-offset--large-0&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;
+			2
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;
+			2
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;
+			2
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="01-Grid.06-collapse-columns">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Collapse Columns</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Sometimes it may be required to use the grid without gutters.</p>
+<p>Use <code>dc-row--collapse</code> to have no gutters for columns.</p>
+<p>Example below shows 4 columns without gutter space.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-row dc-row--collapse">
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, eveniet.
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, repudiandae.
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, ut.
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, animi.
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row dc-row--collapse&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, eveniet.
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, repudiandae.
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, ut.
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, animi.
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="01-Grid.07-nested-grid-rows">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Nested Grid Rows</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>It is possible to create a nested grid by adding a <code>.dc-row</code> inside of a <code>.dc-column</code></p>
+<p>Example below shows the second column of top grid having another row (of 12 columns) inside it
+which has 4 equally sized columns inside.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-row">
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			<h4>Column 1</h4>
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-9">
+		<div class="dc-column__contents">
+			<h4>Column 2</h4>
+			<div class="dc-row">
+				<div class="dc-column">
+					<div class="dc-column__contents">
+						Nested Column 1
+					</div>
+				</div>
+				<div class="dc-column">
+					<div class="dc-column__contents">
+						Nested Column 2
+					</div>
+				</div>
+				<div class="dc-column">
+					<div class="dc-column__contents">
+						Nested Column 3
+					</div>
+				</div>
+				<div class="dc-column">
+					<div class="dc-column__contents">
+						Nested Column 4
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			&lt;h4&gt;Column 1&lt;/h4&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-9&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			&lt;h4&gt;Column 2&lt;/h4&gt;
+			&lt;div class=&quot;dc-row&quot;&gt;
+				&lt;div class=&quot;dc-column&quot;&gt;
+					&lt;div class=&quot;dc-column__contents&quot;&gt;
+						Nested Column 1
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;dc-column&quot;&gt;
+					&lt;div class=&quot;dc-column__contents&quot;&gt;
+						Nested Column 2
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;dc-column&quot;&gt;
+					&lt;div class=&quot;dc-column__contents&quot;&gt;
+						Nested Column 3
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;dc-column&quot;&gt;
+					&lt;div class=&quot;dc-column__contents&quot;&gt;
+						Nested Column 4
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="01-Grid.08-block-grid">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Block Grid</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Block grids are great for making responsive pages.</p>
+<p>Use <code>.dc-block-grid--[small|medium|large|huge]-[1-12]</code> on the <code>.dc-row</code> to create a block grid. The columns inside only need <code>.dc-column</code> class applied to them.</p>
+<p>Block grids allow you to define how many columns per row you need based on the screen size. Block grids also facilitate you to add non-standard number of columns in a row like 5 columns.</p>
+<p>Example below shows that the columns below will be placed as &quot;1 per row&quot; on small screens, &quot;3 per row&quot; on meduim screens, and &quot;5 per row&quot; on large screens.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-row dc-block-grid--small-1 dc-block-grid--medium-3 dc-block-grid--large-5">
+	<div class="dc-column">
+		<div class="dc-column__contents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quisquam, sit a.</div>
+	</div>
+	<div class="dc-column">
+		<div class="dc-column__contents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt maxime aut recusandae.</div>
+	</div>
+	<div class="dc-column">
+		<div class="dc-column__contents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ratione hic, obcaecati!</div>
+	</div>
+	<div class="dc-column">
+		<div class="dc-column__contents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eum, error soluta.</div>
+	</div>
+	<div class="dc-column">
+		<div class="dc-column__contents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, ab. Libero, deserunt.</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row dc-block-grid--small-1 dc-block-grid--medium-3 dc-block-grid--large-5&quot;&gt;
+	&lt;div class=&quot;dc-column&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quisquam, sit a.&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt maxime aut recusandae.&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ratione hic, obcaecati!&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eum, error soluta.&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, ab. Libero, deserunt.&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="02-horizontal-alignment">
+
+	<div class="f-item-heading-group">
+		<h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Horizontal Alignment</h2>
+	</div>
+		<div class="f-item-group" id="02-horizontal-alignment.01-row-align-centered">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Row Align Centered</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Use <code>dc-row--align--center</code> to center align the columns in a row. (When columns are not totalling to 12)</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-row dc-row--align--center">
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam possimus reprehenderit minima. Vitae expedita eos temporibus perspiciatis repellendus ipsam necessitatibus!
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit minima delectus, pariatur molestias, dolorum odit totam quasi sit magni beatae.
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row dc-row--align--center&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam possimus reprehenderit minima. Vitae expedita eos temporibus perspiciatis repellendus ipsam necessitatibus!
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit minima delectus, pariatur molestias, dolorum odit totam quasi sit magni beatae.
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="02-horizontal-alignment.02-row-align-right">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Row Align Right</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Use <code>dc-row--align--right</code> to right align the columns in a row.  (When columns are not totalling to 12)</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-row dc-row--align--right">
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam possimus reprehenderit minima. Vitae expedita eos temporibus perspiciatis repellendus ipsam necessitatibus!
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit minima delectus, pariatur molestias, dolorum odit totam quasi sit magni beatae.
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row dc-row--align--right&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam possimus reprehenderit minima. Vitae expedita eos temporibus perspiciatis repellendus ipsam necessitatibus!
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit minima delectus, pariatur molestias, dolorum odit totam quasi sit magni beatae.
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="02-horizontal-alignment.03-row-align-spaced">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Row Align Spaced</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Use <code>dc-row--align--spaced</code> to place the columns in a distributed way.  (When columns are not totalling to 12)</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-row dc-row--align--spaced">
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam possimus reprehenderit minima. Vitae expedita eos temporibus perspiciatis repellendus ipsam necessitatibus!
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit minima delectus, pariatur molestias, dolorum odit totam quasi sit magni beatae.
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row dc-row--align--spaced&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam possimus reprehenderit minima. Vitae expedita eos temporibus perspiciatis repellendus ipsam necessitatibus!
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit minima delectus, pariatur molestias, dolorum odit totam quasi sit magni beatae.
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="02-horizontal-alignment.04-row-align-justified">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Row Align Justified</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Use <code>dc-row--align--justify</code> to align the first and last columns to the edges, and, distribute the horizontal space equally with other columns.  (When columns are not totalling to 12)</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-row dc-row--align--justify">
+	<div class="dc-column dc-column--small-2">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-2">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam possimus reprehenderit minima. Vitae expedita eos temporibus perspiciatis repellendus ipsam necessitatibus!
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-2">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit minima delectus, pariatur molestias, dolorum odit totam quasi sit magni beatae.
+		</div>
+	</div>
+
+	<div class="dc-column dc-column--small-2">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit minima delectus, pariatur molestias, dolorum odit totam quasi sit magni beatae.
+		</div>
+	</div>
+
+	<div class="dc-column dc-column--small-2">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit minima delectus, pariatur molestias, dolorum odit totam quasi sit magni beatae.
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row dc-row--align--justify&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam possimus reprehenderit minima. Vitae expedita eos temporibus perspiciatis repellendus ipsam necessitatibus!
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit minima delectus, pariatur molestias, dolorum odit totam quasi sit magni beatae.
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit minima delectus, pariatur molestias, dolorum odit totam quasi sit magni beatae.
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit minima delectus, pariatur molestias, dolorum odit totam quasi sit magni beatae.
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="03-vertical-alignment">
+
+	<div class="f-item-heading-group">
+		<h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Vertical Alignment</h2>
+	</div>
+		<div class="f-item-group" id="03-vertical-alignment.01-row-align-top">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Row Align Top</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Use <code>dc-row--align-top</code> to vertically align the columns to the top.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-row dc-row--align--top">
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row dc-row--align--top&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="03-vertical-alignment.02-row-align-middle">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Row Align Middle</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Use <code>dc-row--align-middle</code> to vertically align the columns to the middle of the row.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-row dc-row--align--middle">
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row dc-row--align--middle&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="03-vertical-alignment.03-row-align-bottom">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Row Align Bottom</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Use <code>dc-row--align-bottom</code> to vertically align the columns to the bottom of the row.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-row dc-row--align--bottom">
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row dc-row--align--bottom&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="03-vertical-alignment.04-self-align-columns">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Self Align Columns</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>You can also specify the vertical alignment of indiviual columns by using one of the following classes:</p>
+<p><code>dc-column--align-self--top</code> to align the column to the top</p>
+<p><code>dc-column--align-self--middle</code> to align the column to the middle</p>
+<p><code>dc-column--align-self--bottom</code> to align the column to the bottom</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-row">
+	<div class="dc-column dc-column--small-3">
+		<div class="dc-column__contents">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quaerat totam, repellendus, consequuntur officia illo similique pariatur, esse eos magnam exercitationem aut rem commodi.
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3 dc-column--align-self--bottom">
+		<div class="dc-column__contents">
+			This column is bottom-aligned
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3 dc-column--align-self--top">
+		<div class="dc-column__contents">
+			This column is top-aligned
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-3 dc-column--align-self--middle">
+		<div class="dc-column__contents">
+			This column is aligned at the middle
+		</div>
+	</div>
+
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row&quot;&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quaerat totam, repellendus, consequuntur officia illo similique pariatur, esse eos magnam exercitationem aut rem commodi.
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3 dc-column--align-self--bottom&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			This column is bottom-aligned
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3 dc-column--align-self--top&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			This column is top-aligned
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;dc-column dc-column--small-3 dc-column--align-self--middle&quot;&gt;
+		&lt;div class=&quot;dc-column__contents&quot;&gt;
+			This column is aligned at the middle
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="04-scss-reference">
+
+	<div class="f-item-heading-group">
+		<h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Scss Reference</h2>
+	</div>
+		<div class="f-item-group" id="04-scss-reference.01-mixins">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Mixins</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Want to work with SCSS mixins directly, here are some details:</p>
+
+</div>
+<div class="f-item-preview">
+	<h3 class="dc-h3">
+  dc-grid-row
+</h3>
+
+<p class="dc-p">
+	Mixin for creating a row. <br> Sets the margin for row based on the gutter space per breakpoint.
+</p>
+
+<table class="dc-table">
+	<thead class="dc-table__thead">
+		<tr class="dc-table__tr">
+			<th class="dc-table__th">Parameter</th>
+			<th class="dc-table__th">Type</th>
+			<th class="dc-table__th">Default</th>
+			<th class="dc-table__th">Description</th>
+		</tr>
+	</thead>
+	<tbody class="dc-table__tbody">
+		<tr class="dc-table__tr">
+			<td class="dc-table__td">$gutter</td>
+			<td class="dc-table__td">Map</td>
+			<td class="dc-table__td">$dc-grid-gutter</td>
+			<td class="dc-table__td">A Map of gutter values for different breakpoint sizes. See default values under Variables (below).</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<h3 class="dc-h3">
+  dc-grid-column
+</h3>
+
+<p class="dc-p">
+	Mixin for creating a column. <br> Sets the flex value for the column <br> Sets the padding for column based on the gutter space per breakpoint.
+</p>
+
+<table class="dc-table">
+	<thead class="dc-table__thead">
+		<tr class="dc-table__tr">
+			<th class="dc-table__th">Parameter</th>
+			<th class="dc-table__th">Type</th>
+			<th class="dc-table__th">Default</th>
+			<th class="dc-table__th">Description</th>
+		</tr>
+	</thead>
+	<tbody class="dc-table__tbody">
+		<tr class="dc-table__tr">
+			<td class="dc-table__td">$columns</td>
+			<td class="dc-table__td">null | Number</td>
+			<td class="dc-table__td">null</td>
+			<td class="dc-table__td">Size (or span) of the column.</td>
+		</tr>
+		<tr class="dc-table__tr">
+			<td class="dc-table__td">$gutter</td>
+			<td class="dc-table__td">Map</td>
+			<td class="dc-table__td">$dc-grid-gutter</td>
+			<td class="dc-table__td">A Map of gutter values for different breakpoint sizes. See default values under Variables (below).</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3 class="dc-h3">
+  dc-block-grid
+</h3>
+
+<p class="dc-p">
+	Mixin for creating a block grid. <br> Sets the flex value for the child columns <br>
+</p>
+
+<table class="dc-table">
+	<thead class="dc-table__thead">
+		<tr class="dc-table__tr">
+			<th class="dc-table__th">Parameter</th>
+			<th class="dc-table__th">Type</th>
+			<th class="dc-table__th">Default</th>
+			<th class="dc-table__th">Description</th>
+		</tr>
+	</thead>
+	<tbody class="dc-table__tbody">
+		<tr class="dc-table__tr">
+			<td class="dc-table__td">$columns</td>
+			<td class="dc-table__td">Number</td>
+			<td class="dc-table__td"></td>
+			<td class="dc-table__td">Number of columns in a row.</td>
+		</tr>
+		<tr class="dc-table__tr">
+			<td class="dc-table__td">$column-selector</td>
+			<td class="dc-table__td">String</td>
+			<td class="dc-table__td">".dc-column"</td>
+			<td class="dc-table__td">The selector class for columns within the row</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3 class="dc-h3">
+  grid-column-flex
+</h3>
+
+<p class="dc-p">
+	Function for calculating flex property value for a column. <br> Returns flex property value based on the number of columns supplied.
+</p>
+<table class="dc-table">
+	<thead class="dc-table__thead">
+		<tr class="dc-table__tr">
+			<th class="dc-table__th">Parameter</th>
+			<th class="dc-table__th">Type</th>
+			<th class="dc-table__th">Default</th>
+			<th class="dc-table__th">Description</th>
+		</tr>
+	</thead>
+	<tbody class="dc-table__tbody">
+		<tr class="dc-table__tr">
+			<td class="dc-table__td">$columns</td>
+			<td class="dc-table__td">null | Number</td>
+			<td class="dc-table__td">null</td>
+			<td class="dc-table__td">Size (or span) of the column.</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3 class="dc-h3">
+  grid-column-size
+</h3>
+
+<p class="dc-p">
+	Function for calculating the width of a column in percentage. <br> Returns percentage value of a column in relation to the total number of columns
+</p>
+
+<table class="dc-table">
+	<thead class="dc-table__thead">
+		<tr class="dc-table__tr">
+			<th class="dc-table__th">Parameter</th>
+			<th class="dc-table__th">Type</th>
+			<th class="dc-table__th">Default</th>
+			<th class="dc-table__th">Description</th>
+		</tr>
+	</thead>
+	<tbody class="dc-table__tbody">
+		<tr class="dc-table__tr">
+			<td class="dc-table__td">$columns</td>
+			<td class="dc-table__td">Number</td>
+			<td class="dc-table__td"></td>
+			<td class="dc-table__td">Size (or span) of the column.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;h3 class=&quot;dc-h3&quot;&gt;
+  dc-grid-row
+&lt;/h3&gt;
+
+&lt;p class=&quot;dc-p&quot;&gt;
+	Mixin for creating a row. &lt;br&gt; Sets the margin for row based on the gutter space per breakpoint.
+&lt;/p&gt;
+
+&lt;table class=&quot;dc-table&quot;&gt;
+	&lt;thead class=&quot;dc-table__thead&quot;&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Parameter&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody class=&quot;dc-table__tbody&quot;&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;$gutter&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;Map&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;$dc-grid-gutter&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;A Map of gutter values for different breakpoint sizes. See default values under Variables (below).&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;h3 class=&quot;dc-h3&quot;&gt;
+  dc-grid-column
+&lt;/h3&gt;
+
+&lt;p class=&quot;dc-p&quot;&gt;
+	Mixin for creating a column. &lt;br&gt; Sets the flex value for the column &lt;br&gt; Sets the padding for column based on the gutter space per breakpoint.
+&lt;/p&gt;
+
+&lt;table class=&quot;dc-table&quot;&gt;
+	&lt;thead class=&quot;dc-table__thead&quot;&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Parameter&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody class=&quot;dc-table__tbody&quot;&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;$columns&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;null | Number&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;null&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;Size (or span) of the column.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;$gutter&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;Map&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;$dc-grid-gutter&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;A Map of gutter values for different breakpoint sizes. See default values under Variables (below).&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 class=&quot;dc-h3&quot;&gt;
+  dc-block-grid
+&lt;/h3&gt;
+
+&lt;p class=&quot;dc-p&quot;&gt;
+	Mixin for creating a block grid. &lt;br&gt; Sets the flex value for the child columns &lt;br&gt;
+&lt;/p&gt;
+
+&lt;table class=&quot;dc-table&quot;&gt;
+	&lt;thead class=&quot;dc-table__thead&quot;&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Parameter&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody class=&quot;dc-table__tbody&quot;&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;$columns&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;Number&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;Number of columns in a row.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;$column-selector&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;String&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;&quot;.dc-column&quot;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;The selector class for columns within the row&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 class=&quot;dc-h3&quot;&gt;
+  grid-column-flex
+&lt;/h3&gt;
+
+&lt;p class=&quot;dc-p&quot;&gt;
+	Function for calculating flex property value for a column. &lt;br&gt; Returns flex property value based on the number of columns supplied.
+&lt;/p&gt;
+&lt;table class=&quot;dc-table&quot;&gt;
+	&lt;thead class=&quot;dc-table__thead&quot;&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Parameter&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody class=&quot;dc-table__tbody&quot;&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;$columns&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;null | Number&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;null&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;Size (or span) of the column.&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 class=&quot;dc-h3&quot;&gt;
+  grid-column-size
+&lt;/h3&gt;
+
+&lt;p class=&quot;dc-p&quot;&gt;
+	Function for calculating the width of a column in percentage. &lt;br&gt; Returns percentage value of a column in relation to the total number of columns
+&lt;/p&gt;
+
+&lt;table class=&quot;dc-table&quot;&gt;
+	&lt;thead class=&quot;dc-table__thead&quot;&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Parameter&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody class=&quot;dc-table__tbody&quot;&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;$columns&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;Number&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;Size (or span) of the column.&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="04-scss-reference.02-default-grid-variables">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Default Grid Variables</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Variables used in Dress Code Grid and their default values</p>
+
+</div>
+<div class="f-item-preview">
+	<table class="dc-table">
+	<thead class="dc-table__thead">
+		<tr class="dc-table__tr">
+			<th class="dc-table__th">Variable</th>
+			<th class="dc-table__th">Type</th>
+			<th class="dc-table__th">Default</th>
+			<th class="dc-table__th">Description</th>
+		</tr>
+	</thead>
+	<tbody class="dc-table__tbody">
+		<tr class="dc-table__tr">
+			<td class="dc-table__td">$dc-grid-column-count</td>
+			<td class="dc-table__td">Number</td>
+			<td class="dc-table__td">12</td>
+			<td class="dc-table__td">Number of total columns in the grid.</td>
+		</tr>
+		<tr class="dc-table__tr">
+			<td class="dc-table__td">$dc-grid-gutter</td>
+			<td class="dc-table__td">Map</td>
+			<td class="dc-table__td">(small: 16px, medium: 24px, large: 32px)</td>
+			<td class="dc-table__td">Gutter size at different breakpoints.</td>
+		</tr>
+		<tr class="dc-table__tr">
+			<td class="dc-table__td">$dc-grid-breakpoints</td>
+			<td class="dc-table__td">Map</td>
+			<td class="dc-table__td">(small: 20em, medium: 37.5em, large: 64em, huge: 80em)</td>
+			<td class="dc-table__td">Breakpoint sizes.
+				<br>The names of column classes are based on these breakpoint names.
+				<br>This bloats the generated CSS so use only what you need.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;table class=&quot;dc-table&quot;&gt;
+	&lt;thead class=&quot;dc-table__thead&quot;&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Variable&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
+			&lt;th class=&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody class=&quot;dc-table__tbody&quot;&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;$dc-grid-column-count&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;Number&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;12&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;Number of total columns in the grid.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;$dc-grid-gutter&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;Map&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;(small: 16px, medium: 24px, large: 32px)&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;Gutter size at different breakpoints.&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr class=&quot;dc-table__tr&quot;&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;$dc-grid-breakpoints&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;Map&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;(small: 20em, medium: 37.5em, large: 64em, huge: 80em)&lt;/td&gt;
+			&lt;td class=&quot;dc-table__td&quot;&gt;Breakpoint sizes.
+				&lt;br&gt;The names of column classes are based on these breakpoint names.
+				&lt;br&gt;This bloats the generated CSS so use only what you need.&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+
+		</div>
+		<div class="dc-grid"></div>
+
+		<script src="/dress-code/assets/scripts/main.js"></script>
+
+</body>
+</html>
