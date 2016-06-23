@@ -2,7 +2,6 @@
 
 @mixin dc-btn {
     display: inline-block;
-    margin-right: $dc-space50;
     padding: $dc-space100 - .1 $dc-space100;
     transition: box-shadow .2s linear, border-color .2s linear;
     border: 1px solid $dc-gray50;

@@ -128,6 +128,11 @@
                     max-width: grid-column-size($i);
                 }
 
+                //Block grid
+                .dc-block-grid--#{$br}-#{$i} {
+                    @include dc-block-grid($i);
+                }
+
                 //We need offsets for all sizes (from 0) except last.
                 $o: $i - 1;
 

@@ -1,3 +1,55 @@
+<a name="2.0.0-beta"></a>
+# [2.0.0-beta](https://github.com/zalando/dress-code/compare/2.0.0-alpha...v2.0.0-beta) (2016-06-23)
+
+
+### Bug Fixes
+
+* **block-grid:** fix build error ([1838e22](https://github.com/zalando/dress-code/commit/1838e22))
+* **button:** remove margin from dc-btn ([b023f16](https://github.com/zalando/dress-code/commit/b023f16)), closes [#210](https://github.com/zalando/dress-code/issues/210)
+* **demo:** fix a minor typo error in the icon section, fix some minor issues ([ddd3121](https://github.com/zalando/dress-code/commit/ddd3121))
+* **demo:** Fix extend bug in sg section scss ([7792145](https://github.com/zalando/dress-code/commit/7792145))
+* **dialog:** Fix padding of button zone ([bc5b395](https://github.com/zalando/dress-code/commit/bc5b395)), closes [#217](https://github.com/zalando/dress-code/issues/217)
+* **toast:** Fix for toast showing black border when animating, fixes [#191](https://github.com/zalando/dress-code/issues/191) ([7287128](https://github.com/zalando/dress-code/commit/7287128)), closes [#191](https://github.com/zalando/dress-code/issues/191)
+* **toast:** Moving the border style property to mixins so as not to rely on class names ([d11f5c9](https://github.com/zalando/dress-code/commit/d11f5c9))
+* **toast:** Removing animation properties as these have to be customised by apps using dress code ([2c078ae](https://github.com/zalando/dress-code/commit/2c078ae))
+
+
+### Code Refactoring
+
+* **svg-icons:** align svg-icons naming with font icons naming ([#186](https://github.com/zalando/dress-code/issues/186)) ([2bf9a62](https://github.com/zalando/dress-code/commit/2bf9a62))
+
+
+### Features
+
+* **buttons:** Add active button option ([1971ba7](https://github.com/zalando/dress-code/commit/1971ba7)), closes [#196](https://github.com/zalando/dress-code/issues/196)
+* **grid:** Added dc-block-grid with examples ([a867cb8](https://github.com/zalando/dress-code/commit/a867cb8))
+* **grid:** Adding grid styles to dress code ([dde9f18](https://github.com/zalando/dress-code/commit/dde9f18))
+* **grid:** Adding offset classes with examples in the docs for the same ([27affc4](https://github.com/zalando/dress-code/commit/27affc4))
+* **grid:** Adding styles and example for collpased (no gutter) columns ([afd4f7e](https://github.com/zalando/dress-code/commit/afd4f7e))
+* **grid:** Adding the styles and mixins for the Grid ([5cc2fe8](https://github.com/zalando/dress-code/commit/5cc2fe8)), closes [#80](https://github.com/zalando/dress-code/issues/80)
+* **icons:** Update left and right arrow icons. Close [#206](https://github.com/zalando/dress-code/issues/206) ([f60c6de](https://github.com/zalando/dress-code/commit/f60c6de)), closes [#206](https://github.com/zalando/dress-code/issues/206)
+* **logo:** Update Zalando logo and favicon ([bff6dfe](https://github.com/zalando/dress-code/commit/bff6dfe)), closes [#209](https://github.com/zalando/dress-code/issues/209)
+* **search:** Improve search images and actions ([31920b8](https://github.com/zalando/dress-code/commit/31920b8))
+* **search:** Maintain aspect ratio of images in search ([d4a048e](https://github.com/zalando/dress-code/commit/d4a048e)), closes [#201](https://github.com/zalando/dress-code/issues/201)
+* **select:** Add disabled and match height with other atoms. ([e55046e](https://github.com/zalando/dress-code/commit/e55046e)), closes [#187](https://github.com/zalando/dress-code/issues/187) [#189](https://github.com/zalando/dress-code/issues/189)
+* **table:** Use lighter color for hover background ([c7b7336](https://github.com/zalando/dress-code/commit/c7b7336))
+
+
+### BREAKING CHANGES
+
+* button: dc-btn does not have margin-right now.
+Check your button alignments. Add a modifier class for buttons with right-margin if necessary
+* svg-icons: some svg-icons were renamed
+
+	```msg-error.svg -> error.svg```
+	```info.svg -> info-circle.svg```
+	```msg-info.svg -> info.svg```
+	```msg-neutral.svg -> neutral.svg```
+	```msg-success.svg -> success.svg```
+	```msg-warning.svg -> warning.svg```
+
+
+
 <a name="2.0.0-alpha"></a>
 # [2.0.0-alpha](https://github.com/zalando/dress-code/compare/1.4.0-alpha...v2.0.0-alpha) (2016-04-07)
 
