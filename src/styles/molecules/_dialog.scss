@@ -62,7 +62,7 @@
 @mixin dc-dialog__actions {
     display: flex;
     justify-content: flex-end;
-    padding: $dc-space150 $dc-space150 $dc-space100;
+    padding: $dc-space150;
     border-top: 1px solid $dc-gray70;
     border-radius: 0 0 $dc-radius100 $dc-radius100;
     background: $dc-gray80;
