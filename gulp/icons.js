@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var path = require('path');
-var del = require('del');
+var rimraf = require('rimraf');
 var iconfont = require('gulp-iconfont');
 var iconfontCss = require('gulp-iconfont-css');
 
@@ -22,8 +22,9 @@ gulp.task('icons', ['icons:clean'], function () {
         }))
         .pipe(iconfont({
             fontName: fontName, // required
+            prependUnicode: true, // recommended option
             formats: ['ttf', 'eot', 'woff','svg','woof2'],
-            timestamp: runTimestamp, // recommended to get consistent builds when watching files,
+            timestamp: runTimestamp, // recommended to get consistent builds when watching files
             normalize: true,
             centerHorizontally: true
         }))
@@ -31,5 +32,5 @@ gulp.task('icons', ['icons:clean'], function () {
 });
 
 gulp.task('icons:clean', function (done) {
-    del(['.tmp/iconfont/'], done);
+    rimraf('.tmp/iconfont/', done);
 });
