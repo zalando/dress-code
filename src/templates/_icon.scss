@@ -24,18 +24,18 @@
 
 @function <%= cssClass%>-char($filename) {
     $char: "";
-<% _.each(glyphs, function(glyph) { %>
-    @if $filename == <%= glyph.fileName %> {
-    $char: "\<%= glyph.codePoint %>";
-}<% }); %>
+    <% _.each(glyphs, function(glyph) { %>
+    @if $filename == <%= glyph.name %> {
+        $char: "\<%= glyph.codepoint %>";
+    }<% }); %>
 
-@return $char;
+    @return $char;
 }
 
 // BEM modifiers mixins
-<% _.each(glyphs, function(glyph) { %>@mixin <%= cssClass%>--<%= glyph.fileName %> {
+<% _.each(glyphs, function(glyph) { %>@mixin <%= cssClass%>--<%= glyph.name %> {
     &:before {
-        content: <%= cssClass%>-char(<%= glyph.fileName %>);
+        content: <%= cssClass%>-char(<%= glyph.name  %>);
     }
 }
 <% }); %>
@@ -43,23 +43,20 @@
 @mixin <%= cssClass%>-generated-selectors {
     @font-face {
         font-family: "<%= fontName %>";
-        src: url('#{$dc-font-path}/<%= fontName %>.eot');
+        src: url('#{$dc-font-path}/<%= fontName %>.eot<%= cacheBustingString %>');
         src: url('#{$dc-font-path}/<%= fontName %>.eot?#iefix') format('eot'),
-        url('#{$dc-font-path}/<%= fontName %>.woff') format('woff'),
-        url('#{$dc-font-path}/<%= fontName %>.ttf') format('truetype'),
-        url('#{$dc-font-path}/<%= fontName %>.svg#<%= fontName %>') format('svg');
+        url('#{$dc-font-path}/<%= fontName %>.woff<%= cacheBustingString %>') format('woff'),
+        url('#{$dc-font-path}/<%= fontName %>.ttf<%= cacheBustingString %>') format('truetype'),
+        url('#{$dc-font-path}/<%= fontName %>.svg<%= cacheBustingString %>#<%= fontName %>') format('svg');
     }
 
-    // BEM block class
     .<%= cssClass%> {
         @include <%= cssClass%>;
     }
+    <% _.each(glyphs, function(glyph) { %>
 
-    // BEM classes
-    <% _.each(glyphs, function(glyph) { %>.<%= cssClass%>--<%= glyph.fileName %> {
-        @include <%= cssClass%>--<%= glyph.fileName %>;
-    }
-
-    <% }); %>
+    .<%= cssClass%>--<%= glyph.name %> {
+        @include <%= cssClass%>--<%= glyph.name %>;
+    }<% }); %>
 }
 

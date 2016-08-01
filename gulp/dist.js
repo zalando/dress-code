@@ -29,7 +29,7 @@ gulp.task('dist', function (done) {
 
 // build all distribution artifacts in a tmp folder
 gulp.task('dist:build', function (done) {
-    return runSequence('dist:clean', ['dist:styles', 'dist:styles:src', 'dist:images', 'dist:icons'], done);
+    return runSequence('dist:clean', 'dist:icons', ['dist:styles', 'dist:styles:src', 'dist:images'], done);
 });
 
 gulp.task('dist:copy-dist', function () {

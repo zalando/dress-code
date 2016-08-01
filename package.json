@@ -2,7 +2,7 @@
   "name": "dress-code",
   "version": "2.0.0-beta",
   "description": "The Dress Code is a framework agnostic, atomic design, BEM, style library which is designed for maintainability and modularity.",
-  "homepage": "https://zalando.github.io/brand-solutions-dress-code",
+  "homepage": "https://zalando.github.io/dress-code",
   "main": "dist/sass/dress-code.scss",
   "scripts": {
     "lint": "gulp lint",
@@ -32,7 +32,7 @@
     "url": "https://github.com/zalando/dress-code.git"
   },
   "engines": {
-    "node": ">=0.12.0"
+    "node": ">=4.4.0"
   },
   "dependencies": {
     "breakpoint-sass": "^2.6.1"
@@ -45,12 +45,12 @@
     "fabricator-assemble": "^1.2.0",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-consolidate": "^0.2.0",
     "gulp-conventional-changelog": "^1.1.0",
     "gulp-csso": "^2.0.0",
     "gulp-debug": "^2.1.2",
     "gulp-gh-pages": "^0.5.2",
     "gulp-iconfont": "^8.0.1",
-    "gulp-iconfont-css": "^2.0.0",
     "gulp-imagemin": "^3.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.4",

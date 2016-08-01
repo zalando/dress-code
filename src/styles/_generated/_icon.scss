@@ -24,90 +24,90 @@
 
 @function dc-icon-char($filename) {
     $char: "";
-
+    
     @if $filename == add {
-    $char: "\E001";
-}
+        $char: "\EA01";
+    }
     @if $filename == arrow-left {
-    $char: "\E002";
-}
+        $char: "\EA02";
+    }
     @if $filename == arrow-right {
-    $char: "\E003";
-}
+        $char: "\EA03";
+    }
     @if $filename == check {
-    $char: "\E004";
-}
+        $char: "\EA04";
+    }
     @if $filename == clear {
-    $char: "\E005";
-}
+        $char: "\EA05";
+    }
     @if $filename == close {
-    $char: "\E006";
-}
+        $char: "\EA06";
+    }
     @if $filename == cog {
-    $char: "\E007";
-}
+        $char: "\EA07";
+    }
     @if $filename == contact {
-    $char: "\E008";
-}
+        $char: "\EA08";
+    }
     @if $filename == drag {
-    $char: "\E009";
-}
+        $char: "\EA09";
+    }
     @if $filename == error {
-    $char: "\E00A";
-}
+        $char: "\EA0A";
+    }
     @if $filename == eye {
-    $char: "\E00B";
-}
+        $char: "\EA0B";
+    }
     @if $filename == help {
-    $char: "\E00C";
-}
+        $char: "\EA0C";
+    }
     @if $filename == history {
-    $char: "\E00D";
-}
-    @if $filename == info-circle {
-    $char: "\E00E";
-}
+        $char: "\EA0D";
+    }
     @if $filename == info {
-    $char: "\E00F";
-}
+        $char: "\EA0F";
+    }
+    @if $filename == info-circle {
+        $char: "\EA0E";
+    }
     @if $filename == lock {
-    $char: "\E010";
-}
+        $char: "\EA10";
+    }
     @if $filename == menu {
-    $char: "\E011";
-}
+        $char: "\EA11";
+    }
     @if $filename == more {
-    $char: "\E012";
-}
+        $char: "\EA12";
+    }
     @if $filename == pencil {
-    $char: "\E013";
-}
+        $char: "\EA13";
+    }
     @if $filename == play {
-    $char: "\E014";
-}
+        $char: "\EA14";
+    }
     @if $filename == redo {
-    $char: "\E015";
-}
+        $char: "\EA15";
+    }
     @if $filename == search {
-    $char: "\E016";
-}
+        $char: "\EA16";
+    }
     @if $filename == success {
-    $char: "\E017";
-}
+        $char: "\EA17";
+    }
     @if $filename == trash {
-    $char: "\E018";
-}
+        $char: "\EA18";
+    }
     @if $filename == undo {
-    $char: "\E019";
-}
+        $char: "\EA19";
+    }
     @if $filename == user {
-    $char: "\E01A";
-}
+        $char: "\EA1A";
+    }
     @if $filename == warning {
-    $char: "\E01B";
-}
+        $char: "\EA1B";
+    }
 
-@return $char;
+    @return $char;
 }
 
 // BEM modifiers mixins
@@ -176,14 +176,14 @@
         content: dc-icon-char(history);
     }
 }
-@mixin dc-icon--info-circle {
-    &:before {
-        content: dc-icon-char(info-circle);
-    }
-}
 @mixin dc-icon--info {
     &:before {
         content: dc-icon-char(info);
+    }
+}
+@mixin dc-icon--info-circle {
+    &:before {
+        content: dc-icon-char(info-circle);
     }
 }
 @mixin dc-icon--lock {
@@ -251,19 +251,18 @@
 @mixin dc-icon-generated-selectors {
     @font-face {
         font-family: "DressCodeIcons";
-        src: url('#{$dc-font-path}/DressCodeIcons.eot');
+        src: url('#{$dc-font-path}/DressCodeIcons.eot?v=2.0.0-beta');
         src: url('#{$dc-font-path}/DressCodeIcons.eot?#iefix') format('eot'),
-        url('#{$dc-font-path}/DressCodeIcons.woff') format('woff'),
-        url('#{$dc-font-path}/DressCodeIcons.ttf') format('truetype'),
-        url('#{$dc-font-path}/DressCodeIcons.svg#DressCodeIcons') format('svg');
+        url('#{$dc-font-path}/DressCodeIcons.woff?v=2.0.0-beta') format('woff'),
+        url('#{$dc-font-path}/DressCodeIcons.ttf?v=2.0.0-beta') format('truetype'),
+        url('#{$dc-font-path}/DressCodeIcons.svg?v=2.0.0-beta#DressCodeIcons') format('svg');
     }
 
-    // BEM block class
     .dc-icon {
         @include dc-icon;
     }
+    
 
-    // BEM classes
     .dc-icon--add {
         @include dc-icon--add;
     }
@@ -316,12 +315,12 @@
         @include dc-icon--history;
     }
 
-    .dc-icon--info-circle {
-        @include dc-icon--info-circle;
-    }
-
     .dc-icon--info {
         @include dc-icon--info;
+    }
+
+    .dc-icon--info-circle {
+        @include dc-icon--info-circle;
     }
 
     .dc-icon--lock {
@@ -371,6 +370,4 @@
     .dc-icon--warning {
         @include dc-icon--warning;
     }
-
-    
 }

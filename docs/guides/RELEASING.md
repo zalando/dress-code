@@ -9,16 +9,16 @@ For more info, please take a look [here](http://semver.org/).
 git checkout -b release/<semver>
 ```
 
-2) Run the build.
-
-```
-npm run build
-```
-
-3) Increase ```bower.json``` and ```package.json``` <semver> version and run the task that updates the changelog. 
+2) Increase ```bower.json``` and ```package.json``` <semver> version and run the task that updates the changelog. 
 
 ```
 npm run changelog
+```
+
+3) Run the build.
+
+```
+npm run build
 ```
 
 4) Check the result and if needed adjust the output (```CHANGELOG.md```).

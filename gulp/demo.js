@@ -28,7 +28,7 @@ var debug = require('gulp-debug');
 
 
 gulp.task('demo:build', function (done) {
-    runSequence('demo:clean', ['demo:images', 'demo:styles', 'demo:scripts', 'demo:icon-font', 'demo:assemble'], done)
+    runSequence('demo:clean', 'demo:icon-font', ['demo:images', 'demo:styles', 'demo:scripts', 'demo:assemble'], done)
 });
 
 // clean
@@ -100,7 +100,7 @@ gulp.task('demo:serve', ['demo:build'], function () {
 
     browserSync({
         // process env variable PORT or command line argument --PORT or default 3000
-        port: process.env.PORT || gutil.env['PORT'] || 3000, 
+        port: process.env.PORT || gutil.env['PORT'] || 3000,
         server: {
             baseDir: '.tmp/demo'
         },
