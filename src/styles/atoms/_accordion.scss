@@ -1,64 +1,64 @@
 @mixin dc-accordion {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 @mixin dc-accordion__item {
-	display:block;
-	padding: $dc-space100;
-	border-bottom: 1px solid $dc-gray70;
-	background-color: $dc-white;
+    display: block;
+    padding: $dc-space100;
+    border-bottom: 1px solid $dc-gray70;
+    background-color: $dc-white;
 }
 
-@mixin dc-accordion-input( 
-	$accordion-header-selector: "dc-accordion-header",
-	$accordion-icon-selector: "dc-accordion-icon",
-	$accordion-content-selector: "dc-accordion__content"
+@mixin dc-accordion-input(
+    $accordion-header-selector: "dc-accordion-header",
+    $accordion-icon-selector: "dc-accordion-icon",
+    $accordion-content-selector: "dc-accordion__content"
 ) {
-	display:none;
+    display: none;
 
-	& ~ .#{$accordion-header-selector} {
-		cursor: pointer;
-		display: flex;
-		font-size:$dc-font150;
-		line-height: $dc-h4-line-height;
+    & ~ .#{$accordion-header-selector} {
+        display: flex;
+        font-size: $dc-font150;
+        line-height: $dc-h4-line-height;
+        cursor: pointer;
 
-		.#{$accordion-icon-selector} {
-			display: inline-block;
-			margin-right: $dc-space75;
-		}
-	}
+        .#{$accordion-icon-selector} {
+            display: inline-block;
+            margin-right: $dc-space75;
+        }
+    }
 
-	& ~ .#{$accordion-content-selector} {
-		height: 0;
-		overflow: hidden;
-	}
+    & ~ .#{$accordion-content-selector} {
+        height: 0;
+        overflow: hidden;
+    }
 
-	&:checked{
-		&  ~ .#{$accordion-header-selector} {
-			.#{$accordion-icon-selector} {
-				transform: rotate(90deg);
-			}
-		}
+    &:checked {
+        &  ~ .#{$accordion-header-selector} {
+            .#{$accordion-icon-selector} {
+                transform: rotate(90deg);
+            }
+        }
 
-		& ~ .#{$accordion-content-selector} {
-			height: auto;   
-		}
-	}
+        & ~ .#{$accordion-content-selector} {
+            height: auto;
+        }
+    }
 }
 
-@mixin dc-accordion-selectors{
+@mixin dc-accordion-selectors {
 
-	.dc-accordion {
-		@include dc-accordion;
-	}
+    .dc-accordion {
+        @include dc-accordion;
+    }
 
-	.dc-accordion__item {
-		@include dc-accordion__item;
-	}
+    .dc-accordion__item {
+        @include dc-accordion__item;
+    }
 
-	.dc-accordion-input {
-		@include dc-accordion-input;
-	}
+    .dc-accordion-input {
+        @include dc-accordion-input;
+    }
 }
