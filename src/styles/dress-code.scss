@@ -5,6 +5,7 @@
 @import "grid/grid";
 
 // atoms
+@import "atoms/accordion";
 @import "atoms/btn";
 @import "atoms/card";
 @import "atoms/checkbox";
@@ -47,6 +48,7 @@
     @include dc-grid-selectors;
 
     // atoms
+    @include dc-accordion-selectors;
     @include dc-btn-selectors;
     @include dc-card-selectors;
     @include dc-checkbox-selectors;
