@@ -4,49 +4,49 @@
     flex-wrap: nowrap;
 }
 
-@mixin dc-accordion__item {
-    display: block;
-    padding: $dc-space100;
-    border-bottom: 1px solid $dc-gray70;
-    background-color: $dc-white;
-}
-
-@mixin dc-accordion-input(
-    $accordion-header-selector: "dc-accordion-header",
-    $accordion-icon-selector: "dc-accordion-icon",
+@mixin dc-accordion__item(
+    $accordion-header: "dc-accordion__header",
     $accordion-content-selector: "dc-accordion__content"
 ) {
-    display: none;
+    display: block;
+    border-bottom: 1px solid $dc-gray70;
+    background-color: $dc-white;
+    padding-bottom: $dc-space100;
 
-    & ~ .#{$accordion-header-selector} {
-        display: flex;
-        font-size: $dc-font150;
-        line-height: $dc-h4-line-height;
-        cursor: pointer;
-
-        .#{$accordion-icon-selector} {
-            display: inline-block;
-            margin-right: $dc-space75;
-        }
+    &:hover {
+        background-color: $dc-gray80;
     }
 
-    & ~ .#{$accordion-content-selector} {
+    .#{$accordion-content-selector} {
         height: 0;
+        padding-right: $dc-space150;
+        padding-left: $dc-space150;
         overflow: hidden;
     }
+}
 
-    &:checked {
-        &  ~ .#{$accordion-header-selector} {
-            .#{$accordion-icon-selector} {
-                transform: rotate(90deg);
-            }
-        }
+@mixin dc-accordion__header {
+    cursor: pointer;
+    display: flex;
+    padding: $dc-space100 $dc-space150 0;
+}
 
-        & ~ .#{$accordion-content-selector} {
-            height: auto;
-        }
+@mixin dc-accordion__item--is-active {
+    outline: 1px solid $dc-blue40;
+}
+
+
+@mixin dc-accordion__item--is-open(
+    $accordion-header: "dc-accordion__header",
+    $accordion-content-selector: "dc-accordion__content"
+) {
+    background-color: $dc-gray80;
+
+    & > .#{$accordion-content-selector} {
+        height: auto;
     }
 }
+
 
 @mixin dc-accordion-selectors {
 
@@ -58,7 +58,15 @@
         @include dc-accordion__item;
     }
 
-    .dc-accordion-input {
-        @include dc-accordion-input;
+    .dc-accordion__item--is-active {
+        @include dc-accordion__item--is-active;
+    }
+
+    .dc-accordion__item--is-open {
+        @include dc-accordion__item--is-open;
+    }
+
+    .dc-accordion__header {
+        @include dc-accordion__header;
     }
 }
