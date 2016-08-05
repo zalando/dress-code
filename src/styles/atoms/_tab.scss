@@ -1,0 +1,128 @@
+@mixin dc-tab {
+    @include dc-cf;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    background-color: $dc-white;
+    box-shadow: $dc-box-shadow100;
+}
+
+@mixin dc-tab--vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin dc-tab__element {
+    display: block;
+    float: left;
+    padding: $dc-space100;
+    cursor: pointer;
+
+    &:hover {
+        color: $dc-orange40;
+        background: $dc-orange80;
+    }
+}
+
+@mixin dc-tab__element--vertical(
+    $tab-active-selector: dc-tab__element--active
+) {
+
+    &.#{$tab-active-selector} {
+        @include dc-tab__element--vertical--active;
+    }
+}
+
+@mixin dc-tab__element--active {
+    box-shadow: inset 0 -3px 0 0 $dc-orange40;
+    color: $dc-orange40;
+    background: $dc-orange80;
+}
+
+@mixin dc-tab__element--vertical--active {
+    box-shadow: inset 3px 0 0 0 $dc-orange40;
+}
+
+
+@mixin dc-tab__element--focussed {
+    background: $dc-orange80;
+    color: $dc-orange40;
+}
+
+@mixin dc-tab__element--disabled {
+    cursor: default;
+    color: $dc-gray70;
+
+    &:hover {
+        color: $dc-gray70;
+        background: transparent;
+    }
+}
+
+@mixin dc-tab-selectors {
+    .dc-tab {
+        @include dc-tab;
+    }
+
+    .dc-tab__element {
+        @include dc-tab__element;
+    }
+
+    .dc-tab__element--active {
+        @include dc-tab__element--active;
+    }
+
+    .dc-tab__element--disabled {
+        @include dc-tab__element--disabled;
+    }
+
+    .dc-tab__element--focussed {
+        @include dc-tab__element--focussed;
+    }
+
+    .dc-tab--vertical {
+        &.dc-tab {
+            @include dc-tab--vertical;
+        }
+
+        .dc-tab__element {
+            @include dc-tab__element--vertical;
+        }
+    }
+}
+
+.tab-vertical {
+    display: flex;
+    height: 300px;
+    background: $dc-white;
+
+    .tab-nav-container {
+        flex: .2;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border-right: $dc-border50 solid $dc-gray70;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .dc-tab {
+            min-height: 100%;
+        }
+    }
+
+    .tab-content-container {
+        flex: 1 1;
+    }
+
+    .tab-content {
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
+}
+

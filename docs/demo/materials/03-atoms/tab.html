@@ -1,0 +1,51 @@
+---
+name: tab
+title: tab
+notes: |
+    Use `dc-tab` to show content for different subjects.
+
+    `dc-tab--vertical`: Use this class with `dc-tab` to create vertical tab.
+
+    `dc-tab__element`: Use this class to create another tab.
+
+    `dc-tab__element--active`: to show a tab as active.
+
+    `dc-tab__element--disabled`: to show a tab as disabled.
+    
+    `dc-tab__element--focussed`: to show a tab as focussed when a user clicks on the tab.
+---
+
+<ul class="dc-tab">
+	<li class="dc-tab__element dc-tab__element--active">Tab1</li>
+	<li class="dc-tab__element">Tab2</li>
+	<li class="dc-tab__element dc-tab__element--disabled">Tab3</li>
+	<li class="dc-tab__element dc-tab__element--focussed">Tab4</li>
+</ul>
+
+<div class="dc-divider"></div>
+
+<ul class="dc-tab dc-tab--vertical">
+	<li class="dc-tab__element dc-tab__element--active">Tab1</li>
+	<li class="dc-tab__element">Tab2</li>
+	<li class="dc-tab__element dc-tab__element--disabled">Tab3</li>
+	<li class="dc-tab__element dc-tab__element--focussed">Tab4</li>
+</ul>
+
+<div class="dc-divider"></div>
+
+<div class="tab-vertical">
+	<div class="tab-nav-container">
+		<div class="dc-tab dc-tab--vertical">
+			<div class="dc-tab__element dc-tab__element--active">Tab1</div>
+			<div class="dc-tab__element">Tab2</div>
+			<div class="dc-tab__element">Tab3</div>
+			<div class="dc-tab__element">Tab4</div>
+		</div>
+	</div>
+	<div class="tab-content-container">
+		<div class="tab-content tab-content--active">Tab Content1</div>
+		<div class="tab-content">Tab Content2</div>
+		<div class="tab-content">Tab Content3</div>
+		<div class="tab-content">Tab Content4</div>
+	</div>
+</div>

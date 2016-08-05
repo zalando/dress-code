@@ -22,6 +22,7 @@
 @import "atoms/select";
 @import "atoms/status";
 @import "atoms/spinner";
+@import "atoms/tab";
 @import "atoms/table";
 @import "atoms/textarea";
 
@@ -67,6 +68,7 @@
     @include dc-select-selectors;
     @include dc-spinner-selectors;
     @include dc-status-selectors;
+    @include dc-tab-selectors;
     @include dc-table-selectors;
     @include dc-textarea-selectors;
 
