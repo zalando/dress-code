@@ -5,7 +5,6 @@
 }
 
 @mixin dc-accordion__item(
-    $accordion-header: "dc-accordion__header",
     $accordion-content-selector: "dc-accordion__content"
 ) {
     display: block;
@@ -37,7 +36,6 @@
 
 
 @mixin dc-accordion__item--is-open(
-    $accordion-header: "dc-accordion__header",
     $accordion-content-selector: "dc-accordion__content"
 ) {
     background-color: $dc-gray80;
