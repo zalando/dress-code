@@ -37,9 +37,21 @@
     }
 }
 
+@mixin dc-select--is-error {
+    border-color: $dc-red40;
+
+    &:hover,
+    &:focus {
+        border-color: $dc-red40;
+    }
+}
+
 @mixin dc-select-selectors {
     .dc-select {
         @include dc-select;
     }
 
+    .dc-select--is-error {
+        @include dc-select--is-error;
+    }
 }
