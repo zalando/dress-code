@@ -50,9 +50,8 @@
 
     > #{$column-selector} {
         $flex-percent: percentage(1 / $columns);
-
-        flex: 0 0 $flex-percent;
         max-width: $flex-percent;
+        flex: 0 0 $flex-percent;
     }
 }
 

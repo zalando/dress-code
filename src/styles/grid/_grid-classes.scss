@@ -124,8 +124,8 @@
         @include breakpoint(map-get($dc-grid-breakpoints, $br)) {
             @for $i from 1 through $dc-grid-column-count {
                 .dc-column--#{$br}-#{$i} {
-                    flex: grid-column-flex($i);
                     max-width: grid-column-size($i);
+                    flex: grid-column-flex($i);
                 }
 
                 //Block grid

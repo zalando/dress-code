@@ -148,13 +148,11 @@ $dc--has-tooltip--large: 30rem !default;
     &:before,
     &:after {
         position: absolute;
-
         // HACK: Trigger hardware accelerated rendering, otherwise transform was not
         // working on a hidden element
         transform: translate3d(0, 0, 0);
 
         transition: .3s ease;
-        transition-delay: $dc--has-tooltip-hide-delay;
         opacity: 0;
 
         // HACK: visibility is set to hidden because IE & Opera don't support
@@ -163,6 +161,7 @@ $dc--has-tooltip--large: 30rem !default;
         visibility: hidden;
 
         z-index: $dc--has-tooltip-zindex;
+        transition-delay: $dc--has-tooltip-hide-delay;
 
         // shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
         pointer-events: none;
@@ -311,4 +310,3 @@ $dc--has-tooltip--large: 30rem !default;
         @include dc--has-tooltip--large;
     }
 }
-
