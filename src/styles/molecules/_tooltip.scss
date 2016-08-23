@@ -153,6 +153,7 @@ $dc--has-tooltip--large: 30rem !default;
         transform: translate3d(0, 0, 0);
 
         transition: .3s ease;
+        transition-delay: $dc--has-tooltip-hide-delay;
         opacity: 0;
 
         // HACK: visibility is set to hidden because IE & Opera don't support
@@ -161,7 +162,7 @@ $dc--has-tooltip--large: 30rem !default;
         visibility: hidden;
 
         z-index: $dc--has-tooltip-zindex;
-        transition-delay: $dc--has-tooltip-hide-delay;
+
 
         // shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
         pointer-events: none;
