@@ -55,14 +55,14 @@
 
 h2.f-item-heading {
 	@extend .dc-h2;
-	// text-transform:uppercase;
+	margin-bottom: $dc-space150;
 }
 
 h3.f-item-heading {
 	@extend .dc-h3;
 	text-transform:uppercase;
 	border-bottom:1px solid $dc-gray60;
-	// margin-bottom: $dc-space50;
+	margin-bottom: $dc-space100;
   padding-bottom: 0.4rem;
 
 	.sg-section__title + &
@@ -70,6 +70,8 @@ h3.f-item-heading {
 		margin-top: $dc-space250;
 	}
 }
+
+h4 { font-weight: 500; }
 
 
 .f-item-controls {
@@ -111,12 +113,13 @@ h3.f-item-heading {
 }
 
 .f-item-notes {
-	margin-bottom: $dc-space150;
+	margin-bottom: $dc-space100;
 	font-size: $dc-font100;
 	color: $dc-gray20;
 
 	p {
-		margin-top: $dc-space50;
+		margin-top: 0;
+		max-width: 52em;
 	}
 
 	> * {
