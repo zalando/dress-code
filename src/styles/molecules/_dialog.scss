@@ -6,7 +6,6 @@
     justify-content: center;
     transform: rotateX(0deg) translateY(0) translateZ(0);
     transition: transform 2s cubic-bezier(.25, .46, .45, .94), opacity .2s cubic-bezier(.39, .58, .57, 1);
-    border-radius: 2px;
     box-shadow: 0 5px 10px rgba($dc-black, .2);
     overflow: auto;
     z-index: 10000;
