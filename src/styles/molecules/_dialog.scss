@@ -39,15 +39,7 @@
     margin-top: -1.6rem;
     margin-right: -1rem;
     float: right;
-}
 
-@mixin dc-dialog__close--no-touch {
-    &:active {
-        transform: scale(.85);
-    }
-}
-
-@mixin dc-dialog__close--touch {
     &:active {
         transform: scale(.85);
     }
@@ -119,14 +111,6 @@
 
     .dc-dialog__close {
         @include dc-dialog__close;
-    }
-
-    .no-touch .dc-dialog__close {
-        @include dc-dialog__close--no-touch;
-    }
-
-    .touch .dc-dialog__close {
-        @include dc-dialog__close--touch;
     }
 
     .dc-dialog__close__icon {

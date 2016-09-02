@@ -7,32 +7,17 @@
     color: $dc-link-color;
     text-decoration: none;
     cursor: pointer;
-    // scss-lint:disable ColorVariable
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    // scss-lint:enable ColorVariable
-}
+    -webkit-tap-highlight-color: rgba($dc-black, 0);
 
-@mixin dc-link--no-touch {
-    &:hover {
-        color: $dc-link-color-hover;
-        text-decoration: none;
-    }
-}
-
-@mixin dc-link--touch {
+    &:hover,
     &:active {
         color: $dc-link-color-hover;
         text-decoration: none;
     }
 }
 
-@mixin dc-link--destroy--no-touch {
-    &:hover {
-        color: $dc-red40;
-    }
-}
-
-@mixin dc-link--destroy--touch {
+@mixin dc-link--destroy {
+    &:hover,
     &:active {
         color: $dc-red40;
     }
@@ -41,18 +26,7 @@
 @mixin dc-link--disabled {
     color: $dc-gray50;
     cursor: default;
-}
-
-@mixin dc-link--disabled--no-touch {
-    &:hover {
-        @include dc-link--disabled;
-    }
-}
-
-@mixin dc-link--disabled--touch {
-    &:active {
-        @include dc-link--disabled;
-    }
+    pointer-events: none;
 }
 
 @mixin dc-link-selectors {
@@ -60,31 +34,12 @@
         @include dc-link;
     }
 
-    .no-touch .dc-link {
-        @include dc-link--no-touch;
-    }
-
-    .touch .dc-link {
-        @include dc-link--touch;
-    }
-
-    .no-touch .dc-link--destroy {
-        @include dc-link--destroy--no-touch;
-    }
-
-    .touch .dc-link--destroy {
-        @include dc-link--destroy--touch;
+    .dc-link--destroy {
+        @include dc-link--destroy;
     }
 
     .dc-link--disabled {
         @include dc-link--disabled;
     }
 
-    .no-touch .dc-link--disabled {
-        @include dc-link--disabled--no-touch;
-    }
-
-    .touch .dc-link--disabled {
-        @include dc-link--disabled--touch;
-    }
 }

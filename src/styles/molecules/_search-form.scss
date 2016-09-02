@@ -139,8 +139,8 @@
     .dc-search-form__btn {
         @include dc-search-form__btn;
 
-        .no-touch &:hover,
-        .touch &:active,
+        &:hover,
+        &:active,
         &:focus {
             @include dc-search-form__btn--is-active;
         }
@@ -157,8 +157,8 @@
     .dc-suggest {
         @include dc-suggest;
 
-        .no-touch &:hover,
-        .touch &:active {
+        &:hover,
+        &:active {
             @include dc-suggest--is-visible;
         }
     }
@@ -170,8 +170,8 @@
     .dc-suggest__item {
         @include dc-suggest__item;
 
-        .no-touch &:hover,
-        .touch &:active {
+        &:hover,
+        &:active {
             @include dc-suggest__item--is-active;
         }
     }

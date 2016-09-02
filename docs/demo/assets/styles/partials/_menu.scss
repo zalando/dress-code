@@ -111,8 +111,8 @@
 	}
 }
 
-.touch .f-menu a:active,
-.no-touch .f-menu a:hover
+.f-menu a:active,
+.f-menu a:hover
 {
 	background-color: lighten($dc-orange70, 12%);
 	color: $dc-orange40;
