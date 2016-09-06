@@ -65,16 +65,16 @@
     cursor: pointer;
 
     &:after {
-        content: "";
-        position:absolute;
+        position: absolute;
         top: 11px;
         margin-left: 8px;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: none;
-        border-bottom: 5px solid $dc-gray50;
-        opacity: 0;
         transition: opacity .3s;
+        border-top: 0;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid $dc-gray50;
+        border-left: 5px solid transparent;
+        content: "";
+        opacity: 0;
     }
 
     &:hover:after {
@@ -87,10 +87,10 @@
     &--ascending {
 
         &:after {
-            border-top: none;
-            border-bottom: 5px solid $dc-gray10;
             transform: rotate(0);
             transition: transform .3s;
+            border-top: 0;
+            border-bottom: 5px solid $dc-gray10;
             opacity: 1;
         }
 
@@ -102,10 +102,10 @@
 
     &--descending {
         &:after {
-            border-top: 5px solid $dc-gray10;
-            border-bottom: none;
             transform: rotate(0);
             transition: transform .3s;
+            border-top: 5px solid $dc-gray10;
+            border-bottom: 0;
             opacity: 1;
         }
 
