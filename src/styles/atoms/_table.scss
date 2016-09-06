@@ -50,6 +50,7 @@
     font-weight: $dc-bold-font-weight;
     text-transform: uppercase;
     text-align: left;
+    position: relative;
 
     @include breakpoint(0 $dc-huge-width - .1) {
         @include _dc-table-element--is-block;
@@ -58,6 +59,64 @@
     @include breakpoint($dc-huge-width) {
         @include _dc-table__td--when-huge-width;
     }
+}
+
+@mixin dc-table__th--sortable {
+    cursor: pointer;
+
+    &:after {
+        content: "";
+        position:absolute;
+        top: 11px;
+        margin-left: 8px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: none;
+        border-bottom: 5px solid $dc-gray50;
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    &:hover:after {
+        opacity: 1;
+    }
+}
+
+@mixin dc-table__th--sorted {
+
+    &--ascending {
+
+        &:after {
+            border-top: none;
+            border-bottom: 5px solid $dc-gray10;
+            transform: rotate(0);
+            transition: transform .3s;
+            opacity: 1;
+        }
+
+        &:hover:after {
+            transform: rotate(180deg);
+            border-bottom-color: $dc-gray50;
+        }
+    }
+
+    &--descending {
+        &:after {
+            border-top: 5px solid $dc-gray10;
+            border-bottom: none;
+            transform: rotate(0);
+            transition: transform .3s;
+            opacity: 1;
+        }
+
+        &:hover:after {
+            transform: rotate(180deg);
+            border-top-color: $dc-gray50;
+
+        }
+
+    }
+
 }
 
 @mixin dc-table__tbody($child-row-selector : ".dc-table__tr") {
@@ -207,6 +266,14 @@
 
     .dc-table__th {
         @include dc-table__th;
+    }
+
+    .dc-table__th--sortable {
+        @include dc-table__th--sortable;
+    }
+
+    .dc-table__th--sorted {
+        @include dc-table__th--sorted;
     }
 
     .dc-table__tr {
