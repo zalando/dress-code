@@ -126,6 +126,7 @@
                 .dc-column--#{$br}-#{$i} {
                     flex: grid-column-flex($i);
                     max-width: grid-column-size($i);
+
                 }
 
                 //Block grid

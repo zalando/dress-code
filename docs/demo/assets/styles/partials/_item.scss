@@ -1,8 +1,13 @@
 .f-item-group {
 	@include clearfix;
+
 	margin-bottom: 3rem;
 	padding-bottom: 3rem;
 	border-bottom: 1px solid map-get($dc-colors, light);
+
+	&.f-item-grouped_groups {
+		@include dc-card;
+	}
 
 	&:last-child {
 		border-bottom: 0;
@@ -11,9 +16,11 @@
 
 	& ~ & {
 		margin-top: 0;
+
 	}
 
 	& > & {
+
 		padding-bottom: 1.5rem;
 		margin-bottom: 1.5rem;
 		border-bottom: 0;
@@ -48,26 +55,23 @@
 
 h2.f-item-heading {
 	@extend .dc-h2;
-
-	font-weight:500;
-	text-transform:uppercase;
+	margin-bottom: $dc-space150;
 }
 
 h3.f-item-heading {
 	@extend .dc-h3;
-
-	// margin-top: $dc-space350;
 	text-transform:uppercase;
-	color:$dc-gray40;
 	border-bottom:1px solid $dc-gray60;
-	margin-bottom: $dc-space75;
-    padding-bottom: 0.4rem;
+	margin-bottom: $dc-space100;
+	padding-bottom: 0.4rem;
 
 	.sg-section__title + &
 	{
 		margin-top: $dc-space250;
 	}
 }
+
+h4 { font-weight: 500; }
 
 
 .f-item-controls {
@@ -109,12 +113,13 @@ h3.f-item-heading {
 }
 
 .f-item-notes {
-	margin-bottom: $dc-space150;
+	margin-bottom: $dc-space100;
 	font-size: $dc-font100;
 	color: $dc-gray20;
 
 	p {
-		margin-top: $dc-space50;
+		margin-top: 0;
+		max-width: 52em;
 	}
 
 	> * {
@@ -124,7 +129,6 @@ h3.f-item-heading {
 
 		&:before
 		{
-			content: "//";
 			margin-right: $dc-space75;
 		}
 	}

@@ -19,9 +19,5 @@
 @mixin dc-textarea-selectors {
     .dc-textarea {
         @include dc-textarea;
-        .no-touch & {
-            @include dc-input--no-touch;
-        }
     }
 }
-
