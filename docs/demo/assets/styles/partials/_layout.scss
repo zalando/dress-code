@@ -7,6 +7,15 @@ body {
 	position: relative;
 }
 
+p {
+    margin-top: 0;
+    max-width: 52em;
+}
+
+a {
+    @include dc-link;
+}
+
 .f-header {
 	position: fixed;
 	top: 0;
@@ -59,10 +68,6 @@ body {
 	@include breakpoint($dc-monstrous-width)
 	{
 		padding: $dc-space100 $dc-space150;
-	}
-
-	.dc-p {
-		max-width: 52em;
 	}
 
 }
