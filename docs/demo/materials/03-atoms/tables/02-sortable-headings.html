@@ -3,20 +3,27 @@ name: Table
 title: Table
 notes: |
 
-    Use `dc-table__th--sortable` to indicate columns as sortable. Use `dc-table__th--sorted--ascending` and `dc-table__th--sorted--descending` to indicate that the table is sorted by this column.
+    To indicate columns as sortable, add an empty element with `dc-table__sorter` in the `th`. Use `dc-table__sorter--ascending` and `dc-table__sorter--descending` to indicate the sorting order.
 
 ---
 <table class="dc-table">
 	<thead class="dc-table__thead">
 		<tr class="dc-table__tr">
-			<th class="dc-table__th dc-table__th--sortable" data-col="First Name">First Name</th>
-			<th class="dc-table__th dc-table__th--sortable dc-table__th--sorted--ascending" data-col="Name">Last Name</th>
-			<th class="dc-table__th dc-table__th--sortable" data-col="Name">Email</th>
-			<th class="dc-table__th dc-table__th--sortable" data-col="Name">Status</th>
+			<th class="dc-table__th" data-col="First Name">First Name<span class="dc-table__sorter dc-table__sorter--ascending"></th>
+			<th class="dc-table__th" data-col="Name">Last Name<span class="dc-table__sorter"></span></th>
+			<th class="dc-table__th" data-col="Name">Email<span class="dc-table__sorter"></th>
+			<th class="dc-table__th" data-col="Name">Status<span class="dc-table__sorter"></th>
 		</tr>
 	</thead>
 
 	<tbody class="dc-table__tbody">
+        <tr class="dc-table__tr">
+			<td class="dc-table__td" data-col="First Name">Austin</td>
+			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
+			<td class="dc-table__td" data-col="Email">austin.carpenter87@example.com</td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
+		</tr>
+
 		<tr class="dc-table__tr">
 			<td class="dc-table__td" data-col="First Name">Eileen</td>
 			<td class="dc-table__td" data-col="Last Name">Holland</td>
@@ -35,13 +42,6 @@ notes: |
 			<td class="dc-table__td" data-col="First Name">Kitty</td>
 			<td class="dc-table__td" data-col="Last Name">Murray</td>
 			<td class="dc-table__td" data-col="Email">kitty.murray88@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
-		</tr>
-
-		<tr class="dc-table__tr">
-			<td class="dc-table__td" data-col="First Name">Austin</td>
-			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
-			<td class="dc-table__td" data-col="Email">austin.carpenter87@example.com</td>
 			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
 		</tr>
 
