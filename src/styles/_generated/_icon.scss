@@ -76,35 +76,38 @@
     @if $filename == menu {
         $char: "\EA11";
     }
-    @if $filename == more {
+    @if $filename == minus {
         $char: "\EA12";
     }
-    @if $filename == pencil {
+    @if $filename == more {
         $char: "\EA13";
     }
-    @if $filename == play {
+    @if $filename == pencil {
         $char: "\EA14";
     }
-    @if $filename == redo {
+    @if $filename == play {
         $char: "\EA15";
     }
-    @if $filename == search {
+    @if $filename == redo {
         $char: "\EA16";
     }
-    @if $filename == success {
+    @if $filename == search {
         $char: "\EA17";
     }
-    @if $filename == trash {
+    @if $filename == success {
         $char: "\EA18";
     }
-    @if $filename == undo {
+    @if $filename == trash {
         $char: "\EA19";
     }
-    @if $filename == user {
+    @if $filename == undo {
         $char: "\EA1A";
     }
-    @if $filename == warning {
+    @if $filename == user {
         $char: "\EA1B";
+    }
+    @if $filename == warning {
+        $char: "\EA1C";
     }
 
     @return $char;
@@ -194,6 +197,11 @@
 @mixin dc-icon--menu {
     &:before {
         content: dc-icon-char(menu);
+    }
+}
+@mixin dc-icon--minus {
+    &:before {
+        content: dc-icon-char(minus);
     }
 }
 @mixin dc-icon--more {
@@ -329,6 +337,10 @@
 
     .dc-icon--menu {
         @include dc-icon--menu;
+    }
+
+    .dc-icon--minus {
+        @include dc-icon--minus;
     }
 
     .dc-icon--more {
