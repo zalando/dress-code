@@ -16,6 +16,7 @@
         font-weight: $dc-normal-font-weight;
         line-height: $dc-space150 - .2;
         text-transform: none;
+        cursor: pointer;
 
         &:before,
         &:after {
@@ -50,6 +51,7 @@
 
     &[disabled] + #{$sibling-label-selector} {
         color: $dc-gray50;
+        cursor: default;
 
         &:before,
         &:after {
