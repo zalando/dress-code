@@ -5,7 +5,6 @@
 @import "grid/grid";
 
 // atoms
-@import "atoms/accordion";
 @import "atoms/btn";
 @import "atoms/card";
 @import "atoms/checkbox";
@@ -26,6 +25,7 @@
 @import "atoms/textarea";
 
 // molecules
+@import "molecules/accordion";
 @import "molecules/breadcrumb";
 @import "molecules/btn-icon";
 @import "molecules/btn-group";

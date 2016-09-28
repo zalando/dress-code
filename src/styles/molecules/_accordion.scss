@@ -13,7 +13,7 @@
     padding-bottom: $dc-space100;
 
     &:hover {
-        background-color: $dc-gray80;
+        background-color: $dc-blue80;
     }
 
     .#{$accordion-content-selector} {
@@ -24,7 +24,7 @@
 @mixin dc-accordion__item--is-open(
     $accordion-content-selector: "dc-accordion__content"
 ) {
-    background-color: $dc-gray80;
+    background-color: $dc-white;
 
     & > .#{$accordion-content-selector} {
         height: auto;
@@ -32,6 +32,7 @@
 }
 
 @mixin dc-accordion__item--is-active {
+    background-color: $dc-white;
     outline: 1px solid $dc-blue40;
 }
 
@@ -39,6 +40,7 @@
     cursor: pointer;
     display: flex;
     padding: $dc-space100 $dc-space150 0;
+    font-weight: $dc-bold-font-weight;
 }
 
 @mixin dc-accordion__content {
