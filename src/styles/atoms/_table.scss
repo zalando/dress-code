@@ -59,6 +59,14 @@
     @include breakpoint($dc-huge-width) {
         @include _dc-table__td--when-huge-width;
     }
+
+    &--sortable {
+        cursor: pointer;
+
+        &:hover {
+            color: $dc-gray20;
+        }
+    }
 }
 
 @mixin dc-table__sorter {
@@ -71,7 +79,6 @@
     border-bottom: 4px solid $dc-gray50;
     border-left: 4px solid transparent;
     content: "";
-    cursor: pointer;
 
     &:after {
         position: absolute;

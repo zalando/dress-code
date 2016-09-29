@@ -3,16 +3,16 @@ name: Table
 title: Table
 notes: |
 
-    To indicate columns as sortable, add an empty element with `dc-table__sorter` in the `th`. Use `dc-table__sorter--ascending` and `dc-table__sorter--descending` to indicate the sorting order.
+    To indicate columns as sortable, add `dc-table__th--sortable` to your th, and add an empty element with `dc-table__sorter` inside the `th`. Use `dc-table__sorter--ascending` and `dc-table__sorter--descending` to indicate the sorting order.
 
 ---
 <table class="dc-table">
 	<thead class="dc-table__thead">
 		<tr class="dc-table__tr">
-			<th class="dc-table__th" data-col="First Name">First Name<span class="dc-table__sorter dc-table__sorter--ascending"></th>
-			<th class="dc-table__th" data-col="Name">Last Name<span class="dc-table__sorter"></span></th>
-			<th class="dc-table__th" data-col="Name">Email<span class="dc-table__sorter"></th>
-			<th class="dc-table__th" data-col="Name">Status<span class="dc-table__sorter"></th>
+			<th class="dc-table__th dc-table__th--sortable" data-col="First Name">First Name<span class="dc-table__sorter dc-table__sorter--ascending"></th>
+			<th class="dc-table__th dc-table__th--sortable" data-col="Name">Last Name<span class="dc-table__sorter"></span></th>
+			<th class="dc-table__th dc-table__th--sortable" data-col="Name">Email<span class="dc-table__sorter"></th>
+			<th class="dc-table__th dc-table__th--sortable" data-col="Name">Status<span class="dc-table__sorter"></th>
 		</tr>
 	</thead>
 
