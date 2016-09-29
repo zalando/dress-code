@@ -1,0 +1,66 @@
+---
+notes: |
+  Use `dc-pagination` as container, each button should have `dc-pagination-btn` class applied.
+
+  Active button can be highlighted with `dc-pagination-btn--active` modifier class.
+
+  Buttons can be disabled by adding `dc-pagination-btn--disabled` modifier class.
+
+  As shown below, optionally, you can add an icon button in-between to have hidden page range in the navigation.
+---
+<div class="dc-pagination">
+  <button class="dc-btn dc-pagination-btn">
+    <icon class="dc-icon dc-icon--btn dc-icon--arrow-left"></icon>
+  </button>
+  <button class="dc-btn dc-pagination-btn">
+    1
+  </button>
+  <button class="dc-btn dc-pagination-btn dc-pagination-btn--active">
+    2
+  </button>
+  <button class="dc-btn dc-pagination-btn">
+    3
+  </button>
+  <button class="dc-btn dc-pagination-btn">
+    4
+  </button>
+  <button class="dc-btn dc-pagination-btn dc-pagination-btn--disabled">
+    <icon class="dc-icon dc-icon--more"></icon>
+  </button>
+  <button class="dc-btn dc-pagination-btn">
+    10
+  </button>
+  <button class="dc-btn dc-pagination-btn">
+    <icon class="dc-icon dc-icon--btn dc-icon--arrow-right"></icon>
+  </button>
+</div>
+
+<div class="dc-pagination">
+  <button class="dc-btn dc-pagination-btn">
+    <icon class="dc-icon dc-icon--btn dc-icon--arrow-left"></icon>
+  </button>
+  <button class="dc-btn dc-pagination-btn">
+    1
+  </button>
+  <button class="dc-btn dc-pagination-btn dc-pagination-btn--disabled">
+    <icon class="dc-icon dc-icon--more"></icon>
+  </button>
+  <button class="dc-btn dc-pagination-btn">
+    5
+  </button>
+  <button class="dc-btn dc-pagination-btn dc-pagination-btn--active">
+    6
+  </button>
+  <button class="dc-btn dc-pagination-btn">
+    7
+  </button>
+  <button class="dc-btn dc-pagination-btn dc-pagination-btn--disabled">
+    <icon class="dc-icon dc-icon--more"></icon>
+  </button>
+  <button class="dc-btn dc-pagination-btn">
+    10
+  </button>
+  <button class="dc-btn dc-pagination-btn">
+    <icon class="dc-icon dc-icon--btn dc-icon--arrow-right"></icon>
+  </button>
+</div>
