@@ -35,7 +35,7 @@
     width: 100%;
     padding: $dc-space100 0;
     border-width: 1px;
-    border-style: none;
+    border-style: solid;
     border-radius: $dc-radius50;
     font-size: $dc-font50;
     font-weight: $dc-bold-font-weight;
@@ -45,30 +45,24 @@
 }
 
 @mixin dc-toast__content--info {
-    border-style: solid;
     border-color: $dc-blue70;
     background: $dc-blue80;
     color: $dc-blue20;
 }
 
 @mixin dc-toast__content--success {
-    border-style: solid;
-    // scss-lint:disable ColorVariable
     border-color: $dc-green50;
     background: $dc-green80;
-    // scss-lint:enable ColorVariable
     color: $dc-green20;
 }
 
 @mixin dc-toast__content--warning {
-    border-style: solid;
     border-color: $dc-yellow40;
     background: $dc-yellow80;
     color: $dc-yellow20;
 }
 
 @mixin dc-toast__content--error {
-    border-style: solid;
     border-color: $dc-red70;
     background: $dc-red80;
     color: $dc-red20;
