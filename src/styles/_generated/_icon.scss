@@ -106,14 +106,20 @@
     @if $filename == trash {
         $char: "\EA1B";
     }
-    @if $filename == undo {
+    @if $filename == triangle-down {
         $char: "\EA1C";
     }
-    @if $filename == user {
+    @if $filename == triangle-up {
         $char: "\EA1D";
     }
-    @if $filename == warning {
+    @if $filename == undo {
         $char: "\EA1E";
+    }
+    @if $filename == user {
+        $char: "\EA1F";
+    }
+    @if $filename == warning {
+        $char: "\EA20";
     }
 
     @return $char;
@@ -255,6 +261,16 @@
         content: dc-icon-char(trash);
     }
 }
+@mixin dc-icon--triangle-down {
+    &:before {
+        content: dc-icon-char(triangle-down);
+    }
+}
+@mixin dc-icon--triangle-up {
+    &:before {
+        content: dc-icon-char(triangle-up);
+    }
+}
 @mixin dc-icon--undo {
     &:before {
         content: dc-icon-char(undo);
@@ -393,6 +409,14 @@
 
     .dc-icon--trash {
         @include dc-icon--trash;
+    }
+
+    .dc-icon--triangle-down {
+        @include dc-icon--triangle-down;
+    }
+
+    .dc-icon--triangle-up {
+        @include dc-icon--triangle-up;
     }
 
     .dc-icon--undo {
