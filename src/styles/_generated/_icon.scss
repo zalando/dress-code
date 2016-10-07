@@ -28,83 +28,98 @@
     @if $filename == add {
         $char: "\EA01";
     }
-    @if $filename == arrow-left {
+    @if $filename == arrow-down {
         $char: "\EA02";
     }
-    @if $filename == arrow-right {
+    @if $filename == arrow-left {
         $char: "\EA03";
     }
-    @if $filename == check {
+    @if $filename == arrow-right {
         $char: "\EA04";
     }
-    @if $filename == clear {
+    @if $filename == arrow-up {
         $char: "\EA05";
     }
-    @if $filename == close {
+    @if $filename == check {
         $char: "\EA06";
     }
-    @if $filename == cog {
+    @if $filename == clear {
         $char: "\EA07";
     }
-    @if $filename == contact {
+    @if $filename == close {
         $char: "\EA08";
     }
-    @if $filename == drag {
+    @if $filename == cog {
         $char: "\EA09";
     }
-    @if $filename == error {
+    @if $filename == contact {
         $char: "\EA0A";
     }
-    @if $filename == eye {
+    @if $filename == drag {
         $char: "\EA0B";
     }
-    @if $filename == help {
+    @if $filename == error {
         $char: "\EA0C";
     }
-    @if $filename == history {
+    @if $filename == eye {
         $char: "\EA0D";
     }
-    @if $filename == info {
-        $char: "\EA0F";
-    }
-    @if $filename == info-circle {
+    @if $filename == help {
         $char: "\EA0E";
     }
-    @if $filename == lock {
-        $char: "\EA10";
+    @if $filename == history {
+        $char: "\EA0F";
     }
-    @if $filename == menu {
+    @if $filename == info {
         $char: "\EA11";
     }
-    @if $filename == more {
+    @if $filename == info-circle {
+        $char: "\EA10";
+    }
+    @if $filename == lock {
         $char: "\EA12";
     }
-    @if $filename == pencil {
+    @if $filename == menu {
         $char: "\EA13";
     }
-    @if $filename == play {
+    @if $filename == minus {
         $char: "\EA14";
     }
-    @if $filename == redo {
+    @if $filename == more {
         $char: "\EA15";
     }
-    @if $filename == search {
+    @if $filename == pencil {
         $char: "\EA16";
     }
-    @if $filename == success {
+    @if $filename == play {
         $char: "\EA17";
     }
-    @if $filename == trash {
+    @if $filename == redo {
         $char: "\EA18";
     }
-    @if $filename == undo {
+    @if $filename == search {
         $char: "\EA19";
     }
-    @if $filename == user {
+    @if $filename == success {
         $char: "\EA1A";
     }
-    @if $filename == warning {
+    @if $filename == trash {
         $char: "\EA1B";
+    }
+    @if $filename == triangle-down {
+        $char: "\EA1C";
+    }
+    @if $filename == triangle-up {
+        $char: "\EA1D";
+    }
+    @if $filename == undo {
+        $char: "\EA1E";
+    }
+    @if $filename == user {
+        $char: "\EA1F";
+    }
+    @if $filename == warning {
+        $char: "\EA20";
     }
 
     @return $char;
@@ -116,6 +131,11 @@
         content: dc-icon-char(add);
     }
 }
+@mixin dc-icon--arrow-down {
+    &:before {
+        content: dc-icon-char(arrow-down);
+    }
+}
 @mixin dc-icon--arrow-left {
     &:before {
         content: dc-icon-char(arrow-left);
@@ -124,6 +144,11 @@
 @mixin dc-icon--arrow-right {
     &:before {
         content: dc-icon-char(arrow-right);
+    }
+}
+@mixin dc-icon--arrow-up {
+    &:before {
+        content: dc-icon-char(arrow-up);
     }
 }
 @mixin dc-icon--check {
@@ -196,6 +221,11 @@
         content: dc-icon-char(menu);
     }
 }
+@mixin dc-icon--minus {
+    &:before {
+        content: dc-icon-char(minus);
+    }
+}
 @mixin dc-icon--more {
     &:before {
         content: dc-icon-char(more);
@@ -229,6 +259,16 @@
 @mixin dc-icon--trash {
     &:before {
         content: dc-icon-char(trash);
+    }
+}
+@mixin dc-icon--triangle-down {
+    &:before {
+        content: dc-icon-char(triangle-down);
+    }
+}
+@mixin dc-icon--triangle-up {
+    &:before {
+        content: dc-icon-char(triangle-up);
     }
 }
 @mixin dc-icon--undo {
@@ -267,12 +307,20 @@
         @include dc-icon--add;
     }
 
+    .dc-icon--arrow-down {
+        @include dc-icon--arrow-down;
+    }
+
     .dc-icon--arrow-left {
         @include dc-icon--arrow-left;
     }
 
     .dc-icon--arrow-right {
         @include dc-icon--arrow-right;
+    }
+
+    .dc-icon--arrow-up {
+        @include dc-icon--arrow-up;
     }
 
     .dc-icon--check {
@@ -331,6 +379,10 @@
         @include dc-icon--menu;
     }
 
+    .dc-icon--minus {
+        @include dc-icon--minus;
+    }
+
     .dc-icon--more {
         @include dc-icon--more;
     }
@@ -357,6 +409,14 @@
 
     .dc-icon--trash {
         @include dc-icon--trash;
+    }
+
+    .dc-icon--triangle-down {
+        @include dc-icon--triangle-down;
+    }
+
+    .dc-icon--triangle-up {
+        @include dc-icon--triangle-up;
     }
 
     .dc-icon--undo {

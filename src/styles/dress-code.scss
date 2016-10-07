@@ -36,7 +36,7 @@
 @import "molecules/search-form";
 @import "molecules/toast";
 @import "molecules/tooltip";
-
+@import "molecules/pagination";
 
 @mixin dc-everything {
     // core
@@ -78,4 +78,5 @@
     @include dc-search-form-selectors;
     @include dc-toast-selectors;
     @include dc-tooltip-selectors;
+    @include dc-pagination-selectors;
 }

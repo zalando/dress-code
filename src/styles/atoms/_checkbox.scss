@@ -3,12 +3,14 @@
 @mixin dc-checkbox($sibling-label-selector : ".dc-label") {
     display: none;
 
+
     + #{$sibling-label-selector} {
         display: inline-block;
         position: relative;
         margin-right: $dc-space150;
         margin-bottom: 0;
         padding-left: $dc-space200 - $dc-space75;
+        cursor: pointer;
 
         &:before,
         &:after {
@@ -42,6 +44,7 @@
 
     &[disabled] + #{$sibling-label-selector} {
         color: $dc-gray50;
+        cursor: default;
 
         &:before,
         &:after {
