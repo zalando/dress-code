@@ -33,10 +33,10 @@
     }
 
     &:checked {
-        right: 60%;
+        right: 85%;
 
-        @include breakpoint($dc-small-width) {
-            right: 80%;
+        @include breakpoint($dc-huge-width) {
+            right: 60%;
         }
 
         &:before {
@@ -53,11 +53,11 @@
     transform: translateX(101%);
     transition: transform .2s .2s cubic-bezier(.39, .58, .57, 1);
     background: $dc-gray80;
-    width: 60%;
+    width: 85%;
     overflow-y: scroll;
 
-    @include breakpoint($dc-small-width) {
-        width: 80%;
+    @include breakpoint($dc-huge-width) {
+        width: 60%;
     }
 
     input:checked ~ & {
