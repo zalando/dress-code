@@ -192,6 +192,7 @@
     @include breakpoint(0 $dc-huge-width - .1) {
         @include _dc-table-element--is-block;
 
+        min-height: 2.4rem;
         padding-left: calc(30% + 12px);
         text-align: left;
 

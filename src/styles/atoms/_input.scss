@@ -25,6 +25,7 @@
 
     &[disabled] {
         border-color: $dc-gray70;
+        background-color: $dc-gray80;
         color: $dc-gray50;
 
         // scss-lint:disable VendorPrefix
