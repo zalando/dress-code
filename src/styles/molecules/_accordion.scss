@@ -4,51 +4,66 @@
     flex-wrap: nowrap;
 }
 
-@mixin dc-accordion__item(
-    $accordion-content-selector: "dc-accordion__content"
-) {
+@mixin dc-accordion__item {
     display: block;
-    border-bottom: 1px solid $dc-gray70;
     background-color: $dc-white;
-    padding-bottom: $dc-space100;
+    border: $dc-border50 solid $dc-gray70;
 
-    &:hover {
-        background-color: $dc-blue80;
-    }
-
-    .#{$accordion-content-selector} {
-        height: 0;
+    &:not(:last-child) {
+        border-bottom: 0;
     }
 }
 
 @mixin dc-accordion__item--is-open(
+    $accordion-header-selector: "dc-accordion__header",
     $accordion-content-selector: "dc-accordion__content"
 ) {
     background-color: $dc-white;
 
-    & > .#{$accordion-content-selector} {
-        height: auto;
+    .#{$accordion-content-selector} {
+        display: block;
+    }
+
+    .#{$accordion-header-selector} {
+        @include dc-icon--triangle-up;
+        border-bottom: $dc-border50 solid $dc-gray70;
     }
 }
 
 @mixin dc-accordion__item--is-active {
     background-color: $dc-white;
-    outline: 1px solid $dc-blue40;
+    border: $dc-border50 solid $dc-blue40;
 }
 
 @mixin dc-accordion__header {
     cursor: pointer;
     display: flex;
-    padding: $dc-space100 $dc-space150 0;
+    padding: $dc-space100;
     font-weight: $dc-bold-font-weight;
+    position: relative;
+
+    @include dc-icon;
+    @include dc-accordion__header-icon;
+    @include dc-icon--triangle-down;
+
+    &:hover {
+        background-color: lighten($dc-blue80, 3%);
+    }
 }
 
 @mixin dc-accordion__content {
-    padding-right: $dc-space150;
-    padding-left: $dc-space150;
-    overflow: hidden;
+    padding: $dc-space100;
+    display: none;
 }
 
+@mixin dc-accordion__header-icon {
+    &:before {
+        position: absolute;
+        right: 0;
+        margin-right: $dc-space100;
+        font-size: $dc-font50 * .01;
+    }
+}
 
 @mixin dc-accordion-selectors {
 

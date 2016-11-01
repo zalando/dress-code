@@ -48,7 +48,6 @@
     @include dc-grid-selectors;
 
     // atoms
-    @include dc-accordion-selectors;
     @include dc-btn-selectors;
     @include dc-card-selectors;
     @include dc-checkbox-selectors;
@@ -68,6 +67,7 @@
     @include dc-textarea-selectors;
 
     // molecules
+    @include dc-accordion-selectors;
     @include dc-breadcrumb-selectors;
     @include dc-btn-icon-selectors;
     @include dc-btn-group-selectors;
