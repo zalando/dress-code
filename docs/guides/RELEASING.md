@@ -2,65 +2,31 @@
 
 ### Step by step instructions to release a new version of the dress-code.
 
-1) From the develop branch, move into a new release branch. The ```<semver>``` placeholder stay for a new semantic version (e.g. 0.4.1).
-For more info, please take a look [here](http://semver.org/).
+1) Pull latest from the `develop` branch and run the following command. Ensure that you follow the
+[semver specification](http://semver.org/).
 
 ```
-git checkout -b release/<semver>
+npm run release [<newversion> | major | minor | patch]
 ```
 
-2) Increase ```bower.json``` and ```package.json``` <semver> version and run the task that updates the changelog. 
+2) Open a PR from `develop` to `master` using the release branch that was just pushed.
 
-```
-npm run changelog
-```
 
-3) Run the build.
-
-```
-npm run build
-```
-
-4) Check the result and if needed adjust the output (```CHANGELOG.md```).
-When done, commit the changes and push the release branch.
-
-```
-git add --all;
-git commit -m "chore(release): <semver>";
-git push -u;
-```
-
-5) **Wait the CI job running on [Travis](https://travis-ci.org/zalando/dress-code/builds).**
-
-When the CI job pass with SUCCESS, merge or rebase the release branch on top of the master branch.
+3) After the PR is merged, pull the `master` branch and deploy [docs/demo](http://zalando.github.io/dress-code/) artifacts.
 
 ```
 git checkout master;
 git pull;
-git rebase release/<semver>; # or open a pull request to master
-```
-
-6) Add a git tag, push the master branch and the new tag.
-
-```
-git tag -a <semver> -m "<semver>";
-git push origin master;
-git push origin <semver>; # push the tag
-```
-
-7) Build and deploy demo [docs/demo](http://zalando.github.io/dress-code/) artifacts. 
-
-```
 npm run deploy:demo;
 ```
 
-8) Publish on npm registry.
+4) Publish on npm registry. After publish completes, both `npm` and `bower` versions will be verified.
 
 ```
 npm publish
 ```
 
-9) Keep in sync the develop branch.
+5) Keep in sync the develop branch.
 
 ```
 git checkout develop;
