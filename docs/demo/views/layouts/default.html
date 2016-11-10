@@ -31,14 +31,16 @@
 		</header>
 		{{> f-icons}}
 		{{> f-menu}}
-		<div class="f-container">
+		<div class="f-container dc-page">
+            <div class="dc-container dc-container--limited">
 	{{/if}}
 
 
 	{% body %}
 
 	{{#if fabricator}}
-		</div>
+		    </div>
+        </div>
 		<div class="dc-grid"></div>
 
 		<script src="{{basePath}}/assets/scripts/main.js"></script>

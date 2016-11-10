@@ -29,7 +29,6 @@ a {
 	@include border-box;
 	position: relative;
 	margin-top: $dc-touch-size;
-	padding: $dc-space50;
 	z-index: 0;
 	min-height: calc(100vh - 4.4rem);
 	transition: transform .2s ease-out, padding .2s ease-out;
@@ -58,16 +57,6 @@ a {
 		{
 			margin-left: calc(#{span(3 of 20)});
 		}
-	}
-
-	@include breakpoint($dc-large-width)
-	{
-		padding: $dc-space100;
-	}
-
-	@include breakpoint($dc-monstrous-width)
-	{
-		padding: $dc-space100 $dc-space150;
 	}
 
 }
