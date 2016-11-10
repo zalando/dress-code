@@ -25,8 +25,11 @@
     }
 
     .#{$accordion-header-selector} {
-        @include dc-icon--triangle-up;
         border-bottom: $dc-border50 solid $dc-gray70;
+
+        &:after {
+            @include dc-accordion__triangle--up;
+        }
     }
 }
 
@@ -44,10 +47,14 @@
 
     @include dc-icon;
     @include dc-accordion__header-icon;
-    @include dc-icon--triangle-down;
 
     &:hover {
         background-color: lighten($dc-blue80, 3%);
+    }
+
+    &:after {
+        @include dc-accordion__triangle;
+        @include dc-accordion__triangle--down;
     }
 }
 
@@ -63,6 +70,29 @@
         margin-right: $dc-space100;
         font-size: $dc-font50 * .01;
     }
+}
+
+@mixin dc-accordion__triangle {
+    position: absolute;
+    top: 2.2rem;
+    right: 1.6rem;
+    overflow: visible;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    vertical-align: middle;
+    content: " ";
+}
+
+@mixin dc-accordion__triangle--down {
+    border-top: 5px dashed;
+}
+
+@mixin dc-accordion__triangle--up {
+    border-top: 0;
+    border-bottom: 5px dashed;
 }
 
 @mixin dc-accordion-selectors {
@@ -89,5 +119,13 @@
 
     .dc-accordion__content {
         @include dc-accordion__content;
+    }
+
+    .dc-accordion__triangle--up {
+        @include dc-accordion__triangle--up;
+    }
+
+    .dc-accordion__triangle--down {
+        @include dc-accordion__triangle--down;
     }
 }
