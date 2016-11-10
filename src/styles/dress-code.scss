@@ -25,6 +25,7 @@
 @import "atoms/textarea";
 
 // molecules
+@import "molecules/accordion";
 @import "molecules/breadcrumb";
 @import "molecules/btn-icon";
 @import "molecules/btn-group";
@@ -67,6 +68,7 @@
     @include dc-textarea-selectors;
 
     // molecules
+    @include dc-accordion-selectors;
     @include dc-breadcrumb-selectors;
     @include dc-btn-icon-selectors;
     @include dc-btn-group-selectors;
