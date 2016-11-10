@@ -16,6 +16,7 @@
 @import "atoms/link";
 @import "atoms/list";
 @import "atoms/loading-bar";
+@import "atoms/_overlay.scss";
 @import "atoms/placeholder";
 @import "atoms/radio";
 @import "atoms/select";
@@ -58,6 +59,7 @@
     @include dc-link-selectors;
     @include dc-list-selectors;
     @include dc-loading-bar-selectors;
+    @include dc-overlay-selectors;
     @include dc-placeholder-selectors;
     @include dc-radio-selectors;
     @include dc-select-selectors;

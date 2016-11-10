@@ -11,16 +11,15 @@
         margin-bottom: $dc-space100;
     }
 
-    .dc-dialog__overlay {
-        opacity: 1;
-        position: absolute;
-    }
-
     .dc-toast-container--top, .dc-toast-container--bottom {
         position: relative;
     }
     .dc-toast--top, .dc-toast--bottom {
         animation: none;
+    }
+
+    .demo-wrapper {
+        position: relative;
     }
 }
 

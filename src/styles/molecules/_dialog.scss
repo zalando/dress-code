@@ -11,21 +11,6 @@
     z-index: 10000;
 }
 
-@mixin dc-dialog__overlay {
-    display: flex;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transition: opacity .2s .2s cubic-bezier(.39, .58, .57, 1);
-    background: rgba($dc-black, .6);
-    opacity: 0;
-    z-index: -1;
-    perspective: 600px;
-    pointer-events: none;
-}
-
 @mixin dc-dialog__content {
     margin: $dc-space150;
 }
@@ -87,10 +72,6 @@
 @mixin dc-dialog-selectors {
     .dc-dialog {
         @include dc-dialog;
-    }
-
-    .dc-dialog__overlay {
-        @include dc-dialog__overlay;
     }
 
     .dc-dialog__content {
