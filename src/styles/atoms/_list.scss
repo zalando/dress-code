@@ -43,8 +43,8 @@
 @mixin dc-list--is-scrollable {
     height: $dc-space350 * 3;
     border: 1px solid $dc-gray60;
-    background: $dc-white;
     border-radius: 2px;
+    background: $dc-white;
     overflow-y: scroll;
 }
 
@@ -70,8 +70,8 @@
 }
 
 @mixin dc-list__body {
-    flex: 1 1 auto;
     display: flex;
+    flex: 1 1 auto;
     flex-direction: column;
     justify-content: center;
 }
@@ -81,8 +81,8 @@
 }
 
 @mixin dc-list__action {
-    flex: 0 0 auto;
     display: flex;
+    flex: 0 0 auto;
     flex-direction: column;
     justify-content: center;
     width: $dc-touch-size;
@@ -92,8 +92,8 @@
 
 @mixin dc-list-selectors {
 
-//  = SIMPLE LISTS
-//  ---------------------------------------------------------------------------
+    //  = SIMPLE LISTS
+    //  ---------------------------------------------------------------------------
     .dc-list {
         @include dc-list;
     }
@@ -114,8 +114,8 @@
         @include dc-list__item--is-interactive;
     }
 
-//  = SCROLLABLE LIST
-//  ---------------------------------------------------------------------------
+    //  = SCROLLABLE LIST
+    //  ---------------------------------------------------------------------------
 
     .dc-list--is-scrollable {
         @include dc-list--is-scrollable;

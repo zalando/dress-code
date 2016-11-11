@@ -36,15 +36,15 @@
 //  = LINK BUTTON
 //  ---------------------------------------------------------------------------
 @mixin _dc-btn--link-reset {
+    border: 1px solid transparent;
     background: transparent;
     box-shadow: none;
-    border: 1px solid transparent;
 }
 
 @mixin dc-btn--link {
     @include _dc-btn--link-reset;
-    color: $dc-link-color;
     transition: color .1s linear;
+    color: $dc-link-color;
 
     &:hover {
         @include _dc-btn--link-reset;

@@ -6,8 +6,8 @@
 
 @mixin dc-accordion__item {
     display: block;
-    background-color: $dc-white;
     border: $dc-border50 solid $dc-gray70;
+    background-color: $dc-white;
 
     &:not(:last-child) {
         border-bottom: 0;
@@ -34,16 +34,16 @@
 }
 
 @mixin dc-accordion__item--is-active {
-    background-color: $dc-white;
     border: $dc-border50 solid $dc-blue40;
+    background-color: $dc-white;
 }
 
 @mixin dc-accordion__header {
-    cursor: pointer;
     display: flex;
+    position: relative;
     padding: $dc-space100;
     font-weight: $dc-bold-font-weight;
-    position: relative;
+    cursor: pointer;
 
     @include dc-icon;
     @include dc-accordion__header-icon;
@@ -59,8 +59,8 @@
 }
 
 @mixin dc-accordion__content {
-    padding: $dc-space100;
     display: none;
+    padding: $dc-space100;
 }
 
 @mixin dc-accordion__header-icon {

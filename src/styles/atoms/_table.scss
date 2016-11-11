@@ -47,10 +47,10 @@
 }
 
 @mixin dc-table__th {
-    font-weight: $dc-bold-font-weight;
-    text-transform: uppercase;
-    text-align: left;
     position: relative;
+    font-weight: $dc-bold-font-weight;
+    text-align: left;
+    text-transform: uppercase;
 
     @include breakpoint(0 $dc-huge-width - .1) {
         @include _dc-table-element--is-block;
