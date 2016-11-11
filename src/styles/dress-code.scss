@@ -1,8 +1,8 @@
 // core
 @import "core/core";
 
-// grid
-@import "grid/grid";
+// structure and grid
+@import "structure/structure";
 
 // atoms
 @import "atoms/btn";
@@ -46,7 +46,8 @@
     @include dc-typography-selectors;
     @include dc-patterns-selectors;
 
-    // grid
+    // structure and grid
+    @include dc-structure-selectors;
     @include dc-grid-selectors;
 
     // atoms
