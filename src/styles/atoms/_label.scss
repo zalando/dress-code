@@ -9,16 +9,27 @@
     text-transform: uppercase;
 }
 
+@mixin dc-label__sub {
+    margin-left: $dc-space50;
+    color: $dc-gray50;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+@mixin dc-label__sub--is-error {
+    color: $dc-red40;
+}
+
 @mixin dc-label--disabled {
     color: $dc-gray50;
 }
 
 @mixin dc-label--required {
+    // this mixin and related class is deprecated and will be removed in the next versions.
+    @warn "`dc-label--required` mixin is deprecated and will be removed in the next versions! use `dc-label__sub` instead.";
+
     &:after {
-        margin-left: $dc-space50;
-        color: $dc-gray50;
-        font-weight: 300;
-        text-transform: capitalize;
+        @include dc-label__sub;
         content: "Required";
     }
 }
@@ -31,6 +42,8 @@
 
 @mixin dc-label-selectors {
     .dc-label { @include dc-label; }
+    .dc-label__sub { @include dc-label__sub; }
+    .dc-label__sub--is-error { @include dc-label__sub--is-error; }
     .dc-label--disabled {  @include dc-label--disabled;  }
     .dc-label--required {  @include dc-label--required; }
     .dc-label--is-error {  @include dc-label--is-error; }
