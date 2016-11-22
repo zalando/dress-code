@@ -69,7 +69,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.4",
     "gulp-sass": "^2.0.0",
-    "gulp-scss-lint": "^0.4.0",
+    "gulp-sass-lint": "^1.3.2",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-util": "^3.0.4",
     "gulp-webpack": "^1.5.0",
