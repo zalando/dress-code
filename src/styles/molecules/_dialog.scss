@@ -11,6 +11,12 @@
     z-index: 10000;
 }
 
+@mixin dc-dialog__overlay {
+    @include dc-overlay;
+    z-index: -1;
+    @warn "`dc-dialog__overlay` mixin is deprecated and will be removed in the next versions! use `dc-overlay` instead.";
+}
+
 @mixin dc-dialog__content {
     margin: $dc-space150;
 }
@@ -72,6 +78,10 @@
 @mixin dc-dialog-selectors {
     .dc-dialog {
         @include dc-dialog;
+    }
+
+    .dc-dialog__overlay {
+        @include dc-dialog__overlay;
     }
 
     .dc-dialog__content {
