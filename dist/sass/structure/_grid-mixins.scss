@@ -50,7 +50,6 @@
 
     > #{$column-selector} {
         $flex-percent: percentage(1 / $columns);
-
         flex: 0 0 $flex-percent;
         max-width: $flex-percent;
     }
@@ -85,7 +84,7 @@
             $width: percentage($columns / $dc-grid-column-count);
         }
     } @else {
-        @error 'Wrong syntax for columns. It must be a number (of columns)';
+        @error "Wrong syntax for columns. It must be a number (of columns)";
     }
 
     @return $width;

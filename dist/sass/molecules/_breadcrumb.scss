@@ -4,9 +4,9 @@
 //  -----------------------------------------------------------------------------
 
 @mixin dc-breadcrumb {
-    list-style-type: none;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 @mixin dc-breadcrumb__item {

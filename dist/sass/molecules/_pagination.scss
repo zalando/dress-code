@@ -1,0 +1,46 @@
+// @import "./btn-group";
+
+@mixin dc-pagination {
+    @include dc-btn-group;
+}
+
+@mixin dc-pagination-btn {
+    @include dc-btn--in-btn-group;
+
+    background: $dc-white;
+    color: $dc-blue40;
+    cursor: pointer;
+
+    &:hover {
+        background: $dc-blue80;
+        color: $dc-blue40;
+    }
+
+    &--active {
+        padding-bottom: $dc-space75;
+        border-bottom: 4px solid $dc-orange50;
+    }
+
+    &--active,
+    &--disabled {
+        color: $dc-gray50;
+        cursor: default;
+
+        &:hover {
+            background: $dc-white;
+            color: $dc-gray50;
+            box-shadow: none;
+        }
+    }
+}
+
+@mixin dc-pagination-selectors {
+
+    .dc-pagination {
+        @include dc-pagination;
+    }
+
+    .dc-pagination-btn {
+        @include dc-pagination-btn;
+    }
+}

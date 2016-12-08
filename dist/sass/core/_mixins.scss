@@ -18,11 +18,8 @@
 //	http://nicolasgallagher.com/micro-clearfix-hack/
 //
 //  ---------------------------------------------------------------------------
-@mixin dc-cf {
 
-    // scss-lint:disable PropertySpelling
-    *zoom: 1;
-    // scss-lint:enable PropertySpelling
+@mixin dc-cf {
 
     &:before,
     &:after {

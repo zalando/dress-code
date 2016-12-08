@@ -25,16 +25,15 @@
     position: absolute;
     top: 0;
     right: 0;
+    width: 32px;
+    height: 36px;
     margin: 0;
     padding: 0;
     border: 0;
     background: transparent;
     color: $dc-gray40;
-    height: 36px;
-    width: 32px;
     font-size: 1.6rem;
 }
-
 
 @mixin dc-search-form__btn__icon {
     display: block;
@@ -48,13 +47,13 @@
 
 @mixin dc-icon--is-search-form {
     display: block;
-    margin-right: 0;
     width: 3.6rem;
     height: 3.6rem;
     margin-top: 0;
-    line-height: 3.6rem;
-    font-size: 1.6rem;
+    margin-right: 0;
     color: $dc-gray50;
+    font-size: 1.6rem;
+    line-height: 3.6rem;
 }
 
 
@@ -114,18 +113,18 @@
 }
 
 @mixin dc-suggest__item__label {
+    flex: 1 1 0;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    flex: 1 1 0;
 }
 
 @mixin dc-suggest__item__action {
-    white-space: nowrap;
-    margin-left: $dc-space100;
     display: block;
-    align-self: flex-end;
     flex-grow: 0;
+    align-self: flex-end;
+    margin-left: $dc-space100;
+    white-space: nowrap;
 }
 
 @mixin dc-search-form-selectors {
@@ -140,8 +139,8 @@
     .dc-search-form__btn {
         @include dc-search-form__btn;
 
-        .no-touch &:hover,
-        .touch &:active,
+        &:hover,
+        &:active,
         &:focus {
             @include dc-search-form__btn--is-active;
         }
@@ -158,8 +157,8 @@
     .dc-suggest {
         @include dc-suggest;
 
-        .no-touch &:hover,
-        .touch &:active {
+        &:hover,
+        &:active {
             @include dc-suggest--is-visible;
         }
     }
@@ -171,8 +170,8 @@
     .dc-suggest__item {
         @include dc-suggest__item;
 
-        .no-touch &:hover,
-        .touch &:active {
+        &:hover,
+        &:active {
             @include dc-suggest__item--is-active;
         }
     }

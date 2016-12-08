@@ -24,93 +24,116 @@
 
 @function dc-icon-char($filename) {
     $char: "";
-
+    
     @if $filename == add {
-    $char: "\E001";
-}
+        $char: "\EA01";
+    }
+    @if $filename == arrow-down {
+        $char: "\EA02";
+    }
     @if $filename == arrow-left {
-    $char: "\E002";
-}
+        $char: "\EA03";
+    }
     @if $filename == arrow-right {
-    $char: "\E003";
-}
+        $char: "\EA04";
+    }
+    @if $filename == arrow-up {
+        $char: "\EA05";
+    }
     @if $filename == check {
-    $char: "\E004";
-}
+        $char: "\EA06";
+    }
+    @if $filename == clear {
+        $char: "\EA07";
+    }
     @if $filename == close {
-    $char: "\E005";
-}
+        $char: "\EA08";
+    }
     @if $filename == cog {
-    $char: "\E006";
-}
+        $char: "\EA09";
+    }
     @if $filename == contact {
-    $char: "\E007";
-}
+        $char: "\EA0A";
+    }
     @if $filename == drag {
-    $char: "\E008";
-}
+        $char: "\EA0B";
+    }
     @if $filename == error {
-    $char: "\E009";
-}
+        $char: "\EA0C";
+    }
     @if $filename == eye {
-    $char: "\E00A";
-}
+        $char: "\EA0D";
+    }
     @if $filename == help {
-    $char: "\E00B";
-}
+        $char: "\EA0E";
+    }
     @if $filename == history {
-    $char: "\E00C";
-}
-    @if $filename == info-circle {
-    $char: "\E00D";
-}
+        $char: "\EA0F";
+    }
     @if $filename == info {
-    $char: "\E00E";
-}
+        $char: "\EA11";
+    }
+    @if $filename == info-circle {
+        $char: "\EA10";
+    }
     @if $filename == lock {
-    $char: "\E00F";
-}
+        $char: "\EA12";
+    }
     @if $filename == menu {
-    $char: "\E010";
-}
+        $char: "\EA13";
+    }
+    @if $filename == minus {
+        $char: "\EA14";
+    }
     @if $filename == more {
-    $char: "\E011";
-}
+        $char: "\EA15";
+    }
     @if $filename == pencil {
-    $char: "\E012";
-}
+        $char: "\EA16";
+    }
     @if $filename == play {
-    $char: "\E013";
-}
+        $char: "\EA17";
+    }
     @if $filename == redo {
-    $char: "\E014";
-}
+        $char: "\EA18";
+    }
     @if $filename == search {
-    $char: "\E015";
-}
+        $char: "\EA19";
+    }
     @if $filename == success {
-    $char: "\E016";
-}
+        $char: "\EA1A";
+    }
     @if $filename == trash {
-    $char: "\E017";
-}
+        $char: "\EA1B";
+    }
+    @if $filename == triangle-down {
+        $char: "\EA1C";
+    }
+    @if $filename == triangle-up {
+        $char: "\EA1D";
+    }
     @if $filename == undo {
-    $char: "\E018";
-}
+        $char: "\EA1E";
+    }
     @if $filename == user {
-    $char: "\E019";
-}
+        $char: "\EA1F";
+    }
     @if $filename == warning {
-    $char: "\E01A";
-}
+        $char: "\EA20";
+    }
 
-@return $char;
+    @return $char;
 }
 
 // BEM modifiers mixins
 @mixin dc-icon--add {
     &:before {
         content: dc-icon-char(add);
+    }
+}
+@mixin dc-icon--arrow-down {
+    &:before {
+        content: dc-icon-char(arrow-down);
     }
 }
 @mixin dc-icon--arrow-left {
@@ -123,9 +146,19 @@
         content: dc-icon-char(arrow-right);
     }
 }
+@mixin dc-icon--arrow-up {
+    &:before {
+        content: dc-icon-char(arrow-up);
+    }
+}
 @mixin dc-icon--check {
     &:before {
         content: dc-icon-char(check);
+    }
+}
+@mixin dc-icon--clear {
+    &:before {
+        content: dc-icon-char(clear);
     }
 }
 @mixin dc-icon--close {
@@ -168,14 +201,14 @@
         content: dc-icon-char(history);
     }
 }
-@mixin dc-icon--info-circle {
-    &:before {
-        content: dc-icon-char(info-circle);
-    }
-}
 @mixin dc-icon--info {
     &:before {
         content: dc-icon-char(info);
+    }
+}
+@mixin dc-icon--info-circle {
+    &:before {
+        content: dc-icon-char(info-circle);
     }
 }
 @mixin dc-icon--lock {
@@ -186,6 +219,11 @@
 @mixin dc-icon--menu {
     &:before {
         content: dc-icon-char(menu);
+    }
+}
+@mixin dc-icon--minus {
+    &:before {
+        content: dc-icon-char(minus);
     }
 }
 @mixin dc-icon--more {
@@ -223,6 +261,16 @@
         content: dc-icon-char(trash);
     }
 }
+@mixin dc-icon--triangle-down {
+    &:before {
+        content: dc-icon-char(triangle-down);
+    }
+}
+@mixin dc-icon--triangle-up {
+    &:before {
+        content: dc-icon-char(triangle-up);
+    }
+}
 @mixin dc-icon--undo {
     &:before {
         content: dc-icon-char(undo);
@@ -243,21 +291,24 @@
 @mixin dc-icon-generated-selectors {
     @font-face {
         font-family: "DressCodeIcons";
-        src: url('#{$dc-font-path}/DressCodeIcons.eot');
+        src: url('#{$dc-font-path}/DressCodeIcons.eot?v=2.0.0-beta');
         src: url('#{$dc-font-path}/DressCodeIcons.eot?#iefix') format('eot'),
-        url('#{$dc-font-path}/DressCodeIcons.woff') format('woff'),
-        url('#{$dc-font-path}/DressCodeIcons.ttf') format('truetype'),
-        url('#{$dc-font-path}/DressCodeIcons.svg#DressCodeIcons') format('svg');
+        url('#{$dc-font-path}/DressCodeIcons.woff?v=2.0.0-beta') format('woff'),
+        url('#{$dc-font-path}/DressCodeIcons.ttf?v=2.0.0-beta') format('truetype'),
+        url('#{$dc-font-path}/DressCodeIcons.svg?v=2.0.0-beta#DressCodeIcons') format('svg');
     }
 
-    // BEM block class
     .dc-icon {
         @include dc-icon;
     }
+    
 
-    // BEM classes
     .dc-icon--add {
         @include dc-icon--add;
+    }
+
+    .dc-icon--arrow-down {
+        @include dc-icon--arrow-down;
     }
 
     .dc-icon--arrow-left {
@@ -268,8 +319,16 @@
         @include dc-icon--arrow-right;
     }
 
+    .dc-icon--arrow-up {
+        @include dc-icon--arrow-up;
+    }
+
     .dc-icon--check {
         @include dc-icon--check;
+    }
+
+    .dc-icon--clear {
+        @include dc-icon--clear;
     }
 
     .dc-icon--close {
@@ -304,12 +363,12 @@
         @include dc-icon--history;
     }
 
-    .dc-icon--info-circle {
-        @include dc-icon--info-circle;
-    }
-
     .dc-icon--info {
         @include dc-icon--info;
+    }
+
+    .dc-icon--info-circle {
+        @include dc-icon--info-circle;
     }
 
     .dc-icon--lock {
@@ -318,6 +377,10 @@
 
     .dc-icon--menu {
         @include dc-icon--menu;
+    }
+
+    .dc-icon--minus {
+        @include dc-icon--minus;
     }
 
     .dc-icon--more {
@@ -348,6 +411,14 @@
         @include dc-icon--trash;
     }
 
+    .dc-icon--triangle-down {
+        @include dc-icon--triangle-down;
+    }
+
+    .dc-icon--triangle-up {
+        @include dc-icon--triangle-up;
+    }
+
     .dc-icon--undo {
         @include dc-icon--undo;
     }
@@ -359,6 +430,4 @@
     .dc-icon--warning {
         @include dc-icon--warning;
     }
-
-    
 }

@@ -8,12 +8,12 @@
 
 @mixin dc-input-addon {
 
+    display: inline-block;
     padding: $dc-space75 + .2 $dc-space100 $dc-space75;
     border: 1px solid $dc-gray60;
     background-color: $dc-gray80;
     color: $dc-gray20;
     line-height: 1;
-    display: inline-block;
 
     &:first-child {
         border-right-width: 0;

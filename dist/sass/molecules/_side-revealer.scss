@@ -1,0 +1,89 @@
+// @import "../core/core";
+
+@mixin dc-side-revealer {
+    position: relative;
+    overflow: hidden;
+}
+
+@mixin dc-side-revealer__toggle {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    bottom: 0;
+    width: 2.3em;
+    height: 2.3em;
+    transition: right .2s .2s cubic-bezier(.39, .58, .57, 1);
+    outline: none;
+
+    &:before {
+        display: block;
+        position: relative;
+        border-radius: 2px;
+        background-color: $dc-white;
+        font-size: 16px;
+        line-height: 2em;
+        text-align: center;
+        box-shadow: 0 1px 3px 2px rgba($dc-black, .08);
+        content: "\EA09";
+        cursor: pointer;
+    }
+
+    &:hover {
+        color: $dc-blue30;
+    }
+
+    &:checked {
+        right: 85%;
+
+        @include breakpoint($dc-huge-width) {
+            right: 60%;
+        }
+
+        &:before {
+            content: "\EA0C";
+        }
+    }
+}
+
+@mixin dc-side-revealer__content {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    bottom: 2px;
+    width: 85%;
+    transform: translateX(101%);
+    transition: transform .2s .2s cubic-bezier(.39, .58, .57, 1);
+    background: $dc-gray80;
+    overflow-y: scroll;
+
+    @include breakpoint($dc-huge-width) {
+        width: 60%;
+    }
+
+    input:checked ~ & {
+        transform: translateX(0);
+    }
+}
+
+@mixin dc-side-revealer__content__card {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+@mixin dc-side-revealer-selectors {
+    .dc-side-revealer {
+        @include dc-side-revealer;
+    }
+
+    .dc-side-revealer__toggle {
+        @include dc-side-revealer__toggle;
+    }
+
+    .dc-side-revealer__content {
+        @include dc-side-revealer__content;
+    }
+
+    .dc-side-revealer__content__card {
+        @include dc-side-revealer__content__card;
+    }
+}

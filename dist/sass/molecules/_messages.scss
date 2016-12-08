@@ -4,11 +4,7 @@
     margin-bottom: $dc-space150;
     padding: $dc-space100 0;
     transition: transform .2s ease-out;
-    // scss-lint:disable ColorVariable
-    border: 1px solid #55b6fe;
-    background: rgba(#cce9ff, .95);
-    // scss-lint:enable ColorVariable
-    color: $dc-blue20;
+    border-width: 1px;
     font-size: $dc-font50;
     line-height: $dc-font100 + .2;
 
@@ -81,17 +77,17 @@
 @mixin dc-msg__icon {
     padding: 0 1rem;
     color: currentcolor;
+    font-size: 2.6rem;
     line-height: 4rem;
     opacity: .8;
-    font-size: 2.6rem;
 }
 
 //  = INFO MESSAGE
 //  -----------------------------------------------------------------------------
 
 @mixin dc-msg--info {
-    border-color: darken($dc-blue70, 5%);
-    background: rgba($dc-blue70, .5);
+    border-color: $dc-blue70;
+    background: $dc-blue80;
     color: $dc-blue20;
 }
 
@@ -99,29 +95,27 @@
 //  -----------------------------------------------------------------------------
 
 @mixin dc-msg--success {
-    // scss-lint:disable ColorVariable
-    border-color: #84e440;
-    background: rgba(#e3ffc7, .95);
-    // scss-lint:enable ColorVariable
+    border-color: $dc-green50;
+    background: $dc-green80;
     color: $dc-green20;
-}
-
-//  = ERROR MESSAGE
-//  -----------------------------------------------------------------------------
-
-@mixin dc-msg--error {
-    border-color: darken($dc-red70, 5%);
-    background: rgba(desaturate($dc-red70, 10%), .5);
-    color: $dc-red30;
 }
 
 //  = WARNING MESSAGE
 //  -----------------------------------------------------------------------------
 
 @mixin dc-msg--warning {
-    border-color: darken($dc-yellow70, 35%);
-    background: rgba($dc-yellow70, .5);
+    border-color: $dc-yellow40;
+    background: $dc-yellow80;
     color: $dc-yellow20;
+}
+
+//  = ERROR MESSAGE
+//  -----------------------------------------------------------------------------
+
+@mixin dc-msg--error {
+    border-color: $dc-red70;
+    background: $dc-red80;
+    color: $dc-red20;
 }
 
 //  = ANIMATION
