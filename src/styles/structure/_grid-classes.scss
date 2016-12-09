@@ -122,6 +122,17 @@
     // For each breakpoint make the required column and offset classes.
     @each $br, $value in $dc-grid-breakpoints {
         @include breakpoint(map-get($dc-grid-breakpoints, $br)) {
+
+            // Utility classes to hide / show according to breakpoint
+            // Hide from this breakpoint up
+            .dc-hide-from-#{$br} {
+                display: none;
+            }
+
+            .dc-show-from-#{$br} {
+                display: block;
+            }
+
             @for $i from 1 through $dc-grid-column-count {
                 .dc-column--#{$br}-#{$i} {
                     flex: grid-column-flex($i);
@@ -140,6 +151,7 @@
                 .dc-column-offset--#{$br}-#{$o} {
                     margin-left: grid-column-size($o);
                 }
+
             }
         }
     }
