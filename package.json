@@ -1,6 +1,6 @@
 {
   "name": "dress-code",
-  "version": "2.0.0-beta",
+  "version": "2.0.0-beta.1",
   "description": "The Dress Code is a framework agnostic, atomic design, BEM, style library which is designed for maintainability and modularity.",
   "homepage": "https://zalando.github.io/dress-code",
   "main": "dist/sass/dress-code.scss",

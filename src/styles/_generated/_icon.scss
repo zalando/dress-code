@@ -291,11 +291,11 @@
 @mixin dc-icon-generated-selectors {
     @font-face {
         font-family: "DressCodeIcons";
-        src: url('#{$dc-font-path}/DressCodeIcons.eot?v=2.0.0-beta');
+        src: url('#{$dc-font-path}/DressCodeIcons.eot?v=2.0.0-beta.1');
         src: url('#{$dc-font-path}/DressCodeIcons.eot?#iefix') format('eot'),
-        url('#{$dc-font-path}/DressCodeIcons.woff?v=2.0.0-beta') format('woff'),
-        url('#{$dc-font-path}/DressCodeIcons.ttf?v=2.0.0-beta') format('truetype'),
-        url('#{$dc-font-path}/DressCodeIcons.svg?v=2.0.0-beta#DressCodeIcons') format('svg');
+        url('#{$dc-font-path}/DressCodeIcons.woff?v=2.0.0-beta.1') format('woff'),
+        url('#{$dc-font-path}/DressCodeIcons.ttf?v=2.0.0-beta.1') format('truetype'),
+        url('#{$dc-font-path}/DressCodeIcons.svg?v=2.0.0-beta.1#DressCodeIcons') format('svg');
     }
 
     .dc-icon {
