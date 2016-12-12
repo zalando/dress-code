@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="f-menu-active">
 <head>
 
 	<meta charset="utf-8">
@@ -11,15 +11,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic|Ubuntu+Mono" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="/dress-code/assets/styles/main.css">
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <link rel="icon" href="favicon.ico">
 </head>
 <body class="dc-body--demo-breakpoints">
+
 		<header class="f-header">
-			<img class="f-logo" src="/dress-code/assets/img/zalando-logo.svg" alt="Zalando Logo">
+			<img class="f-logo" src="/dress-code/assets/img/zalando-logo.svg" alt="Zalando">
 			<div class="f-control f-menu-toggle">
 			    <i class="dc-icon dc-icon--menu"></i>
 			</div>
@@ -89,19 +89,22 @@
 					</ul>
 				</li>
 				<li>
-					<a href="02-grid.html" class="f-menu__heading">Grid</a>
+					<a href="02-structure-and-grid.html" class="f-menu__heading">Structure And Grid</a>
 					<ul>
 						<li>
-							<a href="02-grid.html#01-Grid">Grid</a>
+							<a href="02-structure-and-grid.html#01-page-structure">Page Structure</a>
 						</li>
 						<li>
-							<a href="02-grid.html#02-horizontal-alignment">Horizontal Alignment</a>
+							<a href="02-structure-and-grid.html#02-grid">Grid</a>
 						</li>
 						<li>
-							<a href="02-grid.html#03-vertical-alignment">Vertical Alignment</a>
+							<a href="02-structure-and-grid.html#03-horizontal-alignment">Horizontal Alignment</a>
 						</li>
 						<li>
-							<a href="02-grid.html#04-scss-reference">Scss Reference</a>
+							<a href="02-structure-and-grid.html#04-scss-reference">Scss Reference</a>
+						</li>
+						<li>
+							<a href="02-structure-and-grid.html#05-vertical-alignment">Vertical Alignment</a>
 						</li>
 					</ul>
 				</li>
@@ -115,10 +118,10 @@
 							<a href="03-atoms.html#card">Card</a>
 						</li>
 						<li>
-							<a href="03-atoms.html#checkboxes">Checkboxes</a>
+							<a href="03-atoms.html#divider">Divider</a>
 						</li>
 						<li>
-							<a href="03-atoms.html#divider">Divider</a>
+							<a href="03-atoms.html#forms">Forms</a>
 						</li>
 						<li>
 							<a href="03-atoms.html#icons">Icons</a>
@@ -136,25 +139,16 @@
 							<a href="03-atoms.html#paragraph">Paragraph</a>
 						</li>
 						<li>
-							<a href="03-atoms.html#radio-button">Radio Button</a>
-						</li>
-						<li>
-							<a href="03-atoms.html#select">Select</a>
-						</li>
-						<li>
 							<a href="03-atoms.html#spinner">Spinner</a>
 						</li>
 						<li>
 							<a href="03-atoms.html#status">Status</a>
 						</li>
 						<li>
-							<a href="03-atoms.html#table">Table</a>
+							<a href="03-atoms.html#tables">Tables</a>
 						</li>
 						<li>
-							<a href="03-atoms.html#text-input">Text Input</a>
-						</li>
-						<li>
-							<a href="03-atoms.html#textarea">Textarea</a>
+							<a href="03-atoms.html#tooltip">Tooltip</a>
 						</li>
 					</ul>
 				</li>
@@ -177,19 +171,36 @@
 							<a href="04-molecules.html#05-search-form">Search Form</a>
 						</li>
 						<li>
-							<a href="04-molecules.html#06-tooltip">Tooltip</a>
-						</li>
-						<li>
 							<a href="04-molecules.html#07-dialog">Dialog</a>
 						</li>
 						<li>
-							<a href="04-molecules.html#08-toast">Toast</a>
+							<a href="04-molecules.html#08-side-revealer">Side Revealer</a>
 						</li>
 						<li>
-							<a href="04-molecules.html#09-messages">Messages</a>
+							<a href="04-molecules.html#09-toast">Toast</a>
 						</li>
 						<li>
-							<a href="04-molecules.html#10-breadcrumb">Breadcrumb</a>
+							<a href="04-molecules.html#10-messages">Messages</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#11-accordions">Accordions</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#11-breadcrumb">Breadcrumb</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#12-pagination">Pagination</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="05-guidelines.html" class="f-menu__heading">Guidelines</a>
+					<ul>
+						<li>
+							<a href="05-guidelines.html#01-date-time-format">Date Time Format</a>
+						</li>
+						<li>
+							<a href="05-guidelines.html#02-number-format">Number Format</a>
 						</li>
 					</ul>
 				</li>
@@ -215,14 +226,15 @@
 		
 		</div>
 		<!-- /fabricator menu -->
-		<div class="f-container">
+		<div class="f-container dc-page">
+            <div class="dc-container dc-container--limited">
 
 
 	
 <h1 class="dc-h1" data-f-toggle="labels">Molecules</h1>
 
 
-<div class="f-item-group" id="01-button-icon">
+<div class="f-item-group f-item-grouped_groups" id="01-button-icon">
 
 	<div class="f-item-heading-group">
 		<h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Button Icon</h2>
@@ -255,7 +267,7 @@
     <i class="dc-icon dc-icon--pencil dc-icon--btn"></i>
 </button>
 <button class="dc-btn">
-    <a>Undo</a><i class="dc-icon dc-icon--undo dc-icon--btn dc-icon--btn--left"></i>
+    Undo<i class="dc-icon dc-icon--undo dc-icon--btn dc-icon--btn--left"></i>
 </button>
 <button class="dc-btn dc-btn--destroy">
     <i class="dc-icon dc-icon--trash dc-icon--btn"></i>
@@ -264,49 +276,49 @@
 
 
 <button class="dc-btn dc-btn--disabled">
-    <span>Redo</span> <i class="dc-icon dc-icon--redo dc-icon--btn dc-icon--btn--right"></i>
+    Redo<i class="dc-icon dc-icon--redo dc-icon--btn dc-icon--btn--right"></i>
 </button>
 
 
 <br>
 
 <button class="dc-btn dc-btn--small">
-    <span>Redo</span> <i class="dc-icon dc-icon--redo dc-icon--btn dc-icon--btn-small dc-icon--btn--left"></i>
+    Redo <i class="dc-icon dc-icon--redo dc-icon--btn dc-icon--btn-small dc-icon--btn--left"></i>
 </button>
 
 <button class="dc-btn dc-btn--destroy dc-btn--large">
-    <span>Lock</span> <i class="dc-icon dc-icon--lock dc-icon--btn dc-icon--btn-large dc-icon--btn--right"></i>
+    Lock <i class="dc-icon dc-icon--lock dc-icon--btn dc-icon--btn-large dc-icon--btn--right"></i>
 </button>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;button class=&quot;dc-btn&quot;&gt;
-    &lt;i class=&quot;dc-icon dc-icon--history dc-icon--btn&quot;&gt;&lt;/i&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;button class&#x3D;&quot;dc-btn&quot;&gt;
+    &lt;i class&#x3D;&quot;dc-icon dc-icon--history dc-icon--btn&quot;&gt;&lt;/i&gt;
 &lt;/button&gt;
-&lt;button class=&quot;dc-btn dc-btn--primary&quot;&gt;
-    &lt;i class=&quot;dc-icon dc-icon--pencil dc-icon--btn&quot;&gt;&lt;/i&gt;
+&lt;button class&#x3D;&quot;dc-btn dc-btn--primary&quot;&gt;
+    &lt;i class&#x3D;&quot;dc-icon dc-icon--pencil dc-icon--btn&quot;&gt;&lt;/i&gt;
 &lt;/button&gt;
-&lt;button class=&quot;dc-btn&quot;&gt;
-    &lt;a&gt;Undo&lt;/a&gt;&lt;i class=&quot;dc-icon dc-icon--undo dc-icon--btn dc-icon--btn--left&quot;&gt;&lt;/i&gt;
+&lt;button class&#x3D;&quot;dc-btn&quot;&gt;
+    Undo&lt;i class&#x3D;&quot;dc-icon dc-icon--undo dc-icon--btn dc-icon--btn--left&quot;&gt;&lt;/i&gt;
 &lt;/button&gt;
-&lt;button class=&quot;dc-btn dc-btn--destroy&quot;&gt;
-    &lt;i class=&quot;dc-icon dc-icon--trash dc-icon--btn&quot;&gt;&lt;/i&gt;
+&lt;button class&#x3D;&quot;dc-btn dc-btn--destroy&quot;&gt;
+    &lt;i class&#x3D;&quot;dc-icon dc-icon--trash dc-icon--btn&quot;&gt;&lt;/i&gt;
 &lt;/button&gt;
 
 
 
-&lt;button class=&quot;dc-btn dc-btn--disabled&quot;&gt;
-    &lt;span&gt;Redo&lt;/span&gt; &lt;i class=&quot;dc-icon dc-icon--redo dc-icon--btn dc-icon--btn--right&quot;&gt;&lt;/i&gt;
+&lt;button class&#x3D;&quot;dc-btn dc-btn--disabled&quot;&gt;
+    Redo&lt;i class&#x3D;&quot;dc-icon dc-icon--redo dc-icon--btn dc-icon--btn--right&quot;&gt;&lt;/i&gt;
 &lt;/button&gt;
 
 
 &lt;br&gt;
 
-&lt;button class=&quot;dc-btn dc-btn--small&quot;&gt;
-    &lt;span&gt;Redo&lt;/span&gt; &lt;i class=&quot;dc-icon dc-icon--redo dc-icon--btn dc-icon--btn-small dc-icon--btn--left&quot;&gt;&lt;/i&gt;
+&lt;button class&#x3D;&quot;dc-btn dc-btn--small&quot;&gt;
+    Redo &lt;i class&#x3D;&quot;dc-icon dc-icon--redo dc-icon--btn dc-icon--btn-small dc-icon--btn--left&quot;&gt;&lt;/i&gt;
 &lt;/button&gt;
 
-&lt;button class=&quot;dc-btn dc-btn--destroy dc-btn--large&quot;&gt;
-    &lt;span&gt;Lock&lt;/span&gt; &lt;i class=&quot;dc-icon dc-icon--lock dc-icon--btn dc-icon--btn-large dc-icon--btn--right&quot;&gt;&lt;/i&gt;
+&lt;button class&#x3D;&quot;dc-btn dc-btn--destroy dc-btn--large&quot;&gt;
+    Lock &lt;i class&#x3D;&quot;dc-icon dc-icon--lock dc-icon--btn dc-icon--btn-large dc-icon--btn--right&quot;&gt;&lt;/i&gt;
 &lt;/button&gt;</code></pre>
 </div>
 
@@ -333,12 +345,12 @@
 </button>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;button class=&quot;dc-btn dc-btn--link dc-btn--link-destroy dc-btn--large&quot;&gt;
-    &lt;span&gt;Back to previous&lt;/span&gt; &lt;i class=&quot;dc-icon dc-icon--arrow-left dc-icon--btn dc-icon--btn-large dc-icon--btn--left&quot;&gt;&lt;/i&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;button class&#x3D;&quot;dc-btn dc-btn--link dc-btn--link-destroy dc-btn--large&quot;&gt;
+    &lt;span&gt;Back to previous&lt;/span&gt; &lt;i class&#x3D;&quot;dc-icon dc-icon--arrow-left dc-icon--btn dc-icon--btn-large dc-icon--btn--left&quot;&gt;&lt;/i&gt;
 &lt;/button&gt;
 
-&lt;button class=&quot;dc-btn dc-btn--link dc-btn--large&quot;&gt;
-    &lt;span&gt;Go To next&lt;/span&gt; &lt;i class=&quot;dc-icon dc-icon--arrow-right dc-icon--btn dc-icon--btn-large dc-icon--btn--right&quot;&gt;&lt;/i&gt;
+&lt;button class&#x3D;&quot;dc-btn dc-btn--link dc-btn--large&quot;&gt;
+    &lt;span&gt;Go To next&lt;/span&gt; &lt;i class&#x3D;&quot;dc-icon dc-icon--arrow-right dc-icon--btn dc-icon--btn-large dc-icon--btn--right&quot;&gt;&lt;/i&gt;
 &lt;/button&gt;</code></pre>
 </div>
 
@@ -347,7 +359,7 @@
 </div>
 
 
-<div class="f-item-group" id="02-button-groups">
+<div class="f-item-group f-item-grouped_groups" id="02-button-groups">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<div class="f-item-controls">
@@ -396,26 +408,26 @@
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-btn-group&quot;&gt;
-	&lt;button class=&quot;dc-btn dc-btn--in-btn-group dc-btn--large&quot;&gt;1&lt;/button&gt;
-	&lt;button class=&quot;dc-btn dc-btn--in-btn-group dc-btn--large&quot;&gt;
-        &lt;i class=&quot;dc-icon dc-icon--check dc-icon--btn dc-icon--btn-large&quot;&gt;&lt;/i&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-btn-group&quot;&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-btn--in-btn-group dc-btn--large&quot;&gt;1&lt;/button&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-btn--in-btn-group dc-btn--large&quot;&gt;
+        &lt;i class&#x3D;&quot;dc-icon dc-icon--check dc-icon--btn dc-icon--btn-large&quot;&gt;&lt;/i&gt;
     &lt;/button&gt;
-	&lt;button class=&quot;dc-btn dc-btn--in-btn-group dc-btn--large&quot;&gt;2&lt;/button&gt;
-	&lt;button class=&quot;dc-btn dc-btn--in-btn-group dc-btn--large dc-btn--destroy&quot;&gt;
-        &lt;i class=&quot;dc-icon dc-icon--trash dc-icon--btn dc-icon--btn-large&quot;&gt;&lt;/i&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-btn--in-btn-group dc-btn--large&quot;&gt;2&lt;/button&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-btn--in-btn-group dc-btn--large dc-btn--destroy&quot;&gt;
+        &lt;i class&#x3D;&quot;dc-icon dc-icon--trash dc-icon--btn dc-icon--btn-large&quot;&gt;&lt;/i&gt;
     &lt;/button&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;dc-btn-group-row&quot;&gt;
-	&lt;div class=&quot;dc-btn-group dc-btn-group--in-row&quot;&gt;
-		&lt;a href class=&quot;dc-btn dc-btn--in-btn-group dc-btn--primary&quot;&gt;Primary&lt;/a&gt;
-		&lt;button class=&quot;dc-btn dc-btn--in-btn-group&quot;&gt;Two&lt;/button&gt;
+&lt;div class&#x3D;&quot;dc-btn-group-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-btn-group dc-btn-group--in-row&quot;&gt;
+		&lt;a href class&#x3D;&quot;dc-btn dc-btn--in-btn-group dc-btn--primary&quot;&gt;Primary&lt;/a&gt;
+		&lt;button class&#x3D;&quot;dc-btn dc-btn--in-btn-group&quot;&gt;Two&lt;/button&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-btn-group dc-btn-group--in-row&quot;&gt;
-		&lt;button class=&quot;dc-btn dc-btn--in-btn-group&quot;&gt;Three&lt;/button&gt;
-		&lt;button class=&quot;dc-btn dc-btn--in-btn-group dc-btn--destroy&quot;&gt;
-            &lt;i class=&quot;dc-icon dc-icon--trash dc-icon--btn&quot;&gt;&lt;/i&gt;
+	&lt;div class&#x3D;&quot;dc-btn-group dc-btn-group--in-row&quot;&gt;
+		&lt;button class&#x3D;&quot;dc-btn dc-btn--in-btn-group&quot;&gt;Three&lt;/button&gt;
+		&lt;button class&#x3D;&quot;dc-btn dc-btn--in-btn-group dc-btn--destroy&quot;&gt;
+            &lt;i class&#x3D;&quot;dc-icon dc-icon--trash dc-icon--btn&quot;&gt;&lt;/i&gt;
         &lt;/button&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -425,7 +437,7 @@
 </div>
 
 
-<div class="f-item-group" id="03-dropdown">
+<div class="f-item-group f-item-grouped_groups" id="03-dropdown">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<div class="f-item-controls">
@@ -481,36 +493,36 @@
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-btn-dropdown&quot;&gt;
-	&lt;button class=&quot;dc-btn dc-btn--primary&quot; id=&quot;dropdown-example&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-btn-dropdown&quot;&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-btn--primary&quot; id&#x3D;&quot;dropdown-example&quot;&gt;
         Dropdown
-        &lt;span class=&quot;dc-btn-dropdown__arrow dc-btn-dropdown__arrow--down&quot;&gt;&lt;/span&gt;
+        &lt;span class&#x3D;&quot;dc-btn-dropdown__arrow dc-btn-dropdown__arrow--down&quot;&gt;&lt;/span&gt;
     &lt;/button&gt;
-	&lt;ul class=&quot;dc-btn-dropdown__list dc-btn-dropdown__list--down&quot; id=&quot;dropdown-example-list&quot;&gt;
-		&lt;li class=&quot;dc-btn-dropdown__item&quot;&gt;The first option&lt;/li&gt;
-		&lt;li class=&quot;dc-btn-dropdown__item&quot;&gt;The second option&lt;/li&gt;
-		&lt;li class=&quot;dc-btn-dropdown__item dc-btn-dropdown__item--disabled&quot;&gt;Disabled option&lt;/li&gt;
+	&lt;ul class&#x3D;&quot;dc-btn-dropdown__list dc-btn-dropdown__list--down&quot; id&#x3D;&quot;dropdown-example-list&quot;&gt;
+		&lt;li class&#x3D;&quot;dc-btn-dropdown__item&quot;&gt;The first option&lt;/li&gt;
+		&lt;li class&#x3D;&quot;dc-btn-dropdown__item&quot;&gt;The second option&lt;/li&gt;
+		&lt;li class&#x3D;&quot;dc-btn-dropdown__item dc-btn-dropdown__item--disabled&quot;&gt;Disabled option&lt;/li&gt;
 	&lt;/ul&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;dc-btn-dropdown&quot;&gt;
-	&lt;button class=&quot;dc-btn dc-btn--primary&quot; id=&quot;dropup-example&quot;&gt;
+&lt;div class&#x3D;&quot;dc-btn-dropdown&quot;&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-btn--primary&quot; id&#x3D;&quot;dropup-example&quot;&gt;
       Dropup
-      &lt;span class=&quot;dc-btn-dropdown__arrow dc-btn-dropdown__arrow--up&quot;&gt;&lt;/span&gt;
+      &lt;span class&#x3D;&quot;dc-btn-dropdown__arrow dc-btn-dropdown__arrow--up&quot;&gt;&lt;/span&gt;
     &lt;/button&gt;
-	&lt;ul class=&quot;dc-btn-dropdown__list dc-btn-dropdown__list--up&quot; id=&quot;dropup-example-list&quot;&gt;
-		&lt;li class=&quot;dc-btn-dropdown__item&quot;&gt;
-			&lt;a href=&quot;#&quot; class=&quot;dc-link&quot;&gt;The first option&lt;/a&gt;
+	&lt;ul class&#x3D;&quot;dc-btn-dropdown__list dc-btn-dropdown__list--up&quot; id&#x3D;&quot;dropup-example-list&quot;&gt;
+		&lt;li class&#x3D;&quot;dc-btn-dropdown__item&quot;&gt;
+			&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;dc-link&quot;&gt;The first option&lt;/a&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-btn-dropdown__item&quot;&gt;
-			&lt;a href=&quot;#&quot; class=&quot;dc-link&quot;&gt;The second option&lt;/a&gt;
+		&lt;li class&#x3D;&quot;dc-btn-dropdown__item&quot;&gt;
+			&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;dc-link&quot;&gt;The second option&lt;/a&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-btn-dropdown__item dc-btn-dropdown__item--disabled&quot;&gt;
-			&lt;a href=&quot;#&quot; class=&quot;dc-link&quot;&gt;Disabled option&lt;/a&gt;
+		&lt;li class&#x3D;&quot;dc-btn-dropdown__item dc-btn-dropdown__item--disabled&quot;&gt;
+			&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;dc-link&quot;&gt;Disabled option&lt;/a&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-btn-dropdown__divider&quot;&gt;&lt;/li&gt;
-		&lt;li class=&quot;dc-btn-dropdown__item&quot;&gt;
-			&lt;a href=&quot;#&quot; class=&quot;dc-link&quot;&gt;Separated option&lt;/a&gt;
+		&lt;li class&#x3D;&quot;dc-btn-dropdown__divider&quot;&gt;&lt;/li&gt;
+		&lt;li class&#x3D;&quot;dc-btn-dropdown__item&quot;&gt;
+			&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;dc-link&quot;&gt;Separated option&lt;/a&gt;
 		&lt;/li&gt;
 	&lt;/ul&gt;
 &lt;/div&gt;</code></pre>
@@ -520,7 +532,7 @@
 </div>
 
 
-<div class="f-item-group" id="04-input-groups">
+<div class="f-item-group f-item-grouped_groups" id="04-input-groups">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<div class="f-item-controls">
@@ -569,31 +581,31 @@
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;label class=&quot;dc-label&quot; for=&quot;priceInput&quot;&gt;Addon - Appended&lt;/label&gt;
-&lt;div class=&quot;dc-input-group&quot;&gt;
-	&lt;input class=&quot;dc-input dc-input--in-input-group dc-input--text-right&quot; type=&quot;text&quot; id=&quot;priceInput&quot; placeholder=&quot;e. g. 100&quot; /&gt;
-	&lt;div class=&quot;dc-input-addon&quot;&gt;&amp;euro;&lt;/div&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;priceInput&quot;&gt;Addon - Appended&lt;/label&gt;
+&lt;div class&#x3D;&quot;dc-input-group&quot;&gt;
+	&lt;input class&#x3D;&quot;dc-input dc-input--in-input-group dc-input--text-right&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;priceInput&quot; placeholder&#x3D;&quot;e. g. 100&quot; /&gt;
+	&lt;div class&#x3D;&quot;dc-input-addon&quot;&gt;&amp;euro;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;label class=&quot;dc-label&quot; for=&quot;urlInput1&quot;&gt;Addon - Prepended&lt;/label&gt;
-&lt;div class=&quot;dc-input-group&quot;&gt;
-	&lt;span class=&quot;dc-input-addon&quot;&gt;http://&lt;/span&gt;
-	&lt;input class=&quot;dc-input dc-input--in-input-group&quot; type=&quot;text&quot; id=&quot;urlInput1&quot; placeholder=&quot;e. g. brands.zalando.com&quot; /&gt;
+&lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;urlInput1&quot;&gt;Addon - Prepended&lt;/label&gt;
+&lt;div class&#x3D;&quot;dc-input-group&quot;&gt;
+	&lt;span class&#x3D;&quot;dc-input-addon&quot;&gt;http://&lt;/span&gt;
+	&lt;input class&#x3D;&quot;dc-input dc-input--in-input-group&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;urlInput1&quot; placeholder&#x3D;&quot;e. g. brands.zalando.com&quot; /&gt;
 &lt;/div&gt;
 
-&lt;label class=&quot;dc-label&quot; for=&quot;urlInput2&quot;&gt;Button - Appended&lt;/label&gt;
-&lt;div class=&quot;dc-input-group&quot;&gt;
-	&lt;input class=&quot;dc-input dc-input--in-input-group&quot; type=&quot;text&quot; id=&quot;urlInput2&quot; placeholder=&quot;e. g. brands.zalando.com&quot; /&gt;
-	&lt;button class=&quot;dc-btn dc-btn--in-input-group dc-btn--primary&quot;&gt;
-        &lt;i class=&quot;dc-icon dc-icon--search dc-icon--btn&quot;&gt;&lt;/i&gt;
+&lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;urlInput2&quot;&gt;Button - Appended&lt;/label&gt;
+&lt;div class&#x3D;&quot;dc-input-group&quot;&gt;
+	&lt;input class&#x3D;&quot;dc-input dc-input--in-input-group&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;urlInput2&quot; placeholder&#x3D;&quot;e. g. brands.zalando.com&quot; /&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-btn--in-input-group dc-btn--primary&quot;&gt;
+        &lt;i class&#x3D;&quot;dc-icon dc-icon--search dc-icon--btn&quot;&gt;&lt;/i&gt;
     &lt;/button&gt;
 &lt;/div&gt;
 
-&lt;label class=&quot;dc-label&quot; for=&quot;userInput&quot;&gt;Addon - Prepended &amp; Button - Appended&lt;/label&gt;
-&lt;div class=&quot;dc-input-group&quot;&gt;
-	&lt;span class=&quot;dc-input-addon&quot;&gt;User 1&lt;/span&gt;
-	&lt;input class=&quot;dc-input dc-input--in-input-group&quot; type=&quot;text&quot; id=&quot;userInput&quot; placeholder=&quot;Full name&quot; /&gt;
-	&lt;a class=&quot;dc-btn dc-btn--in-input-group dc-btn--primary&quot;&gt;Add&lt;/a&gt;
+&lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;userInput&quot;&gt;Addon - Prepended &amp; Button - Appended&lt;/label&gt;
+&lt;div class&#x3D;&quot;dc-input-group&quot;&gt;
+	&lt;span class&#x3D;&quot;dc-input-addon&quot;&gt;User 1&lt;/span&gt;
+	&lt;input class&#x3D;&quot;dc-input dc-input--in-input-group&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;userInput&quot; placeholder&#x3D;&quot;Full name&quot; /&gt;
+	&lt;a class&#x3D;&quot;dc-btn dc-btn--in-input-group dc-btn--primary&quot;&gt;Add&lt;/a&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -601,7 +613,7 @@
 </div>
 
 
-<div class="f-item-group" id="05-search-form">
+<div class="f-item-group f-item-grouped_groups" id="05-search-form">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<div class="f-item-controls">
@@ -650,7 +662,7 @@
 <div class="dc-search-form">
 	<input class="dc-input dc-search-form__input" id="searchWithImages" type="search" placeholder="Search...">
 	<button class="dc-btn dc-search-form__btn">
-        <i class="dc-icon dc-icon--search dc-icon--interactive"></i>
+        <i id="searchwithImagesIcon" class="dc-icon dc-icon--search dc-icon--interactive"></i>
     </button>
 	<ul class="dc-list dc-suggest">
 		<li class="dc-suggest__item">
@@ -706,92 +718,92 @@
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;label for=&quot;searchOnlyText&quot; class=&quot;dc-label&quot;&gt;Search box showing text results&lt;/label&gt;
-&lt;div class=&quot;dc-search-form&quot;&gt;
-	&lt;input class=&quot;dc-input dc-search-form__input&quot; id=&quot;searchOnlyText&quot; type=&quot;search&quot; placeholder=&quot;Search...&quot;&gt;
-	&lt;button class=&quot;dc-btn dc-search-form__btn&quot;&gt;
-      &lt;i class=&quot;dc-icon dc-icon--search dc-icon--interactive&quot;&gt;&lt;/i&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;label for&#x3D;&quot;searchOnlyText&quot; class&#x3D;&quot;dc-label&quot;&gt;Search box showing text results&lt;/label&gt;
+&lt;div class&#x3D;&quot;dc-search-form&quot;&gt;
+	&lt;input class&#x3D;&quot;dc-input dc-search-form__input&quot; id&#x3D;&quot;searchOnlyText&quot; type&#x3D;&quot;search&quot; placeholder&#x3D;&quot;Search...&quot;&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-search-form__btn&quot;&gt;
+      &lt;i class&#x3D;&quot;dc-icon dc-icon--search dc-icon--interactive&quot;&gt;&lt;/i&gt;
   &lt;/button&gt;
-	&lt;ul class=&quot;dc-list dc-suggest&quot;&gt;
-		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+	&lt;ul class&#x3D;&quot;dc-list dc-suggest&quot;&gt;
+		&lt;li class&#x3D;&quot;dc-suggest__item dc-link&quot;&gt;
 			Suggestion 1
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+		&lt;li class&#x3D;&quot;dc-suggest__item dc-link&quot;&gt;
 			Suggestion 2
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+		&lt;li class&#x3D;&quot;dc-suggest__item dc-link&quot;&gt;
 			Suggestion 3
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+		&lt;li class&#x3D;&quot;dc-suggest__item dc-link&quot;&gt;
 			Suggestion 4
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+		&lt;li class&#x3D;&quot;dc-suggest__item dc-link&quot;&gt;
 			Suggestion 5
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+		&lt;li class&#x3D;&quot;dc-suggest__item dc-link&quot;&gt;
 			Suggestion 6
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-suggest__item dc-link&quot;&gt;
+		&lt;li class&#x3D;&quot;dc-suggest__item dc-link&quot;&gt;
 			Suggestion 7
 		&lt;/li&gt;
 	&lt;/ul&gt;
 &lt;/div&gt;
 
-&lt;label for=&quot;searchWithImages&quot; class=&quot;dc-label&quot;&gt;Search box showing results with images&lt;/label&gt;
-&lt;div class=&quot;dc-search-form&quot;&gt;
-	&lt;input class=&quot;dc-input dc-search-form__input&quot; id=&quot;searchWithImages&quot; type=&quot;search&quot; placeholder=&quot;Search...&quot;&gt;
-	&lt;button class=&quot;dc-btn dc-search-form__btn&quot;&gt;
-        &lt;i class=&quot;dc-icon dc-icon--search dc-icon--interactive&quot;&gt;&lt;/i&gt;
+&lt;label for&#x3D;&quot;searchWithImages&quot; class&#x3D;&quot;dc-label&quot;&gt;Search box showing results with images&lt;/label&gt;
+&lt;div class&#x3D;&quot;dc-search-form&quot;&gt;
+	&lt;input class&#x3D;&quot;dc-input dc-search-form__input&quot; id&#x3D;&quot;searchWithImages&quot; type&#x3D;&quot;search&quot; placeholder&#x3D;&quot;Search...&quot;&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-search-form__btn&quot;&gt;
+        &lt;i id&#x3D;&quot;searchwithImagesIcon&quot; class&#x3D;&quot;dc-icon dc-icon--search dc-icon--interactive&quot;&gt;&lt;/i&gt;
     &lt;/button&gt;
-	&lt;ul class=&quot;dc-list dc-suggest&quot;&gt;
-		&lt;li class=&quot;dc-suggest__item&quot;&gt;
-			&lt;div class=&quot;dc-suggest__item__img-frame&quot;&gt;
-				&lt;img class=&quot;dc-suggest__item__img&quot; src=&quot;http://lorempixel.com/100/100/&quot;&gt;
+	&lt;ul class&#x3D;&quot;dc-list dc-suggest&quot;&gt;
+		&lt;li class&#x3D;&quot;dc-suggest__item&quot;&gt;
+			&lt;div class&#x3D;&quot;dc-suggest__item__img-frame&quot;&gt;
+				&lt;img class&#x3D;&quot;dc-suggest__item__img&quot; src&#x3D;&quot;http://lorempixel.com/100/100/&quot;&gt;
 			&lt;/div&gt;
-			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Suggestion 1&lt;/span&gt;
-			&lt;span class=&quot;dc-suggest__item__action&quot;&gt;&lt;a class=&quot;dc-link&quot; href=&quot;#&quot;&gt;Item Action&lt;/a&gt;&lt;/span&gt;
+			&lt;span class&#x3D;&quot;dc-suggest__item__label&quot;&gt;Suggestion 1&lt;/span&gt;
+			&lt;span class&#x3D;&quot;dc-suggest__item__action&quot;&gt;&lt;a class&#x3D;&quot;dc-link&quot; href&#x3D;&quot;#&quot;&gt;Item Action&lt;/a&gt;&lt;/span&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-suggest__item&quot;&gt;
-			&lt;div class=&quot;dc-suggest__item__img-frame&quot;&gt;
-				&lt;img class=&quot;dc-suggest__item__img&quot; src=&quot;http://lorempixel.com/50/100/&quot;&gt;
+		&lt;li class&#x3D;&quot;dc-suggest__item&quot;&gt;
+			&lt;div class&#x3D;&quot;dc-suggest__item__img-frame&quot;&gt;
+				&lt;img class&#x3D;&quot;dc-suggest__item__img&quot; src&#x3D;&quot;http://lorempixel.com/50/100/&quot;&gt;
 			&lt;/div&gt;
-			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Suggestion 2&lt;/span&gt;
-			&lt;span class=&quot;dc-suggest__item__action&quot;&gt;&lt;a class=&quot;dc-link&quot; href=&quot;#&quot;&gt;Item Action&lt;/a&gt;&lt;/span&gt;
+			&lt;span class&#x3D;&quot;dc-suggest__item__label&quot;&gt;Suggestion 2&lt;/span&gt;
+			&lt;span class&#x3D;&quot;dc-suggest__item__action&quot;&gt;&lt;a class&#x3D;&quot;dc-link&quot; href&#x3D;&quot;#&quot;&gt;Item Action&lt;/a&gt;&lt;/span&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-suggest__item&quot;&gt;
-			&lt;div class=&quot;dc-suggest__item__img-frame&quot;&gt;
-				&lt;img class=&quot;dc-suggest__item__img&quot; src=&quot;http://lorempixel.com/100/50/&quot;&gt;
+		&lt;li class&#x3D;&quot;dc-suggest__item&quot;&gt;
+			&lt;div class&#x3D;&quot;dc-suggest__item__img-frame&quot;&gt;
+				&lt;img class&#x3D;&quot;dc-suggest__item__img&quot; src&#x3D;&quot;http://lorempixel.com/100/50/&quot;&gt;
 			&lt;/div&gt;
-			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Suggestion 3&lt;/span&gt;
-			&lt;span class=&quot;dc-suggest__item__action&quot;&gt;&lt;a class=&quot;dc-link&quot; href=&quot;#&quot;&gt;Item Action&lt;/a&gt;&lt;/span&gt;
+			&lt;span class&#x3D;&quot;dc-suggest__item__label&quot;&gt;Suggestion 3&lt;/span&gt;
+			&lt;span class&#x3D;&quot;dc-suggest__item__action&quot;&gt;&lt;a class&#x3D;&quot;dc-link&quot; href&#x3D;&quot;#&quot;&gt;Item Action&lt;/a&gt;&lt;/span&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-suggest__item&quot;&gt;
-			&lt;div class=&quot;dc-suggest__item__img-frame&quot;&gt;
-				&lt;img class=&quot;dc-suggest__item__img&quot; src=&quot;http://lorempixel.com/100/25/&quot;&gt;
+		&lt;li class&#x3D;&quot;dc-suggest__item&quot;&gt;
+			&lt;div class&#x3D;&quot;dc-suggest__item__img-frame&quot;&gt;
+				&lt;img class&#x3D;&quot;dc-suggest__item__img&quot; src&#x3D;&quot;http://lorempixel.com/100/25/&quot;&gt;
 			&lt;/div&gt;
-			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Suggestion 4&lt;/span&gt;
-			&lt;span class=&quot;dc-suggest__item__action&quot;&gt;&lt;a class=&quot;dc-link&quot; href=&quot;#&quot;&gt;Item Action&lt;/a&gt;&lt;/span&gt;
+			&lt;span class&#x3D;&quot;dc-suggest__item__label&quot;&gt;Suggestion 4&lt;/span&gt;
+			&lt;span class&#x3D;&quot;dc-suggest__item__action&quot;&gt;&lt;a class&#x3D;&quot;dc-link&quot; href&#x3D;&quot;#&quot;&gt;Item Action&lt;/a&gt;&lt;/span&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-suggest__item&quot;&gt;
-			&lt;div class=&quot;dc-suggest__item__img-frame&quot;&gt;
-				&lt;img class=&quot;dc-suggest__item__img&quot; src=&quot;http://lorempixel.com/25/100/&quot;&gt;
+		&lt;li class&#x3D;&quot;dc-suggest__item&quot;&gt;
+			&lt;div class&#x3D;&quot;dc-suggest__item__img-frame&quot;&gt;
+				&lt;img class&#x3D;&quot;dc-suggest__item__img&quot; src&#x3D;&quot;http://lorempixel.com/25/100/&quot;&gt;
 			&lt;/div&gt;
-			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Suggestion 5&lt;/span&gt;
-			&lt;span class=&quot;dc-suggest__item__action&quot;&gt;&lt;a class=&quot;dc-link&quot; href=&quot;#&quot;&gt;Item Action&lt;/a&gt;&lt;/span&gt;
+			&lt;span class&#x3D;&quot;dc-suggest__item__label&quot;&gt;Suggestion 5&lt;/span&gt;
+			&lt;span class&#x3D;&quot;dc-suggest__item__action&quot;&gt;&lt;a class&#x3D;&quot;dc-link&quot; href&#x3D;&quot;#&quot;&gt;Item Action&lt;/a&gt;&lt;/span&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-suggest__item&quot;&gt;
-			&lt;div class=&quot;dc-suggest__item__img-frame&quot;&gt;
-				&lt;img class=&quot;dc-suggest__item__img&quot; src=&quot;http://lorempixel.com/100/10/&quot;&gt;
+		&lt;li class&#x3D;&quot;dc-suggest__item&quot;&gt;
+			&lt;div class&#x3D;&quot;dc-suggest__item__img-frame&quot;&gt;
+				&lt;img class&#x3D;&quot;dc-suggest__item__img&quot; src&#x3D;&quot;http://lorempixel.com/100/10/&quot;&gt;
 			&lt;/div&gt;
-			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Suggestion 6&lt;/span&gt;
-			&lt;span class=&quot;dc-suggest__item__action&quot;&gt;&lt;a class=&quot;dc-link&quot; href=&quot;#&quot;&gt;Item Action&lt;/a&gt;&lt;/span&gt;
+			&lt;span class&#x3D;&quot;dc-suggest__item__label&quot;&gt;Suggestion 6&lt;/span&gt;
+			&lt;span class&#x3D;&quot;dc-suggest__item__action&quot;&gt;&lt;a class&#x3D;&quot;dc-link&quot; href&#x3D;&quot;#&quot;&gt;Item Action&lt;/a&gt;&lt;/span&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;dc-suggest__item&quot;&gt;
-			&lt;div class=&quot;dc-suggest__item__img-frame&quot;&gt;
-				&lt;img class=&quot;dc-suggest__item__img&quot; src=&quot;http://lorempixel.com/10/100/&quot;&gt;
+		&lt;li class&#x3D;&quot;dc-suggest__item&quot;&gt;
+			&lt;div class&#x3D;&quot;dc-suggest__item__img-frame&quot;&gt;
+				&lt;img class&#x3D;&quot;dc-suggest__item__img&quot; src&#x3D;&quot;http://lorempixel.com/10/100/&quot;&gt;
 			&lt;/div&gt;
-			&lt;span class=&quot;dc-suggest__item__label&quot;&gt;Suggestion 7&lt;/span&gt;
-			&lt;span class=&quot;dc-suggest__item__action&quot;&gt;&lt;a class=&quot;dc-link&quot; href=&quot;#&quot;&gt;Item Action&lt;/a&gt;&lt;/span&gt;
+			&lt;span class&#x3D;&quot;dc-suggest__item__label&quot;&gt;Suggestion 7&lt;/span&gt;
+			&lt;span class&#x3D;&quot;dc-suggest__item__action&quot;&gt;&lt;a class&#x3D;&quot;dc-link&quot; href&#x3D;&quot;#&quot;&gt;Item Action&lt;/a&gt;&lt;/span&gt;
 		&lt;/li&gt;
 	&lt;/ul&gt;
 &lt;/div&gt;</code></pre>
@@ -801,203 +813,7 @@
 </div>
 
 
-<div class="f-item-group" id="06-tooltip">
-
-	<div class="f-item-heading-group">
-		<h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Tooltip</h2>
-	</div>
-		<div class="f-item-group" id="06-tooltip.01-has-tooltip">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<div class="f-item-controls">
-					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-						<svg class="dc-svg">
-							<use xlink:href="#f-icon-notes" />
-						</svg>
-					</span>
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg class="dc-svg">
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
-				<h3 class="dc-h3 f-item-heading">Has Tooltip</h3>
-			</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>Apply the base <code>dc--has-tooltip</code> class and a positioning class (ex. <code>dc--has-tooltip--left</code>) to show a nice tooltip when &quot;hovering&quot; the element.</p>
-<p>The attribute <code>data--dc-has-tooltip</code> must be present and not empty, the value will be used as the content for the tooltip body.</p>
-<p>The tooltip implementation is based significantly on <a href="http://kushagragour.in/lab/hint/">hint.css</a>.</p>
-
-</div>
-<div class="f-item-preview">
-	<div class="sg-has-tooltip-section">
-	<div class="sg-has-tooltip-section__box">
-		<button class="dc-btn dc--has-tooltip dc--has-tooltip--bottom-right" data-dc-has-tooltip="Hi. I'm a tooltip">
-            bottom-right
-        </button>
-	</div>
-	<div class="sg-has-tooltip-section__box">
-		<button class="dc-btn dc--has-tooltip dc--has-tooltip--bottom" data-dc-has-tooltip="Hi. I'm a tooltip">
-            bottom
-        </button>
-	</div>
-	<div class="sg-has-tooltip-section__box">
-		<button class="dc-btn dc--has-tooltip dc--has-tooltip--bottom-left" data-dc-has-tooltip="Hi. I'm a tooltip">
-            bottom-left
-        </button>
-	</div>
-	<div class="sg-has-tooltip-section__box">
-		<button class="dc-btn dc--has-tooltip dc--has-tooltip--right" data-dc-has-tooltip="Hi. I'm a tooltip">
-            right
-        </button>
-	</div>
-	<div class="sg-has-tooltip-section__box">
-		<button class="dc-btn">
-            .
-        </button>
-	</div>
-	<div class="sg-has-tooltip-section__box">
-		<button class="dc-btn dc--has-tooltip dc--has-tooltip--left" data-dc-has-tooltip="Hi. I'm a tooltip">
-            left
-        </button>
-	</div>
-	<div class="sg-has-tooltip-section__box">
-		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top-right" data-dc-has-tooltip="Hi. I'm a tooltip">
-            top-right
-        </button>
-	</div>
-	<div class="sg-has-tooltip-section__box">
-		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top" data-dc-has-tooltip="Hi. I'm a tooltip">
-            top
-        </button>
-	</div>
-	<div class="sg-has-tooltip-section__box">
-		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top-left" data-dc-has-tooltip="Hi. I'm a tooltip">
-            top-left
-        </button>
-	</div>
-</div>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;sg-has-tooltip-section&quot;&gt;
-	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
-		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--bottom-right&quot; data-dc-has-tooltip=&quot;Hi. I&#x27;m a tooltip&quot;&gt;
-            bottom-right
-        &lt;/button&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
-		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--bottom&quot; data-dc-has-tooltip=&quot;Hi. I&#x27;m a tooltip&quot;&gt;
-            bottom
-        &lt;/button&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
-		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--bottom-left&quot; data-dc-has-tooltip=&quot;Hi. I&#x27;m a tooltip&quot;&gt;
-            bottom-left
-        &lt;/button&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
-		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--right&quot; data-dc-has-tooltip=&quot;Hi. I&#x27;m a tooltip&quot;&gt;
-            right
-        &lt;/button&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
-		&lt;button class=&quot;dc-btn&quot;&gt;
-            .
-        &lt;/button&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
-		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--left&quot; data-dc-has-tooltip=&quot;Hi. I&#x27;m a tooltip&quot;&gt;
-            left
-        &lt;/button&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
-		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--top-right&quot; data-dc-has-tooltip=&quot;Hi. I&#x27;m a tooltip&quot;&gt;
-            top-right
-        &lt;/button&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
-		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--top&quot; data-dc-has-tooltip=&quot;Hi. I&#x27;m a tooltip&quot;&gt;
-            top
-        &lt;/button&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
-		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--top-left&quot; data-dc-has-tooltip=&quot;Hi. I&#x27;m a tooltip&quot;&gt;
-            top-left
-        &lt;/button&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-</div>
-
-		</div>
-		<div class="f-item-group" id="06-tooltip.02-sizing">
-			<div class="f-item-heading-group" data-f-toggle="labels">
-				<div class="f-item-controls">
-					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-						<svg class="dc-svg">
-							<use xlink:href="#f-icon-notes" />
-						</svg>
-					</span>
-					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-						<svg class="dc-svg">
-							<use xlink:href="#f-icon-code" />
-						</svg>
-					</span>
-				</div>
-				<h3 class="dc-h3 f-item-heading">Sizing</h3>
-			</div><div class="f-item-notes" data-f-toggle="notes">
-	<p>You can use a sizing modifier to define the width of a tooltip.</p>
-<p>Available sizing modifiers are <code>dc--has-tooltip--large</code>, <code>dc--has-tooltip--medium</code> and <code>dc--has-tooltip--small</code>.</p>
-
-</div>
-<div class="f-item-preview">
-	<div class="sg-has-tooltip-section">
-	<div class="sg-has-tooltip-section__box">
-		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--large" data-dc-has-tooltip="Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst. Nullam posuere condimentum cursus.">
-            large
-        </button>
-	</div>
-	<div class="sg-has-tooltip-section__box">
-		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--medium" data-dc-has-tooltip="Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst. Nullam posuere condimentum cursus.">
-            medium
-        </button>
-	</div>
-	<div class="sg-has-tooltip-section__box">
-		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--small" data-dc-has-tooltip="Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst.">
-            small
-        </button>
-	</div>
-</div>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;sg-has-tooltip-section&quot;&gt;
-	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
-		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--large&quot; data-dc-has-tooltip=&quot;Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst. Nullam posuere condimentum cursus.&quot;&gt;
-            large
-        &lt;/button&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
-		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--medium&quot; data-dc-has-tooltip=&quot;Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst. Nullam posuere condimentum cursus.&quot;&gt;
-            medium
-        &lt;/button&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;sg-has-tooltip-section__box&quot;&gt;
-		&lt;button class=&quot;dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--small&quot; data-dc-has-tooltip=&quot;Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst.&quot;&gt;
-            small
-        &lt;/button&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-</div>
-
-		</div>
-
-</div>
-
-
-<div class="f-item-group" id="07-dialog">
+<div class="f-item-group f-item-grouped_groups" id="07-dialog">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<div class="f-item-controls">
@@ -1011,39 +827,45 @@
 		<h2 class="dc-h2 f-item-heading">Dialog</h2>
 	</div>
 <div class="f-item-preview">
+	<div class="demo-wrapper">
+	<div class="dc-overlay"></div>
 	<div class="dc-dialog">
-	<div class="dc-dialog__overlay"> </div>
-	<div class="dc-dialog__content">
-		<div class="dc-dialog__body">
-			<div class="dc-dialog__close">
-				<i class="dc-icon dc-icon--close dc-icon--interactive dc-dialog__close__icon"></i>
+		<div class="dc-dialog__content">
+			<div class="dc-dialog__body">
+				<div class="dc-dialog__close">
+					<i class="dc-icon dc-icon--close dc-icon--interactive dc-dialog__close__icon"></i>
+				</div>
+				<h3 class="dc-dialog__title">This is a dialog</h3>
+				<h4 class="dc-dialog__subtitle">Subtitle or step</h4>
+				<p>This is the content area. Content goes here. Actions (buttons, most of the times) should go in the bottom part.
+				</p>
 			</div>
-			<h3 class="dc-dialog__title">This is a dialog</h3>
-			<h4 class="dc-dialog__subtitle">Subtitle or step</h4>
-			<p>This is the content area. Content goes here. Actions (buttons, most of the times) should go in the bottom part.</p>
-		</div>
-		<div class="dc-dialog__actions">
-			<a href="#" class="dc-link dc-dialog__actions__link">Action</a>
-			<button class="dc-btn dc-btn--primary">Action</button>
+			<div class="dc-dialog__actions">
+				<a href="#" class="dc-link dc-dialog__actions__link">Action</a>
+				<button class="dc-btn dc-btn--primary">Action</button>
+			</div>
 		</div>
 	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-dialog&quot;&gt;
-	&lt;div class=&quot;dc-dialog__overlay&quot;&gt; &lt;/div&gt;
-	&lt;div class=&quot;dc-dialog__content&quot;&gt;
-		&lt;div class=&quot;dc-dialog__body&quot;&gt;
-			&lt;div class=&quot;dc-dialog__close&quot;&gt;
-				&lt;i class=&quot;dc-icon dc-icon--close dc-icon--interactive dc-dialog__close__icon&quot;&gt;&lt;/i&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;demo-wrapper&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-overlay&quot;&gt;&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-dialog&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-dialog__content&quot;&gt;
+			&lt;div class&#x3D;&quot;dc-dialog__body&quot;&gt;
+				&lt;div class&#x3D;&quot;dc-dialog__close&quot;&gt;
+					&lt;i class&#x3D;&quot;dc-icon dc-icon--close dc-icon--interactive dc-dialog__close__icon&quot;&gt;&lt;/i&gt;
+				&lt;/div&gt;
+				&lt;h3 class&#x3D;&quot;dc-dialog__title&quot;&gt;This is a dialog&lt;/h3&gt;
+				&lt;h4 class&#x3D;&quot;dc-dialog__subtitle&quot;&gt;Subtitle or step&lt;/h4&gt;
+				&lt;p&gt;This is the content area. Content goes here. Actions (buttons, most of the times) should go in the bottom part.
+				&lt;/p&gt;
 			&lt;/div&gt;
-			&lt;h3 class=&quot;dc-dialog__title&quot;&gt;This is a dialog&lt;/h3&gt;
-			&lt;h4 class=&quot;dc-dialog__subtitle&quot;&gt;Subtitle or step&lt;/h4&gt;
-			&lt;p&gt;This is the content area. Content goes here. Actions (buttons, most of the times) should go in the bottom part.&lt;/p&gt;
-		&lt;/div&gt;
-		&lt;div class=&quot;dc-dialog__actions&quot;&gt;
-			&lt;a href=&quot;#&quot; class=&quot;dc-link dc-dialog__actions__link&quot;&gt;Action&lt;/a&gt;
-			&lt;button class=&quot;dc-btn dc-btn--primary&quot;&gt;Action&lt;/button&gt;
+			&lt;div class&#x3D;&quot;dc-dialog__actions&quot;&gt;
+				&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;dc-link dc-dialog__actions__link&quot;&gt;Action&lt;/a&gt;
+				&lt;button class&#x3D;&quot;dc-btn dc-btn--primary&quot;&gt;Action&lt;/button&gt;
+			&lt;/div&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -1053,7 +875,340 @@
 </div>
 
 
-<div class="f-item-group" id="08-toast">
+<div class="f-item-group f-item-grouped_groups" id="08-side-revealer">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+		<h2 class="dc-h2 f-item-heading">Side Revealer</h2>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Side revealers are used to give you the ability to have main content and sub content in the side, and there are two styles of the revealers</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-side-revealer">
+	<h3>1. The sub content is added inside a card <code>.dc-side-revealer__content__scroll</code></h3>
+	<div>
+		<strong>The main content is here.</strong> What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+		of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+		Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when
+		looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page
+		editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and
+		the like). Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+		College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32
+		and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+		comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original
+		form, accompanied by English versions from the 1914 translation by H. Rackham.
+	</div>
+
+	<input class="dc-side-revealer__toggle dc-icon" type="checkbox" />
+	<div class="dc-side-revealer__content dc-card">
+		<div class="dc-side-revealer__content__card dc-card">
+			<table class="dc-table">
+				<thead class="dc-table__thead">
+					<tr class="dc-table__tr">
+						<th class="dc-table__th dc-table__th--sortable" data-col="First Name">First Name<span class="dc-table__sorter dc-table__sorter--ascending"></th>
+                        <th class="dc-table__th dc-table__th--sortable" data-col="Name">Last Name<span class="dc-table__sorter dc-table__sorter--descending"></th>
+                        <th class="dc-table__th dc-table__th--sortable" data-col="Name">Status<span class="dc-table__sorter"></th>
+                    </tr>
+                </thead>
+
+                <tbody class="dc-table__tbody">
+                    <tr class="dc-table__tr">
+                        <td class="dc-table__td" data-col="First Name">Austin</td>
+                        <td class="dc-table__td" data-col="Last Name">Carpenter</td>
+                        <td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
+					</tr>
+
+					<tr class="dc-table__tr">
+						<td class="dc-table__td" data-col="First Name">Eileen</td>
+						<td class="dc-table__td" data-col="Last Name">Holland</td>
+						<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
+					</tr>
+
+					<tr class="dc-table__tr">
+						<td class="dc-table__td" data-col="First Name">Duane</td>
+						<td class="dc-table__td" data-col="Last Name">Holmes</td>
+						<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
+					</tr>
+
+					<tr class="dc-table__tr">
+						<td class="dc-table__td" data-col="First Name">Kitty</td>
+						<td class="dc-table__td" data-col="Last Name">Murray</td>
+						<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
+					</tr>
+
+					<tr class="dc-table__tr">
+						<td class="dc-table__td" data-col="First Name">Toni</td>
+						<td class="dc-table__td" data-col="Last Name">Nichols</td>
+						<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--error">Error</span></td>
+					</tr>
+					</tbody>
+			</table>
+
+			<div>
+				What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+				specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+				with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using
+				Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+				model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Where does it come from? Contrary
+				to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+				the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+				Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
+				1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by
+				English versions from the 1914 translation by H. Rackham.
+			</div>
+		</div>
+	</div>
+</div>
+
+<br>
+<hr class="dc-divider">
+
+<div class="dc-side-revealer">
+	<h3>2. The sub content is added directly into the revealer <code>.dc-side-revealer__content</code></h3>
+	<div>
+		<strong>The main content is here.</strong> What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+		of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+		Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when
+		looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page
+		editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and
+		the like). Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+		College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32
+		and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+		comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original
+		form, accompanied by English versions from the 1914 translation by H. Rackham.
+	</div>
+
+	<input class="dc-side-revealer__toggle dc-icon" type="checkbox" />
+	<div class="dc-side-revealer__content dc-card">
+		<table class="dc-table">
+			<thead class="dc-table__thead">
+				<tr class="dc-table__tr">
+					<th class="dc-table__th dc-table__th--sortable" data-col="First Name">First Name<span class="dc-table__sorter dc-table__sorter--ascending"></th>
+                    <th class="dc-table__th dc-table__th--sortable" data-col="Name">Last Name<span class="dc-table__sorter dc-table__sorter--descending"></th>
+                    <th class="dc-table__th dc-table__th--sortable" data-col="Name">Status<span class="dc-table__sorter"></th>
+                </tr>
+            </thead>
+
+            <tbody class="dc-table__tbody">
+                <tr class="dc-table__tr">
+                    <td class="dc-table__td" data-col="First Name">Austin</td>
+                    <td class="dc-table__td" data-col="Last Name">Carpenter</td>
+                    <td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
+				</tr>
+
+				<tr class="dc-table__tr">
+					<td class="dc-table__td" data-col="First Name">Eileen</td>
+					<td class="dc-table__td" data-col="Last Name">Holland</td>
+					<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
+				</tr>
+
+				<tr class="dc-table__tr">
+					<td class="dc-table__td" data-col="First Name">Duane</td>
+					<td class="dc-table__td" data-col="Last Name">Holmes</td>
+					<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
+				</tr>
+
+				<tr class="dc-table__tr">
+					<td class="dc-table__td" data-col="First Name">Kitty</td>
+					<td class="dc-table__td" data-col="Last Name">Murray</td>
+					<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
+				</tr>
+
+				<tr class="dc-table__tr">
+					<td class="dc-table__td" data-col="First Name">Toni</td>
+					<td class="dc-table__td" data-col="Last Name">Nichols</td>
+					<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--error">Error</span></td>
+				</tr>
+				</tbody>
+		</table>
+
+		<div>
+			What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+			specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+			with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using
+			Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+			model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Where does it come from? Contrary
+			to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+			the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+			Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
+			1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English
+			versions from the 1914 translation by H. Rackham.
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-side-revealer&quot;&gt;
+	&lt;h3&gt;1. The sub content is added inside a card &lt;code&gt;.dc-side-revealer__content__scroll&lt;/code&gt;&lt;/h3&gt;
+	&lt;div&gt;
+		&lt;strong&gt;The main content is here.&lt;/strong&gt; What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown printer took a galley
+		of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+		Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when
+		looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#x27;Content here, content here&#x27;, making it look like readable English. Many desktop publishing packages and web page
+		editors now use Lorem Ipsum as their default model text, and a search for &#x27;lorem ipsum&#x27; will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and
+		the like). Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+		College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32
+		and 1.10.33 of &quot;de Finibus Bonorum et Malorum&quot; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;,
+		comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from &quot;de Finibus Bonorum et Malorum&quot; by Cicero are also reproduced in their exact original
+		form, accompanied by English versions from the 1914 translation by H. Rackham.
+	&lt;/div&gt;
+
+	&lt;input class&#x3D;&quot;dc-side-revealer__toggle dc-icon&quot; type&#x3D;&quot;checkbox&quot; /&gt;
+	&lt;div class&#x3D;&quot;dc-side-revealer__content dc-card&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-side-revealer__content__card dc-card&quot;&gt;
+			&lt;table class&#x3D;&quot;dc-table&quot;&gt;
+				&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
+					&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+						&lt;th class&#x3D;&quot;dc-table__th dc-table__th--sortable&quot; data-col&#x3D;&quot;First Name&quot;&gt;First Name&lt;span class&#x3D;&quot;dc-table__sorter dc-table__sorter--ascending&quot;&gt;&lt;/th&gt;
+                        &lt;th class&#x3D;&quot;dc-table__th dc-table__th--sortable&quot; data-col&#x3D;&quot;Name&quot;&gt;Last Name&lt;span class&#x3D;&quot;dc-table__sorter dc-table__sorter--descending&quot;&gt;&lt;/th&gt;
+                        &lt;th class&#x3D;&quot;dc-table__th dc-table__th--sortable&quot; data-col&#x3D;&quot;Name&quot;&gt;Status&lt;span class&#x3D;&quot;dc-table__sorter&quot;&gt;&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+
+                &lt;tbody class&#x3D;&quot;dc-table__tbody&quot;&gt;
+                    &lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+                        &lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Austin&lt;/td&gt;
+                        &lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Carpenter&lt;/td&gt;
+                        &lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
+					&lt;/tr&gt;
+
+					&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+						&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Eileen&lt;/td&gt;
+						&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holland&lt;/td&gt;
+						&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+					&lt;/tr&gt;
+
+					&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+						&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Duane&lt;/td&gt;
+						&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holmes&lt;/td&gt;
+						&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+					&lt;/tr&gt;
+
+					&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+						&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Kitty&lt;/td&gt;
+						&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Murray&lt;/td&gt;
+						&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
+					&lt;/tr&gt;
+
+					&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+						&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Toni&lt;/td&gt;
+						&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Nichols&lt;/td&gt;
+						&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--error&quot;&gt;Error&lt;/span&gt;&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;/tbody&gt;
+			&lt;/table&gt;
+
+			&lt;div&gt;
+				What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+				specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+				with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using
+				Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#x27;Content here, content here&#x27;, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+				model text, and a search for &#x27;lorem ipsum&#x27; will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Where does it come from? Contrary
+				to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+				the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &quot;de Finibus Bonorum et
+				Malorum&quot; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, comes from a line in section
+				1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from &quot;de Finibus Bonorum et Malorum&quot; by Cicero are also reproduced in their exact original form, accompanied by
+				English versions from the 1914 translation by H. Rackham.
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br&gt;
+&lt;hr class&#x3D;&quot;dc-divider&quot;&gt;
+
+&lt;div class&#x3D;&quot;dc-side-revealer&quot;&gt;
+	&lt;h3&gt;2. The sub content is added directly into the revealer &lt;code&gt;.dc-side-revealer__content&lt;/code&gt;&lt;/h3&gt;
+	&lt;div&gt;
+		&lt;strong&gt;The main content is here.&lt;/strong&gt; What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown printer took a galley
+		of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+		Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when
+		looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#x27;Content here, content here&#x27;, making it look like readable English. Many desktop publishing packages and web page
+		editors now use Lorem Ipsum as their default model text, and a search for &#x27;lorem ipsum&#x27; will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and
+		the like). Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+		College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32
+		and 1.10.33 of &quot;de Finibus Bonorum et Malorum&quot; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;,
+		comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from &quot;de Finibus Bonorum et Malorum&quot; by Cicero are also reproduced in their exact original
+		form, accompanied by English versions from the 1914 translation by H. Rackham.
+	&lt;/div&gt;
+
+	&lt;input class&#x3D;&quot;dc-side-revealer__toggle dc-icon&quot; type&#x3D;&quot;checkbox&quot; /&gt;
+	&lt;div class&#x3D;&quot;dc-side-revealer__content dc-card&quot;&gt;
+		&lt;table class&#x3D;&quot;dc-table&quot;&gt;
+			&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
+				&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+					&lt;th class&#x3D;&quot;dc-table__th dc-table__th--sortable&quot; data-col&#x3D;&quot;First Name&quot;&gt;First Name&lt;span class&#x3D;&quot;dc-table__sorter dc-table__sorter--ascending&quot;&gt;&lt;/th&gt;
+                    &lt;th class&#x3D;&quot;dc-table__th dc-table__th--sortable&quot; data-col&#x3D;&quot;Name&quot;&gt;Last Name&lt;span class&#x3D;&quot;dc-table__sorter dc-table__sorter--descending&quot;&gt;&lt;/th&gt;
+                    &lt;th class&#x3D;&quot;dc-table__th dc-table__th--sortable&quot; data-col&#x3D;&quot;Name&quot;&gt;Status&lt;span class&#x3D;&quot;dc-table__sorter&quot;&gt;&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+
+            &lt;tbody class&#x3D;&quot;dc-table__tbody&quot;&gt;
+                &lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+                    &lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Austin&lt;/td&gt;
+                    &lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Carpenter&lt;/td&gt;
+                    &lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+
+				&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+					&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Eileen&lt;/td&gt;
+					&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holland&lt;/td&gt;
+					&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+
+				&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+					&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Duane&lt;/td&gt;
+					&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holmes&lt;/td&gt;
+					&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+
+				&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+					&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Kitty&lt;/td&gt;
+					&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Murray&lt;/td&gt;
+					&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+
+				&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+					&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Toni&lt;/td&gt;
+					&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Nichols&lt;/td&gt;
+					&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--error&quot;&gt;Error&lt;/span&gt;&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;/tbody&gt;
+		&lt;/table&gt;
+
+		&lt;div&gt;
+			What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+			specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+			with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using
+			Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#x27;Content here, content here&#x27;, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default
+			model text, and a search for &#x27;lorem ipsum&#x27; will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Where does it come from? Contrary
+			to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+			the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &quot;de Finibus Bonorum et
+			Malorum&quot; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, comes from a line in section
+			1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from &quot;de Finibus Bonorum et Malorum&quot; by Cicero are also reproduced in their exact original form, accompanied by English
+			versions from the 1914 translation by H. Rackham.
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group f-item-grouped_groups" id="09-toast">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<div class="f-item-controls">
@@ -1111,27 +1266,27 @@
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-toast-container dc-toast-container--top&quot;&gt;
-	&lt;div class=&quot;dc-toast dc-toast--top&quot;&gt;
-		&lt;div class=&quot;dc-toast__content dc-toast__content--info&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-toast-container dc-toast-container--top&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-toast dc-toast--top&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-toast__content dc-toast__content--info&quot;&gt;
 			Info toast. Be quick, this message will disappear!
 		&lt;/div&gt;
 	&lt;/div&gt;
 
-	&lt;div class=&quot;dc-toast dc-toast--top&quot;&gt;
-		&lt;div class=&quot;dc-toast__content dc-toast__content--success&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-toast dc-toast--top&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-toast__content dc-toast__content--success&quot;&gt;
 			Success toast. Be quick, this message will disappear!
 		&lt;/div&gt;
 	&lt;/div&gt;
 
-	&lt;div class=&quot;dc-toast dc-toast--top&quot;&gt;
-		&lt;div class=&quot;dc-toast__content dc-toast__content--warning&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-toast dc-toast--top&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-toast__content dc-toast__content--warning&quot;&gt;
 			Error toast. Be quick, this message will disappear!
 		&lt;/div&gt;
 	&lt;/div&gt;
 
-	&lt;div class=&quot;dc-toast dc-toast--top&quot;&gt;
-		&lt;div class=&quot;dc-toast__content dc-toast__content--error&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-toast dc-toast--top&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-toast__content dc-toast__content--error&quot;&gt;
 			Warning toast. Be quick, this message will disappear!
 		&lt;/div&gt;
 	&lt;/div&gt;
@@ -1142,7 +1297,7 @@
 </div>
 
 
-<div class="f-item-group" id="09-messages">
+<div class="f-item-group f-item-grouped_groups" id="10-messages">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<div class="f-item-controls">
@@ -1245,83 +1400,83 @@
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-msg dc-msg--info&quot;&gt;
-	&lt;div class=&quot;dc-msg__inner&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-msg dc-msg--info&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-msg__inner&quot;&gt;
 
-		&lt;div class=&quot;dc-msg__icon-frame&quot;&gt;
-			&lt;i class=&quot;dc-icon dc-msg__icon dc-icon--info&quot;&gt;&lt;/i&gt;
+		&lt;div class&#x3D;&quot;dc-msg__icon-frame&quot;&gt;
+			&lt;i class&#x3D;&quot;dc-icon dc-msg__icon dc-icon--info&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 
-		&lt;div class=&quot;dc-msg__bd&quot;&gt;
-			&lt;h1 class=&quot;dc-msg__title&quot;&gt;Info message&lt;/h1&gt;
-			&lt;p class=&quot;dc-msg__text&quot;&gt;
-				Give some more information about what happened. &lt;a href class=&quot;dc-link dc-msg__bd__link&quot; title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
+		&lt;div class&#x3D;&quot;dc-msg__bd&quot;&gt;
+			&lt;h1 class&#x3D;&quot;dc-msg__title&quot;&gt;Info message&lt;/h1&gt;
+			&lt;p class&#x3D;&quot;dc-msg__text&quot;&gt;
+				Give some more information about what happened. &lt;a href class&#x3D;&quot;dc-link dc-msg__bd__link&quot; title&#x3D;&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
 			&lt;/p&gt;
 		&lt;/div&gt;
 
-		&lt;div class=&quot;dc-msg__close&quot;&gt;
-			&lt;i class=&quot;dc-icon dc-icon--close dc-msg__close__icon&quot;&gt;&lt;/i&gt;
+		&lt;div class&#x3D;&quot;dc-msg__close&quot;&gt;
+			&lt;i class&#x3D;&quot;dc-icon dc-icon--close dc-msg__close__icon&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;dc-msg dc-msg--success&quot;&gt;
-	&lt;div class=&quot;dc-msg__inner&quot;&gt;
+&lt;div class&#x3D;&quot;dc-msg dc-msg--success&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-msg__inner&quot;&gt;
 
-		&lt;div class=&quot;dc-msg__icon-frame&quot;&gt;
-			&lt;i class=&quot;dc-icon dc-msg__icon dc-icon--success&quot;&gt;&lt;/i&gt;
+		&lt;div class&#x3D;&quot;dc-msg__icon-frame&quot;&gt;
+			&lt;i class&#x3D;&quot;dc-icon dc-msg__icon dc-icon--success&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 
-		&lt;div class=&quot;dc-msg__bd&quot;&gt;
-			&lt;h1 class=&quot;dc-msg__title&quot;&gt;Success message&lt;/h1&gt;
-			&lt;p class=&quot;dc-msg__text&quot;&gt;
-				Give some more information about what happened. &lt;a href class=&quot;dc-link dc-msg__bd__link&quot; title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
+		&lt;div class&#x3D;&quot;dc-msg__bd&quot;&gt;
+			&lt;h1 class&#x3D;&quot;dc-msg__title&quot;&gt;Success message&lt;/h1&gt;
+			&lt;p class&#x3D;&quot;dc-msg__text&quot;&gt;
+				Give some more information about what happened. &lt;a href class&#x3D;&quot;dc-link dc-msg__bd__link&quot; title&#x3D;&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
 			&lt;/p&gt;
 		&lt;/div&gt;
 
-		&lt;div class=&quot;dc-msg__close&quot;&gt;
-			&lt;i class=&quot;dc-icon dc-icon--close dc-msg__close__icon&quot;&gt;&lt;/i&gt;
+		&lt;div class&#x3D;&quot;dc-msg__close&quot;&gt;
+			&lt;i class&#x3D;&quot;dc-icon dc-icon--close dc-msg__close__icon&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;dc-msg dc-msg--warning&quot;&gt;
-	&lt;div class=&quot;dc-msg__inner&quot;&gt;
+&lt;div class&#x3D;&quot;dc-msg dc-msg--warning&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-msg__inner&quot;&gt;
 
-		&lt;div class=&quot;dc-msg__icon-frame&quot;&gt;
-			&lt;i class=&quot;dc-icon dc-msg__icon dc-icon--warning&quot;&gt;&lt;/i&gt;
+		&lt;div class&#x3D;&quot;dc-msg__icon-frame&quot;&gt;
+			&lt;i class&#x3D;&quot;dc-icon dc-msg__icon dc-icon--warning&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 
-		&lt;div class=&quot;dc-msg__bd&quot;&gt;
-			&lt;h1 class=&quot;dc-msg__title&quot;&gt;Warning message&lt;/h1&gt;
-			&lt;p class=&quot;dc-msg__text&quot;&gt;
-				Give some more information about what happened. &lt;a href class=&quot;dc-link dc-msg__bd__link&quot; title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
+		&lt;div class&#x3D;&quot;dc-msg__bd&quot;&gt;
+			&lt;h1 class&#x3D;&quot;dc-msg__title&quot;&gt;Warning message&lt;/h1&gt;
+			&lt;p class&#x3D;&quot;dc-msg__text&quot;&gt;
+				Give some more information about what happened. &lt;a href class&#x3D;&quot;dc-link dc-msg__bd__link&quot; title&#x3D;&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
 			&lt;/p&gt;
 		&lt;/div&gt;
 
-		&lt;div class=&quot;dc-msg__close&quot;&gt;
-			&lt;i class=&quot;dc-icon dc-icon--close dc-msg__close__icon&quot;&gt;&lt;/i&gt;
+		&lt;div class&#x3D;&quot;dc-msg__close&quot;&gt;
+			&lt;i class&#x3D;&quot;dc-icon dc-icon--close dc-msg__close__icon&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
 
-&lt;div class=&quot;dc-msg dc-msg--error&quot;&gt;
-	&lt;div class=&quot;dc-msg__inner&quot;&gt;
+&lt;div class&#x3D;&quot;dc-msg dc-msg--error&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-msg__inner&quot;&gt;
 
-		&lt;div class=&quot;dc-msg__icon-frame&quot;&gt;
-			&lt;i class=&quot;dc-icon dc-msg__icon dc-icon--error&quot;&gt;&lt;/i&gt;
+		&lt;div class&#x3D;&quot;dc-msg__icon-frame&quot;&gt;
+			&lt;i class&#x3D;&quot;dc-icon dc-msg__icon dc-icon--error&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 
-		&lt;div class=&quot;dc-msg__bd&quot;&gt;
-			&lt;h1 class=&quot;dc-msg__title&quot;&gt;Error message&lt;/h1&gt;
-			&lt;p class=&quot;dc-msg__text&quot;&gt;
-				Give some more information about what happened. &lt;a href class=&quot;dc-link dc-msg__bd__link&quot; title=&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
+		&lt;div class&#x3D;&quot;dc-msg__bd&quot;&gt;
+			&lt;h1 class&#x3D;&quot;dc-msg__title&quot;&gt;Error message&lt;/h1&gt;
+			&lt;p class&#x3D;&quot;dc-msg__text&quot;&gt;
+				Give some more information about what happened. &lt;a href class&#x3D;&quot;dc-link dc-msg__bd__link&quot; title&#x3D;&quot;tooltip&quot;&gt;Also, here&#x27;s a link. Boo!&lt;/a&gt;
 			&lt;/p&gt;
 		&lt;/div&gt;
 
-		&lt;div class=&quot;dc-msg__close&quot;&gt;
-			&lt;i class=&quot;dc-icon dc-icon--close dc-msg__close__icon&quot;&gt;&lt;/i&gt;
+		&lt;div class&#x3D;&quot;dc-msg__close&quot;&gt;
+			&lt;i class&#x3D;&quot;dc-icon dc-icon--close dc-msg__close__icon&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -1331,7 +1486,204 @@
 </div>
 
 
-<div class="f-item-group" id="10-breadcrumb">
+<div class="f-item-group f-item-grouped_groups" id="11-accordions">
+
+	<div class="f-item-heading-group">
+		<h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Accordions</h2>
+	</div>
+		<div class="f-item-group" id="11-accordions.01-accordion">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Accordion</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Use accordions to separate content into logical sections.</p>
+<p><code>dc-accordion__item</code> is logically separated into two sections <code>dc-accordion__header</code> and <code>dc-accordion__content</code></p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-accordion">
+	<div class="dc-accordion__item">
+		<header class="dc-accordion__header">
+			Accordion 1
+		</header>
+		<div class="dc-accordion__content">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+		</div>
+	</div>
+	<div class="dc-accordion__item">
+		<header class="dc-accordion__header">
+			Accordion 2
+		</header>
+		<div class="dc-accordion__content">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+		</div>
+	</div>
+	<div class="dc-accordion__item">
+		<header for="accordion-3" class="dc-accordion__header">
+			Accordion 3
+		</header>
+		<div class="dc-accordion__content">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+		</div>
+	</div>
+	<div class="dc-accordion__item">
+		<header class="dc-accordion__header">
+			Accordion 4
+		</header>
+		<div class="dc-accordion__content">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-accordion&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-accordion__item&quot;&gt;
+		&lt;header class&#x3D;&quot;dc-accordion__header&quot;&gt;
+			Accordion 1
+		&lt;/header&gt;
+		&lt;div class&#x3D;&quot;dc-accordion__content&quot;&gt;
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-accordion__item&quot;&gt;
+		&lt;header class&#x3D;&quot;dc-accordion__header&quot;&gt;
+			Accordion 2
+		&lt;/header&gt;
+		&lt;div class&#x3D;&quot;dc-accordion__content&quot;&gt;
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-accordion__item&quot;&gt;
+		&lt;header for&#x3D;&quot;accordion-3&quot; class&#x3D;&quot;dc-accordion__header&quot;&gt;
+			Accordion 3
+		&lt;/header&gt;
+		&lt;div class&#x3D;&quot;dc-accordion__content&quot;&gt;
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-accordion__item&quot;&gt;
+		&lt;header class&#x3D;&quot;dc-accordion__header&quot;&gt;
+			Accordion 4
+		&lt;/header&gt;
+		&lt;div class&#x3D;&quot;dc-accordion__content&quot;&gt;
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="11-accordions.02-options">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Options</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p><code>dc-accordion__item--is-open</code>: To show <code>dc-accordion__content</code></p>
+<p><code>dc-accordion__item--is-active</code>: To show outline around <code>dc-accordion__item</code></p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-accordion">
+	<div class="dc-accordion__item  dc-accordion__item--is-open">
+		<header class="dc-accordion__header">
+			Accordion 1
+		</header>
+		<div class="dc-accordion__content">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+		</div>
+	</div>
+	<div class="dc-accordion__item">
+		<header class="dc-accordion__header">
+			Accordion 2
+		</header>
+		<div class="dc-accordion__content">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+		</div>
+	</div>
+	<div class="dc-accordion__item">
+		<header for="accordion-3" class="dc-accordion__header">
+			Accordion 3
+		</header>
+		<div class="dc-accordion__content">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+		</div>
+	</div>
+	<div class="dc-accordion__item dc-accordion__item--is-open dc-accordion__item--is-active">
+		<header class="dc-accordion__header">
+			Accordion 4
+		</header>
+		<div class="dc-accordion__content">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-accordion&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-accordion__item  dc-accordion__item--is-open&quot;&gt;
+		&lt;header class&#x3D;&quot;dc-accordion__header&quot;&gt;
+			Accordion 1
+		&lt;/header&gt;
+		&lt;div class&#x3D;&quot;dc-accordion__content&quot;&gt;
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-accordion__item&quot;&gt;
+		&lt;header class&#x3D;&quot;dc-accordion__header&quot;&gt;
+			Accordion 2
+		&lt;/header&gt;
+		&lt;div class&#x3D;&quot;dc-accordion__content&quot;&gt;
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-accordion__item&quot;&gt;
+		&lt;header for&#x3D;&quot;accordion-3&quot; class&#x3D;&quot;dc-accordion__header&quot;&gt;
+			Accordion 3
+		&lt;/header&gt;
+		&lt;div class&#x3D;&quot;dc-accordion__content&quot;&gt;
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-accordion__item dc-accordion__item--is-open dc-accordion__item--is-active&quot;&gt;
+		&lt;header class&#x3D;&quot;dc-accordion__header&quot;&gt;
+			Accordion 4
+		&lt;/header&gt;
+		&lt;div class&#x3D;&quot;dc-accordion__content&quot;&gt;
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group f-item-grouped_groups" id="11-breadcrumb">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<div class="f-item-controls">
@@ -1353,11 +1705,11 @@
 </ul>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;ul class=&quot;dc-breadcrumb&quot;&gt;
-	&lt;li class=&quot;dc-breadcrumb__item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;dc-link&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
-	&lt;li class=&quot;dc-breadcrumb__item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;dc-link&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
-	&lt;li class=&quot;dc-breadcrumb__item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;dc-link&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
-	&lt;li class=&quot;dc-breadcrumb__item&quot;&gt;Current&lt;/li&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;ul class&#x3D;&quot;dc-breadcrumb&quot;&gt;
+	&lt;li class&#x3D;&quot;dc-breadcrumb__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;dc-link&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-breadcrumb__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;dc-link&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-breadcrumb__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;dc-link&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-breadcrumb__item&quot;&gt;Current&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 </div>
 
@@ -1365,8 +1717,153 @@
 </div>
 
 
+<div class="f-item-group f-item-grouped_groups" id="12-pagination">
 
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
 		</div>
+		<h2 class="dc-h2 f-item-heading">Pagination</h2>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Use <code>dc-pagination</code> as container, each button should have <code>dc-pagination-btn</code> class applied.</p>
+<p>Active button can be highlighted with <code>dc-pagination-btn--active</code> modifier class.</p>
+<p>Buttons can be disabled by adding <code>dc-pagination-btn--disabled</code> modifier class.</p>
+<p>As shown below, optionally, you can add an icon button in-between to have hidden page range in the navigation.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-pagination">
+	<button class="dc-btn dc-pagination-btn">
+    <icon class="dc-icon dc-icon--btn dc-icon--arrow-left"></icon>
+  </button>
+	<button class="dc-btn dc-pagination-btn">
+    1
+  </button>
+	<button class="dc-btn dc-pagination-btn dc-pagination-btn--active">
+    2
+  </button>
+	<button class="dc-btn dc-pagination-btn">
+    3
+  </button>
+	<button class="dc-btn dc-pagination-btn">
+    4
+  </button>
+	<button class="dc-btn dc-pagination-btn dc-pagination-btn--disabled">
+    <icon class="dc-icon dc-icon--more"></icon>
+  </button>
+	<button class="dc-btn dc-pagination-btn">
+    10
+  </button>
+	<button class="dc-btn dc-pagination-btn">
+    <icon class="dc-icon dc-icon--btn dc-icon--arrow-right"></icon>
+  </button>
+</div>
+
+<div class="dc-pagination">
+	<button class="dc-btn dc-pagination-btn">
+    <icon class="dc-icon dc-icon--btn dc-icon--arrow-left"></icon>
+  </button>
+	<button class="dc-btn dc-pagination-btn">
+    1
+  </button>
+	<button class="dc-btn dc-pagination-btn dc-pagination-btn--disabled">
+    <icon class="dc-icon dc-icon--more"></icon>
+  </button>
+	<button class="dc-btn dc-pagination-btn">
+    5
+  </button>
+	<button class="dc-btn dc-pagination-btn dc-pagination-btn--active">
+    6
+  </button>
+	<button class="dc-btn dc-pagination-btn">
+    7
+  </button>
+	<button class="dc-btn dc-pagination-btn dc-pagination-btn--disabled">
+    <icon class="dc-icon dc-icon--more"></icon>
+  </button>
+	<button class="dc-btn dc-pagination-btn">
+    10
+  </button>
+	<button class="dc-btn dc-pagination-btn">
+    <icon class="dc-icon dc-icon--btn dc-icon--arrow-right"></icon>
+  </button>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-pagination&quot;&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-pagination-btn&quot;&gt;
+    &lt;icon class&#x3D;&quot;dc-icon dc-icon--btn dc-icon--arrow-left&quot;&gt;&lt;/icon&gt;
+  &lt;/button&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-pagination-btn&quot;&gt;
+    1
+  &lt;/button&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-pagination-btn dc-pagination-btn--active&quot;&gt;
+    2
+  &lt;/button&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-pagination-btn&quot;&gt;
+    3
+  &lt;/button&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-pagination-btn&quot;&gt;
+    4
+  &lt;/button&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-pagination-btn dc-pagination-btn--disabled&quot;&gt;
+    &lt;icon class&#x3D;&quot;dc-icon dc-icon--more&quot;&gt;&lt;/icon&gt;
+  &lt;/button&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-pagination-btn&quot;&gt;
+    10
+  &lt;/button&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-pagination-btn&quot;&gt;
+    &lt;icon class&#x3D;&quot;dc-icon dc-icon--btn dc-icon--arrow-right&quot;&gt;&lt;/icon&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;dc-pagination&quot;&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-pagination-btn&quot;&gt;
+    &lt;icon class&#x3D;&quot;dc-icon dc-icon--btn dc-icon--arrow-left&quot;&gt;&lt;/icon&gt;
+  &lt;/button&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-pagination-btn&quot;&gt;
+    1
+  &lt;/button&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-pagination-btn dc-pagination-btn--disabled&quot;&gt;
+    &lt;icon class&#x3D;&quot;dc-icon dc-icon--more&quot;&gt;&lt;/icon&gt;
+  &lt;/button&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-pagination-btn&quot;&gt;
+    5
+  &lt;/button&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-pagination-btn dc-pagination-btn--active&quot;&gt;
+    6
+  &lt;/button&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-pagination-btn&quot;&gt;
+    7
+  &lt;/button&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-pagination-btn dc-pagination-btn--disabled&quot;&gt;
+    &lt;icon class&#x3D;&quot;dc-icon dc-icon--more&quot;&gt;&lt;/icon&gt;
+  &lt;/button&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-pagination-btn&quot;&gt;
+    10
+  &lt;/button&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-pagination-btn&quot;&gt;
+    &lt;icon class&#x3D;&quot;dc-icon dc-icon--btn dc-icon--arrow-right&quot;&gt;&lt;/icon&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+
+		    </div>
+        </div>
 		<div class="dc-grid"></div>
 
 		<script src="/dress-code/assets/scripts/main.js"></script>

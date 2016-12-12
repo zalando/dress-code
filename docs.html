@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="f-menu-active">
 <head>
 
 	<meta charset="utf-8">
@@ -11,15 +11,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic|Ubuntu+Mono" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="/dress-code/assets/styles/main.css">
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <link rel="icon" href="favicon.ico">
 </head>
 <body class="dc-body--demo-breakpoints">
+
 		<header class="f-header">
-			<img class="f-logo" src="/dress-code/assets/img/zalando-logo.svg" alt="Zalando Logo">
+			<img class="f-logo" src="/dress-code/assets/img/zalando-logo.svg" alt="Zalando">
 			<div class="f-control f-menu-toggle">
 			    <i class="dc-icon dc-icon--menu"></i>
 			</div>
@@ -89,19 +89,22 @@
 					</ul>
 				</li>
 				<li>
-					<a href="02-grid.html" class="f-menu__heading">Grid</a>
+					<a href="02-structure-and-grid.html" class="f-menu__heading">Structure And Grid</a>
 					<ul>
 						<li>
-							<a href="02-grid.html#01-Grid">Grid</a>
+							<a href="02-structure-and-grid.html#01-page-structure">Page Structure</a>
 						</li>
 						<li>
-							<a href="02-grid.html#02-horizontal-alignment">Horizontal Alignment</a>
+							<a href="02-structure-and-grid.html#02-grid">Grid</a>
 						</li>
 						<li>
-							<a href="02-grid.html#03-vertical-alignment">Vertical Alignment</a>
+							<a href="02-structure-and-grid.html#03-horizontal-alignment">Horizontal Alignment</a>
 						</li>
 						<li>
-							<a href="02-grid.html#04-scss-reference">Scss Reference</a>
+							<a href="02-structure-and-grid.html#04-scss-reference">Scss Reference</a>
+						</li>
+						<li>
+							<a href="02-structure-and-grid.html#05-vertical-alignment">Vertical Alignment</a>
 						</li>
 					</ul>
 				</li>
@@ -115,10 +118,10 @@
 							<a href="03-atoms.html#card">Card</a>
 						</li>
 						<li>
-							<a href="03-atoms.html#checkboxes">Checkboxes</a>
+							<a href="03-atoms.html#divider">Divider</a>
 						</li>
 						<li>
-							<a href="03-atoms.html#divider">Divider</a>
+							<a href="03-atoms.html#forms">Forms</a>
 						</li>
 						<li>
 							<a href="03-atoms.html#icons">Icons</a>
@@ -136,25 +139,16 @@
 							<a href="03-atoms.html#paragraph">Paragraph</a>
 						</li>
 						<li>
-							<a href="03-atoms.html#radio-button">Radio Button</a>
-						</li>
-						<li>
-							<a href="03-atoms.html#select">Select</a>
-						</li>
-						<li>
 							<a href="03-atoms.html#spinner">Spinner</a>
 						</li>
 						<li>
 							<a href="03-atoms.html#status">Status</a>
 						</li>
 						<li>
-							<a href="03-atoms.html#table">Table</a>
+							<a href="03-atoms.html#tables">Tables</a>
 						</li>
 						<li>
-							<a href="03-atoms.html#text-input">Text Input</a>
-						</li>
-						<li>
-							<a href="03-atoms.html#textarea">Textarea</a>
+							<a href="03-atoms.html#tooltip">Tooltip</a>
 						</li>
 					</ul>
 				</li>
@@ -177,19 +171,36 @@
 							<a href="04-molecules.html#05-search-form">Search Form</a>
 						</li>
 						<li>
-							<a href="04-molecules.html#06-tooltip">Tooltip</a>
-						</li>
-						<li>
 							<a href="04-molecules.html#07-dialog">Dialog</a>
 						</li>
 						<li>
-							<a href="04-molecules.html#08-toast">Toast</a>
+							<a href="04-molecules.html#08-side-revealer">Side Revealer</a>
 						</li>
 						<li>
-							<a href="04-molecules.html#09-messages">Messages</a>
+							<a href="04-molecules.html#09-toast">Toast</a>
 						</li>
 						<li>
-							<a href="04-molecules.html#10-breadcrumb">Breadcrumb</a>
+							<a href="04-molecules.html#10-messages">Messages</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#11-accordions">Accordions</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#11-breadcrumb">Breadcrumb</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#12-pagination">Pagination</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="05-guidelines.html" class="f-menu__heading">Guidelines</a>
+					<ul>
+						<li>
+							<a href="05-guidelines.html#01-date-time-format">Date Time Format</a>
+						</li>
+						<li>
+							<a href="05-guidelines.html#02-number-format">Number Format</a>
 						</li>
 					</ul>
 				</li>
@@ -215,7 +226,8 @@
 		
 		</div>
 		<!-- /fabricator menu -->
-		<div class="f-container">
+		<div class="f-container dc-page">
+            <div class="dc-container dc-container--limited">
 
 
 	
@@ -352,55 +364,27 @@ users to modify their code with this commit.</p>
 	<h1>RELEASING</h1>
 <h3>Step by step instructions to release a new version of the dress-code.</h3>
 <ol>
-<li>From the develop branch, move into a new release branch. The <code>&lt;semver&gt;</code> placeholder stay for a new semantic version (e.g. 0.4.1).
-For more info, please take a look <a href="http://semver.org/">here</a>.</li>
+<li>Pull latest from the <code>develop</code> branch and run the following command. Ensure that you follow the
+<a href="http://semver.org/">semver specification</a>.</li>
 </ol>
-<pre><code>git checkout -b release/&lt;semver&gt;
+<pre><code>npm run release [&lt;newversion&gt; | major | minor | patch]
 </code></pre>
 <ol start="2">
-<li>Run the build.</li>
+<li>Open a PR from <code>develop</code> to <code>master</code> using the release branch that was just pushed.</li>
 </ol>
-<pre><code>npm run build
-</code></pre>
 <ol start="3">
-<li>Increase <code>bower.json</code> and <code>package.json</code> <semver> version and run the task that updates the changelog.</li>
+<li>After the PR is merged, pull the <code>master</code> branch and deploy <a href="http://zalando.github.io/dress-code/">docs/demo</a> artifacts.</li>
 </ol>
-<pre><code>npm run changelog
-</code></pre>
-<ol start="4">
-<li>Check the result and if needed adjust the output (<code>CHANGELOG.md</code>).
-When done, commit the changes and push the release branch.</li>
-</ol>
-<pre><code>git add --all;
-git commit -m &quot;chore(release): &lt;semver&gt;&quot;;
-git push -u;
-</code></pre>
-<ol start="5">
-<li><strong>Wait the CI job running on <a href="https://travis-ci.org/zalando/dress-code/builds">Travis</a>.</strong></li>
-</ol>
-<p>When the CI job pass with SUCCESS, merge or rebase the release branch on top of the master branch.</p>
 <pre><code>git checkout master;
 git pull;
-git rebase release/&lt;semver&gt;; # or open a pull request to master
+npm run deploy:demo;
 </code></pre>
-<ol start="6">
-<li>Add a git tag, push the master branch and the new tag.</li>
-</ol>
-<pre><code>git tag -a &lt;semver&gt; -m &quot;&lt;semver&gt;&quot;;
-git push origin master;
-git push origin &lt;semver&gt;; # push the tag
-</code></pre>
-<ol start="7">
-<li>Build and deploy demo <a href="http://zalando.github.io/dress-code/">docs/demo</a> artifacts.</li>
-</ol>
-<pre><code>npm run deploy:demo;
-</code></pre>
-<ol start="8">
-<li>Publish on npm registry.</li>
+<ol start="4">
+<li>Publish on npm registry. After publish completes, both <code>npm</code> and <code>bower</code> versions will be verified.</li>
 </ol>
 <pre><code>npm publish
 </code></pre>
-<ol start="9">
+<ol start="5">
 <li>Keep in sync the develop branch.</li>
 </ol>
 <pre><code>git checkout develop;
@@ -412,7 +396,8 @@ git push origin develop;
 
 
 
-		</div>
+		    </div>
+        </div>
 		<div class="dc-grid"></div>
 
 		<script src="/dress-code/assets/scripts/main.js"></script>
