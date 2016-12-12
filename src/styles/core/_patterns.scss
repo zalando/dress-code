@@ -154,9 +154,9 @@
 }
 
 @mixin dc--text-truncate {
+    text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 @mixin dc--no-wrap {

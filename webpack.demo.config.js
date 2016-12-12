@@ -7,7 +7,7 @@ module.exports = function(mode) {
 
 	var config = {
 		entry: {
-			'scripts/main': './docs/demo/assets/scripts/fabricator.js'
+			'scripts/main': './docs/demo/assets/scripts/index.js'
 		},
 		output: {
 			path: path.resolve(__dirname, '.tmp/.demo', 'assets'),
@@ -17,7 +17,7 @@ module.exports = function(mode) {
 			loaders: [
 				{
 					test: /\.js$/,
-					exclude: /(node_modules|prism\.js)/,
+					exclude: /(node_modules)/,
 					loaders: ['babel-loader']
 				}
 			]
@@ -31,7 +31,7 @@ module.exports = function(mode) {
 			new webpack.optimize.UglifyJsPlugin()
 		);
 	}
-
+	
 	return config;
 
 };

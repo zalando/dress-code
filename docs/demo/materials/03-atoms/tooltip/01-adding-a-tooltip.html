@@ -1,0 +1,59 @@
+---
+name: Adding a tooltip
+title: Adding tooltip
+notes: |
+
+    Apply the class ```dc--has-tooltip``` class and a positioning class (ex. ```dc--has-tooltip--left```) to  any element show a tooltip when hovering.
+
+    The attribute ```data--dc-has-tooltip``` must be present and not empty: the value will be used as the content for the tooltip body.
+
+    The tooltip implementation is based significantly on [hint.css](http://kushagragour.in/lab/hint/).
+---
+
+<div class="sg-has-tooltip-section">
+    <div class="sg-has-tooltip-section__box">
+        <button class="dc-btn dc--has-tooltip dc--has-tooltip--bottom-right" data-dc-has-tooltip="Hi. I'm a tooltip">
+            bottom-right
+        </button>
+    </div>
+    <div class="sg-has-tooltip-section__box">
+        <button class="dc-btn dc--has-tooltip dc--has-tooltip--bottom" data-dc-has-tooltip="Hi. I'm a tooltip">
+            bottom
+        </button>
+    </div>
+    <div class="sg-has-tooltip-section__box">
+        <button class="dc-btn dc--has-tooltip dc--has-tooltip--bottom-left" data-dc-has-tooltip="Hi. I'm a tooltip">
+            bottom-left
+        </button>
+    </div>
+    <div class="sg-has-tooltip-section__box">
+        <button class="dc-btn dc--has-tooltip dc--has-tooltip--right" data-dc-has-tooltip="Hi. I'm a tooltip">
+            right
+        </button>
+    </div>
+    <div class="sg-has-tooltip-section__box">
+        <button class="dc-btn">
+            .
+        </button>
+    </div>
+    <div class="sg-has-tooltip-section__box">
+        <button class="dc-btn dc--has-tooltip dc--has-tooltip--left" data-dc-has-tooltip="Hi. I'm a tooltip">
+            left
+        </button>
+    </div>
+    <div class="sg-has-tooltip-section__box">
+        <button class="dc-btn dc--has-tooltip dc--has-tooltip--top-right" data-dc-has-tooltip="Hi. I'm a tooltip">
+            top-right
+        </button>
+    </div>
+    <div class="sg-has-tooltip-section__box">
+        <button class="dc-btn dc--has-tooltip dc--has-tooltip--top" data-dc-has-tooltip="Hi. I'm a tooltip">
+            top
+        </button>
+    </div>
+    <div class="sg-has-tooltip-section__box">
+        <button class="dc-btn dc--has-tooltip dc--has-tooltip--top-left" data-dc-has-tooltip="Hi. I'm a tooltip">
+            top-left
+        </button>
+    </div>
+</div>

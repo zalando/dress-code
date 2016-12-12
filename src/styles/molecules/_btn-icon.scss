@@ -6,12 +6,12 @@
 //  -----------------------------------------------------------------------------
 
 @mixin dc-icon--btn {
-    float: left;
     display: block;
     margin-top: .22rem;
-    line-height: .8rem;
     margin-right: 0;
     margin-left: 0;
+    float: left;
+    line-height: .8rem;
 }
 
 @mixin dc-icon--btn--left {

@@ -10,7 +10,7 @@
 var pkg = require('../package.json');
 var path = require('path');
 var _ = require('lodash');
-var del = require('del');
+var rimraf = require('rimraf');
 var gulp = require('gulp');
 var runSequence = require('run-sequence');
 var csso = require('gulp-csso');
@@ -29,7 +29,7 @@ gulp.task('dist', function (done) {
 
 // build all distribution artifacts in a tmp folder
 gulp.task('dist:build', function (done) {
-    return runSequence('dist:clean', ['dist:styles', 'dist:styles:src', 'dist:images', 'dist:icons'], done);
+    return runSequence('dist:clean', 'dist:icons', ['dist:styles', 'dist:styles:src', 'dist:images'], done);
 });
 
 gulp.task('dist:copy-dist', function () {
@@ -38,17 +38,17 @@ gulp.task('dist:copy-dist', function () {
 });
 
 gulp.task('dist:clean-dist', function (done) {
-    return del(['dist'], done);
+    return rimraf('dist', done);
 });
 
 gulp.task('dist:clean', function (done) {
-    return del(['.tmp/dist'], done);
+    return rimraf('.tmp/dist', done);
 });
 
 gulp.task('dist:styles', function () {
     return gulp.src('./src/styles/index.scss')
         .pipe(helper.sass())
-        .pipe(autoprefixer('last 1 version'))
+        .pipe(autoprefixer('last 2 version'))
         .pipe(rename(pkg.name + '.css'))
         .pipe(gulp.dest(path.join('.tmp/dist', 'css')))
         // minified

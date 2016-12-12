@@ -1,0 +1,131 @@
+@mixin dc-accordion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+@mixin dc-accordion__item {
+    display: block;
+    border: $dc-border50 solid $dc-gray70;
+    background-color: $dc-white;
+
+    &:not(:last-child) {
+        border-bottom: 0;
+    }
+}
+
+@mixin dc-accordion__item--is-open(
+    $accordion-header-selector: "dc-accordion__header",
+    $accordion-content-selector: "dc-accordion__content"
+) {
+    background-color: $dc-white;
+
+    .#{$accordion-content-selector} {
+        display: block;
+    }
+
+    .#{$accordion-header-selector} {
+        border-bottom: $dc-border50 solid $dc-gray70;
+
+        &:after {
+            @include dc-accordion__triangle--up;
+        }
+    }
+}
+
+@mixin dc-accordion__item--is-active {
+    border: $dc-border50 solid $dc-blue40;
+    background-color: $dc-white;
+}
+
+@mixin dc-accordion__header {
+    display: flex;
+    position: relative;
+    padding: $dc-space100;
+    font-weight: $dc-bold-font-weight;
+    cursor: pointer;
+
+    @include dc-icon;
+    @include dc-accordion__header-icon;
+
+    &:hover {
+        background-color: lighten($dc-blue80, 3%);
+    }
+
+    &:after {
+        @include dc-accordion__triangle;
+        @include dc-accordion__triangle--down;
+    }
+}
+
+@mixin dc-accordion__content {
+    display: none;
+    padding: $dc-space100;
+}
+
+@mixin dc-accordion__header-icon {
+    &:before {
+        position: absolute;
+        right: 0;
+        margin-right: $dc-space100;
+        font-size: $dc-font50 * .01;
+    }
+}
+
+@mixin dc-accordion__triangle {
+    display: inline-block;
+    position: absolute;
+    top: 2.2rem;
+    right: 1.6rem;
+    width: 0;
+    height: 0;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    overflow: visible;
+    vertical-align: middle;
+}
+
+@mixin dc-accordion__triangle--down {
+    border-top: 5px dashed;
+}
+
+@mixin dc-accordion__triangle--up {
+    border-top: 0;
+    border-bottom: 5px dashed;
+}
+
+@mixin dc-accordion-selectors {
+
+    .dc-accordion {
+        @include dc-accordion;
+    }
+
+    .dc-accordion__item {
+        @include dc-accordion__item;
+    }
+
+    .dc-accordion__item--is-active {
+        @include dc-accordion__item--is-active;
+    }
+
+    .dc-accordion__item--is-open {
+        @include dc-accordion__item--is-open;
+    }
+
+    .dc-accordion__header {
+        @include dc-accordion__header;
+    }
+
+    .dc-accordion__content {
+        @include dc-accordion__content;
+    }
+
+    .dc-accordion__triangle--up {
+        @include dc-accordion__triangle--up;
+    }
+
+    .dc-accordion__triangle--down {
+        @include dc-accordion__triangle--down;
+    }
+}

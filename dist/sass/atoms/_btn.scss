@@ -15,17 +15,13 @@
     text-decoration: none;
     text-transform: capitalize;
     box-shadow: 0 1px 1px transparent;
-    cursor: default;
+    cursor: pointer;
     vertical-align: top;
 
     &:focus {
         outline: none;
     }
 
-    @content;
-}
-
-@mixin dc-btn--no-touch {
     &:hover {
         outline: 0;
         background: linear-gradient($dc-white, darken($dc-white, 5%));
@@ -34,47 +30,23 @@
         box-shadow: 0 1px 1px rgba($dc-black, .2);
     }
 
-    &:active {
-        background: darken($dc-white, 4%);
-        color: $dc-gray10;
-        text-decoration: none;
-        box-shadow: inset 0 1px 1px rgba($dc-black, .1);
-    }
-}
-
-
-@mixin dc-btn--touch {
-    &:active {
-        background: darken($dc-white, 4%);
-        color: $dc-gray10;
-        text-decoration: none;
-        box-shadow: inset 0 1px 1px rgba($dc-black, .1);
-    }
+    @content;
 }
 
 //  = LINK BUTTON
 //  ---------------------------------------------------------------------------
 @mixin _dc-btn--link-reset {
+    border: 1px solid transparent;
     background: transparent;
     box-shadow: none;
-    border: 1px solid transparent;
 }
 
 @mixin dc-btn--link {
     @include _dc-btn--link-reset;
-    color: $dc-link-color;
     transition: color .1s linear;
-}
+    color: $dc-link-color;
 
-@mixin dc-btn--link--no-touch {
     &:hover {
-        @include _dc-btn--link-reset;
-        color: $dc-link-color-hover;
-    }
-}
-
-@mixin dc-btn--link--touch {
-    &:active {
         @include _dc-btn--link-reset;
         color: $dc-link-color-hover;
     }
@@ -97,16 +69,7 @@
     border-color: darken($dc-blue40, 7%);
     background: linear-gradient($dc-blue40, darken($dc-blue40, 7%));
     color: $dc-white;
-}
 
-@mixin dc-btn--primary--touch {
-    &:active {
-        background: lighten($dc-blue40, 3%);
-        color: $dc-white;
-    }
-}
-
-@mixin dc-btn--primary--no-touch {
     &:hover {
         background: lighten($dc-blue40, 3%);
         color: $dc-white;
@@ -118,17 +81,13 @@
 
 @mixin dc-btn--destroy {
     transition: box-shadow .2s linear;
-}
 
-@mixin dc-btn--destroy--touch {
     &:active {
         border-color: $dc-red40;
         background: $dc-red50;
         color: $dc-white;
     }
-}
 
-@mixin dc-btn--destroy--no-touch {
     &:hover {
         border-color: $dc-red40;
         background: $dc-red50;
@@ -144,18 +103,7 @@
     background: transparent;
     color: $dc-gray50;
     box-shadow: none;
-}
-
-@mixin dc-btn--disabled--touch {
-    &:active {
-        @include dc-btn--disabled;
-    }
-}
-
-@mixin dc-btn--disabled--no-touch {
-    &:hover {
-        @include dc-btn--disabled;
-    }
+    pointer-events: none;
 }
 
 //  = ACTIVE
@@ -166,26 +114,15 @@
     box-shadow: inset 0 1px 1px rgba($dc-black, .2);
 }
 
-@mixin dc-btn--active--no-touch {
-    &:hover {
-        @include dc-btn--active;
-    }
-}
-
 //  = SMALL BUTTON
 //  ---------------------------------------------------------------------------
 
 @mixin dc-btn--small {
-    padding: $dc-space100 - .1 $dc-space100;
-    font-size: 1.4rem;
-    @content;
-}
-
-@mixin dc-btn--small--no-touch {
     padding: $dc-space50 $dc-space75;
     font-size: $dc-font50;
     font-weight: $dc-normal-font-weight;
     text-transform: uppercase;
+    @content;
 }
 
 //  = INLINE BUTTON
@@ -240,31 +177,18 @@
 
 @mixin dc-btn-selectors {
     .dc-btn {  @include dc-btn;  }
-    .no-touch .dc-btn {  @include dc-btn--no-touch;  }
-    .touch .dc-btn {  @include dc-btn--touch;  }
 
     .dc-btn--link {  @include dc-btn--link;  }
-    .touch .dc-btn--link {  @include dc-btn--link--touch;  }
-    .no-touch .dc-btn--link {  @include dc-btn--link--no-touch;  }
 
     .dc-btn--primary {  @include dc-btn--primary;  }
-    .no-touch .dc-btn--primary {  @include dc-btn--primary--no-touch;  }
-    .touch .dc-btn-primary {  @include dc-btn--primary--touch;  }
 
     .dc-btn--destroy {  @include dc-btn--destroy; }
-    .no-touch .dc-btn--destroy { @include dc-btn--destroy--no-touch; }
-    .touch .dc-btn--destroy { @include dc-btn--destroy--touch; }
 
     .dc-btn--disabled { @include dc-btn--disabled; }
-    .touch .dc-btn--disabled { @include dc-btn--disabled--touch; }
-    .no-touch .dc-btn--disabled { @include dc-btn--disabled--no-touch; }
 
     .dc-btn--active { @include dc-btn--active; }
-    .no-touch .dc-btn--active { @include dc-btn--active--no-touch; }
 
     .dc-btn--small {  @include dc-btn--small;  }
-
-    .no-touch .dc-btn--small { @include dc-btn--small--no-touch; }
 
     .dc-btn--inline {  @include dc-btn--inline;  }
 

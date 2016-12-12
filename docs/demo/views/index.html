@@ -4,40 +4,35 @@ fabricator: true
 ---
 
 
-<h1 class="dc-h1">The Dress Code</h1>
+<h1 class="dc-h1">Dress Code</h1>
+<section class="dc-card">
+<p class="dc-p">Dress Code is a style guide and pattern library for building websites rapidly, designed for maintainability and modularity. It was initially conceived as a styleguide for <a href="https://tech.zalando.de/">Zalando</a>'s Brand Solutions applications.</p>
+<p class="dc-p">Component organization is based on atomic design. The style is written in SASS, class naming follows BEM, and properties are ordered according to SMACSS.</p>
 
-<p class="dc-p">The Dress Code is a framework agnostic, atomic design, BEM, style library which is designed for maintainability and modularity.
-  <br>Dress Code follows BEM naming convention.
-  <br>By using Dress Code you can quickly create prototypes and sites or apps that work on all devices.</p>
+<h2 class="dc-h2">Installation</h2>
 
-<h2 class="dc-h2">Requirements</h2>
-
-<p class="dc-p">modernizer ~2.8.2 included in the <head> of your web page.</p>
-
-<h2 class="dc-h2">Install</h2>
-
-<h3 class="dc-h3">with Bower</h3>
+<h3 class="dc-h3">via Bower</h3>
 
 <p class="dc-p"><pre class="dc-pre language-markup"><code class="language-markup">bower install dress-code --save</code></pre></p>
 
-<h3 class="dc-h3">with Npm</h3>
+<h3 class="dc-h3">via npm</h3>
 
 <p class="dc-p"><pre class="dc-pre language-markup"><code class="language-markup">npm install dress-code --save</code></pre></p>
 
 
 <h2 class="dc-h2">Usage</h2>
 
-<p class="dc-p">Start by adding the following files to your page:</p>
-
-<pre class="dc-pre language-markup"><code class="language-markup">&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js&quot;&gt;&lt;/script&gt;</code></pre>
-
-Include this in your &lt;head&gt;:
-
+<h3 class="dc-h3">Using precompiled CSS</h3>
+<p class="dc-p">If you just want to use Dress Code CSS in your project, use the files in the /dist/css/ folder. </p>
 <pre class="dc-pre language-markup"><code class="language-markup">
 &lt;link href="bower_components/dress-code/dist/css/dress-code.min.css" rel="stylesheet"&gt;
 </code></pre>
+<p class="dc-p">or</p>
+<pre class="dc-pre language-markup"><code class="language-markup">
+&lt;link href="node_modules/dress-code/dist/css/dress-code.min.css" rel="stylesheet"&gt;
+</code></pre>
 
-<h3 class="dc-h3">How to use dress-code SASS</h3>
+<h3 class="dc-h3">Compiling the SASS by yourself</h3>
 
 <p class="dc-p">You can compile the dress code by your own using a sass compiler.
 
@@ -45,15 +40,18 @@ Include this in your &lt;head&gt;:
     @import "node_modules/breakpoint-sass/stylesheets/breakpoint" // this is a required dependency, load this before loading the dress-code
     @import "node_modules/dress-code/dist/sass/dress-code" // or bower_components/dress-code/dist/sass/dress-code
     @include dc-everything; // output dc-* selectors</code></pre>
-the dress-code rely on breakpoint-sass to manage media queries more easily, please be sure that the plugin/scss module is loaded before trying to compile the dress-code stuff.
+
+<p>Dress Code relies on <code>breakpoint-sass</code> to manage media queries. Please make sure that this module is loaded before trying to compile Dress Code SASS..</p>
 </p>
-<h3 class="dc-h3">Compass notes</h3>
+
+<h3 class="dc-h3">If you're using Compass</h3>
 
 <p class="dc-p">
-  Note for those using compass. Add this to yours config.rb file:
+  Add this to yours config.rb file:
 
   <pre class="dc-pre language-markup"><code class="language-markup">add_import_path "bower_components"</code></pre>
   Then you can import the dress-code like so:
 
   <pre class="dc-pre language-markup"><code class="language-markup">@import "dress-code/dist/sass/dress-code";</code></pre>
 </p>
+</section>

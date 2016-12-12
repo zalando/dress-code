@@ -1,0 +1,91 @@
+// Grid column mixin for Dress Code
+//
+// @param {Map} $gutter
+// Sets the negative right and left margin for the row to align the columns inside a row
+// As each column has padding (for gutter), negative margin on row is applied.
+@mixin dc-grid-row ($gutter: $dc-grid-gutter) {
+    @if type-of($gutter) == "map" {
+        @each $br, $value in $gutter {
+            $padding: -($value / 2);
+
+            @include breakpoint(map-get($dc-grid-breakpoints, $br)) {
+                margin-right: $padding;
+                margin-left: $padding;
+            }
+        }
+    }
+}
+
+// Grid column mixin for Dress Code
+//
+// @param {Mixed} $columns [null | number]
+// Sets the flex property and the padding (gutter) value for the column
+@mixin dc-grid-column (
+    $columns: null,
+    $gutter: $dc-grid-gutter
+) {
+    flex: grid-column-flex($columns);
+    // Gutters
+    @if type-of($gutter) == "map" {
+        @each $br, $value in $gutter {
+            $padding: ($value / 2);
+
+            @include breakpoint(map-get($dc-grid-breakpoints, $br)) {
+                padding-right: $padding;
+                padding-left: $padding;
+            }
+        }
+    }
+}
+
+// Block grid mixin for Dress Code
+//
+// @param {Number} $columns - Number of columns in each row
+// @param {String} $column-selector - Selector for column within the row.
+@mixin dc-block-grid (
+    $columns,
+    $column-selector: ".dc-column"
+) {
+    flex-wrap: wrap;
+
+    > #{$column-selector} {
+        $flex-percent: percentage(1 / $columns);
+        flex: 0 0 $flex-percent;
+        max-width: $flex-percent;
+    }
+}
+
+// Calculates the flex value for a column
+//
+// @param {Mixed} $columns [null | number]
+// @returns flex property value based on the number of columns supplied.
+@function grid-column-flex($columns: null) {
+    $flex: 1 1 0;
+
+    @if $columns != null {
+        $flex: 0 0 grid-column-size($columns);
+    }
+
+    @return $flex;
+}
+
+// Calculates the width of a column in percentage.
+// This is used for calculating flex percentage, max-widths, and offset widths
+//
+// @param {Number} $columns - number of columns
+// @returns width in percentage
+@function grid-column-size($columns: null) {
+    $width: 0;
+
+    @if type-of($columns) == "number" {
+        @if $columns < 1 {
+            $width: percentage($columns);
+        } @else {
+            $width: percentage($columns / $dc-grid-column-count);
+        }
+    } @else {
+        @error "Wrong syntax for columns. It must be a number (of columns)";
+    }
+
+    @return $width;
+}

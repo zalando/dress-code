@@ -1,8 +1,8 @@
 // core
 @import "core/core";
 
-// grid
-@import "grid/grid";
+// structure and grid
+@import "structure/structure";
 
 // atoms
 @import "atoms/btn";
@@ -16,6 +16,7 @@
 @import "atoms/link";
 @import "atoms/list";
 @import "atoms/loading-bar";
+@import "atoms/overlay";
 @import "atoms/placeholder";
 @import "atoms/radio";
 @import "atoms/select";
@@ -25,17 +26,19 @@
 @import "atoms/textarea";
 
 // molecules
+@import "molecules/accordion";
 @import "molecules/breadcrumb";
 @import "molecules/btn-icon";
 @import "molecules/btn-group";
 @import "molecules/dialog";
+@import "molecules/side-revealer";
 @import "molecules/dropdown";
 @import "molecules/input-group";
 @import "molecules/messages";
 @import "molecules/search-form";
 @import "molecules/toast";
 @import "molecules/tooltip";
-
+@import "molecules/pagination";
 
 @mixin dc-everything {
     // core
@@ -43,7 +46,8 @@
     @include dc-typography-selectors;
     @include dc-patterns-selectors;
 
-    // grid
+    // structure and grid
+    @include dc-structure-selectors;
     @include dc-grid-selectors;
 
     // atoms
@@ -57,6 +61,7 @@
     @include dc-link-selectors;
     @include dc-list-selectors;
     @include dc-loading-bar-selectors;
+    @include dc-overlay-selectors;
     @include dc-placeholder-selectors;
     @include dc-radio-selectors;
     @include dc-select-selectors;
@@ -66,14 +71,17 @@
     @include dc-textarea-selectors;
 
     // molecules
+    @include dc-accordion-selectors;
     @include dc-breadcrumb-selectors;
     @include dc-btn-icon-selectors;
     @include dc-btn-group-selectors;
     @include dc-dialog-selectors;
+    @include dc-side-revealer-selectors;
     @include dc-dropdown-selectors;
     @include dc-input-group-selectors;
     @include dc-msg-selectors;
     @include dc-search-form-selectors;
     @include dc-toast-selectors;
     @include dc-tooltip-selectors;
+    @include dc-pagination-selectors;
 }

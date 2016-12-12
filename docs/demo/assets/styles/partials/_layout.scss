@@ -7,6 +7,15 @@ body {
 	position: relative;
 }
 
+p {
+    margin-top: 0;
+    max-width: 52em;
+}
+
+a {
+    @include dc-link;
+}
+
 .f-header {
 	position: fixed;
 	top: 0;
@@ -20,55 +29,34 @@ body {
 	@include border-box;
 	position: relative;
 	margin-top: $dc-touch-size;
-	padding: $dc-space100;
 	z-index: 0;
 	min-height: calc(100vh - 4.4rem);
 	transition: transform .2s ease-out, padding .2s ease-out;
 
 	.f-menu-active & {
-		transform: translate(calc(#{span(1 of 2)} + #{gutter(4)}), 0);
 
-		@include breakpoint($dc-small-width)
+		// Only push the content from huge size up
+		@include breakpoint($dc-tiny-width)
 		{
-			transform: translate(calc(#{span(2 of 4)} + #{gutter(4)}), 0);
+			margin-left: 0;
 		}
 
-		@include breakpoint($dc-medium-width)
-		{
-			transform: translate(calc(#{span(2 of 6)} + #{gutter(6)}), 0);
-		}
-
-		@include breakpoint($dc-large-width)
-		{
-			transform: translate(calc(#{span(2 of 8)} + #{gutter(8)}), 0);
-		}
-
+		// Only push the content from huge size up
 		@include breakpoint($dc-huge-width)
 		{
-			margin-left: calc(#{span(2 of 12)} + #{gutter(12)});
-			-webkit-overflow-scrolling: touch;
-			transform: translate(0, 0);
+			margin-left: calc(#{span(2 of 12)} + #{gutter(6)});
+			transition: none;
 		}
 
 		@include breakpoint($dc-giant-width)
 		{
-			margin-left: calc(#{span(2 of 16)} + #{gutter(16)});
+			margin-left: #{span(3 of 16)};
 		}
 
 		@include breakpoint($dc-monstrous-width)
 		{
-			margin-left: calc(#{span(2 of 20)} + #{gutter(20)});
+			margin-left: calc(#{span(3 of 20)});
 		}
-	}
-
-	@include breakpoint($dc-large-width)
-	{
-		padding: $dc-space100 $dc-space150;
-	}
-
-	@include breakpoint($dc-monstrous-width)
-	{
-		padding: $dc-space100 $dc-space250;
 	}
 
 }

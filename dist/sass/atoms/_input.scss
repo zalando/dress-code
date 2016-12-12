@@ -6,16 +6,12 @@
     transition: box-shadow .2s linear, border-color .2s linear;
     border: 1px solid $dc-gray60;
     border-radius: $dc-radius100;
-    font-size: 1.6rem;
+    font-size: $dc-font100;
     font-weight: $dc-normal-font-weight;
-    // scss-lint:disable ColorVariable
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
-    // scss-lint:enable ColorVariable
+    box-shadow: inset 0 1px 1px rgba($dc-black, 0);
     box-sizing: border-box;
     -webkit-appearance: none;
-    // scss-lint:disable ColorVariable
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    // scss-lint:enable ColorVariable
+    -webkit-tap-highlight-color: rgba($dc-black, 0);
 
     &:hover {
         border-color: $dc-blue40;
@@ -24,13 +20,12 @@
     &:focus {
         border-color: $dc-blue40;
         outline: 0;
-        // scss-lint:disable ColorVariable
-        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .2);
-        // scss-lint:enable ColorVariable
+        box-shadow: inset 0 1px 1px rgba($dc-black, .2);
     }
 
     &[disabled] {
         border-color: $dc-gray70;
+        background-color: $dc-gray80;
         color: $dc-gray50;
 
         // scss-lint:disable VendorPrefix
@@ -63,10 +58,6 @@
 
 %dc-input {
     @include dc-input;
-}
-
-@mixin dc-input--no-touch {
-    font-size: $dc-font100;
 }
 
 @mixin dc-input--block {
@@ -111,9 +102,6 @@
 
     .dc-input {
         @include dc-input;
-        .no-touch & {
-            @include dc-input--no-touch;
-        }
     }
 
     .dc-input--block {

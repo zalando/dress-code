@@ -92,7 +92,7 @@ $dc--has-tooltip--large: 30rem !default;
 
     &:hover,
     &:focus {
-        @include _dc--has-tooltip-set-margin('translateY', $transition-direction, $translate-x);
+        @include _dc--has-tooltip-set-margin("translateY", $transition-direction, $translate-x);
     }
 }
 
@@ -100,6 +100,7 @@ $dc--has-tooltip--large: 30rem !default;
     &:before {
         // bring arrow inside so that it animates to normal position when shown
         // HACK: +1px to avoid the 1 px white space between arrow and body during transition.
+        // sass-lint:disable-block property-sort-order
         margin-#{$property-x}: -2 * $dc--has-tooltip-arrow-border-width + 1px;
         // bring back to center vertically
         margin-bottom: -1 * $dc--has-tooltip-arrow-border-width;
@@ -118,7 +119,7 @@ $dc--has-tooltip--large: 30rem !default;
 
     &:hover,
     &:focus {
-        @include _dc--has-tooltip-set-margin('translateX', $transition-direction);
+        @include _dc--has-tooltip-set-margin("translateX", $transition-direction);
     }
 }
 
@@ -148,7 +149,6 @@ $dc--has-tooltip--large: 30rem !default;
     &:before,
     &:after {
         position: absolute;
-
         // HACK: Trigger hardware accelerated rendering, otherwise transform was not
         // working on a hidden element
         transform: translate3d(0, 0, 0);
@@ -163,6 +163,7 @@ $dc--has-tooltip--large: 30rem !default;
         visibility: hidden;
 
         z-index: $dc--has-tooltip-zindex;
+
 
         // shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
         pointer-events: none;
@@ -311,4 +312,3 @@ $dc--has-tooltip--large: 30rem !default;
         @include dc--has-tooltip--large;
     }
 }
-

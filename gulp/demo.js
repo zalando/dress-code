@@ -10,7 +10,7 @@
 
 var gulp = require('gulp');
 var path = require('path');
-var del = require('del');
+var rimraf = require('rimraf');
 var assemble = require('fabricator-assemble');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
@@ -28,12 +28,12 @@ var debug = require('gulp-debug');
 
 
 gulp.task('demo:build', function (done) {
-    runSequence('demo:clean', ['demo:images', 'demo:styles', 'demo:scripts', 'demo:icon-font', 'demo:assemble'], done)
+    runSequence('demo:clean', 'demo:icon-font', ['demo:images', 'demo:styles', 'demo:scripts', 'demo:assemble'], done)
 });
 
 // clean
 gulp.task('demo:clean', function (cb) {
-    del(['.tmp/demo'], cb);
+    rimraf('.tmp/demo', cb);
 });
 
 // styles
@@ -41,7 +41,7 @@ gulp.task('demo:styles', function () {
     gulp.src(path.join('docs/demo', '/assets/styles/*.scss'))
         .pipe(sourcemaps.init())
         .pipe(helper.sass())
-        .pipe(autoprefixer('last 1 version'))
+        .pipe(autoprefixer('last 2 version'))
         .pipe(rename('main.css'))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.join('.tmp/demo', '/assets/styles')))
@@ -53,7 +53,7 @@ gulp.task('demo:styles', function () {
 gulp.task('demo:scripts', function () {
     var demoWebpackConfig = require('../webpack.demo.config')(gutil.env['mode']);
     return gulp
-        .src('./docs/demo/assets/scripts/fabricator.js')
+        .src(demoWebpackConfig.entry['scripts/main'])
         .pipe(webpack(demoWebpackConfig))
         .pipe(gulp.dest(path.join('.tmp/demo', '/assets')));
 });
@@ -99,6 +99,8 @@ gulp.task('demo:assemble', function (done) {
 gulp.task('demo:serve', ['demo:build'], function () {
 
     browserSync({
+        // process env variable PORT or command line argument --PORT or default 3000
+        port: process.env.PORT || gutil.env['PORT'] || 3000,
         server: {
             baseDir: '.tmp/demo'
         },

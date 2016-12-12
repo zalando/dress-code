@@ -27,11 +27,11 @@
 
 @mixin dc-svg-icon--interactive {
     &:hover {
-        [fill^='#'] {
+        [fill^="#"] {
             fill: $dc-blue30;
         }
 
-        [stroke^='#'] {
+        [stroke^="#"] {
             stroke: $dc-blue30;
         }
     }
@@ -45,11 +45,11 @@
 
 @mixin dc-svg-icon--alternate {
     &:hover {
-        [fill^='#'] {
+        [fill^="#"] {
             fill: $dc-orange40;
         }
 
-        [stroke^='#'] {
+        [stroke^="#"] {
             stroke: $dc-orange40;
         }
     }

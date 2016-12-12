@@ -1,14 +1,8 @@
 language: node_js
 node_js:
-- 0.12
 - 4.4.0
 - 5
-
-before_install:
-- rvm install 2.0.0
-- rvm use 2.0.0
-- gem install sass
-- gem install scss_lint
+- 6
 install:
 - npm install -g gulp
 - npm install
