@@ -39,6 +39,14 @@
     }
 }
 
+@mixin dc-select--small {
+
+    height: $dc-space150;
+    font-size: $dc-font50;
+    text-transform: uppercase;
+
+}
+
 @mixin dc-select--is-error {
     border-color: $dc-red40;
 
@@ -51,6 +59,10 @@
 @mixin dc-select-selectors {
     .dc-select {
         @include dc-select;
+    }
+
+    .dc-select--small {
+        @include dc-select--small;
     }
 
     .dc-select--is-error {
