@@ -1,20 +1,10 @@
+# for github.com
 approvals:
-  # PR needs at least 2 approvals
-  minimum: 2
-  # approval = comment that matches this regex
-  pattern: "^(:\\+1:|👍)$"
-  # note that `from` is by default empty,
-  # accepting any matching comment as approval
   groups:
-   # there must be at least a technical approval from a member of team Norris
-   technical:
-    minimum: 1
-    from:
-     orgs:
-      - norris
-   # there must be at least a style approval from a member of team UX Brand Solutions
-   style:
-    minimum: 1
-    from:
-     orgs:
-      - ux-brand-solutions
+    zalando:
+      minimum: 2
+      from:
+        orgs:
+          - "zalando"
+X-Zalando-Team: "norris"
+X-Zalando-Type: "code"
