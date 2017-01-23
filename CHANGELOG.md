@@ -1,3 +1,18 @@
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/zalando/dress-code/compare/2.0.0-beta.1...v2.0.0) (2017-01-23)
+
+
+### Bug Fixes
+
+* **select:** update height of sc-select--small to 22px, for consistency ([dcd9555](https://github.com/zalando/dress-code/commit/dcd9555))
+
+
+### Features
+
+* **divider:** add secondary divider ([42abadd](https://github.com/zalando/dress-code/commit/42abadd))
+
+
+
 <a name="2.0.0-beta.1"></a>
 # [2.0.0-beta.1](https://github.com/zalando/dress-code/compare/2.0.0-beta...v2.0.0-beta.1) (2016-12-08)
 
