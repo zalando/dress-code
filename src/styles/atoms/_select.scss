@@ -41,7 +41,7 @@
 
 @mixin dc-select--small {
 
-    height: $dc-space150;
+    height: $dc-space150 - .2; // 22px to match radio & checkbox
     font-size: $dc-font50;
     text-transform: uppercase;
 
