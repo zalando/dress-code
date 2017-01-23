@@ -118,8 +118,11 @@
     @if $filename == user {
         $char: "\EA1F";
     }
-    @if $filename == warning {
+    @if $filename == users {
         $char: "\EA20";
+    }
+    @if $filename == warning {
+        $char: "\EA21";
     }
 
     @return $char;
@@ -281,6 +284,11 @@
         content: dc-icon-char(user);
     }
 }
+@mixin dc-icon--users {
+    &:before {
+        content: dc-icon-char(users);
+    }
+}
 @mixin dc-icon--warning {
     &:before {
         content: dc-icon-char(warning);
@@ -425,6 +433,10 @@
 
     .dc-icon--user {
         @include dc-icon--user;
+    }
+
+    .dc-icon--users {
+        @include dc-icon--users;
     }
 
     .dc-icon--warning {
