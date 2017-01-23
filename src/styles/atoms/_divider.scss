@@ -7,11 +7,19 @@
     background: $dc-gray60;
 }
 
+@mixin dc-divider--secondary {
+    background: $dc-gray70;
+}
+
 //  = DIVIDERS FOR BOXES
 //  ---------------------------------------------------------------------------
 @mixin dc-divider-selectors {
     .dc-divider {
         @include dc-divider;
+    }
+
+    .dc-divider--secondary {
+        @include dc-divider--secondary;
     }
 }
 
