@@ -15,10 +15,14 @@
 }
 
 @mixin dc-search-form__input {
+    max-height: 36px;
     margin: 0;
     padding-right: 30px;
     -moz-appearance: none;
     -webkit-appearance: none;
+
+    &[type="date"]::-webkit-clear-button { display: none; }
+    &[type="date"]::-ms-clear { display: none; }
 }
 
 @mixin dc-search-form__btn {

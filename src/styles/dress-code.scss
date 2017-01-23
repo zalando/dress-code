@@ -44,7 +44,7 @@
     // core
     @include dc-normalize;
     @include dc-typography-selectors;
-    @include dc-patterns-selectors;
+    @include dc-utilities-selectors;
 
     // structure and grid
     @include dc-structure-selectors;
