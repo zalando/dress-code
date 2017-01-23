@@ -21,6 +21,16 @@
     .demo-wrapper {
         position: relative;
     }
+
+    div[class*="dc--island-"] {
+        margin-bottom: 2.2rem;
+        border: 1px solid #26aafe;
+        background: #75c6ff;
+        color: #fff;
+    }
+    .dc--text-left, .dc--text-center, .dc--text-right {
+        border: 1px solid #000;
+    }
 }
 
 .f-item-preview .dc-loading-bar {
