@@ -382,6 +382,10 @@ body {
   background: #ffeb7a !important;
 }
 
+.dc--less-important {
+  color: #b6b6b6 !important;
+}
+
 .dc--island-50 {
   padding: 0.4rem;
 }
@@ -413,7 +417,7 @@ body {
   color: #ff4a25;
 }
 
-.dc--text--eft {
+.dc--text--left {
   text-align: left;
 }
 
@@ -1663,6 +1667,10 @@ body {
   background: #d1d1d1;
 }
 
+.dc-divider--secondary {
+  background: #ededed;
+}
+
 .dc-label {
   display: block;
   margin-bottom: 0.4rem;
@@ -1687,22 +1695,14 @@ body {
   color: #b6b6b6;
 }
 
-.dc-label--required:after {
-  margin-left: 0.4rem;
-  color: #b6b6b6;
-  font-weight: 300;
-  text-transform: capitalize;
-  content: "Required";
-}
-
 .dc-label--is-error:after {
   color: #ff4a25;
 }
 
 @font-face {
   font-family: "DressCodeIcons";
-  src: url("../fonts/DressCodeIcons.eot?v=2.0.0-beta");
-  src: url("../fonts/DressCodeIcons.eot?#iefix") format("eot"), url("../fonts/DressCodeIcons.woff?v=2.0.0-beta") format("woff"), url("../fonts/DressCodeIcons.ttf?v=2.0.0-beta") format("truetype"), url("../fonts/DressCodeIcons.svg?v=2.0.0-beta#DressCodeIcons") format("svg");
+  src: url("../fonts/DressCodeIcons.eot?v=2.0.0");
+  src: url("../fonts/DressCodeIcons.eot?#iefix") format("eot"), url("../fonts/DressCodeIcons.woff?v=2.0.0") format("woff"), url("../fonts/DressCodeIcons.ttf?v=2.0.0") format("truetype"), url("../fonts/DressCodeIcons.svg?v=2.0.0#DressCodeIcons") format("svg");
 }
 
 .dc-icon:before {
@@ -1841,8 +1841,12 @@ body {
   content: "";
 }
 
-.dc-icon--warning:before {
+.dc-icon--users:before {
   content: "";
+}
+
+.dc-icon--warning:before {
+  content: "";
 }
 
 .dc-icon--interactive {
@@ -2233,6 +2237,12 @@ body {
   background-color: #f7f7f7;
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB3aWR0aD0iOXB4IiBoZWlnaHQ9IjVweCIgdmlld0JveD0iMCAwIDkgNSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5pbWFnZTwvdGl0bGU+ICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPiAgICA8ZGVmcz48L2RlZnM+ICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9IjAuNSI+ICAgICAgICA8ZyBpZD0iaW1hZ2UiIGZpbGw9IiNCNkI2QjYiPiAgICAgICAgICAgIDxnIGlkPSJBbmFseXRpY3MtRmlsdGVyIj4gICAgICAgICAgICAgICAgPGcgaWQ9IlBvcnRyYWl0LS0tNS81Uy81Qy0yIj4gICAgICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJUcmlhbmdsZS04IiBwb2ludHM9IjAgMCA5IDAgNC41IDUiPjwvcG9seWdvbj4gICAgICAgICAgICAgICAgPC9nPiAgICAgICAgICAgIDwvZz4gICAgICAgIDwvZz4gICAgPC9nPjwvc3ZnPg==);
   color: #b6b6b6;
+}
+
+.dc-select--small {
+  height: 2.2rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
 }
 
 .dc-select--is-error {
@@ -2842,23 +2852,6 @@ body {
   z-index: 10000;
 }
 
-.dc-dialog__overlay {
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transition: opacity 0.2s 0.2s cubic-bezier(0.39, 0.58, 0.57, 1);
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 1;
-  z-index: 0;
-  perspective: 600px;
-  pointer-events: none;
-  z-index: -1;
-}
-
 .dc-dialog__content {
   margin: 2.4rem;
 }
@@ -3375,10 +3368,19 @@ input:checked ~ .dc-side-revealer__content {
 }
 
 .dc-search-form__input {
+  max-height: 36px;
   margin: 0;
   padding-right: 30px;
   -moz-appearance: none;
   -webkit-appearance: none;
+}
+
+.dc-search-form__input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+
+.dc-search-form__input[type="date"]::-ms-clear {
+  display: none;
 }
 
 .dc-search-form__btn {
