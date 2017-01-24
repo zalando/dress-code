@@ -24,16 +24,6 @@
     color: $dc-gray50;
 }
 
-@mixin dc-label--required {
-    // this mixin and related class is deprecated and will be removed in the next versions.
-    @warn "`dc-label--required` mixin is deprecated and will be removed in the next versions! use `dc-label__sub` instead.";
-
-    &:after {
-        @include dc-label__sub;
-        content: "Required";
-    }
-}
-
 @mixin dc-label--is-error {
     &:after {
         color: $dc-red40;
@@ -45,6 +35,5 @@
     .dc-label__sub { @include dc-label__sub; }
     .dc-label__sub--is-error { @include dc-label__sub--is-error; }
     .dc-label--disabled {  @include dc-label--disabled;  }
-    .dc-label--required {  @include dc-label--required; }
     .dc-label--is-error {  @include dc-label--is-error; }
 }

@@ -9,28 +9,39 @@
 npm run release [<newversion> | major | minor | patch]
 ```
 
-2) Open a PR from `develop` to `master` using the release branch that was just pushed.
+2) A release branch will be created and pushed automatically. Open a PR from the release branch to `develop`.
 
+3) After the release branch is merged into `develop`, open a PR from `develop` to `master`.
 
-3) After the PR is merged, pull the `master` branch and deploy [docs/demo](http://zalando.github.io/dress-code/) artifacts.
-
-```
-git checkout master;
-git pull;
-npm run deploy:demo;
-```
-
-4) Publish on npm registry. After publish completes, both `npm` and `bower` versions will be verified.
+4) After the PR is merged, publish on npm registry. After publish completes, the `npm` version will be verified.
 
 ```
+git checkout master
+git pull
 npm publish
 ```
 
-5) Keep in sync the develop branch.
+5) Upon successful publish, create and push the tag. The following command will do both steps automatically.
 
 ```
-git checkout develop;
-git rebase master; # or git merge
-git push origin develop;
+npm run tag:release
+```
+
+6) From the `master` branch, deploy [docs/demo](http://zalando.github.io/dress-code/) artifacts.
+
+```
+git checkout master
+git pull
+npm run deploy:demo
+```
+
+7) Keep the develop branch in sync.
+
+```
+git checkout topic/<issue-number-and-description>
+git rebase master   # or git merge
+git push origin topic/<issue-number-and-description>
+
+# Now open a PR from the topic branch to develop. 
 ```
 

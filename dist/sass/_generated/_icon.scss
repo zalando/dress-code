@@ -118,8 +118,11 @@
     @if $filename == user {
         $char: "\EA1F";
     }
-    @if $filename == warning {
+    @if $filename == users {
         $char: "\EA20";
+    }
+    @if $filename == warning {
+        $char: "\EA21";
     }
 
     @return $char;
@@ -281,6 +284,11 @@
         content: dc-icon-char(user);
     }
 }
+@mixin dc-icon--users {
+    &:before {
+        content: dc-icon-char(users);
+    }
+}
 @mixin dc-icon--warning {
     &:before {
         content: dc-icon-char(warning);
@@ -291,11 +299,11 @@
 @mixin dc-icon-generated-selectors {
     @font-face {
         font-family: "DressCodeIcons";
-        src: url('#{$dc-font-path}/DressCodeIcons.eot?v=2.0.0-beta');
+        src: url('#{$dc-font-path}/DressCodeIcons.eot?v=2.0.0');
         src: url('#{$dc-font-path}/DressCodeIcons.eot?#iefix') format('eot'),
-        url('#{$dc-font-path}/DressCodeIcons.woff?v=2.0.0-beta') format('woff'),
-        url('#{$dc-font-path}/DressCodeIcons.ttf?v=2.0.0-beta') format('truetype'),
-        url('#{$dc-font-path}/DressCodeIcons.svg?v=2.0.0-beta#DressCodeIcons') format('svg');
+        url('#{$dc-font-path}/DressCodeIcons.woff?v=2.0.0') format('woff'),
+        url('#{$dc-font-path}/DressCodeIcons.ttf?v=2.0.0') format('truetype'),
+        url('#{$dc-font-path}/DressCodeIcons.svg?v=2.0.0#DressCodeIcons') format('svg');
     }
 
     .dc-icon {
@@ -425,6 +433,10 @@
 
     .dc-icon--user {
         @include dc-icon--user;
+    }
+
+    .dc-icon--users {
+        @include dc-icon--users;
     }
 
     .dc-icon--warning {
