@@ -5,12 +5,35 @@
 ### Bug Fixes
 
 * **select:** update height of sc-select--small to 22px, for consistency ([dcd9555](https://github.com/zalando/dress-code/commit/dcd9555))
+* **search:** remove native date field clear button ([e33142a](https://github.com/zalando/dress-code/commit/e33142a))
 
 
 ### Features
 
 * **divider:** add secondary divider ([42abadd](https://github.com/zalando/dress-code/commit/42abadd))
+* **icons:** add users icon, update help and user icons ([7495021](https://github.com/zalando/dress-code/commit/7495021))
+* **select:** add dc-select--small ([492a508](https://github.com/zalando/dress-code/commit/492a508))
 
+
+### BREAKING CHANGES
+
+* overlay: dc-dialog__overlay has been removed, use dc-overlay outside dc-dialog instead
+
+    Change your code from this:
+
+    ```html
+    <div class="dc-dialog">
+        <div class="dc-dialog__overlay"></div>
+        ...
+    ```
+
+    To this:
+
+    ```html
+    <div class="dc-overlay"></div>
+    <div class="dc-dialog>
+        ...
+    ```
 
 
 <a name="2.0.0-beta.1"></a>
