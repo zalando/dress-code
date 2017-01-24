@@ -86,6 +86,9 @@
 						<li>
 							<a href="01-core.html#02-colors">Colors</a>
 						</li>
+						<li>
+							<a href="01-core.html#03-utilities">Utilities</a>
+						</li>
 					</ul>
 				</li>
 				<li>
@@ -441,6 +444,12 @@ Use labels that are explicit. Starting with an imperative verb is often a good c
 	<p class="dc-p">As Gregor Samsa awoke one morning from uneasy dreams he found himself transformed in his bed into a gigantic insect. He was lying on his hard, as it were armor-plated, back and when he lifted his head a little he could see his dome-like brown belly divided
 	into stiff arched segments on top of which the bed quilt could hardly keep in position and was about to slide off completely.</p>
 <hr class="dc-divider">
+
+<h3 class="dc-h3">Secondary divider</h3>
+<p class="dc-p">If you want to have a secondary divider use <code>dc-divider dc-divider--secondary</code></p>
+
+<hr class="dc-divider dc-divider--secondary">
+
 <p class="dc-p">It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife. However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in
 	the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters
 	<p>
@@ -449,6 +458,12 @@ Use labels that are explicit. Starting with an imperative verb is often a good c
 	<pre class="dc-pre"><code class="language-markup">&lt;p class&#x3D;&quot;dc-p&quot;&gt;As Gregor Samsa awoke one morning from uneasy dreams he found himself transformed in his bed into a gigantic insect. He was lying on his hard, as it were armor-plated, back and when he lifted his head a little he could see his dome-like brown belly divided
 	into stiff arched segments on top of which the bed quilt could hardly keep in position and was about to slide off completely.&lt;/p&gt;
 &lt;hr class&#x3D;&quot;dc-divider&quot;&gt;
+
+&lt;h3 class&#x3D;&quot;dc-h3&quot;&gt;Secondary divider&lt;/h3&gt;
+&lt;p class&#x3D;&quot;dc-p&quot;&gt;If you want to have a secondary divider use &lt;code&gt;dc-divider dc-divider--secondary&lt;/code&gt;&lt;/p&gt;
+
+&lt;hr class&#x3D;&quot;dc-divider dc-divider--secondary&quot;&gt;
+
 &lt;p class&#x3D;&quot;dc-p&quot;&gt;It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife. However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in
 	the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters
 	&lt;p&gt;</code></pre>
@@ -568,7 +583,11 @@ Use labels that are explicit. Starting with an imperative verb is often a good c
 		<div class="f-item-group" id="forms.select">
 			<div class="f-item-heading-group" data-f-toggle="labels">
 				<div class="f-item-controls">
-					
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
 					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 						<svg class="dc-svg">
 							<use xlink:href="#f-icon-code" />
@@ -576,7 +595,10 @@ Use labels that are explicit. Starting with an imperative verb is often a good c
 					</span>
 				</div>
 				<h3 class="dc-h3 f-item-heading">Select</h3>
-			</div>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p><code>dc-select</code> styles select form elements. Error states use <code>dc-select--error</code>. Use <code>dc-select--small</code> for a smaller version that has the same height as radios and checkboxes.</p>
+
+</div>
 <div class="f-item-preview">
 	<select class="dc-select" name="" id="">
 	<option value="">Enabled</option>
@@ -595,6 +617,14 @@ Use labels that are explicit. Starting with an imperative verb is often a good c
 </select>
 
 <select class="dc-select dc-select--is-error" name="" id="">
+	<option value="">Enabled</option>
+	<option value="">Option 2</option>
+	<option value="">Option 3</option>
+	<option value="">Option 4</option>
+	<option value="">Option 5</option>
+</select>
+
+<select class="dc-select dc-select--small" name="" id="">
 	<option value="">Enabled</option>
 	<option value="">Option 2</option>
 	<option value="">Option 3</option>
@@ -620,6 +650,14 @@ Use labels that are explicit. Starting with an imperative verb is often a good c
 &lt;/select&gt;
 
 &lt;select class&#x3D;&quot;dc-select dc-select--is-error&quot; name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Enabled&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class&#x3D;&quot;dc-select dc-select--small&quot; name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
 	&lt;option value&#x3D;&quot;&quot;&gt;Enabled&lt;/option&gt;
 	&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
 	&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
@@ -778,6 +816,7 @@ Use labels that are explicit. Starting with an imperative verb is often a good c
 	<i class="dc-icon dc-icon--info dc-icon--interactive"><span>info</span></i>
 	<i class="dc-icon dc-icon--success dc-icon--interactive"><span>success</span></i>
 	<i class="dc-icon dc-icon--warning dc-icon--interactive"><span>warning</span></i>
+	<i class="dc-icon dc-icon--users"><span>users</span></i>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -813,6 +852,7 @@ Use labels that are explicit. Starting with an imperative verb is often a good c
 	&lt;i class&#x3D;&quot;dc-icon dc-icon--info dc-icon--interactive&quot;&gt;&lt;span&gt;info&lt;/span&gt;&lt;/i&gt;
 	&lt;i class&#x3D;&quot;dc-icon dc-icon--success dc-icon--interactive&quot;&gt;&lt;span&gt;success&lt;/span&gt;&lt;/i&gt;
 	&lt;i class&#x3D;&quot;dc-icon dc-icon--warning dc-icon--interactive&quot;&gt;&lt;span&gt;warning&lt;/span&gt;&lt;/i&gt;
+	&lt;i class&#x3D;&quot;dc-icon dc-icon--users&quot;&gt;&lt;span&gt;users&lt;/span&gt;&lt;/i&gt;
 &lt;/div&gt;</code></pre>
 </div>
 

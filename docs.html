@@ -86,6 +86,9 @@
 						<li>
 							<a href="01-core.html#02-colors">Colors</a>
 						</li>
+						<li>
+							<a href="01-core.html#03-utilities">Utilities</a>
+						</li>
 					</ul>
 				</li>
 				<li>
@@ -370,26 +373,40 @@ users to modify their code with this commit.</p>
 <pre><code>npm run release [&lt;newversion&gt; | major | minor | patch]
 </code></pre>
 <ol start="2">
-<li>Open a PR from <code>develop</code> to <code>master</code> using the release branch that was just pushed.</li>
+<li>
+<p>A release branch will be created and pushed automatically. Open a PR from the release branch to <code>develop</code>.</p>
+</li>
+<li>
+<p>After the release branch is merged into <code>develop</code>, open a PR from <code>develop</code> to <code>master</code>.</p>
+</li>
+<li>
+<p>After the PR is merged, publish on npm registry. After publish completes, the <code>npm</code> version will be verified.</p>
+</li>
 </ol>
-<ol start="3">
-<li>After the PR is merged, pull the <code>master</code> branch and deploy <a href="http://zalando.github.io/dress-code/">docs/demo</a> artifacts.</li>
-</ol>
-<pre><code>git checkout master;
-git pull;
-npm run deploy:demo;
-</code></pre>
-<ol start="4">
-<li>Publish on npm registry. After publish completes, both <code>npm</code> and <code>bower</code> versions will be verified.</li>
-</ol>
-<pre><code>npm publish
+<pre><code>git checkout master
+git pull
+npm publish
 </code></pre>
 <ol start="5">
-<li>Keep in sync the develop branch.</li>
+<li>Upon successful publish, create and push the tag. The following command will do both steps automatically.</li>
 </ol>
-<pre><code>git checkout develop;
-git rebase master; # or git merge
-git push origin develop;
+<pre><code>npm run tag:release
+</code></pre>
+<ol start="6">
+<li>From the <code>master</code> branch, deploy <a href="http://zalando.github.io/dress-code/">docs/demo</a> artifacts.</li>
+</ol>
+<pre><code>git checkout master
+git pull
+npm run deploy:demo
+</code></pre>
+<ol start="7">
+<li>Keep the develop branch in sync.</li>
+</ol>
+<pre><code>git checkout topic/&lt;issue-number-and-description&gt;
+git rebase master   # or git merge
+git push origin topic/&lt;issue-number-and-description&gt;
+
+# Now open a PR from the topic branch to develop. 
 </code></pre>
 
 </div>
