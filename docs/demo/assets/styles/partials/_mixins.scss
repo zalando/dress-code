@@ -37,3 +37,9 @@
 @mixin border-box {
     box-sizing: border-box;
 }
+
+@mixin dc-demo-element {
+    border: 1px solid $dc-blue40;
+    background: $dc-blue50;
+    color: $dc-white;
+}
