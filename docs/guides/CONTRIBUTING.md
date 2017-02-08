@@ -6,9 +6,8 @@ The git workflow that we use to contribute is mostly based and well explained in
 
 #### Main branches:
 
-* **master** : must point to the latest stable version
-* **develop**: the main development branch, never work on it directly, always merge ***topic*** branches and ***hotfix*** branches into this branch.
-* **topic/[topic-name]**: for every new feature or task, open a ***topic*** branch from ***develop*** and work on it, when you are done open a pull request and ask for review.
+* **master** : the default branch. Never work on it directly, always merge ***topic*** branches and ***hotfix*** branches into this branch.
+* **topic/[topic-name]**: for every new feature or task, open a ***topic*** branch from ***master*** and work on it, when you are done open a pull request and ask for review.
 * **hotfix/[hotifx-name]**: used to fix stable versions
 * **release/[release-name]**: used to work on release candidates
 
