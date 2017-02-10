@@ -4,10 +4,12 @@ title: Table
 notes: |
     To set up tables, add the relevant classes to each part of the table.
 
+    Use `dc-table--responsive` to activate the responsive view for tablet size and below. Each row becomes a card.
+
     Use `dc-table__tr--interactive` to add a hover to table rows. This can be done independenty for each row.
 
 ---
-<table class="dc-table">
+<table class="dc-table dc-table--responsive">
 	<thead class="dc-table__thead">
 		<tr class="dc-table__tr">
 			<th class="dc-table__th" data-col="First Name">First Name</th>
