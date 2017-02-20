@@ -118,9 +118,8 @@
 //  ---------------------------------------------------------------------------
 
 @mixin dc-btn--small {
-    padding: $dc-space50 $dc-space75;
+    padding: $dc-space50 + .1 $dc-space75;
     font-size: $dc-font50;
-    font-weight: $dc-normal-font-weight;
     text-transform: uppercase;
     @content;
 }
@@ -139,7 +138,7 @@
 //  ---------------------------------------------------------------------------
 
 @mixin dc-btn--large {
-    padding: $dc-space125 $dc-space125 $dc-space125 + .1;
+    padding: $dc-space125 $dc-space125 $dc-space125;
     font-size: $dc-font150;
     line-height: .8;
 
