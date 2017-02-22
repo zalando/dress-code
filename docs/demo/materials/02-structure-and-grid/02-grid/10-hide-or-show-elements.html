@@ -1,56 +1,23 @@
 ---
 notes: |
     Hide/show elements according to breakpoint size. Combine hide and show classes to make elements only appear in a specific range of screen sizes.
+
+    Hide classes: `dc-hide-from-[small|medium|large|huge]` will hide starting from the specified breakpoint
+
+    Show classes: `dc-show-from-[small|medium|large|huge]` will show starting from the specified breakpoint
 ---
 <div class="dc-row">
-    <div class="dc-column dc-hide-from-small">
-        <div class="dc-column__contents ">This element will <strong class="dc-strong">hide</strong> from small breakpoint size on.
+    <div class="dc-column dc-column--small-12 dc-show-from-medium" >
+        <div class="dc-column__contents">This element will <strong class="dc-strong">show</strong> for medium breakpoint size on.
         </div>
     </div>
-    <div class="dc-column dc-hide-from-medium">
-        <div class="dc-column__contents ">This element will <strong class="dc-strong">hide</strong> from medium breakpoint size on.
+    <div class="dc-column dc-column--small-12 dc-hide-from-medium" >
+        <div class="dc-column__contents">This element will <strong class="dc-strong">hide</strong> from medium breakpoint size on.
         </div>
     </div>
-    <div class="dc-column dc-hide-from-large">
-        <div class="dc-column__contents ">This element will <strong class="dc-strong">hide</strong> from large breakpoint size on.
-        </div>
-    </div>
-    <div class="dc-column">
-        <div class="dc-column__contents dc-hide-from-huge">This element will <strong class="dc-strong">hide</strong> from huge breakpoint size on.
-        </div>
-    </div>
-</div>
 
-<div class="dc-row">
-    <div class="dc-column dc-show-from-small">
-        <div class="dc-column__contents">This element will <strong class="dc-strong">show</strong> from small breakpoint size on.
-        </div>
-    </div>
-    <div class="dc-column dc-show-from-medium">
-        <div class="dc-column__contents">This element will <strong class="dc-strong">show</strong> from medium breakpoint size on.
-        </div>
-    </div>
-    <div class="dc-column dc-show-from-large">
-        <div class="dc-column__contents">This element will <strong class="dc-strong">show</strong> from large breakpoint size on.
-        </div>
-    </div>
-    <div class="dc-column  dc-show-from-huge">
-        <div class="dc-column__contents">This element will <strong class="dc-strong">show</strong> from large breakpoint size on.
-        </div>
-    </div>
-</div>
-
-<div class="dc-row">
-    <div class="dc-column dc-show-from-small dc-hide-from-large">
-        <div class="dc-column__contents">This element will <strong class="dc-strong">show</strong> in small and medium breakpoint sizes.
-        </div>
-    </div>
-    <div class="dc-column dc-show-from-medium dc-hide-from-huge">
-        <div class="dc-column__contents">This element will <strong class="dc-strong">show</strong> in medium and large breakpoint sizes.
-        </div>
-    </div>
-    <div class="dc-column dc-show-from-small dc-hide-from-large dc-show-from-huge">
-        <div class="dc-column__contents">This element will <strong class="dc-strong">show</strong> in small, medium and huge breakpoint sizes.
+    <div class="dc-column dc-column--small-12 dc-show-from-small dc-hide-from-medium dc-show-from-large" >
+        <div class="dc-column__contents">This element will <strong class="dc-strong">hide</strong> at medium breakpoint and show for all others.
         </div>
     </div>
 
