@@ -1,0 +1,24 @@
+---
+notes: |
+    Hide/show elements according to breakpoint size. Combine hide and show classes to make elements only appear in a specific range of screen sizes.
+
+    Hide classes: `dc-hide-from-[small|medium|large|huge]` will hide starting from the specified breakpoint
+
+    Show classes: `dc-show-from-[small|medium|large|huge]` will show starting from the specified breakpoint
+---
+<div class="dc-row">
+    <div class="dc-column dc-column--small-12 dc-show-from-medium" >
+        <div class="dc-column__contents">This element will <strong class="dc-strong">show</strong> for medium breakpoint size on.
+        </div>
+    </div>
+    <div class="dc-column dc-column--small-12 dc-hide-from-medium" >
+        <div class="dc-column__contents">This element will <strong class="dc-strong">hide</strong> from medium breakpoint size on.
+        </div>
+    </div>
+
+    <div class="dc-column dc-column--small-12 dc-show-from-small dc-hide-from-medium dc-show-from-large" >
+        <div class="dc-column__contents">This element will <strong class="dc-strong">hide</strong> at medium breakpoint and show for all others.
+        </div>
+    </div>
+
+</div>

@@ -119,9 +119,28 @@
         @include dc-column--align-self--bottom;
     }
 
-    // For each breakpoint make the required column and offset classes.
+    // Run through breakpoints.
     @each $br, $value in $dc-grid-breakpoints {
+
+        .dc-show-from-#{$br} {
+            display:none;
+        }
+
         @include breakpoint(map-get($dc-grid-breakpoints, $br)) {
+
+            // Utility classes to hide / show according to breakpoint
+
+            // Hide from this breakpoint up
+            .dc-hide-from-#{$br} {
+                display: none !important;
+            }
+
+            // Show from this breakpoint up
+            .dc-show-from-#{$br} {
+                display: block !important;
+            }
+
+            // For each breakpoint make the required column and offset classes.
             @for $i from 1 through $dc-grid-column-count {
                 .dc-column--#{$br}-#{$i} {
                     flex: grid-column-flex($i);
@@ -140,6 +159,7 @@
                 .dc-column-offset--#{$br}-#{$o} {
                     margin-left: grid-column-size($o);
                 }
+
             }
         }
     }
