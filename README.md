@@ -2,13 +2,43 @@
 [![Build Status](https://travis-ci.org/zalando/dress-code.svg?branch=master)](https://travis-ci.org/zalando/dress-code)
 [![Dependency Status](https://david-dm.org/zalando/dress-code.svg)](https://david-dm.org/zalando/dress-code)
 [![devDependency Status](https://david-dm.org/zalando/dress-code/dev-status.svg)](https://david-dm.org/zalando/dress-code#info=devDependencies)
+
 # The Dress Code
 
-The Dress Code is a framework agnostic, atomic design, BEM, style library which is designed for maintainability and modularity.
+The Dress Code is a style library / style guide which is designed for maintainability and modularity.
 
-Quickly create prototypes and sites or apps that work on all devices. See the Demo & Documentation for more details.
+Used by Zalando Brand Solutions department to solve the challenge of consistency between multiple apps.
 
-Dress Code follows BEM naming convention. Read more about BEM [here](http://getbem.com/introduction/).
+We open source the project because we think that can be a good example of how collaboration between UX Designers and Developers can be enhanced with the help of technology.
+
+If you wanna know more about the history and the process behind this project you might be interested in [this article](https://tech.zalando.com/blog/dress-code-an-in-house-style-guide-for-zalandos-solution-center/).
+
+## Main Features
+
+* Follows [BEM](http://getbem.com/) — Block Element Modifier methodology
+
+* Follows Atomic Design principles 
+
+* Built with SASS, that means: 
+    * Modular - import just what you need
+    * Reusable - apply styles on your own components by using SASS mixins
+    * Customizable - "tweak" the look and feel by overriding variables or extending existing classes
+
+* Updated interactive demo site
+    
+## Status
+    
+The dress-code core is actively maintained by two teams within Zalando. We think that the core components are now pretty stable.
+
+But we are always looking forward to **open source community feedback** and **contributions** especially about:
+
+* browser/device compatibility bugs
+* enhancements
+
+We usually mark the issues where we would like to see community contributions with an "help wanted" label.
+ 
+Feel free to open issues and/or fork the project to contribute ([see Development & Contrbuting section](#development)).
+
 
 ## Quick links
 
