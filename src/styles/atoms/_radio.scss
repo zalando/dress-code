@@ -14,13 +14,14 @@
         padding-left: $dc-space200 - $dc-space75;
         font-size: $dc-body-font-size;
         font-weight: $dc-normal-font-weight;
-        line-height: $dc-space150 - .2;
+        line-height: $dc-space150;
         text-transform: none;
         cursor: pointer;
 
         &:before,
         &:after {
             position: absolute;
+            top: .1rem;
             left: 0;
             width: 2rem;
             height: 2rem;
@@ -33,7 +34,7 @@
         }
 
         &:after {
-            top: .5rem;
+            top: .6rem;
             left: .5rem;
             width: 1rem;
             height: 1rem;

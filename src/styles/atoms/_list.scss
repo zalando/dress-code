@@ -77,7 +77,7 @@
 }
 
 @mixin dc-list__title {
-    line-height: 2.2rem;
+    line-height: $dc-space150;
 }
 
 @mixin dc-list__action {

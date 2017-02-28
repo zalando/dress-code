@@ -15,6 +15,7 @@
         &:before,
         &:after {
             position: absolute;
+            top: .1rem;
             left: 0;
             width: 2rem;
             height: 2rem;
@@ -27,7 +28,7 @@
         }
 
         &:after {
-            top: .5rem;
+            top: .6rem;
             left: .5rem;
             width: 1rem;
             height: 1rem;
@@ -85,7 +86,7 @@
     + #{$sibling-label-selector} {
         font-size: $dc-body-font-size;
         font-weight: $dc-normal-font-weight;
-        line-height: $dc-space150 - .2;
+        line-height: $dc-space150;
         text-transform: none;
     }
 }
@@ -99,7 +100,7 @@
         &:after {
             width: 2.6rem;
             height: 1.3rem;
-            margin-top: .5rem;
+            margin-top: .3rem;
             transition: background-color .3s linear,
             transform .1s cubic-bezier(.105, .420, .425, 1);
         }
@@ -107,6 +108,7 @@
         &:after {
             width: 1.1rem;
             height: 1.1rem;
+            margin-top: .4rem;
             transform: scale3d(1, 1, 1);
             border-radius: 1px;
             background: $dc-gray50;
