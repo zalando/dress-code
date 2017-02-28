@@ -9,7 +9,7 @@ The Dress Code is a style library / style guide which is designed for maintainab
 
 Used by Zalando Brand Solutions department to solve the challenge of consistency between multiple apps.
 
-We open source the project because we think that can be a good example of how collaboration between UX Designers and Developers can be enhanced with the help of technology.
+We open sourced the project because we think it's a good example of how collaboration between UX Designers and Developers is enhancing consistency and user experience with the help of technology.
 
 If you wanna know more about the history and the process behind this project you might be interested in [this article](https://tech.zalando.com/blog/dress-code-an-in-house-style-guide-for-zalandos-solution-center/).
 
@@ -28,9 +28,9 @@ If you wanna know more about the history and the process behind this project you
     
 ## Status
     
-The dress-code core is actively maintained by two teams within Zalando. We think that the core components are now pretty stable.
+The dress-code core is actively maintained by two teams within Zalando. The core components are in a stable state, should you however encounter any bugs, feel free to create an issue and/or a pull request
 
-But we are always looking forward to **open source community feedback** and **contributions** especially about:
+We are always looking forward to **open source community feedback** and **contributions** especially about:
 
 * browser/device compatibility bugs
 * enhancements
