@@ -13,6 +13,12 @@ We open sourced the project because we think it's a good example of how collabor
 
 If you want to know more about the history and the process behind this project you might be interested in [this article](https://tech.zalando.com/blog/dress-code-an-in-house-style-guide-for-zalandos-solution-center/).
 
+## Quick links
+
+* [Demo & Documentation](http://zalando.github.io/dress-code/)
+* [Getting Started](#getting-started)
+* [Development & Contributing](#development)
+
 ## Main Features
 
 * Follows [BEM](http://getbem.com/) — Block Element Modifier methodology
@@ -39,12 +45,6 @@ We usually mark the issues where we would like to see community contributions wi
  
 Feel free to open issues and/or fork the project to contribute ([see Development & Contrbuting section](#development)).
 
-
-## Quick links
-
-* [Demo & Documentation](http://zalando.github.io/dress-code/)
-* [Development & Contributing](#development)
-* [Build and Deploy](#build-and-deploy)
 
 ## Browser Compatibility
 
