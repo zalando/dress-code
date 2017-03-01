@@ -11,15 +11,15 @@ Used by Zalando Brand Solutions department to solve the challenge of consistency
 
 We open sourced the project because we think it's a good example of how collaboration between UX Designers and Developers is enhancing consistency and user experience with the help of technology.
 
-If you wanna know more about the history and the process behind this project you might be interested in [this article](https://tech.zalando.com/blog/dress-code-an-in-house-style-guide-for-zalandos-solution-center/).
+If you want to know more about the history and the process behind this project you might be interested in [this article](https://tech.zalando.com/blog/dress-code-an-in-house-style-guide-for-zalandos-solution-center/).
 
 ## Main Features
 
 * Follows [BEM](http://getbem.com/) — Block Element Modifier methodology
 
-* Follows Atomic Design principles 
+* Follows [Atomic Design](http://atomicdesign.bradfrost.com/chapter-2/) principles 
 
-* Built with SASS, that means: 
+* Built with [SASS](http://sass-lang.com/), that means: 
     * Modular - import just what you need
     * Reusable - apply styles on your own components by using SASS mixins
     * Customizable - "tweak" the look and feel by overriding variables or extending existing classes
@@ -28,14 +28,14 @@ If you wanna know more about the history and the process behind this project you
     
 ## Status
     
-The dress-code core is actively maintained by two teams within Zalando. The core components are in a stable state, should you however encounter any bugs, feel free to create an issue and/or a pull request
+The Dress Code core is actively maintained by two teams within Zalando. The core components are in a stable state, should you however encounter any bugs, feel free to create an issue and/or a pull request
 
 We are always looking forward to **open source community feedback** and **contributions** especially about:
 
 * browser/device compatibility bugs
 * enhancements
 
-We usually mark the issues where we would like to see community contributions with an "help wanted" label.
+We usually mark the issues where we would like to see community contributions with a "help wanted" label.
  
 Feel free to open issues and/or fork the project to contribute ([see Development & Contrbuting section](#development)).
 
@@ -81,7 +81,7 @@ Include this in your ```<head>```:
 
 #### How to use dress-code SASS
 
-You can compile the dress code by your own using a sass compiler.
+If you are already using SASS in your project, you can import the Dress Code directly.
 
 ```scss
 @import "node_modules/breakpoint-sass/stylesheets/breakpoint" // this is a required dependency, load this before loading the dress-code
@@ -89,13 +89,12 @@ You can compile the dress code by your own using a sass compiler.
 @include dc-everything; // output dc-* selectors
 ```
 
-> the dress-code rely on [breakpoint-sass](https://github.com/at-import/breakpoint) to manage media queries
-more easily, please be sure that the plugin/scss module is loaded before trying to compile the dress-code stuff.
+> Dress Code relies on [breakpoint-sass](https://github.com/at-import/breakpoint) to manage media queries. Be sure to load it before the Dress Code.
 
 
 ##### Compass notes
 
-> Note for those using compass. Add this to yours config.rb file:
+> For those using Compass, you can add this to your config.rb file:
 ```rb
 add_import_path "bower_components"
 ```
@@ -106,7 +105,7 @@ Then you can import the dress-code like so:
 
 ## <a name="development"> Development & Contributing
 
-Developers interested in contributing should read the following guidelines:
+Developers interested in contributing should read the following:
 
 - [Contributing Guidelines](docs/guides/CONTRIBUTING.md)
 - [Coding Guidelines](docs/guides/CODING.md)
