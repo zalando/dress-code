@@ -47,6 +47,9 @@ Thumbs.db
 # -- WS & IntelliJ -- #
 .idea
 
+# -- VS Code -- #
+.vscode
+
 # -- Other source repository archive directories (protects when importing) -- #
 
 .hg
