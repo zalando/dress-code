@@ -44,7 +44,7 @@
     "url": "https://github.com/zalando/dress-code.git"
   },
   "engines": {
-    "node": ">=4.4.0"
+    "node": ">=5.0.0"
   },
   "dependencies": {
     "breakpoint-sass": "^2.6.1"

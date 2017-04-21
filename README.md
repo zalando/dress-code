@@ -116,7 +116,7 @@ Developers interested in contributing should read the following:
 
 **Requirements**
 
-* [node.js](http://nodejs.org). Make sure your have `v4.4.0` or higher installed before proceeding.
+* [node.js](http://nodejs.org). Make sure your have `v5.0.0` or higher installed before proceeding.
 * [bower](http://bower.io/). Make sure you have bower installed globally with npm, if not, run this command:```npm install -g bower```
 
 **Install**
