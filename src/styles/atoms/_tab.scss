@@ -1,3 +1,9 @@
+$dc-tab-color : $dc-orange40;
+
+@mixin dc-tab__element--active-color($dc-tab-active-color: $dc-tab-color) {
+    color: $dc-tab-active-color;
+}
+
 @mixin dc-tab {
     @include dc-cf;
 
@@ -21,7 +27,7 @@
     cursor: pointer;
 
     &:hover {
-        color: $dc-orange40;
+        @include dc-tab__element--active-color;
     }
 }
 
@@ -34,13 +40,13 @@
     }
 }
 
-@mixin dc-tab__element--active {
-    color: $dc-orange40;
-    box-shadow: inset 0 -3px 0 0 $dc-orange40;
+@mixin dc-tab__element--active($dc-tab-active-color: $dc-tab-color) {
+    @include dc-tab__element--active-color;
+    box-shadow: inset 0 -3px 0 0 $dc-tab-active-color;
 }
 
-@mixin dc-tab__element--vertical--active {
-    box-shadow: inset 3px 0 0 0 $dc-orange40;
+@mixin dc-tab__element--vertical--active($dc-tab-active-color: $dc-tab-color) {
+    box-shadow: inset 3px 0 0 0 $dc-tab-active-color;
 }
 
 
