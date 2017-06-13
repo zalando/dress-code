@@ -65,16 +65,16 @@
         $char: "\EA0D";
     }
     @if $filename == help {
+        $char: "\EA0F";
+    }
+    @if $filename == help-circle {
         $char: "\EA0E";
     }
     @if $filename == history {
-        $char: "\EA0F";
+        $char: "\EA10";
     }
     @if $filename == info {
         $char: "\EA11";
-    }
-    @if $filename == info-circle {
-        $char: "\EA10";
     }
     @if $filename == lock {
         $char: "\EA12";
@@ -140,6 +140,9 @@
         $char: "\EA26";
     }
     @if $filename == warning {
+        $char: "\EA28";
+    }
+    @if $filename == warning-circle {
         $char: "\EA27";
     }
 
@@ -217,6 +220,11 @@
         content: dc-icon-char(help);
     }
 }
+@mixin dc-icon--help-circle {
+    &:before {
+        content: dc-icon-char(help-circle);
+    }
+}
 @mixin dc-icon--history {
     &:before {
         content: dc-icon-char(history);
@@ -225,11 +233,6 @@
 @mixin dc-icon--info {
     &:before {
         content: dc-icon-char(info);
-    }
-}
-@mixin dc-icon--info-circle {
-    &:before {
-        content: dc-icon-char(info-circle);
     }
 }
 @mixin dc-icon--lock {
@@ -342,6 +345,11 @@
         content: dc-icon-char(warning);
     }
 }
+@mixin dc-icon--warning-circle {
+    &:before {
+        content: dc-icon-char(warning-circle);
+    }
+}
 
 
 @mixin dc-icon-generated-selectors {
@@ -415,16 +423,16 @@
         @include dc-icon--help;
     }
 
+    .dc-icon--help-circle {
+        @include dc-icon--help-circle;
+    }
+
     .dc-icon--history {
         @include dc-icon--history;
     }
 
     .dc-icon--info {
         @include dc-icon--info;
-    }
-
-    .dc-icon--info-circle {
-        @include dc-icon--info-circle;
     }
 
     .dc-icon--lock {
@@ -513,5 +521,9 @@
 
     .dc-icon--warning {
         @include dc-icon--warning;
+    }
+
+    .dc-icon--warning-circle {
+        @include dc-icon--warning-circle;
     }
 }
