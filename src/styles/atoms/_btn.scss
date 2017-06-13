@@ -2,19 +2,18 @@
 
 @mixin dc-btn {
     display: inline-block;
-    padding: $dc-space100 - .1 $dc-space100;
-    transition: box-shadow .2s linear, border-color .2s linear;
-    border: 1px solid $dc-gray50;
-    border-radius: $dc-radius100;
-    background: linear-gradient($dc-white, darken($dc-white, 7%));
+    border: 0;
+    padding: $dc-space100 $dc-space125 $dc-space100 $dc-space125;
+    border-radius: $dc-radius101;
     color: $dc-gray10;
-    font-size: $dc-body-font-size;
-    font-weight: $dc-normal-font-weight;
+    font-size: $dc-font80;
+    font-weight: $dc-bold-font-weight;
     line-height: $dc-space100;
     text-align: center;
+    background: $dc-gray70;
+    letter-spacing: $dc-body-letter-spacing;
     text-decoration: none;
-    text-transform: capitalize;
-    box-shadow: 0 1px 1px transparent;
+    text-transform: capitalize !important;
     cursor: pointer;
     vertical-align: top;
 
@@ -22,10 +21,11 @@
         outline: none;
     }
 
+
     &:hover {
         outline: 0;
-        background: linear-gradient($dc-white, darken($dc-white, 5%));
-        color: $dc-gray10;
+        background: $dc-gray30;
+        color: $dc-white;
         text-decoration: none;
         box-shadow: 0 1px 1px rgba($dc-black, .2);
     }
@@ -39,12 +39,15 @@
     border: 1px solid transparent;
     background: transparent;
     box-shadow: none;
+    letter-spacing: 0.3px;
 }
 
 @mixin dc-btn--link {
     @include _dc-btn--link-reset;
     transition: color .1s linear;
     color: $dc-link-color;
+    font-weight: normal;
+    letter-spacing: 0.3px;
 
     &:hover {
         @include _dc-btn--link-reset;
@@ -52,9 +55,24 @@
     }
 }
 
+@mixin dc-btn--link-destroy {
+    @include _dc-btn--link-reset;
+    transition: color .1s linear;
+    color: $dc-red50;
+    font-weight: normal;
+    letter-spacing: 0.3px;
+
+    &:hover {
+        @include _dc-btn--link-reset;
+        color: $dc-red20;
+    }
+}
+
 @mixin dc-btn--link-disabled {
     @include _dc-btn--link-reset;
-    color: $dc-gray50;
+    color: $dc-gray60;
+    font-weight: normal;
+    letter-spacing: 0.3px;
 
     &:hover,
     &:active {
@@ -66,31 +84,139 @@
 //  ---------------------------------------------------------------------------
 
 @mixin dc-btn--primary {
-    border-color: darken($dc-blue40, 7%);
-    background: linear-gradient($dc-blue40, darken($dc-blue40, 7%));
-    color: $dc-white;
+  background: $dc-blue50;
+  color: $dc-white;
 
     &:hover {
-        background: lighten($dc-blue40, 3%);
+        background:darken($dc-blue20, 1);
         color: $dc-white;
     }
 }
+
+@mixin dc-btn--primary-2 {
+    background: $dc-blue90;
+    color: $dc-blue50;
+    box-shadow:inset 0px 0px 0px 2px $dc-blue50;
+    -webkit-box-shadow:inset 0px 0px 0px 2px $dc-blue50;
+    -moz-box-shadow:inset 0px 0px 0px 2px $dc-blue50;
+
+    &:hover {
+        background:darken($dc-blue50, 1);
+        color: $dc-white;
+    }
+}
+
+//  = SECONDARY
+//  ---------------------------------------------------------------------------
+
+@mixin dc-btn--secondary {
+  background: $dc-gray20;
+  color: $dc-white;
+
+    &:hover {
+        background:darken($dc-black, 1);
+        color: $dc-white;
+    }
+}
+
+@mixin dc-btn--secondary-2 {
+    background: $dc-gray80;
+    color: $dc-black;
+    box-shadow:inset 0px 0px 0px 2px $dc-gray20;
+    -webkit-box-shadow:inset 0px 0px 0px 2px $dc-gray20;
+    -moz-box-shadow:inset 0px 0px 0px 2px $dc-gray20;
+
+    &:hover {
+        background:darken($dc-gray20, 1);
+        color: $dc-white;
+    }
+}
+
+//  = TERTIARY
+//  ---------------------------------------------------------------------------
+
+@mixin dc-btn--tertiary {
+  background: $dc-gray50;
+  color: $dc-black;
+
+    &:hover {
+        background:darken($dc-gray20, 1);
+        color: $dc-white;
+    }
+}
+
+@mixin dc-btn--tertiary-2 {
+    background: $dc-gray90;
+    color: $dc-gray10;
+    box-shadow:inset 0px 0px 0px 2px $dc-gray50;
+    -webkit-box-shadow:inset 0px 0px 0px 2px $dc-gray50;
+    -moz-box-shadow:inset 0px 0px 0px 2px $dc-gray50;
+
+    &:hover {
+        background:darken($dc-gray50, 1);
+        color: $dc-black;
+    }
+}
+
 
 //  = DESTROY
 //  ---------------------------------------------------------------------------
 
 @mixin dc-btn--destroy {
-    transition: box-shadow .2s linear;
+  background: $dc-red50;
+  color: $dc-white;
 
     &:active {
-        border-color: $dc-red40;
-        background: $dc-red50;
+        background:darken($dc-red20, 1);
         color: $dc-white;
     }
 
     &:hover {
-        border-color: $dc-red40;
-        background: $dc-red50;
+        background: $dc-red30;
+        color: $dc-white;
+    }
+}
+
+@mixin dc-btn--destroy-2 {
+    background: $dc-red90;
+    color: $dc-red45;
+    -webkit-box-shadow:inset 0px 0px 0px 2px $dc-red50;
+    -moz-box-shadow:inset 0px 0px 0px 2px $dc-red50;
+    box-shadow:inset 0px 0px 0px 2px $dc-red50;
+
+    &:hover {
+        background:darken($dc-red50, 1);
+        color: $dc-white;
+    }
+}
+
+//  = VALIDATION
+//  ---------------------------------------------------------------------------
+
+@mixin dc-btn--validation {
+  background: $dc-green50;
+  color: $dc-white;
+
+    &:active {
+        background: $dc-green50;
+        color: $dc-white;
+    }
+
+    &:hover {
+        background: $dc-green30;
+        color: $dc-white;
+    }
+}
+
+@mixin dc-btn--validation-2 {
+    background: $dc-green90;
+    color: $dc-green45;
+    -webkit-box-shadow:inset 0px 0px 0px 2px $dc-green50;
+    -moz-box-shadow:inset 0px 0px 0px 2px $dc-green50;
+    box-shadow:inset 0px 0px 0px 2px $dc-green50;
+
+    &:hover {
+        background:darken($dc-green50, 1);
         color: $dc-white;
     }
 }
@@ -99,9 +225,8 @@
 //  ---------------------------------------------------------------------------
 
 @mixin dc-btn--disabled {
-    border-color: $dc-gray60;
-    background: transparent;
-    color: $dc-gray50;
+    background: $dc-gray70;
+    color: $dc-gray40;
     box-shadow: none;
     pointer-events: none;
 }
@@ -110,17 +235,23 @@
 //  ---------------------------------------------------------------------------
 
 @mixin dc-btn--active {
-    background: darken($dc-gray70, 3%);
-    box-shadow: inset 0 1px 1px rgba($dc-black, .2);
+    background: $dc-gray70;
+    box-shadow: inset 0 1px 1px rgba($dc-black, .3);
+
+    &:hover {
+      background: $dc-gray70;
+      box-shadow: inset 0 1px 1px rgba($dc-black, .3);
+      color: $dc-black;
+      cursor: default;
+    }
 }
 
 //  = SMALL BUTTON
 //  ---------------------------------------------------------------------------
 
 @mixin dc-btn--small {
-    padding: $dc-space50 + .1 $dc-space75;
+    padding: $dc-space75 + .1 $dc-space125;
     font-size: $dc-font50;
-    text-transform: uppercase;
     @content;
 }
 
@@ -138,7 +269,7 @@
 //  ---------------------------------------------------------------------------
 
 @mixin dc-btn--large {
-    padding: $dc-space125 $dc-space125 $dc-space125;
+    padding: $dc-space125 $dc-space150 $dc-space125;
     font-size: $dc-font150;
     line-height: .8;
 
@@ -164,13 +295,13 @@
 
     &:first-child {
         border-left-width: 1px;
-        border-top-left-radius: $dc-radius100;
-        border-bottom-left-radius: $dc-radius100;
+        border-top-left-radius: $dc-radius101;
+        border-bottom-left-radius: $dc-radius101;
     }
 
     &:last-child {
-        border-top-right-radius: $dc-radius100;
-        border-bottom-right-radius: $dc-radius100;
+        border-top-right-radius: $dc-radius101;
+        border-bottom-right-radius: $dc-radius101;
     }
 }
 
@@ -179,9 +310,27 @@
 
     .dc-btn--link {  @include dc-btn--link;  }
 
+    .dc-btn--link-destroy {  @include dc-btn--link-destroy;  }
+
     .dc-btn--primary {  @include dc-btn--primary;  }
 
+    .dc-btn--primary-2 {  @include dc-btn--primary-2;  }
+
+    .dc-btn--secondary {  @include dc-btn--secondary;  }
+
+    .dc-btn--secondary-2 {  @include dc-btn--secondary-2;  }
+
+    .dc-btn--tertiary {  @include dc-btn--tertiary;  }
+
+    .dc-btn--tertiary-2 {  @include dc-btn--tertiary-2;  }
+
+    .dc-btn--validation {  @include dc-btn--validation; }
+
+    .dc-btn--validation-2 {  @include dc-btn--validation-2; }
+
     .dc-btn--destroy {  @include dc-btn--destroy; }
+
+    .dc-btn--destroy-2 {  @include dc-btn--destroy-2; }
 
     .dc-btn--disabled { @include dc-btn--disabled; }
 

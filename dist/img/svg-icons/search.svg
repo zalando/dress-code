@@ -1,12 +1,12 @@
-<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-    <title>
-        Search
-    </title>
-    <g fill="none" fill-rule="evenodd">
-        <path fill="none" d="M0 0h36v36H0z"/>
-        <g transform="translate(10 10)" stroke="#9B9B9B">
-            <path d="M10.75 10.75l4.95 4.95" stroke-linecap="round"/>
-            <circle cx="6" cy="6" r="6"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-222.000000, -62.000000)" fill-rule="nonzero" fill="#000000">
+            <path d="M237.74306,80.632295 C236.139963,81.6912305 234.218896,82.3076923 232.153846,82.3076923 C226.546032,82.3076923 222,77.7616605 222,72.1538462 C222,66.5460318 226.546032,62 232.153846,62 C237.761661,62 242.307692,66.5460318 242.307692,72.1538462 C242.307692,74.405505 241.574783,76.4859837 240.33451,78.1697357 L245.395704,82.3873969 C246.150148,83.0732559 246.205748,84.2408528 245.519889,84.9952976 C244.83403,85.7497425 243.666434,85.8053423 242.911989,85.1194834 L237.74306,80.632295 Z M232.153846,79.3076923 C236.104806,79.3076923 239.307692,76.1048063 239.307692,72.1538462 C239.307692,68.202886 236.104806,65 232.153846,65 C228.202886,65 225,68.202886 225,72.1538462 C225,76.1048063 228.202886,79.3076923 232.153846,79.3076923 Z" id="search"></path>
         </g>
     </g>
 </svg>

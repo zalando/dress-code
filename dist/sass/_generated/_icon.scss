@@ -22,9 +22,10 @@
 }
 
 
+
 @function dc-icon-char($filename) {
     $char: "";
-    
+
     @if $filename == add {
         $char: "\EA01";
     }
@@ -309,7 +310,7 @@
     .dc-icon {
         @include dc-icon;
     }
-    
+
 
     .dc-icon--add {
         @include dc-icon--add;

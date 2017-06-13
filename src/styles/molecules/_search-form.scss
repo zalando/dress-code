@@ -97,14 +97,14 @@
 }
 
 @mixin dc-suggest__item--is-active {
-    background: $dc-blue70;
+    background: $dc-blue90;
     color: $dc-text-color;
 }
 
 @mixin dc-suggest__item__img-frame {
     display: flex;
     justify-content: center;
-    width: 48px;
+    width: 30px;
     height: $dc-space150;
     margin: 1rem $dc-space100 0 0;
     overflow: hidden;

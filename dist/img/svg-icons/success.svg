@@ -1,9 +1,12 @@
-<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-    <title>
-        Success
-    </title>
-    <g fill="none" fill-rule="evenodd">
-        <path d="M0 0h40v40H0z"/>
-        <path d="M11 20.72l5.46 6.26L29 12" stroke="#65CC1D" stroke-width="3.5"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>success</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-155.000000, -200.000000)" fill="#000000">
+            <path d="M167,224 C173.627417,224 179,218.627417 179,212 C179,205.372583 173.627417,200 167,200 C160.372583,200 155,205.372583 155,212 C155,218.627417 160.372583,224 167,224 Z M173.7888,208.572207 C174.234503,208.089362 174.234503,207.306516 173.7888,206.823672 C173.343097,206.340827 172.62047,206.340827 172.174768,206.823672 L164.07929,215.593773 L161.563694,212.868544 C161.117991,212.385699 160.395364,212.385699 159.949662,212.868544 C159.503959,213.351388 159.503959,214.134234 159.949662,214.617079 L162.465258,217.342308 C162.723011,217.584972 163.000455,217.867252 163.297591,218.189149 C163.743293,218.671993 164.46592,218.671993 164.911623,218.189149 L173.7888,208.572207 Z" id="success"></path>
+        </g>
     </g>
 </svg>

@@ -1,9 +1,12 @@
-<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-    <title>
-        OK
-    </title>
-    <g fill="none" fill-rule="evenodd">
-        <path fill="none" d="M0 0h36v36H0z"/>
-        <path d="M11.986 18.822l3.65 4.183 8.378-10.01" stroke="#65CC1D" stroke-width="3"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="20px" viewBox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-156.000000, -154.000000)" fill-rule="nonzero" fill="#000000">
+            <path d="M179.447007,157.491668 C180.184331,156.6929 180.184331,155.397843 179.447007,154.599075 C178.709684,153.800308 177.514246,153.800308 176.776922,154.599075 L163.384615,169.107408 L159.223078,164.599075 C158.485754,163.800308 157.290316,163.800308 156.552993,164.599075 C155.815669,165.397843 155.815669,166.6929 156.552993,167.491668 L160.71453,172 C161.140931,172.401438 161.599905,172.868413 162.091454,173.400925 C162.828778,174.199692 164.024216,174.199692 164.761539,173.400925 L179.447007,157.491668 Z" id="check"></path>
+        </g>
     </g>
 </svg>

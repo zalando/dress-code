@@ -4,6 +4,22 @@
     @include dc-btn-group;
 }
 
+.dc-pagination-txt {
+  display: inline-block;
+  border: 0;
+  padding: $dc-space100 $dc-space50 $dc-space100 $dc-space100;
+  border-radius: $dc-radius101;
+  color: $dc-gray10;
+  font-size: $dc-font80;
+  font-weight: $dc-normal-font-weight;
+  line-height: $dc-space100;
+  text-align: center;
+  background: $dc-white;
+  letter-spacing: $dc-body-letter-spacing;
+  text-decoration: none;
+  text-transform: capitalize !important;
+  vertical-align: top;
+}
 @mixin dc-pagination-btn {
     @include dc-btn--in-btn-group;
 
@@ -12,7 +28,7 @@
     cursor: pointer;
 
     &:hover {
-        background: $dc-blue80;
+        background: $dc-blue90;
         color: $dc-blue40;
     }
 

@@ -47,9 +47,9 @@
     margin: 0;
     color: currentcolor;
     font-size: $dc-font100;
+    letter-spacing: 0.2rem;
     font-weight: $dc-bold-font-weight;
     line-height: $dc-body-line-height;
-    text-transform: uppercase;
 }
 
 @mixin dc-msg__text {
@@ -69,7 +69,7 @@
     color: currentColor;
     line-height: 4rem;
     cursor: pointer;
-    opacity: .5;
+    opacity: 1;
 
     &:hover {
         opacity: .7;
@@ -87,26 +87,26 @@
 //  -----------------------------------------------------------------------------
 
 @mixin dc-msg--info {
-    border-color: $dc-blue60;
-    background-color: $dc-blue80;
-    color: $dc-blue20;
+    border-color: $dc-blue80;
+    background-color: $dc-blue90;
+    color: $dc-blue40;
 }
 
 //  = SUCCESS MESSAGE
 //  -----------------------------------------------------------------------------
 
 @mixin dc-msg--success {
-    border-color: $dc-green50;
-    background-color: $dc-green80;
-    color: $dc-green20;
+    border-color: $dc-green80;
+    background-color: $dc-green90;
+    color: $dc-green40;
 }
 
 //  = WARNING MESSAGE
 //  -----------------------------------------------------------------------------
 
 @mixin dc-msg--warning {
-    border-color: $dc-yellow40;
-    background-color: $dc-yellow80;
+    border-color: $dc-yellow70;
+    background-color: $dc-yellow90;
     color: $dc-yellow20;
 }
 
@@ -114,9 +114,9 @@
 //  -----------------------------------------------------------------------------
 
 @mixin dc-msg--error {
-    border-color: $dc-red70;
-    background-color: $dc-red80;
-    color: $dc-red20;
+    border-color: $dc-red80;
+    background-color: $dc-red90;
+    color: $dc-red40;
 }
 
 //  = ANIMATION

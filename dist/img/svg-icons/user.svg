@@ -1,9 +1,12 @@
-<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-    <title>
-        User
-    </title>
-    <g transform="translate(9 6)" stroke="#979797" fill="none" fill-rule="evenodd">
-        <circle cx="9" cy="6.5" r="6"/>
-        <path d="M15.415 13.5L18 23.408H0L2.585 13.5C4.3 15 6.543 15.908 9 15.908s4.7-.91 6.415-2.408z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="22px" viewBox="0 0 17 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>user</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-306.000000, -63.000000)" fill="#000000">
+            <path d="M311.034314,75 C309.211022,73.8486843 308,71.8157668 308,69.5 C308,65.9101491 310.910149,63 314.5,63 C318.089851,63 321,65.9101491 321,69.5 C321,71.8157668 319.788978,73.8486843 317.965686,75 L319,75 L319,75 C321.209139,75 323,76.790861 323,79 L323,83.5205078 L323,83.5205078 C323,84.3376088 322.337609,85 321.520508,85 C314.762153,85 310.121202,85 307.597656,85 C306.715295,85 306,84.2847049 306,83.4023438 L306,79 L306,79 C306,76.790861 307.790861,75 310,75 L310,75 L311.034314,75 Z" id="user"></path>
+        </g>
     </g>
 </svg>

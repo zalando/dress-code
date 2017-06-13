@@ -1,8 +1,12 @@
-<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-    <title>
-        minus
-    </title>
-    <g fill="none" fill-rule="evenodd">
-        <path d="M12 17v2h17v-2z" fill="#25AAFF"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="4px" viewBox="0 0 26 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>minus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-109.000000, -162.000000)" fill-rule="nonzero" fill="#000000">
+            <path d="M133,162 L111,162 C109.895431,162 109,162.895431 109,164 C109,165.104569 109.895431,166 111,166 L133,166 C134.104569,166 135,165.104569 135,164 C135,162.895431 134.104569,162 133,162 Z" id="minus"></path>
+        </g>
     </g>
 </svg>

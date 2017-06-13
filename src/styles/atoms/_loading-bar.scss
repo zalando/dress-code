@@ -23,9 +23,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: 3px;
     transform-origin: left;
-    background: $dc-orange50;
+    background: $dc-green60;
     animation: dc-loading-bar__fill 3s infinite cubic-bezier(.455, .03, .515, .955);
 }
 

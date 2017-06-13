@@ -1,9 +1,3 @@
-<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-    <title>
-        Undo
-    </title>
-    <g fill="none" fill-rule="evenodd">
-        <path fill="none" d="M0 0h36v36H0z"/>
-        <path d="M18 14.552c5.116.865 9 5.11 9 10.216 0 .246-.01.49-.027.732-1.744-3.176-5.065-5.44-8.973-5.853v3.824l-9-6.485 9-6.485v4.052z" fill="#4A4A4A"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25">
+    <path fill="#000" fill-rule="evenodd" d="M10 5.049V.979A.983.983 0 0 0 8.325.287L.287 8.307a.978.978 0 0 0 0 1.385l8.038 8.021A.982.982 0 0 0 10 17.021v-4.078c8.878-.006 12.547 3.992 11.007 11.995C25.993 12.305 22.324 5.676 10 5.05z"/>
 </svg>

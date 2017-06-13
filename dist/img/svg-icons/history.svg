@@ -1,10 +1,16 @@
-<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-    <title>
-        History
-    </title>
-    <g fill="none" fill-rule="evenodd">
-        <path fill="none" d="M0 0h36v36H0z"/>
-        <path d="M18 26c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2.286c3.156 0 5.714-2.558 5.714-5.714 0-3.156-2.558-5.714-5.714-5.714-3.156 0-5.714 2.558-5.714 5.714 0 3.156 2.558 5.714 5.714 5.714z" fill="#4A4A4A"/>
-        <path d="M18 18v-3M18 18h2" stroke="#4A4A4A" stroke-width="2" stroke-linecap="square"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>history</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-342.000000, -152.000000)" fill-rule="nonzero" fill="#000000">
+            <g id="history" transform="translate(342.000000, 152.000000)">
+                <path d="M12,21.5 C17.2467051,21.5 21.5,17.2467051 21.5,12 C21.5,6.75329488 17.2467051,2.5 12,2.5 C6.75329488,2.5 2.5,6.75329488 2.5,12 C2.5,17.2467051 6.75329488,21.5 12,21.5 Z M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z" id="Oval-4"></path>
+                <polygon id="Line" points="11 4.5 11 12 13 12 13 4.5"></polygon>
+                <polygon id="Line" points="13 11.5 6.5 11.5 6.5 13.5 13 13.5"></polygon>
+            </g>
+        </g>
     </g>
 </svg>

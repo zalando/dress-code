@@ -1,9 +1,5 @@
-<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-    <title>
-        Menu
-    </title>
-    <g fill="#979797" fill-rule="evenodd">
-        <path d="M10.5 11H26v-1H10v1h.5zM10.5 18H26v-1H10v1h.5z" id="Shape"/>
-        <path d="M10.5 25H26v-1H10v1h.5z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" viewBox="0 0 26 20">
+    <g fill="#000" fill-rule="nonzero">
+        <path d="M24 0H2a2 2 0 1 0 0 4h22a2 2 0 1 0 0-4zM24 8H2a2 2 0 1 0 0 4h22a2 2 0 1 0 0-4zM24 16H2a2 2 0 1 0 0 4h22a2 2 0 1 0 0-4z"/>
     </g>
 </svg>

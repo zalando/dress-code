@@ -1,9 +1,12 @@
-<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-    <title>
-        Redo
-    </title>
-    <g fill="none" fill-rule="evenodd">
-        <path fill="none" d="M0 0h36v36H0z"/>
-        <path d="M18 14.552c-5.116.865-9 5.11-9 10.216 0 .246.01.49.027.732 1.744-3.176 5.065-5.44 8.973-5.853v3.824l9-6.485-9-6.485v4.052z" fill="#4A4A4A"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>redo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-71.000000, -17.000000)" fill="#000000">
+            <path d="M81,22.0490386 L81,17.9790709 C81,17.7194052 80.8966318,17.4703747 80.7126353,17.2867632 C80.3294825,16.9044123 79.7082689,16.9044123 79.325116,17.2867632 L71.2873647,25.3076923 C70.9042118,25.6900433 70.9042118,26.3099567 71.2873647,26.6923077 L79.325116,34.7132368 C79.5091125,34.8968482 79.7586653,35 80.0188757,35 C80.5607357,35 81,34.561655 81,34.0209291 L81,29.9429934 C89.8779855,29.9369702 93.5470121,33.9353832 92.0070801,41.9382324 C96.9933105,29.3052833 93.3242838,22.675552 81,22.0490386 Z" id="redo" transform="translate(82.580739, 29.469116) scale(-1, 1) translate(-82.580739, -29.469116) "></path>
+        </g>
     </g>
 </svg>

@@ -1,9 +1,3 @@
-<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-    <title>
-        Success
-    </title>
-    <g fill="none" fill-rule="evenodd">
-        <path d="M0 0h40v40H0z"/>
-        <path d="M11 20.72l5.46 6.26L29 12" stroke="#65CC1D" stroke-width="3.5"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path fill="#000" fill-rule="evenodd" d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12zm6.789-15.428a1.31 1.31 0 0 0 0-1.748 1.08 1.08 0 0 0-1.614 0l-8.096 8.77-2.515-2.725a1.08 1.08 0 0 0-1.614 0 1.31 1.31 0 0 0 0 1.748l2.515 2.725c.258.243.535.525.833.847a1.08 1.08 0 0 0 1.614 0l8.877-9.617z"/>
 </svg>

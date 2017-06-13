@@ -50,7 +50,6 @@
     position: relative;
     font-weight: $dc-bold-font-weight;
     text-align: left;
-    text-transform: uppercase;
 
     @include breakpoint(0 $dc-huge-width - .1) {
         @include _dc-table-element--is-block;
@@ -205,7 +204,6 @@
             font-weight: $dc-bold-font-weight;
             line-height: 2.6rem;
             text-align: right;
-            text-transform: uppercase;
             content: attr(data-col);
         }
     }

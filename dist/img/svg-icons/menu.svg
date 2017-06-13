@@ -1,9 +1,16 @@
-<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-    <title>
-        Menu
-    </title>
-    <g fill="#979797" fill-rule="evenodd">
-        <path d="M10.5 11H26v-1H10v1h.5zM10.5 18H26v-1H10v1h.5z" id="Shape"/>
-        <path d="M10.5 25H26v-1H10v1h.5z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="20px" viewBox="0 0 26 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-172.000000, -64.000000)" fill-rule="nonzero" fill="#000000">
+            <g id="menu" transform="translate(172.000000, 64.000000)">
+                <path d="M24,0 L2,0 C0.8954305,0 0,0.8954305 0,2 C0,3.1045695 0.8954305,4 2,4 L24,4 C25.1045695,4 26,3.1045695 26,2 C26,0.8954305 25.1045695,0 24,0 Z" id="Line"></path>
+                <path d="M24,8 L2,8 C0.8954305,8 0,8.8954305 0,10 C0,11.1045695 0.8954305,12 2,12 L24,12 C25.1045695,12 26,11.1045695 26,10 C26,8.8954305 25.1045695,8 24,8 Z" id="Line"></path>
+                <path d="M24,16 L2,16 C0.8954305,16 0,16.8954305 0,18 C0,19.1045695 0.8954305,20 2,20 L24,20 C25.1045695,20 26,19.1045695 26,18 C26,16.8954305 25.1045695,16 24,16 Z" id="Line"></path>
+            </g>
+        </g>
     </g>
 </svg>

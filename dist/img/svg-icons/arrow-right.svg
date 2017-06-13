@@ -1,9 +1,12 @@
-<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-    <title>
-        Arrow Right
-    </title>
-    <g fill="none" fill-rule="evenodd">
-        <path fill="none" d="M0 0h36v36H0z"/>
-        <path d="M16.5 10.723l5.11 7.777-5.11 7.777" stroke="#979797"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="24px" viewBox="0 0 14 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-143.000000, -245.000000)" fill-rule="nonzero" fill="#000000">
+            <path d="M143.585786,265.585786 C142.804738,266.366835 142.804738,267.633165 143.585786,268.414214 C144.366835,269.195262 145.633165,269.195262 146.414214,268.414214 L156.414214,258.414214 C157.195262,257.633165 157.195262,256.366835 156.414214,255.585786 L146.414214,245.585786 C145.633165,244.804738 144.366835,244.804738 143.585786,245.585786 C142.804738,246.366835 142.804738,247.633165 143.585786,248.414214 L152.171573,257 L143.585786,265.585786 Z" id="arrow-right"></path>
+        </g>
     </g>
 </svg>

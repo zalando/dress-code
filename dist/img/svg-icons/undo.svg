@@ -1,9 +1,12 @@
-<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-    <title>
-        Undo
-    </title>
-    <g fill="none" fill-rule="evenodd">
-        <path fill="none" d="M0 0h36v36H0z"/>
-        <path d="M18 14.552c5.116.865 9 5.11 9 10.216 0 .246-.01.49-.027.732-1.744-3.176-5.065-5.44-8.973-5.853v3.824l-9-6.485 9-6.485v4.052z" fill="#4A4A4A"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>undo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-21.000000, -17.000000)" fill="#000000">
+            <path d="M31,22.0490386 L31,17.9790709 C31,17.7194052 30.8966318,17.4703747 30.7126353,17.2867632 C30.3294825,16.9044123 29.7082689,16.9044123 29.325116,17.2867632 L21.2873647,25.3076923 C20.9042118,25.6900433 20.9042118,26.3099567 21.2873647,26.6923077 L29.325116,34.7132368 C29.5091125,34.8968482 29.7586653,35 30.0188757,35 C30.5607357,35 31,34.561655 31,34.0209291 L31,29.9429934 C39.8779855,29.9369702 43.5470121,33.9353832 42.0070801,41.9382324 C46.9933105,29.3052833 43.3242838,22.675552 31,22.0490386 Z" id="undo"></path>
+        </g>
     </g>
 </svg>

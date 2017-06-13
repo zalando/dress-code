@@ -1,12 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
-    <title>redo</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="redo" sketch:type="MSArtboardGroup" fill="#000000">
-            <path d="M256,158.367171 C110.481687,182.988275 5.68434189e-14,303.82352 5.68434189e-14,449.179853 C5.68434189e-14,456.184859 0.256589853,463.132916 0.761325435,470.016 C50.3792323,379.607205 144.849041,315.113146 256,303.396547 L256,412.255139 L512,227.631569 L256,43.008 L256,158.367171 L256,158.367171 Z" id="Arrow-left-3" sketch:type="MSShapeGroup"></path>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25">
+    <path fill="#000" fill-rule="evenodd" d="M13.161 5.049V.979a.983.983 0 0 1 1.675-.692l8.038 8.02a.978.978 0 0 1 0 1.385l-8.038 8.021a.982.982 0 0 1-1.675-.692v-4.078C4.283 12.937.614 16.935 2.154 24.938-2.832 12.305.837 5.676 13.161 5.05z"/>
 </svg>

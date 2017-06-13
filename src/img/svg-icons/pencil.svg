@@ -1,13 +1,3 @@
-<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-    <title>
-        Edit
-    </title>
-    <g fill="none" fill-rule="evenodd">
-        <path fill="none" d="M0 0h36v36H0z"/>
-        <g stroke="#25AAFF">
-            <path d="M21.242 10.223l-8.484 8.484M21.242 10.223l3.535 3.535M24.777 13.758l-8.484 8.484" id="Line" stroke-linecap="square"/>
-            <path d="M19.828 11.637l3.535 3.535" stroke-linecap="square"/>
-            <path d="M12.334 19.697l2.97 2.97-4.808 1.837 1.838-4.807z"/>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+    <path fill="#000" fill-rule="evenodd" d="M5.277 17.313a.999.999 0 0 0 .262-.188L18.602 4.06a1 1 0 0 0 0-1.414L16.753.797a1 1 0 0 0-1.414 0L2.275 13.861c-.043.043-.081.09-.115.138a.519.519 0 0 0-.104.154L.773 18.33c-.182.415.237.8.637.586l3.752-1.553a.994.994 0 0 0 .104-.044l.005-.001a.549.549 0 0 0 .006-.004z"/>
 </svg>

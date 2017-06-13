@@ -1,12 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
-    <title>more</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="more" sketch:type="MSArtboardGroup" fill="#000000">
-            <path d="M64,320.551 C99.346224,320.551 128,291.897224 128,256.551 C128,221.204776 99.346224,192.551 64,192.551 C28.653776,192.551 0,221.204776 0,256.551 C0,291.897224 28.653776,320.551 64,320.551 L64,320.551 L64,320.551 Z M512,256.551 C512,221.204776 483.346224,192.551 448,192.551 C412.653776,192.551 384,221.204776 384,256.551 C384,291.897224 412.653776,320.551 448,320.551 C483.346224,320.551 512,291.897224 512,256.551 L512,256.551 Z M256,320.551 C291.346224,320.551 320,291.897224 320,256.551 C320,221.204776 291.346224,192.551 256,192.551 C220.653776,192.551 192,221.204776 192,256.551 C192,291.897224 220.653776,320.551 256,320.551 L256,320.551 L256,320.551 Z" id="i-more" sketch:type="MSShapeGroup"></path>
-        </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="6" viewBox="0 0 24 6">
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0-9h24v24H0z"/>
+        <path fill="#000" d="M2.77 5.692a2.77 2.77 0 1 1 0-5.538 2.77 2.77 0 0 1 0 5.538zm9.23 0a2.77 2.77 0 1 1 0-5.538 2.77 2.77 0 0 1 0 5.538zm9.23 0a2.77 2.77 0 1 1 0-5.538 2.77 2.77 0 0 1 0 5.538z"/>
     </g>
 </svg>

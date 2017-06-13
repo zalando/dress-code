@@ -15,102 +15,113 @@ $dc-image-path: "../img" !default;
 
 $dc-white: #fff !default;
 
-$dc-gray80: #f7f7f7 !default;
-$dc-gray70: #ededed !default;
-$dc-gray60: #d1d1d1 !default;
-$dc-gray50: #b6b6b6 !default;
-$dc-gray40: #9b9b9b !default;
-$dc-gray30: #808080 !default;
-$dc-gray20: #646464 !default;
-$dc-gray10: #4a4a4a !default;
+$dc-gray90: #FAFAFA !default;
+$dc-gray80: #EDEDEC !default;
+$dc-gray70: #E1E0DF !default;
+$dc-gray60: #D8D7D6 !default;
+$dc-gray50: #D0CFCD !default;
+$dc-gray40: #ABAAA8 !default;
+$dc-gray30: #858483 !default;
+$dc-gray20: #5F5F5E !default;
+$dc-gray10: #393938 !default;
 
-$dc-black: #000 !default;
+$dc-black: #131313 !default;
 
 //  = ACCENT COLORS
 //  ---------------------------------------------------------------------------
 
 // BLUE
-$dc-blue80: #e6f4ff !default;
-$dc-blue70: #d1ebff !default;
-$dc-blue60: #a3d9ff !default;
-$dc-blue50: #75c6ff !default;
-$dc-blue40: #26aafe !default;
-$dc-blue30: #1e87cb !default;
-$dc-blue20: #186698 !default;
-$dc-blue10: #124365 !default;
+$dc-blue90: #ECEEFB !default;
+$dc-blue80: #B4BBF2 !default;
+$dc-blue70: #7D88E9 !default;
+$dc-blue60: #5866E3 !default;
+$dc-blue50: #3344DD !default;
+$dc-blue40: #2A38B5 !default;
+$dc-blue30: #212C8D !default;
+$dc-blue20: #181F65 !default;
+$dc-blue10: #0E133D !default;
 
 // CYAN
-$dc-cyan80: #e8fcff !default;
-$dc-cyan70: #b5f5ff !default;
-$dc-cyan60: #8cf0ff !default;
-$dc-cyan50: #61eaff !default;
-$dc-cyan40: #24e0fe !default;
-$dc-cyan30: #1fb3cb !default;
-$dc-cyan20: #1a8899 !default;
-$dc-cyan10: #145b66 !default;
+$dc-cyan90: #E8F9F8 !default;
+$dc-cyan80: #A4E7E5 !default;
+$dc-cyan70: #61D5D1 !default;
+$dc-cyan60: #34C9C4 !default;
+$dc-cyan50: #07BEB8 !default;
+$dc-cyan40: #069C97 !default;
+$dc-cyan30: #057976 !default;
+$dc-cyan20: #045754 !default;
+$dc-cyan10: #023433 !default;
 
 // GREEN
-$dc-green80: #e7ffd6 !default;
-$dc-green70: #c6ff9e !default;
-$dc-green60: #acff70 !default;
-$dc-green50: #8bfa3c !default;
-$dc-green40: #72e620 !default;
-$dc-green30: #65cb1c !default;
-$dc-green20: #4a9912 !default;
-$dc-green10: #30660a !default;
+$dc-green90: #EBF4E7 !default;
+$dc-green80: #B0D4A2 !default;
+$dc-green70: #75B35C !default;
+$dc-green60: #4E9E2E !default;
+$dc-green50: #278900 !default;
+$dc-green45: #247D00 !default;
+$dc-green40: #207100 !default;
+$dc-green30: #195800 !default;
+$dc-green20: #123F00 !default;
+$dc-green10: #0B2600 !default;
 
 // YELLOW
-$dc-yellow80: #fff9d9 !default;
-$dc-yellow70: #fff09e !default;
-$dc-yellow60: #ffeb7a !default;
-$dc-yellow50: #ffe347 !default;
-$dc-yellow40: #ffda0a !default;
-$dc-yellow30: #ccb116 !default;
-$dc-yellow20: #99840e !default;
-$dc-yellow10: #665705 !default;
+$dc-yellow90: #FFFBE7 !default;
+$dc-yellow80: #FFF0A2 !default;
+$dc-yellow70: #FFE65C !default;
+$dc-yellow60: #FFDF2E !default;
+$dc-yellow50: #FFD800 !default;
+$dc-yellow40: #D1B100 !default;
+$dc-yellow30: #A38A00 !default;
+$dc-yellow20: #746300 !default;
+$dc-yellow10: #463B00 !default;
 
 // ORANGE
-$dc-orange80: #ffefe0 !default;
-$dc-orange70: #ffd1a6 !default;
-$dc-orange60: #ffba7a !default;
-$dc-orange50: #ffa54e !default;
-$dc-orange40: #ff8e25 !default;
-$dc-orange30: #cc711d !default;
-$dc-orange20: #995516 !default;
-$dc-orange10: #66380e !default;
+$dc-orange90: #FFF1E9 !default;
+$dc-orange80: #FFC8A7 !default;
+$dc-orange70: #FF9E65 !default;
+$dc-orange60: #FF8339 !default;
+$dc-orange50: #FF680D !default;
+$dc-orange40: #D1560B !default;
+$dc-orange30: #A34309 !default;
+$dc-orange20: #743006 !default;
+$dc-orange10: #461D04 !default;
 
 // RED
-$dc-red80: #ffeae6 !default;
-$dc-red70: #ffcabf !default;
-$dc-red60: #ff9985 !default;
-$dc-red50: #ff6c4f !default;
-$dc-red40: #ff4a25 !default;
-$dc-red30: #cc3a1d !default;
-$dc-red20: #992b15 !default;
-$dc-red10: #661d0e !default;
+$dc-red90: #FBECEA !default;
+$dc-red80: #F0B4AE !default;
+$dc-red70: #E47B72 !default;
+$dc-red60: #DD564A !default;
+$dc-red50: #D63122 !default;
+$dc-red45: #C32D1F !default;
+$dc-red40: #B0291C !default;
+$dc-red30: #892016 !default;
+$dc-red20: #621710 !default;
+$dc-red10: #3B0E0A !default;
 
 // MAGENTA
-$dc-magenta80: #f7e9f7 !default;
-$dc-magenta70: #f7c8f7 !default;
-$dc-magenta60: #f7b2f6 !default;
-$dc-magenta50: #f296f1 !default;
-$dc-magenta40: #eb74e9 !default;
-$dc-magenta30: #bb5cba !default;
-$dc-magenta20: #8c458b !default;
-$dc-magenta10: #5d2e5c !default;
+$dc-magenta90: #FAE8EF !default;
+$dc-magenta80: #ECA6BF !default;
+$dc-magenta70: #DE648F !default;
+$dc-magenta60: #D5386F !default;
+$dc-magenta50: #CC0C4F !default;
+$dc-magenta40: #A70A41 !default;
+$dc-magenta30: #820833 !default;
+$dc-magenta20: #5D0624 !default;
+$dc-magenta10: #380416 !default;
 
 // PURPLE
-$dc-purple80: #f4edff !default;
-$dc-purple70: #e1cfff !default;
-$dc-purple60: #c8a6ff !default;
-$dc-purple50: #ac7afd !default;
-$dc-purple40: #9757fd !default;
-$dc-purple30: #7845cb !default;
-$dc-purple20: #5a3498 !default;
-$dc-purple10: #3c2365 !default;
+$dc-purple90: #F2E8EE !default;
+$dc-purple80: #CCA5BD !default;
+$dc-purple70: #A7638D !default;
+$dc-purple60: #8E366C !default;
+$dc-purple50: #750A4C !default;
+$dc-purple40: #60093F !default;
+$dc-purple30: #4B0731 !default;
+$dc-purple20: #360523 !default;
+$dc-purple10: #200315 !default;
 
-$dc-primary-accent: $dc-blue40 !default;
-$dc-secondary-accent: $dc-orange40 !default;
+$dc-primary-accent: $dc-blue50 !default;
+$dc-secondary-accent: $dc-orange50 !default;
 
 $dc-debugmessage-color: rgba(255, 255, 0, .9) !default;
 
@@ -144,26 +155,30 @@ $dc-touch-size: $dc-space50 * 11 !default;
 //  = TYPOGRAPHY
 //  ---------------------------------------------------------------------------
 
-$dc-sans-font-family: "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$dc-sans-font-family: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
 $dc-serif-font-family: "Georgia", "Geneva", "Times New Roman", serif !default;
 $dc-mono-font-family: "Menlo", "Monaco", "Consolas", "Courier New", monospace !default;
 
 $dc-html-font-size: 62.5% !default;
 $dc-html-line-height: 1 !default;
 $dc-body-font-size: 1.4rem !default;
+$dc-body-letter-spacing: 0.7px !default;
 $dc-body-line-height: $dc-space150 !default;
 $dc-base-font-family: $dc-sans-font-family !default;
 $dc-alt-font-family: $dc-sans-font-family !default;
 
-$dc-font50: 1.1rem !default;
-$dc-font100: 1.4rem !default;
+$dc-font50: 1.4rem !default;
+$dc-font80: 1.5rem !default;
+$dc-font100: 1.6rem !default;
 $dc-font150: 1.8rem !default;
 $dc-font200: 2.2rem !default;
 $dc-font250: 2.7rem !default;
 $dc-font300: 3.4rem !default;
 
-$dc-normal-font-weight: 300 !default;
-$dc-bold-font-weight: 500 !default;
+$dc-light-font-weight: 300 !default;
+$dc-normal-font-weight: 400 !default;
+$dc-medium-font-weight: 500 !default;
+$dc-bold-font-weight: 600 !default;
 
 $dc-headings-font-family: $dc-sans-font-family !default;
 $dc-headings-font-weight: $dc-normal-font-weight !default;
@@ -184,6 +199,7 @@ $dc-h4-line-height: 2.4rem !default;
 //  ---------------------------------------------------------------------------
 
 $dc-radius100: 2px !default;
+$dc-radius101: 30px !default;
 $dc-radius50: 1px !default;
 $dc-border50: 1px !default;
 $dc-border100: 2px !default;

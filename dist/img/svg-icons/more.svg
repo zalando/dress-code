@@ -1,9 +1,17 @@
-<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-    <title>
-        More
-    </title>
-    <g fill="none" fill-rule="evenodd">
-        <path fill="none" d="M0 0h36v36H0z"/>
-        <path d="M11 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm16-2c0-1.105-.895-2-2-2s-2 .895-2 2 .895 2 2 2 2-.895 2-2zm-9 2c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z" fill="#25AAFF"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="6px" viewBox="0 0 24 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>more</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-390.000000, -162.000000)">
+            <g id="more" transform="translate(390.000000, 153.000000)">
+                <rect id="Rectangle-13" x="0" y="0" width="24" height="24"></rect>
+                <circle id="Oval-8" fill="#000000" cx="2.76923077" cy="11.9230769" r="2.76923077"></circle>
+                <circle id="Oval-8" fill="#000000" cx="12" cy="11.9230769" r="2.76923077"></circle>
+                <circle id="Oval-8" fill="#000000" cx="21.2307692" cy="11.9230769" r="2.76923077"></circle>
+            </g>
+        </g>
     </g>
 </svg>

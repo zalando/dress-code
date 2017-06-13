@@ -91,7 +91,7 @@
 		line-height: 1.2;
 
 		&:hover {
-			color: $dc-orange40;
+			color: $dc-orange90;
 		}
 
 		&.f-active {
@@ -103,7 +103,6 @@
 		padding-left: 1.5rem;
 		font-weight: 500;
 		font-size: $dc-font100;
-		text-transform: uppercase;
 
 		&:hover {
 			color: map-get($dc-colors, normal);
@@ -114,6 +113,6 @@
 .f-menu a:active,
 .f-menu a:hover
 {
-	background-color: lighten($dc-orange70, 12%);
-	color: $dc-orange40;
+	background-color: lighten($dc-orange60, 0%);
+	color: $dc-white;
 }

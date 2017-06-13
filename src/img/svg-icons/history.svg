@@ -1,10 +1,7 @@
-<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-    <title>
-        History
-    </title>
-    <g fill="none" fill-rule="evenodd">
-        <path fill="none" d="M0 0h36v36H0z"/>
-        <path d="M18 26c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2.286c3.156 0 5.714-2.558 5.714-5.714 0-3.156-2.558-5.714-5.714-5.714-3.156 0-5.714 2.558-5.714 5.714 0 3.156 2.558 5.714 5.714 5.714z" fill="#4A4A4A"/>
-        <path d="M18 18v-3M18 18h2" stroke="#4A4A4A" stroke-width="2" stroke-linecap="square"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g fill="#000" fill-rule="nonzero">
+        <path d="M12 21.5a9.5 9.5 0 1 0 0-19 9.5 9.5 0 0 0 0 19zm0 2.5C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12z"/>
+        <path d="M11 4.5V12h2V4.5z"/>
+        <path d="M13 11.5H6.5v2H13z"/>
     </g>
 </svg>

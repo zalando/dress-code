@@ -1,9 +1,12 @@
-<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-    <title>
-        Add
-    </title>
-    <g fill="none" fill-rule="evenodd">
-        <path fill="none" d="M0 0h36v36H0z"/>
-        <path d="M19 17v-7h-2v7h-7v2h7v7h2v-7h7v-2h-7z" fill="#25AAFF"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>add</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-63.000000, -151.000000)" fill-rule="nonzero" fill="#000000">
+            <path d="M78,162 L78,153 C78,151.895431 77.1045695,151 76,151 C74.8954305,151 74,151.895431 74,153 L74,162 L65,162 C63.8954305,162 63,162.895431 63,164 C63,165.104569 63.8954305,166 65,166 L74,166 L74,175 C74,176.104569 74.8954305,177 76,177 C77.1045695,177 78,176.104569 78,175 L78,166 L87,166 C88.1045695,166 89,165.104569 89,164 C89,162.895431 88.1045695,162 87,162 L78,162 Z" id="add"></path>
+        </g>
     </g>
 </svg>

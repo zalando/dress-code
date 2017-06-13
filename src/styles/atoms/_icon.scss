@@ -6,7 +6,7 @@
 //  ---------------------------------------------------------------------------------
 @mixin dc-icon--interactive {
     cursor: pointer;
-    &:hover {  color: $dc-blue20;  }
+    &:hover {  color: $dc-blue50;  }
 }
 
 //  = SVG ICON (FIXME  - to be removed, heare for legacy reasons)
@@ -21,7 +21,7 @@
 
     .#{$svg-selector} {
         margin-bottom: $dc-font50;
-        vertical-align: middle;
+        vertical-align: top;
     }
 }
 

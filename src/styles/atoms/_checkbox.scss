@@ -19,8 +19,7 @@
             left: 0;
             width: 2rem;
             height: 2rem;
-            border: 1px solid $dc-gray60;
-            border-radius: $dc-radius100;
+            border: 1px solid $dc-gray30;
             // scss-lint:disable ColorVariable
             background: #fff;
             // scss-lint:enable ColorVariable
@@ -44,17 +43,17 @@
     }
 
     &[disabled] + #{$sibling-label-selector} {
-        color: $dc-gray50;
+        color: $dc-gray30;
         cursor: default;
 
         &:before,
         &:after {
-            border-color: $dc-gray70;
+            border-color: $dc-gray30;
         }
 
         &:after {
             // scss-lint:disable ImportantRule
-            background: $dc-gray60 !important;
+            background: $dc-gray30 !important;
             // scss-lint:enable ImportantRule
         }
     }
@@ -69,11 +68,11 @@
     }
 
     &[disabled] + #{$sibling-label-selector} {
-        color: $dc-gray50;
+        color: $dc-gray40;
 
         &:before,
         &:after {
-            border-color: $dc-gray60;
+            border-color: $dc-gray40;
         }
 
         &:after {
@@ -98,30 +97,31 @@
 
         &:before,
         &:after {
-            width: 2.6rem;
-            height: 1.3rem;
-            margin-top: .3rem;
+            width: 2.9rem;
+            height: 2rem;
+            border-radius: $dc-radius101;
             transition: background-color .3s linear,
             transform .1s cubic-bezier(.105, .420, .425, 1);
         }
 
         &:after {
-            width: 1.1rem;
-            height: 1.1rem;
-            margin-top: .4rem;
+            width: 1.4rem;
+            height: 1.4rem;
+            margin-top: .3rem;
+            margin-left: .2rem;
             transform: scale3d(1, 1, 1);
-            border-radius: 1px;
-            background: $dc-gray50;
+            border-radius: $dc-radius101;
+            background: $dc-gray30;
             opacity: 1;
         }
     }
 
     &:checked + #{$sibling-label-selector} {
         &:after {
-            transform: translateX(1.3rem);
+            transform: translateX(0.9rem);
             transition: background-color .1s linear, transform .1s cubic-bezier(.105, .420, .425, 1);
             background: none;
-            background-color: $dc-green30;
+            background-color: $dc-green60;
         }
     }
 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="10px" viewBox="0 0 18 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>triangle-up</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-184.000000, -252.000000)" fill="#000000">
+            <path d="M189.674884,248.286763 L197.712635,256.307692 C198.095788,256.690043 198.095788,257.309957 197.712635,257.692308 L189.674884,265.713237 C189.291731,266.095588 188.670518,266.095588 188.287365,265.713237 C188.103368,265.529625 188,265.280595 188,265.020929 L188,248.979071 C188,248.438345 188.439264,248 188.981124,248 C189.241335,248 189.490887,248.103152 189.674884,248.286763 Z" id="triangle-up" transform="translate(193.000000, 257.000000) scale(-1, -1) rotate(-270.000000) translate(-193.000000, -257.000000) "></path>
+        </g>
+    </g>
+</svg>

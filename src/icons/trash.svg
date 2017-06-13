@@ -1,12 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
-    <title>trash</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="trash" fill="#000000">
-            <path d="M96,0 L384,0 L384,32 L352,32 L352,64 L480,64 L480,96 L448,96 L416,512 L64,512 L33,96 L0,96 L0,64 L128,64 L128,32 L96,32 L96,0 Z M160,32 L160,64 L320,64 L320,32 L160,32 Z M64,96 L96,480 L384,480 L416,96 L64,96 Z M160,160 L192.017067,160 L192.017067,416 L160,416 L160,160 Z M224,160 L256.017067,160 L256.017067,416.320007 L224,416.320007 L224,160 Z M288,160 L320.017067,160 L320.017067,416.320007 L288,416.320007 L288,160 Z" id="Path-39"></path>
-        </g>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22">
+    <path fill="#000" fill-rule="evenodd" d="M17 4v16a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4c-.38 0-1-.448-1-1s.62-1 1-1h16c.38 0 1 .448 1 1s-.62 1-1 1zM8 7v11a1 1 0 1 0 2 0V7a1 1 0 1 0-2 0zM4 7v11a1 1 0 1 0 2 0V7a1 1 0 1 0-2 0zm8 0v11a1 1 0 1 0 2 0V7a1 1 0 1 0-2 0zm0-6v1H6V1c0-.667.333-1 1-1h4c.667 0 1 .333 1 1z"/>
 </svg>

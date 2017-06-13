@@ -1,12 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
-    <title>lock</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="lock" fill="#000000">
-            <path d="M96,192 L74.6645251,192 C51.1066857,192 32,211.103893 32,234.669739 L32,469.330261 C32,492.89445 51.1015585,512 74.6645251,512 L437.335475,512 C460.893314,512 480,492.896107 480,469.330261 L480,234.669739 C480,211.10555 460.898441,192 437.335475,192 L416,192 L416,170 C416,76.2965329 344.36556,0 256,0 C167.63444,0 96,76.2965329 96,170 L96,192 Z M160,192 C160,192 160,173.410411 160,161.391153 C160,107.603504 202.980664,64 256,64 C309.019336,64 352,107.603504 352,161.391153 C352,173.059568 352,192 352,192" id="Rectangle-11"></path>
-        </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g fill="#000" fill-rule="evenodd">
+        <path d="M11 15.732V19.5h2v-3.768a2 2 0 1 0-2 0zM3 8h18a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V11a3 3 0 0 1 3-3z"/>
+        <path fill-rule="nonzero" d="M19.5 11.696h-15V7.5c0-3.897 3.386-7 7.5-7s7.5 3.103 7.5 7v4.196zm-3-3V7.5c0-2.179-1.987-4-4.5-4s-4.5 1.821-4.5 4v1.328l9-.132z"/>
     </g>
 </svg>

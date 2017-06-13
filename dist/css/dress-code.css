@@ -1507,7 +1507,6 @@ body {
   padding: 0.4rem 0.8rem;
   font-size: 1.1rem;
   font-weight: 300;
-  text-transform: uppercase;
 }
 
 .dc-btn--inline {
@@ -1677,7 +1676,6 @@ body {
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.8rem;
-  text-transform: uppercase;
 }
 
 .dc-label__sub {
@@ -2242,7 +2240,6 @@ body {
 .dc-select--small {
   height: 2.2rem;
   font-size: 1.1rem;
-  text-transform: uppercase;
 }
 
 .dc-select--is-error {
@@ -2367,7 +2364,6 @@ body {
   position: relative;
   font-weight: 500;
   text-align: left;
-  text-transform: uppercase;
 }
 
 @media (min-width: 0) and (max-width: 63.9em) {
@@ -2543,7 +2539,6 @@ body {
     font-weight: 500;
     line-height: 2.6rem;
     text-align: right;
-    text-transform: uppercase;
     content: attr(data-col);
   }
 }
@@ -3576,7 +3571,6 @@ input:checked ~ .dc-side-revealer__content {
   font-weight: 500;
   line-height: 1.2;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .dc-toast__content--info {

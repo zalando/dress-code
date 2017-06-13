@@ -79,50 +79,68 @@
     @if $filename == lock {
         $char: "\EA12";
     }
-    @if $filename == menu {
+    @if $filename == mcapi {
         $char: "\EA13";
     }
-    @if $filename == minus {
+    @if $filename == menu {
         $char: "\EA14";
     }
-    @if $filename == more {
+    @if $filename == minus {
         $char: "\EA15";
     }
-    @if $filename == pencil {
+    @if $filename == more {
         $char: "\EA16";
     }
-    @if $filename == play {
+    @if $filename == multiple-users {
         $char: "\EA17";
     }
-    @if $filename == redo {
+    @if $filename == neutral {
         $char: "\EA18";
     }
-    @if $filename == search {
+    @if $filename == overflow {
         $char: "\EA19";
     }
-    @if $filename == success {
+    @if $filename == pencil {
         $char: "\EA1A";
     }
-    @if $filename == trash {
+    @if $filename == play {
         $char: "\EA1B";
     }
-    @if $filename == triangle-down {
+    @if $filename == redo {
         $char: "\EA1C";
     }
-    @if $filename == triangle-up {
+    @if $filename == search {
         $char: "\EA1D";
     }
-    @if $filename == undo {
+    @if $filename == success {
         $char: "\EA1E";
     }
-    @if $filename == user {
+    @if $filename == thumbs-down {
         $char: "\EA1F";
     }
-    @if $filename == users {
+    @if $filename == thumbs-up {
         $char: "\EA20";
     }
-    @if $filename == warning {
+    @if $filename == trash {
         $char: "\EA21";
+    }
+    @if $filename == triangle-down {
+        $char: "\EA22";
+    }
+    @if $filename == triangle-up {
+        $char: "\EA23";
+    }
+    @if $filename == undo {
+        $char: "\EA24";
+    }
+    @if $filename == user {
+        $char: "\EA25";
+    }
+    @if $filename == users {
+        $char: "\EA26";
+    }
+    @if $filename == warning {
+        $char: "\EA27";
     }
 
     @return $char;
@@ -219,6 +237,11 @@
         content: dc-icon-char(lock);
     }
 }
+@mixin dc-icon--mcapi {
+    &:before {
+        content: dc-icon-char(mcapi);
+    }
+}
 @mixin dc-icon--menu {
     &:before {
         content: dc-icon-char(menu);
@@ -232,6 +255,21 @@
 @mixin dc-icon--more {
     &:before {
         content: dc-icon-char(more);
+    }
+}
+@mixin dc-icon--multiple-users {
+    &:before {
+        content: dc-icon-char(multiple-users);
+    }
+}
+@mixin dc-icon--neutral {
+    &:before {
+        content: dc-icon-char(neutral);
+    }
+}
+@mixin dc-icon--overflow {
+    &:before {
+        content: dc-icon-char(overflow);
     }
 }
 @mixin dc-icon--pencil {
@@ -257,6 +295,16 @@
 @mixin dc-icon--success {
     &:before {
         content: dc-icon-char(success);
+    }
+}
+@mixin dc-icon--thumbs-down {
+    &:before {
+        content: dc-icon-char(thumbs-down);
+    }
+}
+@mixin dc-icon--thumbs-up {
+    &:before {
+        content: dc-icon-char(thumbs-up);
     }
 }
 @mixin dc-icon--trash {
@@ -383,6 +431,10 @@
         @include dc-icon--lock;
     }
 
+    .dc-icon--mcapi {
+        @include dc-icon--mcapi;
+    }
+
     .dc-icon--menu {
         @include dc-icon--menu;
     }
@@ -393,6 +445,18 @@
 
     .dc-icon--more {
         @include dc-icon--more;
+    }
+
+    .dc-icon--multiple-users {
+        @include dc-icon--multiple-users;
+    }
+
+    .dc-icon--neutral {
+        @include dc-icon--neutral;
+    }
+
+    .dc-icon--overflow {
+        @include dc-icon--overflow;
     }
 
     .dc-icon--pencil {
@@ -413,6 +477,14 @@
 
     .dc-icon--success {
         @include dc-icon--success;
+    }
+
+    .dc-icon--thumbs-down {
+        @include dc-icon--thumbs-down;
+    }
+
+    .dc-icon--thumbs-up {
+        @include dc-icon--thumbs-up;
     }
 
     .dc-icon--trash {
