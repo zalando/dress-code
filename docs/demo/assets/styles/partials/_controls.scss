@@ -1,27 +1,38 @@
+.headerlink{
+	color:white;
+	letter-spacing: $dc-body-letter-spacing;
+	font-size: $dc-font200;
+	padding-top: 1px;
+	font-weight: 300;
+
+	&:hover{color: $dc-orange50;}
+}
+
 .f-controls {
 	@include clearfix;
 	@include border-box;
 		margin-bottom: $dc-space125;
-		border-bottom: 1px solid $dc-gray70;
+
 
 	.f-control {
 		display: block;
-		float: left;
+		float: right;
 		text-align: center;
-		width: percentage(1/3);
-		margin: 0;
+		width: 40px;
+		color: white;
+		margin-top: 32px;
 		padding: 1rem 0;
 
 		&.f-active {
-			box-shadow: inset 0 -3px 0 0 map-get($dc-colors, accent);
+			box-shadow: inset 0 -3px 0 0 $dc-orange50;
 
 			use {
-				fill: $dc-orange40;
+				fill: $dc-orange50;
 			}
 
 			&:hover {
 				use {
-					fill: darken($dc-orange40, 10%);
+					fill: $dc-orange50;
 				}
 			}
 		}
@@ -35,7 +46,7 @@
 
 			&:hover {
 				use {
-					fill: darken($dc-orange40, 10%);
+					fill: $dc-orange50;
 				}
 			}
 		}
@@ -46,7 +57,7 @@
 	@include border-box;
 	display: inline-block;
 	cursor: pointer;
-	margin-left: $dc-space150;
+	margin-left: $dc-space100;
 
 	&:first-child {
 		margin-left: 0;

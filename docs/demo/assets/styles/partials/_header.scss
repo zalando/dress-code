@@ -6,17 +6,21 @@
     align-items: center;
     height: $dc-touch-size;
     padding: $dc-space75 $dc-space100;
-    border-bottom: 1px solid $dc-gray60;
     background: $dc-white;
     z-index: 900;
 
     .f-logo {
         max-height: $dc-touch-size - $dc-space150;
-        padding-bottom: 2px;
-        width: 9.35rem; // ie 10 fix
+        padding-top: 1px;
+        padding-left: 12px;
+        padding-right: 8px;
+        position: relative;
+
 
         //~ * {
         //    margin-left: $dc-space150;
         //}
+
+    a {color: white;}
     }
 }

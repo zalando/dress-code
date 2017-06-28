@@ -6,7 +6,7 @@
 	border-bottom: 1px solid map-get($dc-colors, light);
 
 	&.f-item-grouped_groups {
-		@include dc-card;
+
 	}
 
 	&:last-child {

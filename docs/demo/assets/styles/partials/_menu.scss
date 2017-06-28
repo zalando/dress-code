@@ -2,15 +2,14 @@
 .f-menu {
 	@include border-box;
 	position: fixed;
-	top: $dc-touch-size;
 	left: 0;
+	padding-top: 10px;
 	z-index: 1;
-	width: calc(#{span(4 of 4)});
+	width: 280px;
 	height: 100%;
 	padding-bottom: $dc-touch-size;
-	background-color: map-get($dc-colors, menu-background);
-	border-right: 1px solid $dc-gray60;
-	overflow-x: hidden;
+	background-color: $dc-gray10;
+	overflow-x: scroll;
 	overflow-y: scroll;
 	transition: transform .2s ease-out;
 	-webkit-overflow-scrolling: touch;
@@ -20,40 +19,7 @@
 		transform: translate(-100%, 0);
 	}
 
-	@include breakpoint($dc-small-width)
-	{
-		width: #{span(3 of 4)};
-		// Define a max-width to avoid the menu being very large at the top end of certain MQ spans
-		max-width: 24rem;
-	}
 
-	@include breakpoint($dc-medium-width)
-	{
-		width: #{span(3 of 6)};
-	}
-
-	@include breakpoint($dc-large-width)
-	{
-		width: calc(#{span(3 of 8)});
-	}
-
-	@include breakpoint($dc-huge-width)
-	{
-		width: calc(#{span(2 of 12)} + #{gutter(6)});
-		// Remove the max-width from here on and start by showing the menu
-		max-width: none;
-		transform: translate(-100%, 0);
-	}
-
-	@include breakpoint($dc-giant-width)
-	{
-		width: #{span(3 of 16)};
-	}
-
-	@include breakpoint($dc-monstrous-width)
-	{
-		width: calc(#{span(3 of 20)});
-	}
 
 	.f-menu-active & {
 		transform: translate(0, 0);
@@ -72,7 +38,6 @@
 		> li {
 			margin-bottom: $dc-space125;
 			padding-bottom: $dc-space125;
-			border-bottom: 1px solid $dc-gray70;
 		}
 	}
 
@@ -85,27 +50,33 @@
 	a {
 		display: block;
 		padding: $dc-space50 $dc-space125;
-		color: $dc-gray20;
+		color: $dc-gray90;
 		text-decoration: none;
+		line-height: 1.4;
+		font-weight: 300;
 		font-size: $dc-font100;
-		line-height: 1.2;
+		letter-spacing: $dc-body-letter-spacing;
 
 		&:hover {
 			color: $dc-orange90;
+			font-weight: 300;
+			letter-spacing: $dc-body-letter-spacing;
 		}
 
 		&.f-active {
-			box-shadow: inset 3px 0 0 0 map-get($dc-colors, accent);
+			box-shadow: inset 3px 0 0 0 ($dc-orange50);
 		}
 	}
 
 	.f-menu__heading {
-		padding-left: 1.5rem;
-		font-weight: 500;
-		font-size: $dc-font100;
+		padding-left: 1.6rem;
+		font-weight: 400;
+		font-size: $dc-font150;
 
 		&:hover {
-			color: map-get($dc-colors, normal);
+			background-color: $dc-blue50;
+			color: $dc-white;
+			font-weight: 400;
 		}
 	}
 }
@@ -113,6 +84,6 @@
 .f-menu a:active,
 .f-menu a:hover
 {
-	background-color: lighten($dc-orange60, 0%);
+	background-color: $dc-blue50;
 	color: $dc-white;
 }

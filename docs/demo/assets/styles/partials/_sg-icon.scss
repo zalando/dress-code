@@ -20,7 +20,7 @@
         position: absolute;
         bottom:0;
         left:0;
-        font-size:1.3rem;
+        font-size:1.2rem;
         width: 100%;
         text-align:center;
         word-break: break-all;
@@ -32,4 +32,8 @@
 
 .sg-icons .sg-icon--small:before {
     font-size: 6px;
+}
+
+.sg-icons .sg-icon--med:before {
+    font-size: 16px;
 }

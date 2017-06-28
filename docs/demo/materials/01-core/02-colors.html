@@ -6,7 +6,7 @@
 		<h3 class="dc-h3 f-item-heading">{{@key}}</h3>
 		<div class="f-color-chips">
 		{{#each this}}
-			<div class="f-color-chip">
+			<div class="f-color-chip" style="border-top-color: {{this}}; border-bottom-color: {{this}};">
 				<div class="f-color-chip__name">{{@key}}</div>
 				<div class="f-color-chip__color">{{this}}</div>
 			</div>

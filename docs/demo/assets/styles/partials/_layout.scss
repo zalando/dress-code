@@ -21,6 +21,8 @@ a {
 	top: 0;
 	right:0;
 	left: 0;
+	background-color: #111;
+	color: white;
 	z-index: 900;
 }
 
@@ -30,7 +32,8 @@ a {
 	position: relative;
 	margin-top: $dc-touch-size;
 	z-index: 0;
-	min-height: calc(100vh - 4.4rem);
+	max-width: 850px;
+	min-height: 100%;
 	transition: transform .2s ease-out, padding .2s ease-out;
 
 	.f-menu-active & {
@@ -44,18 +47,18 @@ a {
 		// Only push the content from huge size up
 		@include breakpoint($dc-huge-width)
 		{
-			margin-left: calc(#{span(2 of 12)} + #{gutter(6)});
+			margin-left: 280px;
 			transition: none;
 		}
 
 		@include breakpoint($dc-giant-width)
 		{
-			margin-left: #{span(3 of 16)};
+			margin-left: 280px;
 		}
 
 		@include breakpoint($dc-monstrous-width)
 		{
-			margin-left: calc(#{span(3 of 20)});
+			margin-left: 280px;
 		}
 	}
 

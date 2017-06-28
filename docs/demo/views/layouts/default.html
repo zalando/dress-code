@@ -20,14 +20,18 @@
 
 	{{#if fabricator}}
 		<header class="f-header">
-			<img class="f-logo" src="{{basePath}}/assets/img/zalando-logo.svg" alt="Zalando">
+
 			{{> f-control-bar}}
+			<img class="f-logo" src="favicon.ico" alt="Zalando"> <a href="/" class="headerlink"> The Dress Code</a>
 			<div class="f-control f-menu-toggle">
-				<a href class="dc-link js-toggle-breakpoints">Breakpoints</a>
-			</div>
-            <div class="f-control">
-                <a class="dc-link" href="https://github.com/zalando/dress-code/" target="_blank">Github</a>
-            </div>
+            <div class="f-controls">
+						{{> f-controls}}
+					</div>
+					<!--		<a href class="dc-link js-toggle-breakpoints">Breakpoints</a>
+						</div>
+			            <div class="f-control">
+			                <a class="dc-link" href="https://github.com/zalando/dress-code/" target="_blank">Github</a>
+			            </div>-->
 		</header>
 		{{> f-icons}}
 		{{> f-menu}}
