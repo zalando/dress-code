@@ -38,7 +38,7 @@
     color: currentColor;
 
     &:hover {
-        border-bottom: 1px dashed currentColor;
+        border-bottom: 1px solid currentColor;
         color: currentColor;
     }
 }

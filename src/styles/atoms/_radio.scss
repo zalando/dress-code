@@ -18,6 +18,7 @@
         text-transform: none;
         cursor: pointer;
 
+
         &:before,
         &:after {
             position: absolute;
@@ -46,7 +47,7 @@
 
     &:checked + #{$sibling-label-selector}:after {
         transform: scale3d(1, 1, 1);
-        background: $dc-blue40;
+        background: $dc-blue50;
         opacity: 1;
     }
 
@@ -72,7 +73,7 @@
     }
 
     + #{$sibling-label-selector}:after {
-        border-color: darken($dc-blue40, 5%);
+        border-color: $dc-blue50;
     }
 }
 

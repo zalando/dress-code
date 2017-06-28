@@ -74,76 +74,79 @@
         $char: "\EA10";
     }
     @if $filename == info {
+        $char: "\EA12";
+    }
+    @if $filename == info-circle {
         $char: "\EA11";
     }
     @if $filename == lock {
-        $char: "\EA12";
-    }
-    @if $filename == mcapi {
         $char: "\EA13";
     }
-    @if $filename == menu {
+    @if $filename == mcapi {
         $char: "\EA14";
     }
-    @if $filename == minus {
+    @if $filename == menu {
         $char: "\EA15";
     }
-    @if $filename == more {
+    @if $filename == minus {
         $char: "\EA16";
     }
-    @if $filename == multiple-users {
+    @if $filename == more {
         $char: "\EA17";
     }
-    @if $filename == neutral {
+    @if $filename == multiple-users {
         $char: "\EA18";
     }
-    @if $filename == overflow {
+    @if $filename == neutral {
         $char: "\EA19";
     }
-    @if $filename == pencil {
+    @if $filename == overflow {
         $char: "\EA1A";
     }
-    @if $filename == play {
+    @if $filename == pencil {
         $char: "\EA1B";
     }
-    @if $filename == redo {
+    @if $filename == play {
         $char: "\EA1C";
     }
-    @if $filename == search {
+    @if $filename == redo {
         $char: "\EA1D";
     }
-    @if $filename == success {
+    @if $filename == search {
         $char: "\EA1E";
     }
-    @if $filename == thumbs-down {
+    @if $filename == success {
         $char: "\EA1F";
     }
-    @if $filename == thumbs-up {
+    @if $filename == thumbs-down {
         $char: "\EA20";
     }
-    @if $filename == trash {
+    @if $filename == thumbs-up {
         $char: "\EA21";
     }
-    @if $filename == triangle-down {
+    @if $filename == trash {
         $char: "\EA22";
     }
-    @if $filename == triangle-up {
+    @if $filename == triangle-down {
         $char: "\EA23";
     }
-    @if $filename == undo {
+    @if $filename == triangle-up {
         $char: "\EA24";
     }
-    @if $filename == user {
+    @if $filename == undo {
         $char: "\EA25";
     }
-    @if $filename == users {
+    @if $filename == user {
         $char: "\EA26";
     }
+    @if $filename == users {
+        $char: "\EA27";
+    }
     @if $filename == warning {
-        $char: "\EA28";
+        $char: "\EA29";
     }
     @if $filename == warning-circle {
-        $char: "\EA27";
+        $char: "\EA28";
     }
 
     @return $char;
@@ -233,6 +236,11 @@
 @mixin dc-icon--info {
     &:before {
         content: dc-icon-char(info);
+    }
+}
+@mixin dc-icon--info-circle {
+    &:before {
+        content: dc-icon-char(info-circle);
     }
 }
 @mixin dc-icon--lock {
@@ -433,6 +441,10 @@
 
     .dc-icon--info {
         @include dc-icon--info;
+    }
+
+    .dc-icon--info-circle {
+        @include dc-icon--info-circle;
     }
 
     .dc-icon--lock {

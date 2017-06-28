@@ -3,6 +3,7 @@
 @mixin dc-btn {
     display: inline-block;
     border: 0;
+    transition: color .1s linear;
     padding: $dc-space100 $dc-space125 $dc-space100 $dc-space125;
     border-radius: $dc-radius101;
     color: $dc-gray10;
@@ -39,7 +40,7 @@
     border: 1px solid transparent;
     background: transparent;
     box-shadow: none;
-    letter-spacing: 0.3px;
+    letter-spacing: $dc-body-letter-spacing;
 }
 
 @mixin dc-btn--link {
@@ -47,32 +48,37 @@
     transition: color .1s linear;
     color: $dc-link-color;
     font-weight: normal;
-    letter-spacing: 0.3px;
+    font-weight: $dc-bold-font-weight;
+    letter-spacing: $dc-body-letter-spacing;
 
     &:hover {
         @include _dc-btn--link-reset;
-        color: $dc-link-color-hover;
+        color: $dc-white;
+        background: $dc-blue50;
     }
 }
 
 @mixin dc-btn--link-destroy {
     @include _dc-btn--link-reset;
     transition: color .1s linear;
+    letter-spacing: $dc-body-letter-spacing;
+    font-weight: $dc-bold-font-weight;
     color: $dc-red50;
-    font-weight: normal;
-    letter-spacing: 0.3px;
 
     &:hover {
         @include _dc-btn--link-reset;
-        color: $dc-red20;
+        font-weight: $dc-bold-font-weight;
+        color: $dc-white;
+        background: $dc-red50;
+        letter-spacing: $dc-body-letter-spacing;
     }
 }
 
 @mixin dc-btn--link-disabled {
     @include _dc-btn--link-reset;
     color: $dc-gray60;
-    font-weight: normal;
-    letter-spacing: 0.3px;
+    font-weight: $dc-bold-font-weight;
+    letter-spacing: $dc-body-letter-spacing;
 
     &:hover,
     &:active {
@@ -252,6 +258,13 @@
 @mixin dc-btn--small {
     padding: $dc-space75 + .1 $dc-space125;
     font-size: $dc-font50;
+    line-height: .8;
+    border: 0;
+    transition: color .1s linear;
+    border-radius: $dc-radius101;
+    font-weight: 500;
+    letter-spacing: $dc-body-letter-spacing;
+
     @content;
 }
 
@@ -272,6 +285,11 @@
     padding: $dc-space125 $dc-space150 $dc-space125;
     font-size: $dc-font150;
     line-height: .8;
+    border: 0;
+    transition: color .1s linear;
+    border-radius: $dc-radius101;
+    font-weight: 500;
+    letter-spacing: $dc-body-letter-spacing;
 
     @content;
 }

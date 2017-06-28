@@ -1,9 +1,10 @@
 @mixin dc-page {
 
-    padding: $dc-space75;
+    padding: 16px;
 
     @include breakpoint($dc-large-width) {
-        padding: $dc-space100;
+      padding: 24px;
+
     }
 
     @include breakpoint($dc-huge-width) {
@@ -27,6 +28,7 @@
 @mixin dc-structure-selectors {
     .dc-page {
         @include dc-page;
+        background-color: #fff;
     }
 
     .dc-container {

@@ -23,6 +23,32 @@
     }
 }
 
+@mixin dc-textlink {
+    transition: color .1s linear;
+    color: $dc-link-color;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba($dc-black, 0);
+    border-bottom: 1px solid $dc-blue80;
+
+    &:hover,
+    &:active {
+        color: $dc-link-color-hover;
+        text-decoration: none;
+        background-color: $dc-blue90;
+        border-bottom: 1px solid $dc-blue70;
+    }
+}
+
+@mixin dc-textlink--destroy {        border-bottom: 1px solid $dc-blue80;
+    &:hover,
+    &:active {
+        color: $dc-red40;
+        background-color: $dc-red90;
+        border-bottom: 1px solid $dc-red70;
+    }
+}
+
 @mixin dc-link--disabled {
     color: $dc-gray50;
     cursor: default;
@@ -34,10 +60,16 @@
         @include dc-link;
     }
 
+    .dc-textlink {
+        @include dc-textlink;
+    }
+
     .dc-link--destroy {
         @include dc-link--destroy;
     }
-
+    .dc-textlink--destroy {
+        @include dc-textlink--destroy;
+    }
     .dc-link--disabled {
         @include dc-link--disabled;
     }

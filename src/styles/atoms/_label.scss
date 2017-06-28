@@ -11,13 +11,13 @@
 
 @mixin dc-label__sub {
     margin-left: $dc-space50;
-    color: $dc-gray20;
-    font-weight: 300;
+    color: $dc-gray30;
+    font-weight: 400;
     text-transform: capitalize;
 }
 
 @mixin dc-label__sub--is-error {
-    color: $dc-red40;
+    color: $dc-red50;
 }
 
 @mixin dc-label--disabled {
@@ -26,7 +26,7 @@
 
 @mixin dc-label--is-error {
     &:after {
-        color: $dc-red40;
+        color: $dc-red50;
     }
 }
 

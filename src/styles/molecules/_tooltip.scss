@@ -17,17 +17,17 @@
 $dc--has-tooltip-zindex: 1000000 !default;
 $dc--has-tooltip-hide-delay: 0ms !default;
 $dc--has-tooltip-show-delay: 100ms !default;
-$dc--has-tooltip-arrow-border-width: 6px !default;
+$dc--has-tooltip-arrow-border-width: 10px !default;
 $dc--has-tooltip-arrow-offset-x: 2rem !default;
-$dc--has-tooltip-default-background-color: hsl(0, 0%, 22%) !default;
-$dc--has-tooltip-default-color: $dc-white !default;
-$dc--has-tooltip-vertical-padding: .8rem !default;
-$dc--has-tooltip-horizontal-padding: 1rem !default;
+$dc--has-tooltip-default-background-color: hsl(0, 0%, 100%) !default;
+$dc--has-tooltip-default-color: $dc-black !default;
+$dc--has-tooltip-vertical-padding: 1.5rem !default;
+$dc--has-tooltip-horizontal-padding: 1.5rem !default;
 $dc--has-tooltip-font-size: 1.4rem !default;
 $dc--has-tooltip-height: $dc-space150 !default;
-$dc--has-tooltip-transition-distance: .8rem !default;
+$dc--has-tooltip-transition-distance: .4rem !default;
 // Size options
-$dc--has-tooltip--small: 8rem !default;
+$dc--has-tooltip--small: 10rem !default;
 $dc--has-tooltip--medium: 15rem !default;
 $dc--has-tooltip--large: 30rem !default;
 
@@ -201,6 +201,9 @@ $dc--has-tooltip--large: 30rem !default;
         line-height: $dc--has-tooltip-font-size; // Vertical centering.
         white-space: nowrap; // Prevent breaking to new line.
         content: attr(#{$content-attribute}); // The magic!
+        font-weight: normal;
+        text-align: left;
+        box-shadow: 0 1px 3px 2px rgba($dc-black, .15);
     }
 }
 

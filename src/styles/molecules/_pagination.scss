@@ -12,8 +12,8 @@
     cursor: pointer;
 
     &:hover {
-        background: $dc-blue80;
-        color: $dc-blue40;
+        background: $dc-blue50;
+        color: $dc-white;
     }
 
     &--active {
@@ -23,17 +23,35 @@
 
     &--active,
     &--disabled {
-        color: $dc-gray50;
+        color: $dc-gray20;
         cursor: default;
 
         &:hover {
             background: $dc-white;
-            color: $dc-gray50;
+            color: $dc-gray20;
             box-shadow: none;
+        }
+        .dc-icon--more:before {
+          font-size: 3.5px;
         }
     }
 }
-
+.dc-pagination-txt {
+  display: inline-block;
+  border: 0;
+  padding: $dc-space100 $dc-space50 $dc-space100 $dc-space100;
+  border-radius: $dc-radius101;
+  color: $dc-gray10;
+  font-size: $dc-font80;
+  font-weight: $dc-normal-font-weight;
+  line-height: $dc-space100;
+  text-align: center;
+  background: $dc-white;
+  letter-spacing: $dc-body-letter-spacing;
+  text-decoration: none;
+  text-transform: capitalize !important;
+  vertical-align: top;
+}
 @mixin dc-pagination-selectors {
 
     .dc-pagination {

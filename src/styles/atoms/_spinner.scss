@@ -3,26 +3,68 @@
 $dc-spinner-width: 50px;
 $dc-spinner-stroke-width: 6px;
 
-@mixin dc-spinner($spinner-stroke-width: $dc-spinner-stroke-width) {
+@mixin dc-spinner {
 
-    display: inline-block;
-    margin: -4px 8px 0;
-    border-top: $spinner-stroke-width solid rgba($dc-gray20, .8);
-    border-right: $spinner-stroke-width solid rgba($dc-gray20, .8);
-    border-bottom: $spinner-stroke-width solid rgba($dc-gray20, .9);
-    border-left: $spinner-stroke-width solid $dc-gray20;
-    vertical-align: middle;  -webkit-transform: translateZ(0);
+  font-size: 10px;
+  margin: 50px auto;
+  text-indent: -9999em;
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  background: #000;
+  background: -moz-linear-gradient(left, #000 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #000 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #000 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #000 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #000 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
-  -webkit-animation: dc-spinner 1.1s infinite linear;
-    animation: dc-spinner 1.1s infinite linear;
 
-    &,
+    &:before{  width: 50%;
+  height: 50%;
+  background: #000;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';}
     &:after {
-        width: $dc-spinner-width;
-        height: $dc-spinner-width;
-        border-radius: 50%;
+      background: #fff;
+      width: 75%;
+height: 75%;
+border-radius: 50%;
+content: '';
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
     }
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 @mixin dc-spinner-animations {
@@ -39,11 +81,45 @@ $dc-spinner-stroke-width: 6px;
 }
 
 @mixin dc-spinner--small {
-    &,
+  font-size: 10px;
+  margin: 50px auto;
+  text-indent: -9999em;
+  width: 3em;
+  height: 3em;
+  border-radius: 80%;
+  background: #000;
+  background: -moz-linear-gradient(left, #000 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #000 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #000 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #000 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #000 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+
+    &:before{  width: 50%;
+  height: 50%;
+  background: #000;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';}
     &:after {
-        width: $dc-spinner-width / 2;
-        height: $dc-spinner-width / 2;
-        border-radius: 50%;
+      background: #fff;
+      width: 75%;
+height: 75%;
+border-radius: 50%;
+content: '';
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
     }
 }
 
@@ -56,10 +132,6 @@ $dc-spinner-stroke-width: 6px;
 }
 
 @mixin dc-spinner--error {
-    border-top-color: $dc-red70;
-    border-right-color: $dc-red45;
-    border-bottom-color: $dc-red40;
-    border-left-color: $dc-red30;
 }
 
 @mixin dc-spinner-selectors {

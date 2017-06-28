@@ -25,9 +25,8 @@
 @mixin dc-list__item--is-interactive {
 
     &:hover {
-        border-top-color: $dc-blue60;
-        border-bottom-color: $dc-blue60;
-        background: $dc-blue70;
+        background: $dc-blue50;
+        color: $dc-white;
         cursor: pointer;
 
         + .dc-list__item--is-interactive {
@@ -48,6 +47,7 @@
     overflow-y: scroll;
 }
 
+
 @mixin dc-list__item {
     margin-top: -1px;
     padding: $dc-space50 $dc-space75;
@@ -57,7 +57,7 @@
 
 @mixin dc-list__inner {
     display: flex;
-    align-items: stretch;
+    align-items: flex-end;
     margin: -$dc-space50 #{-$dc-space75};
 
     > * {

@@ -12,7 +12,7 @@
         width: 10px;
         height: 10px;
         margin-right: $dc-space75;
-        border-radius: 2px;
+        border-radius: $dc-radius101;
         content: "";
     }
 }
@@ -22,7 +22,7 @@
 }
 
 @mixin dc-status--active {
-    @include _before__background-color($dc-green30);
+    @include _before__background-color($dc-green50);
 }
 
 @mixin dc-status--inactive {
@@ -30,7 +30,7 @@
 }
 
 @mixin dc-status--new {
-    @include _before__background-color($dc-orange60);
+    @include _before__background-color($dc-blue50);
 }
 
 @mixin dc-status--error {
