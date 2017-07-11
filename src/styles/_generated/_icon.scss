@@ -40,89 +40,98 @@
     @if $filename == arrow-up {
         $char: "\EA05";
     }
-    @if $filename == check {
+    @if $filename == bar-chart {
         $char: "\EA06";
     }
-    @if $filename == clear {
+    @if $filename == check {
         $char: "\EA07";
     }
-    @if $filename == close {
+    @if $filename == clear {
         $char: "\EA08";
     }
-    @if $filename == cog {
+    @if $filename == close {
         $char: "\EA09";
     }
-    @if $filename == contact {
+    @if $filename == cog {
         $char: "\EA0A";
     }
-    @if $filename == drag {
+    @if $filename == contact {
         $char: "\EA0B";
     }
-    @if $filename == error {
+    @if $filename == drag {
         $char: "\EA0C";
     }
-    @if $filename == eye {
+    @if $filename == error {
         $char: "\EA0D";
     }
-    @if $filename == help {
+    @if $filename == eye {
         $char: "\EA0E";
     }
-    @if $filename == history {
+    @if $filename == help {
         $char: "\EA0F";
     }
-    @if $filename == info {
-        $char: "\EA11";
-    }
-    @if $filename == info-circle {
+    @if $filename == history {
         $char: "\EA10";
     }
-    @if $filename == lock {
+    @if $filename == info {
         $char: "\EA12";
     }
-    @if $filename == menu {
+    @if $filename == info-circle {
+        $char: "\EA11";
+    }
+    @if $filename == line-chart {
         $char: "\EA13";
     }
-    @if $filename == minus {
+    @if $filename == lock {
         $char: "\EA14";
     }
-    @if $filename == more {
+    @if $filename == menu {
         $char: "\EA15";
     }
-    @if $filename == pencil {
+    @if $filename == minus {
         $char: "\EA16";
     }
-    @if $filename == play {
+    @if $filename == more {
         $char: "\EA17";
     }
-    @if $filename == redo {
+    @if $filename == pencil {
         $char: "\EA18";
     }
-    @if $filename == search {
+    @if $filename == play {
         $char: "\EA19";
     }
-    @if $filename == success {
+    @if $filename == pointer {
         $char: "\EA1A";
     }
-    @if $filename == trash {
+    @if $filename == redo {
         $char: "\EA1B";
     }
-    @if $filename == triangle-down {
+    @if $filename == search {
         $char: "\EA1C";
     }
-    @if $filename == triangle-up {
+    @if $filename == success {
         $char: "\EA1D";
     }
-    @if $filename == undo {
+    @if $filename == trash {
         $char: "\EA1E";
     }
-    @if $filename == user {
+    @if $filename == triangle-down {
         $char: "\EA1F";
     }
-    @if $filename == users {
+    @if $filename == triangle-up {
         $char: "\EA20";
     }
-    @if $filename == warning {
+    @if $filename == undo {
         $char: "\EA21";
+    }
+    @if $filename == user {
+        $char: "\EA22";
+    }
+    @if $filename == users {
+        $char: "\EA23";
+    }
+    @if $filename == warning {
+        $char: "\EA24";
     }
 
     @return $char;
@@ -152,6 +161,11 @@
 @mixin dc-icon--arrow-up {
     &:before {
         content: dc-icon-char(arrow-up);
+    }
+}
+@mixin dc-icon--bar-chart {
+    &:before {
+        content: dc-icon-char(bar-chart);
     }
 }
 @mixin dc-icon--check {
@@ -214,6 +228,11 @@
         content: dc-icon-char(info-circle);
     }
 }
+@mixin dc-icon--line-chart {
+    &:before {
+        content: dc-icon-char(line-chart);
+    }
+}
 @mixin dc-icon--lock {
     &:before {
         content: dc-icon-char(lock);
@@ -242,6 +261,11 @@
 @mixin dc-icon--play {
     &:before {
         content: dc-icon-char(play);
+    }
+}
+@mixin dc-icon--pointer {
+    &:before {
+        content: dc-icon-char(pointer);
     }
 }
 @mixin dc-icon--redo {
@@ -331,6 +355,10 @@
         @include dc-icon--arrow-up;
     }
 
+    .dc-icon--bar-chart {
+        @include dc-icon--bar-chart;
+    }
+
     .dc-icon--check {
         @include dc-icon--check;
     }
@@ -379,6 +407,10 @@
         @include dc-icon--info-circle;
     }
 
+    .dc-icon--line-chart {
+        @include dc-icon--line-chart;
+    }
+
     .dc-icon--lock {
         @include dc-icon--lock;
     }
@@ -401,6 +433,10 @@
 
     .dc-icon--play {
         @include dc-icon--play;
+    }
+
+    .dc-icon--pointer {
+        @include dc-icon--pointer;
     }
 
     .dc-icon--redo {
