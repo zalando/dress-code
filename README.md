@@ -23,17 +23,17 @@ If you want to know more about the history and the process behind this project y
 
 * Follows [BEM](http://getbem.com/) — Block Element Modifier methodology
 
-* Follows [Atomic Design](http://atomicdesign.bradfrost.com/chapter-2/) principles 
+* Follows [Atomic Design](http://atomicdesign.bradfrost.com/chapter-2/) principles
 
-* Built with [SASS](http://sass-lang.com/), that means: 
+* Built with [SASS](http://sass-lang.com/), that means:
     * Modular - import just what you need
     * Reusable - apply styles on your own components by using SASS mixins
     * Customizable - "tweak" the look and feel by overriding variables or extending existing classes
 
 * Updated interactive demo site
-    
+
 ## Status
-    
+
 The Dress Code core is actively maintained by two teams within Zalando. The core components are in a stable state, should you however encounter any bugs, feel free to create an issue and/or a pull request
 
 We are always looking forward to **open source community feedback** and **contributions** especially about:
@@ -42,7 +42,7 @@ We are always looking forward to **open source community feedback** and **contri
 * enhancements
 
 We usually mark the issues where we would like to see community contributions with a "help wanted" label.
- 
+
 Feel free to open issues and/or fork the project to contribute ([see Development & Contrbuting section](#development)).
 
 
@@ -58,12 +58,6 @@ Chrome 48+, Firefox 44+, Safari 8+, IE 10+.
 
 ### Install
 
-#### with Bower
-
-```
-bower install dress-code --save
-```
-
 #### with Npm
 
 ```
@@ -76,7 +70,7 @@ npm install dress-code --save
 Include this in your ```<head>```:
 
 ```html
-<link href="bower_components/dress-code/dist/css/dress-code.min.css" rel="stylesheet">
+<link href="node_modules/dress-code/dist/css/dress-code.min.css" rel="stylesheet">
 ```
 
 #### How to use dress-code SASS
@@ -85,7 +79,7 @@ If you are already using SASS in your project, you can import the Dress Code dir
 
 ```scss
 @import "node_modules/breakpoint-sass/stylesheets/breakpoint" // this is a required dependency, load this before loading the dress-code
-@import "node_modules/dress-code/dist/sass/dress-code" // or bower_components/dress-code/dist/sass/dress-code
+@import "node_modules/dress-code/dist/sass/dress-code"
 @include dc-everything; // output dc-* selectors
 ```
 
@@ -96,7 +90,7 @@ If you are already using SASS in your project, you can import the Dress Code dir
 
 > For those using Compass, you can add this to your config.rb file:
 ```rb
-add_import_path "bower_components"
+add_import_path "node_modules"
 ```
 Then you can import the dress-code like so:
 ```scss
@@ -117,7 +111,6 @@ Developers interested in contributing should read the following:
 **Requirements**
 
 * [node.js](http://nodejs.org). Make sure your have `v5.0.0` or higher installed before proceeding.
-* [bower](http://bower.io/). Make sure you have bower installed globally with npm, if not, run this command:```npm install -g bower```
 
 **Install**
 
