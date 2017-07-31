@@ -1,8 +1,9 @@
 // @import "../core/core";
 
 @mixin dc-checkbox($sibling-label-selector : ".dc-label") {
-    display: none;
-
+    width: 0;
+    height: 0;
+    opacity: 0;
 
     + #{$sibling-label-selector} {
         display: inline-block;
@@ -36,6 +37,10 @@
             transition: transform .1s ease-in-out, opacity .2s linear;
             opacity: 0;
         }
+    }
+
+    &:focus + #{$sibling-label-selector}:before {
+        border-color: #26aafe;
     }
 
     &:checked + #{$sibling-label-selector}:after {
