@@ -48,7 +48,7 @@
     }
 
     &:focus + #{$sibling-label-selector}:before {
-        border-color: #26aafe;
+        border-color: $dc-blue40;
     }
 
     &:checked + #{$sibling-label-selector}:after {
