@@ -5,8 +5,10 @@ notes: |
 
     To indicate columns as sortable, add `dc-table__th--sortable` to your th, and add an empty element with `dc-table__sorter` inside the `th`. Use `dc-table__sorter--ascending` and `dc-table__sorter--descending` to indicate the sorting order.
 
+    Please note that due to design reasons the sorters are not shown on responsive tables for small screen sizes.
+
 ---
-<table class="dc-table">
+<table class="dc-table dc-table--responsive">
 	<thead class="dc-table__thead">
 		<tr class="dc-table__tr">
 			<th class="dc-table__th dc-table__th--sortable" data-col="First Name">First Name<span class="dc-table__sorter dc-table__sorter--ascending"></th>
