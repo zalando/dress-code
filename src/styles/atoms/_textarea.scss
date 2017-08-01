@@ -16,8 +16,21 @@
     }
 }
 
+@mixin dc-textarea--is-error {
+    border-color: $dc-red40;
+
+    &:hover,
+    &:focus {
+        border-color: $dc-red40;
+    }
+}
+
 @mixin dc-textarea-selectors {
     .dc-textarea {
         @include dc-textarea;
+    }
+
+    .dc-textarea--is-error {
+        @include dc-textarea--is-error;
     }
 }
