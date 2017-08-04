@@ -103,9 +103,11 @@
     font-weight: $dc-bold-font-weight;
     text-align: left;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 @mixin dc-table__th--sortable($child-sorter-selector : ".dc-table__sorter", $sorter-modifier-ascending : "--ascending", $sorter-modifier-descending : "--descending") {
+    padding-right: 20px;
     cursor: pointer;
 
     #{$child-sorter-selector} {
