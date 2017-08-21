@@ -36,26 +36,21 @@ a {
 	.f-menu-active & {
 
 		// Only push the content from huge size up
-		@include breakpoint($dc-tiny-width)
+		@media (min-width:$dc-tiny-width)
 		{
 			margin-left: 0;
 		}
 
-		// Only push the content from huge size up
-		@include breakpoint($dc-huge-width)
+		// Only push the content from large size up
+		@media (min-width:$dc-large-width)
 		{
 			margin-left: calc(#{span(2 of 12)} + #{gutter(6)});
 			transition: none;
 		}
 
-		@include breakpoint($dc-giant-width)
+		@media (min-width:$dc-huge-width)
 		{
 			margin-left: #{span(3 of 16)};
-		}
-
-		@include breakpoint($dc-monstrous-width)
-		{
-			margin-left: calc(#{span(3 of 20)});
 		}
 	}
 

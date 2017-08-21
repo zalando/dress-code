@@ -35,7 +35,7 @@
     &:checked {
         right: 85%;
 
-        @include breakpoint($dc-huge-width) {
+        @media (min-width:$dc-large-width) {
             right: 60%;
         }
 
@@ -56,7 +56,7 @@
     background: $dc-gray80;
     overflow-y: scroll;
 
-    @include breakpoint($dc-huge-width) {
+    @media (min-width:$dc-large-width) {
         width: 60%;
     }
 

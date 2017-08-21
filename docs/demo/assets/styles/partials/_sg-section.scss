@@ -14,11 +14,6 @@
 		{
 			padding-top: $dc-space350;
 			margin-bottom: $dc-space350;
-
-			@include breakpoint(huge-width)
-			{
-				padding-top: $dc-space250;
-			}
 		}
 
 			.sg-section__title

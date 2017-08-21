@@ -8,7 +8,7 @@
         @each $br, $value in $gutter {
             $padding: -($value / 2);
 
-            @include breakpoint(map-get($dc-grid-breakpoints, $br)) {
+            @media (min-width:map-get($dc-grid-breakpoints, $br)) {
                 margin-right: $padding;
                 margin-left: $padding;
             }
@@ -30,7 +30,7 @@
         @each $br, $value in $gutter {
             $padding: ($value / 2);
 
-            @include breakpoint(map-get($dc-grid-breakpoints, $br)) {
+            @media (min-width:map-get($dc-grid-breakpoints, $br)) {
                 padding-right: $padding;
                 padding-left: $padding;
             }

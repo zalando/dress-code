@@ -9,7 +9,7 @@
     font-size: $dc-font100;
     line-height: $dc-body-line-height;
 
-    @include breakpoint($dc-medium-width) {
+    @media(min-width: $dc-small-width) {
         padding: $dc-space100;
     }
 }
@@ -24,7 +24,7 @@
     min-width: 4rem;
     height: 4rem;
 
-    @include breakpoint($dc-medium-width) {
+    @media (min-width:$dc-small-width) {
         margin-right: $dc-space100;
     }
 }

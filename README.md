@@ -78,13 +78,9 @@ Include this in your ```<head>```:
 If you are already using SASS in your project, you can import the Dress Code directly.
 
 ```scss
-@import "node_modules/breakpoint-sass/stylesheets/breakpoint" // this is a required dependency, load this before loading the dress-code
-@import "node_modules/dress-code/dist/sass/dress-code"
+@import "node_modules/dress-code/dist/sass/dress-code";
 @include dc-everything; // output dc-* selectors
 ```
-
-> Dress Code relies on [breakpoint-sass](https://github.com/at-import/breakpoint) to manage media queries. Be sure to load it before the Dress Code.
-
 
 ##### Compass notes
 

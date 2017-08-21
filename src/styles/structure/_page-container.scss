@@ -2,15 +2,15 @@
 
     padding: $dc-space75;
 
-    @include breakpoint($dc-large-width) {
+    @media (min-width:$dc-medium-width) {
         padding: $dc-space100;
     }
 
-    @include breakpoint($dc-huge-width) {
+    @media (min-width:$dc-large-width) {
         padding: $dc-space150;
     }
 
-    @include breakpoint($dc-giant-width) {
+    @media (min-width:$dc-huge-width) {
         padding: $dc-space150 $dc-space250;
     }
 }

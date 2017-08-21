@@ -9,16 +9,5 @@ $dc-grid-gutter: (
     large: 32px
 ) !default;
 
-/// This bloats the CSS use only those which you need
-///
-/// small : 320px {Smartphones}
-/// medium : 600px {Tablets}
-/// large : 1024px {Desktops}
-/// huge : 1280px {Full HD}
 /// @type Map | Length
-$dc-grid-breakpoints: (
-    small: 20em,
-    medium: 37.5em,
-    large: 64em,
-    huge: 80em
-) !default;
+$dc-grid-breakpoints: $dc-breakpoints !default;

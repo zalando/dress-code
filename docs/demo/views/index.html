@@ -29,11 +29,9 @@ fabricator: true
 <p class="dc-p">You can compile the dress code by your own using a sass compiler.
 
 <pre class="dc-pre language-markup"><code class="language-markup">
-    @import "node_modules/breakpoint-sass/stylesheets/breakpoint" // this is a required dependency, load this before loading the dress-code
-    @import "node_modules/dress-code/dist/sass/dress-code"
+    @import "node_modules/dress-code/dist/sass/dress-code";
     @include dc-everything; // output dc-* selectors</code></pre>
 
-<p>Dress Code relies on <code>breakpoint-sass</code> to manage media queries. Please make sure that this module is loaded before trying to compile Dress Code SASS..</p>
 </p>
 
 <h3 class="dc-h3">If you're using Compass</h3>

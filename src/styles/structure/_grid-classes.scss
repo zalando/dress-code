@@ -126,7 +126,7 @@
             display:none;
         }
 
-        @include breakpoint(map-get($dc-grid-breakpoints, $br)) {
+        @media (min-width:map-get($dc-grid-breakpoints, $br)) {
 
             // Utility classes to hide / show according to breakpoint
 

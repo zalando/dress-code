@@ -203,27 +203,32 @@ $dc-z-index100: 9999 !default;
 
 // Base is 16px at this point
 
-// Feature phone: 0px
+/// This bloats the CSS use only those which you need
+///
+/// small : 320px {Smartphones}
+/// medium : 600px {Tablets}
+/// large : 1024px {Desktops}
+/// huge : 1280px {Full HD}
+
 $dc-tiny-width: 0 !default;
-
-// Smartphone: 320px
 $dc-small-width: 20em !default;
+$dc-medium-width: 37.5em !default;
+$dc-large-width: 64em !default;
+$dc-huge-width: 80em !default;
 
-// Smartphone landscape: 480px
-$dc-medium-width: 30em !default;
-
-// Tablet: 600px
-$dc-large-width: 37.5em !default;
-
-// Tablet landscape: 1024px
-$dc-huge-width: 64em !default;
-
-// Desktop: 1280px
+/// Following two are kept for legacy reasons (to be deprecated).
 $dc-giant-width: 80em !default;
-
-// Desktop large: 1600px
 $dc-monstrous-width: 100em !default;
 
+/// @type Map | Length
+$dc-breakpoints: (
+    tiny: $dc-tiny-width,
+    small: $dc-small-width,
+    medium: $dc-medium-width,
+    large: $dc-large-width,
+    huge: $dc-huge-width
+) !default;
+
 //  = Atoms default
-//  --------------------------------------------------------------------------- 
+//  ---------------------------------------------------------------------------
 $dc-tab-color : $dc-orange40;

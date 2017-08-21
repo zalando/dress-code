@@ -45,9 +45,7 @@
   "engines": {
     "node": ">=5.0.0"
   },
-  "dependencies": {
-    "breakpoint-sass": "^2.6.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
