@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title></title>
+	<title>The Dress Code | Docs</title>
 
 
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic|Ubuntu+Mono" rel="stylesheet" type="text/css">
@@ -148,6 +148,9 @@
 							<a href="03-atoms.html#status">Status</a>
 						</li>
 						<li>
+							<a href="03-atoms.html#tab">Tab</a>
+						</li>
+						<li>
 							<a href="03-atoms.html#tables">Tables</a>
 						</li>
 						<li>
@@ -275,9 +278,8 @@ We are not the only one requesting that <a href="https://github.com/sass/sass/is
 <p>The git workflow that we use to contribute is mostly based and well explained in this article: <a href="http://nvie.com/posts/a-successful-git-branching-model/">a-successful-git-branching-model</a></p>
 <h4>Main branches:</h4>
 <ul>
-<li><strong>master</strong> : must point to the latest stable version</li>
-<li><strong>develop</strong>: the main development branch, never work on it directly, always merge <strong><em>topic</em></strong> branches and <strong><em>hotfix</em></strong> branches into this branch.</li>
-<li><strong>topic/[topic-name]</strong>: for every new feature or task, open a <strong><em>topic</em></strong> branch from <strong><em>develop</em></strong> and work on it, when you are done open a pull request and ask for review.</li>
+<li><strong>master</strong> : the default branch. Never work on it directly, always merge <strong><em>topic</em></strong> branches and <strong><em>hotfix</em></strong> branches into this branch.</li>
+<li><strong>topic/[topic-name]</strong>: for every new feature or task, open a <strong><em>topic</em></strong> branch from <strong><em>master</em></strong> and work on it, when you are done open a pull request and ask for review.</li>
 <li><strong>hotfix/[hotifx-name]</strong>: used to fix stable versions</li>
 <li><strong>release/[release-name]</strong>: used to work on release candidates</li>
 </ul>
@@ -367,47 +369,38 @@ users to modify their code with this commit.</p>
 	<h1>RELEASING</h1>
 <h3>Step by step instructions to release a new version of the dress-code.</h3>
 <ol>
-<li>Pull latest from the <code>develop</code> branch and run the following command. Ensure that you follow the
-<a href="http://semver.org/">semver specification</a>.</li>
-</ol>
-<pre><code>npm run release [&lt;newversion&gt; | major | minor | patch]
+<li>
+<p>Pull latest from the <code>master</code> branch and run the following command. Ensure that you follow the
+<a href="http://semver.org/">semver specification</a>.</p>
+<pre><code>git checkout master
+git pull
+npm run release [ major | minor | patch | &lt;newversion&gt; ]
 </code></pre>
-<ol start="2">
-<li>
-<p>A release branch will be created and pushed automatically. Open a PR from the release branch to <code>develop</code>.</p>
 </li>
 <li>
-<p>After the release branch is merged into <code>develop</code>, open a PR from <code>develop</code> to <code>master</code>.</p>
+<p>A release branch will be created and pushed automatically with a generated changelog. Confirm the changelog is accurate and clear. Feel free the manually edit the changelog in the release branch.</p>
 </li>
 <li>
-<p>After the PR is merged, publish on npm registry. After publish completes, the <code>npm</code> version will be verified.</p>
+<p>Open a PR from the release branch to <code>master</code>.</p>
 </li>
-</ol>
+<li>
+<p>After the PR is merged, publish to npm. This will output the newly published version for verification.</p>
 <pre><code>git checkout master
 git pull
 npm publish
 </code></pre>
-<ol start="5">
-<li>Upon successful publish, create and push the tag. The following command will do both steps automatically.</li>
-</ol>
+</li>
+<li>
+<p>Create and push the tag. The following command will do both steps automatically.</p>
 <pre><code>npm run tag:release
 </code></pre>
-<ol start="6">
-<li>From the <code>master</code> branch, deploy <a href="http://zalando.github.io/dress-code/">docs/demo</a> artifacts.</li>
-</ol>
-<pre><code>git checkout master
-git pull
-npm run deploy:demo
+</li>
+<li>
+<p>Deploy <a href="http://zalando.github.io/dress-code/">docs/demo</a> artifacts.</p>
+<pre><code>npm run deploy:demo
 </code></pre>
-<ol start="7">
-<li>Keep the develop branch in sync.</li>
+</li>
 </ol>
-<pre><code>git checkout topic/&lt;issue-number-and-description&gt;
-git rebase master   # or git merge
-git push origin topic/&lt;issue-number-and-description&gt;
-
-# Now open a PR from the topic branch to develop. 
-</code></pre>
 
 </div>
 

@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title></title>
+	<title>The Dress Code | Atoms</title>
 
 
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic|Ubuntu+Mono" rel="stylesheet" type="text/css">
@@ -146,6 +146,9 @@
 						</li>
 						<li>
 							<a href="03-atoms.html#status">Status</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#tab">Tab</a>
 						</li>
 						<li>
 							<a href="03-atoms.html#tables">Tables</a>
@@ -748,10 +751,24 @@ Use labels that are explicit. Starting with an imperative verb is often a good c
 <div class="f-item-preview">
 	<label class="dc-label" for="textArea">Text area</label>
 <textarea class="dc-textarea" name="textArea" id="" cols="30" rows="5"></textarea>
+
+<label class="dc-label" for="errorTextArea">
+    Required text area – Error
+    <span class="dc-label__sub dc-label__sub--is-error">required</span>
+</label>
+<span class="dc--text-error">Please don't leave this empty.</span>
+<textarea class="dc-textarea dc-textarea--is-error" name="errorTextArea" id="" cols="30" rows="3"></textarea>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre class="dc-pre"><code class="language-markup">&lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;textArea&quot;&gt;Text area&lt;/label&gt;
-&lt;textarea class&#x3D;&quot;dc-textarea&quot; name&#x3D;&quot;textArea&quot; id&#x3D;&quot;&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;5&quot;&gt;&lt;/textarea&gt;</code></pre>
+&lt;textarea class&#x3D;&quot;dc-textarea&quot; name&#x3D;&quot;textArea&quot; id&#x3D;&quot;&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;5&quot;&gt;&lt;/textarea&gt;
+
+&lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;errorTextArea&quot;&gt;
+    Required text area – Error
+    &lt;span class&#x3D;&quot;dc-label__sub dc-label__sub--is-error&quot;&gt;required&lt;/span&gt;
+&lt;/label&gt;
+&lt;span class&#x3D;&quot;dc--text-error&quot;&gt;Please don&#x27;t leave this empty.&lt;/span&gt;
+&lt;textarea class&#x3D;&quot;dc-textarea dc-textarea--is-error&quot; name&#x3D;&quot;errorTextArea&quot; id&#x3D;&quot;&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;3&quot;&gt;&lt;/textarea&gt;</code></pre>
 </div>
 
 		</div>
@@ -817,6 +834,9 @@ Use labels that are explicit. Starting with an imperative verb is often a good c
 	<i class="dc-icon dc-icon--success dc-icon--interactive"><span>success</span></i>
 	<i class="dc-icon dc-icon--warning dc-icon--interactive"><span>warning</span></i>
 	<i class="dc-icon dc-icon--users"><span>users</span></i>
+	<i class="dc-icon dc-icon--bar-chart"><span>bar-chart</span></i>
+	<i class="dc-icon dc-icon--line-chart"><span>line-chart</span></i>
+	<i class="dc-icon dc-icon--pointer"><span>pointer</span></i>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -853,6 +873,9 @@ Use labels that are explicit. Starting with an imperative verb is often a good c
 	&lt;i class&#x3D;&quot;dc-icon dc-icon--success dc-icon--interactive&quot;&gt;&lt;span&gt;success&lt;/span&gt;&lt;/i&gt;
 	&lt;i class&#x3D;&quot;dc-icon dc-icon--warning dc-icon--interactive&quot;&gt;&lt;span&gt;warning&lt;/span&gt;&lt;/i&gt;
 	&lt;i class&#x3D;&quot;dc-icon dc-icon--users&quot;&gt;&lt;span&gt;users&lt;/span&gt;&lt;/i&gt;
+	&lt;i class&#x3D;&quot;dc-icon dc-icon--bar-chart&quot;&gt;&lt;span&gt;bar-chart&lt;/span&gt;&lt;/i&gt;
+	&lt;i class&#x3D;&quot;dc-icon dc-icon--line-chart&quot;&gt;&lt;span&gt;line-chart&lt;/span&gt;&lt;/i&gt;
+	&lt;i class&#x3D;&quot;dc-icon dc-icon--pointer&quot;&gt;&lt;span&gt;pointer&lt;/span&gt;&lt;/i&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -1381,6 +1404,69 @@ Moving or renaming those font files means updating the CSS in one of two ways:</
 </div>
 
 
+<div class="f-item-group f-item-grouped_groups" id="tab">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+		<h2 class="dc-h2 f-item-heading">Tab</h2>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Use <code>dc-tab</code> to show content for different subjects.</p>
+<p><code>dc-tab--vertical</code>: Use this class with <code>dc-tab</code> to create vertical tab.</p>
+<p><code>dc-tab__element</code>: Use this class to create another tab.</p>
+<p><code>dc-tab__element--active</code>: to show a tab as active.</p>
+<p><code>dc-tab__element--disabled</code>: to show a tab as disabled.</p>
+
+</div>
+<div class="f-item-preview">
+	<ul class="dc-tab">
+	<li class="dc-tab__element dc-tab__element--active">Tab1</li>
+	<li class="dc-tab__element">Tab2</li>
+	<li class="dc-tab__element dc-tab__element--disabled">Tab3</li>
+	<li class="dc-tab__element">Tab4</li>
+</ul>
+
+<div class="dc-divider"></div>
+
+<ul class="dc-tab dc-tab--vertical">
+	<li class="dc-tab__element dc-tab__element--active">Tab1</li>
+	<li class="dc-tab__element">Tab2</li>
+	<li class="dc-tab__element dc-tab__element--disabled">Tab3</li>
+	<li class="dc-tab__element">Tab4</li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;ul class&#x3D;&quot;dc-tab&quot;&gt;
+	&lt;li class&#x3D;&quot;dc-tab__element dc-tab__element--active&quot;&gt;Tab1&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-tab__element&quot;&gt;Tab2&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-tab__element dc-tab__element--disabled&quot;&gt;Tab3&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-tab__element&quot;&gt;Tab4&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class&#x3D;&quot;dc-divider&quot;&gt;&lt;/div&gt;
+
+&lt;ul class&#x3D;&quot;dc-tab dc-tab--vertical&quot;&gt;
+	&lt;li class&#x3D;&quot;dc-tab__element dc-tab__element--active&quot;&gt;Tab1&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-tab__element&quot;&gt;Tab2&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-tab__element dc-tab__element--disabled&quot;&gt;Tab3&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-tab__element&quot;&gt;Tab4&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group f-item-grouped_groups" id="tables">
 
 	<div class="f-item-heading-group">
@@ -1403,11 +1489,12 @@ Moving or renaming those font files means updating the CSS in one of two ways:</
 				<h3 class="dc-h3 f-item-heading">Table Setup</h3>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>To set up tables, add the relevant classes to each part of the table.</p>
+<p>Use <code>dc-table--responsive</code> to activate the responsive view for tablet size and below. Each row becomes a card.</p>
 <p>Use <code>dc-table__tr--interactive</code> to add a hover to table rows. This can be done independenty for each row.</p>
 
 </div>
 <div class="f-item-preview">
-	<table class="dc-table">
+	<table class="dc-table dc-table--responsive">
 	<thead class="dc-table__thead">
 		<tr class="dc-table__tr">
 			<th class="dc-table__th" data-col="First Name">First Name</th>
@@ -1456,7 +1543,7 @@ Moving or renaming those font files means updating the CSS in one of two ways:</
 </table>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;table class&#x3D;&quot;dc-table&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;table class&#x3D;&quot;dc-table dc-table--responsive&quot;&gt;
 	&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
 		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
 			&lt;th class&#x3D;&quot;dc-table__th&quot; data-col&#x3D;&quot;First Name&quot;&gt;First Name&lt;/th&gt;
@@ -1523,10 +1610,11 @@ Moving or renaming those font files means updating the CSS in one of two ways:</
 				<h3 class="dc-h3 f-item-heading">Sortable Headings</h3>
 			</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>To indicate columns as sortable, add <code>dc-table__th--sortable</code> to your th, and add an empty element with <code>dc-table__sorter</code> inside the <code>th</code>. Use <code>dc-table__sorter--ascending</code> and <code>dc-table__sorter--descending</code> to indicate the sorting order.</p>
+<p>Please note that due to design reasons the sorters are not shown on responsive tables for small screen sizes.</p>
 
 </div>
 <div class="f-item-preview">
-	<table class="dc-table">
+	<table class="dc-table dc-table--responsive">
 	<thead class="dc-table__thead">
 		<tr class="dc-table__tr">
 			<th class="dc-table__th dc-table__th--sortable" data-col="First Name">First Name<span class="dc-table__sorter dc-table__sorter--ascending"></th>
@@ -1575,7 +1663,7 @@ Moving or renaming those font files means updating the CSS in one of two ways:</
 </table>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;table class&#x3D;&quot;dc-table&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;table class&#x3D;&quot;dc-table dc-table--responsive&quot;&gt;
 	&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
 		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
 			&lt;th class&#x3D;&quot;dc-table__th dc-table__th--sortable&quot; data-col&#x3D;&quot;First Name&quot;&gt;First Name&lt;span class&#x3D;&quot;dc-table__sorter dc-table__sorter--ascending&quot;&gt;&lt;/th&gt;
@@ -1645,7 +1733,7 @@ Moving or renaming those font files means updating the CSS in one of two ways:</
 
 </div>
 <div class="f-item-preview">
-	<table class="dc-table">
+	<table class="dc-table dc-table--responsive">
 	<thead class="dc-table__thead">
 		<tr class="dc-table__tr">
 			<th class="dc-table__th" data-col="First Name">First Name</th>
@@ -1663,53 +1751,11 @@ Moving or renaming those font files means updating the CSS in one of two ways:</
 			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
-		<tr class="dc-table__tr dc-table__tr--tight">
-			<td class="dc-table__td" data-col="First Name">Duane</td>
-			<td class="dc-table__td" data-col="Last Name">Holmes</td>
-			<td class="dc-table__td" data-col="Email">duane.holmes21@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
-		</tr>
-
-		<tr class="dc-table__tr dc-table__tr--tight">
+		<tr class="dc-table__tr dc-table__tr">
 			<td class="dc-table__td" data-col="First Name">Kitty</td>
 			<td class="dc-table__td" data-col="Last Name">Murray</td>
 			<td class="dc-table__td" data-col="Email">kitty.murray88@example.com</td>
 			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
-		</tr>
-
-		<tr class="dc-table__tr dc-table__tr--tight">
-			<td class="dc-table__td" data-col="First Name">Austin</td>
-			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
-			<td class="dc-table__td" data-col="Email">austin.carpenter87@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
-		</tr>
-
-		<tr class="dc-table__tr dc-table__tr--tight">
-			<td class="dc-table__td" data-col="First Name">Toni</td>
-			<td class="dc-table__td" data-col="Last Name">Nichols</td>
-			<td class="dc-table__td" data-col="Email">toni.nichols83@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
-		</tr>
-	</tbody>
-</table>
-
-
-<table class="dc-table">
-	<thead class="dc-table__thead">
-		<tr class="dc-table__tr">
-			<th class="dc-table__th">First Name</th>
-			<th class="dc-table__th">Last Name</th>
-			<th class="dc-table__th">Email</th>
-			<th class="dc-table__th">Status</th>
-		</tr>
-	</thead>
-
-	<tbody class="dc-table__tbody">
-		<tr class="dc-table__tr dc-table__tr--comfortable">
-			<td class="dc-table__td" data-col="First Name">Eileen</td>
-			<td class="dc-table__td" data-col="Last Name">Holland</td>
-			<td class="dc-table__td" data-col="Email">eileen.holland42@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
 		<tr class="dc-table__tr dc-table__tr--comfortable">
@@ -1719,62 +1765,6 @@ Moving or renaming those font files means updating the CSS in one of two ways:</
 			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
 		</tr>
 
-		<tr class="dc-table__tr dc-table__tr--comfortable">
-			<td class="dc-table__td" data-col="First Name">Kitty</td>
-			<td class="dc-table__td" data-col="Last Name">Murray</td>
-			<td class="dc-table__td" data-col="Email">kitty.murray88@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
-		</tr>
-
-		<tr class="dc-table__tr dc-table__tr--comfortable">
-			<td class="dc-table__td" data-col="First Name">Austin</td>
-			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
-			<td class="dc-table__td" data-col="Email">austin.carpenter87@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
-		</tr>
-
-		<tr class="dc-table__tr dc-table__tr--comfortable">
-			<td class="dc-table__td" data-col="First Name">Toni</td>
-			<td class="dc-table__td" data-col="Last Name">Nichols</td>
-			<td class="dc-table__td" data-col="Email">toni.nichols83@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
-		</tr>
-	</tbody>
-</table>
-
-
-<table class="dc-table">
-	<thead class="dc-table__thead">
-		<tr class="dc-table__tr">
-			<th class="dc-table__th">First Name</th>
-			<th class="dc-table__th">Last Name</th>
-			<th class="dc-table__th">Email</th>
-			<th class="dc-table__th">Status</th>
-		</tr>
-	</thead>
-
-	<tbody class="dc-table__tbody">
-		<tr class="dc-table__tr dc-table__tr--spacious">
-			<td class="dc-table__td" data-col="First Name">Eileen</td>
-			<td class="dc-table__td" data-col="Last Name">Holland</td>
-			<td class="dc-table__td" data-col="Email">eileen.holland42@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
-		</tr>
-
-		<tr class="dc-table__tr dc-table__tr--spacious">
-			<td class="dc-table__td" data-col="First Name">Duane</td>
-			<td class="dc-table__td" data-col="Last Name">Holmes</td>
-			<td class="dc-table__td" data-col="Email">duane.holmes21@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
-		</tr>
-
-		<tr class="dc-table__tr dc-table__tr--spacious">
-			<td class="dc-table__td" data-col="First Name">Kitty</td>
-			<td class="dc-table__td" data-col="Last Name">Murray</td>
-			<td class="dc-table__td" data-col="Email">kitty.murray88@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
-		</tr>
-
 		<tr class="dc-table__tr dc-table__tr--spacious">
 			<td class="dc-table__td" data-col="First Name">Austin</td>
 			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
@@ -1782,17 +1772,11 @@ Moving or renaming those font files means updating the CSS in one of two ways:</
 			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
 		</tr>
 
-		<tr class="dc-table__tr dc-table__tr--spacious">
-			<td class="dc-table__td" data-col="First Name">Toni</td>
-			<td class="dc-table__td" data-col="Last Name">Nichols</td>
-			<td class="dc-table__td" data-col="Email">toni.nichols83@example.com</td>
-			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--error">Error</span></td>
-		</tr>
 	</tbody>
 </table>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;table class&#x3D;&quot;dc-table&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;table class&#x3D;&quot;dc-table dc-table--responsive&quot;&gt;
 	&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
 		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
 			&lt;th class&#x3D;&quot;dc-table__th&quot; data-col&#x3D;&quot;First Name&quot;&gt;First Name&lt;/th&gt;
@@ -1810,53 +1794,11 @@ Moving or renaming those font files means updating the CSS in one of two ways:</
 			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
-		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--tight&quot;&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Duane&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holmes&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;duane.holmes21@example.com&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-
-		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--tight&quot;&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr&quot;&gt;
 			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Kitty&lt;/td&gt;
 			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Murray&lt;/td&gt;
 			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;kitty.murray88@example.com&lt;/td&gt;
 			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-
-		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--tight&quot;&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Austin&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Carpenter&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;austin.carpenter87@example.com&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-
-		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--tight&quot;&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Toni&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Nichols&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;toni.nichols83@example.com&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-
-
-&lt;table class&#x3D;&quot;dc-table&quot;&gt;
-	&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
-		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
-			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;First Name&lt;/th&gt;
-			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Last Name&lt;/th&gt;
-			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Email&lt;/th&gt;
-			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Status&lt;/th&gt;
-		&lt;/tr&gt;
-	&lt;/thead&gt;
-
-	&lt;tbody class&#x3D;&quot;dc-table__tbody&quot;&gt;
-		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--comfortable&quot;&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Eileen&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holland&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;eileen.holland42@example.com&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
 		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--comfortable&quot;&gt;
@@ -1866,62 +1808,6 @@ Moving or renaming those font files means updating the CSS in one of two ways:</
 			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
-		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--comfortable&quot;&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Kitty&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Murray&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;kitty.murray88@example.com&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-
-		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--comfortable&quot;&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Austin&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Carpenter&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;austin.carpenter87@example.com&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-
-		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--comfortable&quot;&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Toni&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Nichols&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;toni.nichols83@example.com&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-
-
-&lt;table class&#x3D;&quot;dc-table&quot;&gt;
-	&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
-		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
-			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;First Name&lt;/th&gt;
-			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Last Name&lt;/th&gt;
-			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Email&lt;/th&gt;
-			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Status&lt;/th&gt;
-		&lt;/tr&gt;
-	&lt;/thead&gt;
-
-	&lt;tbody class&#x3D;&quot;dc-table__tbody&quot;&gt;
-		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--spacious&quot;&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Eileen&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holland&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;eileen.holland42@example.com&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-
-		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--spacious&quot;&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Duane&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holmes&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;duane.holmes21@example.com&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-
-		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--spacious&quot;&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Kitty&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Murray&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;kitty.murray88@example.com&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-
 		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--spacious&quot;&gt;
 			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Austin&lt;/td&gt;
 			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Carpenter&lt;/td&gt;
@@ -1929,12 +1815,6 @@ Moving or renaming those font files means updating the CSS in one of two ways:</
 			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
 		&lt;/tr&gt;
 
-		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--spacious&quot;&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Toni&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Nichols&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;toni.nichols83@example.com&lt;/td&gt;
-			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--error&quot;&gt;Error&lt;/span&gt;&lt;/td&gt;
-		&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
 </div>

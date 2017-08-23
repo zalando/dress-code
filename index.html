@@ -148,6 +148,9 @@
 							<a href="03-atoms.html#status">Status</a>
 						</li>
 						<li>
+							<a href="03-atoms.html#tab">Tab</a>
+						</li>
+						<li>
 							<a href="03-atoms.html#tables">Tables</a>
 						</li>
 						<li>
@@ -242,10 +245,6 @@
 
 <h2 class="dc-h2">Installation</h2>
 
-<h3 class="dc-h3">via Bower</h3>
-
-<p class="dc-p"><pre class="dc-pre language-markup"><code class="language-markup">bower install dress-code --save</code></pre></p>
-
 <h3 class="dc-h3">via npm</h3>
 
 <p class="dc-p"><pre class="dc-pre language-markup"><code class="language-markup">npm install dress-code --save</code></pre></p>
@@ -256,10 +255,6 @@
 <h3 class="dc-h3">Using precompiled CSS</h3>
 <p class="dc-p">If you just want to use Dress Code CSS in your project, use the files in the /dist/css/ folder. </p>
 <pre class="dc-pre language-markup"><code class="language-markup">
-&lt;link href="bower_components/dress-code/dist/css/dress-code.min.css" rel="stylesheet"&gt;
-</code></pre>
-<p class="dc-p">or</p>
-<pre class="dc-pre language-markup"><code class="language-markup">
 &lt;link href="node_modules/dress-code/dist/css/dress-code.min.css" rel="stylesheet"&gt;
 </code></pre>
 
@@ -268,11 +263,9 @@
 <p class="dc-p">You can compile the dress code by your own using a sass compiler.
 
 <pre class="dc-pre language-markup"><code class="language-markup">
-    @import "node_modules/breakpoint-sass/stylesheets/breakpoint" // this is a required dependency, load this before loading the dress-code
-    @import "node_modules/dress-code/dist/sass/dress-code" // or bower_components/dress-code/dist/sass/dress-code
+    @import "node_modules/dress-code/dist/sass/dress-code";
     @include dc-everything; // output dc-* selectors</code></pre>
 
-<p>Dress Code relies on <code>breakpoint-sass</code> to manage media queries. Please make sure that this module is loaded before trying to compile Dress Code SASS..</p>
 </p>
 
 <h3 class="dc-h3">If you're using Compass</h3>
@@ -280,7 +273,7 @@
 <p class="dc-p">
   Add this to yours config.rb file:
 
-  <pre class="dc-pre language-markup"><code class="language-markup">add_import_path "bower_components"</code></pre>
+  <pre class="dc-pre language-markup"><code class="language-markup">add_import_path "node_modules"</code></pre>
   Then you can import the dress-code like so:
 
   <pre class="dc-pre language-markup"><code class="language-markup">@import "dress-code/dist/sass/dress-code";</code></pre>

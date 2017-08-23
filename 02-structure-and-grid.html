@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title></title>
+	<title>The Dress Code | Page Structure and Grid</title>
 
 
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic|Ubuntu+Mono" rel="stylesheet" type="text/css">
@@ -148,6 +148,9 @@
 							<a href="03-atoms.html#status">Status</a>
 						</li>
 						<li>
+							<a href="03-atoms.html#tab">Tab</a>
+						</li>
+						<li>
 							<a href="03-atoms.html#tables">Tables</a>
 						</li>
 						<li>
@@ -255,7 +258,7 @@
 		<h2 class="dc-h2 f-item-heading">Page Structure</h2>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<p>Use <code>dc-page</code> to set up the page space. It applies the default page padding for several screen sizes.</p>
-<p>Use <code>dc-container</code> to create the main content container. Your content and cards should go inside of this container. Use <code>dc-container--contained</code> to limit the maximum size of the container.</p>
+<p>Use <code>dc-container</code> to create the main content container. Your content and cards should go inside of this container. Use <code>dc-container--limited</code> in addition to <code>dc-container</code> to limit the maximum size of the container.</p>
 
 </div>
 <div class="f-item-preview">
@@ -1175,6 +1178,65 @@ which has 4 equally sized columns inside.</p>
 	&lt;div class&#x3D;&quot;dc-column&quot;&gt;
 		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, ab. Libero, deserunt.&lt;/div&gt;
 	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="02-grid.10-hide-or-show-elements">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<div class="f-item-controls">
+					<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-notes" />
+						</svg>
+					</span>
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg class="dc-svg">
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+				<h3 class="dc-h3 f-item-heading">Hide Or Show Elements</h3>
+			</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Hide/show elements according to breakpoint size. Combine hide and show classes to make elements only appear in a specific range of screen sizes.</p>
+<p>Hide classes: <code>dc-hide-from-[small|medium|large|huge]</code> will hide starting from the specified breakpoint</p>
+<p>Show classes: <code>dc-show-from-[small|medium|large|huge]</code> will show starting from the specified breakpoint</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-row">
+	<div class="dc-column dc-column--small-12 dc-show-from-medium">
+		<div class="dc-column__contents">This element will <strong class="dc-strong">show</strong> for medium breakpoint size on.
+		</div>
+	</div>
+	<div class="dc-column dc-column--small-12 dc-hide-from-medium">
+		<div class="dc-column__contents">This element will <strong class="dc-strong">hide</strong> from medium breakpoint size on.
+		</div>
+	</div>
+
+	<div class="dc-column dc-column--small-12 dc-show-from-small dc-hide-from-medium dc-show-from-large">
+		<div class="dc-column__contents">This element will <strong class="dc-strong">hide</strong> at medium breakpoint and show for all others.
+		</div>
+	</div>
+
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-12 dc-show-from-medium&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;This element will &lt;strong class&#x3D;&quot;dc-strong&quot;&gt;show&lt;/strong&gt; for medium breakpoint size on.
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-12 dc-hide-from-medium&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;This element will &lt;strong class&#x3D;&quot;dc-strong&quot;&gt;hide&lt;/strong&gt; from medium breakpoint size on.
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-12 dc-show-from-small dc-hide-from-medium dc-show-from-large&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;This element will &lt;strong class&#x3D;&quot;dc-strong&quot;&gt;hide&lt;/strong&gt; at medium breakpoint and show for all others.
+		&lt;/div&gt;
+	&lt;/div&gt;
+
 &lt;/div&gt;</code></pre>
 </div>
 
