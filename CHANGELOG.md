@@ -21,7 +21,6 @@
 * **icons:** Add bar-chart, line-chart, pointer icons ([#356](https://github.com/zalando/dress-code/issues/356)) ([e863f1a](https://github.com/zalando/dress-code/commit/e863f1a))
 * **messages:** Update design of messages. ([2055e43](https://github.com/zalando/dress-code/commit/2055e43)), closes [#329](https://github.com/zalando/dress-code/issues/329)
 * **radio:** makes the radio button accessible ([b17b582](https://github.com/zalando/dress-code/commit/b17b582))
-* **tab:** add tab atom to the dress-code ([03f5711](https://github.com/zalando/dress-code/commit/03f5711))
 * **tab:** add tab atom to the dress-code ([0549bf5](https://github.com/zalando/dress-code/commit/0549bf5))
 * **tables:** Make table responsiveness optional ([#330](https://github.com/zalando/dress-code/issues/330)) ([ba80a3a](https://github.com/zalando/dress-code/commit/ba80a3a)), closes [#222](https://github.com/zalando/dress-code/issues/222)
 * **textarea:** add styles for error state ([d1cde40](https://github.com/zalando/dress-code/commit/d1cde40))
@@ -29,11 +28,12 @@
 
 ### BREAKING CHANGES
 
-* breakpoints: * $dc-large-width breakpoint variable renamed to $dc-medium-width
-* $dc-huge-width breakpoint variable renamed to $dc-large-width
-* $dc-giant-width breakpoint variable renamed to $dc-huge-width
-* $dc-giant-width and $dc-monstrous-width are deprecated and not used anymore
+* **breakpoints**: variable names have been renamed
 
+   - _$dc-large-width_ breakpoint variable renamed to **$dc-medium-width**
+   - _$dc-huge-width_ breakpoint variable renamed to **$dc-large-width**
+   - _$dc-giant-width_ breakpoint variable renamed to **$dc-huge-width**
+   - _$dc-giant-width_ and _$dc-monstrous-width_ are deprecated and not used anymore
 
 
 <a name="2.0.0"></a>
