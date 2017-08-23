@@ -40,11 +40,9 @@
 }
 
 @mixin dc-select--small {
-
     height: $dc-space150;
     font-size: $dc-font50;
     text-transform: uppercase;
-
 }
 
 @mixin dc-select--is-error {

@@ -96,6 +96,11 @@
     // scss-lint:enable VendorPrefix
 }
 
+@mixin dc-input--small {
+    height: $dc-space150;
+    font-size: $dc-font50;
+}
+
 //  = INPUTS
 //  ---------------------------------------------------------------------------
 @mixin dc-input-selectors {
@@ -114,5 +119,9 @@
 
     .dc-input--text-right {
         @include dc-input--text-right;
+    }
+
+    .dc-input--small {
+        @include dc-input--small;
     }
 }
