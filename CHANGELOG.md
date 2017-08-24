@@ -1,3 +1,18 @@
+<a name="2.1.1"></a>
+## [2.1.1](https://github.com/zalando/dress-code/compare/2.1.0...2.1.1) (2017-08-24)
+
+
+### Bug Fixes
+
+* **table:** fix table responsive after 2.1.0 ([3ec675b](https://github.com/zalando/dress-code/commit/3ec675b))
+
+
+### Features
+
+* **text-input:** add small modifier ([89de7ea](https://github.com/zalando/dress-code/commit/89de7ea))
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/zalando/dress-code/compare/2.0.0...v2.1.0) (2017-08-22)
 
