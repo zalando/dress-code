@@ -42,7 +42,7 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -50,9 +50,9 @@
 	__webpack_require__(2);
 	__webpack_require__(3);
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	'use strict';
 
@@ -634,9 +634,9 @@
 	}
 	;
 
-/***/ },
+/***/ }),
 /* 2 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	"use strict";
 
@@ -672,9 +672,9 @@
 	    // end
 	});
 
-/***/ },
+/***/ }),
 /* 3 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	'use strict';
 
@@ -1087,5 +1087,5 @@
 		.setBreakpointsState().setGridState();
 	})();
 
-/***/ }
+/***/ })
 /******/ ]);
