@@ -7,7 +7,7 @@
 }
 
 @mixin _dc-table__tr--spacing-modifier($padding, $child-column-selector : ".dc-table__td") {
-    @media (min-width:$dc-medium-width) {
+    @media (min-width: $dc-medium-width) {
         > #{$child-column-selector} {
             padding-top: $padding + .1;
             padding-bottom: $padding + .1;
@@ -29,7 +29,7 @@
     $tr-selector : ".dc-table__tr",
     $tr-interactive--selector : ".dc-table__tr--interactive",
     $td-selector : ".dc-table__td") {
-    @media (min-width:0 $dc-medium-width - .1) {
+    @media (max-width: $dc-medium-width - .1) {
         @include _dc-table-element--is-block;
 
         #{$thead-selector} {
@@ -41,7 +41,7 @@
         }
 
         #{$tr-selector} {
-            @media (min-width:0 $dc-large-width - .1) {
+            @media (max-width: $dc-large-width - .1) {
                 position: relative;
                 padding: $dc-space100 0;
                 border-bottom: 1px solid $dc-gray70;
@@ -53,7 +53,7 @@
         }
 
         #{$td-selector} {
-            @media (min-width:0 $dc-medium-width - .1) {
+            @media (max-width: $dc-medium-width - .1) {
                 min-height: $dc-space150;
                 padding-left: calc(30% + 12px);
                 text-align: left;
@@ -81,7 +81,7 @@
         }
 
         #{$tr-interactive--selector} {
-            @media (min-width:0 $dc-medium-width - .1) {
+            @media (max-width: $dc-medium-width - .1) {
                 &:after {
                     position: absolute;
                     top: 50%;
