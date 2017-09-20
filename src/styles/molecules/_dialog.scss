@@ -16,8 +16,10 @@
 }
 
 @mixin dc-dialog__body {
+    max-height: calc(70vh);
     padding: $dc-space150 $dc-space150 $dc-space100;
     background: $dc-white;
+    overflow: auto;
 }
 
 @mixin dc-dialog__close {
