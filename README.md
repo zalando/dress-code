@@ -64,6 +64,9 @@ Chrome 48+, Firefox 44+, Safari 8+, IE 10+.
 npm install dress-code --save
 ```
 
+> :warning: **NOTE**: We recently dropped **bower** support (from version 2.1.0). Keep calm and do `npm`.  
+
+
 ### Usage
 
 
