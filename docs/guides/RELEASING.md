@@ -15,23 +15,10 @@
 
 1. Open a PR from the release branch to `master`.
 
-1. After the PR is merged, publish to npm. This will output the newly published version for verification.
+1. After the PR is merged, publish to npm. This will output the newly published version for verification, create and push the tag and deploy the demo.
 
     ```
     git checkout master
     git pull
     npm publish
     ```
-
-1. Create and push the tag. The following command will do both steps automatically.
-
-    ```
-    npm run tag:release
-    ```
-
-1. Deploy [docs/demo](http://zalando.github.io/dress-code/) artifacts.
-
-    ```
-    npm run deploy:demo
-    ```
-
