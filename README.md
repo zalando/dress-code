@@ -81,6 +81,9 @@ Include this in your ```<head>```:
 If you are already using SASS in your project, you can import the Dress Code directly.
 
 ```scss
+$dc-font-path: 'node_modules/dress-code/dist/fonts';  //Optional; defaults to empty
+$dc-image-path: 'node_modules/dress-code/dist/img';  //Optional; defaults to empty
+
 @import "node_modules/dress-code/dist/sass/dress-code";
 @include dc-everything; // output dc-* selectors
 ```
