@@ -20,6 +20,7 @@
 
     &:focus {
         outline: none;
+        box-shadow: 0 0 0 2px transparentize($dc-blue40, 0.5);
     }
 
     &:hover {
@@ -49,6 +50,10 @@
     &:hover {
         @include _dc-btn--link-reset;
         color: $dc-link-color-hover;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 2px transparentize($dc-link-color, 0.5);
     }
 }
 
@@ -174,6 +179,13 @@
     }
 }
 
+@mixin dc-btn--no-focus {
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
 @mixin dc-btn-selectors {
     .dc-btn {  @include dc-btn;  }
 
@@ -194,6 +206,8 @@
     .dc-btn--large {  @include dc-btn--large;  }
 
     .dc-btn--block {  @include dc-btn--block;  }
+
+    .dc-btn--no-focus { @include dc-btn--no-focus; }
 
     // special case (usually this kind of selectors should be avoided)
     .dc-btn--link.dc-btn--disabled {  @include dc-btn--link-disabled;  }
