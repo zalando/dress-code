@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/zalando/dress-code.svg?branch=master)](https://travis-ci.org/zalando/dress-code)
 [![Dependency Status](https://david-dm.org/zalando/dress-code.svg)](https://david-dm.org/zalando/dress-code)
 [![devDependency Status](https://david-dm.org/zalando/dress-code/dev-status.svg)](https://david-dm.org/zalando/dress-code#info=devDependencies)
+[![Gitter](https://badges.gitter.im/zalando/dress-code.svg)](https://gitter.im/zalando/dress-code)
 
 # The Dress Code
 
