@@ -82,56 +82,59 @@
     @if $filename == line-chart {
         $char: "\EA13";
     }
-    @if $filename == lock {
+    @if $filename == link {
         $char: "\EA14";
     }
-    @if $filename == menu {
+    @if $filename == lock {
         $char: "\EA15";
     }
-    @if $filename == minus {
+    @if $filename == menu {
         $char: "\EA16";
     }
-    @if $filename == more {
+    @if $filename == minus {
         $char: "\EA17";
     }
-    @if $filename == pencil {
+    @if $filename == more {
         $char: "\EA18";
     }
-    @if $filename == play {
+    @if $filename == pencil {
         $char: "\EA19";
     }
-    @if $filename == pointer {
+    @if $filename == play {
         $char: "\EA1A";
     }
-    @if $filename == redo {
+    @if $filename == pointer {
         $char: "\EA1B";
     }
-    @if $filename == search {
+    @if $filename == redo {
         $char: "\EA1C";
     }
-    @if $filename == success {
+    @if $filename == search {
         $char: "\EA1D";
     }
-    @if $filename == trash {
+    @if $filename == success {
         $char: "\EA1E";
     }
-    @if $filename == triangle-down {
+    @if $filename == trash {
         $char: "\EA1F";
     }
-    @if $filename == triangle-up {
+    @if $filename == triangle-down {
         $char: "\EA20";
     }
-    @if $filename == undo {
+    @if $filename == triangle-up {
         $char: "\EA21";
     }
-    @if $filename == user {
+    @if $filename == undo {
         $char: "\EA22";
     }
-    @if $filename == users {
+    @if $filename == user {
         $char: "\EA23";
     }
-    @if $filename == warning {
+    @if $filename == users {
         $char: "\EA24";
+    }
+    @if $filename == warning {
+        $char: "\EA25";
     }
 
     @return $char;
@@ -231,6 +234,11 @@
 @mixin dc-icon--line-chart {
     &:before {
         content: dc-icon-char(line-chart);
+    }
+}
+@mixin dc-icon--link {
+    &:before {
+        content: dc-icon-char(link);
     }
 }
 @mixin dc-icon--lock {
@@ -409,6 +417,10 @@
 
     .dc-icon--line-chart {
         @include dc-icon--line-chart;
+    }
+
+    .dc-icon--link {
+        @include dc-icon--link;
     }
 
     .dc-icon--lock {
