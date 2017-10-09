@@ -86,6 +86,15 @@ If you are already using SASS in your project, you can import the Dress Code dir
 @include dc-everything; // output dc-* selectors
 ```
 
+When using SASS, customization can be achieved by:
+
+* Updating **variable** values, you can take a look at `src/styles/core/_variables.scss` to see all available variables and their default values.
+
+* Apply **mixins** to your elements, nearly every css selector has a corresponding mixin.
+
+> **NOTE**: Given that, for example, the compiled css file will be served at `/styles/main.css`, by default **Fonts** and **Images** will be served from `/fonts` and `/img` path.<br><br>
+To adjust this behavior according to your setup, update the `$dc-font-path` and `$dc-image-path` variable values.
+
 ##### Compass notes
 
 > For those using Compass, you can add this to your config.rb file:
