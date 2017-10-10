@@ -28,7 +28,7 @@
             left: 0;
             width: 2rem;
             height: 2rem;
-            border: 1px solid $dc-gray60;
+            border: 1px solid $dc-gray45;
             border-radius: $dc-radius100;
             // scss-lint:disable ColorVariable
             background: #fff;
@@ -53,7 +53,7 @@
 
     &:checked + #{$sibling-label-selector}:after {
         transform: scale3d(1, 1, 1);
-        background: $dc-blue40;
+        background: $dc-blue45;
         opacity: 1;
     }
 

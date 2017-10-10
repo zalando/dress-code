@@ -10,28 +10,34 @@ $dc-white: #fff !default;
 $dc-black: #000 !default;
 
 /// gray 80
-$dc-gray80: #f7f7f7 !default;
+$dc-gray80: #F5F5F5 !default;
 
 /// gray 70
-$dc-gray70: #ededed !default;
+$dc-gray70: #EBEBEB !default;
 
 /// gray 60
-$dc-gray60: #d1d1d1 !default;
+$dc-gray60: #E0E0E0 !default;
 
 /// gray 50
-$dc-gray50: #b6b6b6 !default;
+$dc-gray50: #D1D1D1 !default;
+
+/// gray 45
+$dc-gray45: #BFBFBF !default;
 
 /// gray 40
-$dc-gray40: #9b9b9b !default;
+$dc-gray40: #999999 !default;
 
 /// gray 30
-$dc-gray30: #808080 !default;
+$dc-gray30: #737373 !default;
 
 /// gray 20
-$dc-gray20: #646464 !default;
+$dc-gray20: #4C4C4C !default;
 
 /// gray 10
-$dc-gray10: #4a4a4a !default;
+$dc-gray10: #262626 !default;
+
+/// gray 05
+$dc-gray05: #161616 !default;
 
 //  = ACCENT COLORS
 //  ---------------------------------------------------------------------------
@@ -39,207 +45,258 @@ $dc-gray10: #4a4a4a !default;
 // BLUE
 
 /// blue 80
-$dc-blue80: #e6f4ff !default;
+$dc-blue80: #E6F1FD !default;
 
 /// blue 70
-$dc-blue70: #d1ebff !default;
+$dc-blue70: #CCE2FC !default;
 
 /// blue 60
-$dc-blue60: #a3d9ff !default;
+$dc-blue60: #99C6F9 !default;
 
 /// blue 50
-$dc-blue50: #75c6ff !default;
+$dc-blue50: #66A9F7 !default;
+
+/// blue 45
+$dc-blue45: #338DF4 !default;
 
 /// blue 40
-$dc-blue40: #26aafe !default;
+$dc-blue40: #0071F2 !default;
 
 /// blue 30
-$dc-blue30: #1e87cb !default;
+$dc-blue30: #005AC1 !default;
 
 /// blue 20
-$dc-blue20: #186698 !default;
+$dc-blue20: #004391 !default;
 
 /// blue 10
-$dc-blue10: #124365 !default;
+$dc-blue10: #002D60 !default;
+
+/// blue 05
+$dc-blue05: #00152E !default;
 
 // CYAN
 
 /// cyan 80
-$dc-cyan80: #e8fcff !default;
+$dc-cyan80: #E6FBFC !default;
 
 /// cyan 70
-$dc-cyan70: #b5f5ff !default;
+$dc-cyan70: #CDF8F9 !default;
 
 /// cyan 60
-$dc-cyan60: #8cf0ff !default;
+$dc-cyan60: #9CF1F3 !default;
 
 /// cyan 50
-$dc-cyan50: #61eaff !default;
+$dc-cyan50: #6BEBED !default;
+
+/// cyan 45
+$dc-cyan45: #09DEE2 !default;
 
 /// cyan 40
-$dc-cyan40: #24e0fe !default;
+$dc-cyan40: #08CED2 !default;
 
 /// cyan 30
-$dc-cyan30: #1fb3cb !default;
+$dc-cyan30: #07B1B4 !default;
 
 /// cyan 20
-$dc-cyan20: #1a8899 !default;
+$dc-cyan20: #058587 !default;
 
 /// cyan 10
-$dc-cyan10: #145b66 !default;
+$dc-cyan10: #03585A !default;
+
+/// cyan 05
+$dc-cyan05: #024243 !default;
 
 // GREEN
-//
+
 /// green 80
-$dc-green80: #e7ffd6 !default;
+$dc-green80: #E6FAEE !default;
 
 /// green 70
-$dc-green70: #c6ff9e !default;
+$dc-green70: #CCF6DD !default;
 
 /// green 60
-$dc-green60: #acff70 !default;
+$dc-green60: #99EDBB !default;
 
 /// green 50
-$dc-green50: #8bfa3c !default;
+$dc-green50: #66E59A !default;
+
+/// green 45
+$dc-green45: #33DC78 !default;
 
 /// green 40
-$dc-green40: #72e620 !default;
+$dc-green40: #00D457 !default;
 
 /// green 30
-$dc-green30: #65cb1c !default;
+$dc-green30: #00A945 !default;
 
 /// green 20
-$dc-green20: #4a9912 !default;
+$dc-green20: #007F34 !default;
 
 /// green 10
-$dc-green10: #30660a !default;
+$dc-green10: #005422 !default;
+
+/// green 05
+$dc-green05: #003F19 !default;
 
 // YELLOW
 
 /// yellow 80
-$dc-yellow80: #fff9d9 !default;
+$dc-yellow80: #FFFBE9 !default;
 
 /// yellow 70
-$dc-yellow70: #fff09e !default;
+$dc-yellow70: #FFF6CA !default;
 
 /// yellow 60
-$dc-yellow60: #ffeb7a !default;
+$dc-yellow60: #FFF1AF !default;
 
 /// yellow 50
-$dc-yellow50: #ffe347 !default;
+$dc-yellow50: #FFEC8E !default;
+
+/// yellow 45
+$dc-yellow45: #FFE24F !default;
 
 /// yellow 40
-$dc-yellow40: #ffda0a !default;
+$dc-yellow40: #EDD249 !default;
 
 /// yellow 30
-$dc-yellow30: #ccb116 !default;
+$dc-yellow30: #CCB43F !default;
 
 /// yellow 20
-$dc-yellow20: #99840e !default;
+$dc-yellow20: #99872F !default;
 
 /// yellow 10
-$dc-yellow10: #665705 !default;
+$dc-yellow10: #665A1F !default;
+
+/// yellow 05
+$dc-yellow05: #4C4317 !default;
 
 // ORANGE
 
 /// orange 80
-$dc-orange80: #ffefe0 !default;
+$dc-orange80: #FCF1E6 !default;
 
 /// orange 70
-$dc-orange70: #ffd1a6 !default;
+$dc-orange70: #FAE3CC !default;
 
 /// orange 60
-$dc-orange60: #ffba7a !default;
+$dc-orange60: #F5C799 !default;
 
 /// orange 50
-$dc-orange50: #ffa54e !default;
+$dc-orange50: #F0AB66 !default;
+
+/// orange 45
+$dc-orange45: #EB8F33 !default;
 
 /// orange 40
-$dc-orange40: #ff8e25 !default;
+$dc-orange40: #E67300 !default;
 
 /// orange 30
-$dc-orange30: #cc711d !default;
+$dc-orange30: #B85C00 !default;
 
 /// orange 20
-$dc-orange20: #995516 !default;
+$dc-orange20: #8A4500 !default;
 
 /// orange 10
-$dc-orange10: #66380e !default;
+$dc-orange10: #5C2E00 !default;
+
+/// orange 05
+$dc-orange05: #442200 !default;
 
 // RED
 
 /// red 80
-$dc-red80: #ffeae6 !default;
+$dc-red80: #FAEBEA !default;
 
 /// red 70
-$dc-red70: #ffcabf !default;
+$dc-red70: #F6D7D5 !default;
 
 /// red 60
-$dc-red60: #ff9985 !default;
+$dc-red60: #EDAFAB !default;
 
 /// red 50
-$dc-red50: #ff6c4f !default;
+$dc-red50: #E48881 !default;
+
+/// red 45
+$dc-red45: #DB6057 !default;
 
 /// red 40
-$dc-red40: #ff4a25 !default;
+$dc-red40: #D2392E !default;
 
 /// red 30
-$dc-red30: #cc3a1d !default;
+$dc-red30: #A82D24 !default;
 
 /// red 20
-$dc-red20: #992b15 !default;
+$dc-red20: #7E221B !default;
 
 /// red 10
-$dc-red10: #661d0e !default;
+$dc-red10: #541612 !default;
+
+/// red 05
+$dc-red05: #320D0A !default;
+
 
 // MAGENTA
 
 /// magenta 80
-$dc-magenta80: #f7e9f7 !default;
+$dc-magenta80: #FAEEF9 !default;
 
 /// magenta 70
-$dc-magenta70: #f7c8f7 !default;
+$dc-magenta70: #F5DDF3 !default;
 
 /// magenta 60
-$dc-magenta60: #f7b2f6 !default;
+$dc-magenta60: #ECBCE8 !default;
 
 /// magenta 50
-$dc-magenta50: #f296f1 !default;
+$dc-magenta50: #E39ADD !default;
+
+/// magenta 45
+$dc-magenta45: #DA79D2 !default;
 
 /// magenta 40
-$dc-magenta40: #eb74e9 !default;
+$dc-magenta40: #D158C7 !default;
 
 /// magenta 30
-$dc-magenta30: #bb5cba !default;
+$dc-magenta30: #A7469F !default;
 
 /// magenta 20
-$dc-magenta20: #8c458b !default;
+$dc-magenta20: #7D3477 !default;
 
 /// magenta 10
-$dc-magenta10: #5d2e5c !default;
+$dc-magenta10: #53234F !default;
+
+/// magenta 05
+$dc-magenta05: #3E1A3B !default;
+
 
 // PURPLE
 
 /// purple 80
-$dc-purple80: #f4edff !default;
+$dc-purple80: #F1ECFF !default;
 
 /// purple 70
-$dc-purple70: #e1cfff !default;
+$dc-purple70: #E3D9FF !default;
+
 
 /// purple 60
-$dc-purple60: #c8a6ff !default;
+$dc-purple60: #C7B4FF !default;
 
 /// purple 50
-$dc-purple50: #ac7afd !default;
+$dc-purple50: #AB8FFF !default;
+
+/// purple 45
+$dc-purple45: #8F6AFF !default;
 
 /// purple 40
-$dc-purple40: #9757fd !default;
+$dc-purple40: #7345FF !default;
 
 /// purple 30
-$dc-purple30: #7845cb !default;
+$dc-purple30: #5C37CC !default;
 
 /// purple 20
-$dc-purple20: #5a3498 !default;
+$dc-purple20: #452999 !default;
 
 /// purple 10
-$dc-purple10: #3c2365 !default;
+$dc-purple10: #2E1B66 !default;
+
+/// purple 05
+$dc-purple05: #22144C !default;

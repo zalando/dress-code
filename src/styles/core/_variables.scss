@@ -21,9 +21,6 @@ $dc-font-path: "../fonts" !default;
 /// @type String
 $dc-image-path: "../img" !default;
 
-// = COLORS
-//
-
 $dc-primary-accent: $dc-blue40 !default;
 $dc-secondary-accent: $dc-orange40 !default;
 $dc-debugmessage-color: rgba(255, 255, 0, .9) !default;
@@ -31,14 +28,15 @@ $dc-debugmessage-color: rgba(255, 255, 0, .9) !default;
 //  = SCAFFOLDING
 //  ---------------------------------------------------------------------------
 
-$dc-body-background-color: $dc-gray70 !default;
-$dc-text-color: $dc-gray10 !default;
+$dc-body-background-color: $dc-gray80 !default;
+$dc-text-color: $dc-gray05 !default;
 
 //  = LINKS
 //  ---------------------------------------------------------------------------
 
 $dc-link-color: $dc-primary-accent !default;
-$dc-link-color-hover: $dc-blue30 !default;
+$dc-link-color-hover: $dc-blue50 !default;
+$dc-link-color-active: $dc-blue30 !default;
 
 //  = SPACING
 //  ---------------------------------------------------------------------------
@@ -58,29 +56,29 @@ $dc-touch-size: $dc-space50 * 11 !default;
 //  = TYPOGRAPHY
 //  ---------------------------------------------------------------------------
 
-$dc-sans-font-family: "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$dc-sans-font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
 $dc-serif-font-family: "Georgia", "Geneva", "Times New Roman", serif !default;
-$dc-mono-font-family: "Menlo", "Monaco", "Consolas", "Courier New", monospace !default;
+$dc-mono-font-family: "Fira Mono", "Monaco", "Consolas", "Courier New", monospace !default;
 
 $dc-html-font-size: 62.5% !default;
 $dc-html-line-height: 1 !default;
-$dc-body-font-size: 1.4rem !default;
+$dc-body-font-size: 1.6rem !default;
 $dc-body-line-height: $dc-space150 !default;
 $dc-base-font-family: $dc-sans-font-family !default;
 $dc-alt-font-family: $dc-sans-font-family !default;
 
-$dc-font50: 1.1rem !default;
-$dc-font100: 1.4rem !default;
-$dc-font150: 1.8rem !default;
-$dc-font200: 2.2rem !default;
-$dc-font250: 2.7rem !default;
-$dc-font300: 3.4rem !default;
+$dc-font50:  1.3rem !default;
+$dc-font100: 1.6rem !default;
+$dc-font150: 1.9rem !default;
+$dc-font200: 2.3rem !default;
+$dc-font250: 2.8rem !default;
+$dc-font300: 3.3rem !default;
 
-$dc-normal-font-weight: 300 !default;
-$dc-bold-font-weight: 500 !default;
+$dc-normal-font-weight: 400 !default;
+$dc-bold-font-weight: 900 !default;
 
 $dc-headings-font-family: $dc-sans-font-family !default;
-$dc-headings-font-weight: $dc-normal-font-weight !default;
+$dc-headings-font-weight: $dc-bold-font-weight !default;
 $dc-headings-color: $dc-text-color !default;
 
 $dc-h1-size: $dc-font300 !default;
@@ -159,4 +157,5 @@ $dc-breakpoints: (
 
 //  = Atoms default
 //  ---------------------------------------------------------------------------
-$dc-tab-color : $dc-orange40 !default;
+
+$dc-tab-color : $dc-blue45 !default;

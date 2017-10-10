@@ -1,8 +1,8 @@
 .f-item-group {
 	@include clearfix;
 
-	margin-bottom: 3rem;
-	padding-bottom: 3rem;
+	margin-bottom: $dc-space200;
+	padding-bottom: $dc-space200;
 	border-bottom: 1px solid map-get($dc-colors, light);
 
 	&:last-child {
@@ -17,8 +17,8 @@
 
 	& > & {
 
-		padding-bottom: 1.5rem;
-		margin-bottom: 1.5rem;
+		padding-bottom: $dc-space125;
+		margin-bottom: $dc-space200;
 		border-bottom: 0;
 
 		&:first-of-type {
@@ -63,10 +63,12 @@ h2.f-item-heading {
 
 h3.f-item-heading {
 	@extend .dc-h3;
+	font-size: $dc-font100;
+	line-height: 2.8rem;
 	text-transform:uppercase;
 	border-bottom:1px solid $dc-gray60;
 	margin-bottom: $dc-space100;
-	padding-bottom: 0.4rem;
+	padding-bottom: $dc-space50;
 
 	.sg-section__title + &
 	{
@@ -74,18 +76,19 @@ h3.f-item-heading {
 	}
 }
 
-h4 { font-weight: 500; }
+h4 { font-weight: $dc-headings-font-weight; }
 
 
 .f-item-controls {
 	float: right;
 	display: inline-block;
 	vertical-align: middle;
-	margin-left: 0.5rem;
+	margin-left: $dc-space50;
+	text-align: center;
 
 	.f-control {
 		width: 36px;
-		height: 36px;
+		height: 33px;
 		display: block;
 		float: left;
 
@@ -94,8 +97,9 @@ h4 { font-weight: 500; }
 		}
 
 		&:hover {
+			box-shadow: inset 0 -3px 0 $dc-blue50;
 			use {
-				fill: darken($dc-primary-accent, 20%);
+				fill: $dc-blue50;
 			}
 		}
 

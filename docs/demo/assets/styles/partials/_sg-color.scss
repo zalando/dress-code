@@ -31,6 +31,12 @@
 				bottom:0;
 				left:0;
 
+				.sg-color--blue05 &
+				{
+					background:$dc-blue05;
+					color:$dc-white;
+				}
+
 				.sg-color--blue10 &
 				{
 					background:$dc-blue10;

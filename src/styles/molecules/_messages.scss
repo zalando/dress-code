@@ -88,25 +88,25 @@
 
 @mixin dc-msg--info {
     border-color: $dc-blue60;
-    background-color: $dc-blue80;
-    color: $dc-blue20;
+    background-color: $dc-blue70;
+    color: $dc-blue30;
 }
 
 //  = SUCCESS MESSAGE
 //  -----------------------------------------------------------------------------
 
 @mixin dc-msg--success {
-    border-color: $dc-green50;
-    background-color: $dc-green80;
-    color: $dc-green20;
+    border-color: $dc-green60;
+    background-color: $dc-green70;
+    color: $dc-green30;
 }
 
 //  = WARNING MESSAGE
 //  -----------------------------------------------------------------------------
 
 @mixin dc-msg--warning {
-    border-color: $dc-yellow40;
-    background-color: $dc-yellow80;
+    border-color: $dc-yellow45;
+    background-color: $dc-yellow70;
     color: $dc-yellow20;
 }
 
@@ -114,9 +114,9 @@
 //  -----------------------------------------------------------------------------
 
 @mixin dc-msg--error {
-    border-color: $dc-red70;
-    background-color: $dc-red80;
-    color: $dc-red20;
+    border-color: $dc-red60;
+    background-color: $dc-red70;
+    color: $dc-red30;
 }
 
 //  = ANIMATION
