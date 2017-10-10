@@ -12,16 +12,26 @@
 		margin: 0;
 		padding: 1rem 0;
 
+		&:hover {
+			box-shadow: inset 0 -3px 0 0 $dc-blue50;
+
+			svg {
+				use {
+						fill: $dc-blue50;
+				}
+			}
+		}
+
 		&.f-active {
-			box-shadow: inset 0 -3px 0 0 map-get($dc-colors, accent);
+			box-shadow: inset 0 -3px 0 0 $dc-blue50;
 
 			use {
-				fill: $dc-orange40;
+				fill: $dc-blue40;
 			}
 
 			&:hover {
 				use {
-					fill: darken($dc-orange40, 10%);
+					fill: $dc-blue50;
 				}
 			}
 		}
@@ -30,12 +40,12 @@
 			vertical-align: middle;
 
 			use {
-				fill: $dc-gray40;
+				fill: $dc-blue40;
 			}
 
 			&:hover {
 				use {
-					fill: darken($dc-orange40, 10%);
+						fill: $dc-blue50;
 				}
 			}
 		}
@@ -59,11 +69,6 @@
 		use {
 			fill: map-get($dc-colors, light);
 		}
-
-		&:active
-		{
-			transform: scale(.85);
-		}
 	}
 }
 
@@ -83,7 +88,7 @@
         padding-top: 0.5rem;
 
         &:hover {
-            color: darken($dc-orange40, 10%);
+            color: darken($dc-blue45, 10%);
         }
     }
 }

@@ -12,12 +12,10 @@
 	border-bottom-width: 0;
 	border-bottom-style: solid;
 	background-color: #fff;
-	font-size: $dc-body-font-size;
-	font-weight: $dc-bold-font-weight;
-	padding: .5em;
-	margin-bottom: 2em;
-	font-size: 1.2rem;
-	line-height: 1.8rem;
+	font-size: $dc-font50;
+	padding: $dc-space50;
+	margin-bottom: $dc-space100;
+	line-height: $dc-space150;
 
 	@media (min-width: 60em) {
 		flex-basis: 0;
@@ -26,6 +24,7 @@
 	.f-color-chip__color {
 		background-color: #fff;
 		content: attr(data-color);
+		font-family: $dc-mono-font-family;
 		font-weight: $dc-normal-font-weight;
 		color: $dc-gray40;
 	}

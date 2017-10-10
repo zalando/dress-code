@@ -6,7 +6,7 @@
 
 @mixin dc-accordion__item {
     display: block;
-    border: $dc-border50 solid $dc-gray70;
+    border: $dc-border50 solid $dc-gray60;
     background-color: $dc-white;
 
     &:not(:last-child) {
@@ -25,7 +25,7 @@
     }
 
     .#{$accordion-header-selector} {
-        border-bottom: $dc-border50 solid $dc-gray70;
+        border-bottom: $dc-border50 solid $dc-gray60;
 
         &:after {
             @include dc-accordion__triangle--up;
@@ -34,7 +34,7 @@
 }
 
 @mixin dc-accordion__item--is-active {
-    border: $dc-border50 solid $dc-blue40;
+    border: $dc-border50 solid $dc-blue50;
     background-color: $dc-white;
 }
 
@@ -49,7 +49,7 @@
     @include dc-accordion__header-icon;
 
     &:hover {
-        background-color: lighten($dc-blue80, 3%);
+        background-color: $dc-blue80;
     }
 
     &:after {

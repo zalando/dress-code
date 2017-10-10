@@ -4,7 +4,7 @@
     margin-bottom: $dc-space150;
     padding: $dc-space75 + .1 $dc-space75;
     transition: box-shadow .2s linear, border-color .2s linear;
-    border: 1px solid $dc-gray60;
+    border: 1px solid $dc-gray45;
     border-radius: $dc-radius100;
     font-size: $dc-font100;
     font-weight: $dc-normal-font-weight;
@@ -13,12 +13,34 @@
     -webkit-appearance: none;
     -webkit-tap-highlight-color: rgba($dc-black, 0);
 
+    // scss-lint:disable VendorPrefix
+    &::-webkit-input-placeholder {
+        color: $dc-gray45;
+        font-weight: $dc-normal-font-weight;
+    }
+
+    &:-moz-placeholder {
+        color: $dc-gray45;
+        font-weight: $dc-normal-font-weight;
+    }
+
+    &::-moz-placeholder {
+        color: $dc-gray45;
+        font-weight: $dc-normal-font-weight;
+    }
+
+    &:-ms-input-placeholder {
+        color: $dc-gray45;
+        font-weight: $dc-normal-font-weight;
+    }
+    // scss-lint:enable VendorPrefix
+
     &:hover {
-        border-color: $dc-blue40;
+        border-color: $dc-blue45;
     }
 
     &:focus {
-        border-color: $dc-blue40;
+        border-color: $dc-blue45;
         outline: 0;
         box-shadow: inset 0 1px 1px rgba($dc-black, .2);
     }
@@ -30,22 +52,22 @@
 
         // scss-lint:disable VendorPrefix
         &::-webkit-input-placeholder {
-            color: $dc-gray60;
+            color: $dc-gray50;
             font-weight: $dc-normal-font-weight;
         }
 
         &:-moz-placeholder {
-            color: $dc-gray60;
+            color: $dc-gray50;
             font-weight: $dc-normal-font-weight;
         }
 
         &::-moz-placeholder {
-            color: $dc-gray60;
+            color: $dc-gray50;
             font-weight: $dc-normal-font-weight;
         }
 
         &:-ms-input-placeholder {
-            color: $dc-gray60;
+            color: $dc-gray50;
             font-weight: $dc-normal-font-weight;
         }
         // scss-lint:enable VendorPrefix
@@ -66,11 +88,11 @@
 }
 
 @mixin dc-input--is-error {
-    border-color: $dc-red40;
+    border-color: $dc-red45;
 
     &:hover,
     &:focus {
-        border-color: $dc-red40;
+        border-color: $dc-red45;
     }
 }
 

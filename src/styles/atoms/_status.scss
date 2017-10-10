@@ -22,7 +22,7 @@
 }
 
 @mixin dc-status--active {
-    @include _before__background-color($dc-green30);
+    @include _before__background-color($dc-green40);
 }
 
 @mixin dc-status--inactive {
@@ -30,11 +30,11 @@
 }
 
 @mixin dc-status--new {
-    @include _before__background-color($dc-orange60);
+    @include _before__background-color($dc-orange50);
 }
 
 @mixin dc-status--error {
-    @include _before__background-color($dc-red50);
+    @include _before__background-color($dc-red40);
 }
 
 @mixin dc-status-selectors {

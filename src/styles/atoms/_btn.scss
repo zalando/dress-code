@@ -3,10 +3,11 @@
 @mixin dc-btn {
     display: inline-block;
     padding: $dc-space100 - .1 $dc-space100;
-    transition: box-shadow .2s linear, border-color .2s linear;
+    transition: box-shadow .1s linear, border-color .1s linear, background-color .1s linear;
     border: 1px solid $dc-gray50;
     border-radius: $dc-radius100;
-    background: linear-gradient($dc-white, darken($dc-white, 7%));
+    // background: linear-gradient($dc-white, darken($dc-white, 7%));
+    background: $dc-gray80;
     color: $dc-gray10;
     font-size: $dc-body-font-size;
     font-weight: $dc-normal-font-weight;
@@ -23,11 +24,21 @@
     }
 
     &:hover {
+        border: 1px solid $dc-gray50;
         outline: 0;
-        background: linear-gradient($dc-white, darken($dc-white, 5%));
+        // background: linear-gradient($dc-white, darken($dc-white, 5%));
+        background: $dc-white;
         color: $dc-gray10;
         text-decoration: none;
         box-shadow: 0 1px 1px rgba($dc-black, .2);
+    }
+
+    &:active {
+        outline: 0;
+        // background: linear-gradient($dc-white, darken($dc-white, 5%));
+        background: $dc-gray70;
+        text-decoration: none;
+        box-shadow: inset 0 1px 1px rgba($dc-black, .2);
     }
 
     @content;
@@ -36,7 +47,10 @@
 //  = LINK BUTTON
 //  ---------------------------------------------------------------------------
 @mixin _dc-btn--link-reset {
-    border: 1px solid transparent;
+    border: 2px solid transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
     background: transparent;
     box-shadow: none;
 }
@@ -48,7 +62,8 @@
 
     &:hover {
         @include _dc-btn--link-reset;
-        color: $dc-link-color-hover;
+        border-color: $dc-link-color-hover;
+        color: $dc-link-color;
     }
 }
 
@@ -66,13 +81,19 @@
 //  ---------------------------------------------------------------------------
 
 @mixin dc-btn--primary {
-    border-color: darken($dc-blue40, 7%);
-    background: linear-gradient($dc-blue40, darken($dc-blue40, 7%));
+    border-color: $dc-blue40;
+    background: $dc-blue45;
     color: $dc-white;
 
     &:hover {
-        background: lighten($dc-blue40, 3%);
+        border-color: lighten($dc-blue40, 4%);
+        background: lighten($dc-blue45, 4%);
         color: $dc-white;
+    }
+
+    &:active {
+        border-color: darken($dc-blue40, 4%);
+        background: darken($dc-blue45, 4%);
     }
 }
 
@@ -80,17 +101,16 @@
 //  ---------------------------------------------------------------------------
 
 @mixin dc-btn--destroy {
-    transition: box-shadow .2s linear;
 
-    &:active {
-        border-color: $dc-red40;
-        background: $dc-red50;
+    &:hover {
+        border-color: $dc-red30;
+        background: $dc-red40;
         color: $dc-white;
     }
 
-    &:hover {
-        border-color: $dc-red40;
-        background: $dc-red50;
+    &:active {
+        border-color: darken($dc-red30, 4%);
+        background: darken($dc-red40, 4%);
         color: $dc-white;
     }
 }
@@ -110,8 +130,13 @@
 //  ---------------------------------------------------------------------------
 
 @mixin dc-btn--active {
-    background: darken($dc-gray70, 3%);
+    background: $dc-gray70;
     box-shadow: inset 0 1px 1px rgba($dc-black, .2);
+
+    &:hover {
+        background: $dc-gray70;
+        box-shadow: inset 0 1px 1px rgba($dc-black, .2);
+    }
 }
 
 //  = SMALL BUTTON
@@ -161,6 +186,10 @@
     margin-bottom: 0;
     border-left-width: 0;
     border-radius: 0;
+
+    &:hover {
+        border-left-width: 0;
+    }
 
     &:first-child {
         border-left-width: 1px;

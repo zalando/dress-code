@@ -19,6 +19,10 @@
     &--active {
         padding-bottom: $dc-space75;
         border-bottom: 4px solid $dc-orange50;
+
+        &:hover {
+            border-bottom: 4px solid $dc-orange50;
+        }
     }
 
     &--active,
