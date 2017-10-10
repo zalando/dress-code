@@ -138,7 +138,7 @@
 
 @mixin dc--text-small {
     font-size: $dc-font50;
-    line-height: $dc-space125;
+    line-height: 2rem;
 }
 
 @mixin dc--text-success {
