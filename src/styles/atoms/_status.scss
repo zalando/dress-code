@@ -7,6 +7,10 @@
 }
 
 @mixin _dc-status {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
     &:before {
         display: inline-block;
         width: 10px;
