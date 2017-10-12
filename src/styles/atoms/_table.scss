@@ -9,8 +9,8 @@
 @mixin _dc-table__tr--spacing-modifier($padding, $child-column-selector : ".dc-table__td") {
     @media (min-width: $dc-medium-width) {
         > #{$child-column-selector} {
-            padding-top: $padding + .1;
-            padding-bottom: $padding + .1;
+            padding-top: $padding;
+            padding-bottom: $padding;
         }
     }
 }
@@ -100,6 +100,8 @@
 
 @mixin dc-table__th {
     position: relative;
+    padding: $dc-space75 $dc-space50;
+    font-size: $dc-font50;
     font-weight: $dc-bold-font-weight;
     text-align: left;
     text-transform: uppercase;
@@ -112,8 +114,8 @@
 
     #{$child-sorter-selector} {
         position: absolute;
-        top: 9px;
-        margin-left: 4px;
+        top: 15px;
+        margin-left: $dc-space75;
         transition: opacity .3s;
         border-top: 0;
         border-right: 4px solid transparent;
@@ -196,9 +198,10 @@
 }
 
 @mixin dc-table__td {
-    padding: $dc-space75 + .1 $dc-space50 $dc-space75 + .1;
+    padding: $dc-space75 $dc-space50 $dc-space75;
     font-weight: $dc-normal-font-weight;
     line-height: $dc-body-line-height;
+    word-wrap: break-word;
 
     &:first-child {
         padding-left: $dc-space100 / 2;
