@@ -89,6 +89,9 @@
 						<li>
 							<a href="01-core.html#03-utilities">Utilities</a>
 						</li>
+						<li>
+							<a href="01-core.html#04-scss-reference">Scss Reference</a>
+						</li>
 					</ul>
 				</li>
 				<li>
@@ -384,20 +387,10 @@ npm run release [ major | minor | patch | &lt;newversion&gt; ]
 <p>Open a PR from the release branch to <code>master</code>.</p>
 </li>
 <li>
-<p>After the PR is merged, publish to npm. This will output the newly published version for verification.</p>
+<p>After the PR is merged, publish to npm. This will output the newly published version for verification, create and push the tag and deploy the demo.</p>
 <pre><code>git checkout master
 git pull
 npm publish
-</code></pre>
-</li>
-<li>
-<p>Create and push the tag. The following command will do both steps automatically.</p>
-<pre><code>npm run tag:release
-</code></pre>
-</li>
-<li>
-<p>Deploy <a href="http://zalando.github.io/dress-code/">docs/demo</a> artifacts.</p>
-<pre><code>npm run deploy:demo
 </code></pre>
 </li>
 </ol>
