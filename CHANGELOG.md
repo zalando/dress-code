@@ -1,3 +1,20 @@
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/zalando/dress-code/compare/2.1.1...2.2.0) (2017-10-18)
+
+
+### Bug Fixes
+
+* **demo:** fix table breaking demo layout ([#387](https://github.com/zalando/dress-code/issues/387)) ([07c0009](https://github.com/zalando/dress-code/commit/07c0009)), closes [#374](https://github.com/zalando/dress-code/issues/374)
+* **input:** search input to have box-sizing of border-box ([42f7a1f](https://github.com/zalando/dress-code/commit/42f7a1f)), closes [#286](https://github.com/zalando/dress-code/issues/286)
+
+
+### Features
+
+* **dialog:** set max-height for body and add scroll bar ([ed9363f](https://github.com/zalando/dress-code/commit/ed9363f))
+* **icon:** add link icon. closes [#382](https://github.com/zalando/dress-code/issues/382) ([9403151](https://github.com/zalando/dress-code/commit/9403151))
+
+
+
 <a name="2.1.1"></a>
 ## [2.1.1](https://github.com/zalando/dress-code/compare/2.1.0...2.1.1) (2017-08-24)
 
