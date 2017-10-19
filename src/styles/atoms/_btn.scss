@@ -31,6 +31,8 @@
         box-shadow: 0 1px 1px rgba($dc-black, .2);
     }
 
+    &[disabled] { @include dc-btn--disabled }
+
     @content;
 }
 
