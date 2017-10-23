@@ -20,11 +20,13 @@
             left: 0;
             width: 2rem;
             height: 2rem;
+            // transition: box-shadow .2s ease-out;
             border: 1px solid $dc-gray45;
             border-radius: $dc-radius100;
             // scss-lint:disable ColorVariable
             background: #fff;
             // scss-lint:enable ColorVariable
+            box-shadow: 0 0 0 0 rgba($dc-blue40, 1);
             content: " ";
         }
 
@@ -40,7 +42,9 @@
     }
 
     &:focus + #{$sibling-label-selector}:before {
+        transition: box-shadow .2s ease-out;
         border-color: $dc-blue40;
+        box-shadow: 0 0 10px 8px rgba($dc-blue40, 0);
     }
 
     &:checked + #{$sibling-label-selector}:after {
