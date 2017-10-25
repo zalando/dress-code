@@ -35,6 +35,7 @@
 @import "molecules/side-revealer";
 @import "molecules/dropdown";
 @import "molecules/input-group";
+@import "molecules/input-stack";
 @import "molecules/messages";
 @import "molecules/search-form";
 @import "molecules/toast";
@@ -81,6 +82,7 @@
     @include dc-side-revealer-selectors;
     @include dc-dropdown-selectors;
     @include dc-input-group-selectors;
+    @include dc-input-stack-selectors;
     @include dc-msg-selectors;
     @include dc-search-form-selectors;
     @include dc-toast-selectors;

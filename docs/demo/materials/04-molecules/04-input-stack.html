@@ -1,0 +1,29 @@
+---
+notes: |
+    Use "stacked inputs" when you need block form elements without breaking vertical rhythm and spacing.
+---
+
+<div class="dc-input-stack">
+    <label class="dc-label">Email</label>
+    <input type="email" class="dc-input dc-input--in-stack" placeholder="your@email.com"/>
+    <div class="dc-input-stack__feedback">
+        We'll never share your email with anyone else.
+    </div>
+</div>
+<div class="dc-input-stack">
+    <label class="dc-label">Password</label>
+    <input type="password" class="dc-input dc-input--in-stack dc-input--is-error" />
+    <div class="dc-input-stack__feedback dc-input-stack__feedback--is-error">
+        Please, don't leave this empty.
+    </div>
+</div>
+<div class="dc-input-stack">
+    <label class="dc-label" for="priceInput">Investment</label>
+    <div class="dc-input-group dc-input-group--in-stack">
+        <input class="dc-input dc-input--in-input-group dc-input--text-right" type="text" id="priceInput" placeholder="e. g. 100" />
+	    <div class="dc-input-addon">&euro;</div>
+    </div>
+    <div class="dc-input-stack__feedback">
+        How much money do you want to invest in bitcoins?
+    </div>
+</div>

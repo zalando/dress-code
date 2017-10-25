@@ -1,0 +1,42 @@
+@mixin dc-input-stack {
+    margin-bottom: $dc-space150;
+}
+
+@mixin dc-input-stack__feedback {
+    display: block;
+    color: $dc-gray50;
+}
+
+@mixin dc-input-stack__feedback--is-error {
+    color: $dc-red40;
+}
+
+@mixin dc-input--in-stack {
+    margin-bottom: $dc-space50;
+}
+
+@mixin dc-input-group--in-stack {
+    margin-bottom: $dc-space50;
+}
+
+@mixin dc-input-stack-selectors {
+    .dc-input-stack {
+        @include dc-input-stack;
+    }
+
+    .dc-input-stack__feedback {
+        @include dc-input-stack__feedback;
+    }
+
+    .dc-input-stack__feedback--is-error {
+        @include dc-input-stack__feedback--is-error;
+    }
+
+    .dc-input--in-stack {
+        @include dc-input--in-stack;
+    }
+
+    .dc-input-group--in-stack {
+        @include dc-input-group--in-stack;
+    }
+}
