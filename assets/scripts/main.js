@@ -1134,10 +1134,8 @@
 	                e.currentTarget.value = '';
 
 	                if (searchFragmentPath) {
-	                    var currentPathname = window.location.pathname;
-	                    var lastFragment = currentPathname.substring(currentPathname.lastIndexOf('/'));
-	                    var url = currentPathname.replace(lastFragment, searchFragmentPath);
-	                    window.location = window.location.origin + url;
+	                    var searchedPathName = window.location.pathname.replace(/\/([^\/]+)\/?$/g, searchFragmentPath);
+	                    window.location = window.location.origin + searchedPathName;
 	                }
 	            });
 
