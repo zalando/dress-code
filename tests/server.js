@@ -5,12 +5,17 @@ const path = require("path");
 const app = express();
 let server;
 
+const globals = require("./globals");
+const MESSAGES = globals.MESSAGES;
+
 const PORT = process.argv[2];
+const ARTIFACT_NAME = process.argv[3];
+const ARTIFACT_LOCATION = process.argv[4];
 
 const start = () => {
   const templatesDirectory = path.join(
     __dirname,
-    "../docs/demo/materials/03-atoms"
+    `../docs/demo/materials/03-atoms`
   );
 
   let templates = [];
@@ -21,11 +26,10 @@ const start = () => {
     templatesPaths.push(templatePath);
   });
 
-  const cssDistPath = path.join(__dirname, "../dist");
-  const cssDistFileName = "dress-code.min.css";
+  const cssDistPath = path.join(__dirname, `../${ARTIFACT_LOCATION}`);
 
   const styles = `<head>
-        <link rel="stylesheet" type="text/css" href="css/${cssDistFileName}" />
+        <link rel="stylesheet" type="text/css" href="./${ARTIFACT_NAME}" />
         <style type="text/css">
             body { padding: 40px; }
         </style>
@@ -79,13 +83,16 @@ const sendMessageToParent = message => {
 };
 
 process.on("message", message => {
-  if (message === "START") {
+  if (message === MESSAGES.START) {
     start();
-    sendMessageToParent("RUNNING");
-  } else if (message === "SHUTDOWN") {
+    sendMessageToParent(MESSAGES.RUNNING);
+  } else if (message === MESSAGES.SHUTDOWN) {
     shutdown();
-    sendMessageToParent("CLOSED");
+    sendMessageToParent(MESSAGES.CLOSED);
+  } else if (message === MESSAGES.ERROR) {
+    shutdown();
+    sendMessageToParent(MESSAGES.ABORTED);
   }
 });
 
-sendMessageToParent("READY");
+sendMessageToParent(MESSAGES.READY);

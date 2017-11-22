@@ -23,7 +23,9 @@
     "demo:build": "gulp demo:build",
     "demo:deploy": "gulp demo:deploy --demo-base-path=/dress-code",
     "test": "node tests/runner.js",
-    "test:rebase": "npm run test -- --rebase"
+    "test:release": "npm run test -- --release",
+    "test:rebase": "npm run test -- --rebase",
+    "pretest": "rimraf ./tests/screenshots/results && rimraf ./tests/screenshots/failures"
   },
   "keywords": [
     "toolkit",
@@ -49,6 +51,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "awesomplete": "^1.1.2",
     "babel-core": "^6.26.0",
     "babel-loader": "7.1.1",
     "babel-preset-es2015": "^6.9.0",
