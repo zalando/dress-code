@@ -1134,7 +1134,8 @@
 	                e.currentTarget.value = '';
 
 	                if (searchFragmentPath) {
-	                    var searchedPathName = window.location.pathname.replace(/\/([^\/]+)\/?$/g, searchFragmentPath);
+	                    // replace the last fragment after last '/' with the path of searched fragment path
+	                    var searchedPathName = window.location.pathname.replace(/\/([^\/]+)?$/g, searchFragmentPath);
 	                    window.location = window.location.origin + searchedPathName;
 	                }
 	            });
