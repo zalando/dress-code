@@ -1128,12 +1128,15 @@
 	            // Listen for change and go to URL
 	            this.searchField.addEventListener('awesomplete-selectcomplete', function (e) {
 
-	                var url = e.currentTarget.value;
+	                var searchFragmentPath = e.currentTarget.value;
 
 	                // Reset the value
 	                e.currentTarget.value = '';
 
-	                if (url) {
+	                if (searchFragmentPath) {
+	                    var currentPathname = window.location.pathname;
+	                    var lastFragment = currentPathname.substring(currentPathname.lastIndexOf('/'));
+	                    var url = currentPathname.replace(lastFragment, searchFragmentPath);
 	                    window.location = window.location.origin + url;
 	                }
 	            });
