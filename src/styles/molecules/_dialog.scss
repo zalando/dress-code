@@ -50,7 +50,7 @@
     // Ensure links align and space to buttons correctly;
     display: block;
     margin: 0 $dc-space100;
-    padding: $dc-space75 0;
+    padding: #{$dc-space75 + .1} 0 #{$dc-space75 - .1};
 }
 
 @mixin dc-dialog__title {

@@ -73,35 +73,44 @@
 	a {
 		display: block;
 		padding: $dc-space50 $dc-space125;
-		color: $dc-gray20;
+		border: none;
+		color: $dc-text-color;
 		text-decoration: none;
 		font-size: $dc-font100;
 		line-height: 1.2;
 
 		&:hover {
-			color: $dc-orange40;
+			border: none;
+			color: $dc-blue50;
 		}
 
 		&.f-active {
-			box-shadow: inset 3px 0 0 0 map-get($dc-colors, accent);
+			box-shadow: inset 3px 0 0 0 $dc-blue50;
+			color: $dc-blue40;
 		}
 	}
 
 	.f-menu__heading {
 		padding-left: 1.5rem;
-		font-weight: 500;
+		font-weight: 900;
 		font-size: $dc-font100;
 		text-transform: uppercase;
 
 		&:hover {
-			color: map-get($dc-colors, normal);
+			color: $dc-blue50;
+		}
+
+		&:active {
+				color: $dc-link-color-active;
 		}
 	}
 }
 
-.f-menu a:active,
 .f-menu a:hover
 {
-	background-color: lighten($dc-orange70, 12%);
-	color: $dc-orange40;
+	color: $dc-blue50;
+}
+
+.f-menu a:active {
+		color: $dc-link-color-active;
 }

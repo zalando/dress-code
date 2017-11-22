@@ -3,7 +3,8 @@
 //  = LINKS
 //  ---------------------------------------------------------------------------
 @mixin dc-link {
-    transition: color .1s linear;
+    transition: color .1s linear, border-color .1s ease-out;
+    border-bottom: 2px solid transparent;
     color: $dc-link-color;
     text-decoration: none;
     cursor: pointer;
@@ -14,11 +15,16 @@
         color: $dc-link-color-hover;
         text-decoration: none;
     }
+
+    &:active {
+        color: $dc-link-color-active;
+    }
 }
 
 @mixin dc-link--destroy {
     &:hover,
     &:active {
+        border-color: $dc-red45;
         color: $dc-red40;
     }
 }

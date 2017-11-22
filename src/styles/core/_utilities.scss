@@ -74,7 +74,7 @@
 //  ---------------------------------------------------------------------------
 
 @mixin dc--is-important {
-    background: $dc-yellow60 !important;
+    background: $dc-yellow50 !important;
 }
 
 //  ---------------------------------------------------------------------------
@@ -85,7 +85,7 @@
 //  ---------------------------------------------------------------------------
 
 @mixin dc--less-important {
-    color: $dc-gray50 !important;
+    color: $dc-gray45 !important;
 }
 
 //  ---------------------------------------------------------------------------
@@ -131,14 +131,14 @@
 //	appear in a less intrusive way
 //  ---------------------------------------------------------------------------
 @mixin dc--text-less-important {
-    color: $dc-gray60;
+    color: $dc-gray45;
     font-size: $dc-font50;
-    line-height: 1;
+    line-height: $dc-space125;
 }
 
 @mixin dc--text-small {
     font-size: $dc-font50;
-    line-height: $dc-space125;
+    line-height: 2rem;
 }
 
 @mixin dc--text-success {
