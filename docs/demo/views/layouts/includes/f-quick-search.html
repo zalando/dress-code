@@ -1,0 +1,24 @@
+<div class="f-search-materials">
+    <div class="dc-search-form f-search-form">
+        <input type="text" id="quick-search"
+                                        class="dc-input dc-search-form__input" list="materials-list"
+                                        placeholder="Quick search…"
+                                        data-autofirst="true">
+        <button class="dc-btn dc-search-form__btn">
+            <i class="dc-icon dc-icon--search dc-icon--interactive"></i>
+        </button>
+        <datalist id="materials-list">
+            {{#each materials}}
+            {{#each items}}
+            {{#if items}}
+            {{#each items}}
+            <option value="/{{@../../key}}.html#{{@key}}">{{../name}} &middot; {{name}}</option>
+            {{/each}}
+            {{else}}
+            <option value="/{{@../key}}.html#{{@key}}">{{name}}</option>
+            {{/if}}
+            {{/each}}
+            {{/each}}
+        </datalist>
+    </div>
+</div>

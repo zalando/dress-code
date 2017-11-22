@@ -56,7 +56,8 @@ fabricator.dom = {
 	root: document.querySelector('html'),
 	primaryMenu: document.querySelector('.f-menu'),
 	menuItems: document.querySelectorAll('.f-menu li a'),
-	menuToggle: document.querySelector('.f-menu-toggle')
+	menuToggle: document.querySelector('.f-menu-toggle'),
+	quickSearch: document.querySelector('#quick-search')
 };
 
 
@@ -199,6 +200,8 @@ fabricator.menuToggle = function () {
 	for (var i = 0; i < fabricator.dom.menuItems.length; i++) {
 		fabricator.dom.menuItems[i].addEventListener('click', closeMenu);
 	}
+
+	fabricator.dom.quickSearch.addEventListener('awesomplete-selectcomplete', closeMenu);
 
 	return this;
 

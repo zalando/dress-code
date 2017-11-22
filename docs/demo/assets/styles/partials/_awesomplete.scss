@@ -1,0 +1,50 @@
+.f-search-materials {
+    padding: 0 15px;
+    width: 100%;
+    margin: 0;
+}
+
+.f-search-form {
+    width: 100%;
+}
+
+.awesomplete {
+    width: 100%;
+    & > ul {
+        border-radius: 2px;
+
+        & > li {
+            padding: $dc-space100 $dc-space75;
+            line-height: 1.63rem;
+        }
+
+        & > li:hover {
+            background: $dc-blue70;
+            color: black;
+        }
+
+        & > li[aria-selected="true"] {
+            background: $dc-blue30;
+            color: white;
+        }
+    }
+
+    mark {
+        background: $dc-yellow70;
+    }
+
+    li:hover mark {
+        background: $dc-yellow40;
+    }
+
+    li[aria-selected="true"] mark {
+        background: $dc-blue20;
+    }
+
+    & > input {
+        width: 100%;
+        &::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+    }
+}

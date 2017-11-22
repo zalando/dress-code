@@ -9,6 +9,8 @@
 
 // dress code
 @import "../../../../src/styles/index";
+@import "../../../../node_modules/awesomplete/awesomplete";
+
 
 @import 'partials/mixins';
 @import 'partials/variables';
@@ -30,3 +32,5 @@
 
 // Exceptions to the elements' CSS
 @import 'partials/exceptions';
+
+@import "partials/awesomplete";
