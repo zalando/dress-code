@@ -9,7 +9,7 @@ var config = {
   results: "./tests/screenshots/results/",
   failures: "./tests/screenshots/failures/",
   viewports: {
-    desktop: { width: 1280, height: 1024 },
+    desktop: { width: 1280, height: 800 },
     mobile: { width: 320, height: 568 }
   }
 };
@@ -18,11 +18,11 @@ exports.initialize = function(port) {
   config.rootUrl = config.rootUrl.replace("PORT", port);
 
   phantomcss.init({
+    captureWaitEnabled: false,
     rebase: casper.cli.get("rebase"),
     screenshotRoot: config.baseline,
     comparisonResultRoot: config.results,
     failedComparisonsRoot: config.failures,
-    failures: false,
     addIteratorToImage: false,
     outputSettings: {
       errorColor: {
@@ -57,18 +57,18 @@ exports.compareScreenshots = function() {
  * Takes screenshots of the specified component and its modifiers (in case it has)
  * in a given viewport size
  */
-exports.takeScreenshots = function(componentName, fileName, viewport) {
+exports.takeScreenshots = function(componentName, fileName, viewportName) {
   phantomcss.screenshot(
     {
       top: 0,
       left: 0,
-      width: 640,
-      height: 480
+      width: config.viewports[viewportName].width,
+      height: config.viewports[viewportName].height
     },
-    getFileNameForComponent(componentName, fileName, viewport)
+    getFileNameForComponent(componentName, fileName, viewportName)
   );
 };
 
-function getFileNameForComponent(componentName, fileName, viewport) {
-  return componentName + "/" + fileName + "__" + viewport;
+function getFileNameForComponent(componentName, fileName, viewportName) {
+  return componentName + "/" + fileName + "__" + viewportName;
 }

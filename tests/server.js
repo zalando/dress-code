@@ -7,24 +7,24 @@ let server;
 
 const globals = require("./globals");
 const MESSAGES = globals.MESSAGES;
+const TEMPLATE_DIRECTORIES = globals.TEMPLATE_DIRECTORIES;
 
 const PORT = process.argv[2];
 const ARTIFACT_NAME = process.argv[3];
 const ARTIFACT_LOCATION = process.argv[4];
 
 const start = () => {
-  const templatesDirectory = path.join(
-    __dirname,
-    `../docs/demo/materials/03-atoms`
+  const directoriesPaths = getTemplateDirectoriesPaths(TEMPLATE_DIRECTORIES);
+
+  let templates = [],
+    templatesPaths = [];
+
+  directoriesPaths.forEach(directoryPath =>
+    walkDirectory(directoryPath, (templateName, templatePath) => {
+      templates.push(templateName);
+      templatesPaths.push(templatePath);
+    })
   );
-
-  let templates = [];
-  let templatesPaths = [];
-
-  walkDirectory(templatesDirectory, (templateName, templatePath) => {
-    templates.push(templateName);
-    templatesPaths.push(templatePath);
-  });
 
   const cssDistPath = path.join(__dirname, `../${ARTIFACT_LOCATION}`);
 
@@ -74,6 +74,18 @@ const walkDirectory = (currentDirectoryPath, callback) => {
       walkDirectory(filePath, callback);
     }
   });
+};
+
+const getTemplateDirectoriesPaths = directories => {
+  let paths = [];
+
+  if (directories && directories.length) {
+    directories.forEach(directory =>
+      paths.push(path.join(__dirname, `../docs/demo/materials/${directory}`))
+    );
+  }
+
+  return paths;
 };
 
 const sendMessageToParent = message => {
