@@ -44,6 +44,12 @@
 
 * **breakpoints:** use same breakpoints for media queries and grid classes ([#360](https://github.com/zalando/dress-code/issues/360)) ([82eeb42](https://github.com/zalando/dress-code/commit/82eeb42)), closes [#239](https://github.com/zalando/dress-code/issues/239) [#346](https://github.com/zalando/dress-code/issues/346) [#347](https://github.com/zalando/dress-code/issues/347)
 
+* **breakpoints**: variable names have been renamed
+  - _$dc-large-width_ breakpoint variable renamed to **$dc-medium-width**
+  - _$dc-huge-width_ breakpoint variable renamed to **$dc-large-width**
+  - _$dc-giant-width_ breakpoint variable renamed to **$dc-huge-width**
+  - _$dc-giant-width_ and _$dc-monstrous-width_ are deprecated and not used anymore
+
 
 ### Features
 
@@ -56,17 +62,6 @@
 * **tab:** add tab atom to the dress-code ([0549bf5](https://github.com/zalando/dress-code/commit/0549bf5))
 * **tables:** Make table responsiveness optional ([#330](https://github.com/zalando/dress-code/issues/330)) ([ba80a3a](https://github.com/zalando/dress-code/commit/ba80a3a)), closes [#222](https://github.com/zalando/dress-code/issues/222)
 * **textarea:** add styles for error state ([d1cde40](https://github.com/zalando/dress-code/commit/d1cde40))
-
-
-### BREAKING CHANGES
-
-* **breakpoints**: variable names have been renamed
-
-   - _$dc-large-width_ breakpoint variable renamed to **$dc-medium-width**
-   - _$dc-huge-width_ breakpoint variable renamed to **$dc-large-width**
-   - _$dc-giant-width_ breakpoint variable renamed to **$dc-huge-width**
-   - _$dc-giant-width_ and _$dc-monstrous-width_ are deprecated and not used anymore
-
 
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/zalando/dress-code/compare/2.0.0-beta.1...v2.0.0) (2017-01-23)
@@ -272,15 +267,15 @@ Check your button alignments. Add a modifier class for buttons with right-margin
 
 * tooltip: ```dc-tooltip``` and its sub-elements were removed.
     ```dc-has-tooltip``` was renamed to ```dc--has-tooltip```. A positioning class must be always applied.
-    
+
     Replace this:
-    
+
     ```html
     <button class="dc-btn dc-has-tooltip" data-dc-has-tooltip="Tooltip content">Button label<button>
     ```
-    
+
     With this:
-    
+
     ```html
     <button class="dc-btn dc--has-tooltip dc--has-tooltip-top-right" data-dc-has-tooltip="Tooltip content">
         Button label
@@ -292,9 +287,9 @@ Check your button alignments. Add a modifier class for buttons with right-margin
 * btn, btn-group, input-group:
 
     ```dc-btn--grouped``` modifier becomes a partial ```_dc-btn--grouped``` which is extended in every molecule that uses it, for instance ```dc-btn--in-input-group``` or ```dc-btn--in-btn-group```.
-    
+
     ```dc-input-group__input``` becomes ```dc-input--in-input-group```.
-    
+
     Change your code from this:
 
     ```html
@@ -314,14 +309,14 @@ Check your button alignments. Add a modifier class for buttons with right-margin
        <a class="dc-btn dc-btn--in-input-group dc-btn--primary">Add</a>
     </div>
     ```
-    
+
 * messages: some classes were renamed
     ```dc-icon--msg-success``` has been renamed to ```dc-icon--success```
     ```dc-icon--msg-info``` has been renamed to ```dc-icon--info```
     ```dc-icon--msg-error``` has been renamed to ```dc-icon--error```
     ```dc-icon--msg-warning``` has been renamed to ```dc-icon--warning```
 
-         
+
 * patterns: some patterns classes/mixins were removed, move patterns from typography to patterns file.
 
 * replace ```dc-text--truncate``` with ```dc--text-truncate```
@@ -432,8 +427,8 @@ Check your button alignments. Add a modifier class for buttons with right-margin
      With this:
 
      ```html
-      <div class="dc-toast-container--top"> 
-	<div class="dc-toast--top"> 
+      <div class="dc-toast-container--top">
+	<div class="dc-toast--top">
 		<div class="dc-toast__content dc-toast__content--info">
      ```
 
