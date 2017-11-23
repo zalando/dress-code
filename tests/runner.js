@@ -54,11 +54,12 @@ serverChild.on("error", error => {
 
 const runTests = () => {
   let testsChild = exec(
-    `casperjs test tests/suites.js --port=${PORT} ${rebase ? "--rebase" : ""}`,
-    (err, stdout, stderr) => {
-      console.log(stdout);
-    }
+    `casperjs test tests/suites.js --port=${PORT} ${rebase ? "--rebase" : ""}`
   );
+
+  testsChild.stdout.on('data', function (log) {
+    console.log(log.toString());
+  });
 
   testsChild.on("close", code => {
     serverChild.send(MESSAGES.SHUTDOWN);

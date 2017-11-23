@@ -7,7 +7,6 @@ var config = {
   rootUrl: "http://127.0.0.1:PORT/",
   baseline: "./tests/screenshots/baseline/",
   results: "./tests/screenshots/results/",
-  failures: "./tests/screenshots/failures/",
   viewports: {
     desktop: { width: 1280, height: 800 },
     mobile: { width: 320, height: 568 }
@@ -22,7 +21,7 @@ exports.initialize = function(port) {
     rebase: casper.cli.get("rebase"),
     screenshotRoot: config.baseline,
     comparisonResultRoot: config.results,
-    failedComparisonsRoot: config.failures,
+    failedComparisonsRoot: false,
     addIteratorToImage: false,
     outputSettings: {
       errorColor: {
