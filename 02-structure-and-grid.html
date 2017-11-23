@@ -86,7 +86,7 @@
 		                <option value="/01-core.html#01-typography.03-font-sizes">Typography &middot; Font Sizes</option>
 		                <option value="/01-core.html#02-colors">Colors</option>
 		                <option value="/01-core.html#03-utilities">Utilities</option>
-		                <option value="/01-core.html#04-sass-reference">Sass Reference</option>
+		                <option value="/01-core.html#04-scss-reference">Scss Reference</option>
 		                <option value="/02-structure-and-grid.html#01-page-structure">Page Structure</option>
 		                <option value="/02-structure-and-grid.html#02-grid.02-basic-grid">Grid &middot; Basic Grid</option>
 		                <option value="/02-structure-and-grid.html#02-grid.03-shrink-columns">Grid &middot; Shrink Columns</option>
@@ -101,12 +101,12 @@
 		                <option value="/02-structure-and-grid.html#03-horizontal-alignment.02-row-align-right">Horizontal Alignment &middot; Row Align Right</option>
 		                <option value="/02-structure-and-grid.html#03-horizontal-alignment.03-row-align-spaced">Horizontal Alignment &middot; Row Align Spaced</option>
 		                <option value="/02-structure-and-grid.html#03-horizontal-alignment.04-row-align-justified">Horizontal Alignment &middot; Row Align Justified</option>
-		                <option value="/02-structure-and-grid.html#04-vertical-alignment.01-row-align-top">Vertical Alignment &middot; Row Align Top</option>
-		                <option value="/02-structure-and-grid.html#04-vertical-alignment.02-row-align-middle">Vertical Alignment &middot; Row Align Middle</option>
-		                <option value="/02-structure-and-grid.html#04-vertical-alignment.03-row-align-bottom">Vertical Alignment &middot; Row Align Bottom</option>
-		                <option value="/02-structure-and-grid.html#04-vertical-alignment.04-self-align-columns">Vertical Alignment &middot; Self Align Columns</option>
-		                <option value="/02-structure-and-grid.html#05-sass-reference.01-mixins">Sass Reference &middot; Mixins</option>
-		                <option value="/02-structure-and-grid.html#05-sass-reference.02-default-grid-variables">Sass Reference &middot; Default Grid Variables</option>
+		                <option value="/02-structure-and-grid.html#04-scss-reference.01-mixins">Scss Reference &middot; Mixins</option>
+		                <option value="/02-structure-and-grid.html#04-scss-reference.02-default-grid-variables">Scss Reference &middot; Default Grid Variables</option>
+		                <option value="/02-structure-and-grid.html#05-vertical-alignment.01-row-align-top">Vertical Alignment &middot; Row Align Top</option>
+		                <option value="/02-structure-and-grid.html#05-vertical-alignment.02-row-align-middle">Vertical Alignment &middot; Row Align Middle</option>
+		                <option value="/02-structure-and-grid.html#05-vertical-alignment.03-row-align-bottom">Vertical Alignment &middot; Row Align Bottom</option>
+		                <option value="/02-structure-and-grid.html#05-vertical-alignment.04-self-align-columns">Vertical Alignment &middot; Self Align Columns</option>
 		                <option value="/03-atoms.html#buttons.01-button">Buttons &middot; Button</option>
 		                <option value="/03-atoms.html#buttons.02-sizes">Buttons &middot; Sizes</option>
 		                <option value="/03-atoms.html#buttons.03-options">Buttons &middot; Options</option>
@@ -177,7 +177,7 @@
 							<a href="01-core.html#03-utilities">Utilities</a>
 						</li>
 						<li>
-							<a href="01-core.html#04-sass-reference">Sass Reference</a>
+							<a href="01-core.html#04-scss-reference">Scss Reference</a>
 						</li>
 					</ul>
 				</li>
@@ -194,10 +194,10 @@
 							<a href="02-structure-and-grid.html#03-horizontal-alignment">Horizontal Alignment</a>
 						</li>
 						<li>
-							<a href="02-structure-and-grid.html#04-vertical-alignment">Vertical Alignment</a>
+							<a href="02-structure-and-grid.html#04-scss-reference">Scss Reference</a>
 						</li>
 						<li>
-							<a href="02-structure-and-grid.html#05-sass-reference">Sass Reference</a>
+							<a href="02-structure-and-grid.html#05-vertical-alignment">Vertical Alignment</a>
 						</li>
 					</ul>
 				</li>
@@ -1608,301 +1608,11 @@
 
 
 <div class="dc-card f-item-group">
-    <div class="f-item-group" id="04-vertical-alignment">
+    <div class="f-item-group" id="04-scss-reference">
         <div class="f-item-heading-group">
-            <h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Vertical Alignment</h2>
+            <h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Scss Reference</h2>
         </div>
-        <div class="f-item-group" id="04-vertical-alignment.01-row-align-top">
-            <div class="f-item-heading-group" data-f-toggle="labels">
-                <div class="f-item-controls">
-                	<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-                		<svg class="dc-svg">
-                			<use xlink:href="#f-icon-notes" />
-                		</svg>
-                	</span>
-                	<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-                		<svg class="dc-svg">
-                			<use xlink:href="#f-icon-code" />
-                		</svg>
-                	</span>
-                </div>
-                <h3 class="dc-h3 f-item-heading">Row Align Top</h3>
-            </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>Use <code>dc-row--align-top</code> to vertically align the columns to the top.</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	<div class="dc-row dc-row--align--top">
-            	<div class="dc-column dc-column--small-3">
-            		<div class="dc-column__contents">
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
-            		</div>
-            	</div>
-            	<div class="dc-column dc-column--small-3">
-            		<div class="dc-column__contents">
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            		</div>
-            	</div>
-            	<div class="dc-column dc-column--small-3">
-            		<div class="dc-column__contents">
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
-            		</div>
-            	</div>
-            	<div class="dc-column dc-column--small-3">
-            		<div class="dc-column__contents">
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            		</div>
-            	</div>
-            </div>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row dc-row--align--top&quot;&gt;
-            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
-            		&lt;/div&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            		&lt;/div&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
-            		&lt;/div&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            		&lt;/div&gt;
-            	&lt;/div&gt;
-            &lt;/div&gt;</code></pre>
-            </div>
-        </div>
-        <div class="f-item-group" id="04-vertical-alignment.02-row-align-middle">
-            <div class="f-item-heading-group" data-f-toggle="labels">
-                <div class="f-item-controls">
-                	<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-                		<svg class="dc-svg">
-                			<use xlink:href="#f-icon-notes" />
-                		</svg>
-                	</span>
-                	<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-                		<svg class="dc-svg">
-                			<use xlink:href="#f-icon-code" />
-                		</svg>
-                	</span>
-                </div>
-                <h3 class="dc-h3 f-item-heading">Row Align Middle</h3>
-            </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>Use <code>dc-row--align-middle</code> to vertically align the columns to the middle of the row.</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	<div class="dc-row dc-row--align--middle">
-            	<div class="dc-column dc-column--small-3">
-            		<div class="dc-column__contents">
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
-            		</div>
-            	</div>
-            	<div class="dc-column dc-column--small-3">
-            		<div class="dc-column__contents">
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            		</div>
-            	</div>
-            	<div class="dc-column dc-column--small-3">
-            		<div class="dc-column__contents">
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
-            		</div>
-            	</div>
-            	<div class="dc-column dc-column--small-3">
-            		<div class="dc-column__contents">
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            		</div>
-            	</div>
-            </div>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row dc-row--align--middle&quot;&gt;
-            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
-            		&lt;/div&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            		&lt;/div&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
-            		&lt;/div&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            		&lt;/div&gt;
-            	&lt;/div&gt;
-            &lt;/div&gt;</code></pre>
-            </div>
-        </div>
-        <div class="f-item-group" id="04-vertical-alignment.03-row-align-bottom">
-            <div class="f-item-heading-group" data-f-toggle="labels">
-                <div class="f-item-controls">
-                	<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-                		<svg class="dc-svg">
-                			<use xlink:href="#f-icon-notes" />
-                		</svg>
-                	</span>
-                	<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-                		<svg class="dc-svg">
-                			<use xlink:href="#f-icon-code" />
-                		</svg>
-                	</span>
-                </div>
-                <h3 class="dc-h3 f-item-heading">Row Align Bottom</h3>
-            </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>Use <code>dc-row--align-bottom</code> to vertically align the columns to the bottom of the row.</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	<div class="dc-row dc-row--align--bottom">
-            	<div class="dc-column dc-column--small-3">
-            		<div class="dc-column__contents">
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
-            		</div>
-            	</div>
-            	<div class="dc-column dc-column--small-3">
-            		<div class="dc-column__contents">
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            		</div>
-            	</div>
-            	<div class="dc-column dc-column--small-3">
-            		<div class="dc-column__contents">
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
-            		</div>
-            	</div>
-            	<div class="dc-column dc-column--small-3">
-            		<div class="dc-column__contents">
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            		</div>
-            	</div>
-            </div>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row dc-row--align--bottom&quot;&gt;
-            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
-            		&lt;/div&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            		&lt;/div&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
-            		&lt;/div&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            		&lt;/div&gt;
-            	&lt;/div&gt;
-            &lt;/div&gt;</code></pre>
-            </div>
-        </div>
-        <div class="f-item-group" id="04-vertical-alignment.04-self-align-columns">
-            <div class="f-item-heading-group" data-f-toggle="labels">
-                <div class="f-item-controls">
-                	<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-                		<svg class="dc-svg">
-                			<use xlink:href="#f-icon-notes" />
-                		</svg>
-                	</span>
-                	<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-                		<svg class="dc-svg">
-                			<use xlink:href="#f-icon-code" />
-                		</svg>
-                	</span>
-                </div>
-                <h3 class="dc-h3 f-item-heading">Self Align Columns</h3>
-            </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>You can also specify the vertical alignment of indiviual columns by using one of the following classes:</p>
-            <p><code>dc-column--align-self--top</code> to align the column to the top</p>
-            <p><code>dc-column--align-self--middle</code> to align the column to the middle</p>
-            <p><code>dc-column--align-self--bottom</code> to align the column to the bottom</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	<div class="dc-row">
-            	<div class="dc-column dc-column--small-3">
-            		<div class="dc-column__contents">
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quaerat totam, repellendus, consequuntur officia illo similique pariatur, esse eos magnam exercitationem aut rem commodi.
-            		</div>
-            	</div>
-            	<div class="dc-column dc-column--small-3 dc-column--align-self--bottom">
-            		<div class="dc-column__contents">
-            			This column is bottom-aligned
-            		</div>
-            	</div>
-            	<div class="dc-column dc-column--small-3 dc-column--align-self--top">
-            		<div class="dc-column__contents">
-            			This column is top-aligned
-            		</div>
-            	</div>
-            	<div class="dc-column dc-column--small-3 dc-column--align-self--middle">
-            		<div class="dc-column__contents">
-            			This column is aligned at the middle
-            		</div>
-            	</div>
-            
-            </div>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row&quot;&gt;
-            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
-            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quaerat totam, repellendus, consequuntur officia illo similique pariatur, esse eos magnam exercitationem aut rem commodi.
-            		&lt;/div&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3 dc-column--align-self--bottom&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
-            			This column is bottom-aligned
-            		&lt;/div&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3 dc-column--align-self--top&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
-            			This column is top-aligned
-            		&lt;/div&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3 dc-column--align-self--middle&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
-            			This column is aligned at the middle
-            		&lt;/div&gt;
-            	&lt;/div&gt;
-            
-            &lt;/div&gt;</code></pre>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="dc-card f-item-group">
-    <div class="f-item-group" id="05-sass-reference">
-        <div class="f-item-heading-group">
-            <h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Sass Reference</h2>
-        </div>
-        <div class="f-item-group" id="05-sass-reference.01-mixins">
+        <div class="f-item-group" id="04-scss-reference.01-mixins">
             <div class="f-item-heading-group" data-f-toggle="labels">
                 <div class="f-item-controls">
                 	<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
@@ -2219,7 +1929,7 @@
             &lt;/table&gt;</code></pre>
             </div>
         </div>
-        <div class="f-item-group" id="05-sass-reference.02-default-grid-variables">
+        <div class="f-item-group" id="04-scss-reference.02-default-grid-variables">
             <div class="f-item-heading-group" data-f-toggle="labels">
                 <div class="f-item-controls">
                 	<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
@@ -2306,6 +2016,296 @@
             		&lt;/tr&gt;
             	&lt;/tbody&gt;
             &lt;/table&gt;</code></pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="dc-card f-item-group">
+    <div class="f-item-group" id="05-vertical-alignment">
+        <div class="f-item-heading-group">
+            <h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Vertical Alignment</h2>
+        </div>
+        <div class="f-item-group" id="05-vertical-alignment.01-row-align-top">
+            <div class="f-item-heading-group" data-f-toggle="labels">
+                <div class="f-item-controls">
+                	<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+                		<svg class="dc-svg">
+                			<use xlink:href="#f-icon-notes" />
+                		</svg>
+                	</span>
+                	<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+                		<svg class="dc-svg">
+                			<use xlink:href="#f-icon-code" />
+                		</svg>
+                	</span>
+                </div>
+                <h3 class="dc-h3 f-item-heading">Row Align Top</h3>
+            </div>
+            <div class="f-item-notes" data-f-toggle="notes">
+            	<p>Use <code>dc-row--align-top</code> to vertically align the columns to the top.</p>
+            
+            </div>
+            <div class="f-item-preview">
+            	<div class="dc-row dc-row--align--top">
+            	<div class="dc-column dc-column--small-3">
+            		<div class="dc-column__contents">
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+            		</div>
+            	</div>
+            	<div class="dc-column dc-column--small-3">
+            		<div class="dc-column__contents">
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            		</div>
+            	</div>
+            	<div class="dc-column dc-column--small-3">
+            		<div class="dc-column__contents">
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
+            		</div>
+            	</div>
+            	<div class="dc-column dc-column--small-3">
+            		<div class="dc-column__contents">
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            		</div>
+            	</div>
+            </div>
+            </div>
+            <div class="f-item-code f-item-hidden" data-f-toggle="code">
+            	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row dc-row--align--top&quot;&gt;
+            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+            		&lt;/div&gt;
+            	&lt;/div&gt;
+            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            		&lt;/div&gt;
+            	&lt;/div&gt;
+            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
+            		&lt;/div&gt;
+            	&lt;/div&gt;
+            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            		&lt;/div&gt;
+            	&lt;/div&gt;
+            &lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="f-item-group" id="05-vertical-alignment.02-row-align-middle">
+            <div class="f-item-heading-group" data-f-toggle="labels">
+                <div class="f-item-controls">
+                	<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+                		<svg class="dc-svg">
+                			<use xlink:href="#f-icon-notes" />
+                		</svg>
+                	</span>
+                	<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+                		<svg class="dc-svg">
+                			<use xlink:href="#f-icon-code" />
+                		</svg>
+                	</span>
+                </div>
+                <h3 class="dc-h3 f-item-heading">Row Align Middle</h3>
+            </div>
+            <div class="f-item-notes" data-f-toggle="notes">
+            	<p>Use <code>dc-row--align-middle</code> to vertically align the columns to the middle of the row.</p>
+            
+            </div>
+            <div class="f-item-preview">
+            	<div class="dc-row dc-row--align--middle">
+            	<div class="dc-column dc-column--small-3">
+            		<div class="dc-column__contents">
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+            		</div>
+            	</div>
+            	<div class="dc-column dc-column--small-3">
+            		<div class="dc-column__contents">
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            		</div>
+            	</div>
+            	<div class="dc-column dc-column--small-3">
+            		<div class="dc-column__contents">
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
+            		</div>
+            	</div>
+            	<div class="dc-column dc-column--small-3">
+            		<div class="dc-column__contents">
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            		</div>
+            	</div>
+            </div>
+            </div>
+            <div class="f-item-code f-item-hidden" data-f-toggle="code">
+            	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row dc-row--align--middle&quot;&gt;
+            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+            		&lt;/div&gt;
+            	&lt;/div&gt;
+            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            		&lt;/div&gt;
+            	&lt;/div&gt;
+            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
+            		&lt;/div&gt;
+            	&lt;/div&gt;
+            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            		&lt;/div&gt;
+            	&lt;/div&gt;
+            &lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="f-item-group" id="05-vertical-alignment.03-row-align-bottom">
+            <div class="f-item-heading-group" data-f-toggle="labels">
+                <div class="f-item-controls">
+                	<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+                		<svg class="dc-svg">
+                			<use xlink:href="#f-icon-notes" />
+                		</svg>
+                	</span>
+                	<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+                		<svg class="dc-svg">
+                			<use xlink:href="#f-icon-code" />
+                		</svg>
+                	</span>
+                </div>
+                <h3 class="dc-h3 f-item-heading">Row Align Bottom</h3>
+            </div>
+            <div class="f-item-notes" data-f-toggle="notes">
+            	<p>Use <code>dc-row--align-bottom</code> to vertically align the columns to the bottom of the row.</p>
+            
+            </div>
+            <div class="f-item-preview">
+            	<div class="dc-row dc-row--align--bottom">
+            	<div class="dc-column dc-column--small-3">
+            		<div class="dc-column__contents">
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+            		</div>
+            	</div>
+            	<div class="dc-column dc-column--small-3">
+            		<div class="dc-column__contents">
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            		</div>
+            	</div>
+            	<div class="dc-column dc-column--small-3">
+            		<div class="dc-column__contents">
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
+            		</div>
+            	</div>
+            	<div class="dc-column dc-column--small-3">
+            		<div class="dc-column__contents">
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            		</div>
+            	</div>
+            </div>
+            </div>
+            <div class="f-item-code f-item-hidden" data-f-toggle="code">
+            	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row dc-row--align--bottom&quot;&gt;
+            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
+            		&lt;/div&gt;
+            	&lt;/div&gt;
+            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            		&lt;/div&gt;
+            	&lt;/div&gt;
+            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
+            		&lt;/div&gt;
+            	&lt;/div&gt;
+            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            		&lt;/div&gt;
+            	&lt;/div&gt;
+            &lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="f-item-group" id="05-vertical-alignment.04-self-align-columns">
+            <div class="f-item-heading-group" data-f-toggle="labels">
+                <div class="f-item-controls">
+                	<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+                		<svg class="dc-svg">
+                			<use xlink:href="#f-icon-notes" />
+                		</svg>
+                	</span>
+                	<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+                		<svg class="dc-svg">
+                			<use xlink:href="#f-icon-code" />
+                		</svg>
+                	</span>
+                </div>
+                <h3 class="dc-h3 f-item-heading">Self Align Columns</h3>
+            </div>
+            <div class="f-item-notes" data-f-toggle="notes">
+            	<p>You can also specify the vertical alignment of indiviual columns by using one of the following classes:</p>
+            <p><code>dc-column--align-self--top</code> to align the column to the top</p>
+            <p><code>dc-column--align-self--middle</code> to align the column to the middle</p>
+            <p><code>dc-column--align-self--bottom</code> to align the column to the bottom</p>
+            
+            </div>
+            <div class="f-item-preview">
+            	<div class="dc-row">
+            	<div class="dc-column dc-column--small-3">
+            		<div class="dc-column__contents">
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quaerat totam, repellendus, consequuntur officia illo similique pariatur, esse eos magnam exercitationem aut rem commodi.
+            		</div>
+            	</div>
+            	<div class="dc-column dc-column--small-3 dc-column--align-self--bottom">
+            		<div class="dc-column__contents">
+            			This column is bottom-aligned
+            		</div>
+            	</div>
+            	<div class="dc-column dc-column--small-3 dc-column--align-self--top">
+            		<div class="dc-column__contents">
+            			This column is top-aligned
+            		</div>
+            	</div>
+            	<div class="dc-column dc-column--small-3 dc-column--align-self--middle">
+            		<div class="dc-column__contents">
+            			This column is aligned at the middle
+            		</div>
+            	</div>
+            
+            </div>
+            </div>
+            <div class="f-item-code f-item-hidden" data-f-toggle="code">
+            	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
+            			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quaerat totam, repellendus, consequuntur officia illo similique pariatur, esse eos magnam exercitationem aut rem commodi.
+            		&lt;/div&gt;
+            	&lt;/div&gt;
+            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3 dc-column--align-self--bottom&quot;&gt;
+            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
+            			This column is bottom-aligned
+            		&lt;/div&gt;
+            	&lt;/div&gt;
+            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3 dc-column--align-self--top&quot;&gt;
+            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
+            			This column is top-aligned
+            		&lt;/div&gt;
+            	&lt;/div&gt;
+            	&lt;div class&#x3D;&quot;dc-column dc-column--small-3 dc-column--align-self--middle&quot;&gt;
+            		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
+            			This column is aligned at the middle
+            		&lt;/div&gt;
+            	&lt;/div&gt;
+            
+            &lt;/div&gt;</code></pre>
             </div>
         </div>
     </div>
