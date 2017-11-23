@@ -7,11 +7,11 @@ let server;
 
 const globals = require("./globals");
 const MESSAGES = globals.MESSAGES;
+const DEFAULT_PORT = globals.DEFAULT_PORT;
 const TEMPLATE_DIRECTORIES = globals.TEMPLATE_DIRECTORIES;
 
-const PORT = process.argv[2];
-const ARTIFACT_NAME = process.argv[3];
-const ARTIFACT_LOCATION = process.argv[4];
+const port = process.argv[2] || DEFAULT_PORT;
+const useMinifiedVersion = process.argv[3] || false;
 
 const start = () => {
   const directoriesPaths = getTemplateDirectoriesPaths(TEMPLATE_DIRECTORIES);
@@ -26,17 +26,21 @@ const start = () => {
     })
   );
 
-  const cssDistPath = path.join(__dirname, `../${ARTIFACT_LOCATION}`);
-
-  const styles = `<head>
-        <link rel="stylesheet" type="text/css" href="./${ARTIFACT_NAME}" />
-        <style type="text/css">
-            body { padding: 40px; }
-        </style>
-    </head>`;
-
   if (templates && templates.length) {
+    const cssDistPath = path.join(__dirname, `../dist/css`);
+    const fontsPath = path.join(__dirname, `../dist/fonts`);
+
+    const styles = `<head>
+          <link rel="stylesheet" type="text/css" href="./dress-code${useMinifiedVersion
+            ? ".min"
+            : ""}.css" />
+          <style type="text/css">
+              body { padding: 40px; }
+          </style>
+      </head>`;
+
     app.use(express.static(cssDistPath));
+    app.use("/fonts", express.static(fontsPath));
 
     templates.forEach((templateName, index) => {
       app.get(`/${templateName}`, (request, response) => {
@@ -51,7 +55,7 @@ const start = () => {
       });
     });
 
-    server = app.listen(PORT);
+    server = app.listen(port);
   }
 };
 

@@ -1,13 +1,4 @@
-exports.MODES = {
-  DEMO: {
-    ARTIFACT_NAME: "main.css",
-    ARTIFACT_LOCATION: ".tmp/demo/assets/styles"
-  },
-  RELEASE: {
-    ARTIFACT_NAME: "dress-code.min.css",
-    ARTIFACT_LOCATION: "dist/css"
-  }
-};
+exports.DEFAULT_PORT = 3100;
 
 exports.TEMPLATE_DIRECTORIES = ["03-atoms", "04-molecules"];
 

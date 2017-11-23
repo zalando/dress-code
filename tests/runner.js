@@ -3,31 +3,31 @@ const path = require("path");
 const { fork, exec } = require("child_process");
 
 const globals = require("./globals");
-const MODES = globals.MODES;
 const MESSAGES = globals.MESSAGES;
+const DEFAULT_PORT = globals.DEFAULT_PORT;
 
-let mode,
+let useMinifiedVersion = false,
   rebase = false;
 
 switch (process.argv[2]) {
-  case "--demo":
-    mode = MODES.DEMO;
+  case "--unminified":
+    useMinifiedVersion = false;
     break;
-  case "--release":
-    mode = MODES.RELEASE;
+  case "--minified":
+    useMinifiedVersion = true;
     break;
   case "--rebase":
-    mode = MODES.RELEASE;
+    useMinifiedVersion = false;
     rebase = true;
     break;
   default:
-    mode = MODES.DEMO;
+    useMinifiedVersion = false;
 }
 
-const PORT = process.argv[3] || 3100;
+const PORT = process.argv[3] || DEFAULT_PORT;
 
 const server = path.join(__dirname, "server.js");
-const parameters = [PORT, mode.ARTIFACT_NAME, mode.ARTIFACT_LOCATION];
+const parameters = [PORT, useMinifiedVersion];
 const options = {
   stdio: ["pipe", "pipe", "pipe", "ipc"]
 };
