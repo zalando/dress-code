@@ -1,3 +1,18 @@
+<a name="2.3.0"></a>
+# [2.3.0](https://github.com/zalando/dress-code/compare/1.1.15...2.3.0) (2017-11-23)
+
+
+### Bug Fixes
+
+* **breadcrumbs:** last part of the breadcrumb is kept aligned when there is a whitespace in text ([#409](https://github.com/zalando/dress-code/issues/409)) ([94de59f](https://github.com/zalando/dress-code/commit/94de59f)), closes [#403](https://github.com/zalando/dress-code/issues/403)
+* **icons:** link-icon alignment fixed, closes ([#405](https://github.com/zalando/dress-code/issues/405))
+
+### Features
+
+* **input:** add input-stack molecule ([#401](https://github.com/zalando/dress-code/issues/401)) ([414a8ce](https://github.com/zalando/dress-code/commit/414a8ce)), closes [#396](https://github.com/zalando/dress-code/issues/396)
+
+
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/zalando/dress-code/compare/2.1.1...2.2.0) (2017-10-18)
 
