@@ -78,6 +78,10 @@
         @include dc-tab__element;
     }
 
+    .dc-tab__element--header {
+        @include  dc-tab__element--header;
+    }
+
     .dc-tab__element--active {
         @include dc-tab__element--active;
     }
