@@ -60,6 +60,7 @@
 
 @mixin dc-tab__element--header {
     color: $dc-black;
+    font-weight: $dc-bold-font-weight;
     cursor: default;
 
     &:hover {
