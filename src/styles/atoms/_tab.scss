@@ -58,6 +58,18 @@
     }
 }
 
+@mixin dc-tab__element--header {
+    color: $dc-black;
+    font-weight: $dc-bold-font-weight;
+    cursor: default;
+
+    &:hover {
+        background: transparent;
+        color: $dc-black;
+    }
+}
+
+
 @mixin dc-tab-selectors {
     .dc-tab {
         @include dc-tab;
@@ -65,6 +77,10 @@
 
     .dc-tab__element {
         @include dc-tab__element;
+    }
+
+    .dc-tab__element--header {
+        @include  dc-tab__element--header;
     }
 
     .dc-tab__element--active {
