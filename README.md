@@ -134,7 +134,7 @@ Developers interested in contributing should read the following:
 
 **Requirements**
 
-* [node.js](http://nodejs.org). Make sure your have `v6.0.0` or higher installed before proceeding.
+* [node.js](http://nodejs.org). Make sure your have `v7.0.0` or higher installed before proceeding.
 
 **Install**
 
@@ -156,10 +156,12 @@ npm start -- --open
 
 #### Adding new icons
 
-Make sure your icons have a size of 512x512px and flatten and simplify the paths before you export them. Place each icon as SVG file into `src/icons/`. For each new icon add a row to `docs/demo/materials/03-atoms/icons/01-icons.html` such as
+Make sure your icons have a size of 512x512px and flatten and simplify the paths before you export them. Place each icon as SVG file into `src/icons/`. Add each new icon in the demo by adding it in `docs/demo/materials/03-atoms/icons/01-icons.html` such as
 
 ```
-<i class="dc-icon dc-icon--[ICON-FILENAME]"><span>[ICON-FILENAME]</span></i>
+    <div class="sg-icon dc-column">
+        <i class="dc-icon dc-icon--[ICON-FILENAME]"></i><span>[ICON-FILENAME]</span>
+    </div>
 ```
 
 and replace `[ICON-FILENAME]` with the actual icon filename. Run `npm start -- --open` to see the result.

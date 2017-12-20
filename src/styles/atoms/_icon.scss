@@ -1,5 +1,8 @@
 // @import "../core/core";
 // @import "../_generated/icon";
+@mixin dc-icon--base {
+    line-height: 1;
+}
 
 //  = ICONS (font)
 //  (others mixins are generated with iconfont plugin @see _generated/_icon.scss)
@@ -55,9 +58,18 @@
     }
 }
 
+@mixin dc-icon--spin {
+    display: inline-flex;
+    animation: dc--spin 2s infinite linear;
+}
+
 @mixin dc-icon-selectors {
 
     @include dc-icon-generated-selectors;
+
+    .dc-icon {
+        @include dc-icon--base
+    }
 
     .dc-icon--interactive {
         @include dc-icon--interactive;
@@ -69,5 +81,9 @@
 
     .dc-svg-icon--alternate {
         @include dc-svg-icon--alternate;
+    }
+
+    .dc-icon--spin {
+        @include dc-icon--spin;
     }
 }

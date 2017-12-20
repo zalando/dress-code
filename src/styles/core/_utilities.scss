@@ -159,6 +159,15 @@
     white-space: nowrap;
 }
 
+@keyframes dc--spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
 @mixin dc-utilities-selectors {
 
     .dc--is-collapsed {
