@@ -1,8 +1,15 @@
-// Grid column mixin for Dress Code
-//
-// @param {Map} $gutter
-// Sets the negative right and left margin for the row to align the columns inside a row
-// As each column has padding (for gutter), negative margin on row is applied.
+////
+/// @group Structure and Grid
+////
+
+
+/// Mixin for creating a row.
+/// <br>
+/// Sets the negative right and left margin for the row to align the columns inside a row.
+/// <br>
+/// As each column has padding (for gutter), negative margin on row is applied.
+///
+/// @param {Map} $gutter [$dc-grid-gutter] - A Map of gutter values for different breakpoint sizes
 @mixin dc-grid-row ($gutter: $dc-grid-gutter) {
     @if type-of($gutter) == "map" {
         @each $br, $value in $gutter {
@@ -16,10 +23,14 @@
     }
 }
 
-// Grid column mixin for Dress Code
-//
-// @param {Mixed} $columns [null | number]
-// Sets the flex property and the padding (gutter) value for the column
+/// Mixin for creating a column.
+/// <br>
+/// Sets the flex value for the column.
+/// <br>
+/// Sets the padding for column based on the gutter space per breakpoint.
+///
+/// @param {Number} $columns [null] - Size (or span) of the column.
+/// @param {Map} $gutter [$dc-grid-gutter] - A Map of gutter values for different breakpoint sizes.
 @mixin dc-grid-column (
     $columns: null,
     $gutter: $dc-grid-gutter
@@ -38,10 +49,12 @@
     }
 }
 
-// Block grid mixin for Dress Code
-//
-// @param {Number} $columns - Number of columns in each row
-// @param {String} $column-selector - Selector for column within the row.
+/// Mixin for creating a block grid.
+/// <br>
+/// Sets the flex value for the child columns
+///
+/// @param {Number} $columns - Number of columns in each row
+/// @param {String} $column-selector [".dc-column"] - Selector for column within the row.
 @mixin dc-block-grid (
     $columns,
     $column-selector: ".dc-column"
@@ -55,10 +68,12 @@
     }
 }
 
-// Calculates the flex value for a column
-//
-// @param {Mixed} $columns [null | number]
-// @returns flex property value based on the number of columns supplied.
+/// Function for calculating flex property value for a column.
+/// <br>
+/// Returns flex property value based on the number of columns supplied.
+///
+/// @param {Number} $columns [null] - Size (or span) of the column.
+/// @returns {Flex} flex property value based on the number of columns supplied.
 @function grid-column-flex($columns: null) {
     $flex: 1 1 0;
 
@@ -69,11 +84,12 @@
     @return $flex;
 }
 
-// Calculates the width of a column in percentage.
-// This is used for calculating flex percentage, max-widths, and offset widths
-//
-// @param {Number} $columns - number of columns
-// @returns width in percentage
+/// Calculates the width of a column in percentage.
+/// <br>
+/// This is used for calculating flex percentage, max-widths, and offset widths
+///
+/// @param {Number} $columns - Number of columns
+/// @returns {Width} width in percentage
 @function grid-column-size($columns: null) {
     $width: 0;
 

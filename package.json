@@ -73,6 +73,7 @@
     "require-dir": "^0.3.0",
     "rimraf": "^2.5.3",
     "run-sequence": "^2.1.0",
+    "sassdoc": "^2.5.0",
     "susy": "^3.0.0",
     "webpack": "^3.5.5"
   }

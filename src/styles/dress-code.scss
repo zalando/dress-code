@@ -42,6 +42,8 @@
 @import "molecules/tooltip";
 @import "molecules/pagination";
 
+/// Output/include all css selectors.
+/// @group core
 @mixin dc-everything {
     // core
     @include dc-normalize;

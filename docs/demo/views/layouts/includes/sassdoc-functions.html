@@ -1,0 +1,18 @@
+{{#each this as |function|}}
+<div>
+    <div class="sg-sassdoc-anchor-target" id="function-{{kebabCase function.context.name}}"></div>
+    <h3 class="dc-h3">{{function.context.name}}</h3>
+    <p class="dc-p">{{{function.description}}}</p>
+
+    {{#if function.return}}
+    <div class="dc-p">
+        <strong>Returns</strong><br>
+        <code>{{function.return.type}}</code>
+        -
+        {{{function.return.description}}}
+    </div>
+    {{/if}}
+
+{{> sassdoc-parameters function }}
+</div>
+{{/each}}

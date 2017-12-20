@@ -1,0 +1,60 @@
+---
+title: The Dress Code | Docs
+fabricator: true
+---
+
+<h1 class="dc-h1 f-dc-h1--view-title" data-f-toggle="labels">Sass Reference</h1>
+
+<div class="dc-card f-item-group">
+    <p class="dc-p">
+        If you are already using Sass in your project, you can import the Dress Code Sass to:
+        <ul class="dc-list dc-list--is-unordered">
+          <li>Customize default dress-code variables</li>
+          <li>Use dress-code variables, mixins, functions and placeholders</li>
+        </ul>
+    </p>
+
+    On this page you will find the Sass reference for the main entities subdivided by group.
+</div>
+
+{{#each sassdoc as |group groupName|}}
+<div class="dc-card f-item-group">
+    <div class="f-item-group" id="{{kebabCase groupName}}">
+        <h2 class="dc-h2 f-item-heading">
+            <a class="dc-link" href="#{{kebabCase groupName}}">{{capitalizeall groupName}}</a>
+        </h2>
+
+{{!-- strip indenting to avoid conflict with displayed code indentation --}}
+{{#if group.variables.length}}
+<div class="f-item-heading-group">
+    <h3 class="dc-h3 f-item-heading">
+        variables
+    </h3>
+</div>
+{{> sassdoc-variables group.variables }}
+{{/if}}
+
+{{!-- strip indenting to avoid conflict with displayed code indentation --}}
+{{#if group.mixins.length}}
+<div class="f-item-heading-group">
+    <h3 class="dc-h3 f-item-heading">
+        mixins
+    </h3>
+</div>
+{{> sassdoc-mixins group.mixins }}
+{{/if}}
+
+
+{{!-- strip indenting to avoid conflict with displayed code indentation --}}
+{{#if group.functions.length}}
+<div class="f-item-heading-group">
+    <h3 class="dc-h3 f-item-heading">
+        functions
+    </h3>
+</div>
+{{> sassdoc-functions group.functions }}
+{{/if}}
+
+    </div>
+</div>
+{{/each}}

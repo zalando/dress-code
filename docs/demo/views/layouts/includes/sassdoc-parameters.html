@@ -1,0 +1,26 @@
+{{#if parameter.length }}
+<table class="dc-table sg-sassdoc-variable-table">
+  <thead class="dc-table__thead">
+    <tr class="dc-table__tr">
+      <th class="dc-table__th sg-sassdoc-variable-table__th--name">Parameter</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--type">Type</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--default-value">Default</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="dc-table__tbody">
+    {{#each parameter as |param|}}
+        <tr class="dc-table__tr">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">${{param.name}}</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">{{param.type}}</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+{{#if param.default}}
+<pre class="dc-pre"><code>{{param.default}}</code></pre>
+{{/if}}
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">{{{param.description}}}</td>
+        </tr>
+    {{/each}}
+  </tbody>
+</table>
+{{/if}}

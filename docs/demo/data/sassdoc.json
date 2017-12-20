@@ -1,0 +1,2750 @@
+{
+  "colors": {
+    "variables": [
+      {
+        "description": "white\n",
+        "commentRange": {
+          "start": 6,
+          "end": 6
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-white",
+          "value": "#fff",
+          "scope": "default",
+          "line": {
+            "start": 7,
+            "end": 7
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "deprecated": false
+      },
+      {
+        "description": "black\n",
+        "commentRange": {
+          "start": 9,
+          "end": 9
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-black",
+          "value": "#000",
+          "scope": "default",
+          "line": {
+            "start": 10,
+            "end": 10
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "deprecated": false
+      },
+      {
+        "description": "gray 80\n",
+        "commentRange": {
+          "start": 12,
+          "end": 12
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-gray80",
+          "value": "#f7f7f7",
+          "scope": "default",
+          "line": {
+            "start": 13,
+            "end": 13
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Gray",
+        "deprecated": false
+      },
+      {
+        "description": "gray 70\n",
+        "commentRange": {
+          "start": 15,
+          "end": 15
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-gray70",
+          "value": "#ededed",
+          "scope": "default",
+          "line": {
+            "start": 16,
+            "end": 16
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Gray",
+        "deprecated": false
+      },
+      {
+        "description": "gray 60\n",
+        "commentRange": {
+          "start": 18,
+          "end": 18
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-gray60",
+          "value": "#d1d1d1",
+          "scope": "default",
+          "line": {
+            "start": 19,
+            "end": 19
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Gray",
+        "deprecated": false
+      },
+      {
+        "description": "gray 50\n",
+        "commentRange": {
+          "start": 21,
+          "end": 21
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-gray50",
+          "value": "#b6b6b6",
+          "scope": "default",
+          "line": {
+            "start": 22,
+            "end": 22
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Gray",
+        "deprecated": false
+      },
+      {
+        "description": "gray 40\n",
+        "commentRange": {
+          "start": 24,
+          "end": 24
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-gray40",
+          "value": "#9b9b9b",
+          "scope": "default",
+          "line": {
+            "start": 25,
+            "end": 25
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Gray",
+        "deprecated": false
+      },
+      {
+        "description": "gray 30\n",
+        "commentRange": {
+          "start": 27,
+          "end": 27
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-gray30",
+          "value": "#808080",
+          "scope": "default",
+          "line": {
+            "start": 28,
+            "end": 28
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Gray",
+        "deprecated": false
+      },
+      {
+        "description": "gray 20\n",
+        "commentRange": {
+          "start": 30,
+          "end": 30
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-gray20",
+          "value": "#646464",
+          "scope": "default",
+          "line": {
+            "start": 31,
+            "end": 31
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Gray",
+        "deprecated": false
+      },
+      {
+        "description": "gray 10\n",
+        "commentRange": {
+          "start": 33,
+          "end": 33
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-gray10",
+          "value": "#4a4a4a",
+          "scope": "default",
+          "line": {
+            "start": 34,
+            "end": 34
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Gray",
+        "deprecated": false
+      },
+      {
+        "description": "blue 80\n",
+        "commentRange": {
+          "start": 41,
+          "end": 41
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-blue80",
+          "value": "#e6f4ff",
+          "scope": "default",
+          "line": {
+            "start": 42,
+            "end": 42
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Blue",
+        "deprecated": false
+      },
+      {
+        "description": "blue 70\n",
+        "commentRange": {
+          "start": 44,
+          "end": 44
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-blue70",
+          "value": "#d1ebff",
+          "scope": "default",
+          "line": {
+            "start": 45,
+            "end": 45
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Blue",
+        "deprecated": false
+      },
+      {
+        "description": "blue 60\n",
+        "commentRange": {
+          "start": 47,
+          "end": 47
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-blue60",
+          "value": "#a3d9ff",
+          "scope": "default",
+          "line": {
+            "start": 48,
+            "end": 48
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Blue",
+        "deprecated": false
+      },
+      {
+        "description": "blue 50\n",
+        "commentRange": {
+          "start": 50,
+          "end": 50
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-blue50",
+          "value": "#75c6ff",
+          "scope": "default",
+          "line": {
+            "start": 51,
+            "end": 51
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Blue",
+        "deprecated": false
+      },
+      {
+        "description": "blue 40\n",
+        "commentRange": {
+          "start": 53,
+          "end": 53
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-blue40",
+          "value": "#26aafe",
+          "scope": "default",
+          "line": {
+            "start": 54,
+            "end": 54
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Blue",
+        "deprecated": false
+      },
+      {
+        "description": "blue 30\n",
+        "commentRange": {
+          "start": 56,
+          "end": 56
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-blue30",
+          "value": "#1e87cb",
+          "scope": "default",
+          "line": {
+            "start": 57,
+            "end": 57
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Blue",
+        "deprecated": false
+      },
+      {
+        "description": "blue 20\n",
+        "commentRange": {
+          "start": 59,
+          "end": 59
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-blue20",
+          "value": "#186698",
+          "scope": "default",
+          "line": {
+            "start": 60,
+            "end": 60
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Blue",
+        "deprecated": false
+      },
+      {
+        "description": "blue 10\n",
+        "commentRange": {
+          "start": 62,
+          "end": 62
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-blue10",
+          "value": "#124365",
+          "scope": "default",
+          "line": {
+            "start": 63,
+            "end": 63
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Blue",
+        "deprecated": false
+      },
+      {
+        "description": "cyan 80\n",
+        "commentRange": {
+          "start": 67,
+          "end": 67
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-cyan80",
+          "value": "#e8fcff",
+          "scope": "default",
+          "line": {
+            "start": 68,
+            "end": 68
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Cyan",
+        "deprecated": false
+      },
+      {
+        "description": "cyan 70\n",
+        "commentRange": {
+          "start": 70,
+          "end": 70
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-cyan70",
+          "value": "#b5f5ff",
+          "scope": "default",
+          "line": {
+            "start": 71,
+            "end": 71
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Cyan",
+        "deprecated": false
+      },
+      {
+        "description": "cyan 60\n",
+        "commentRange": {
+          "start": 73,
+          "end": 73
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-cyan60",
+          "value": "#8cf0ff",
+          "scope": "default",
+          "line": {
+            "start": 74,
+            "end": 74
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Cyan",
+        "deprecated": false
+      },
+      {
+        "description": "cyan 50\n",
+        "commentRange": {
+          "start": 76,
+          "end": 76
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-cyan50",
+          "value": "#61eaff",
+          "scope": "default",
+          "line": {
+            "start": 77,
+            "end": 77
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Cyan",
+        "deprecated": false
+      },
+      {
+        "description": "cyan 40\n",
+        "commentRange": {
+          "start": 79,
+          "end": 79
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-cyan40",
+          "value": "#24e0fe",
+          "scope": "default",
+          "line": {
+            "start": 80,
+            "end": 80
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Cyan",
+        "deprecated": false
+      },
+      {
+        "description": "cyan 30\n",
+        "commentRange": {
+          "start": 82,
+          "end": 82
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-cyan30",
+          "value": "#1fb3cb",
+          "scope": "default",
+          "line": {
+            "start": 83,
+            "end": 83
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Cyan",
+        "deprecated": false
+      },
+      {
+        "description": "cyan 20\n",
+        "commentRange": {
+          "start": 85,
+          "end": 85
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-cyan20",
+          "value": "#1a8899",
+          "scope": "default",
+          "line": {
+            "start": 86,
+            "end": 86
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Cyan",
+        "deprecated": false
+      },
+      {
+        "description": "cyan 10\n",
+        "commentRange": {
+          "start": 88,
+          "end": 88
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-cyan10",
+          "value": "#145b66",
+          "scope": "default",
+          "line": {
+            "start": 89,
+            "end": 89
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Cyan",
+        "deprecated": false
+      },
+      {
+        "description": "green 80\n",
+        "commentRange": {
+          "start": 93,
+          "end": 93
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-green80",
+          "value": "#e7ffd6",
+          "scope": "default",
+          "line": {
+            "start": 94,
+            "end": 94
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Green",
+        "deprecated": false
+      },
+      {
+        "description": "green 70\n",
+        "commentRange": {
+          "start": 96,
+          "end": 96
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-green70",
+          "value": "#c6ff9e",
+          "scope": "default",
+          "line": {
+            "start": 97,
+            "end": 97
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Green",
+        "deprecated": false
+      },
+      {
+        "description": "green 60\n",
+        "commentRange": {
+          "start": 99,
+          "end": 99
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-green60",
+          "value": "#acff70",
+          "scope": "default",
+          "line": {
+            "start": 100,
+            "end": 100
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Green",
+        "deprecated": false
+      },
+      {
+        "description": "green 50\n",
+        "commentRange": {
+          "start": 102,
+          "end": 102
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-green50",
+          "value": "#8bfa3c",
+          "scope": "default",
+          "line": {
+            "start": 103,
+            "end": 103
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Green",
+        "deprecated": false
+      },
+      {
+        "description": "green 40\n",
+        "commentRange": {
+          "start": 105,
+          "end": 105
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-green40",
+          "value": "#72e620",
+          "scope": "default",
+          "line": {
+            "start": 106,
+            "end": 106
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Green",
+        "deprecated": false
+      },
+      {
+        "description": "green 30\n",
+        "commentRange": {
+          "start": 108,
+          "end": 108
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-green30",
+          "value": "#65cb1c",
+          "scope": "default",
+          "line": {
+            "start": 109,
+            "end": 109
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Green",
+        "deprecated": false
+      },
+      {
+        "description": "green 20\n",
+        "commentRange": {
+          "start": 111,
+          "end": 111
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-green20",
+          "value": "#4a9912",
+          "scope": "default",
+          "line": {
+            "start": 112,
+            "end": 112
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Green",
+        "deprecated": false
+      },
+      {
+        "description": "green 10\n",
+        "commentRange": {
+          "start": 114,
+          "end": 114
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-green10",
+          "value": "#30660a",
+          "scope": "default",
+          "line": {
+            "start": 115,
+            "end": 115
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Green",
+        "deprecated": false
+      },
+      {
+        "description": "yellow 80\n",
+        "commentRange": {
+          "start": 119,
+          "end": 119
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-yellow80",
+          "value": "#fff9d9",
+          "scope": "default",
+          "line": {
+            "start": 120,
+            "end": 120
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Yellow",
+        "deprecated": false
+      },
+      {
+        "description": "yellow 70\n",
+        "commentRange": {
+          "start": 122,
+          "end": 122
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-yellow70",
+          "value": "#fff09e",
+          "scope": "default",
+          "line": {
+            "start": 123,
+            "end": 123
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Yellow",
+        "deprecated": false
+      },
+      {
+        "description": "yellow 60\n",
+        "commentRange": {
+          "start": 125,
+          "end": 125
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-yellow60",
+          "value": "#ffeb7a",
+          "scope": "default",
+          "line": {
+            "start": 126,
+            "end": 126
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Yellow",
+        "deprecated": false
+      },
+      {
+        "description": "yellow 50\n",
+        "commentRange": {
+          "start": 128,
+          "end": 128
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-yellow50",
+          "value": "#ffe347",
+          "scope": "default",
+          "line": {
+            "start": 129,
+            "end": 129
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Yellow",
+        "deprecated": false
+      },
+      {
+        "description": "yellow 40\n",
+        "commentRange": {
+          "start": 131,
+          "end": 131
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-yellow40",
+          "value": "#ffda0a",
+          "scope": "default",
+          "line": {
+            "start": 132,
+            "end": 132
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Yellow",
+        "deprecated": false
+      },
+      {
+        "description": "yellow 30\n",
+        "commentRange": {
+          "start": 134,
+          "end": 134
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-yellow30",
+          "value": "#ccb116",
+          "scope": "default",
+          "line": {
+            "start": 135,
+            "end": 135
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Yellow",
+        "deprecated": false
+      },
+      {
+        "description": "yellow 20\n",
+        "commentRange": {
+          "start": 137,
+          "end": 137
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-yellow20",
+          "value": "#99840e",
+          "scope": "default",
+          "line": {
+            "start": 138,
+            "end": 138
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Yellow",
+        "deprecated": false
+      },
+      {
+        "description": "yellow 10\n",
+        "commentRange": {
+          "start": 140,
+          "end": 140
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-yellow10",
+          "value": "#665705",
+          "scope": "default",
+          "line": {
+            "start": 141,
+            "end": 141
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Yellow",
+        "deprecated": false
+      },
+      {
+        "description": "orange 80\n",
+        "commentRange": {
+          "start": 145,
+          "end": 145
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-orange80",
+          "value": "#ffefe0",
+          "scope": "default",
+          "line": {
+            "start": 146,
+            "end": 146
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Orange",
+        "deprecated": false
+      },
+      {
+        "description": "orange 70\n",
+        "commentRange": {
+          "start": 148,
+          "end": 148
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-orange70",
+          "value": "#ffd1a6",
+          "scope": "default",
+          "line": {
+            "start": 149,
+            "end": 149
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Orange",
+        "deprecated": false
+      },
+      {
+        "description": "orange 60\n",
+        "commentRange": {
+          "start": 151,
+          "end": 151
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-orange60",
+          "value": "#ffba7a",
+          "scope": "default",
+          "line": {
+            "start": 152,
+            "end": 152
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Orange",
+        "deprecated": false
+      },
+      {
+        "description": "orange 50\n",
+        "commentRange": {
+          "start": 154,
+          "end": 154
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-orange50",
+          "value": "#ffa54e",
+          "scope": "default",
+          "line": {
+            "start": 155,
+            "end": 155
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Orange",
+        "deprecated": false
+      },
+      {
+        "description": "orange 40\n",
+        "commentRange": {
+          "start": 157,
+          "end": 157
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-orange40",
+          "value": "#ff8e25",
+          "scope": "default",
+          "line": {
+            "start": 158,
+            "end": 158
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Orange",
+        "deprecated": false
+      },
+      {
+        "description": "orange 30\n",
+        "commentRange": {
+          "start": 160,
+          "end": 160
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-orange30",
+          "value": "#cc711d",
+          "scope": "default",
+          "line": {
+            "start": 161,
+            "end": 161
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Orange",
+        "deprecated": false
+      },
+      {
+        "description": "orange 20\n",
+        "commentRange": {
+          "start": 163,
+          "end": 163
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-orange20",
+          "value": "#995516",
+          "scope": "default",
+          "line": {
+            "start": 164,
+            "end": 164
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Orange",
+        "deprecated": false
+      },
+      {
+        "description": "orange 10\n",
+        "commentRange": {
+          "start": 166,
+          "end": 166
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-orange10",
+          "value": "#66380e",
+          "scope": "default",
+          "line": {
+            "start": 167,
+            "end": 167
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Orange",
+        "deprecated": false
+      },
+      {
+        "description": "red 80\n",
+        "commentRange": {
+          "start": 171,
+          "end": 171
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-red80",
+          "value": "#ffeae6",
+          "scope": "default",
+          "line": {
+            "start": 172,
+            "end": 172
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Red",
+        "deprecated": false
+      },
+      {
+        "description": "red 70\n",
+        "commentRange": {
+          "start": 174,
+          "end": 174
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-red70",
+          "value": "#ffcabf",
+          "scope": "default",
+          "line": {
+            "start": 175,
+            "end": 175
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Red",
+        "deprecated": false
+      },
+      {
+        "description": "red 60\n",
+        "commentRange": {
+          "start": 177,
+          "end": 177
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-red60",
+          "value": "#ff9985",
+          "scope": "default",
+          "line": {
+            "start": 178,
+            "end": 178
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Red",
+        "deprecated": false
+      },
+      {
+        "description": "red 50\n",
+        "commentRange": {
+          "start": 180,
+          "end": 180
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-red50",
+          "value": "#ff6c4f",
+          "scope": "default",
+          "line": {
+            "start": 181,
+            "end": 181
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Red",
+        "deprecated": false
+      },
+      {
+        "description": "red 40\n",
+        "commentRange": {
+          "start": 183,
+          "end": 183
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-red40",
+          "value": "#ff4a25",
+          "scope": "default",
+          "line": {
+            "start": 184,
+            "end": 184
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Red",
+        "deprecated": false
+      },
+      {
+        "description": "red 30\n",
+        "commentRange": {
+          "start": 186,
+          "end": 186
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-red30",
+          "value": "#cc3a1d",
+          "scope": "default",
+          "line": {
+            "start": 187,
+            "end": 187
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Red",
+        "deprecated": false
+      },
+      {
+        "description": "red 20\n",
+        "commentRange": {
+          "start": 189,
+          "end": 189
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-red20",
+          "value": "#992b15",
+          "scope": "default",
+          "line": {
+            "start": 190,
+            "end": 190
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Red",
+        "deprecated": false
+      },
+      {
+        "description": "red 10\n",
+        "commentRange": {
+          "start": 192,
+          "end": 192
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-red10",
+          "value": "#661d0e",
+          "scope": "default",
+          "line": {
+            "start": 193,
+            "end": 193
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Red",
+        "deprecated": false
+      },
+      {
+        "description": "magenta 80\n",
+        "commentRange": {
+          "start": 197,
+          "end": 197
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-magenta80",
+          "value": "#f7e9f7",
+          "scope": "default",
+          "line": {
+            "start": 198,
+            "end": 198
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Magenta",
+        "deprecated": false
+      },
+      {
+        "description": "magenta 70\n",
+        "commentRange": {
+          "start": 200,
+          "end": 200
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-magenta70",
+          "value": "#f7c8f7",
+          "scope": "default",
+          "line": {
+            "start": 201,
+            "end": 201
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Magenta",
+        "deprecated": false
+      },
+      {
+        "description": "magenta 60\n",
+        "commentRange": {
+          "start": 203,
+          "end": 203
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-magenta60",
+          "value": "#f7b2f6",
+          "scope": "default",
+          "line": {
+            "start": 204,
+            "end": 204
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Magenta",
+        "deprecated": false
+      },
+      {
+        "description": "magenta 50\n",
+        "commentRange": {
+          "start": 206,
+          "end": 206
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-magenta50",
+          "value": "#f296f1",
+          "scope": "default",
+          "line": {
+            "start": 207,
+            "end": 207
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Magenta",
+        "deprecated": false
+      },
+      {
+        "description": "magenta 40\n",
+        "commentRange": {
+          "start": 209,
+          "end": 209
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-magenta40",
+          "value": "#eb74e9",
+          "scope": "default",
+          "line": {
+            "start": 210,
+            "end": 210
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Magenta",
+        "deprecated": false
+      },
+      {
+        "description": "magenta 30\n",
+        "commentRange": {
+          "start": 212,
+          "end": 212
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-magenta30",
+          "value": "#bb5cba",
+          "scope": "default",
+          "line": {
+            "start": 213,
+            "end": 213
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Magenta",
+        "deprecated": false
+      },
+      {
+        "description": "magenta 20\n",
+        "commentRange": {
+          "start": 215,
+          "end": 215
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-magenta20",
+          "value": "#8c458b",
+          "scope": "default",
+          "line": {
+            "start": 216,
+            "end": 216
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Magenta",
+        "deprecated": false
+      },
+      {
+        "description": "magenta 10\n",
+        "commentRange": {
+          "start": 218,
+          "end": 218
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-magenta10",
+          "value": "#5d2e5c",
+          "scope": "default",
+          "line": {
+            "start": 219,
+            "end": 219
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Magenta",
+        "deprecated": false
+      },
+      {
+        "description": "purple 80\n",
+        "commentRange": {
+          "start": 223,
+          "end": 223
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-purple80",
+          "value": "#f4edff",
+          "scope": "default",
+          "line": {
+            "start": 224,
+            "end": 224
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Purple",
+        "deprecated": false
+      },
+      {
+        "description": "purple 70\n",
+        "commentRange": {
+          "start": 226,
+          "end": 226
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-purple70",
+          "value": "#e1cfff",
+          "scope": "default",
+          "line": {
+            "start": 227,
+            "end": 227
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Purple",
+        "deprecated": false
+      },
+      {
+        "description": "purple 60\n",
+        "commentRange": {
+          "start": 229,
+          "end": 229
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-purple60",
+          "value": "#c8a6ff",
+          "scope": "default",
+          "line": {
+            "start": 230,
+            "end": 230
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Purple",
+        "deprecated": false
+      },
+      {
+        "description": "purple 50\n",
+        "commentRange": {
+          "start": 232,
+          "end": 232
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-purple50",
+          "value": "#ac7afd",
+          "scope": "default",
+          "line": {
+            "start": 233,
+            "end": 233
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Purple",
+        "deprecated": false
+      },
+      {
+        "description": "purple 40\n",
+        "commentRange": {
+          "start": 235,
+          "end": 235
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-purple40",
+          "value": "#9757fd",
+          "scope": "default",
+          "line": {
+            "start": 236,
+            "end": 236
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Purple",
+        "deprecated": false
+      },
+      {
+        "description": "purple 30\n",
+        "commentRange": {
+          "start": 238,
+          "end": 238
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-purple30",
+          "value": "#7845cb",
+          "scope": "default",
+          "line": {
+            "start": 239,
+            "end": 239
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Purple",
+        "deprecated": false
+      },
+      {
+        "description": "purple 20\n",
+        "commentRange": {
+          "start": 241,
+          "end": 241
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-purple20",
+          "value": "#5a3498",
+          "scope": "default",
+          "line": {
+            "start": 242,
+            "end": 242
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Purple",
+        "deprecated": false
+      },
+      {
+        "description": "purple 10\n",
+        "commentRange": {
+          "start": 244,
+          "end": 244
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-purple10",
+          "value": "#3c2365",
+          "scope": "default",
+          "line": {
+            "start": 245,
+            "end": 245
+          }
+        },
+        "group": [
+          "colors"
+        ],
+        "type": "Color",
+        "access": "public",
+        "file": {
+          "path": "core/_colors.scss",
+          "name": "_colors.scss"
+        },
+        "color": "Purple",
+        "deprecated": false
+      }
+    ]
+  },
+  "core": {
+    "variables": [
+      {
+        "description": "Fonts folder\n",
+        "commentRange": {
+          "start": 16,
+          "end": 17
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-font-path",
+          "value": "\"../fonts\"",
+          "scope": "default",
+          "line": {
+            "start": 18,
+            "end": 18
+          }
+        },
+        "type": "String",
+        "group": [
+          "core"
+        ],
+        "access": "public",
+        "file": {
+          "path": "core/_variables.scss",
+          "name": "_variables.scss"
+        },
+        "deprecated": false
+      },
+      {
+        "description": "Images folder\n",
+        "commentRange": {
+          "start": 20,
+          "end": 21
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-image-path",
+          "value": "\"../img\"",
+          "scope": "default",
+          "line": {
+            "start": 22,
+            "end": 22
+          }
+        },
+        "type": "String",
+        "group": [
+          "core"
+        ],
+        "access": "public",
+        "file": {
+          "path": "core/_variables.scss",
+          "name": "_variables.scss"
+        },
+        "deprecated": false
+      },
+      {
+        "description": "base breakpoint\n",
+        "commentRange": {
+          "start": 120,
+          "end": 121
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-tiny-width",
+          "value": "0",
+          "scope": "default",
+          "line": {
+            "start": 122,
+            "end": 122
+          }
+        },
+        "type": "Number",
+        "group": [
+          "core"
+        ],
+        "access": "public",
+        "file": {
+          "path": "core/_variables.scss",
+          "name": "_variables.scss"
+        },
+        "deprecated": false
+      },
+      {
+        "description": "small screens breakpoint 320px {Smartphones}\n",
+        "commentRange": {
+          "start": 124,
+          "end": 125
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-small-width",
+          "value": "20em",
+          "scope": "default",
+          "line": {
+            "start": 126,
+            "end": 126
+          }
+        },
+        "type": "Number",
+        "group": [
+          "core"
+        ],
+        "access": "public",
+        "file": {
+          "path": "core/_variables.scss",
+          "name": "_variables.scss"
+        },
+        "deprecated": false
+      },
+      {
+        "description": "medium screens breakpoint 600px {Tablets}\n",
+        "commentRange": {
+          "start": 128,
+          "end": 129
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-medium-width",
+          "value": "37.5em",
+          "scope": "default",
+          "line": {
+            "start": 130,
+            "end": 130
+          }
+        },
+        "type": "Number",
+        "group": [
+          "core"
+        ],
+        "access": "public",
+        "file": {
+          "path": "core/_variables.scss",
+          "name": "_variables.scss"
+        },
+        "deprecated": false
+      },
+      {
+        "description": "large screens breakpoint 1024px {Desktops}\n",
+        "commentRange": {
+          "start": 132,
+          "end": 133
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-large-width",
+          "value": "64em",
+          "scope": "default",
+          "line": {
+            "start": 134,
+            "end": 134
+          }
+        },
+        "type": "Number",
+        "group": [
+          "core"
+        ],
+        "access": "public",
+        "file": {
+          "path": "core/_variables.scss",
+          "name": "_variables.scss"
+        },
+        "deprecated": false
+      },
+      {
+        "description": "huge screens breakpoint 1280px {Full HD}\n",
+        "commentRange": {
+          "start": 136,
+          "end": 137
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-huge-width",
+          "value": "80em",
+          "scope": "default",
+          "line": {
+            "start": 138,
+            "end": 138
+          }
+        },
+        "type": "Number",
+        "group": [
+          "core"
+        ],
+        "access": "public",
+        "file": {
+          "path": "core/_variables.scss",
+          "name": "_variables.scss"
+        },
+        "deprecated": false
+      },
+      {
+        "description": "giant breakpoint 1280px {Full HD}\n",
+        "commentRange": {
+          "start": 140,
+          "end": 142
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-giant-width",
+          "value": "80em",
+          "scope": "default",
+          "line": {
+            "start": 143,
+            "end": 143
+          }
+        },
+        "deprecated": true,
+        "type": "Number",
+        "group": [
+          "core"
+        ],
+        "access": "public",
+        "file": {
+          "path": "core/_variables.scss",
+          "name": "_variables.scss"
+        }
+      },
+      {
+        "description": "monstrous breakpoint 1400px\n",
+        "commentRange": {
+          "start": 145,
+          "end": 147
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-monstrous-width",
+          "value": "100em",
+          "scope": "default",
+          "line": {
+            "start": 148,
+            "end": 148
+          }
+        },
+        "deprecated": true,
+        "type": "Number",
+        "group": [
+          "core"
+        ],
+        "access": "public",
+        "file": {
+          "path": "core/_variables.scss",
+          "name": "_variables.scss"
+        }
+      },
+      {
+        "description": "responsive breakpoints map\n",
+        "commentRange": {
+          "start": 150,
+          "end": 151
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-breakpoints",
+          "value": "(\n    tiny: $dc-tiny-width,\n    small: $dc-small-width,\n    medium: $dc-medium-width,\n    large: $dc-large-width,\n    huge: $dc-huge-width\n)",
+          "scope": "default",
+          "line": {
+            "start": 152,
+            "end": 158
+          }
+        },
+        "type": "Map",
+        "group": [
+          "core"
+        ],
+        "access": "public",
+        "file": {
+          "path": "core/_variables.scss",
+          "name": "_variables.scss"
+        },
+        "deprecated": false
+      }
+    ],
+    "mixins": [
+      {
+        "description": "Output/include all css selectors.\n",
+        "commentRange": {
+          "start": 45,
+          "end": 46
+        },
+        "context": {
+          "type": "mixin",
+          "name": "dc-everything",
+          "code": "\n    // core\n    @include dc-normalize;\n    @include dc-typography-selectors;\n    @include dc-utilities-selectors;\n\n    // structure and grid\n    @include dc-structure-selectors;\n    @include dc-grid-selectors;\n\n    // atoms\n    @include dc-btn-selectors;\n    @include dc-card-selectors;\n    @include dc-checkbox-selectors;\n    @include dc-divider-selectors;\n    @include dc-label-selectors;\n    @include dc-icon-selectors;\n    @include dc-input-selectors;\n    @include dc-link-selectors;\n    @include dc-list-selectors;\n    @include dc-loading-bar-selectors;\n    @include dc-overlay-selectors;\n    @include dc-placeholder-selectors;\n    @include dc-radio-selectors;\n    @include dc-select-selectors;\n    @include dc-spinner-selectors;\n    @include dc-status-selectors;\n    @include dc-tab-selectors;\n    @include dc-table-selectors;\n    @include dc-textarea-selectors;\n\n    // molecules\n    @include dc-accordion-selectors;\n    @include dc-breadcrumb-selectors;\n    @include dc-btn-icon-selectors;\n    @include dc-btn-group-selectors;\n    @include dc-dialog-selectors;\n    @include dc-side-revealer-selectors;\n    @include dc-dropdown-selectors;\n    @include dc-input-group-selectors;\n    @include dc-input-stack-selectors;\n    @include dc-msg-selectors;\n    @include dc-search-form-selectors;\n    @include dc-toast-selectors;\n    @include dc-tooltip-selectors;\n    @include dc-pagination-selectors;\n",
+          "line": {
+            "start": 47,
+            "end": 93
+          }
+        },
+        "group": [
+          "core"
+        ],
+        "access": "public",
+        "require": [],
+        "file": {
+          "path": "dress-code.scss",
+          "name": "dress-code.scss"
+        },
+        "deprecated": false
+      }
+    ]
+  },
+  "structure and grid": {
+    "mixins": [
+      {
+        "description": "Mixin for creating a row.\n<br>\nSets the negative right and left margin for the row to align the columns inside a row.\n<br>\nAs each column has padding (for gutter), negative margin on row is applied.\n\n",
+        "commentRange": {
+          "start": 6,
+          "end": 12
+        },
+        "context": {
+          "type": "mixin",
+          "name": "dc-grid-row",
+          "code": "\n    @if type-of($gutter) == \"map\" {\n        @each $br, $value in $gutter {\n            $padding: -($value / 2);\n\n            @media (min-width:map-get($dc-grid-breakpoints, $br)) {\n                margin-right: $padding;\n                margin-left: $padding;\n            }\n        }\n    }\n",
+          "line": {
+            "start": 13,
+            "end": 24
+          }
+        },
+        "parameter": [
+          {
+            "type": "Map",
+            "name": "gutter",
+            "default": "$dc-grid-gutter",
+            "description": "A Map of gutter values for different breakpoint sizes"
+          }
+        ],
+        "group": [
+          "structure and grid"
+        ],
+        "access": "public",
+        "require": [
+          {
+            "type": "variable",
+            "name": "dc-grid-breakpoints"
+          }
+        ],
+        "file": {
+          "path": "structure/_grid-mixins.scss",
+          "name": "_grid-mixins.scss"
+        },
+        "deprecated": false
+      },
+      {
+        "description": "Mixin for creating a column.\n<br>\nSets the flex value for the column.\n<br>\nSets the padding for column based on the gutter space per breakpoint.\n\n",
+        "commentRange": {
+          "start": 26,
+          "end": 33
+        },
+        "context": {
+          "type": "mixin",
+          "name": "dc-grid-column",
+          "code": "\n    flex: grid-column-flex($columns);\n    // Gutters\n    @if type-of($gutter) == \"map\" {\n        @each $br, $value in $gutter {\n            $padding: ($value / 2);\n\n            @media (min-width:map-get($dc-grid-breakpoints, $br)) {\n                padding-right: $padding;\n                padding-left: $padding;\n            }\n        }\n    }\n",
+          "line": {
+            "start": 34,
+            "end": 50
+          }
+        },
+        "parameter": [
+          {
+            "type": "Number",
+            "name": "columns",
+            "default": "null",
+            "description": "Size (or span) of the column."
+          },
+          {
+            "type": "Map",
+            "name": "gutter",
+            "default": "$dc-grid-gutter",
+            "description": "A Map of gutter values for different breakpoint sizes."
+          }
+        ],
+        "group": [
+          "structure and grid"
+        ],
+        "access": "public",
+        "require": [
+          {
+            "type": "function",
+            "name": "grid-column-flex"
+          },
+          {
+            "type": "variable",
+            "name": "dc-grid-breakpoints"
+          }
+        ],
+        "file": {
+          "path": "structure/_grid-mixins.scss",
+          "name": "_grid-mixins.scss"
+        },
+        "deprecated": false
+      },
+      {
+        "description": "Mixin for creating a block grid.\n<br>\nSets the flex value for the child columns\n\n",
+        "commentRange": {
+          "start": 52,
+          "end": 57
+        },
+        "context": {
+          "type": "mixin",
+          "name": "dc-block-grid",
+          "code": "\n    flex-wrap: wrap;\n\n    > #{$column-selector} {\n        $flex-percent: percentage(1 / $columns);\n        flex: 0 0 $flex-percent;\n        max-width: $flex-percent;\n    }\n",
+          "line": {
+            "start": 58,
+            "end": 69
+          }
+        },
+        "parameter": [
+          {
+            "type": "Number",
+            "name": "columns",
+            "description": "Number of columns in each row"
+          },
+          {
+            "type": "String",
+            "name": "column-selector",
+            "default": "\".dc-column\"",
+            "description": "Selector for column within the row."
+          }
+        ],
+        "group": [
+          "structure and grid"
+        ],
+        "access": "public",
+        "require": [],
+        "file": {
+          "path": "structure/_grid-mixins.scss",
+          "name": "_grid-mixins.scss"
+        },
+        "deprecated": false
+      }
+    ],
+    "functions": [
+      {
+        "description": "Function for calculating flex property value for a column.\n<br>\nReturns flex property value based on the number of columns supplied.\n\n",
+        "commentRange": {
+          "start": 71,
+          "end": 76
+        },
+        "context": {
+          "type": "function",
+          "name": "grid-column-flex",
+          "code": "\n    $flex: 1 1 0;\n\n    @if $columns != null {\n        $flex: 0 0 grid-column-size($columns);\n    }\n\n    @return $flex;\n",
+          "line": {
+            "start": 77,
+            "end": 85
+          }
+        },
+        "parameter": [
+          {
+            "type": "Number",
+            "name": "columns",
+            "default": "null",
+            "description": "Size (or span) of the column."
+          }
+        ],
+        "return": {
+          "type": "Flex",
+          "description": "flex property value based on the number of columns supplied."
+        },
+        "group": [
+          "structure and grid"
+        ],
+        "access": "public",
+        "require": [
+          {
+            "type": "function",
+            "name": "grid-column-size"
+          }
+        ],
+        "file": {
+          "path": "structure/_grid-mixins.scss",
+          "name": "_grid-mixins.scss"
+        },
+        "usedBy": [
+          {
+            "description": "Mixin for creating a column.\n<br>\nSets the flex value for the column.\n<br>\nSets the padding for column based on the gutter space per breakpoint.\n\n",
+            "context": {
+              "type": "mixin",
+              "name": "dc-grid-column",
+              "code": "\n    flex: grid-column-flex($columns);\n    // Gutters\n    @if type-of($gutter) == \"map\" {\n        @each $br, $value in $gutter {\n            $padding: ($value / 2);\n\n            @media (min-width:map-get($dc-grid-breakpoints, $br)) {\n                padding-right: $padding;\n                padding-left: $padding;\n            }\n        }\n    }\n",
+              "line": {
+                "start": 34,
+                "end": 50
+              }
+            }
+          }
+        ],
+        "deprecated": false
+      },
+      {
+        "description": "Calculates the width of a column in percentage.\n<br>\nThis is used for calculating flex percentage, max-widths, and offset widths\n\n",
+        "commentRange": {
+          "start": 87,
+          "end": 92
+        },
+        "context": {
+          "type": "function",
+          "name": "grid-column-size",
+          "code": "\n    $width: 0;\n\n    @if type-of($columns) == \"number\" {\n        @if $columns < 1 {\n            $width: percentage($columns);\n        } @else {\n            $width: percentage($columns / $dc-grid-column-count);\n        }\n    } @else {\n        @error \"Wrong syntax for columns. It must be a number (of columns)\";\n    }\n\n    @return $width;\n",
+          "line": {
+            "start": 93,
+            "end": 107
+          }
+        },
+        "parameter": [
+          {
+            "type": "Number",
+            "name": "columns",
+            "description": "Number of columns"
+          }
+        ],
+        "return": {
+          "type": "Width",
+          "description": "width in percentage"
+        },
+        "group": [
+          "structure and grid"
+        ],
+        "access": "public",
+        "require": [
+          {
+            "type": "variable",
+            "name": "dc-grid-column-count"
+          }
+        ],
+        "throw": [
+          "Wrong syntax for columns. It must be a number (of columns)"
+        ],
+        "file": {
+          "path": "structure/_grid-mixins.scss",
+          "name": "_grid-mixins.scss"
+        },
+        "usedBy": [
+          {
+            "description": "Function for calculating flex property value for a column.\n<br>\nReturns flex property value based on the number of columns supplied.\n\n",
+            "context": {
+              "type": "function",
+              "name": "grid-column-flex",
+              "code": "\n    $flex: 1 1 0;\n\n    @if $columns != null {\n        $flex: 0 0 grid-column-size($columns);\n    }\n\n    @return $flex;\n",
+              "line": {
+                "start": 77,
+                "end": 85
+              }
+            }
+          }
+        ],
+        "deprecated": false
+      }
+    ],
+    "variables": [
+      {
+        "description": "The default column count for the grid\n",
+        "commentRange": {
+          "start": 5,
+          "end": 6
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-grid-column-count",
+          "value": "12",
+          "scope": "default",
+          "line": {
+            "start": 7,
+            "end": 7
+          }
+        },
+        "type": "Number",
+        "group": [
+          "structure and grid"
+        ],
+        "access": "public",
+        "file": {
+          "path": "structure/_grid-variables.scss",
+          "name": "_grid-variables.scss"
+        },
+        "usedBy": [
+          {
+            "description": "Calculates the width of a column in percentage.\n<br>\nThis is used for calculating flex percentage, max-widths, and offset widths\n\n",
+            "context": {
+              "type": "function",
+              "name": "grid-column-size",
+              "code": "\n    $width: 0;\n\n    @if type-of($columns) == \"number\" {\n        @if $columns < 1 {\n            $width: percentage($columns);\n        } @else {\n            $width: percentage($columns / $dc-grid-column-count);\n        }\n    } @else {\n        @error \"Wrong syntax for columns. It must be a number (of columns)\";\n    }\n\n    @return $width;\n",
+              "line": {
+                "start": 93,
+                "end": 107
+              }
+            }
+          }
+        ],
+        "deprecated": false
+      },
+      {
+        "description": "The amount of space between columns at different screen sizes.\n<br>\nTo use just one size, set the variable to a number instead of a map.\n",
+        "commentRange": {
+          "start": 9,
+          "end": 12
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-grid-gutter",
+          "value": "(\n    small: 16px,\n    medium: 24px,\n    large: 32px\n)",
+          "scope": "default",
+          "line": {
+            "start": 13,
+            "end": 17
+          }
+        },
+        "type": "Map",
+        "group": [
+          "structure and grid"
+        ],
+        "access": "public",
+        "file": {
+          "path": "structure/_grid-variables.scss",
+          "name": "_grid-variables.scss"
+        },
+        "deprecated": false
+      },
+      {
+        "description": "Grid breakpoints\n",
+        "commentRange": {
+          "start": 19,
+          "end": 20
+        },
+        "context": {
+          "type": "variable",
+          "name": "dc-grid-breakpoints",
+          "value": "$dc-breakpoints",
+          "scope": "default",
+          "line": {
+            "start": 21,
+            "end": 21
+          }
+        },
+        "type": "Map",
+        "group": [
+          "structure and grid"
+        ],
+        "access": "public",
+        "file": {
+          "path": "structure/_grid-variables.scss",
+          "name": "_grid-variables.scss"
+        },
+        "usedBy": [
+          {
+            "description": "Mixin for creating a row.\n<br>\nSets the negative right and left margin for the row to align the columns inside a row.\n<br>\nAs each column has padding (for gutter), negative margin on row is applied.\n\n",
+            "context": {
+              "type": "mixin",
+              "name": "dc-grid-row",
+              "code": "\n    @if type-of($gutter) == \"map\" {\n        @each $br, $value in $gutter {\n            $padding: -($value / 2);\n\n            @media (min-width:map-get($dc-grid-breakpoints, $br)) {\n                margin-right: $padding;\n                margin-left: $padding;\n            }\n        }\n    }\n",
+              "line": {
+                "start": 13,
+                "end": 24
+              }
+            }
+          },
+          {
+            "description": "Mixin for creating a column.\n<br>\nSets the flex value for the column.\n<br>\nSets the padding for column based on the gutter space per breakpoint.\n\n",
+            "context": {
+              "type": "mixin",
+              "name": "dc-grid-column",
+              "code": "\n    flex: grid-column-flex($columns);\n    // Gutters\n    @if type-of($gutter) == \"map\" {\n        @each $br, $value in $gutter {\n            $padding: ($value / 2);\n\n            @media (min-width:map-get($dc-grid-breakpoints, $br)) {\n                padding-right: $padding;\n                padding-left: $padding;\n            }\n        }\n    }\n",
+              "line": {
+                "start": 34,
+                "end": 50
+              }
+            }
+          }
+        ],
+        "deprecated": false
+      }
+    ]
+  }
+}
