@@ -1,13 +1,13 @@
 <div class="f-search-materials">
     <div class="dc-search-form f-search-form">
         <input type="text" id="quick-search"
-                                        class="dc-input dc-search-form__input" list="materials-list"
+                                        class="dc-input dc-search-form__input" list="search-entries-list"
                                         placeholder="Quick search…"
                                         data-autofirst="true">
         <button class="dc-btn dc-search-form__btn">
             <i class="dc-icon dc-icon--search dc-icon--interactive"></i>
         </button>
-        <datalist id="materials-list">
+        <datalist id="search-entries-list">
             {{#each materials}}
             {{#each items}}
             {{#if items}}
@@ -19,6 +19,19 @@
             {{/if}}
             {{/each}}
             {{/each}}
+
+            {{!-- sass reference search entries --}}
+            {{#each sassdoc as |group groupName|}}
+            <option value="/sass-reference.html#{{kebabCase groupName}}">Sass Reference &middot; {{capitalizeall groupName}}</option>
+            {{#each group.mixins as |mixin|}}
+            <option value="/sass-reference.html#mixin-{{kebabCase mixin.context.name}}">Sass Reference &middot; {{mixin.context.name}} (mixin)</option>
+            {{/each}}
+            {{#each group.functions as |function|}}
+            <option value="/sass-reference.html#function-{{kebabCase function.context.name}}">Sass Reference &middot; {{function.context.name}} (function)</option>
+            {{/each}}
+            {{/each}}
+            {{!-- end sass reference search entries --}}
+
         </datalist>
     </div>
 </div>

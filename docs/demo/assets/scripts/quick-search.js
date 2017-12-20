@@ -4,8 +4,6 @@ class QuickSearch {
 
     constructor() {
         this.searchField = document.getElementById('quick-search'),
-        this.materialsList = document.getElementById('materials-list'),
-        this.materials = this.materialsList.querySelectorAll('option');
         this.initSearch();
     }
 
@@ -18,13 +16,15 @@ class QuickSearch {
         // Listen for change and go to URL
         this.searchField.addEventListener('awesomplete-selectcomplete', (e) => {
 
-            let url = e.currentTarget.value;
+            let searchFragmentPath = e.currentTarget.value;
 
             // Reset the value
             e.currentTarget.value = '';
 
-            if (url) {
-                window.location = window.location.origin + url;
+            if (searchFragmentPath) {
+                // replace the last fragment after last '/' with the path of searched fragment path
+                let searchedPathName = window.location.pathname.replace(/\/([^\/]+)?$/g, searchFragmentPath);
+                window.location = window.location.origin + searchedPathName;
             }
         });
 

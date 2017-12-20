@@ -1,0 +1,245 @@
+////
+/// @group colors
+/// @type Color
+////
+
+/// white
+$dc-white: #fff !default;
+
+/// black
+$dc-black: #000 !default;
+
+/// gray 80
+$dc-gray80: #f7f7f7 !default;
+
+/// gray 70
+$dc-gray70: #ededed !default;
+
+/// gray 60
+$dc-gray60: #d1d1d1 !default;
+
+/// gray 50
+$dc-gray50: #b6b6b6 !default;
+
+/// gray 40
+$dc-gray40: #9b9b9b !default;
+
+/// gray 30
+$dc-gray30: #808080 !default;
+
+/// gray 20
+$dc-gray20: #646464 !default;
+
+/// gray 10
+$dc-gray10: #4a4a4a !default;
+
+//  = ACCENT COLORS
+//  ---------------------------------------------------------------------------
+
+// BLUE
+
+/// blue 80
+$dc-blue80: #e6f4ff !default;
+
+/// blue 70
+$dc-blue70: #d1ebff !default;
+
+/// blue 60
+$dc-blue60: #a3d9ff !default;
+
+/// blue 50
+$dc-blue50: #75c6ff !default;
+
+/// blue 40
+$dc-blue40: #26aafe !default;
+
+/// blue 30
+$dc-blue30: #1e87cb !default;
+
+/// blue 20
+$dc-blue20: #186698 !default;
+
+/// blue 10
+$dc-blue10: #124365 !default;
+
+// CYAN
+
+/// cyan 80
+$dc-cyan80: #e8fcff !default;
+
+/// cyan 70
+$dc-cyan70: #b5f5ff !default;
+
+/// cyan 60
+$dc-cyan60: #8cf0ff !default;
+
+/// cyan 50
+$dc-cyan50: #61eaff !default;
+
+/// cyan 40
+$dc-cyan40: #24e0fe !default;
+
+/// cyan 30
+$dc-cyan30: #1fb3cb !default;
+
+/// cyan 20
+$dc-cyan20: #1a8899 !default;
+
+/// cyan 10
+$dc-cyan10: #145b66 !default;
+
+// GREEN
+//
+/// green 80
+$dc-green80: #e7ffd6 !default;
+
+/// green 70
+$dc-green70: #c6ff9e !default;
+
+/// green 60
+$dc-green60: #acff70 !default;
+
+/// green 50
+$dc-green50: #8bfa3c !default;
+
+/// green 40
+$dc-green40: #72e620 !default;
+
+/// green 30
+$dc-green30: #65cb1c !default;
+
+/// green 20
+$dc-green20: #4a9912 !default;
+
+/// green 10
+$dc-green10: #30660a !default;
+
+// YELLOW
+
+/// yellow 80
+$dc-yellow80: #fff9d9 !default;
+
+/// yellow 70
+$dc-yellow70: #fff09e !default;
+
+/// yellow 60
+$dc-yellow60: #ffeb7a !default;
+
+/// yellow 50
+$dc-yellow50: #ffe347 !default;
+
+/// yellow 40
+$dc-yellow40: #ffda0a !default;
+
+/// yellow 30
+$dc-yellow30: #ccb116 !default;
+
+/// yellow 20
+$dc-yellow20: #99840e !default;
+
+/// yellow 10
+$dc-yellow10: #665705 !default;
+
+// ORANGE
+
+/// orange 80
+$dc-orange80: #ffefe0 !default;
+
+/// orange 70
+$dc-orange70: #ffd1a6 !default;
+
+/// orange 60
+$dc-orange60: #ffba7a !default;
+
+/// orange 50
+$dc-orange50: #ffa54e !default;
+
+/// orange 40
+$dc-orange40: #ff8e25 !default;
+
+/// orange 30
+$dc-orange30: #cc711d !default;
+
+/// orange 20
+$dc-orange20: #995516 !default;
+
+/// orange 10
+$dc-orange10: #66380e !default;
+
+// RED
+
+/// red 80
+$dc-red80: #ffeae6 !default;
+
+/// red 70
+$dc-red70: #ffcabf !default;
+
+/// red 60
+$dc-red60: #ff9985 !default;
+
+/// red 50
+$dc-red50: #ff6c4f !default;
+
+/// red 40
+$dc-red40: #ff4a25 !default;
+
+/// red 30
+$dc-red30: #cc3a1d !default;
+
+/// red 20
+$dc-red20: #992b15 !default;
+
+/// red 10
+$dc-red10: #661d0e !default;
+
+// MAGENTA
+
+/// magenta 80
+$dc-magenta80: #f7e9f7 !default;
+
+/// magenta 70
+$dc-magenta70: #f7c8f7 !default;
+
+/// magenta 60
+$dc-magenta60: #f7b2f6 !default;
+
+/// magenta 50
+$dc-magenta50: #f296f1 !default;
+
+/// magenta 40
+$dc-magenta40: #eb74e9 !default;
+
+/// magenta 30
+$dc-magenta30: #bb5cba !default;
+
+/// magenta 20
+$dc-magenta20: #8c458b !default;
+
+/// magenta 10
+$dc-magenta10: #5d2e5c !default;
+
+// PURPLE
+
+/// purple 80
+$dc-purple80: #f4edff !default;
+
+/// purple 70
+$dc-purple70: #e1cfff !default;
+
+/// purple 60
+$dc-purple60: #c8a6ff !default;
+
+/// purple 50
+$dc-purple50: #ac7afd !default;
+
+/// purple 40
+$dc-purple40: #9757fd !default;
+
+/// purple 30
+$dc-purple30: #7845cb !default;
+
+/// purple 20
+$dc-purple20: #5a3498 !default;
+
+/// purple 10
+$dc-purple10: #3c2365 !default;

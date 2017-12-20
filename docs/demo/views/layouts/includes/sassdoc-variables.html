@@ -1,0 +1,24 @@
+<table class="dc-table sg-sassdoc-variable-table">
+  <thead class="dc-table__thead">
+    <tr class="dc-table__tr">
+      <th class="dc-table__th sg-sassdoc-variable-table__th--name">Name</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--type">Type</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--default-value">Default</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="dc-table__tbody">
+    {{#each this as |var|}}
+        <tr class="dc-table__tr" deprecated="{{deprecated}}">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">${{var.context.name}}</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">{{var.type}}</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+{{#if var.context.value}}
+<pre class="dc-pre"><code>{{var.context.value}}</code></pre>
+{{/if}}
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">{{{var.description}}}</td>
+        </tr>
+    {{/each}}
+  </tbody>
+</table>

@@ -1,0 +1,10 @@
+{{#each this as |mixin|}}
+    <div>
+        <div class="sg-sassdoc-anchor-target" id="mixin-{{kebabCase mixin.context.name}}"></div>
+        <h3 class="dc-h3">{{mixin.context.name}}</h3>
+        <p class="dc-p">{{{mixin.description}}}</p>
+    </div>
+
+{{> sassdoc-parameters mixin }}
+
+{{/each}}

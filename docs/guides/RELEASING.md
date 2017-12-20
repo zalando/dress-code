@@ -11,7 +11,7 @@
     npm run release [ major | minor | patch | <newversion> ]
     ```
 
-1. A release branch will be created and pushed automatically with a generated changelog. Confirm the changelog is accurate and clear. Feel free the manually edit the changelog in the release branch. 
+1. A release branch will be created and pushed automatically with a generated changelog. Confirm the changelog is accurate and clear. Feel free the manually edit the changelog in the release branch.
 
 1. Open a PR from the release branch to `master`.
 

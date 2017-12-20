@@ -24,18 +24,17 @@
 		</li>
 		{{/each}}
 
-		{{#each views}}
-		<li>
-			<a href="{{@key}}.html" class="f-menu__heading">{{name}}</a>
+        <li>
+			<a href="sass-reference.html" class="f-menu__heading">Sass Reference</a>
 			<ul>
-				{{#each items}}
+				{{#each sassdoc as |group groupName|}}
 				<li>
-					<a href="{{@../key}}/{{@key}}.html">{{name}}</a>
+					<a href="sass-reference.html#{{kebabCase groupName}}">{{capitalizeall groupName}}</a>
 				</li>
 				{{/each}}
 			</ul>
 		</li>
-		{{/each}}
+
 
 		<li>
 			<a href="docs.html" class="f-menu__heading">Docs</a>

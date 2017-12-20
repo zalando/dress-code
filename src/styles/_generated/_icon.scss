@@ -97,44 +97,50 @@
     @if $filename == more {
         $char: "\EA18";
     }
-    @if $filename == pencil {
+    @if $filename == open-circle {
         $char: "\EA19";
     }
-    @if $filename == play {
+    @if $filename == pencil {
         $char: "\EA1A";
     }
-    @if $filename == pointer {
+    @if $filename == play {
         $char: "\EA1B";
     }
-    @if $filename == redo {
+    @if $filename == pointer {
         $char: "\EA1C";
     }
-    @if $filename == search {
+    @if $filename == redo {
         $char: "\EA1D";
     }
-    @if $filename == success {
+    @if $filename == search {
         $char: "\EA1E";
     }
-    @if $filename == trash {
+    @if $filename == spinner {
         $char: "\EA1F";
     }
-    @if $filename == triangle-down {
+    @if $filename == success {
         $char: "\EA20";
     }
-    @if $filename == triangle-up {
+    @if $filename == trash {
         $char: "\EA21";
     }
-    @if $filename == undo {
+    @if $filename == triangle-down {
         $char: "\EA22";
     }
-    @if $filename == user {
+    @if $filename == triangle-up {
         $char: "\EA23";
     }
-    @if $filename == users {
+    @if $filename == undo {
         $char: "\EA24";
     }
-    @if $filename == warning {
+    @if $filename == user {
         $char: "\EA25";
+    }
+    @if $filename == users {
+        $char: "\EA26";
+    }
+    @if $filename == warning {
+        $char: "\EA27";
     }
 
     @return $char;
@@ -261,6 +267,11 @@
         content: dc-icon-char(more);
     }
 }
+@mixin dc-icon--open-circle {
+    &:before {
+        content: dc-icon-char(open-circle);
+    }
+}
 @mixin dc-icon--pencil {
     &:before {
         content: dc-icon-char(pencil);
@@ -284,6 +295,11 @@
 @mixin dc-icon--search {
     &:before {
         content: dc-icon-char(search);
+    }
+}
+@mixin dc-icon--spinner {
+    &:before {
+        content: dc-icon-char(spinner);
     }
 }
 @mixin dc-icon--success {
@@ -331,11 +347,11 @@
 @mixin dc-icon-generated-selectors {
     @font-face {
         font-family: "DressCodeIcons";
-        src: url('#{$dc-font-path}/DressCodeIcons.eot?v=2.2.0');
+        src: url('#{$dc-font-path}/DressCodeIcons.eot?v=2.3.0');
         src: url('#{$dc-font-path}/DressCodeIcons.eot?#iefix') format('eot'),
-        url('#{$dc-font-path}/DressCodeIcons.woff?v=2.2.0') format('woff'),
-        url('#{$dc-font-path}/DressCodeIcons.ttf?v=2.2.0') format('truetype'),
-        url('#{$dc-font-path}/DressCodeIcons.svg?v=2.2.0#DressCodeIcons') format('svg');
+        url('#{$dc-font-path}/DressCodeIcons.woff?v=2.3.0') format('woff'),
+        url('#{$dc-font-path}/DressCodeIcons.ttf?v=2.3.0') format('truetype'),
+        url('#{$dc-font-path}/DressCodeIcons.svg?v=2.3.0#DressCodeIcons') format('svg');
     }
 
     .dc-icon {
@@ -439,6 +455,10 @@
         @include dc-icon--more;
     }
 
+    .dc-icon--open-circle {
+        @include dc-icon--open-circle;
+    }
+
     .dc-icon--pencil {
         @include dc-icon--pencil;
     }
@@ -457,6 +477,10 @@
 
     .dc-icon--search {
         @include dc-icon--search;
+    }
+
+    .dc-icon--spinner {
+        @include dc-icon--spinner;
     }
 
     .dc-icon--success {

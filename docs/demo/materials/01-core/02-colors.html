@@ -1,11 +1,11 @@
 
 <p class="dc-p">Color plays an important role in mantaining a cohesive look and feel between multiple apps. To ensure this, avoid using colors other than the ones below. All of these colors are available as SASS variables which should save you time when creating your application.
 
-{{#each toolkit.colors}}
+{{#each sassdoc_colors}}
 	<section class="color">
 		<h3 class="dc-h3 f-item-heading">{{@key}}</h3>
 		<div class="f-color-chips">
-		{{#each this}}
+		{{#each this }}
 			<div class="f-color-chip">
 				<div class="f-color-chip__name">{{@key}}</div>
 				<div class="f-color-chip__color">{{this}}</div>

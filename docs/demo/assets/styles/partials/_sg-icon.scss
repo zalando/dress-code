@@ -4,32 +4,13 @@
 //
 //  ---------------------------------------------------------------------------
 
-.sg-icons i {
-    float:left;
-    position:relative;
-    font-size:3.0rem;
-    width: 10.0rem;
-    height: 10.0rem;
-    text-align:center;
-    line-height: 2;
-    margin-right: 1em;
-    margin-bottom: 1em;
-    background: #fff;
+.sg-icon {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    align-items: center;
 
-    span {
-        position: absolute;
-        bottom:0;
-        left:0;
-        font-size:1.3rem;
-        width: 100%;
-        text-align:center;
-        word-break: break-all;
-        padding: 0.8rem;
-        line-height: normal;
-        font-style: normal;
+    i {
+        font-size: 3rem;
     }
-}
-
-.sg-icons .sg-icon--small:before {
-    font-size: 6px;
 }

@@ -1,0 +1,37 @@
+.dc-table__tr[deprecated="true"] {
+    text-decoration: line-through;
+}
+
+.sg-sassdoc-variable-table {
+    &__td--description,
+    &__th--description {
+        max-width: 20rem;
+    }
+
+    &__td--type,
+    &__th--type {
+        width: 10rem;
+    }
+
+    &__td--name,
+    &__th--name {
+        width: 20rem;
+    }
+
+    &__td--default-value,
+    &__th--default-value {
+        width: 25rem;
+
+        .dc-pre {
+            margin-bottom: 0
+        }
+    }
+}
+
+.sg-sassdoc-anchor-target {
+   content: "";
+   display: block;
+   height: 50px;
+   margin: -50px 0 0;
+   position: absolute;
+}

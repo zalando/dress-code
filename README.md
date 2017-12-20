@@ -26,9 +26,9 @@ If you want to know more about the history and the process behind this project y
 
 * Follows [Atomic Design](http://atomicdesign.bradfrost.com/chapter-2/) principles
 
-* Built with [SASS](http://sass-lang.com/), that means:
+* Built with [Sass](http://sass-lang.com/), that means:
     * Modular - import just what you need
-    * Reusable - apply styles on your own components by using SASS mixins
+    * Reusable - apply styles on your own components by using Sass mixins
     * Customizable - "tweak" the look and feel by overriding variables or extending existing classes
 
 * Updated interactive demo site
@@ -50,6 +50,21 @@ Feel free to open issues and/or fork the project to contribute ([see Development
 ## Browser Compatibility
 
 Chrome 48+, Firefox 44+, Safari 8+, IE 10+.
+
+## Semantic Versioning
+
+The Dress Code follows [semantic version standards](https://semver.org/).
+
+However, to be clear, we must describe which part of the exposed API we consider public and which one we consider private.
+When using common programming languages such as Java, PHP or Javascript this concept is usually defined by the language semantics (eg. private or protected keywords) or by some naming conventions (eg. having an `_underscore` before the name of the function or the variable).
+
+The Dress Code considers part of the **PUBLIC** API just:
+
+* all css class names and selectors exposed by the library
+* all mixins representing a corresponding css selector (eg. `@mixin dc-btn`)
+* all others documented [Sass](http://sass-lang.com/) variables/placeholder/mixins (we consider a Sass variable/mixin/placeholder documented just if it's mentioned in the Sass reference published on the [documentation website](http://zalando.github.io/dress-code/)).
+
+> Everything else is considered **PRIVATE**, that means you can still use it but at your own "risk".
 
 ## Getting Started
 
@@ -76,7 +91,8 @@ Include this in your ```<head>```:
 <link href="node_modules/dress-code/dist/css/dress-code.min.css" rel="stylesheet">
 ```
 
-#### How to use Dress Code Sass
+
+#### How to use Dress Code with Sass
 
 If you are already using Sass in your project, you can import the Dress Code directly.
 
@@ -118,7 +134,7 @@ Developers interested in contributing should read the following:
 
 **Requirements**
 
-* [node.js](http://nodejs.org). Make sure your have `v6.0.0` or higher installed before proceeding.
+* [node.js](http://nodejs.org). Make sure your have `v7.0.0` or higher installed before proceeding.
 
 **Install**
 
@@ -176,10 +192,12 @@ Please make sure to follow the steps described at their website to install and c
 
 #### Adding new icons
 
-Make sure your icons have a size of 512x512px and flatten and simplify the paths before you export them. Place each icon as SVG file into `src/icons/`. For each new icon add a row to `docs/demo/materials/03-atoms/icons/01-icons.html` such as
+Make sure your icons have a size of 512x512px and flatten and simplify the paths before you export them. Place each icon as SVG file into `src/icons/`. Add each new icon in the demo by adding it in `docs/demo/materials/03-atoms/icons/01-icons.html` such as
 
 ```
-<i class="dc-icon dc-icon--[ICON-FILENAME]"><span>[ICON-FILENAME]</span></i>
+    <div class="sg-icon dc-column">
+        <i class="dc-icon dc-icon--[ICON-FILENAME]"></i><span>[ICON-FILENAME]</span>
+    </div>
 ```
 
 and replace `[ICON-FILENAME]` with the actual icon filename. Run `npm start -- --open` to see the result.

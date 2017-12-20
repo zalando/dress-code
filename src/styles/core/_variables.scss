@@ -1,3 +1,9 @@
+////
+/// @group core
+////
+
+@import "./colors";
+
 //  ---------------------------------------------------------------------------
 //
 //  Defines all BASIC variables.
@@ -7,111 +13,19 @@
 //  = PATHS
 //  ---------------------------------------------------------------------------
 
+/// Fonts folder
+/// @type String
 $dc-font-path: "../fonts" !default;
+
+/// Images folder
+/// @type String
 $dc-image-path: "../img" !default;
 
-//  = GRAYS
-//  ---------------------------------------------------------------------------
-
-$dc-white: #fff !default;
-
-$dc-gray80: #f7f7f7 !default;
-$dc-gray70: #ededed !default;
-$dc-gray60: #d1d1d1 !default;
-$dc-gray50: #b6b6b6 !default;
-$dc-gray40: #9b9b9b !default;
-$dc-gray30: #808080 !default;
-$dc-gray20: #646464 !default;
-$dc-gray10: #4a4a4a !default;
-
-$dc-black: #000 !default;
-
-//  = ACCENT COLORS
-//  ---------------------------------------------------------------------------
-
-// BLUE
-$dc-blue80: #e6f4ff !default;
-$dc-blue70: #d1ebff !default;
-$dc-blue60: #a3d9ff !default;
-$dc-blue50: #75c6ff !default;
-$dc-blue40: #26aafe !default;
-$dc-blue30: #1e87cb !default;
-$dc-blue20: #186698 !default;
-$dc-blue10: #124365 !default;
-
-// CYAN
-$dc-cyan80: #e8fcff !default;
-$dc-cyan70: #b5f5ff !default;
-$dc-cyan60: #8cf0ff !default;
-$dc-cyan50: #61eaff !default;
-$dc-cyan40: #24e0fe !default;
-$dc-cyan30: #1fb3cb !default;
-$dc-cyan20: #1a8899 !default;
-$dc-cyan10: #145b66 !default;
-
-// GREEN
-$dc-green80: #e7ffd6 !default;
-$dc-green70: #c6ff9e !default;
-$dc-green60: #acff70 !default;
-$dc-green50: #8bfa3c !default;
-$dc-green40: #72e620 !default;
-$dc-green30: #65cb1c !default;
-$dc-green20: #4a9912 !default;
-$dc-green10: #30660a !default;
-
-// YELLOW
-$dc-yellow80: #fff9d9 !default;
-$dc-yellow70: #fff09e !default;
-$dc-yellow60: #ffeb7a !default;
-$dc-yellow50: #ffe347 !default;
-$dc-yellow40: #ffda0a !default;
-$dc-yellow30: #ccb116 !default;
-$dc-yellow20: #99840e !default;
-$dc-yellow10: #665705 !default;
-
-// ORANGE
-$dc-orange80: #ffefe0 !default;
-$dc-orange70: #ffd1a6 !default;
-$dc-orange60: #ffba7a !default;
-$dc-orange50: #ffa54e !default;
-$dc-orange40: #ff8e25 !default;
-$dc-orange30: #cc711d !default;
-$dc-orange20: #995516 !default;
-$dc-orange10: #66380e !default;
-
-// RED
-$dc-red80: #ffeae6 !default;
-$dc-red70: #ffcabf !default;
-$dc-red60: #ff9985 !default;
-$dc-red50: #ff6c4f !default;
-$dc-red40: #ff4a25 !default;
-$dc-red30: #cc3a1d !default;
-$dc-red20: #992b15 !default;
-$dc-red10: #661d0e !default;
-
-// MAGENTA
-$dc-magenta80: #f7e9f7 !default;
-$dc-magenta70: #f7c8f7 !default;
-$dc-magenta60: #f7b2f6 !default;
-$dc-magenta50: #f296f1 !default;
-$dc-magenta40: #eb74e9 !default;
-$dc-magenta30: #bb5cba !default;
-$dc-magenta20: #8c458b !default;
-$dc-magenta10: #5d2e5c !default;
-
-// PURPLE
-$dc-purple80: #f4edff !default;
-$dc-purple70: #e1cfff !default;
-$dc-purple60: #c8a6ff !default;
-$dc-purple50: #ac7afd !default;
-$dc-purple40: #9757fd !default;
-$dc-purple30: #7845cb !default;
-$dc-purple20: #5a3498 !default;
-$dc-purple10: #3c2365 !default;
+// = COLORS
+//
 
 $dc-primary-accent: $dc-blue40 !default;
 $dc-secondary-accent: $dc-orange40 !default;
-
 $dc-debugmessage-color: rgba(255, 255, 0, .9) !default;
 
 //  = SCAFFOLDING
@@ -203,24 +117,38 @@ $dc-z-index100: 9999 !default;
 
 // Base is 16px at this point
 
-/// This bloats the CSS use only those which you need
-///
-/// small : 320px {Smartphones}
-/// medium : 600px {Tablets}
-/// large : 1024px {Desktops}
-/// huge : 1280px {Full HD}
-
+/// base breakpoint
+/// @type Number
 $dc-tiny-width: 0 !default;
+
+/// small screens breakpoint 320px {Smartphones}
+/// @type Number
 $dc-small-width: 20em !default;
+
+/// medium screens breakpoint 600px {Tablets}
+/// @type Number
 $dc-medium-width: 37.5em !default;
+
+/// large screens breakpoint 1024px {Desktops}
+/// @type Number
 $dc-large-width: 64em !default;
+
+/// huge screens breakpoint 1280px {Full HD}
+/// @type Number
 $dc-huge-width: 80em !default;
 
-/// Following two are kept for legacy reasons (to be deprecated).
+/// giant breakpoint 1280px {Full HD}
+/// @deprecated kept for legacy reasons
+/// @type Number
 $dc-giant-width: 80em !default;
+
+/// monstrous breakpoint 1400px
+/// @deprecated kept for legacy reasons
+/// @type Number
 $dc-monstrous-width: 100em !default;
 
-/// @type Map | Length
+/// responsive breakpoints map
+/// @type Map
 $dc-breakpoints: (
     tiny: $dc-tiny-width,
     small: $dc-small-width,
@@ -231,4 +159,4 @@ $dc-breakpoints: (
 
 //  = Atoms default
 //  ---------------------------------------------------------------------------
-$dc-tab-color : $dc-orange40;
+$dc-tab-color : $dc-orange40 !default;
