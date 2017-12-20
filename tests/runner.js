@@ -63,7 +63,6 @@ const runTests = () => {
   testsChild.stdout.pipe(process.stdout);
 
   testsChild.on("close", code => {
-    console.log('Test child closed with code =', code);
     exitCode = code;
     serverChild.send(MESSAGES.SHUTDOWN);
   });

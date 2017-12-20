@@ -3,8 +3,8 @@ var phantomcss = require("phantomcss");
 
 var config = {
   rootUrl: "http://127.0.0.1:PORT/",
-  baseline: "./tests/screenshots/baseline/",
-  results: "./tests/screenshots/results/",
+  baseline: "./tests/screenshots/baseline",
+  results: "./tests/screenshots/results",
   viewports: {
     desktop: { width: 1280, height: 800 },
     mobile: { width: 320, height: 568 }
@@ -66,5 +66,5 @@ exports.takeScreenshots = function(componentName, fileName, viewportName) {
 };
 
 function getFileNameForComponent(componentName, fileName, viewportName) {
-  return [componentName, fileName + "__" + viewportName].join('');
+  return [componentName, fileName + "__" + viewportName].join('/');
 }
