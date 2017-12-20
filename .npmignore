@@ -8,3 +8,4 @@ docs
 webpack.demo.config.js
 gulpfile.js
 gulp
+tests

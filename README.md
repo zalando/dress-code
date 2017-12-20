@@ -72,9 +72,8 @@ The Dress Code considers part of the **PUBLIC** API just:
 
 * [modernizer](https://modernizr.com/) ~2.8.2 included in the ```<head>``` of your web page.
 
-### Install
+### Installation
 
-#### with Npm
 
 ```
 npm install dress-code --save
@@ -91,6 +90,7 @@ Include this in your ```<head>```:
 ```html
 <link href="node_modules/dress-code/dist/css/dress-code.min.css" rel="stylesheet">
 ```
+
 
 #### How to use Dress Code with Sass
 
@@ -154,6 +154,42 @@ $ npm start
 npm start -- --open
 ```
 
+### Visual regression tests
+
+**Initialization:**
+
+In order to avoid unexpected visual changes we have setup an automated visual regression testing system based on [PhantomCSS](https://github.com/Huddle/PhantomCSS), which generates and compares screenshots taken on all the components of Dress Code with their previous state, based on the demo page templates, notifying the developer about all the discrepancies found so they can be reviewed and ajusted properly before opening a pull request.
+
+This system can be initialized in three different modes by using any of the following npm scripts:
+
+```
+$ npm run test
+
+$ npm run test:minified
+
+$ npm run test:rebase
+```
+
+By default, with the former npm script, the system will run all the test cases using an unminified version of the artifact, which will be built to incorporate the current changes.
+
+The second option is intended for releases, which will run the tests by using the minified version of the artifact bundled to be distributed with the new version about to be released.
+
+Last, the latter option regenerates the baseline used for further image comparisons, which represents the current validated state of the Dress Code components. By using this option, the developer states that the changes notified by the diff are done purposely and will become the new look of such affected component from that moment on.  
+
+**Test cases:**
+
+Test cases are described in _tests/globals.js_ by specifying the name of the component (atom or molecule) to be tested and an array containing the names of the template files related to that component in the demo.
+
+On execution, descriptive messages will be shown in console informing about each test suite's results.
+
+**Screenshots:**
+
+The system will generate a screenshot per each file and store them into several directories, grouped by component name, under either _tests/screenshots/baseline_ or _tests/screenshots/results_ depending on the execution mode chosen.
+
+Since storing that many generated binary files in Git is not recommended as it may lead to problems in repositories drastically growing in size, we took advantage of GitHub's open source library [Git Large File System (LFS)](https://git-lfs.github.com/) which replaces the content of a binary file by text pointers to the actual content location where they are stored in the server.
+
+Please make sure to follow the steps described at their website to install and configure it properly.
+
 #### Adding new icons
 
 Make sure your icons have a size of 512x512px and flatten and simplify the paths before you export them. Place each icon as SVG file into `src/icons/`. Add each new icon in the demo by adding it in `docs/demo/materials/03-atoms/icons/01-icons.html` such as
@@ -176,6 +212,7 @@ and replace `[ICON-FILENAME]` with the actual icon filename. Run `npm start -- -
 - Demo/docs site generator
 - Live preview sever (using [BrowserSync](http://www.browsersync.io/))
 - CHANGELOG generator
+- Visual regression testing
 
 ## <a name="build-and-deploy"> Build & Deploy
 

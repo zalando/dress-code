@@ -1,6 +1,8 @@
 dist
 node_modules
 .tmp
+tests/screenshots/results
+tests/screenshots/failures
 
 # -- Compiled source  -- #
 
