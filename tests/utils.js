@@ -1,7 +1,5 @@
 var require = patchRequire(require);
 var phantomcss = require("phantomcss");
-var fs = require("fs");
-var http = require("http");
 
 var config = {
   rootUrl: "http://127.0.0.1:PORT/",
@@ -31,8 +29,7 @@ exports.initialize = function(port) {
       },
       errorType: "movement",
       transparency: 0.5
-    },
-    rebase: casper.cli.get("rebase")
+    }
   });
 };
 
@@ -69,5 +66,5 @@ exports.takeScreenshots = function(componentName, fileName, viewportName) {
 };
 
 function getFileNameForComponent(componentName, fileName, viewportName) {
-  return componentName + "/" + fileName + "__" + viewportName;
+  return [componentName, fileName + "__" + viewportName].join('');
 }

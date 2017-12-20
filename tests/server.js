@@ -30,13 +30,14 @@ const start = () => {
     const cssDistPath = path.join(__dirname, `../dist/css`);
     const fontsPath = path.join(__dirname, `../dist/fonts`);
 
-    const styles = `<head>
-          <link rel="stylesheet" type="text/css" href="./dress-code${useMinifiedVersion
-            ? ".min"
-            : ""}.css" />
-          <style type="text/css">
-              body { padding: 40px; }
-          </style>
+    const htmlHead = `<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic|Ubuntu+Mono" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="./dress-code${useMinifiedVersion ? ".min": ""}.css" />
+        <style type="text/css">
+          body { padding: 40px; }
+        </style>
       </head>`;
 
     app.use(express.static(cssDistPath));
@@ -45,7 +46,7 @@ const start = () => {
     templates.forEach((templateName, index) => {
       app.get(`/${templateName}`, (request, response) => {
         fs.readFile(templatesPaths[index], "utf8", (error, data) => {
-          response.write(styles);
+          response.write(htmlHead);
           if (data) {
             // Remove fabricator comments
             response.write(data.replace(/-{3}([\s\S]*)-{3}/, ""));
@@ -55,7 +56,9 @@ const start = () => {
       });
     });
 
-    server = app.listen(port);
+    server = app.listen(port, () => {
+        console.log(`server serving test templates for screenshots is running at http://localhost:${port}`);
+    });
   }
 };
 

@@ -9,6 +9,8 @@ const DEFAULT_PORT = globals.DEFAULT_PORT;
 let useMinifiedVersion = false,
   rebase = false;
 
+let exitCode = 0;
+
 switch (process.argv[2]) {
   case "--unminified":
     useMinifiedVersion = false;
@@ -41,15 +43,16 @@ serverChild.on("message", message => {
     runTests();
   } else if (message === MESSAGES.CLOSED) {
     console.log("Tests are finished");
-    process.exit();
+    process.exit(exitCode);
   } else if (message === MESSAGES.ABORTED) {
     console.log("Tests could not be finished. An error occured");
-    process.exit();
+    process.exit(1);
   }
 });
 
 serverChild.on("error", error => {
   serverChild.send(MESSAGES.ERROR);
+  serverChild.stdout.pipe(process.stdout);
 });
 
 const runTests = () => {
@@ -57,11 +60,11 @@ const runTests = () => {
     `casperjs test tests/suites.js --port=${PORT} ${rebase ? "--rebase" : ""}`
   );
 
-  testsChild.stdout.on('data', function (log) {
-    console.log(log.toString());
-  });
+  testsChild.stdout.pipe(process.stdout);
 
   testsChild.on("close", code => {
+    console.log('Test child closed with code =', code);
+    exitCode = code;
     serverChild.send(MESSAGES.SHUTDOWN);
   });
 
