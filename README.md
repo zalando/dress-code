@@ -57,9 +57,8 @@ Chrome 48+, Firefox 44+, Safari 8+, IE 10+.
 
 * [modernizer](https://modernizr.com/) ~2.8.2 included in the ```<head>``` of your web page.
 
-### Install
+### Installation
 
-#### with Npm
 
 ```
 npm install dress-code --save
@@ -77,16 +76,16 @@ Include this in your ```<head>```:
 <link href="node_modules/dress-code/dist/css/dress-code.min.css" rel="stylesheet">
 ```
 
-#### How to use dress-code SASS
+#### How to use Dress Code Sass
 
-If you are already using SASS in your project, you can import the Dress Code directly.
+If you are already using Sass in your project, you can import the Dress Code directly.
 
 ```scss
 @import "node_modules/dress-code/dist/sass/dress-code";
 @include dc-everything; // output dc-* selectors
 ```
 
-When using SASS, customization can be achieved by:
+When using Sass, customization can be achieved by:
 
 * Updating **variable** values, you can take a look at `src/styles/core/_variables.scss` to see all available variables and their default values.
 
@@ -165,9 +164,15 @@ Last, the latter option regenerates the baseline used for further image comparis
 
 Test cases are described in _tests/globals.js_ by specifying the name of the component (atom or molecule) to be tested and an array containing the names of the template files related to that component in the demo.
 
+On execution, descriptive messages will be shown in console informing about each test suite's results.
+
+**Screenshots:**
+
 The system will generate a screenshot per each file and store them into several directories, grouped by component name, under either _tests/screenshots/baseline_ or _tests/screenshots/results_ depending on the execution mode chosen.
 
-Furthermore, on execution, descriptive messages will be shown in console informing about each test suite's results.
+Since storing that many generated binary files in Git is not recommended as it may lead to problems in repositories drastically growing in size, we took advantage of GitHub's open source library [Git Large File System (LFS)](https://git-lfs.github.com/) which replaces the content of a binary file by text pointers to the actual content location where they are stored in the server.
+
+Please make sure to follow the steps described at their website to install and configure it properly.
 
 #### Adding new icons
 
