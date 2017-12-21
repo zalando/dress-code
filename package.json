@@ -26,7 +26,7 @@
     "test:minified": "npm run test -- --minified",
     "test:rebase": "npm run test -- --rebase",
     "pretest": "npm run clean:tests && npm run build",
-    "clean:tests": "rimraf ./tests/screenshots/results"
+    "clean:tests": "rimraf ./tests/screenshots/results && rimraf ./tests/screenshots/failures"
   },
   "keywords": [
     "toolkit",
