@@ -2,6 +2,7 @@
 
 @mixin dc-btn {
     display: inline-block;
+    margin: 0;
     padding: $dc-space100 - .1 $dc-space100;
     transition: box-shadow .1s linear, border-color .1s linear, background-color .1s linear;
     border: 1px solid $dc-gray50;
@@ -9,6 +10,7 @@
     // background: linear-gradient($dc-white, darken($dc-white, 7%));
     background: $dc-gray80;
     color: $dc-gray10;
+    font: inherit;
     font-size: $dc-body-font-size;
     font-weight: $dc-normal-font-weight;
     line-height: $dc-space100;

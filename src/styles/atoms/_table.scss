@@ -20,6 +20,7 @@
     border-radius: 2px;
     background: $dc-white;
     text-align: left;
+    border-collapse: collapse;
 }
 
 @mixin dc-table--responsive(

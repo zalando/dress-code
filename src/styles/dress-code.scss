@@ -46,7 +46,6 @@
 /// @group core
 @mixin dc-everything {
     // core
-    @include dc-normalize;
     @include dc-typography-selectors;
     @include dc-utilities-selectors;
 
