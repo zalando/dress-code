@@ -9,3 +9,6 @@ webpack.demo.config.js
 gulpfile.js
 gulp
 tests
+
+yarn.lock
+package-lock.json
