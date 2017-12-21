@@ -1111,8 +1111,7 @@
 	    function QuickSearch() {
 	        _classCallCheck(this, QuickSearch);
 
-	        this.searchField = document.getElementById('quick-search'), this.materialsList = document.getElementById('materials-list'), this.materials = this.materialsList.querySelectorAll('option');
-	        this.initSearch();
+	        this.searchField = document.getElementById('quick-search'), this.initSearch();
 	    }
 
 	    /**

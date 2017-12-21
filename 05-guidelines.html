@@ -74,19 +74,18 @@
 		    <div class="f-search-materials">
 		        <div class="dc-search-form f-search-form">
 		            <input type="text" id="quick-search"
-		                                            class="dc-input dc-search-form__input" list="materials-list"
+		                                            class="dc-input dc-search-form__input" list="search-entries-list"
 		                                            placeholder="Quick search…"
 		                                            data-autofirst="true">
 		            <button class="dc-btn dc-search-form__btn">
 		                <i class="dc-icon dc-icon--search dc-icon--interactive"></i>
 		            </button>
-		            <datalist id="materials-list">
+		            <datalist id="search-entries-list">
 		                <option value="/01-core.html#01-typography.01-getting-the-font">Typography &middot; Getting The Font</option>
 		                <option value="/01-core.html#01-typography.02-font-weights">Typography &middot; Font Weights</option>
 		                <option value="/01-core.html#01-typography.03-font-sizes">Typography &middot; Font Sizes</option>
 		                <option value="/01-core.html#02-colors">Colors</option>
 		                <option value="/01-core.html#03-utilities">Utilities</option>
-		                <option value="/01-core.html#04-scss-reference">Scss Reference</option>
 		                <option value="/02-structure-and-grid.html#01-page-structure">Page Structure</option>
 		                <option value="/02-structure-and-grid.html#02-grid.02-basic-grid">Grid &middot; Basic Grid</option>
 		                <option value="/02-structure-and-grid.html#02-grid.03-shrink-columns">Grid &middot; Shrink Columns</option>
@@ -101,12 +100,10 @@
 		                <option value="/02-structure-and-grid.html#03-horizontal-alignment.02-row-align-right">Horizontal Alignment &middot; Row Align Right</option>
 		                <option value="/02-structure-and-grid.html#03-horizontal-alignment.03-row-align-spaced">Horizontal Alignment &middot; Row Align Spaced</option>
 		                <option value="/02-structure-and-grid.html#03-horizontal-alignment.04-row-align-justified">Horizontal Alignment &middot; Row Align Justified</option>
-		                <option value="/02-structure-and-grid.html#04-scss-reference.01-mixins">Scss Reference &middot; Mixins</option>
-		                <option value="/02-structure-and-grid.html#04-scss-reference.02-default-grid-variables">Scss Reference &middot; Default Grid Variables</option>
-		                <option value="/02-structure-and-grid.html#05-vertical-alignment.01-row-align-top">Vertical Alignment &middot; Row Align Top</option>
-		                <option value="/02-structure-and-grid.html#05-vertical-alignment.02-row-align-middle">Vertical Alignment &middot; Row Align Middle</option>
-		                <option value="/02-structure-and-grid.html#05-vertical-alignment.03-row-align-bottom">Vertical Alignment &middot; Row Align Bottom</option>
-		                <option value="/02-structure-and-grid.html#05-vertical-alignment.04-self-align-columns">Vertical Alignment &middot; Self Align Columns</option>
+		                <option value="/02-structure-and-grid.html#04-vertical-alignment.01-row-align-top">Vertical Alignment &middot; Row Align Top</option>
+		                <option value="/02-structure-and-grid.html#04-vertical-alignment.02-row-align-middle">Vertical Alignment &middot; Row Align Middle</option>
+		                <option value="/02-structure-and-grid.html#04-vertical-alignment.03-row-align-bottom">Vertical Alignment &middot; Row Align Bottom</option>
+		                <option value="/02-structure-and-grid.html#04-vertical-alignment.04-self-align-columns">Vertical Alignment &middot; Self Align Columns</option>
 		                <option value="/03-atoms.html#buttons.01-button">Buttons &middot; Button</option>
 		                <option value="/03-atoms.html#buttons.02-sizes">Buttons &middot; Sizes</option>
 		                <option value="/03-atoms.html#buttons.03-options">Buttons &middot; Options</option>
@@ -120,8 +117,10 @@
 		                <option value="/03-atoms.html#forms.text-input">Forms &middot; Text Input</option>
 		                <option value="/03-atoms.html#forms.textarea">Forms &middot; Textarea</option>
 		                <option value="/03-atoms.html#icons.01-icons">Icons &middot; Icons</option>
-		                <option value="/03-atoms.html#icons.02-changing-the-font-location">Icons &middot; Changing The Font Location</option>
-		                <option value="/03-atoms.html#icons.03-svg-icons">Icons &middot; Svg Icons</option>
+		                <option value="/03-atoms.html#icons.02-interactive-icons">Icons &middot; Interactive Icons</option>
+		                <option value="/03-atoms.html#icons.03-spinning-icons">Icons &middot; Spinning Icons</option>
+		                <option value="/03-atoms.html#icons.04-changing-the-font-location">Icons &middot; Changing The Font Location</option>
+		                <option value="/03-atoms.html#icons.05-svg-icons">Icons &middot; Svg Icons</option>
 		                <option value="/03-atoms.html#link">Link</option>
 		                <option value="/03-atoms.html#lists.01-list">Lists &middot; List</option>
 		                <option value="/03-atoms.html#lists.02-unordered">Lists &middot; Unordered</option>
@@ -154,6 +153,20 @@
 		                <option value="/04-molecules.html#12-pagination">Pagination</option>
 		                <option value="/05-guidelines.html#01-date-time-format">Date Time Format</option>
 		                <option value="/05-guidelines.html#02-number-format">Number Format</option>
+		    
+		                <option value="/sass-reference.html#colors">Sass Reference &middot; Colors</option>
+		                <option value="/sass-reference.html#core">Sass Reference &middot; Core</option>
+		                <option value="/sass-reference.html#mixin-dc-everything">Sass Reference &middot; dc-everything (mixin)</option>
+		                <option value="/sass-reference.html#icons">Sass Reference &middot; Icons</option>
+		                <option value="/sass-reference.html#mixin-dc-icon">Sass Reference &middot; dc-icon (mixin)</option>
+		                <option value="/sass-reference.html#function-dc-icon-char">Sass Reference &middot; dc-icon-char (function)</option>
+		                <option value="/sass-reference.html#structure-and-grid">Sass Reference &middot; Structure And Grid</option>
+		                <option value="/sass-reference.html#mixin-dc-grid-row">Sass Reference &middot; dc-grid-row (mixin)</option>
+		                <option value="/sass-reference.html#mixin-dc-grid-column">Sass Reference &middot; dc-grid-column (mixin)</option>
+		                <option value="/sass-reference.html#mixin-dc-block-grid">Sass Reference &middot; dc-block-grid (mixin)</option>
+		                <option value="/sass-reference.html#function-grid-column-flex">Sass Reference &middot; grid-column-flex (function)</option>
+		                <option value="/sass-reference.html#function-grid-column-size">Sass Reference &middot; grid-column-size (function)</option>
+		    
 		            </datalist>
 		        </div>
 		    </div>
@@ -176,9 +189,6 @@
 						<li>
 							<a href="01-core.html#03-utilities">Utilities</a>
 						</li>
-						<li>
-							<a href="01-core.html#04-scss-reference">Scss Reference</a>
-						</li>
 					</ul>
 				</li>
 				<li>
@@ -194,10 +204,7 @@
 							<a href="02-structure-and-grid.html#03-horizontal-alignment">Horizontal Alignment</a>
 						</li>
 						<li>
-							<a href="02-structure-and-grid.html#04-scss-reference">Scss Reference</a>
-						</li>
-						<li>
-							<a href="02-structure-and-grid.html#05-vertical-alignment">Vertical Alignment</a>
+							<a href="02-structure-and-grid.html#04-vertical-alignment">Vertical Alignment</a>
 						</li>
 					</ul>
 				</li>
@@ -304,6 +311,24 @@
 					</ul>
 				</li>
 		
+		        <li>
+					<a href="sass-reference.html" class="f-menu__heading">Sass Reference</a>
+					<ul>
+						<li>
+							<a href="sass-reference.html#sassdoc-colors">Colors</a>
+						</li>
+						<li>
+							<a href="sass-reference.html#sassdoc-core">Core</a>
+						</li>
+						<li>
+							<a href="sass-reference.html#sassdoc-icons">Icons</a>
+						</li>
+						<li>
+							<a href="sass-reference.html#sassdoc-structure-and-grid">Structure And Grid</a>
+						</li>
+					</ul>
+				</li>
+		
 		
 				<li>
 					<a href="docs.html" class="f-menu__heading">Docs</a>
@@ -350,66 +375,67 @@
             </div>
             <h2 class="dc-h2 f-item-heading">Date Time Format</h2>
         </div>
-        <div class="f-item-notes" data-f-toggle="notes">
-        	<p>Dress code date and time format is currently based on British locale (en-gb). If in your application you use localization, we suggest to adapt the formats accordingly.</p>
-        
-        </div>
-        <div class="f-item-preview">
-        	<h3 class="dc-h3 f-item-heading">Date</h3>
-        <label class="dc-label">Full</label>
-        <p class="dc-h4">Mon, 05 Sep 2016</p>
-        
-        <label class="dc-label">Normal</label>
-        <p class="dc-h4">05 Sep 2016</p>
-        
-        <label class="dc-label">Short Day</label>
-        <p class="dc-h4">05 Sep</p>
-        
-        <label class="dc-label">Short Month</label>
-        <p class="dc-h4">Sep 2016</p>
-        
-        <h3 class="dc-h3 f-item-heading">Time</h3>
-        <label class="dc-label">24 Hours</label>
-        <p class="dc-h4">06:39</p>
-        
-        <h3 class="dc-h3 f-item-heading">Date &amp; Time</h3>
-        <label class="dc-label">Full</label>
-        <p class="dc-h4">Thu, 22 Dec 2016 20:04</p>
-        
-        <label class="dc-label">Normal</label>
-        <p class="dc-h4">22 Dec 2016 20:04</p>
-        
-        <label class="dc-label">Short</label>
-        <p class="dc-h4">22 Dec 20:04</p>
-        </div>
-        <div class="f-item-code f-item-hidden" data-f-toggle="code">
-        	<pre class="dc-pre"><code class="language-markup">&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Date&lt;/h3&gt;
-        &lt;label class&#x3D;&quot;dc-label&quot;&gt;Full&lt;/label&gt;
-        &lt;p class&#x3D;&quot;dc-h4&quot;&gt;Mon, 05 Sep 2016&lt;/p&gt;
-        
-        &lt;label class&#x3D;&quot;dc-label&quot;&gt;Normal&lt;/label&gt;
-        &lt;p class&#x3D;&quot;dc-h4&quot;&gt;05 Sep 2016&lt;/p&gt;
-        
-        &lt;label class&#x3D;&quot;dc-label&quot;&gt;Short Day&lt;/label&gt;
-        &lt;p class&#x3D;&quot;dc-h4&quot;&gt;05 Sep&lt;/p&gt;
-        
-        &lt;label class&#x3D;&quot;dc-label&quot;&gt;Short Month&lt;/label&gt;
-        &lt;p class&#x3D;&quot;dc-h4&quot;&gt;Sep 2016&lt;/p&gt;
-        
-        &lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Time&lt;/h3&gt;
-        &lt;label class&#x3D;&quot;dc-label&quot;&gt;24 Hours&lt;/label&gt;
-        &lt;p class&#x3D;&quot;dc-h4&quot;&gt;06:39&lt;/p&gt;
-        
-        &lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Date &amp;amp; Time&lt;/h3&gt;
-        &lt;label class&#x3D;&quot;dc-label&quot;&gt;Full&lt;/label&gt;
-        &lt;p class&#x3D;&quot;dc-h4&quot;&gt;Thu, 22 Dec 2016 20:04&lt;/p&gt;
-        
-        &lt;label class&#x3D;&quot;dc-label&quot;&gt;Normal&lt;/label&gt;
-        &lt;p class&#x3D;&quot;dc-h4&quot;&gt;22 Dec 2016 20:04&lt;/p&gt;
-        
-        &lt;label class&#x3D;&quot;dc-label&quot;&gt;Short&lt;/label&gt;
-        &lt;p class&#x3D;&quot;dc-h4&quot;&gt;22 Dec 20:04&lt;/p&gt;</code></pre>
-        </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>Dress code date and time format is currently based on British locale (en-gb). If in your application you use localization, we suggest to adapt the formats accordingly.</p>
+
+</div>
+<div class="f-item-preview">
+	<h3 class="dc-h3 f-item-heading">Date</h3>
+<label class="dc-label">Full</label>
+<p class="dc-h4">Mon, 05 Sep 2016</p>
+
+<label class="dc-label">Normal</label>
+<p class="dc-h4">05 Sep 2016</p>
+
+<label class="dc-label">Short Day</label>
+<p class="dc-h4">05 Sep</p>
+
+<label class="dc-label">Short Month</label>
+<p class="dc-h4">Sep 2016</p>
+
+<h3 class="dc-h3 f-item-heading">Time</h3>
+<label class="dc-label">24 Hours</label>
+<p class="dc-h4">06:39</p>
+
+<h3 class="dc-h3 f-item-heading">Date &amp; Time</h3>
+<label class="dc-label">Full</label>
+<p class="dc-h4">Thu, 22 Dec 2016 20:04</p>
+
+<label class="dc-label">Normal</label>
+<p class="dc-h4">22 Dec 2016 20:04</p>
+
+<label class="dc-label">Short</label>
+<p class="dc-h4">22 Dec 20:04</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Date&lt;/h3&gt;
+&lt;label class&#x3D;&quot;dc-label&quot;&gt;Full&lt;/label&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;Mon, 05 Sep 2016&lt;/p&gt;
+
+&lt;label class&#x3D;&quot;dc-label&quot;&gt;Normal&lt;/label&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;05 Sep 2016&lt;/p&gt;
+
+&lt;label class&#x3D;&quot;dc-label&quot;&gt;Short Day&lt;/label&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;05 Sep&lt;/p&gt;
+
+&lt;label class&#x3D;&quot;dc-label&quot;&gt;Short Month&lt;/label&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;Sep 2016&lt;/p&gt;
+
+&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Time&lt;/h3&gt;
+&lt;label class&#x3D;&quot;dc-label&quot;&gt;24 Hours&lt;/label&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;06:39&lt;/p&gt;
+
+&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Date &amp;amp; Time&lt;/h3&gt;
+&lt;label class&#x3D;&quot;dc-label&quot;&gt;Full&lt;/label&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;Thu, 22 Dec 2016 20:04&lt;/p&gt;
+
+&lt;label class&#x3D;&quot;dc-label&quot;&gt;Normal&lt;/label&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;22 Dec 2016 20:04&lt;/p&gt;
+
+&lt;label class&#x3D;&quot;dc-label&quot;&gt;Short&lt;/label&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;22 Dec 20:04&lt;/p&gt;</code></pre>
+</div>
     </div>
 </div>
 
@@ -431,30 +457,31 @@
             </div>
             <h2 class="dc-h2 f-item-heading">Number Format</h2>
         </div>
-        <div class="f-item-notes" data-f-toggle="notes">
-        	<p>Dress code number format is currently based on British locale (en-gb). If in your application you use localization, we suggest to adapt the format accordingly. Depending on the number accuracy your application needs, feel free to use 0..N decimals.</p>
-        
-        </div>
-        <div class="f-item-preview">
-        	<h3 class="dc-h3 f-item-heading">Number</h3>
-        <p class="dc-h4">3,610,156.00</p>
-        
-        <h3 class="dc-h3 f-item-heading">Percentage</h3>
-        <p class="dc-h4">36.40%</p>
-        
-        <h3 class="dc-h3 f-item-heading">Currency</h3>
-        <p class="dc-h4">&euro;1,439.34</p>
-        </div>
-        <div class="f-item-code f-item-hidden" data-f-toggle="code">
-        	<pre class="dc-pre"><code class="language-markup">&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Number&lt;/h3&gt;
-        &lt;p class&#x3D;&quot;dc-h4&quot;&gt;3,610,156.00&lt;/p&gt;
-        
-        &lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Percentage&lt;/h3&gt;
-        &lt;p class&#x3D;&quot;dc-h4&quot;&gt;36.40%&lt;/p&gt;
-        
-        &lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Currency&lt;/h3&gt;
-        &lt;p class&#x3D;&quot;dc-h4&quot;&gt;&amp;euro;1,439.34&lt;/p&gt;</code></pre>
-        </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>Dress code number format is currently based on British locale (en-gb). If in your application you use localization, we suggest to adapt the format accordingly. Depending on the number accuracy your application needs, feel free to use 0..N decimals.</p>
+
+</div>
+<div class="f-item-preview">
+	<h3 class="dc-h3 f-item-heading">Number</h3>
+<p class="dc-h4">3,610,156.00</p>
+
+<h3 class="dc-h3 f-item-heading">Percentage</h3>
+<p class="dc-h4">36.40%</p>
+
+<h3 class="dc-h3 f-item-heading">Currency</h3>
+<p class="dc-h4">&euro;1,439.34</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Number&lt;/h3&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;3,610,156.00&lt;/p&gt;
+
+&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Percentage&lt;/h3&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;36.40%&lt;/p&gt;
+
+&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Currency&lt;/h3&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;&amp;euro;1,439.34&lt;/p&gt;</code></pre>
+</div>
     </div>
 </div>
 

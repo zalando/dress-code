@@ -74,19 +74,18 @@
 		    <div class="f-search-materials">
 		        <div class="dc-search-form f-search-form">
 		            <input type="text" id="quick-search"
-		                                            class="dc-input dc-search-form__input" list="materials-list"
+		                                            class="dc-input dc-search-form__input" list="search-entries-list"
 		                                            placeholder="Quick search…"
 		                                            data-autofirst="true">
 		            <button class="dc-btn dc-search-form__btn">
 		                <i class="dc-icon dc-icon--search dc-icon--interactive"></i>
 		            </button>
-		            <datalist id="materials-list">
+		            <datalist id="search-entries-list">
 		                <option value="/01-core.html#01-typography.01-getting-the-font">Typography &middot; Getting The Font</option>
 		                <option value="/01-core.html#01-typography.02-font-weights">Typography &middot; Font Weights</option>
 		                <option value="/01-core.html#01-typography.03-font-sizes">Typography &middot; Font Sizes</option>
 		                <option value="/01-core.html#02-colors">Colors</option>
 		                <option value="/01-core.html#03-utilities">Utilities</option>
-		                <option value="/01-core.html#04-scss-reference">Scss Reference</option>
 		                <option value="/02-structure-and-grid.html#01-page-structure">Page Structure</option>
 		                <option value="/02-structure-and-grid.html#02-grid.02-basic-grid">Grid &middot; Basic Grid</option>
 		                <option value="/02-structure-and-grid.html#02-grid.03-shrink-columns">Grid &middot; Shrink Columns</option>
@@ -101,12 +100,10 @@
 		                <option value="/02-structure-and-grid.html#03-horizontal-alignment.02-row-align-right">Horizontal Alignment &middot; Row Align Right</option>
 		                <option value="/02-structure-and-grid.html#03-horizontal-alignment.03-row-align-spaced">Horizontal Alignment &middot; Row Align Spaced</option>
 		                <option value="/02-structure-and-grid.html#03-horizontal-alignment.04-row-align-justified">Horizontal Alignment &middot; Row Align Justified</option>
-		                <option value="/02-structure-and-grid.html#04-scss-reference.01-mixins">Scss Reference &middot; Mixins</option>
-		                <option value="/02-structure-and-grid.html#04-scss-reference.02-default-grid-variables">Scss Reference &middot; Default Grid Variables</option>
-		                <option value="/02-structure-and-grid.html#05-vertical-alignment.01-row-align-top">Vertical Alignment &middot; Row Align Top</option>
-		                <option value="/02-structure-and-grid.html#05-vertical-alignment.02-row-align-middle">Vertical Alignment &middot; Row Align Middle</option>
-		                <option value="/02-structure-and-grid.html#05-vertical-alignment.03-row-align-bottom">Vertical Alignment &middot; Row Align Bottom</option>
-		                <option value="/02-structure-and-grid.html#05-vertical-alignment.04-self-align-columns">Vertical Alignment &middot; Self Align Columns</option>
+		                <option value="/02-structure-and-grid.html#04-vertical-alignment.01-row-align-top">Vertical Alignment &middot; Row Align Top</option>
+		                <option value="/02-structure-and-grid.html#04-vertical-alignment.02-row-align-middle">Vertical Alignment &middot; Row Align Middle</option>
+		                <option value="/02-structure-and-grid.html#04-vertical-alignment.03-row-align-bottom">Vertical Alignment &middot; Row Align Bottom</option>
+		                <option value="/02-structure-and-grid.html#04-vertical-alignment.04-self-align-columns">Vertical Alignment &middot; Self Align Columns</option>
 		                <option value="/03-atoms.html#buttons.01-button">Buttons &middot; Button</option>
 		                <option value="/03-atoms.html#buttons.02-sizes">Buttons &middot; Sizes</option>
 		                <option value="/03-atoms.html#buttons.03-options">Buttons &middot; Options</option>
@@ -120,8 +117,10 @@
 		                <option value="/03-atoms.html#forms.text-input">Forms &middot; Text Input</option>
 		                <option value="/03-atoms.html#forms.textarea">Forms &middot; Textarea</option>
 		                <option value="/03-atoms.html#icons.01-icons">Icons &middot; Icons</option>
-		                <option value="/03-atoms.html#icons.02-changing-the-font-location">Icons &middot; Changing The Font Location</option>
-		                <option value="/03-atoms.html#icons.03-svg-icons">Icons &middot; Svg Icons</option>
+		                <option value="/03-atoms.html#icons.02-interactive-icons">Icons &middot; Interactive Icons</option>
+		                <option value="/03-atoms.html#icons.03-spinning-icons">Icons &middot; Spinning Icons</option>
+		                <option value="/03-atoms.html#icons.04-changing-the-font-location">Icons &middot; Changing The Font Location</option>
+		                <option value="/03-atoms.html#icons.05-svg-icons">Icons &middot; Svg Icons</option>
 		                <option value="/03-atoms.html#link">Link</option>
 		                <option value="/03-atoms.html#lists.01-list">Lists &middot; List</option>
 		                <option value="/03-atoms.html#lists.02-unordered">Lists &middot; Unordered</option>
@@ -154,6 +153,20 @@
 		                <option value="/04-molecules.html#12-pagination">Pagination</option>
 		                <option value="/05-guidelines.html#01-date-time-format">Date Time Format</option>
 		                <option value="/05-guidelines.html#02-number-format">Number Format</option>
+		    
+		                <option value="/sass-reference.html#colors">Sass Reference &middot; Colors</option>
+		                <option value="/sass-reference.html#core">Sass Reference &middot; Core</option>
+		                <option value="/sass-reference.html#mixin-dc-everything">Sass Reference &middot; dc-everything (mixin)</option>
+		                <option value="/sass-reference.html#icons">Sass Reference &middot; Icons</option>
+		                <option value="/sass-reference.html#mixin-dc-icon">Sass Reference &middot; dc-icon (mixin)</option>
+		                <option value="/sass-reference.html#function-dc-icon-char">Sass Reference &middot; dc-icon-char (function)</option>
+		                <option value="/sass-reference.html#structure-and-grid">Sass Reference &middot; Structure And Grid</option>
+		                <option value="/sass-reference.html#mixin-dc-grid-row">Sass Reference &middot; dc-grid-row (mixin)</option>
+		                <option value="/sass-reference.html#mixin-dc-grid-column">Sass Reference &middot; dc-grid-column (mixin)</option>
+		                <option value="/sass-reference.html#mixin-dc-block-grid">Sass Reference &middot; dc-block-grid (mixin)</option>
+		                <option value="/sass-reference.html#function-grid-column-flex">Sass Reference &middot; grid-column-flex (function)</option>
+		                <option value="/sass-reference.html#function-grid-column-size">Sass Reference &middot; grid-column-size (function)</option>
+		    
 		            </datalist>
 		        </div>
 		    </div>
@@ -176,9 +189,6 @@
 						<li>
 							<a href="01-core.html#03-utilities">Utilities</a>
 						</li>
-						<li>
-							<a href="01-core.html#04-scss-reference">Scss Reference</a>
-						</li>
 					</ul>
 				</li>
 				<li>
@@ -194,10 +204,7 @@
 							<a href="02-structure-and-grid.html#03-horizontal-alignment">Horizontal Alignment</a>
 						</li>
 						<li>
-							<a href="02-structure-and-grid.html#04-scss-reference">Scss Reference</a>
-						</li>
-						<li>
-							<a href="02-structure-and-grid.html#05-vertical-alignment">Vertical Alignment</a>
+							<a href="02-structure-and-grid.html#04-vertical-alignment">Vertical Alignment</a>
 						</li>
 					</ul>
 				</li>
@@ -304,6 +311,24 @@
 					</ul>
 				</li>
 		
+		        <li>
+					<a href="sass-reference.html" class="f-menu__heading">Sass Reference</a>
+					<ul>
+						<li>
+							<a href="sass-reference.html#sassdoc-colors">Colors</a>
+						</li>
+						<li>
+							<a href="sass-reference.html#sassdoc-core">Core</a>
+						</li>
+						<li>
+							<a href="sass-reference.html#sassdoc-icons">Icons</a>
+						</li>
+						<li>
+							<a href="sass-reference.html#sassdoc-structure-and-grid">Structure And Grid</a>
+						</li>
+					</ul>
+				</li>
+		
 		
 				<li>
 					<a href="docs.html" class="f-menu__heading">Docs</a>
@@ -354,23 +379,24 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Button</h3>
             </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>Buttons should usually trigger an action on page and should not be used for navigation.
-            Use labels that are explicit. Starting with an imperative verb is often a good choice.</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	<a class="dc-btn" href="#" role="button">Save File</a>
-            <button class="dc-btn" type="submit">Edit Account</button>
-            <input class="dc-btn" type="button" value="Create User">
-            <input class="dc-btn" type="submit" value="Download">
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;a class&#x3D;&quot;dc-btn&quot; href&#x3D;&quot;#&quot; role&#x3D;&quot;button&quot;&gt;Save File&lt;/a&gt;
-            &lt;button class&#x3D;&quot;dc-btn&quot; type&#x3D;&quot;submit&quot;&gt;Edit Account&lt;/button&gt;
-            &lt;input class&#x3D;&quot;dc-btn&quot; type&#x3D;&quot;button&quot; value&#x3D;&quot;Create User&quot;&gt;
-            &lt;input class&#x3D;&quot;dc-btn&quot; type&#x3D;&quot;submit&quot; value&#x3D;&quot;Download&quot;&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>Buttons should usually trigger an action on page and should not be used for navigation.
+Use labels that are explicit. Starting with an imperative verb is often a good choice.</p>
+
+</div>
+<div class="f-item-preview">
+	<a class="dc-btn" href="#" role="button">Save File</a>
+<button class="dc-btn" type="submit">Edit Account</button>
+<input class="dc-btn" type="button" value="Create User">
+<input class="dc-btn" type="submit" value="Download">
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;a class&#x3D;&quot;dc-btn&quot; href&#x3D;&quot;#&quot; role&#x3D;&quot;button&quot;&gt;Save File&lt;/a&gt;
+&lt;button class&#x3D;&quot;dc-btn&quot; type&#x3D;&quot;submit&quot;&gt;Edit Account&lt;/button&gt;
+&lt;input class&#x3D;&quot;dc-btn&quot; type&#x3D;&quot;button&quot; value&#x3D;&quot;Create User&quot;&gt;
+&lt;input class&#x3D;&quot;dc-btn&quot; type&#x3D;&quot;submit&quot; value&#x3D;&quot;Download&quot;&gt;</code></pre>
+</div>
         </div>
         <div class="f-item-group" id="buttons.02-sizes">
             <div class="f-item-heading-group" data-f-toggle="labels">
@@ -388,20 +414,21 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Sizes</h3>
             </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>Use the size modifiers <code>dc-btn--large</code> and <code>dc-btn--small</code> to make buttons larger or smaller.</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	<button class="dc-btn dc-btn--large">Large Button</button>
-            <button class="dc-btn">Normal Button</button>
-            <button class="dc-btn dc-btn--small">Small Button</button>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;button class&#x3D;&quot;dc-btn dc-btn--large&quot;&gt;Large Button&lt;/button&gt;
-            &lt;button class&#x3D;&quot;dc-btn&quot;&gt;Normal Button&lt;/button&gt;
-            &lt;button class&#x3D;&quot;dc-btn dc-btn--small&quot;&gt;Small Button&lt;/button&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>Use the size modifiers <code>dc-btn--large</code> and <code>dc-btn--small</code> to make buttons larger or smaller.</p>
+
+</div>
+<div class="f-item-preview">
+	<button class="dc-btn dc-btn--large">Large Button</button>
+<button class="dc-btn">Normal Button</button>
+<button class="dc-btn dc-btn--small">Small Button</button>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;button class&#x3D;&quot;dc-btn dc-btn--large&quot;&gt;Large Button&lt;/button&gt;
+&lt;button class&#x3D;&quot;dc-btn&quot;&gt;Normal Button&lt;/button&gt;
+&lt;button class&#x3D;&quot;dc-btn dc-btn--small&quot;&gt;Small Button&lt;/button&gt;</code></pre>
+</div>
         </div>
         <div class="f-item-group" id="buttons.03-options">
             <div class="f-item-heading-group" data-f-toggle="labels">
@@ -419,46 +446,47 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Options</h3>
             </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>Buttons can have modifier classes applied to them, with different meanings.</p>
-            <p><code>dc-btn--primary</code> The primary action of the page it is placed on. Place only one primary button on each page/dialog.</p>
-            <p><code>dc-btn--destroy</code> A destructive action which can't be undone and might involve loss of data.</p>
-            <p><code>dc-btn--active</code> Active or toggled. Buttons using this modifier should not be clickable.</p>
-            <p><code>dc-btn--disabled</code> Action is disabled. Buttons using this modifier should not be clickable.</p>
-            <p><code>dc-btn--link</code> Looks like a link but aligns and behaves like buttons. For secondary or tertiary actions.</p>
-            <p><code>dc-btn--no-focus</code> Does not keep focus on the button when clicked.</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	<button class="dc-btn dc-btn--primary">Primary Button</button>
-            <button class="dc-btn dc-btn--destroy">Destroy Button</button>
-            <button class="dc-btn dc-btn--active">Active Button</button>
-            <button class="dc-btn dc-btn--disabled" disabled>Disabled Button</button>
-            <button class="dc-btn dc-btn--no-focus">Button without focus</button>
-            
-            <br>
-            <button class="dc-btn dc-btn--link">Button Link</button>
-            <button class="dc-btn dc-btn--link dc-btn--destroy">Button Link - Destroy</button>
-            <button class="dc-btn dc-btn--link dc-btn--disabled" disabled>Button Link - Disabled</button>
-            <button class="dc-btn dc-btn--link dc-btn--no-focus">Button Link - without focus</button>
-            
-            <br>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;button class&#x3D;&quot;dc-btn dc-btn--primary&quot;&gt;Primary Button&lt;/button&gt;
-            &lt;button class&#x3D;&quot;dc-btn dc-btn--destroy&quot;&gt;Destroy Button&lt;/button&gt;
-            &lt;button class&#x3D;&quot;dc-btn dc-btn--active&quot;&gt;Active Button&lt;/button&gt;
-            &lt;button class&#x3D;&quot;dc-btn dc-btn--disabled&quot; disabled&gt;Disabled Button&lt;/button&gt;
-            &lt;button class&#x3D;&quot;dc-btn dc-btn--no-focus&quot;&gt;Button without focus&lt;/button&gt;
-            
-            &lt;br&gt;
-            &lt;button class&#x3D;&quot;dc-btn dc-btn--link&quot;&gt;Button Link&lt;/button&gt;
-            &lt;button class&#x3D;&quot;dc-btn dc-btn--link dc-btn--destroy&quot;&gt;Button Link - Destroy&lt;/button&gt;
-            &lt;button class&#x3D;&quot;dc-btn dc-btn--link dc-btn--disabled&quot; disabled&gt;Button Link - Disabled&lt;/button&gt;
-            &lt;button class&#x3D;&quot;dc-btn dc-btn--link dc-btn--no-focus&quot;&gt;Button Link - without focus&lt;/button&gt;
-            
-            &lt;br&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>Buttons can have modifier classes applied to them, with different meanings.</p>
+<p><code>dc-btn--primary</code> The primary action of the page it is placed on. Place only one primary button on each page/dialog.</p>
+<p><code>dc-btn--destroy</code> A destructive action which can't be undone and might involve loss of data.</p>
+<p><code>dc-btn--active</code> Active or toggled. Buttons using this modifier should not be clickable.</p>
+<p><code>dc-btn--disabled</code> Action is disabled. Buttons using this modifier should not be clickable.</p>
+<p><code>dc-btn--link</code> Looks like a link but aligns and behaves like buttons. For secondary or tertiary actions.</p>
+<p><code>dc-btn--no-focus</code> Does not keep focus on the button when clicked.</p>
+
+</div>
+<div class="f-item-preview">
+	<button class="dc-btn dc-btn--primary">Primary Button</button>
+<button class="dc-btn dc-btn--destroy">Destroy Button</button>
+<button class="dc-btn dc-btn--active">Active Button</button>
+<button class="dc-btn dc-btn--disabled" disabled>Disabled Button</button>
+<button class="dc-btn dc-btn--no-focus">Button without focus</button>
+
+<br>
+<button class="dc-btn dc-btn--link">Button Link</button>
+<button class="dc-btn dc-btn--link dc-btn--destroy">Button Link - Destroy</button>
+<button class="dc-btn dc-btn--link dc-btn--disabled" disabled>Button Link - Disabled</button>
+<button class="dc-btn dc-btn--link dc-btn--no-focus">Button Link - without focus</button>
+
+<br>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;button class&#x3D;&quot;dc-btn dc-btn--primary&quot;&gt;Primary Button&lt;/button&gt;
+&lt;button class&#x3D;&quot;dc-btn dc-btn--destroy&quot;&gt;Destroy Button&lt;/button&gt;
+&lt;button class&#x3D;&quot;dc-btn dc-btn--active&quot;&gt;Active Button&lt;/button&gt;
+&lt;button class&#x3D;&quot;dc-btn dc-btn--disabled&quot; disabled&gt;Disabled Button&lt;/button&gt;
+&lt;button class&#x3D;&quot;dc-btn dc-btn--no-focus&quot;&gt;Button without focus&lt;/button&gt;
+
+&lt;br&gt;
+&lt;button class&#x3D;&quot;dc-btn dc-btn--link&quot;&gt;Button Link&lt;/button&gt;
+&lt;button class&#x3D;&quot;dc-btn dc-btn--link dc-btn--destroy&quot;&gt;Button Link - Destroy&lt;/button&gt;
+&lt;button class&#x3D;&quot;dc-btn dc-btn--link dc-btn--disabled&quot; disabled&gt;Button Link - Disabled&lt;/button&gt;
+&lt;button class&#x3D;&quot;dc-btn dc-btn--link dc-btn--no-focus&quot;&gt;Button Link - without focus&lt;/button&gt;
+
+&lt;br&gt;</code></pre>
+</div>
         </div>
         <div class="f-item-group" id="buttons.04-button--block">
             <div class="f-item-heading-group" data-f-toggle="labels">
@@ -476,20 +504,21 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Button  Block</h3>
             </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>Use the <code>dc-btn--block</code> modifier to force a button to fill its parent's width.</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	<div class="container" style="display:block; width:100%; background-color: #efefef; padding: 10px;">
-            	<button class="dc-btn dc-btn--block">Block Button</button>
-            </div>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;container&quot; style&#x3D;&quot;display:block; width:100%; background-color: #efefef; padding: 10px;&quot;&gt;
-            	&lt;button class&#x3D;&quot;dc-btn dc-btn--block&quot;&gt;Block Button&lt;/button&gt;
-            &lt;/div&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>Use the <code>dc-btn--block</code> modifier to force a button to fill its parent's width.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="container" style="display:block; width:100%; background-color: #efefef; padding: 10px;">
+	<button class="dc-btn dc-btn--block">Block Button</button>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;container&quot; style&#x3D;&quot;display:block; width:100%; background-color: #efefef; padding: 10px;&quot;&gt;
+	&lt;button class&#x3D;&quot;dc-btn dc-btn--block&quot;&gt;Block Button&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+</div>
         </div>
     </div>
 </div>
@@ -508,19 +537,20 @@
             </div>
             <h2 class="dc-h2 f-item-heading">Card</h2>
         </div>
-        
-        <div class="f-item-preview">
-        	<div class="dc-card">
-        	<p>Cards are the basic building blocks of a page. Usually all content should be inside one or more card. For example, in this demo, every section or element is inside a card. We don't recommend nesting cards, such as in this example, but it's technically
-        		possible.</p>
-        </div>
-        </div>
-        <div class="f-item-code f-item-hidden" data-f-toggle="code">
-        	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-card&quot;&gt;
-        	&lt;p&gt;Cards are the basic building blocks of a page. Usually all content should be inside one or more card. For example, in this demo, every section or element is inside a card. We don&#x27;t recommend nesting cards, such as in this example, but it&#x27;s technically
-        		possible.&lt;/p&gt;
-        &lt;/div&gt;</code></pre>
-        </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+
+<div class="f-item-preview">
+	<div class="dc-card">
+	<p>Cards are the basic building blocks of a page. Usually all content should be inside one or more card. For example, in this demo, every section or element is inside a card. We don't recommend nesting cards, such as in this example, but it's technically
+		possible.</p>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-card&quot;&gt;
+	&lt;p&gt;Cards are the basic building blocks of a page. Usually all content should be inside one or more card. For example, in this demo, every section or element is inside a card. We don&#x27;t recommend nesting cards, such as in this example, but it&#x27;s technically
+		possible.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div>
     </div>
 </div>
 
@@ -542,38 +572,39 @@
             </div>
             <h2 class="dc-h2 f-item-heading">Divider</h2>
         </div>
-        <div class="f-item-notes" data-f-toggle="notes">
-        	<p>Use <code>dc-divider</code> to create a lines to divide content sections width a light gray divider.</p>
-        
-        </div>
-        <div class="f-item-preview">
-        	<p class="dc-p">As Gregor Samsa awoke one morning from uneasy dreams he found himself transformed in his bed into a gigantic insect. He was lying on his hard, as it were armor-plated, back and when he lifted his head a little he could see his dome-like brown belly divided
-        	into stiff arched segments on top of which the bed quilt could hardly keep in position and was about to slide off completely.</p>
-        <hr class="dc-divider">
-        
-        <h3 class="dc-h3">Secondary divider</h3>
-        <p class="dc-p">If you want to have a secondary divider use <code>dc-divider dc-divider--secondary</code></p>
-        
-        <hr class="dc-divider dc-divider--secondary">
-        
-        <p class="dc-p">It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife. However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in
-        	the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters
-        	<p>
-        </div>
-        <div class="f-item-code f-item-hidden" data-f-toggle="code">
-        	<pre class="dc-pre"><code class="language-markup">&lt;p class&#x3D;&quot;dc-p&quot;&gt;As Gregor Samsa awoke one morning from uneasy dreams he found himself transformed in his bed into a gigantic insect. He was lying on his hard, as it were armor-plated, back and when he lifted his head a little he could see his dome-like brown belly divided
-        	into stiff arched segments on top of which the bed quilt could hardly keep in position and was about to slide off completely.&lt;/p&gt;
-        &lt;hr class&#x3D;&quot;dc-divider&quot;&gt;
-        
-        &lt;h3 class&#x3D;&quot;dc-h3&quot;&gt;Secondary divider&lt;/h3&gt;
-        &lt;p class&#x3D;&quot;dc-p&quot;&gt;If you want to have a secondary divider use &lt;code&gt;dc-divider dc-divider--secondary&lt;/code&gt;&lt;/p&gt;
-        
-        &lt;hr class&#x3D;&quot;dc-divider dc-divider--secondary&quot;&gt;
-        
-        &lt;p class&#x3D;&quot;dc-p&quot;&gt;It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife. However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in
-        	the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters
-        	&lt;p&gt;</code></pre>
-        </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>Use <code>dc-divider</code> to create a lines to divide content sections width a light gray divider.</p>
+
+</div>
+<div class="f-item-preview">
+	<p class="dc-p">As Gregor Samsa awoke one morning from uneasy dreams he found himself transformed in his bed into a gigantic insect. He was lying on his hard, as it were armor-plated, back and when he lifted his head a little he could see his dome-like brown belly divided
+	into stiff arched segments on top of which the bed quilt could hardly keep in position and was about to slide off completely.</p>
+<hr class="dc-divider">
+
+<h3 class="dc-h3">Secondary divider</h3>
+<p class="dc-p">If you want to have a secondary divider use <code>dc-divider dc-divider--secondary</code></p>
+
+<hr class="dc-divider dc-divider--secondary">
+
+<p class="dc-p">It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife. However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in
+	the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters
+	<p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;p class&#x3D;&quot;dc-p&quot;&gt;As Gregor Samsa awoke one morning from uneasy dreams he found himself transformed in his bed into a gigantic insect. He was lying on his hard, as it were armor-plated, back and when he lifted his head a little he could see his dome-like brown belly divided
+	into stiff arched segments on top of which the bed quilt could hardly keep in position and was about to slide off completely.&lt;/p&gt;
+&lt;hr class&#x3D;&quot;dc-divider&quot;&gt;
+
+&lt;h3 class&#x3D;&quot;dc-h3&quot;&gt;Secondary divider&lt;/h3&gt;
+&lt;p class&#x3D;&quot;dc-p&quot;&gt;If you want to have a secondary divider use &lt;code&gt;dc-divider dc-divider--secondary&lt;/code&gt;&lt;/p&gt;
+
+&lt;hr class&#x3D;&quot;dc-divider dc-divider--secondary&quot;&gt;
+
+&lt;p class&#x3D;&quot;dc-p&quot;&gt;It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife. However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in
+	the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters
+	&lt;p&gt;</code></pre>
+</div>
     </div>
 </div>
 
@@ -595,27 +626,28 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Checkbox</h3>
             </div>
-            
-            <div class="f-item-preview">
-            	<input type="checkbox" class="dc-checkbox" id="c1">
-            <label for="c1" class="dc-label">Check this</label>
-            
-            <input type="checkbox" class="dc-checkbox" id="c2" checked>
-            <label for="c2" class="dc-label">Check that</label>
-            
-            <input type="checkbox" class="dc-checkbox" id="c3" checked disabled>
-            <label for="c3" class="dc-label">Check Disabled</label>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;dc-checkbox&quot; id&#x3D;&quot;c1&quot;&gt;
-            &lt;label for&#x3D;&quot;c1&quot; class&#x3D;&quot;dc-label&quot;&gt;Check this&lt;/label&gt;
-            
-            &lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;dc-checkbox&quot; id&#x3D;&quot;c2&quot; checked&gt;
-            &lt;label for&#x3D;&quot;c2&quot; class&#x3D;&quot;dc-label&quot;&gt;Check that&lt;/label&gt;
-            
-            &lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;dc-checkbox&quot; id&#x3D;&quot;c3&quot; checked disabled&gt;
-            &lt;label for&#x3D;&quot;c3&quot; class&#x3D;&quot;dc-label&quot;&gt;Check Disabled&lt;/label&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+
+<div class="f-item-preview">
+	<input type="checkbox" class="dc-checkbox" id="c1">
+<label for="c1" class="dc-label">Check this</label>
+
+<input type="checkbox" class="dc-checkbox" id="c2" checked>
+<label for="c2" class="dc-label">Check that</label>
+
+<input type="checkbox" class="dc-checkbox" id="c3" checked disabled>
+<label for="c3" class="dc-label">Check Disabled</label>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;dc-checkbox&quot; id&#x3D;&quot;c1&quot;&gt;
+&lt;label for&#x3D;&quot;c1&quot; class&#x3D;&quot;dc-label&quot;&gt;Check this&lt;/label&gt;
+
+&lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;dc-checkbox&quot; id&#x3D;&quot;c2&quot; checked&gt;
+&lt;label for&#x3D;&quot;c2&quot; class&#x3D;&quot;dc-label&quot;&gt;Check that&lt;/label&gt;
+
+&lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;dc-checkbox&quot; id&#x3D;&quot;c3&quot; checked disabled&gt;
+&lt;label for&#x3D;&quot;c3&quot; class&#x3D;&quot;dc-label&quot;&gt;Check Disabled&lt;/label&gt;</code></pre>
+</div>
         </div>
         <div class="f-item-group" id="forms.02-checkbox--switch">
             <div class="f-item-heading-group" data-f-toggle="labels">
@@ -629,27 +661,28 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Checkbox  Switch</h3>
             </div>
-            
-            <div class="f-item-preview">
-            	<input type="checkbox" id="c4" class="dc-checkbox dc-checkbox--alt">
-            <label for="c4" class="dc-label">Check this</label>
-            
-            <input type="checkbox" id="c5" class="dc-checkbox dc-checkbox--alt" checked>
-            <label for="c5" class="dc-label">Check that</label>
-            
-            <input type="checkbox" id="c6" class="dc-checkbox dc-checkbox--alt" checked disabled>
-            <label for="c6" class="dc-label">Check Disabled</label>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;c4&quot; class&#x3D;&quot;dc-checkbox dc-checkbox--alt&quot;&gt;
-            &lt;label for&#x3D;&quot;c4&quot; class&#x3D;&quot;dc-label&quot;&gt;Check this&lt;/label&gt;
-            
-            &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;c5&quot; class&#x3D;&quot;dc-checkbox dc-checkbox--alt&quot; checked&gt;
-            &lt;label for&#x3D;&quot;c5&quot; class&#x3D;&quot;dc-label&quot;&gt;Check that&lt;/label&gt;
-            
-            &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;c6&quot; class&#x3D;&quot;dc-checkbox dc-checkbox--alt&quot; checked disabled&gt;
-            &lt;label for&#x3D;&quot;c6&quot; class&#x3D;&quot;dc-label&quot;&gt;Check Disabled&lt;/label&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+
+<div class="f-item-preview">
+	<input type="checkbox" id="c4" class="dc-checkbox dc-checkbox--alt">
+<label for="c4" class="dc-label">Check this</label>
+
+<input type="checkbox" id="c5" class="dc-checkbox dc-checkbox--alt" checked>
+<label for="c5" class="dc-label">Check that</label>
+
+<input type="checkbox" id="c6" class="dc-checkbox dc-checkbox--alt" checked disabled>
+<label for="c6" class="dc-label">Check Disabled</label>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;c4&quot; class&#x3D;&quot;dc-checkbox dc-checkbox--alt&quot;&gt;
+&lt;label for&#x3D;&quot;c4&quot; class&#x3D;&quot;dc-label&quot;&gt;Check this&lt;/label&gt;
+
+&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;c5&quot; class&#x3D;&quot;dc-checkbox dc-checkbox--alt&quot; checked&gt;
+&lt;label for&#x3D;&quot;c5&quot; class&#x3D;&quot;dc-label&quot;&gt;Check that&lt;/label&gt;
+
+&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;c6&quot; class&#x3D;&quot;dc-checkbox dc-checkbox--alt&quot; checked disabled&gt;
+&lt;label for&#x3D;&quot;c6&quot; class&#x3D;&quot;dc-label&quot;&gt;Check Disabled&lt;/label&gt;</code></pre>
+</div>
         </div>
         <div class="f-item-group" id="forms.radio-button">
             <div class="f-item-heading-group" data-f-toggle="labels">
@@ -663,27 +696,28 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Radio Button</h3>
             </div>
-            
-            <div class="f-item-preview">
-            	<input type="radio" class="dc-radio" id="r1" name="rg1" checked>
-            <label for="r1" class="dc-label">Either this</label>
-            
-            <input type="radio" class="dc-radio" id="r2" name="rg1">
-            <label for="r2" class="dc-label">Or that</label>
-            
-            <input type="radio" class="dc-radio" id="r3" name="rg2" checked disabled>
-            <label for="r3" class="dc-label">Disabled</label>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;dc-radio&quot; id&#x3D;&quot;r1&quot; name&#x3D;&quot;rg1&quot; checked&gt;
-            &lt;label for&#x3D;&quot;r1&quot; class&#x3D;&quot;dc-label&quot;&gt;Either this&lt;/label&gt;
-            
-            &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;dc-radio&quot; id&#x3D;&quot;r2&quot; name&#x3D;&quot;rg1&quot;&gt;
-            &lt;label for&#x3D;&quot;r2&quot; class&#x3D;&quot;dc-label&quot;&gt;Or that&lt;/label&gt;
-            
-            &lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;dc-radio&quot; id&#x3D;&quot;r3&quot; name&#x3D;&quot;rg2&quot; checked disabled&gt;
-            &lt;label for&#x3D;&quot;r3&quot; class&#x3D;&quot;dc-label&quot;&gt;Disabled&lt;/label&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+
+<div class="f-item-preview">
+	<input type="radio" class="dc-radio" id="r1" name="rg1" checked>
+<label for="r1" class="dc-label">Either this</label>
+
+<input type="radio" class="dc-radio" id="r2" name="rg1">
+<label for="r2" class="dc-label">Or that</label>
+
+<input type="radio" class="dc-radio" id="r3" name="rg2" checked disabled>
+<label for="r3" class="dc-label">Disabled</label>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;dc-radio&quot; id&#x3D;&quot;r1&quot; name&#x3D;&quot;rg1&quot; checked&gt;
+&lt;label for&#x3D;&quot;r1&quot; class&#x3D;&quot;dc-label&quot;&gt;Either this&lt;/label&gt;
+
+&lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;dc-radio&quot; id&#x3D;&quot;r2&quot; name&#x3D;&quot;rg1&quot;&gt;
+&lt;label for&#x3D;&quot;r2&quot; class&#x3D;&quot;dc-label&quot;&gt;Or that&lt;/label&gt;
+
+&lt;input type&#x3D;&quot;radio&quot; class&#x3D;&quot;dc-radio&quot; id&#x3D;&quot;r3&quot; name&#x3D;&quot;rg2&quot; checked disabled&gt;
+&lt;label for&#x3D;&quot;r3&quot; class&#x3D;&quot;dc-label&quot;&gt;Disabled&lt;/label&gt;</code></pre>
+</div>
         </div>
         <div class="f-item-group" id="forms.select">
             <div class="f-item-heading-group" data-f-toggle="labels">
@@ -701,76 +735,77 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Select</h3>
             </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p><code>dc-select</code> styles select form elements. Error states use <code>dc-select--error</code>. Use <code>dc-select--small</code> for a smaller version that has the same height as radios and checkboxes.</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	<select class="dc-select" name="" id="">
-            	<option value="">Enabled</option>
-            	<option value="">Option 2</option>
-            	<option value="">Option 3</option>
-            	<option value="">Option 4</option>
-            	<option value="">Option 5</option>
-            </select>
-            
-            <select class="dc-select" disabled name="" id="">
-            	<option value="">Disabled</option>
-            	<option value="">Option 2</option>
-            	<option value="">Option 3</option>
-            	<option value="">Option 4</option>
-            	<option value="">Option 5</option>
-            </select>
-            
-            <select class="dc-select dc-select--is-error" name="" id="">
-            	<option value="">Enabled</option>
-            	<option value="">Option 2</option>
-            	<option value="">Option 3</option>
-            	<option value="">Option 4</option>
-            	<option value="">Option 5</option>
-            </select>
-            
-            <select class="dc-select dc-select--small" name="" id="">
-            	<option value="">Enabled</option>
-            	<option value="">Option 2</option>
-            	<option value="">Option 3</option>
-            	<option value="">Option 4</option>
-            	<option value="">Option 5</option>
-            </select>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;select class&#x3D;&quot;dc-select&quot; name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Enabled&lt;/option&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
-            &lt;/select&gt;
-            
-            &lt;select class&#x3D;&quot;dc-select&quot; disabled name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Disabled&lt;/option&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
-            &lt;/select&gt;
-            
-            &lt;select class&#x3D;&quot;dc-select dc-select--is-error&quot; name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Enabled&lt;/option&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
-            &lt;/select&gt;
-            
-            &lt;select class&#x3D;&quot;dc-select dc-select--small&quot; name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Enabled&lt;/option&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
-            	&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
-            &lt;/select&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p><code>dc-select</code> styles select form elements. Error states use <code>dc-select--error</code>. Use <code>dc-select--small</code> for a smaller version that has the same height as radios and checkboxes.</p>
+
+</div>
+<div class="f-item-preview">
+	<select class="dc-select" name="" id="">
+	<option value="">Enabled</option>
+	<option value="">Option 2</option>
+	<option value="">Option 3</option>
+	<option value="">Option 4</option>
+	<option value="">Option 5</option>
+</select>
+
+<select class="dc-select" disabled name="" id="">
+	<option value="">Disabled</option>
+	<option value="">Option 2</option>
+	<option value="">Option 3</option>
+	<option value="">Option 4</option>
+	<option value="">Option 5</option>
+</select>
+
+<select class="dc-select dc-select--is-error" name="" id="">
+	<option value="">Enabled</option>
+	<option value="">Option 2</option>
+	<option value="">Option 3</option>
+	<option value="">Option 4</option>
+	<option value="">Option 5</option>
+</select>
+
+<select class="dc-select dc-select--small" name="" id="">
+	<option value="">Enabled</option>
+	<option value="">Option 2</option>
+	<option value="">Option 3</option>
+	<option value="">Option 4</option>
+	<option value="">Option 5</option>
+</select>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;select class&#x3D;&quot;dc-select&quot; name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Enabled&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class&#x3D;&quot;dc-select&quot; disabled name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Disabled&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class&#x3D;&quot;dc-select dc-select--is-error&quot; name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Enabled&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;select class&#x3D;&quot;dc-select dc-select--small&quot; name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Enabled&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+</div>
         </div>
         <div class="f-item-group" id="forms.text-input">
             <div class="f-item-heading-group" data-f-toggle="labels">
@@ -784,65 +819,66 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Text Input</h3>
             </div>
-            
-            <div class="f-item-preview">
-            	<label class="dc-label" for="optionalInput">Text input</label>
-            <input class="dc-input" type="text" id="optionalInput" placeholder="e. g. give an example" />
-            
-            <label class="dc-label" for="numberInput">
-                Number input
-                <span class="dc-label__sub">optional</span>
-            </label>
-            <input class="dc-input" type="number" id="numberInput" placeholder="e. g. 100" />
-            
-            <label class="dc-label" for="requiredInput">
-                Required input
-                <span class="dc-label__sub">required</span>
-            </label>
-            <input class="dc-input" type="text" id="requiredInput" placeholder="e. g. give an example" />
-            
-            <label class="dc-label" for="errorInput">
-                Required input – Error
-                <span class="dc-label__sub dc-label__sub--is-error">required</span>
-            </label>
-            <input class="dc-input dc-input--is-error" type="text" id="errorInput" placeholder="e. g. give an example" />
-            <span class="dc--text-error">Please don't leave this empty.</span>
-            
-            <label class="dc-label dc-label--disabled" for="disabledInput">Disabled input</label>
-            <input class="dc-input dc-input--disabled" type="text" id="disabledInput" placeholder="e. g. give an example" disabled/>
-            
-            <label class="dc-label" for="smallInput">Small input</label>
-            <input class="dc-input dc-input--small" type="text" id="smallInput" placeholder="e. g. give an example" />
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;optionalInput&quot;&gt;Text input&lt;/label&gt;
-            &lt;input class&#x3D;&quot;dc-input&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;optionalInput&quot; placeholder&#x3D;&quot;e. g. give an example&quot; /&gt;
-            
-            &lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;numberInput&quot;&gt;
-                Number input
-                &lt;span class&#x3D;&quot;dc-label__sub&quot;&gt;optional&lt;/span&gt;
-            &lt;/label&gt;
-            &lt;input class&#x3D;&quot;dc-input&quot; type&#x3D;&quot;number&quot; id&#x3D;&quot;numberInput&quot; placeholder&#x3D;&quot;e. g. 100&quot; /&gt;
-            
-            &lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;requiredInput&quot;&gt;
-                Required input
-                &lt;span class&#x3D;&quot;dc-label__sub&quot;&gt;required&lt;/span&gt;
-            &lt;/label&gt;
-            &lt;input class&#x3D;&quot;dc-input&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;requiredInput&quot; placeholder&#x3D;&quot;e. g. give an example&quot; /&gt;
-            
-            &lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;errorInput&quot;&gt;
-                Required input – Error
-                &lt;span class&#x3D;&quot;dc-label__sub dc-label__sub--is-error&quot;&gt;required&lt;/span&gt;
-            &lt;/label&gt;
-            &lt;input class&#x3D;&quot;dc-input dc-input--is-error&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;errorInput&quot; placeholder&#x3D;&quot;e. g. give an example&quot; /&gt;
-            &lt;span class&#x3D;&quot;dc--text-error&quot;&gt;Please don&#x27;t leave this empty.&lt;/span&gt;
-            
-            &lt;label class&#x3D;&quot;dc-label dc-label--disabled&quot; for&#x3D;&quot;disabledInput&quot;&gt;Disabled input&lt;/label&gt;
-            &lt;input class&#x3D;&quot;dc-input dc-input--disabled&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;disabledInput&quot; placeholder&#x3D;&quot;e. g. give an example&quot; disabled/&gt;
-            
-            &lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;smallInput&quot;&gt;Small input&lt;/label&gt;
-            &lt;input class&#x3D;&quot;dc-input dc-input--small&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;smallInput&quot; placeholder&#x3D;&quot;e. g. give an example&quot; /&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+
+<div class="f-item-preview">
+	<label class="dc-label" for="optionalInput">Text input</label>
+<input class="dc-input" type="text" id="optionalInput" placeholder="e. g. give an example" />
+
+<label class="dc-label" for="numberInput">
+    Number input
+    <span class="dc-label__sub">optional</span>
+</label>
+<input class="dc-input" type="number" id="numberInput" placeholder="e. g. 100" />
+
+<label class="dc-label" for="requiredInput">
+    Required input
+    <span class="dc-label__sub">required</span>
+</label>
+<input class="dc-input" type="text" id="requiredInput" placeholder="e. g. give an example" />
+
+<label class="dc-label" for="errorInput">
+    Required input – Error
+    <span class="dc-label__sub dc-label__sub--is-error">required</span>
+</label>
+<input class="dc-input dc-input--is-error" type="text" id="errorInput" placeholder="e. g. give an example" />
+<span class="dc--text-error">Please don't leave this empty.</span>
+
+<label class="dc-label dc-label--disabled" for="disabledInput">Disabled input</label>
+<input class="dc-input dc-input--disabled" type="text" id="disabledInput" placeholder="e. g. give an example" disabled/>
+
+<label class="dc-label" for="smallInput">Small input</label>
+<input class="dc-input dc-input--small" type="text" id="smallInput" placeholder="e. g. give an example" />
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;optionalInput&quot;&gt;Text input&lt;/label&gt;
+&lt;input class&#x3D;&quot;dc-input&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;optionalInput&quot; placeholder&#x3D;&quot;e. g. give an example&quot; /&gt;
+
+&lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;numberInput&quot;&gt;
+    Number input
+    &lt;span class&#x3D;&quot;dc-label__sub&quot;&gt;optional&lt;/span&gt;
+&lt;/label&gt;
+&lt;input class&#x3D;&quot;dc-input&quot; type&#x3D;&quot;number&quot; id&#x3D;&quot;numberInput&quot; placeholder&#x3D;&quot;e. g. 100&quot; /&gt;
+
+&lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;requiredInput&quot;&gt;
+    Required input
+    &lt;span class&#x3D;&quot;dc-label__sub&quot;&gt;required&lt;/span&gt;
+&lt;/label&gt;
+&lt;input class&#x3D;&quot;dc-input&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;requiredInput&quot; placeholder&#x3D;&quot;e. g. give an example&quot; /&gt;
+
+&lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;errorInput&quot;&gt;
+    Required input – Error
+    &lt;span class&#x3D;&quot;dc-label__sub dc-label__sub--is-error&quot;&gt;required&lt;/span&gt;
+&lt;/label&gt;
+&lt;input class&#x3D;&quot;dc-input dc-input--is-error&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;errorInput&quot; placeholder&#x3D;&quot;e. g. give an example&quot; /&gt;
+&lt;span class&#x3D;&quot;dc--text-error&quot;&gt;Please don&#x27;t leave this empty.&lt;/span&gt;
+
+&lt;label class&#x3D;&quot;dc-label dc-label--disabled&quot; for&#x3D;&quot;disabledInput&quot;&gt;Disabled input&lt;/label&gt;
+&lt;input class&#x3D;&quot;dc-input dc-input--disabled&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;disabledInput&quot; placeholder&#x3D;&quot;e. g. give an example&quot; disabled/&gt;
+
+&lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;smallInput&quot;&gt;Small input&lt;/label&gt;
+&lt;input class&#x3D;&quot;dc-input dc-input--small&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;smallInput&quot; placeholder&#x3D;&quot;e. g. give an example&quot; /&gt;</code></pre>
+</div>
         </div>
         <div class="f-item-group" id="forms.textarea">
             <div class="f-item-heading-group" data-f-toggle="labels">
@@ -856,29 +892,30 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Textarea</h3>
             </div>
-            
-            <div class="f-item-preview">
-            	<label class="dc-label" for="textArea">Text area</label>
-            <textarea class="dc-textarea" name="textArea" id="" cols="30" rows="5"></textarea>
-            
-            <label class="dc-label" for="errorTextArea">
-                Required text area – Error
-                <span class="dc-label__sub dc-label__sub--is-error">required</span>
-            </label>
-            <span class="dc--text-error">Please don't leave this empty.</span>
-            <textarea class="dc-textarea dc-textarea--is-error" name="errorTextArea" id="" cols="30" rows="3"></textarea>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;textArea&quot;&gt;Text area&lt;/label&gt;
-            &lt;textarea class&#x3D;&quot;dc-textarea&quot; name&#x3D;&quot;textArea&quot; id&#x3D;&quot;&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;5&quot;&gt;&lt;/textarea&gt;
-            
-            &lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;errorTextArea&quot;&gt;
-                Required text area – Error
-                &lt;span class&#x3D;&quot;dc-label__sub dc-label__sub--is-error&quot;&gt;required&lt;/span&gt;
-            &lt;/label&gt;
-            &lt;span class&#x3D;&quot;dc--text-error&quot;&gt;Please don&#x27;t leave this empty.&lt;/span&gt;
-            &lt;textarea class&#x3D;&quot;dc-textarea dc-textarea--is-error&quot; name&#x3D;&quot;errorTextArea&quot; id&#x3D;&quot;&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;3&quot;&gt;&lt;/textarea&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+
+<div class="f-item-preview">
+	<label class="dc-label" for="textArea">Text area</label>
+<textarea class="dc-textarea" name="textArea" id="" cols="30" rows="5"></textarea>
+
+<label class="dc-label" for="errorTextArea">
+    Required text area – Error
+    <span class="dc-label__sub dc-label__sub--is-error">required</span>
+</label>
+<span class="dc--text-error">Please don't leave this empty.</span>
+<textarea class="dc-textarea dc-textarea--is-error" name="errorTextArea" id="" cols="30" rows="3"></textarea>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;textArea&quot;&gt;Text area&lt;/label&gt;
+&lt;textarea class&#x3D;&quot;dc-textarea&quot; name&#x3D;&quot;textArea&quot; id&#x3D;&quot;&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;5&quot;&gt;&lt;/textarea&gt;
+
+&lt;label class&#x3D;&quot;dc-label&quot; for&#x3D;&quot;errorTextArea&quot;&gt;
+    Required text area – Error
+    &lt;span class&#x3D;&quot;dc-label__sub dc-label__sub--is-error&quot;&gt;required&lt;/span&gt;
+&lt;/label&gt;
+&lt;span class&#x3D;&quot;dc--text-error&quot;&gt;Please don&#x27;t leave this empty.&lt;/span&gt;
+&lt;textarea class&#x3D;&quot;dc-textarea dc-textarea--is-error&quot; name&#x3D;&quot;errorTextArea&quot; id&#x3D;&quot;&quot; cols&#x3D;&quot;30&quot; rows&#x3D;&quot;3&quot;&gt;&lt;/textarea&gt;</code></pre>
+</div>
         </div>
     </div>
 </div>
@@ -905,92 +942,370 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Icons</h3>
             </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>All Icons are included in one icon font for easy usage. Icons can be made hoverable by using of the <code>dc-icon--interactive</code> class.</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	<div class="sg-icons">
-            	<i class="dc-icon dc-icon--add"><span>add</span></i>
-            	<i class="dc-icon dc-icon--minus"><span>minus</span></i>
-            	<i class="dc-icon dc-icon--arrow-up"><span>arrow-up</span></i>
-            	<i class="dc-icon dc-icon--arrow-right"><span>arrow-right</span></i>
-            	<i class="dc-icon dc-icon--arrow-down"><span>arrow-down</span></i>
-            	<i class="dc-icon dc-icon--arrow-left"><span>arrow-left</span></i>
-            	<i class="dc-icon dc-icon--triangle-up sg-icon--small"><span>triangle-up</span></i>
-            	<i class="dc-icon dc-icon--triangle-down sg-icon--small"><span>triangle-down</span></i>
-            	<i class="dc-icon dc-icon--check"><span>check</span></i>
-            	<i class="dc-icon dc-icon--clear"><span>clear</span></i>
-            	<i class="dc-icon dc-icon--close"><span>close</span></i>
-            	<i class="dc-icon dc-icon--cog"><span>cog</span></i>
-            	<i class="dc-icon dc-icon--drag"><span>drag</span></i>
-            	<i class="dc-icon dc-icon--eye"><span>eye</span></i>
-            	<i class="dc-icon dc-icon--history"><span>history</span></i>
-            	<i class="dc-icon dc-icon--info-circle"><span>info-circle</span></i>
-            	<i class="dc-icon dc-icon--lock"><span>lock</span></i>
-            	<i class="dc-icon dc-icon--more"><span>more</span></i>
-            	<i class="dc-icon dc-icon--undo"><span>undo</span></i>
-            	<i class="dc-icon dc-icon--redo"><span>redo</span></i>
-            	<i class="dc-icon dc-icon--contact dc-icon--interactive"><span>contact</span></i>
-            	<i class="dc-icon dc-icon--menu dc-icon--interactive"><span>menu</span></i>
-            	<i class="dc-icon dc-icon--help dc-icon--interactive"><span>help</span></i>
-            	<i class="dc-icon dc-icon--user dc-icon--interactive"><span>user</span></i>
-            	<i class="dc-icon dc-icon--play dc-icon--interactive"><span>play</span></i>
-            	<i class="dc-icon dc-icon--search dc-icon--interactive"><span>search</span></i>
-            	<i class="dc-icon dc-icon--trash dc-icon--interactive"><span>trash</span></i>
-            	<i class="dc-icon dc-icon--error dc-icon--interactive"><span>error</span></i>
-            	<i class="dc-icon dc-icon--info dc-icon--interactive"><span>info</span></i>
-            	<i class="dc-icon dc-icon--success dc-icon--interactive"><span>success</span></i>
-            	<i class="dc-icon dc-icon--warning dc-icon--interactive"><span>warning</span></i>
-            	<i class="dc-icon dc-icon--users"><span>users</span></i>
-            	<i class="dc-icon dc-icon--bar-chart"><span>bar-chart</span></i>
-            	<i class="dc-icon dc-icon--line-chart"><span>line-chart</span></i>
-            	<i class="dc-icon dc-icon--pointer"><span>pointer</span></i>
-            	<i class="dc-icon dc-icon--link"><span>link</span></i>
-            </div>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;sg-icons&quot;&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--add&quot;&gt;&lt;span&gt;add&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--minus&quot;&gt;&lt;span&gt;minus&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--arrow-up&quot;&gt;&lt;span&gt;arrow-up&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--arrow-right&quot;&gt;&lt;span&gt;arrow-right&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--arrow-down&quot;&gt;&lt;span&gt;arrow-down&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--arrow-left&quot;&gt;&lt;span&gt;arrow-left&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--triangle-up sg-icon--small&quot;&gt;&lt;span&gt;triangle-up&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--triangle-down sg-icon--small&quot;&gt;&lt;span&gt;triangle-down&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--check&quot;&gt;&lt;span&gt;check&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--clear&quot;&gt;&lt;span&gt;clear&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--close&quot;&gt;&lt;span&gt;close&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--cog&quot;&gt;&lt;span&gt;cog&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--drag&quot;&gt;&lt;span&gt;drag&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--eye&quot;&gt;&lt;span&gt;eye&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--history&quot;&gt;&lt;span&gt;history&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--info-circle&quot;&gt;&lt;span&gt;info-circle&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--lock&quot;&gt;&lt;span&gt;lock&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--more&quot;&gt;&lt;span&gt;more&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--undo&quot;&gt;&lt;span&gt;undo&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--redo&quot;&gt;&lt;span&gt;redo&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--contact dc-icon--interactive&quot;&gt;&lt;span&gt;contact&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--menu dc-icon--interactive&quot;&gt;&lt;span&gt;menu&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--help dc-icon--interactive&quot;&gt;&lt;span&gt;help&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--user dc-icon--interactive&quot;&gt;&lt;span&gt;user&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--play dc-icon--interactive&quot;&gt;&lt;span&gt;play&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--search dc-icon--interactive&quot;&gt;&lt;span&gt;search&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--trash dc-icon--interactive&quot;&gt;&lt;span&gt;trash&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--error dc-icon--interactive&quot;&gt;&lt;span&gt;error&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--info dc-icon--interactive&quot;&gt;&lt;span&gt;info&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--success dc-icon--interactive&quot;&gt;&lt;span&gt;success&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--warning dc-icon--interactive&quot;&gt;&lt;span&gt;warning&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--users&quot;&gt;&lt;span&gt;users&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--bar-chart&quot;&gt;&lt;span&gt;bar-chart&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--line-chart&quot;&gt;&lt;span&gt;line-chart&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--pointer&quot;&gt;&lt;span&gt;pointer&lt;/span&gt;&lt;/i&gt;
-            	&lt;i class&#x3D;&quot;dc-icon dc-icon--link&quot;&gt;&lt;span&gt;link&lt;/span&gt;&lt;/i&gt;
-            &lt;/div&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>All Icons are included in one icon font for easy usage.
+Apply classes <code>dc-icon</code> and <code>dc-icon--[icon-name]</code> to use. Adjust the font size to make icons bigger or smaller.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-row dc-block-grid--small-3 dc-block-grid--medium-4 dc-block-grid--large-6">
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--add"></i><span>add</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--arrow-down"></i><span>arrow-down</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--arrow-left"></i><span>arrow-left</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--arrow-right"></i><span>arrow-right</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--arrow-up"></i><span>arrow-up</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--bar-chart"></i><span>bar-chart</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--check"></i><span>check</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--clear"></i><span>clear</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--close"></i><span>close</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--cog"></i><span>cog</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--contact"></i><span>contact</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--drag"></i><span>drag</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--error"></i><span>error</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--eye"></i><span>eye</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--help"></i><span>help</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--history"></i><span>history</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--info"></i><span>info</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--info-circle"></i><span>info-circle</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--line-chart"></i><span>line-chart</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--link"></i><span>link</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--lock"></i><span>lock</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--menu"></i><span>menu</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--minus"></i><span>minus</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--more"></i><span>more</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--open-circle"></i><span>open-circle</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--pencil"></i><span>pencil</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--play"></i><span>play</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--pointer"></i><span>pointer</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--redo"></i><span>redo</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--search"></i><span>search</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--spinner"></i><span>spinner</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--success"></i><span>success</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--trash"></i><span>trash</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--triangle-down"></i><span>triangle-down</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--triangle-up"></i><span>triangle-up</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--undo"></i><span>undo</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--user"></i><span>user</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--users"></i><span>users</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--warning"></i><span>warning</span>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row dc-block-grid--small-3 dc-block-grid--medium-4 dc-block-grid--large-6&quot;&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--add&quot;&gt;&lt;/i&gt;&lt;span&gt;add&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--arrow-down&quot;&gt;&lt;/i&gt;&lt;span&gt;arrow-down&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--arrow-left&quot;&gt;&lt;/i&gt;&lt;span&gt;arrow-left&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--arrow-right&quot;&gt;&lt;/i&gt;&lt;span&gt;arrow-right&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--arrow-up&quot;&gt;&lt;/i&gt;&lt;span&gt;arrow-up&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--bar-chart&quot;&gt;&lt;/i&gt;&lt;span&gt;bar-chart&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--check&quot;&gt;&lt;/i&gt;&lt;span&gt;check&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--clear&quot;&gt;&lt;/i&gt;&lt;span&gt;clear&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--close&quot;&gt;&lt;/i&gt;&lt;span&gt;close&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--cog&quot;&gt;&lt;/i&gt;&lt;span&gt;cog&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--contact&quot;&gt;&lt;/i&gt;&lt;span&gt;contact&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--drag&quot;&gt;&lt;/i&gt;&lt;span&gt;drag&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--error&quot;&gt;&lt;/i&gt;&lt;span&gt;error&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--eye&quot;&gt;&lt;/i&gt;&lt;span&gt;eye&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--help&quot;&gt;&lt;/i&gt;&lt;span&gt;help&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--history&quot;&gt;&lt;/i&gt;&lt;span&gt;history&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--info&quot;&gt;&lt;/i&gt;&lt;span&gt;info&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--info-circle&quot;&gt;&lt;/i&gt;&lt;span&gt;info-circle&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--line-chart&quot;&gt;&lt;/i&gt;&lt;span&gt;line-chart&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--link&quot;&gt;&lt;/i&gt;&lt;span&gt;link&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--lock&quot;&gt;&lt;/i&gt;&lt;span&gt;lock&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--menu&quot;&gt;&lt;/i&gt;&lt;span&gt;menu&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--minus&quot;&gt;&lt;/i&gt;&lt;span&gt;minus&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--more&quot;&gt;&lt;/i&gt;&lt;span&gt;more&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--open-circle&quot;&gt;&lt;/i&gt;&lt;span&gt;open-circle&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--pencil&quot;&gt;&lt;/i&gt;&lt;span&gt;pencil&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--play&quot;&gt;&lt;/i&gt;&lt;span&gt;play&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--pointer&quot;&gt;&lt;/i&gt;&lt;span&gt;pointer&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--redo&quot;&gt;&lt;/i&gt;&lt;span&gt;redo&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--search&quot;&gt;&lt;/i&gt;&lt;span&gt;search&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--spinner&quot;&gt;&lt;/i&gt;&lt;span&gt;spinner&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--success&quot;&gt;&lt;/i&gt;&lt;span&gt;success&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--trash&quot;&gt;&lt;/i&gt;&lt;span&gt;trash&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--triangle-down&quot;&gt;&lt;/i&gt;&lt;span&gt;triangle-down&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--triangle-up&quot;&gt;&lt;/i&gt;&lt;span&gt;triangle-up&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--undo&quot;&gt;&lt;/i&gt;&lt;span&gt;undo&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--user&quot;&gt;&lt;/i&gt;&lt;span&gt;user&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--users&quot;&gt;&lt;/i&gt;&lt;span&gt;users&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--warning&quot;&gt;&lt;/i&gt;&lt;span&gt;warning&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
         </div>
-        <div class="f-item-group" id="icons.02-changing-the-font-location">
+        <div class="f-item-group" id="icons.02-interactive-icons">
+            <div class="f-item-heading-group" data-f-toggle="labels">
+                <div class="f-item-controls">
+                	<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+                		<svg class="dc-svg">
+                			<use xlink:href="#f-icon-notes" />
+                		</svg>
+                	</span>
+                	<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+                		<svg class="dc-svg">
+                			<use xlink:href="#f-icon-code" />
+                		</svg>
+                	</span>
+                </div>
+                <h3 class="dc-h3 f-item-heading">Interactive Icons</h3>
+            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>Any of the icons can be made interactive (hovarable) by adding <code>dc-icon--interactive</code> modifier class to any icon.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-row dc-block-grid--small-3 dc-block-grid--medium-4 dc-block-grid--large-6">
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--add dc-icon--interactive"></i><span>add</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--link dc-icon--interactive"></i><span>link</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--pencil dc-icon--interactive"></i><span>pencil</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--trash dc-icon--interactive"></i><span>trash</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--user dc-icon--interactive"></i><span>user</span>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row dc-block-grid--small-3 dc-block-grid--medium-4 dc-block-grid--large-6&quot;&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--add dc-icon--interactive&quot;&gt;&lt;/i&gt;&lt;span&gt;add&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--link dc-icon--interactive&quot;&gt;&lt;/i&gt;&lt;span&gt;link&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--pencil dc-icon--interactive&quot;&gt;&lt;/i&gt;&lt;span&gt;pencil&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--trash dc-icon--interactive&quot;&gt;&lt;/i&gt;&lt;span&gt;trash&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--user dc-icon--interactive&quot;&gt;&lt;/i&gt;&lt;span&gt;user&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+        </div>
+        <div class="f-item-group" id="icons.03-spinning-icons">
+            <div class="f-item-heading-group" data-f-toggle="labels">
+                <div class="f-item-controls">
+                	<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+                		<svg class="dc-svg">
+                			<use xlink:href="#f-icon-notes" />
+                		</svg>
+                	</span>
+                	<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+                		<svg class="dc-svg">
+                			<use xlink:href="#f-icon-code" />
+                		</svg>
+                	</span>
+                </div>
+                <h3 class="dc-h3 f-item-heading">Spinning Icons</h3>
+            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>You can add <code>dc-icon--spin</code> modifier class to any icon to spin (rotate) it in position.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="dc-row dc-block-grid--small-3 dc-block-grid--medium-4 dc-block-grid--large-6">
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--add dc-icon--spin"></i><span>add</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--cog dc-icon--spin"></i><span>cog</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--open-circle dc-icon--spin"></i><span>open-circle</span>
+	</div>
+	<div class="sg-icon dc-column">
+		<i class="dc-icon dc-icon--spinner dc-icon--spin"></i><span>spinner</span>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row dc-block-grid--small-3 dc-block-grid--medium-4 dc-block-grid--large-6&quot;&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--add dc-icon--spin&quot;&gt;&lt;/i&gt;&lt;span&gt;add&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--cog dc-icon--spin&quot;&gt;&lt;/i&gt;&lt;span&gt;cog&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--open-circle dc-icon--spin&quot;&gt;&lt;/i&gt;&lt;span&gt;open-circle&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-icon dc-column&quot;&gt;
+		&lt;i class&#x3D;&quot;dc-icon dc-icon--spinner dc-icon--spin&quot;&gt;&lt;/i&gt;&lt;span&gt;spinner&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+        </div>
+        <div class="f-item-group" id="icons.04-changing-the-font-location">
             <div class="f-item-heading-group" data-f-toggle="labels">
                 <div class="f-item-controls">
                 	<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
@@ -1006,24 +1321,25 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Changing The Font Location</h3>
             </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>Dress-code assumes icon font files will be located in the <code>../fonts/</code> directory, relative to the compiled CSS files.
-            Moving or renaming those font files means updating the CSS in one of two ways:</p>
-            <ul>
-            <li>Change the <code>$dc-font-path</code> variable in the source SASS files.</li>
-            <li>Change the <code>url()</code> path in the compiled CSS.</li>
-            </ul>
-            <p>Use whatever option best suits your specific development setup.</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup"></code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>Dress-code assumes icon font files will be located in the <code>../fonts/</code> directory, relative to the compiled CSS files.
+Moving or renaming those font files means updating the CSS in one of two ways:</p>
+<ul>
+<li>Change the <code>$dc-font-path</code> variable in the source SASS files.</li>
+<li>Change the <code>url()</code> path in the compiled CSS.</li>
+</ul>
+<p>Use whatever option best suits your specific development setup.</p>
+
+</div>
+<div class="f-item-preview">
+	
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup"></code></pre>
+</div>
         </div>
-        <div class="f-item-group" id="icons.03-svg-icons">
+        <div class="f-item-group" id="icons.05-svg-icons">
             <div class="f-item-heading-group" data-f-toggle="labels">
                 <div class="f-item-controls">
                 	<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
@@ -1039,23 +1355,24 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Svg Icons</h3>
             </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>Together with the icon font, Dress Code distribute also the corresponding svg files. Those svg files are used in some components.</p>
-            <p>Dress-code assumes that the svg files will be located in the <code>../img/svg-icons/</code> directory, relative to the compiled CSS files.</p>
-            <p>Moving or renaming the image folder means updating the CSS in one of two ways:</p>
-            <ul>
-            <li>Change the <code>$dc-image-path</code> variable in the source SASS files.</li>
-            <li>Change the <code>url()</code> path in the compiled CSS.</li>
-            </ul>
-            <p>Use whatever option best suits your specific development setup.</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup"></code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>Together with the icon font, Dress Code distribute also the corresponding svg files. Those svg files are used in some components.</p>
+<p>Dress-code assumes that the svg files will be located in the <code>../img/svg-icons/</code> directory, relative to the compiled CSS files.</p>
+<p>Moving or renaming the image folder means updating the CSS in one of two ways:</p>
+<ul>
+<li>Change the <code>$dc-image-path</code> variable in the source SASS files.</li>
+<li>Change the <code>url()</code> path in the compiled CSS.</li>
+</ul>
+<p>Use whatever option best suits your specific development setup.</p>
+
+</div>
+<div class="f-item-preview">
+	
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup"></code></pre>
+</div>
         </div>
     </div>
 </div>
@@ -1074,29 +1391,30 @@
             </div>
             <h2 class="dc-h2 f-item-heading">Link</h2>
         </div>
-        
-        <div class="f-item-preview">
-        	<a href class="dc-link">This link isn't pointing anywhere</a>
-        
-        <br>
-        
-        <a href class="dc-link dc-link--destroy">This link isn't pointing anywhere and destroy</a>
-        
-        <br>
-        
-        <a href class="dc-link dc-link--disabled">This link isn't pointing anywhere and is disabled</a>
-        </div>
-        <div class="f-item-code f-item-hidden" data-f-toggle="code">
-        	<pre class="dc-pre"><code class="language-markup">&lt;a href class&#x3D;&quot;dc-link&quot;&gt;This link isn&#x27;t pointing anywhere&lt;/a&gt;
-        
-        &lt;br&gt;
-        
-        &lt;a href class&#x3D;&quot;dc-link dc-link--destroy&quot;&gt;This link isn&#x27;t pointing anywhere and destroy&lt;/a&gt;
-        
-        &lt;br&gt;
-        
-        &lt;a href class&#x3D;&quot;dc-link dc-link--disabled&quot;&gt;This link isn&#x27;t pointing anywhere and is disabled&lt;/a&gt;</code></pre>
-        </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+
+<div class="f-item-preview">
+	<a href class="dc-link">This link isn't pointing anywhere</a>
+
+<br>
+
+<a href class="dc-link dc-link--destroy">This link isn't pointing anywhere and destroy</a>
+
+<br>
+
+<a href class="dc-link dc-link--disabled">This link isn't pointing anywhere and is disabled</a>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;a href class&#x3D;&quot;dc-link&quot;&gt;This link isn&#x27;t pointing anywhere&lt;/a&gt;
+
+&lt;br&gt;
+
+&lt;a href class&#x3D;&quot;dc-link dc-link--destroy&quot;&gt;This link isn&#x27;t pointing anywhere and destroy&lt;/a&gt;
+
+&lt;br&gt;
+
+&lt;a href class&#x3D;&quot;dc-link dc-link--disabled&quot;&gt;This link isn&#x27;t pointing anywhere and is disabled&lt;/a&gt;</code></pre>
+</div>
     </div>
 </div>
 
@@ -1118,21 +1436,22 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">List</h3>
             </div>
-            
-            <div class="f-item-preview">
-            	<ul class="dc-list">
-            	<li>First list element</li>
-            	<li>Second list element</li>
-            	<li>Third list element</li>
-            </ul>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;ul class&#x3D;&quot;dc-list&quot;&gt;
-            	&lt;li&gt;First list element&lt;/li&gt;
-            	&lt;li&gt;Second list element&lt;/li&gt;
-            	&lt;li&gt;Third list element&lt;/li&gt;
-            &lt;/ul&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+
+<div class="f-item-preview">
+	<ul class="dc-list">
+	<li>First list element</li>
+	<li>Second list element</li>
+	<li>Third list element</li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;ul class&#x3D;&quot;dc-list&quot;&gt;
+	&lt;li&gt;First list element&lt;/li&gt;
+	&lt;li&gt;Second list element&lt;/li&gt;
+	&lt;li&gt;Third list element&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
         </div>
         <div class="f-item-group" id="lists.02-unordered">
             <div class="f-item-heading-group" data-f-toggle="labels">
@@ -1146,21 +1465,22 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Unordered</h3>
             </div>
-            
-            <div class="f-item-preview">
-            	<ul class="dc-list dc-list--is-unordered">
-            	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            	<li>Aliquam tincidunt mauris eu risus.</li>
-            	<li>Vestibulum auctor dapibus neque.</li>
-            </ul>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;ul class&#x3D;&quot;dc-list dc-list--is-unordered&quot;&gt;
-            	&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
-            	&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
-            	&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
-            &lt;/ul&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+
+<div class="f-item-preview">
+	<ul class="dc-list dc-list--is-unordered">
+	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+	<li>Aliquam tincidunt mauris eu risus.</li>
+	<li>Vestibulum auctor dapibus neque.</li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;ul class&#x3D;&quot;dc-list dc-list--is-unordered&quot;&gt;
+	&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+	&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+	&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
         </div>
         <div class="f-item-group" id="lists.03-ordered">
             <div class="f-item-heading-group" data-f-toggle="labels">
@@ -1174,21 +1494,22 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Ordered</h3>
             </div>
-            
-            <div class="f-item-preview">
-            	<ol class="dc-list dc-list--is-ordered">
-            	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            	<li>Aliquam tincidunt mauris eu risus.</li>
-            	<li>Vestibulum auctor dapibus neque.</li>
-            </ol>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;ol class&#x3D;&quot;dc-list dc-list--is-ordered&quot;&gt;
-            	&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
-            	&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
-            	&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
-            &lt;/ol&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+
+<div class="f-item-preview">
+	<ol class="dc-list dc-list--is-ordered">
+	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+	<li>Aliquam tincidunt mauris eu risus.</li>
+	<li>Vestibulum auctor dapibus neque.</li>
+</ol>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;ol class&#x3D;&quot;dc-list dc-list--is-ordered&quot;&gt;
+	&lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&lt;/li&gt;
+	&lt;li&gt;Aliquam tincidunt mauris eu risus.&lt;/li&gt;
+	&lt;li&gt;Vestibulum auctor dapibus neque.&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+</div>
         </div>
         <div class="f-item-group" id="lists.04-scrollable">
             <div class="f-item-heading-group" data-f-toggle="labels">
@@ -1202,179 +1523,180 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Scrollable</h3>
             </div>
-            
-            <div class="f-item-preview">
-            	<label class="dc-label">Simple</label>
-            <ul class="dc-list dc-list--is-scrollable">
-            	<li class="dc-list__item">First list element</li>
-            	<li class="dc-list__item">Second list element</li>
-            	<li class="dc-list__item">Third list element</li>
-            	<li class="dc-list__item">Fourth list element</li>
-            	<li class="dc-list__item">Fifth list element</li>
-            	<li class="dc-list__item">Sixth list element</li>
-            	<li class="dc-list__item">Seventh list element</li>
-            	<li class="dc-list__item">Eighth list element</li>
-            	<li class="dc-list__item">Ninth list element</li>
-            	<li class="dc-list__item">Tenth list element</li>
-            	<li class="dc-list__item">Eleventh list element</li>
-            	<li class="dc-list__item">Twelfth list element</li>
-            </ul>
-            
-            <label class="dc-label">Interactive</label>
-            <ul class="dc-list dc-list--is-scrollable">
-            	<li class="dc-list__item dc-list__item--is-interactive">First list element</li>
-            	<li class="dc-list__item dc-list__item--is-interactive">Second list element</li>
-            	<li class="dc-list__item dc-list__item--is-interactive">Third list element</li>
-            </ul>
-            
-            
-            <label class="dc-label">With Image</label>
-            <ul class="dc-list dc-list--is-scrollable">
-            	<li class="dc-list__item">
-            		<div class="dc-list__inner">
-            			<img class="dc-list__img" src="/dress-code/assets/img/scrollable-list-img-1.png" alt="product image">
-            			<div class="dc-list__body dc--island-50">
-            				<div class="dc-list__title dc--text-truncate">TECH FLEECE 6 - Trainings- / Fitnesshose - gray</div>
-            				<div class="dc--text-less-important dc--text-small dc--text-truncate">N1242B0F8-Q11</div>
-            				<div class="dc--text-less-important dc--text-success dc--text-small dc--text-truncate">Available</div>
-            			</div>
-            			<a href class="dc-list__action dc-link">
-            			<i class="dc-icon dc-icon--trash"></i>
-            		</a>
-            		</div>
-            	</li>
-            	<li class="dc-list__item">
-            		<div class="dc-list__inner">
-            			<img class="dc-list__img" src="/dress-code/assets/img/scrollable-list-img-2.png" alt="product image">
-            			<div class="dc-list__body dc--island-50">
-            				<div class="dc-list__title dc--text-truncate">FLEX TRAINER 6 - Trainings- / Fitnessschuh - black/white</div>
-            				<div class="dc--text-less-important dc--text-small dc--text-truncate">N7894A0F8-Q11</div>
-            				<div class="dc--text-less-important dc--text-small dc--text-truncate">Not in shop</div>
-            			</div>
-            			<a href class="dc-list__action dc-link">
-            				<i class="dc-icon dc-icon--trash"></i>
-            			</a>
-            		</div>
-            	</li>
-            	<li class="dc-list__item">
-            		<div class="dc-list__inner">
-            			<img class="dc-list__img" src="/dress-code/assets/img/scrollable-list-img-3.png" alt="product image">
-            			<div class="dc-list__body dc--island-50">
-            				<div class="dc-list__title dc--text-truncate">FLEX TRAINER 5 - Trainings- / Fitnessschuh - blue</div>
-            				<div class="dc--text-less-important dc--text-small dc--text-truncate">N1523C0F8-Q11</div>
-            				<div class="dc--text-less-important dc--text-error dc--text-small dc--text-truncate">Out of stock</div>
-            			</div>
-            			<a href class="dc-list__action dc-link">
-            				<i class="dc-icon dc-icon--trash"></i>
-            			</a>
-            		</div>
-            	</li>
-            	<li class="dc-list__item">
-            		<div class="dc-list__inner">
-            			<svg class="dc-list__img" width="44" height="64" viewBox="0 0 44 64" xmlns="http://www.w3.org/2000/svg">
-            			    <g fill="none" fill-rule="evenodd">
-            			        <path fill="#EDECED" d="M0 0h44v64H0z"/>
-            			        <path d="M22 35.057c-1.052 1.01-2.063 1.936-3.035 2.778-1.435 1.244-2.905 2.474-4.408 3.69L12.5 39.467c1.2-1.52 2.425-3 3.68-4.447.844-.973 1.765-1.98 2.763-3.02-1.01-1.052-1.936-2.063-2.778-3.035-1.244-1.435-2.474-2.905-3.69-4.408l2.058-2.058c1.52 1.2 3 2.425 4.447 3.68.973.844 1.98 1.765 3.02 2.763 1.052-1.01 2.063-1.936 3.035-2.778 1.435-1.244 2.905-2.474 4.408-3.69l2.058 2.058c-1.2 1.52-2.425 3-3.68 4.447-.844.973-1.765 1.98-2.763 3.02 1.01 1.052 1.936 2.063 2.778 3.035 1.244 1.435 2.474 2.905 3.69 4.408L29.467 41.5c-1.52-1.2-3-2.425-4.447-3.68-.973-.844-1.98-1.765-3.02-2.763zm0-3.042L21.985 32l.015-.015.015.015-.015.015z" fill="#FFF"/>
-            			    </g>
-            			</svg>
-            			<div class="dc-list__body dc--island-50">
-            				<div class="dc-list__title dc--text-truncate">N4956A0F8-Q11</div>
-            				<div class="dc--text-less-important dc--text-small dc--text-truncate"></div>
-            				<div class="dc--text-less-important dc--text-error dc--text-small dc--text-truncate">Unknown article</div>
-            			</div>
-            			<a href class="dc-list__action dc-link">
-            				<i class="dc-icon dc-icon--trash"></i>
-            			</a>
-            		</div>
-            	</li>
-            </ul>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;label class&#x3D;&quot;dc-label&quot;&gt;Simple&lt;/label&gt;
-            &lt;ul class&#x3D;&quot;dc-list dc-list--is-scrollable&quot;&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;First list element&lt;/li&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Second list element&lt;/li&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Third list element&lt;/li&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Fourth list element&lt;/li&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Fifth list element&lt;/li&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Sixth list element&lt;/li&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Seventh list element&lt;/li&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Eighth list element&lt;/li&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Ninth list element&lt;/li&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Tenth list element&lt;/li&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Eleventh list element&lt;/li&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Twelfth list element&lt;/li&gt;
-            &lt;/ul&gt;
-            
-            &lt;label class&#x3D;&quot;dc-label&quot;&gt;Interactive&lt;/label&gt;
-            &lt;ul class&#x3D;&quot;dc-list dc-list--is-scrollable&quot;&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item dc-list__item--is-interactive&quot;&gt;First list element&lt;/li&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item dc-list__item--is-interactive&quot;&gt;Second list element&lt;/li&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item dc-list__item--is-interactive&quot;&gt;Third list element&lt;/li&gt;
-            &lt;/ul&gt;
-            
-            
-            &lt;label class&#x3D;&quot;dc-label&quot;&gt;With Image&lt;/label&gt;
-            &lt;ul class&#x3D;&quot;dc-list dc-list--is-scrollable&quot;&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-list__inner&quot;&gt;
-            			&lt;img class&#x3D;&quot;dc-list__img&quot; src&#x3D;&quot;/dress-code/assets/img/scrollable-list-img-1.png&quot; alt&#x3D;&quot;product image&quot;&gt;
-            			&lt;div class&#x3D;&quot;dc-list__body dc--island-50&quot;&gt;
-            				&lt;div class&#x3D;&quot;dc-list__title dc--text-truncate&quot;&gt;TECH FLEECE 6 - Trainings- / Fitnesshose - gray&lt;/div&gt;
-            				&lt;div class&#x3D;&quot;dc--text-less-important dc--text-small dc--text-truncate&quot;&gt;N1242B0F8-Q11&lt;/div&gt;
-            				&lt;div class&#x3D;&quot;dc--text-less-important dc--text-success dc--text-small dc--text-truncate&quot;&gt;Available&lt;/div&gt;
-            			&lt;/div&gt;
-            			&lt;a href class&#x3D;&quot;dc-list__action dc-link&quot;&gt;
-            			&lt;i class&#x3D;&quot;dc-icon dc-icon--trash&quot;&gt;&lt;/i&gt;
-            		&lt;/a&gt;
-            		&lt;/div&gt;
-            	&lt;/li&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-list__inner&quot;&gt;
-            			&lt;img class&#x3D;&quot;dc-list__img&quot; src&#x3D;&quot;/dress-code/assets/img/scrollable-list-img-2.png&quot; alt&#x3D;&quot;product image&quot;&gt;
-            			&lt;div class&#x3D;&quot;dc-list__body dc--island-50&quot;&gt;
-            				&lt;div class&#x3D;&quot;dc-list__title dc--text-truncate&quot;&gt;FLEX TRAINER 6 - Trainings- / Fitnessschuh - black/white&lt;/div&gt;
-            				&lt;div class&#x3D;&quot;dc--text-less-important dc--text-small dc--text-truncate&quot;&gt;N7894A0F8-Q11&lt;/div&gt;
-            				&lt;div class&#x3D;&quot;dc--text-less-important dc--text-small dc--text-truncate&quot;&gt;Not in shop&lt;/div&gt;
-            			&lt;/div&gt;
-            			&lt;a href class&#x3D;&quot;dc-list__action dc-link&quot;&gt;
-            				&lt;i class&#x3D;&quot;dc-icon dc-icon--trash&quot;&gt;&lt;/i&gt;
-            			&lt;/a&gt;
-            		&lt;/div&gt;
-            	&lt;/li&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-list__inner&quot;&gt;
-            			&lt;img class&#x3D;&quot;dc-list__img&quot; src&#x3D;&quot;/dress-code/assets/img/scrollable-list-img-3.png&quot; alt&#x3D;&quot;product image&quot;&gt;
-            			&lt;div class&#x3D;&quot;dc-list__body dc--island-50&quot;&gt;
-            				&lt;div class&#x3D;&quot;dc-list__title dc--text-truncate&quot;&gt;FLEX TRAINER 5 - Trainings- / Fitnessschuh - blue&lt;/div&gt;
-            				&lt;div class&#x3D;&quot;dc--text-less-important dc--text-small dc--text-truncate&quot;&gt;N1523C0F8-Q11&lt;/div&gt;
-            				&lt;div class&#x3D;&quot;dc--text-less-important dc--text-error dc--text-small dc--text-truncate&quot;&gt;Out of stock&lt;/div&gt;
-            			&lt;/div&gt;
-            			&lt;a href class&#x3D;&quot;dc-list__action dc-link&quot;&gt;
-            				&lt;i class&#x3D;&quot;dc-icon dc-icon--trash&quot;&gt;&lt;/i&gt;
-            			&lt;/a&gt;
-            		&lt;/div&gt;
-            	&lt;/li&gt;
-            	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;
-            		&lt;div class&#x3D;&quot;dc-list__inner&quot;&gt;
-            			&lt;svg class&#x3D;&quot;dc-list__img&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;64&quot; viewBox&#x3D;&quot;0 0 44 64&quot; xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot;&gt;
-            			    &lt;g fill&#x3D;&quot;none&quot; fill-rule&#x3D;&quot;evenodd&quot;&gt;
-            			        &lt;path fill&#x3D;&quot;#EDECED&quot; d&#x3D;&quot;M0 0h44v64H0z&quot;/&gt;
-            			        &lt;path d&#x3D;&quot;M22 35.057c-1.052 1.01-2.063 1.936-3.035 2.778-1.435 1.244-2.905 2.474-4.408 3.69L12.5 39.467c1.2-1.52 2.425-3 3.68-4.447.844-.973 1.765-1.98 2.763-3.02-1.01-1.052-1.936-2.063-2.778-3.035-1.244-1.435-2.474-2.905-3.69-4.408l2.058-2.058c1.52 1.2 3 2.425 4.447 3.68.973.844 1.98 1.765 3.02 2.763 1.052-1.01 2.063-1.936 3.035-2.778 1.435-1.244 2.905-2.474 4.408-3.69l2.058 2.058c-1.2 1.52-2.425 3-3.68 4.447-.844.973-1.765 1.98-2.763 3.02 1.01 1.052 1.936 2.063 2.778 3.035 1.244 1.435 2.474 2.905 3.69 4.408L29.467 41.5c-1.52-1.2-3-2.425-4.447-3.68-.973-.844-1.98-1.765-3.02-2.763zm0-3.042L21.985 32l.015-.015.015.015-.015.015z&quot; fill&#x3D;&quot;#FFF&quot;/&gt;
-            			    &lt;/g&gt;
-            			&lt;/svg&gt;
-            			&lt;div class&#x3D;&quot;dc-list__body dc--island-50&quot;&gt;
-            				&lt;div class&#x3D;&quot;dc-list__title dc--text-truncate&quot;&gt;N4956A0F8-Q11&lt;/div&gt;
-            				&lt;div class&#x3D;&quot;dc--text-less-important dc--text-small dc--text-truncate&quot;&gt;&lt;/div&gt;
-            				&lt;div class&#x3D;&quot;dc--text-less-important dc--text-error dc--text-small dc--text-truncate&quot;&gt;Unknown article&lt;/div&gt;
-            			&lt;/div&gt;
-            			&lt;a href class&#x3D;&quot;dc-list__action dc-link&quot;&gt;
-            				&lt;i class&#x3D;&quot;dc-icon dc-icon--trash&quot;&gt;&lt;/i&gt;
-            			&lt;/a&gt;
-            		&lt;/div&gt;
-            	&lt;/li&gt;
-            &lt;/ul&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+
+<div class="f-item-preview">
+	<label class="dc-label">Simple</label>
+<ul class="dc-list dc-list--is-scrollable">
+	<li class="dc-list__item">First list element</li>
+	<li class="dc-list__item">Second list element</li>
+	<li class="dc-list__item">Third list element</li>
+	<li class="dc-list__item">Fourth list element</li>
+	<li class="dc-list__item">Fifth list element</li>
+	<li class="dc-list__item">Sixth list element</li>
+	<li class="dc-list__item">Seventh list element</li>
+	<li class="dc-list__item">Eighth list element</li>
+	<li class="dc-list__item">Ninth list element</li>
+	<li class="dc-list__item">Tenth list element</li>
+	<li class="dc-list__item">Eleventh list element</li>
+	<li class="dc-list__item">Twelfth list element</li>
+</ul>
+
+<label class="dc-label">Interactive</label>
+<ul class="dc-list dc-list--is-scrollable">
+	<li class="dc-list__item dc-list__item--is-interactive">First list element</li>
+	<li class="dc-list__item dc-list__item--is-interactive">Second list element</li>
+	<li class="dc-list__item dc-list__item--is-interactive">Third list element</li>
+</ul>
+
+
+<label class="dc-label">With Image</label>
+<ul class="dc-list dc-list--is-scrollable">
+	<li class="dc-list__item">
+		<div class="dc-list__inner">
+			<img class="dc-list__img" src="/dress-code/assets/img/scrollable-list-img-1.png" alt="product image">
+			<div class="dc-list__body dc--island-50">
+				<div class="dc-list__title dc--text-truncate">TECH FLEECE 6 - Trainings- / Fitnesshose - gray</div>
+				<div class="dc--text-less-important dc--text-small dc--text-truncate">N1242B0F8-Q11</div>
+				<div class="dc--text-less-important dc--text-success dc--text-small dc--text-truncate">Available</div>
+			</div>
+			<a href class="dc-list__action dc-link">
+			<i class="dc-icon dc-icon--trash"></i>
+		</a>
+		</div>
+	</li>
+	<li class="dc-list__item">
+		<div class="dc-list__inner">
+			<img class="dc-list__img" src="/dress-code/assets/img/scrollable-list-img-2.png" alt="product image">
+			<div class="dc-list__body dc--island-50">
+				<div class="dc-list__title dc--text-truncate">FLEX TRAINER 6 - Trainings- / Fitnessschuh - black/white</div>
+				<div class="dc--text-less-important dc--text-small dc--text-truncate">N7894A0F8-Q11</div>
+				<div class="dc--text-less-important dc--text-small dc--text-truncate">Not in shop</div>
+			</div>
+			<a href class="dc-list__action dc-link">
+				<i class="dc-icon dc-icon--trash"></i>
+			</a>
+		</div>
+	</li>
+	<li class="dc-list__item">
+		<div class="dc-list__inner">
+			<img class="dc-list__img" src="/dress-code/assets/img/scrollable-list-img-3.png" alt="product image">
+			<div class="dc-list__body dc--island-50">
+				<div class="dc-list__title dc--text-truncate">FLEX TRAINER 5 - Trainings- / Fitnessschuh - blue</div>
+				<div class="dc--text-less-important dc--text-small dc--text-truncate">N1523C0F8-Q11</div>
+				<div class="dc--text-less-important dc--text-error dc--text-small dc--text-truncate">Out of stock</div>
+			</div>
+			<a href class="dc-list__action dc-link">
+				<i class="dc-icon dc-icon--trash"></i>
+			</a>
+		</div>
+	</li>
+	<li class="dc-list__item">
+		<div class="dc-list__inner">
+			<svg class="dc-list__img" width="44" height="64" viewBox="0 0 44 64" xmlns="http://www.w3.org/2000/svg">
+			    <g fill="none" fill-rule="evenodd">
+			        <path fill="#EDECED" d="M0 0h44v64H0z"/>
+			        <path d="M22 35.057c-1.052 1.01-2.063 1.936-3.035 2.778-1.435 1.244-2.905 2.474-4.408 3.69L12.5 39.467c1.2-1.52 2.425-3 3.68-4.447.844-.973 1.765-1.98 2.763-3.02-1.01-1.052-1.936-2.063-2.778-3.035-1.244-1.435-2.474-2.905-3.69-4.408l2.058-2.058c1.52 1.2 3 2.425 4.447 3.68.973.844 1.98 1.765 3.02 2.763 1.052-1.01 2.063-1.936 3.035-2.778 1.435-1.244 2.905-2.474 4.408-3.69l2.058 2.058c-1.2 1.52-2.425 3-3.68 4.447-.844.973-1.765 1.98-2.763 3.02 1.01 1.052 1.936 2.063 2.778 3.035 1.244 1.435 2.474 2.905 3.69 4.408L29.467 41.5c-1.52-1.2-3-2.425-4.447-3.68-.973-.844-1.98-1.765-3.02-2.763zm0-3.042L21.985 32l.015-.015.015.015-.015.015z" fill="#FFF"/>
+			    </g>
+			</svg>
+			<div class="dc-list__body dc--island-50">
+				<div class="dc-list__title dc--text-truncate">N4956A0F8-Q11</div>
+				<div class="dc--text-less-important dc--text-small dc--text-truncate"></div>
+				<div class="dc--text-less-important dc--text-error dc--text-small dc--text-truncate">Unknown article</div>
+			</div>
+			<a href class="dc-list__action dc-link">
+				<i class="dc-icon dc-icon--trash"></i>
+			</a>
+		</div>
+	</li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;label class&#x3D;&quot;dc-label&quot;&gt;Simple&lt;/label&gt;
+&lt;ul class&#x3D;&quot;dc-list dc-list--is-scrollable&quot;&gt;
+	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;First list element&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Second list element&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Third list element&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Fourth list element&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Fifth list element&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Sixth list element&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Seventh list element&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Eighth list element&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Ninth list element&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Tenth list element&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Eleventh list element&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;Twelfth list element&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;label class&#x3D;&quot;dc-label&quot;&gt;Interactive&lt;/label&gt;
+&lt;ul class&#x3D;&quot;dc-list dc-list--is-scrollable&quot;&gt;
+	&lt;li class&#x3D;&quot;dc-list__item dc-list__item--is-interactive&quot;&gt;First list element&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-list__item dc-list__item--is-interactive&quot;&gt;Second list element&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-list__item dc-list__item--is-interactive&quot;&gt;Third list element&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;label class&#x3D;&quot;dc-label&quot;&gt;With Image&lt;/label&gt;
+&lt;ul class&#x3D;&quot;dc-list dc-list--is-scrollable&quot;&gt;
+	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-list__inner&quot;&gt;
+			&lt;img class&#x3D;&quot;dc-list__img&quot; src&#x3D;&quot;/dress-code/assets/img/scrollable-list-img-1.png&quot; alt&#x3D;&quot;product image&quot;&gt;
+			&lt;div class&#x3D;&quot;dc-list__body dc--island-50&quot;&gt;
+				&lt;div class&#x3D;&quot;dc-list__title dc--text-truncate&quot;&gt;TECH FLEECE 6 - Trainings- / Fitnesshose - gray&lt;/div&gt;
+				&lt;div class&#x3D;&quot;dc--text-less-important dc--text-small dc--text-truncate&quot;&gt;N1242B0F8-Q11&lt;/div&gt;
+				&lt;div class&#x3D;&quot;dc--text-less-important dc--text-success dc--text-small dc--text-truncate&quot;&gt;Available&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;a href class&#x3D;&quot;dc-list__action dc-link&quot;&gt;
+			&lt;i class&#x3D;&quot;dc-icon dc-icon--trash&quot;&gt;&lt;/i&gt;
+		&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-list__inner&quot;&gt;
+			&lt;img class&#x3D;&quot;dc-list__img&quot; src&#x3D;&quot;/dress-code/assets/img/scrollable-list-img-2.png&quot; alt&#x3D;&quot;product image&quot;&gt;
+			&lt;div class&#x3D;&quot;dc-list__body dc--island-50&quot;&gt;
+				&lt;div class&#x3D;&quot;dc-list__title dc--text-truncate&quot;&gt;FLEX TRAINER 6 - Trainings- / Fitnessschuh - black/white&lt;/div&gt;
+				&lt;div class&#x3D;&quot;dc--text-less-important dc--text-small dc--text-truncate&quot;&gt;N7894A0F8-Q11&lt;/div&gt;
+				&lt;div class&#x3D;&quot;dc--text-less-important dc--text-small dc--text-truncate&quot;&gt;Not in shop&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;a href class&#x3D;&quot;dc-list__action dc-link&quot;&gt;
+				&lt;i class&#x3D;&quot;dc-icon dc-icon--trash&quot;&gt;&lt;/i&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-list__inner&quot;&gt;
+			&lt;img class&#x3D;&quot;dc-list__img&quot; src&#x3D;&quot;/dress-code/assets/img/scrollable-list-img-3.png&quot; alt&#x3D;&quot;product image&quot;&gt;
+			&lt;div class&#x3D;&quot;dc-list__body dc--island-50&quot;&gt;
+				&lt;div class&#x3D;&quot;dc-list__title dc--text-truncate&quot;&gt;FLEX TRAINER 5 - Trainings- / Fitnessschuh - blue&lt;/div&gt;
+				&lt;div class&#x3D;&quot;dc--text-less-important dc--text-small dc--text-truncate&quot;&gt;N1523C0F8-Q11&lt;/div&gt;
+				&lt;div class&#x3D;&quot;dc--text-less-important dc--text-error dc--text-small dc--text-truncate&quot;&gt;Out of stock&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;a href class&#x3D;&quot;dc-list__action dc-link&quot;&gt;
+				&lt;i class&#x3D;&quot;dc-icon dc-icon--trash&quot;&gt;&lt;/i&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-list__item&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-list__inner&quot;&gt;
+			&lt;svg class&#x3D;&quot;dc-list__img&quot; width&#x3D;&quot;44&quot; height&#x3D;&quot;64&quot; viewBox&#x3D;&quot;0 0 44 64&quot; xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot;&gt;
+			    &lt;g fill&#x3D;&quot;none&quot; fill-rule&#x3D;&quot;evenodd&quot;&gt;
+			        &lt;path fill&#x3D;&quot;#EDECED&quot; d&#x3D;&quot;M0 0h44v64H0z&quot;/&gt;
+			        &lt;path d&#x3D;&quot;M22 35.057c-1.052 1.01-2.063 1.936-3.035 2.778-1.435 1.244-2.905 2.474-4.408 3.69L12.5 39.467c1.2-1.52 2.425-3 3.68-4.447.844-.973 1.765-1.98 2.763-3.02-1.01-1.052-1.936-2.063-2.778-3.035-1.244-1.435-2.474-2.905-3.69-4.408l2.058-2.058c1.52 1.2 3 2.425 4.447 3.68.973.844 1.98 1.765 3.02 2.763 1.052-1.01 2.063-1.936 3.035-2.778 1.435-1.244 2.905-2.474 4.408-3.69l2.058 2.058c-1.2 1.52-2.425 3-3.68 4.447-.844.973-1.765 1.98-2.763 3.02 1.01 1.052 1.936 2.063 2.778 3.035 1.244 1.435 2.474 2.905 3.69 4.408L29.467 41.5c-1.52-1.2-3-2.425-4.447-3.68-.973-.844-1.98-1.765-3.02-2.763zm0-3.042L21.985 32l.015-.015.015.015-.015.015z&quot; fill&#x3D;&quot;#FFF&quot;/&gt;
+			    &lt;/g&gt;
+			&lt;/svg&gt;
+			&lt;div class&#x3D;&quot;dc-list__body dc--island-50&quot;&gt;
+				&lt;div class&#x3D;&quot;dc-list__title dc--text-truncate&quot;&gt;N4956A0F8-Q11&lt;/div&gt;
+				&lt;div class&#x3D;&quot;dc--text-less-important dc--text-small dc--text-truncate&quot;&gt;&lt;/div&gt;
+				&lt;div class&#x3D;&quot;dc--text-less-important dc--text-error dc--text-small dc--text-truncate&quot;&gt;Unknown article&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;a href class&#x3D;&quot;dc-list__action dc-link&quot;&gt;
+				&lt;i class&#x3D;&quot;dc-icon dc-icon--trash&quot;&gt;&lt;/i&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
         </div>
     </div>
 </div>
@@ -1393,19 +1715,20 @@
             </div>
             <h2 class="dc-h2 f-item-heading">Loading Bar</h2>
         </div>
-        
-        <div class="f-item-preview">
-        	<div class="dc-loading-bar">
-        	<div class="dc-loading-bar__bar"></div>
-        	<div class="dc-loading-bar__fill"></div>
-        </div>
-        </div>
-        <div class="f-item-code f-item-hidden" data-f-toggle="code">
-        	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-loading-bar&quot;&gt;
-        	&lt;div class&#x3D;&quot;dc-loading-bar__bar&quot;&gt;&lt;/div&gt;
-        	&lt;div class&#x3D;&quot;dc-loading-bar__fill&quot;&gt;&lt;/div&gt;
-        &lt;/div&gt;</code></pre>
-        </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+
+<div class="f-item-preview">
+	<div class="dc-loading-bar">
+	<div class="dc-loading-bar__bar"></div>
+	<div class="dc-loading-bar__fill"></div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-loading-bar&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-loading-bar__bar&quot;&gt;&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-loading-bar__fill&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
     </div>
 </div>
 
@@ -1423,19 +1746,20 @@
             </div>
             <h2 class="dc-h2 f-item-heading">Paragraph</h2>
         </div>
-        
-        <div class="f-item-preview">
-        	<p class="dc-p">
-        	Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-        	nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.
-        </p>
-        </div>
-        <div class="f-item-code f-item-hidden" data-f-toggle="code">
-        	<pre class="dc-pre"><code class="language-markup">&lt;p class&#x3D;&quot;dc-p&quot;&gt;
-        	Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-        	nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.
-        &lt;/p&gt;</code></pre>
-        </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+
+<div class="f-item-preview">
+	<p class="dc-p">
+	Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+	nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.
+</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;p class&#x3D;&quot;dc-p&quot;&gt;
+	Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+	nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.
+&lt;/p&gt;</code></pre>
+</div>
     </div>
 </div>
 
@@ -1453,33 +1777,34 @@
             </div>
             <h2 class="dc-h2 f-item-heading">Spinner</h2>
         </div>
-        
-        <div class="f-item-preview">
-        	<div class="dc-spinner"></div>
-        
-        <div class="dc-spinner dc-spinner--error"></div>
-        
-        <div class="dc-spinner dc-spinner--fat"></div>
-        
-        <div class="dc-spinner dc-spinner--thin dc-spinner--error"></div>
-        
-        <div class="dc-spinner dc-spinner--small"></div>
-        
-        <div class="dc-spinner dc-spinner--small dc-spinner--fat dc-spinner--error"></div>
-        </div>
-        <div class="f-item-code f-item-hidden" data-f-toggle="code">
-        	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-spinner&quot;&gt;&lt;/div&gt;
-        
-        &lt;div class&#x3D;&quot;dc-spinner dc-spinner--error&quot;&gt;&lt;/div&gt;
-        
-        &lt;div class&#x3D;&quot;dc-spinner dc-spinner--fat&quot;&gt;&lt;/div&gt;
-        
-        &lt;div class&#x3D;&quot;dc-spinner dc-spinner--thin dc-spinner--error&quot;&gt;&lt;/div&gt;
-        
-        &lt;div class&#x3D;&quot;dc-spinner dc-spinner--small&quot;&gt;&lt;/div&gt;
-        
-        &lt;div class&#x3D;&quot;dc-spinner dc-spinner--small dc-spinner--fat dc-spinner--error&quot;&gt;&lt;/div&gt;</code></pre>
-        </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+
+<div class="f-item-preview">
+	<div class="dc-spinner"></div>
+
+<div class="dc-spinner dc-spinner--error"></div>
+
+<div class="dc-spinner dc-spinner--fat"></div>
+
+<div class="dc-spinner dc-spinner--thin dc-spinner--error"></div>
+
+<div class="dc-spinner dc-spinner--small"></div>
+
+<div class="dc-spinner dc-spinner--small dc-spinner--fat dc-spinner--error"></div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-spinner&quot;&gt;&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;dc-spinner dc-spinner--error&quot;&gt;&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;dc-spinner dc-spinner--fat&quot;&gt;&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;dc-spinner dc-spinner--thin dc-spinner--error&quot;&gt;&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;dc-spinner dc-spinner--small&quot;&gt;&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;dc-spinner dc-spinner--small dc-spinner--fat dc-spinner--error&quot;&gt;&lt;/div&gt;</code></pre>
+</div>
     </div>
 </div>
 
@@ -1497,19 +1822,20 @@
             </div>
             <h2 class="dc-h2 f-item-heading">Status</h2>
         </div>
-        
-        <div class="f-item-preview">
-        	<span class="dc-status dc-status--active">Active, On</span><br>
-        <span class="dc-status dc-status--inactive">Inactive, Off</span><br>
-        <span class="dc-status dc-status--new">New, Recent</span><br>
-        <span class="dc-status dc-status--error">Error, Issue</span>
-        </div>
-        <div class="f-item-code f-item-hidden" data-f-toggle="code">
-        	<pre class="dc-pre"><code class="language-markup">&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active, On&lt;/span&gt;&lt;br&gt;
-        &lt;span class&#x3D;&quot;dc-status dc-status--inactive&quot;&gt;Inactive, Off&lt;/span&gt;&lt;br&gt;
-        &lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New, Recent&lt;/span&gt;&lt;br&gt;
-        &lt;span class&#x3D;&quot;dc-status dc-status--error&quot;&gt;Error, Issue&lt;/span&gt;</code></pre>
-        </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+
+<div class="f-item-preview">
+	<span class="dc-status dc-status--active">Active, On</span><br>
+<span class="dc-status dc-status--inactive">Inactive, Off</span><br>
+<span class="dc-status dc-status--new">New, Recent</span><br>
+<span class="dc-status dc-status--error">Error, Issue</span>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active, On&lt;/span&gt;&lt;br&gt;
+&lt;span class&#x3D;&quot;dc-status dc-status--inactive&quot;&gt;Inactive, Off&lt;/span&gt;&lt;br&gt;
+&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New, Recent&lt;/span&gt;&lt;br&gt;
+&lt;span class&#x3D;&quot;dc-status dc-status--error&quot;&gt;Error, Issue&lt;/span&gt;</code></pre>
+</div>
     </div>
 </div>
 
@@ -1531,48 +1857,54 @@
             </div>
             <h2 class="dc-h2 f-item-heading">Tab</h2>
         </div>
-        <div class="f-item-notes" data-f-toggle="notes">
-        	<p>Use <code>dc-tab</code> to show content for different subjects.</p>
-        <p><code>dc-tab--vertical</code>: Use this class with <code>dc-tab</code> to create vertical tab.</p>
-        <p><code>dc-tab__element</code>: Use this class to create another tab.</p>
-        <p><code>dc-tab__element--active</code>: to show a tab as active.</p>
-        <p><code>dc-tab__element--disabled</code>: to show a tab as disabled.</p>
-        
-        </div>
-        <div class="f-item-preview">
-        	<ul class="dc-tab">
-        	<li class="dc-tab__element dc-tab__element--active">Tab1</li>
-        	<li class="dc-tab__element">Tab2</li>
-        	<li class="dc-tab__element dc-tab__element--disabled">Tab3</li>
-        	<li class="dc-tab__element">Tab4</li>
-        </ul>
-        
-        <div class="dc-divider"></div>
-        
-        <ul class="dc-tab dc-tab--vertical">
-        	<li class="dc-tab__element dc-tab__element--active">Tab1</li>
-        	<li class="dc-tab__element">Tab2</li>
-        	<li class="dc-tab__element dc-tab__element--disabled">Tab3</li>
-        	<li class="dc-tab__element">Tab4</li>
-        </ul>
-        </div>
-        <div class="f-item-code f-item-hidden" data-f-toggle="code">
-        	<pre class="dc-pre"><code class="language-markup">&lt;ul class&#x3D;&quot;dc-tab&quot;&gt;
-        	&lt;li class&#x3D;&quot;dc-tab__element dc-tab__element--active&quot;&gt;Tab1&lt;/li&gt;
-        	&lt;li class&#x3D;&quot;dc-tab__element&quot;&gt;Tab2&lt;/li&gt;
-        	&lt;li class&#x3D;&quot;dc-tab__element dc-tab__element--disabled&quot;&gt;Tab3&lt;/li&gt;
-        	&lt;li class&#x3D;&quot;dc-tab__element&quot;&gt;Tab4&lt;/li&gt;
-        &lt;/ul&gt;
-        
-        &lt;div class&#x3D;&quot;dc-divider&quot;&gt;&lt;/div&gt;
-        
-        &lt;ul class&#x3D;&quot;dc-tab dc-tab--vertical&quot;&gt;
-        	&lt;li class&#x3D;&quot;dc-tab__element dc-tab__element--active&quot;&gt;Tab1&lt;/li&gt;
-        	&lt;li class&#x3D;&quot;dc-tab__element&quot;&gt;Tab2&lt;/li&gt;
-        	&lt;li class&#x3D;&quot;dc-tab__element dc-tab__element--disabled&quot;&gt;Tab3&lt;/li&gt;
-        	&lt;li class&#x3D;&quot;dc-tab__element&quot;&gt;Tab4&lt;/li&gt;
-        &lt;/ul&gt;</code></pre>
-        </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>Use <code>dc-tab</code> to show content for different subjects.</p>
+<p><code>dc-tab--vertical</code>: Use this class with <code>dc-tab</code> to create vertical tab.</p>
+<p><code>dc-tab__element</code>: Use this class to create another tab.</p>
+<p><code>dc-tab__element--header</code>: to show a tab as header.</p>
+<p><code>dc-tab__element--active</code>: to show a tab as active.</p>
+<p><code>dc-tab__element--disabled</code>: to show a tab as disabled.</p>
+
+</div>
+<div class="f-item-preview">
+	<ul class="dc-tab">
+	<li class="dc-tab__element dc-tab__element--header">Header</li>
+	<li class="dc-tab__element dc-tab__element--active">Tab1</li>
+	<li class="dc-tab__element">Tab2</li>
+	<li class="dc-tab__element dc-tab__element--disabled">Tab3</li>
+	<li class="dc-tab__element">Tab4</li>
+</ul>
+
+<div class="dc-divider"></div>
+
+<ul class="dc-tab dc-tab--vertical">
+	<li class="dc-tab__element dc-tab__element--header">Header</li>
+	<li class="dc-tab__element dc-tab__element--active">Tab1</li>
+	<li class="dc-tab__element">Tab2</li>
+	<li class="dc-tab__element dc-tab__element--disabled">Tab3</li>
+	<li class="dc-tab__element">Tab4</li>
+</ul>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;ul class&#x3D;&quot;dc-tab&quot;&gt;
+	&lt;li class&#x3D;&quot;dc-tab__element dc-tab__element--header&quot;&gt;Header&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-tab__element dc-tab__element--active&quot;&gt;Tab1&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-tab__element&quot;&gt;Tab2&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-tab__element dc-tab__element--disabled&quot;&gt;Tab3&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-tab__element&quot;&gt;Tab4&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class&#x3D;&quot;dc-divider&quot;&gt;&lt;/div&gt;
+
+&lt;ul class&#x3D;&quot;dc-tab dc-tab--vertical&quot;&gt;
+	&lt;li class&#x3D;&quot;dc-tab__element dc-tab__element--header&quot;&gt;Header&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-tab__element dc-tab__element--active&quot;&gt;Tab1&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-tab__element&quot;&gt;Tab2&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-tab__element dc-tab__element--disabled&quot;&gt;Tab3&lt;/li&gt;
+	&lt;li class&#x3D;&quot;dc-tab__element&quot;&gt;Tab4&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
     </div>
 </div>
 
@@ -1598,110 +1930,111 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Table Setup</h3>
             </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>To set up tables, add the relevant classes to each part of the table.</p>
-            <p>Use <code>dc-table--responsive</code> to activate the responsive view for tablet size and below. Each row becomes a card.</p>
-            <p>Use <code>dc-table__tr--interactive</code> to add a hover to table rows. This can be done independenty for each row.</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	<table class="dc-table dc-table--responsive">
-            	<thead class="dc-table__thead">
-            		<tr class="dc-table__tr">
-            			<th class="dc-table__th" data-col="First Name">First Name</th>
-            			<th class="dc-table__th" data-col="Name">Last Name</th>
-            			<th class="dc-table__th" data-col="Name">Email</th>
-            			<th class="dc-table__th" data-col="Name">Status</th>
-            		</tr>
-            	</thead>
-            
-            	<tbody class="dc-table__tbody">
-            		<tr class="dc-table__tr dc-table__tr--interactive">
-            			<td class="dc-table__td" data-col="First Name">Eileen</td>
-            			<td class="dc-table__td" data-col="Last Name">Holland</td>
-            			<td class="dc-table__td" data-col="Email">eileen.holland42@example.com</td>
-            			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
-            		</tr>
-            
-            		<tr class="dc-table__tr dc-table__tr--interactive">
-            			<td class="dc-table__td" data-col="First Name">Duane</td>
-            			<td class="dc-table__td" data-col="Last Name">Holmes</td>
-            			<td class="dc-table__td" data-col="Email">duane.holmes21@example.com</td>
-            			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
-            		</tr>
-            
-            		<tr class="dc-table__tr dc-table__tr--interactive">
-            			<td class="dc-table__td" data-col="First Name">Kitty</td>
-            			<td class="dc-table__td" data-col="Last Name">Murray</td>
-            			<td class="dc-table__td" data-col="Email">kitty.murray88@example.com</td>
-            			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
-            		</tr>
-            
-            		<tr class="dc-table__tr dc-table__tr--interactive">
-            			<td class="dc-table__td" data-col="First Name">Austin</td>
-            			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
-            			<td class="dc-table__td" data-col="Email">austin.carpenter87@example.com</td>
-            			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
-            		</tr>
-            
-            		<tr class="dc-table__tr dc-table__tr--interactive">
-            			<td class="dc-table__td" data-col="First Name">Toni</td>
-            			<td class="dc-table__td" data-col="Last Name">Nichols</td>
-            			<td class="dc-table__td" data-col="Email">toni.nichols83@example.com</td>
-            			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--error">Error</span></td>
-            		</tr>
-            	</tbody>
-            </table>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;table class&#x3D;&quot;dc-table dc-table--responsive&quot;&gt;
-            	&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
-            		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
-            			&lt;th class&#x3D;&quot;dc-table__th&quot; data-col&#x3D;&quot;First Name&quot;&gt;First Name&lt;/th&gt;
-            			&lt;th class&#x3D;&quot;dc-table__th&quot; data-col&#x3D;&quot;Name&quot;&gt;Last Name&lt;/th&gt;
-            			&lt;th class&#x3D;&quot;dc-table__th&quot; data-col&#x3D;&quot;Name&quot;&gt;Email&lt;/th&gt;
-            			&lt;th class&#x3D;&quot;dc-table__th&quot; data-col&#x3D;&quot;Name&quot;&gt;Status&lt;/th&gt;
-            		&lt;/tr&gt;
-            	&lt;/thead&gt;
-            
-            	&lt;tbody class&#x3D;&quot;dc-table__tbody&quot;&gt;
-            		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--interactive&quot;&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Eileen&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holland&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;eileen.holland42@example.com&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
-            		&lt;/tr&gt;
-            
-            		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--interactive&quot;&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Duane&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holmes&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;duane.holmes21@example.com&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
-            		&lt;/tr&gt;
-            
-            		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--interactive&quot;&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Kitty&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Murray&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;kitty.murray88@example.com&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
-            		&lt;/tr&gt;
-            
-            		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--interactive&quot;&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Austin&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Carpenter&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;austin.carpenter87@example.com&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
-            		&lt;/tr&gt;
-            
-            		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--interactive&quot;&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Toni&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Nichols&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;toni.nichols83@example.com&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--error&quot;&gt;Error&lt;/span&gt;&lt;/td&gt;
-            		&lt;/tr&gt;
-            	&lt;/tbody&gt;
-            &lt;/table&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>To set up tables, add the relevant classes to each part of the table.</p>
+<p>Use <code>dc-table--responsive</code> to activate the responsive view for tablet size and below. Each row becomes a card.</p>
+<p>Use <code>dc-table__tr--interactive</code> to add a hover to table rows. This can be done independenty for each row.</p>
+
+</div>
+<div class="f-item-preview">
+	<table class="dc-table dc-table--responsive">
+	<thead class="dc-table__thead">
+		<tr class="dc-table__tr">
+			<th class="dc-table__th" data-col="First Name">First Name</th>
+			<th class="dc-table__th" data-col="Name">Last Name</th>
+			<th class="dc-table__th" data-col="Name">Email</th>
+			<th class="dc-table__th" data-col="Name">Status</th>
+		</tr>
+	</thead>
+
+	<tbody class="dc-table__tbody">
+		<tr class="dc-table__tr dc-table__tr--interactive">
+			<td class="dc-table__td" data-col="First Name">Eileen</td>
+			<td class="dc-table__td" data-col="Last Name">Holland</td>
+			<td class="dc-table__td" data-col="Email">eileen.holland42@example.com</td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
+		</tr>
+
+		<tr class="dc-table__tr dc-table__tr--interactive">
+			<td class="dc-table__td" data-col="First Name">Duane</td>
+			<td class="dc-table__td" data-col="Last Name">Holmes</td>
+			<td class="dc-table__td" data-col="Email">duane.holmes21@example.com</td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
+		</tr>
+
+		<tr class="dc-table__tr dc-table__tr--interactive">
+			<td class="dc-table__td" data-col="First Name">Kitty</td>
+			<td class="dc-table__td" data-col="Last Name">Murray</td>
+			<td class="dc-table__td" data-col="Email">kitty.murray88@example.com</td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
+		</tr>
+
+		<tr class="dc-table__tr dc-table__tr--interactive">
+			<td class="dc-table__td" data-col="First Name">Austin</td>
+			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
+			<td class="dc-table__td" data-col="Email">austin.carpenter87@example.com</td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
+		</tr>
+
+		<tr class="dc-table__tr dc-table__tr--interactive">
+			<td class="dc-table__td" data-col="First Name">Toni</td>
+			<td class="dc-table__td" data-col="Last Name">Nichols</td>
+			<td class="dc-table__td" data-col="Email">toni.nichols83@example.com</td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--error">Error</span></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;table class&#x3D;&quot;dc-table dc-table--responsive&quot;&gt;
+	&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot; data-col&#x3D;&quot;First Name&quot;&gt;First Name&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot; data-col&#x3D;&quot;Name&quot;&gt;Last Name&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot; data-col&#x3D;&quot;Name&quot;&gt;Email&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot; data-col&#x3D;&quot;Name&quot;&gt;Status&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+
+	&lt;tbody class&#x3D;&quot;dc-table__tbody&quot;&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--interactive&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Eileen&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holland&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;eileen.holland42@example.com&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+
+		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--interactive&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Duane&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holmes&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;duane.holmes21@example.com&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+
+		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--interactive&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Kitty&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Murray&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;kitty.murray88@example.com&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+
+		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--interactive&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Austin&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Carpenter&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;austin.carpenter87@example.com&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+
+		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--interactive&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Toni&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Nichols&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;toni.nichols83@example.com&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--error&quot;&gt;Error&lt;/span&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+</div>
         </div>
         <div class="f-item-group" id="tables.02-sortable-headings">
             <div class="f-item-heading-group" data-f-toggle="labels">
@@ -1719,109 +2052,110 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Sortable Headings</h3>
             </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>To indicate columns as sortable, add <code>dc-table__th--sortable</code> to your th, and add an empty element with <code>dc-table__sorter</code> inside the <code>th</code>. Use <code>dc-table__sorter--ascending</code> and <code>dc-table__sorter--descending</code> to indicate the sorting order.</p>
-            <p>Please note that due to design reasons the sorters are not shown on responsive tables for small screen sizes.</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	<table class="dc-table dc-table--responsive">
-            	<thead class="dc-table__thead">
-            		<tr class="dc-table__tr">
-            			<th class="dc-table__th dc-table__th--sortable" data-col="First Name">First Name<span class="dc-table__sorter dc-table__sorter--ascending"></th>
-            			<th class="dc-table__th dc-table__th--sortable" data-col="Name">Last Name<span class="dc-table__sorter dc-table__sorter--descending"></th>
-            			<th class="dc-table__th dc-table__th--sortable" data-col="Name">Email<span class="dc-table__sorter"></th>
-            			<th class="dc-table__th dc-table__th--sortable" data-col="Name">Status<span class="dc-table__sorter"></th>
-            		</tr>
-            	</thead>
-            
-            	<tbody class="dc-table__tbody">
-                    <tr class="dc-table__tr">
-            			<td class="dc-table__td" data-col="First Name">Austin</td>
-            			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
-            			<td class="dc-table__td" data-col="Email">austin.carpenter87@example.com</td>
-            			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
-            		</tr>
-            
-            		<tr class="dc-table__tr">
-            			<td class="dc-table__td" data-col="First Name">Eileen</td>
-            			<td class="dc-table__td" data-col="Last Name">Holland</td>
-            			<td class="dc-table__td" data-col="Email">eileen.holland42@example.com</td>
-            			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
-            		</tr>
-            
-            		<tr class="dc-table__tr">
-            			<td class="dc-table__td" data-col="First Name">Duane</td>
-            			<td class="dc-table__td" data-col="Last Name">Holmes</td>
-            			<td class="dc-table__td" data-col="Email">duane.holmes21@example.com</td>
-            			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
-            		</tr>
-            
-            		<tr class="dc-table__tr">
-            			<td class="dc-table__td" data-col="First Name">Kitty</td>
-            			<td class="dc-table__td" data-col="Last Name">Murray</td>
-            			<td class="dc-table__td" data-col="Email">kitty.murray88@example.com</td>
-            			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
-            		</tr>
-            
-            		<tr class="dc-table__tr">
-            			<td class="dc-table__td" data-col="First Name">Toni</td>
-            			<td class="dc-table__td" data-col="Last Name">Nichols</td>
-            			<td class="dc-table__td" data-col="Email">toni.nichols83@example.com</td>
-            			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--error">Error</span></td>
-            		</tr>
-            		</tbody>
-            </table>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;table class&#x3D;&quot;dc-table dc-table--responsive&quot;&gt;
-            	&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
-            		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
-            			&lt;th class&#x3D;&quot;dc-table__th dc-table__th--sortable&quot; data-col&#x3D;&quot;First Name&quot;&gt;First Name&lt;span class&#x3D;&quot;dc-table__sorter dc-table__sorter--ascending&quot;&gt;&lt;/th&gt;
-            			&lt;th class&#x3D;&quot;dc-table__th dc-table__th--sortable&quot; data-col&#x3D;&quot;Name&quot;&gt;Last Name&lt;span class&#x3D;&quot;dc-table__sorter dc-table__sorter--descending&quot;&gt;&lt;/th&gt;
-            			&lt;th class&#x3D;&quot;dc-table__th dc-table__th--sortable&quot; data-col&#x3D;&quot;Name&quot;&gt;Email&lt;span class&#x3D;&quot;dc-table__sorter&quot;&gt;&lt;/th&gt;
-            			&lt;th class&#x3D;&quot;dc-table__th dc-table__th--sortable&quot; data-col&#x3D;&quot;Name&quot;&gt;Status&lt;span class&#x3D;&quot;dc-table__sorter&quot;&gt;&lt;/th&gt;
-            		&lt;/tr&gt;
-            	&lt;/thead&gt;
-            
-            	&lt;tbody class&#x3D;&quot;dc-table__tbody&quot;&gt;
-                    &lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Austin&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Carpenter&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;austin.carpenter87@example.com&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
-            		&lt;/tr&gt;
-            
-            		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Eileen&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holland&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;eileen.holland42@example.com&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
-            		&lt;/tr&gt;
-            
-            		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Duane&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holmes&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;duane.holmes21@example.com&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
-            		&lt;/tr&gt;
-            
-            		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Kitty&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Murray&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;kitty.murray88@example.com&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
-            		&lt;/tr&gt;
-            
-            		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Toni&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Nichols&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;toni.nichols83@example.com&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--error&quot;&gt;Error&lt;/span&gt;&lt;/td&gt;
-            		&lt;/tr&gt;
-            		&lt;/tbody&gt;
-            &lt;/table&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>To indicate columns as sortable, add <code>dc-table__th--sortable</code> to your th, and add an empty element with <code>dc-table__sorter</code> inside the <code>th</code>. Use <code>dc-table__sorter--ascending</code> and <code>dc-table__sorter--descending</code> to indicate the sorting order.</p>
+<p>Please note that due to design reasons the sorters are not shown on responsive tables for small screen sizes.</p>
+
+</div>
+<div class="f-item-preview">
+	<table class="dc-table dc-table--responsive">
+	<thead class="dc-table__thead">
+		<tr class="dc-table__tr">
+			<th class="dc-table__th dc-table__th--sortable" data-col="First Name">First Name<span class="dc-table__sorter dc-table__sorter--ascending"></th>
+			<th class="dc-table__th dc-table__th--sortable" data-col="Name">Last Name<span class="dc-table__sorter dc-table__sorter--descending"></th>
+			<th class="dc-table__th dc-table__th--sortable" data-col="Name">Email<span class="dc-table__sorter"></th>
+			<th class="dc-table__th dc-table__th--sortable" data-col="Name">Status<span class="dc-table__sorter"></th>
+		</tr>
+	</thead>
+
+	<tbody class="dc-table__tbody">
+        <tr class="dc-table__tr">
+			<td class="dc-table__td" data-col="First Name">Austin</td>
+			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
+			<td class="dc-table__td" data-col="Email">austin.carpenter87@example.com</td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
+		</tr>
+
+		<tr class="dc-table__tr">
+			<td class="dc-table__td" data-col="First Name">Eileen</td>
+			<td class="dc-table__td" data-col="Last Name">Holland</td>
+			<td class="dc-table__td" data-col="Email">eileen.holland42@example.com</td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
+		</tr>
+
+		<tr class="dc-table__tr">
+			<td class="dc-table__td" data-col="First Name">Duane</td>
+			<td class="dc-table__td" data-col="Last Name">Holmes</td>
+			<td class="dc-table__td" data-col="Email">duane.holmes21@example.com</td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
+		</tr>
+
+		<tr class="dc-table__tr">
+			<td class="dc-table__td" data-col="First Name">Kitty</td>
+			<td class="dc-table__td" data-col="Last Name">Murray</td>
+			<td class="dc-table__td" data-col="Email">kitty.murray88@example.com</td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
+		</tr>
+
+		<tr class="dc-table__tr">
+			<td class="dc-table__td" data-col="First Name">Toni</td>
+			<td class="dc-table__td" data-col="Last Name">Nichols</td>
+			<td class="dc-table__td" data-col="Email">toni.nichols83@example.com</td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--error">Error</span></td>
+		</tr>
+		</tbody>
+</table>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;table class&#x3D;&quot;dc-table dc-table--responsive&quot;&gt;
+	&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;th class&#x3D;&quot;dc-table__th dc-table__th--sortable&quot; data-col&#x3D;&quot;First Name&quot;&gt;First Name&lt;span class&#x3D;&quot;dc-table__sorter dc-table__sorter--ascending&quot;&gt;&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th dc-table__th--sortable&quot; data-col&#x3D;&quot;Name&quot;&gt;Last Name&lt;span class&#x3D;&quot;dc-table__sorter dc-table__sorter--descending&quot;&gt;&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th dc-table__th--sortable&quot; data-col&#x3D;&quot;Name&quot;&gt;Email&lt;span class&#x3D;&quot;dc-table__sorter&quot;&gt;&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th dc-table__th--sortable&quot; data-col&#x3D;&quot;Name&quot;&gt;Status&lt;span class&#x3D;&quot;dc-table__sorter&quot;&gt;&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+
+	&lt;tbody class&#x3D;&quot;dc-table__tbody&quot;&gt;
+        &lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Austin&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Carpenter&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;austin.carpenter87@example.com&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Eileen&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holland&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;eileen.holland42@example.com&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Duane&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holmes&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;duane.holmes21@example.com&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Kitty&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Murray&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;kitty.murray88@example.com&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Toni&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Nichols&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;toni.nichols83@example.com&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--error&quot;&gt;Error&lt;/span&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+</div>
         </div>
         <div class="f-item-group" id="tables.03-spacing-modifiers">
             <div class="f-item-heading-group" data-f-toggle="labels">
@@ -1839,96 +2173,97 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Spacing Modifiers</h3>
             </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>The modifiers <code>dc-table__tr--tight</code>, <code>dc-table__tr--comfortable</code> and <code>dc-table__tr--spacious</code> modifiers to adjust spacing between rows.</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	<table class="dc-table dc-table--responsive">
-            	<thead class="dc-table__thead">
-            		<tr class="dc-table__tr">
-            			<th class="dc-table__th" data-col="First Name">First Name</th>
-            			<th class="dc-table__th" data-col="Name">Last Name</th>
-            			<th class="dc-table__th" data-col="Name">Email</th>
-            			<th class="dc-table__th" data-col="Name">Status</th>
-            		</tr>
-            	</thead>
-            
-            	<tbody class="dc-table__tbody">
-            		<tr class="dc-table__tr dc-table__tr--tight">
-            			<td class="dc-table__td" data-col="First Name">Eileen</td>
-            			<td class="dc-table__td" data-col="Last Name">Holland</td>
-            			<td class="dc-table__td" data-col="Email">eileen.holland42@example.com</td>
-            			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
-            		</tr>
-            
-            		<tr class="dc-table__tr dc-table__tr">
-            			<td class="dc-table__td" data-col="First Name">Kitty</td>
-            			<td class="dc-table__td" data-col="Last Name">Murray</td>
-            			<td class="dc-table__td" data-col="Email">kitty.murray88@example.com</td>
-            			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
-            		</tr>
-            
-            		<tr class="dc-table__tr dc-table__tr--comfortable">
-            			<td class="dc-table__td" data-col="First Name">Duane</td>
-            			<td class="dc-table__td" data-col="Last Name">Holmes</td>
-            			<td class="dc-table__td" data-col="Email">duane.holmes21@example.com</td>
-            			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
-            		</tr>
-            
-            		<tr class="dc-table__tr dc-table__tr--spacious">
-            			<td class="dc-table__td" data-col="First Name">Austin</td>
-            			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
-            			<td class="dc-table__td" data-col="Email">austin.carpenter87@example.com</td>
-            			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
-            		</tr>
-            
-            	</tbody>
-            </table>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;table class&#x3D;&quot;dc-table dc-table--responsive&quot;&gt;
-            	&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
-            		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
-            			&lt;th class&#x3D;&quot;dc-table__th&quot; data-col&#x3D;&quot;First Name&quot;&gt;First Name&lt;/th&gt;
-            			&lt;th class&#x3D;&quot;dc-table__th&quot; data-col&#x3D;&quot;Name&quot;&gt;Last Name&lt;/th&gt;
-            			&lt;th class&#x3D;&quot;dc-table__th&quot; data-col&#x3D;&quot;Name&quot;&gt;Email&lt;/th&gt;
-            			&lt;th class&#x3D;&quot;dc-table__th&quot; data-col&#x3D;&quot;Name&quot;&gt;Status&lt;/th&gt;
-            		&lt;/tr&gt;
-            	&lt;/thead&gt;
-            
-            	&lt;tbody class&#x3D;&quot;dc-table__tbody&quot;&gt;
-            		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--tight&quot;&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Eileen&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holland&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;eileen.holland42@example.com&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
-            		&lt;/tr&gt;
-            
-            		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr&quot;&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Kitty&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Murray&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;kitty.murray88@example.com&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
-            		&lt;/tr&gt;
-            
-            		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--comfortable&quot;&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Duane&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holmes&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;duane.holmes21@example.com&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
-            		&lt;/tr&gt;
-            
-            		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--spacious&quot;&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Austin&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Carpenter&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;austin.carpenter87@example.com&lt;/td&gt;
-            			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
-            		&lt;/tr&gt;
-            
-            	&lt;/tbody&gt;
-            &lt;/table&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>The modifiers <code>dc-table__tr--tight</code>, <code>dc-table__tr--comfortable</code> and <code>dc-table__tr--spacious</code> modifiers to adjust spacing between rows.</p>
+
+</div>
+<div class="f-item-preview">
+	<table class="dc-table dc-table--responsive">
+	<thead class="dc-table__thead">
+		<tr class="dc-table__tr">
+			<th class="dc-table__th" data-col="First Name">First Name</th>
+			<th class="dc-table__th" data-col="Name">Last Name</th>
+			<th class="dc-table__th" data-col="Name">Email</th>
+			<th class="dc-table__th" data-col="Name">Status</th>
+		</tr>
+	</thead>
+
+	<tbody class="dc-table__tbody">
+		<tr class="dc-table__tr dc-table__tr--tight">
+			<td class="dc-table__td" data-col="First Name">Eileen</td>
+			<td class="dc-table__td" data-col="Last Name">Holland</td>
+			<td class="dc-table__td" data-col="Email">eileen.holland42@example.com</td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
+		</tr>
+
+		<tr class="dc-table__tr dc-table__tr">
+			<td class="dc-table__td" data-col="First Name">Kitty</td>
+			<td class="dc-table__td" data-col="Last Name">Murray</td>
+			<td class="dc-table__td" data-col="Email">kitty.murray88@example.com</td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
+		</tr>
+
+		<tr class="dc-table__tr dc-table__tr--comfortable">
+			<td class="dc-table__td" data-col="First Name">Duane</td>
+			<td class="dc-table__td" data-col="Last Name">Holmes</td>
+			<td class="dc-table__td" data-col="Email">duane.holmes21@example.com</td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--active">Active</span></td>
+		</tr>
+
+		<tr class="dc-table__tr dc-table__tr--spacious">
+			<td class="dc-table__td" data-col="First Name">Austin</td>
+			<td class="dc-table__td" data-col="Last Name">Carpenter</td>
+			<td class="dc-table__td" data-col="Email">austin.carpenter87@example.com</td>
+			<td class="dc-table__td" data-col="Status"><span class="dc-status dc-status--new">New</span></td>
+		</tr>
+
+	</tbody>
+</table>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;table class&#x3D;&quot;dc-table dc-table--responsive&quot;&gt;
+	&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot; data-col&#x3D;&quot;First Name&quot;&gt;First Name&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot; data-col&#x3D;&quot;Name&quot;&gt;Last Name&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot; data-col&#x3D;&quot;Name&quot;&gt;Email&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot; data-col&#x3D;&quot;Name&quot;&gt;Status&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+
+	&lt;tbody class&#x3D;&quot;dc-table__tbody&quot;&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--tight&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Eileen&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holland&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;eileen.holland42@example.com&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+
+		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Kitty&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Murray&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;kitty.murray88@example.com&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+
+		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--comfortable&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Duane&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Holmes&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;duane.holmes21@example.com&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--active&quot;&gt;Active&lt;/span&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+
+		&lt;tr class&#x3D;&quot;dc-table__tr dc-table__tr--spacious&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;First Name&quot;&gt;Austin&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Last Name&quot;&gt;Carpenter&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Email&quot;&gt;austin.carpenter87@example.com&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot; data-col&#x3D;&quot;Status&quot;&gt;&lt;span class&#x3D;&quot;dc-status dc-status--new&quot;&gt;New&lt;/span&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+
+	&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+</div>
         </div>
     </div>
 </div>
@@ -1955,110 +2290,111 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Adding A Tooltip</h3>
             </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>Apply the class <code>dc--has-tooltip</code> class and a positioning class (ex. <code>dc--has-tooltip--left</code>) to  any element show a tooltip when hovering.</p>
-            <p>The attribute <code>data--dc-has-tooltip</code> must be present and not empty: the value will be used as the content for the tooltip body.</p>
-            <p>The tooltip implementation is based significantly on <a href="http://kushagragour.in/lab/hint/">hint.css</a>.</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	<div class="sg-has-tooltip-section">
-            	<div class="sg-has-tooltip-section__box">
-            		<button class="dc-btn dc--has-tooltip dc--has-tooltip--bottom-right" data-dc-has-tooltip="Hi. I'm a tooltip">
-                        bottom-right
-                    </button>
-            	</div>
-            	<div class="sg-has-tooltip-section__box">
-            		<button class="dc-btn dc--has-tooltip dc--has-tooltip--bottom" data-dc-has-tooltip="Hi. I'm a tooltip">
-                        bottom
-                    </button>
-            	</div>
-            	<div class="sg-has-tooltip-section__box">
-            		<button class="dc-btn dc--has-tooltip dc--has-tooltip--bottom-left" data-dc-has-tooltip="Hi. I'm a tooltip">
-                        bottom-left
-                    </button>
-            	</div>
-            	<div class="sg-has-tooltip-section__box">
-            		<button class="dc-btn dc--has-tooltip dc--has-tooltip--right" data-dc-has-tooltip="Hi. I'm a tooltip">
-                        right
-                    </button>
-            	</div>
-            	<div class="sg-has-tooltip-section__box">
-            		<button class="dc-btn">
-                        .
-                    </button>
-            	</div>
-            	<div class="sg-has-tooltip-section__box">
-            		<button class="dc-btn dc--has-tooltip dc--has-tooltip--left" data-dc-has-tooltip="Hi. I'm a tooltip">
-                        left
-                    </button>
-            	</div>
-            	<div class="sg-has-tooltip-section__box">
-            		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top-right" data-dc-has-tooltip="Hi. I'm a tooltip">
-                        top-right
-                    </button>
-            	</div>
-            	<div class="sg-has-tooltip-section__box">
-            		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top" data-dc-has-tooltip="Hi. I'm a tooltip">
-                        top
-                    </button>
-            	</div>
-            	<div class="sg-has-tooltip-section__box">
-            		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top-left" data-dc-has-tooltip="Hi. I'm a tooltip">
-                        top-left
-                    </button>
-            	</div>
-            </div>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;sg-has-tooltip-section&quot;&gt;
-            	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
-            		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--bottom-right&quot; data-dc-has-tooltip&#x3D;&quot;Hi. I&#x27;m a tooltip&quot;&gt;
-                        bottom-right
-                    &lt;/button&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
-            		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--bottom&quot; data-dc-has-tooltip&#x3D;&quot;Hi. I&#x27;m a tooltip&quot;&gt;
-                        bottom
-                    &lt;/button&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
-            		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--bottom-left&quot; data-dc-has-tooltip&#x3D;&quot;Hi. I&#x27;m a tooltip&quot;&gt;
-                        bottom-left
-                    &lt;/button&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
-            		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--right&quot; data-dc-has-tooltip&#x3D;&quot;Hi. I&#x27;m a tooltip&quot;&gt;
-                        right
-                    &lt;/button&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
-            		&lt;button class&#x3D;&quot;dc-btn&quot;&gt;
-                        .
-                    &lt;/button&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
-            		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--left&quot; data-dc-has-tooltip&#x3D;&quot;Hi. I&#x27;m a tooltip&quot;&gt;
-                        left
-                    &lt;/button&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
-            		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--top-right&quot; data-dc-has-tooltip&#x3D;&quot;Hi. I&#x27;m a tooltip&quot;&gt;
-                        top-right
-                    &lt;/button&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
-            		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--top&quot; data-dc-has-tooltip&#x3D;&quot;Hi. I&#x27;m a tooltip&quot;&gt;
-                        top
-                    &lt;/button&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
-            		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--top-left&quot; data-dc-has-tooltip&#x3D;&quot;Hi. I&#x27;m a tooltip&quot;&gt;
-                        top-left
-                    &lt;/button&gt;
-            	&lt;/div&gt;
-            &lt;/div&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>Apply the class <code>dc--has-tooltip</code> class and a positioning class (ex. <code>dc--has-tooltip--left</code>) to  any element show a tooltip when hovering.</p>
+<p>The attribute <code>data--dc-has-tooltip</code> must be present and not empty: the value will be used as the content for the tooltip body.</p>
+<p>The tooltip implementation is based significantly on <a href="http://kushagragour.in/lab/hint/">hint.css</a>.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="sg-has-tooltip-section">
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--bottom-right" data-dc-has-tooltip="Hi. I'm a tooltip">
+            bottom-right
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--bottom" data-dc-has-tooltip="Hi. I'm a tooltip">
+            bottom
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--bottom-left" data-dc-has-tooltip="Hi. I'm a tooltip">
+            bottom-left
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--right" data-dc-has-tooltip="Hi. I'm a tooltip">
+            right
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn">
+            .
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--left" data-dc-has-tooltip="Hi. I'm a tooltip">
+            left
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top-right" data-dc-has-tooltip="Hi. I'm a tooltip">
+            top-right
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top" data-dc-has-tooltip="Hi. I'm a tooltip">
+            top
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top-left" data-dc-has-tooltip="Hi. I'm a tooltip">
+            top-left
+        </button>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;sg-has-tooltip-section&quot;&gt;
+	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--bottom-right&quot; data-dc-has-tooltip&#x3D;&quot;Hi. I&#x27;m a tooltip&quot;&gt;
+            bottom-right
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--bottom&quot; data-dc-has-tooltip&#x3D;&quot;Hi. I&#x27;m a tooltip&quot;&gt;
+            bottom
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--bottom-left&quot; data-dc-has-tooltip&#x3D;&quot;Hi. I&#x27;m a tooltip&quot;&gt;
+            bottom-left
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--right&quot; data-dc-has-tooltip&#x3D;&quot;Hi. I&#x27;m a tooltip&quot;&gt;
+            right
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class&#x3D;&quot;dc-btn&quot;&gt;
+            .
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--left&quot; data-dc-has-tooltip&#x3D;&quot;Hi. I&#x27;m a tooltip&quot;&gt;
+            left
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--top-right&quot; data-dc-has-tooltip&#x3D;&quot;Hi. I&#x27;m a tooltip&quot;&gt;
+            top-right
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--top&quot; data-dc-has-tooltip&#x3D;&quot;Hi. I&#x27;m a tooltip&quot;&gt;
+            top
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--top-left&quot; data-dc-has-tooltip&#x3D;&quot;Hi. I&#x27;m a tooltip&quot;&gt;
+            top-left
+        &lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
         </div>
         <div class="f-item-group" id="tooltip.02-sizing">
             <div class="f-item-heading-group" data-f-toggle="labels">
@@ -2076,55 +2412,56 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Sizing</h3>
             </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>You can use a sizing modifier to define the width of a tooltip.</p>
-            <p>Available sizing modifiers are <code>dc--has-tooltip--large</code>, <code>dc--has-tooltip--medium</code> and <code>dc--has-tooltip--small</code>.</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	<div class="sg-has-tooltip-section">
-            	<div class="sg-has-tooltip-section__box">
-            		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--large" data-dc-has-tooltip="Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst. Nullam posuere condimentum cursus.">
-                        large
-                    </button>
-            	</div>
-            	<div class="sg-has-tooltip-section__box">
-            		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--medium" data-dc-has-tooltip="Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst. Nullam posuere condimentum cursus.">
-                        medium
-                    </button>
-            	</div>
-            	<div class="sg-has-tooltip-section__box">
-            		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--small" data-dc-has-tooltip="Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst.">
-                        small
-                    </button>
-            	</div>
-            </div>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;sg-has-tooltip-section&quot;&gt;
-            	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
-            		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--large&quot; data-dc-has-tooltip&#x3D;&quot;Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst. Nullam posuere condimentum cursus.&quot;&gt;
-                        large
-                    &lt;/button&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
-            		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--medium&quot; data-dc-has-tooltip&#x3D;&quot;Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst. Nullam posuere condimentum cursus.&quot;&gt;
-                        medium
-                    &lt;/button&gt;
-            	&lt;/div&gt;
-            	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
-            		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--small&quot; data-dc-has-tooltip&#x3D;&quot;Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst.&quot;&gt;
-                        small
-                    &lt;/button&gt;
-            	&lt;/div&gt;
-            &lt;/div&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>You can use a sizing modifier to define the width of a tooltip.</p>
+<p>Available sizing modifiers are <code>dc--has-tooltip--large</code>, <code>dc--has-tooltip--medium</code> and <code>dc--has-tooltip--small</code>.</p>
+
+</div>
+<div class="f-item-preview">
+	<div class="sg-has-tooltip-section">
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--large" data-dc-has-tooltip="Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst. Nullam posuere condimentum cursus.">
+            large
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--medium" data-dc-has-tooltip="Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst. Nullam posuere condimentum cursus.">
+            medium
+        </button>
+	</div>
+	<div class="sg-has-tooltip-section__box">
+		<button class="dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--small" data-dc-has-tooltip="Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst.">
+            small
+        </button>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;sg-has-tooltip-section&quot;&gt;
+	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--large&quot; data-dc-has-tooltip&#x3D;&quot;Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst. Nullam posuere condimentum cursus.&quot;&gt;
+            large
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--medium&quot; data-dc-has-tooltip&#x3D;&quot;Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst. Nullam posuere condimentum cursus.&quot;&gt;
+            medium
+        &lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sg-has-tooltip-section__box&quot;&gt;
+		&lt;button class&#x3D;&quot;dc-btn dc--has-tooltip dc--has-tooltip--top dc--has-tooltip--small&quot; data-dc-has-tooltip&#x3D;&quot;Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Pellentesque semper ultrices sollicitudin. In hac habitasse platea dictumst.&quot;&gt;
+            small
+        &lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
         </div>
     </div>
 </div>

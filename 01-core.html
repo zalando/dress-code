@@ -74,19 +74,18 @@
 		    <div class="f-search-materials">
 		        <div class="dc-search-form f-search-form">
 		            <input type="text" id="quick-search"
-		                                            class="dc-input dc-search-form__input" list="materials-list"
+		                                            class="dc-input dc-search-form__input" list="search-entries-list"
 		                                            placeholder="Quick search…"
 		                                            data-autofirst="true">
 		            <button class="dc-btn dc-search-form__btn">
 		                <i class="dc-icon dc-icon--search dc-icon--interactive"></i>
 		            </button>
-		            <datalist id="materials-list">
+		            <datalist id="search-entries-list">
 		                <option value="/01-core.html#01-typography.01-getting-the-font">Typography &middot; Getting The Font</option>
 		                <option value="/01-core.html#01-typography.02-font-weights">Typography &middot; Font Weights</option>
 		                <option value="/01-core.html#01-typography.03-font-sizes">Typography &middot; Font Sizes</option>
 		                <option value="/01-core.html#02-colors">Colors</option>
 		                <option value="/01-core.html#03-utilities">Utilities</option>
-		                <option value="/01-core.html#04-scss-reference">Scss Reference</option>
 		                <option value="/02-structure-and-grid.html#01-page-structure">Page Structure</option>
 		                <option value="/02-structure-and-grid.html#02-grid.02-basic-grid">Grid &middot; Basic Grid</option>
 		                <option value="/02-structure-and-grid.html#02-grid.03-shrink-columns">Grid &middot; Shrink Columns</option>
@@ -101,12 +100,10 @@
 		                <option value="/02-structure-and-grid.html#03-horizontal-alignment.02-row-align-right">Horizontal Alignment &middot; Row Align Right</option>
 		                <option value="/02-structure-and-grid.html#03-horizontal-alignment.03-row-align-spaced">Horizontal Alignment &middot; Row Align Spaced</option>
 		                <option value="/02-structure-and-grid.html#03-horizontal-alignment.04-row-align-justified">Horizontal Alignment &middot; Row Align Justified</option>
-		                <option value="/02-structure-and-grid.html#04-scss-reference.01-mixins">Scss Reference &middot; Mixins</option>
-		                <option value="/02-structure-and-grid.html#04-scss-reference.02-default-grid-variables">Scss Reference &middot; Default Grid Variables</option>
-		                <option value="/02-structure-and-grid.html#05-vertical-alignment.01-row-align-top">Vertical Alignment &middot; Row Align Top</option>
-		                <option value="/02-structure-and-grid.html#05-vertical-alignment.02-row-align-middle">Vertical Alignment &middot; Row Align Middle</option>
-		                <option value="/02-structure-and-grid.html#05-vertical-alignment.03-row-align-bottom">Vertical Alignment &middot; Row Align Bottom</option>
-		                <option value="/02-structure-and-grid.html#05-vertical-alignment.04-self-align-columns">Vertical Alignment &middot; Self Align Columns</option>
+		                <option value="/02-structure-and-grid.html#04-vertical-alignment.01-row-align-top">Vertical Alignment &middot; Row Align Top</option>
+		                <option value="/02-structure-and-grid.html#04-vertical-alignment.02-row-align-middle">Vertical Alignment &middot; Row Align Middle</option>
+		                <option value="/02-structure-and-grid.html#04-vertical-alignment.03-row-align-bottom">Vertical Alignment &middot; Row Align Bottom</option>
+		                <option value="/02-structure-and-grid.html#04-vertical-alignment.04-self-align-columns">Vertical Alignment &middot; Self Align Columns</option>
 		                <option value="/03-atoms.html#buttons.01-button">Buttons &middot; Button</option>
 		                <option value="/03-atoms.html#buttons.02-sizes">Buttons &middot; Sizes</option>
 		                <option value="/03-atoms.html#buttons.03-options">Buttons &middot; Options</option>
@@ -120,8 +117,10 @@
 		                <option value="/03-atoms.html#forms.text-input">Forms &middot; Text Input</option>
 		                <option value="/03-atoms.html#forms.textarea">Forms &middot; Textarea</option>
 		                <option value="/03-atoms.html#icons.01-icons">Icons &middot; Icons</option>
-		                <option value="/03-atoms.html#icons.02-changing-the-font-location">Icons &middot; Changing The Font Location</option>
-		                <option value="/03-atoms.html#icons.03-svg-icons">Icons &middot; Svg Icons</option>
+		                <option value="/03-atoms.html#icons.02-interactive-icons">Icons &middot; Interactive Icons</option>
+		                <option value="/03-atoms.html#icons.03-spinning-icons">Icons &middot; Spinning Icons</option>
+		                <option value="/03-atoms.html#icons.04-changing-the-font-location">Icons &middot; Changing The Font Location</option>
+		                <option value="/03-atoms.html#icons.05-svg-icons">Icons &middot; Svg Icons</option>
 		                <option value="/03-atoms.html#link">Link</option>
 		                <option value="/03-atoms.html#lists.01-list">Lists &middot; List</option>
 		                <option value="/03-atoms.html#lists.02-unordered">Lists &middot; Unordered</option>
@@ -154,6 +153,20 @@
 		                <option value="/04-molecules.html#12-pagination">Pagination</option>
 		                <option value="/05-guidelines.html#01-date-time-format">Date Time Format</option>
 		                <option value="/05-guidelines.html#02-number-format">Number Format</option>
+		    
+		                <option value="/sass-reference.html#colors">Sass Reference &middot; Colors</option>
+		                <option value="/sass-reference.html#core">Sass Reference &middot; Core</option>
+		                <option value="/sass-reference.html#mixin-dc-everything">Sass Reference &middot; dc-everything (mixin)</option>
+		                <option value="/sass-reference.html#icons">Sass Reference &middot; Icons</option>
+		                <option value="/sass-reference.html#mixin-dc-icon">Sass Reference &middot; dc-icon (mixin)</option>
+		                <option value="/sass-reference.html#function-dc-icon-char">Sass Reference &middot; dc-icon-char (function)</option>
+		                <option value="/sass-reference.html#structure-and-grid">Sass Reference &middot; Structure And Grid</option>
+		                <option value="/sass-reference.html#mixin-dc-grid-row">Sass Reference &middot; dc-grid-row (mixin)</option>
+		                <option value="/sass-reference.html#mixin-dc-grid-column">Sass Reference &middot; dc-grid-column (mixin)</option>
+		                <option value="/sass-reference.html#mixin-dc-block-grid">Sass Reference &middot; dc-block-grid (mixin)</option>
+		                <option value="/sass-reference.html#function-grid-column-flex">Sass Reference &middot; grid-column-flex (function)</option>
+		                <option value="/sass-reference.html#function-grid-column-size">Sass Reference &middot; grid-column-size (function)</option>
+		    
 		            </datalist>
 		        </div>
 		    </div>
@@ -176,9 +189,6 @@
 						<li>
 							<a href="01-core.html#03-utilities">Utilities</a>
 						</li>
-						<li>
-							<a href="01-core.html#04-scss-reference">Scss Reference</a>
-						</li>
 					</ul>
 				</li>
 				<li>
@@ -194,10 +204,7 @@
 							<a href="02-structure-and-grid.html#03-horizontal-alignment">Horizontal Alignment</a>
 						</li>
 						<li>
-							<a href="02-structure-and-grid.html#04-scss-reference">Scss Reference</a>
-						</li>
-						<li>
-							<a href="02-structure-and-grid.html#05-vertical-alignment">Vertical Alignment</a>
+							<a href="02-structure-and-grid.html#04-vertical-alignment">Vertical Alignment</a>
 						</li>
 					</ul>
 				</li>
@@ -304,6 +311,24 @@
 					</ul>
 				</li>
 		
+		        <li>
+					<a href="sass-reference.html" class="f-menu__heading">Sass Reference</a>
+					<ul>
+						<li>
+							<a href="sass-reference.html#sassdoc-colors">Colors</a>
+						</li>
+						<li>
+							<a href="sass-reference.html#sassdoc-core">Core</a>
+						</li>
+						<li>
+							<a href="sass-reference.html#sassdoc-icons">Icons</a>
+						</li>
+						<li>
+							<a href="sass-reference.html#sassdoc-structure-and-grid">Structure And Grid</a>
+						</li>
+					</ul>
+				</li>
+		
 		
 				<li>
 					<a href="docs.html" class="f-menu__heading">Docs</a>
@@ -354,17 +379,18 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Getting The Font</h3>
             </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>Dress Code uses <em>Ubuntu</em>, a free open source font distributed trough <a href="https://fonts.google.com/specimen/Ubuntu">Google Fonts.</a>
-            The simplest way to load the font in your project is to use the following code in your document:</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	<pre class="dc-pre"><code class="language-markup">&lt;link href=&quot;//fonts.googleapis.com/css?family=Ubuntu:300,500&quot; rel=&quot;stylesheet&quot;&gt;</code></pre>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;pre class&#x3D;&quot;dc-pre&quot;&gt;&lt;code class&#x3D;&quot;language-markup&quot;&gt;&amp;lt;link href&#x3D;&amp;quot;//fonts.googleapis.com/css?family&#x3D;Ubuntu:300,500&amp;quot; rel&#x3D;&amp;quot;stylesheet&amp;quot;&amp;gt;&lt;/code&gt;&lt;/pre&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>Dress Code uses <em>Ubuntu</em>, a free open source font distributed trough <a href="https://fonts.google.com/specimen/Ubuntu">Google Fonts.</a>
+The simplest way to load the font in your project is to use the following code in your document:</p>
+
+</div>
+<div class="f-item-preview">
+	<pre class="dc-pre"><code class="language-markup">&lt;link href=&quot;//fonts.googleapis.com/css?family=Ubuntu:300,500&quot; rel=&quot;stylesheet&quot;&gt;</code></pre>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;pre class&#x3D;&quot;dc-pre&quot;&gt;&lt;code class&#x3D;&quot;language-markup&quot;&gt;&amp;lt;link href&#x3D;&amp;quot;//fonts.googleapis.com/css?family&#x3D;Ubuntu:300,500&amp;quot; rel&#x3D;&amp;quot;stylesheet&amp;quot;&amp;gt;&lt;/code&gt;&lt;/pre&gt;</code></pre>
+</div>
         </div>
         <div class="f-item-group" id="01-typography.02-font-weights">
             <div class="f-item-heading-group" data-f-toggle="labels">
@@ -382,16 +408,17 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Font Weights</h3>
             </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>The default font weight for text is 300. Most of the default text styles will use this. The weight 500 is used for <strong class="dc-strong">emphasized text</strong> as well as table headers, form labels, and some other elements.</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup"></code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>The default font weight for text is 300. Most of the default text styles will use this. The weight 500 is used for <strong class="dc-strong">emphasized text</strong> as well as table headers, form labels, and some other elements.</p>
+
+</div>
+<div class="f-item-preview">
+	
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup"></code></pre>
+</div>
         </div>
         <div class="f-item-group" id="01-typography.03-font-sizes">
             <div class="f-item-heading-group" data-f-toggle="labels">
@@ -409,27 +436,28 @@
                 </div>
                 <h3 class="dc-h3 f-item-heading">Font Sizes</h3>
             </div>
-            <div class="f-item-notes" data-f-toggle="notes">
-            	<p>These are the main heading and text sizes. Use classes such as <code>.dc-h1</code> to ensure the styling is correctly applied, regardless of the HTML element.
-            Remember to use size to correctly hierarchize the information on the page.</p>
-            
-            </div>
-            <div class="f-item-preview">
-            	<h1 class="dc-h1">Headline H1 is 34px and the line-height is 48px</h1>
-            <h2 class="dc-h2">Headline H2 is 27px and the line-height is 36px</h2>
-            <h3 class="dc-h3">Headline H3 is 22px and the line-height is 36px</h3>
-            <h4 class="dc-h4">Headline H4 is 18px and the line-height is 24px</h4>
-            <p class="dc-p">Size for normal text is 14px and the line-height is 24px</p>
-            <p class="dc--text-small">Size for small copy is 11px and the line-height is 18px</p>
-            </div>
-            <div class="f-item-code f-item-hidden" data-f-toggle="code">
-            	<pre class="dc-pre"><code class="language-markup">&lt;h1 class&#x3D;&quot;dc-h1&quot;&gt;Headline H1 is 34px and the line-height is 48px&lt;/h1&gt;
-            &lt;h2 class&#x3D;&quot;dc-h2&quot;&gt;Headline H2 is 27px and the line-height is 36px&lt;/h2&gt;
-            &lt;h3 class&#x3D;&quot;dc-h3&quot;&gt;Headline H3 is 22px and the line-height is 36px&lt;/h3&gt;
-            &lt;h4 class&#x3D;&quot;dc-h4&quot;&gt;Headline H4 is 18px and the line-height is 24px&lt;/h4&gt;
-            &lt;p class&#x3D;&quot;dc-p&quot;&gt;Size for normal text is 14px and the line-height is 24px&lt;/p&gt;
-            &lt;p class&#x3D;&quot;dc--text-small&quot;&gt;Size for small copy is 11px and the line-height is 18px&lt;/p&gt;</code></pre>
-            </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+<div class="f-item-notes" data-f-toggle="notes">
+	<p>These are the main heading and text sizes. Use classes such as <code>.dc-h1</code> to ensure the styling is correctly applied, regardless of the HTML element.
+Remember to use size to correctly hierarchize the information on the page.</p>
+
+</div>
+<div class="f-item-preview">
+	<h1 class="dc-h1">Headline H1 is 34px and the line-height is 48px</h1>
+<h2 class="dc-h2">Headline H2 is 27px and the line-height is 36px</h2>
+<h3 class="dc-h3">Headline H3 is 22px and the line-height is 36px</h3>
+<h4 class="dc-h4">Headline H4 is 18px and the line-height is 24px</h4>
+<p class="dc-p">Size for normal text is 14px and the line-height is 24px</p>
+<p class="dc--text-small">Size for small copy is 11px and the line-height is 18px</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;h1 class&#x3D;&quot;dc-h1&quot;&gt;Headline H1 is 34px and the line-height is 48px&lt;/h1&gt;
+&lt;h2 class&#x3D;&quot;dc-h2&quot;&gt;Headline H2 is 27px and the line-height is 36px&lt;/h2&gt;
+&lt;h3 class&#x3D;&quot;dc-h3&quot;&gt;Headline H3 is 22px and the line-height is 36px&lt;/h3&gt;
+&lt;h4 class&#x3D;&quot;dc-h4&quot;&gt;Headline H4 is 18px and the line-height is 24px&lt;/h4&gt;
+&lt;p class&#x3D;&quot;dc-p&quot;&gt;Size for normal text is 14px and the line-height is 24px&lt;/p&gt;
+&lt;p class&#x3D;&quot;dc--text-small&quot;&gt;Size for small copy is 11px and the line-height is 18px&lt;/p&gt;</code></pre>
+</div>
         </div>
     </div>
 </div>
@@ -448,683 +476,684 @@
             </div>
             <h2 class="dc-h2 f-item-heading">Colors</h2>
         </div>
-        
-        <div class="f-item-preview">
-        	<p class="dc-p">Color plays an important role in mantaining a cohesive look and feel between multiple apps. To ensure this, avoid using colors other than the ones below. All of these colors are available as SASS variables which should save you time when creating your
-        	application.
-        
-        	<section class="color">
-        		<h3 class="dc-h3 f-item-heading">Blue</h3>
-        		<div class="f-color-chips">
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-blue80</div>
-        				<div class="f-color-chip__color">#e6f4ff</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-blue70</div>
-        				<div class="f-color-chip__color">#d1ebff</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-blue60</div>
-        				<div class="f-color-chip__color">#a3d9ff</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-blue50</div>
-        				<div class="f-color-chip__color">#75c6ff</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-blue40</div>
-        				<div class="f-color-chip__color">#26aafe</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-blue30</div>
-        				<div class="f-color-chip__color">#1e87cb</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-blue20</div>
-        				<div class="f-color-chip__color">#186698</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-blue10</div>
-        				<div class="f-color-chip__color">#124365</div>
-        			</div>
-        		</div>
-        	</section>
-        	<section class="color">
-        		<h3 class="dc-h3 f-item-heading">Cyan</h3>
-        		<div class="f-color-chips">
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-cyan80</div>
-        				<div class="f-color-chip__color">#e8fCff</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-cyan70</div>
-        				<div class="f-color-chip__color">#b5f5ff</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-cyan60</div>
-        				<div class="f-color-chip__color">#8cf0ff</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-cyan50</div>
-        				<div class="f-color-chip__color">#61eaff</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-cyan40</div>
-        				<div class="f-color-chip__color">#24e0fe</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-cyan30</div>
-        				<div class="f-color-chip__color">#1fb3cb</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-cyan20</div>
-        				<div class="f-color-chip__color">#1a8899</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-cyan10</div>
-        				<div class="f-color-chip__color">#145b66</div>
-        			</div>
-        		</div>
-        	</section>
-        	<section class="color">
-        		<h3 class="dc-h3 f-item-heading">Green</h3>
-        		<div class="f-color-chips">
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-green80</div>
-        				<div class="f-color-chip__color">#e7ffd6</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-green70</div>
-        				<div class="f-color-chip__color">#c6ff9e</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-green60</div>
-        				<div class="f-color-chip__color">#acff70</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-green50</div>
-        				<div class="f-color-chip__color">#8bfa3c</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-green40</div>
-        				<div class="f-color-chip__color">#72e620</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-green30</div>
-        				<div class="f-color-chip__color">#65cb1c</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-green20</div>
-        				<div class="f-color-chip__color">#4a9912</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-green10</div>
-        				<div class="f-color-chip__color">#30660a</div>
-        			</div>
-        		</div>
-        	</section>
-        	<section class="color">
-        		<h3 class="dc-h3 f-item-heading">Yellow</h3>
-        		<div class="f-color-chips">
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-yellow80</div>
-        				<div class="f-color-chip__color">#fff9d9</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-yellow70</div>
-        				<div class="f-color-chip__color">#fff09e</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-yellow60</div>
-        				<div class="f-color-chip__color">#ffeb7a</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-yellow50</div>
-        				<div class="f-color-chip__color">#ffe347</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-yellow40</div>
-        				<div class="f-color-chip__color">#ffda0a</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-yellow30</div>
-        				<div class="f-color-chip__color">#ccb116</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-yellow20</div>
-        				<div class="f-color-chip__color">#99840e</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-yellow10</div>
-        				<div class="f-color-chip__color">#665705</div>
-        			</div>
-        		</div>
-        	</section>
-        	<section class="color">
-        		<h3 class="dc-h3 f-item-heading">Orange</h3>
-        		<div class="f-color-chips">
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-orange80</div>
-        				<div class="f-color-chip__color">#ffefe0</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-orange70</div>
-        				<div class="f-color-chip__color">#ffd1a6</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-orange60</div>
-        				<div class="f-color-chip__color">#ffba7a</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-orange50</div>
-        				<div class="f-color-chip__color">#ffa54e</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-orange40</div>
-        				<div class="f-color-chip__color">#ff8e25</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-orange30</div>
-        				<div class="f-color-chip__color">#cc711d</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-orange20</div>
-        				<div class="f-color-chip__color">#995516</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-orange10</div>
-        				<div class="f-color-chip__color">#66380e</div>
-        			</div>
-        		</div>
-        	</section>
-        	<section class="color">
-        		<h3 class="dc-h3 f-item-heading">Red</h3>
-        		<div class="f-color-chips">
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-red80</div>
-        				<div class="f-color-chip__color">#ffeae6</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-red70</div>
-        				<div class="f-color-chip__color">#ffcabf</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-red60</div>
-        				<div class="f-color-chip__color">#ff9985</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-red50</div>
-        				<div class="f-color-chip__color">#ff6c4f</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-red40</div>
-        				<div class="f-color-chip__color">#ff4a25</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-red30</div>
-        				<div class="f-color-chip__color">#cc3a1d</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-red20</div>
-        				<div class="f-color-chip__color">#992b15</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-red10</div>
-        				<div class="f-color-chip__color">#661d0e</div>
-        			</div>
-        		</div>
-        	</section>
-        	<section class="color">
-        		<h3 class="dc-h3 f-item-heading">Magenta</h3>
-        		<div class="f-color-chips">
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-magenta80</div>
-        				<div class="f-color-chip__color">#f7e9f7</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-magenta70</div>
-        				<div class="f-color-chip__color">#f7c8f7</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-magenta60</div>
-        				<div class="f-color-chip__color">#f7b2f6</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-magenta50</div>
-        				<div class="f-color-chip__color">#f296f1</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-magenta40</div>
-        				<div class="f-color-chip__color">#eb74e9</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-magenta30</div>
-        				<div class="f-color-chip__color">#bb5cba</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-magenta20</div>
-        				<div class="f-color-chip__color">#8c458b</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-magenta10</div>
-        				<div class="f-color-chip__color">#5d2e5c</div>
-        			</div>
-        		</div>
-        	</section>
-        	<section class="color">
-        		<h3 class="dc-h3 f-item-heading">Purple</h3>
-        		<div class="f-color-chips">
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-purple80</div>
-        				<div class="f-color-chip__color">#f4edff</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-purple70</div>
-        				<div class="f-color-chip__color">#e1cfff</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-purple60</div>
-        				<div class="f-color-chip__color">#c8a6ff</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-purple50</div>
-        				<div class="f-color-chip__color">#ac7afd</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-purple40</div>
-        				<div class="f-color-chip__color">#9757fd</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-purple30</div>
-        				<div class="f-color-chip__color">#7845cb</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-purple20</div>
-        				<div class="f-color-chip__color">#5a3498</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-purple10</div>
-        				<div class="f-color-chip__color">#3c2365</div>
-        			</div>
-        		</div>
-        	</section>
-        	<section class="color">
-        		<h3 class="dc-h3 f-item-heading">Grays</h3>
-        		<div class="f-color-chips">
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-gray80</div>
-        				<div class="f-color-chip__color">#f7f7f7</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-gray70</div>
-        				<div class="f-color-chip__color">#ededed</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-gray60</div>
-        				<div class="f-color-chip__color">#d1d1d1</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-gray50</div>
-        				<div class="f-color-chip__color">#b6b6b6</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-gray40</div>
-        				<div class="f-color-chip__color">#9b9b9b</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-gray30</div>
-        				<div class="f-color-chip__color">#808080</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-gray20</div>
-        				<div class="f-color-chip__color">#646464</div>
-        			</div>
-        			<div class="f-color-chip">
-        				<div class="f-color-chip__name">$dc-gray10</div>
-        				<div class="f-color-chip__color">#4a4a4a</div>
-        			</div>
-        		</div>
-        	</section>
-        </div>
-        <div class="f-item-code f-item-hidden" data-f-toggle="code">
-        	<pre class="dc-pre"><code class="language-markup">&lt;p class&#x3D;&quot;dc-p&quot;&gt;Color plays an important role in mantaining a cohesive look and feel between multiple apps. To ensure this, avoid using colors other than the ones below. All of these colors are available as SASS variables which should save you time when creating your
-        	application.
-        
-        	&lt;section class&#x3D;&quot;color&quot;&gt;
-        		&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Blue&lt;/h3&gt;
-        		&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-blue80&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#e6f4ff&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-blue70&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#d1ebff&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-blue60&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#a3d9ff&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-blue50&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#75c6ff&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-blue40&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#26aafe&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-blue30&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#1e87cb&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-blue20&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#186698&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-blue10&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#124365&lt;/div&gt;
-        			&lt;/div&gt;
-        		&lt;/div&gt;
-        	&lt;/section&gt;
-        	&lt;section class&#x3D;&quot;color&quot;&gt;
-        		&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Cyan&lt;/h3&gt;
-        		&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-cyan80&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#e8fCff&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-cyan70&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#b5f5ff&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-cyan60&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#8cf0ff&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-cyan50&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#61eaff&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-cyan40&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#24e0fe&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-cyan30&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#1fb3cb&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-cyan20&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#1a8899&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-cyan10&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#145b66&lt;/div&gt;
-        			&lt;/div&gt;
-        		&lt;/div&gt;
-        	&lt;/section&gt;
-        	&lt;section class&#x3D;&quot;color&quot;&gt;
-        		&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Green&lt;/h3&gt;
-        		&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-green80&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#e7ffd6&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-green70&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#c6ff9e&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-green60&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#acff70&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-green50&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#8bfa3c&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-green40&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#72e620&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-green30&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#65cb1c&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-green20&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#4a9912&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-green10&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#30660a&lt;/div&gt;
-        			&lt;/div&gt;
-        		&lt;/div&gt;
-        	&lt;/section&gt;
-        	&lt;section class&#x3D;&quot;color&quot;&gt;
-        		&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Yellow&lt;/h3&gt;
-        		&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-yellow80&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#fff9d9&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-yellow70&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#fff09e&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-yellow60&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ffeb7a&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-yellow50&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ffe347&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-yellow40&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ffda0a&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-yellow30&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ccb116&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-yellow20&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#99840e&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-yellow10&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#665705&lt;/div&gt;
-        			&lt;/div&gt;
-        		&lt;/div&gt;
-        	&lt;/section&gt;
-        	&lt;section class&#x3D;&quot;color&quot;&gt;
-        		&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Orange&lt;/h3&gt;
-        		&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-orange80&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ffefe0&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-orange70&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ffd1a6&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-orange60&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ffba7a&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-orange50&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ffa54e&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-orange40&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ff8e25&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-orange30&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#cc711d&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-orange20&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#995516&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-orange10&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#66380e&lt;/div&gt;
-        			&lt;/div&gt;
-        		&lt;/div&gt;
-        	&lt;/section&gt;
-        	&lt;section class&#x3D;&quot;color&quot;&gt;
-        		&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Red&lt;/h3&gt;
-        		&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-red80&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ffeae6&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-red70&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ffcabf&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-red60&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ff9985&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-red50&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ff6c4f&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-red40&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ff4a25&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-red30&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#cc3a1d&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-red20&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#992b15&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-red10&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#661d0e&lt;/div&gt;
-        			&lt;/div&gt;
-        		&lt;/div&gt;
-        	&lt;/section&gt;
-        	&lt;section class&#x3D;&quot;color&quot;&gt;
-        		&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Magenta&lt;/h3&gt;
-        		&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-magenta80&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#f7e9f7&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-magenta70&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#f7c8f7&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-magenta60&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#f7b2f6&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-magenta50&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#f296f1&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-magenta40&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#eb74e9&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-magenta30&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#bb5cba&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-magenta20&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#8c458b&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-magenta10&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#5d2e5c&lt;/div&gt;
-        			&lt;/div&gt;
-        		&lt;/div&gt;
-        	&lt;/section&gt;
-        	&lt;section class&#x3D;&quot;color&quot;&gt;
-        		&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Purple&lt;/h3&gt;
-        		&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-purple80&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#f4edff&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-purple70&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#e1cfff&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-purple60&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#c8a6ff&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-purple50&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ac7afd&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-purple40&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#9757fd&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-purple30&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#7845cb&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-purple20&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#5a3498&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-purple10&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#3c2365&lt;/div&gt;
-        			&lt;/div&gt;
-        		&lt;/div&gt;
-        	&lt;/section&gt;
-        	&lt;section class&#x3D;&quot;color&quot;&gt;
-        		&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Grays&lt;/h3&gt;
-        		&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-gray80&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#f7f7f7&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-gray70&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ededed&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-gray60&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#d1d1d1&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-gray50&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#b6b6b6&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-gray40&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#9b9b9b&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-gray30&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#808080&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-gray20&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#646464&lt;/div&gt;
-        			&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-gray10&lt;/div&gt;
-        				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#4a4a4a&lt;/div&gt;
-        			&lt;/div&gt;
-        		&lt;/div&gt;
-        	&lt;/section&gt;</code></pre>
-        </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+
+<div class="f-item-preview">
+	<p class="dc-p">Color plays an important role in mantaining a cohesive look and feel between multiple apps. To ensure this, avoid using colors other than the ones below. All of these colors are available as SASS variables which should save you time when creating your
+	application.
+
+	<section class="color">
+		<h3 class="dc-h3 f-item-heading">Gray</h3>
+		<div class="f-color-chips">
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-gray80</div>
+				<div class="f-color-chip__color">#f7f7f7</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-gray70</div>
+				<div class="f-color-chip__color">#ededed</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-gray60</div>
+				<div class="f-color-chip__color">#d1d1d1</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-gray50</div>
+				<div class="f-color-chip__color">#b6b6b6</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-gray40</div>
+				<div class="f-color-chip__color">#9b9b9b</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-gray30</div>
+				<div class="f-color-chip__color">#808080</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-gray20</div>
+				<div class="f-color-chip__color">#646464</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-gray10</div>
+				<div class="f-color-chip__color">#4a4a4a</div>
+			</div>
+		</div>
+	</section>
+	<section class="color">
+		<h3 class="dc-h3 f-item-heading">Blue</h3>
+		<div class="f-color-chips">
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-blue80</div>
+				<div class="f-color-chip__color">#e6f4ff</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-blue70</div>
+				<div class="f-color-chip__color">#d1ebff</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-blue60</div>
+				<div class="f-color-chip__color">#a3d9ff</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-blue50</div>
+				<div class="f-color-chip__color">#75c6ff</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-blue40</div>
+				<div class="f-color-chip__color">#26aafe</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-blue30</div>
+				<div class="f-color-chip__color">#1e87cb</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-blue20</div>
+				<div class="f-color-chip__color">#186698</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-blue10</div>
+				<div class="f-color-chip__color">#124365</div>
+			</div>
+		</div>
+	</section>
+	<section class="color">
+		<h3 class="dc-h3 f-item-heading">Cyan</h3>
+		<div class="f-color-chips">
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-cyan80</div>
+				<div class="f-color-chip__color">#e8fcff</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-cyan70</div>
+				<div class="f-color-chip__color">#b5f5ff</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-cyan60</div>
+				<div class="f-color-chip__color">#8cf0ff</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-cyan50</div>
+				<div class="f-color-chip__color">#61eaff</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-cyan40</div>
+				<div class="f-color-chip__color">#24e0fe</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-cyan30</div>
+				<div class="f-color-chip__color">#1fb3cb</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-cyan20</div>
+				<div class="f-color-chip__color">#1a8899</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-cyan10</div>
+				<div class="f-color-chip__color">#145b66</div>
+			</div>
+		</div>
+	</section>
+	<section class="color">
+		<h3 class="dc-h3 f-item-heading">Green</h3>
+		<div class="f-color-chips">
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-green80</div>
+				<div class="f-color-chip__color">#e7ffd6</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-green70</div>
+				<div class="f-color-chip__color">#c6ff9e</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-green60</div>
+				<div class="f-color-chip__color">#acff70</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-green50</div>
+				<div class="f-color-chip__color">#8bfa3c</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-green40</div>
+				<div class="f-color-chip__color">#72e620</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-green30</div>
+				<div class="f-color-chip__color">#65cb1c</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-green20</div>
+				<div class="f-color-chip__color">#4a9912</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-green10</div>
+				<div class="f-color-chip__color">#30660a</div>
+			</div>
+		</div>
+	</section>
+	<section class="color">
+		<h3 class="dc-h3 f-item-heading">Yellow</h3>
+		<div class="f-color-chips">
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-yellow80</div>
+				<div class="f-color-chip__color">#fff9d9</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-yellow70</div>
+				<div class="f-color-chip__color">#fff09e</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-yellow60</div>
+				<div class="f-color-chip__color">#ffeb7a</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-yellow50</div>
+				<div class="f-color-chip__color">#ffe347</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-yellow40</div>
+				<div class="f-color-chip__color">#ffda0a</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-yellow30</div>
+				<div class="f-color-chip__color">#ccb116</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-yellow20</div>
+				<div class="f-color-chip__color">#99840e</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-yellow10</div>
+				<div class="f-color-chip__color">#665705</div>
+			</div>
+		</div>
+	</section>
+	<section class="color">
+		<h3 class="dc-h3 f-item-heading">Orange</h3>
+		<div class="f-color-chips">
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-orange80</div>
+				<div class="f-color-chip__color">#ffefe0</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-orange70</div>
+				<div class="f-color-chip__color">#ffd1a6</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-orange60</div>
+				<div class="f-color-chip__color">#ffba7a</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-orange50</div>
+				<div class="f-color-chip__color">#ffa54e</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-orange40</div>
+				<div class="f-color-chip__color">#ff8e25</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-orange30</div>
+				<div class="f-color-chip__color">#cc711d</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-orange20</div>
+				<div class="f-color-chip__color">#995516</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-orange10</div>
+				<div class="f-color-chip__color">#66380e</div>
+			</div>
+		</div>
+	</section>
+	<section class="color">
+		<h3 class="dc-h3 f-item-heading">Red</h3>
+		<div class="f-color-chips">
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-red80</div>
+				<div class="f-color-chip__color">#ffeae6</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-red70</div>
+				<div class="f-color-chip__color">#ffcabf</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-red60</div>
+				<div class="f-color-chip__color">#ff9985</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-red50</div>
+				<div class="f-color-chip__color">#ff6c4f</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-red40</div>
+				<div class="f-color-chip__color">#ff4a25</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-red30</div>
+				<div class="f-color-chip__color">#cc3a1d</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-red20</div>
+				<div class="f-color-chip__color">#992b15</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-red10</div>
+				<div class="f-color-chip__color">#661d0e</div>
+			</div>
+		</div>
+	</section>
+	<section class="color">
+		<h3 class="dc-h3 f-item-heading">Magenta</h3>
+		<div class="f-color-chips">
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-magenta80</div>
+				<div class="f-color-chip__color">#f7e9f7</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-magenta70</div>
+				<div class="f-color-chip__color">#f7c8f7</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-magenta60</div>
+				<div class="f-color-chip__color">#f7b2f6</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-magenta50</div>
+				<div class="f-color-chip__color">#f296f1</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-magenta40</div>
+				<div class="f-color-chip__color">#eb74e9</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-magenta30</div>
+				<div class="f-color-chip__color">#bb5cba</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-magenta20</div>
+				<div class="f-color-chip__color">#8c458b</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-magenta10</div>
+				<div class="f-color-chip__color">#5d2e5c</div>
+			</div>
+		</div>
+	</section>
+	<section class="color">
+		<h3 class="dc-h3 f-item-heading">Purple</h3>
+		<div class="f-color-chips">
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-purple80</div>
+				<div class="f-color-chip__color">#f4edff</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-purple70</div>
+				<div class="f-color-chip__color">#e1cfff</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-purple60</div>
+				<div class="f-color-chip__color">#c8a6ff</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-purple50</div>
+				<div class="f-color-chip__color">#ac7afd</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-purple40</div>
+				<div class="f-color-chip__color">#9757fd</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-purple30</div>
+				<div class="f-color-chip__color">#7845cb</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-purple20</div>
+				<div class="f-color-chip__color">#5a3498</div>
+			</div>
+			<div class="f-color-chip">
+				<div class="f-color-chip__name">$dc-purple10</div>
+				<div class="f-color-chip__color">#3c2365</div>
+			</div>
+		</div>
+	</section>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;p class&#x3D;&quot;dc-p&quot;&gt;Color plays an important role in mantaining a cohesive look and feel between multiple apps. To ensure this, avoid using colors other than the ones below. All of these colors are available as SASS variables which should save you time when creating your
+	application.
+
+	&lt;section class&#x3D;&quot;color&quot;&gt;
+		&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Gray&lt;/h3&gt;
+		&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-gray80&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#f7f7f7&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-gray70&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ededed&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-gray60&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#d1d1d1&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-gray50&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#b6b6b6&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-gray40&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#9b9b9b&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-gray30&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#808080&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-gray20&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#646464&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-gray10&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#4a4a4a&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;
+	&lt;section class&#x3D;&quot;color&quot;&gt;
+		&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Blue&lt;/h3&gt;
+		&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-blue80&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#e6f4ff&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-blue70&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#d1ebff&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-blue60&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#a3d9ff&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-blue50&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#75c6ff&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-blue40&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#26aafe&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-blue30&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#1e87cb&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-blue20&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#186698&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-blue10&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#124365&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;
+	&lt;section class&#x3D;&quot;color&quot;&gt;
+		&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Cyan&lt;/h3&gt;
+		&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-cyan80&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#e8fcff&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-cyan70&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#b5f5ff&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-cyan60&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#8cf0ff&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-cyan50&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#61eaff&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-cyan40&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#24e0fe&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-cyan30&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#1fb3cb&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-cyan20&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#1a8899&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-cyan10&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#145b66&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;
+	&lt;section class&#x3D;&quot;color&quot;&gt;
+		&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Green&lt;/h3&gt;
+		&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-green80&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#e7ffd6&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-green70&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#c6ff9e&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-green60&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#acff70&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-green50&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#8bfa3c&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-green40&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#72e620&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-green30&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#65cb1c&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-green20&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#4a9912&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-green10&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#30660a&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;
+	&lt;section class&#x3D;&quot;color&quot;&gt;
+		&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Yellow&lt;/h3&gt;
+		&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-yellow80&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#fff9d9&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-yellow70&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#fff09e&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-yellow60&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ffeb7a&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-yellow50&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ffe347&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-yellow40&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ffda0a&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-yellow30&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ccb116&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-yellow20&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#99840e&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-yellow10&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#665705&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;
+	&lt;section class&#x3D;&quot;color&quot;&gt;
+		&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Orange&lt;/h3&gt;
+		&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-orange80&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ffefe0&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-orange70&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ffd1a6&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-orange60&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ffba7a&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-orange50&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ffa54e&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-orange40&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ff8e25&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-orange30&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#cc711d&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-orange20&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#995516&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-orange10&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#66380e&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;
+	&lt;section class&#x3D;&quot;color&quot;&gt;
+		&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Red&lt;/h3&gt;
+		&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-red80&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ffeae6&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-red70&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ffcabf&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-red60&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ff9985&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-red50&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ff6c4f&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-red40&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ff4a25&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-red30&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#cc3a1d&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-red20&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#992b15&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-red10&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#661d0e&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;
+	&lt;section class&#x3D;&quot;color&quot;&gt;
+		&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Magenta&lt;/h3&gt;
+		&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-magenta80&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#f7e9f7&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-magenta70&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#f7c8f7&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-magenta60&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#f7b2f6&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-magenta50&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#f296f1&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-magenta40&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#eb74e9&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-magenta30&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#bb5cba&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-magenta20&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#8c458b&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-magenta10&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#5d2e5c&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;
+	&lt;section class&#x3D;&quot;color&quot;&gt;
+		&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Purple&lt;/h3&gt;
+		&lt;div class&#x3D;&quot;f-color-chips&quot;&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-purple80&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#f4edff&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-purple70&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#e1cfff&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-purple60&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#c8a6ff&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-purple50&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#ac7afd&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-purple40&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#9757fd&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-purple30&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#7845cb&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-purple20&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#5a3498&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;f-color-chip&quot;&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__name&quot;&gt;$dc-purple10&lt;/div&gt;
+				&lt;div class&#x3D;&quot;f-color-chip__color&quot;&gt;#3c2365&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/section&gt;</code></pre>
+</div>
     </div>
 </div>
 
@@ -1142,154 +1171,78 @@
             </div>
             <h2 class="dc-h2 f-item-heading">Utilities</h2>
         </div>
-        
-        <div class="f-item-preview">
-        	<p class="dc--is-important">This text is important</p>
-        <p class="dc--less-important">This text is less important</p>
-        <div class="dc--island-50">
-        	Island 50
-        </div>
-        <div class="dc--island-75">
-        	Island 75
-        </div>
-        <div class="dc--island-100">
-        	Island 100
-        </div>
-        <div>
-        	<p class="dc--text-left">This text is aligned left</p>
-        	<p class="dc--text-center">This text is aligned centered</p>
-        	<p class="dc--text-right">This text is aligned right</p>
-        </div>
-        <div>
-        	<p class="dc--text-less-important">
-        		This text is less important......
-        	</p>
-        	<p class="dc--text-small">
-        		This text is small
-        	</p>
-        	<p class="dc--text-success">
-        		This is a success text
-        	</p>
-        	<p class="dc--text-error">
-        		This is an error text
-        	</p>
-        	<p class="dc--text-truncate">
-        		This text will be truncated. This text will be truncated. This text will be truncated. This text will be truncated. This text will be truncated. This text will be truncated. This text will be truncated.
-        	</p>
-        </div>
-        </div>
-        <div class="f-item-code f-item-hidden" data-f-toggle="code">
-        	<pre class="dc-pre"><code class="language-markup">&lt;p class&#x3D;&quot;dc--is-important&quot;&gt;This text is important&lt;/p&gt;
-        &lt;p class&#x3D;&quot;dc--less-important&quot;&gt;This text is less important&lt;/p&gt;
-        &lt;div class&#x3D;&quot;dc--island-50&quot;&gt;
-        	Island 50
-        &lt;/div&gt;
-        &lt;div class&#x3D;&quot;dc--island-75&quot;&gt;
-        	Island 75
-        &lt;/div&gt;
-        &lt;div class&#x3D;&quot;dc--island-100&quot;&gt;
-        	Island 100
-        &lt;/div&gt;
-        &lt;div&gt;
-        	&lt;p class&#x3D;&quot;dc--text-left&quot;&gt;This text is aligned left&lt;/p&gt;
-        	&lt;p class&#x3D;&quot;dc--text-center&quot;&gt;This text is aligned centered&lt;/p&gt;
-        	&lt;p class&#x3D;&quot;dc--text-right&quot;&gt;This text is aligned right&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div&gt;
-        	&lt;p class&#x3D;&quot;dc--text-less-important&quot;&gt;
-        		This text is less important......
-        	&lt;/p&gt;
-        	&lt;p class&#x3D;&quot;dc--text-small&quot;&gt;
-        		This text is small
-        	&lt;/p&gt;
-        	&lt;p class&#x3D;&quot;dc--text-success&quot;&gt;
-        		This is a success text
-        	&lt;/p&gt;
-        	&lt;p class&#x3D;&quot;dc--text-error&quot;&gt;
-        		This is an error text
-        	&lt;/p&gt;
-        	&lt;p class&#x3D;&quot;dc--text-truncate&quot;&gt;
-        		This text will be truncated. This text will be truncated. This text will be truncated. This text will be truncated. This text will be truncated. This text will be truncated. This text will be truncated.
-        	&lt;/p&gt;
-        &lt;/div&gt;</code></pre>
-        </div>
-    </div>
+<!-- Indentation removed for item-content so as there is no whitespace in the output. Whitespace affects the 'pre' code in the demo-->
+
+<div class="f-item-preview">
+	<p class="dc--is-important">This text is important</p>
+<p class="dc--less-important">This text is less important</p>
+<div class="dc--island-50">
+	Island 50
 </div>
-
-
-<div class="dc-card f-item-group">
-    <div class="f-item-group" id="04-scss-reference">
-        <div class="f-item-heading-group" data-f-toggle="labels">
-            <div class="f-item-controls">
-            	<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-            		<svg class="dc-svg">
-            			<use xlink:href="#f-icon-notes" />
-            		</svg>
-            	</span>
-            	<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-            		<svg class="dc-svg">
-            			<use xlink:href="#f-icon-code" />
-            		</svg>
-            	</span>
-            </div>
-            <h2 class="dc-h2 f-item-heading">Scss Reference</h2>
-        </div>
-        <div class="f-item-notes" data-f-toggle="notes">
-        	<p>Variables used in Dress Code Core and their default values</p>
-        
-        </div>
-        <div class="f-item-preview">
-        	<table class="dc-table">
-        	<thead class="dc-table__thead">
-        		<tr class="dc-table__tr">
-        			<th class="dc-table__th">Variable</th>
-        			<th class="dc-table__th">Type</th>
-        			<th class="dc-table__th">Default</th>
-        			<th class="dc-table__th">Description</th>
-        		</tr>
-        	</thead>
-        	<tbody class="dc-table__tbody">
-        		<tr class="dc-table__tr">
-        			<td class="dc-table__td">$dc-font-path</td>
-        			<td class="dc-table__td">String</td>
-        			<td class="dc-table__td">"../fonts"</td>
-        			<td class="dc-table__td">Fonts folder</td>
-        		</tr>
-        		<tr class="dc-table__tr">
-        			<td class="dc-table__td">$dc-image-path</td>
-        			<td class="dc-table__td">String</td>
-        			<td class="dc-table__td">"../img"</td>
-        			<td class="dc-table__td">Images folder</td>
-        		</tr>
-        	</tbody>
-        </table>
-        </div>
-        <div class="f-item-code f-item-hidden" data-f-toggle="code">
-        	<pre class="dc-pre"><code class="language-markup">&lt;table class&#x3D;&quot;dc-table&quot;&gt;
-        	&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
-        		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
-        			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Variable&lt;/th&gt;
-        			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
-        			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
-        			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
-        		&lt;/tr&gt;
-        	&lt;/thead&gt;
-        	&lt;tbody class&#x3D;&quot;dc-table__tbody&quot;&gt;
-        		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
-        			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;$dc-font-path&lt;/td&gt;
-        			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;String&lt;/td&gt;
-        			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;&quot;../fonts&quot;&lt;/td&gt;
-        			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;Fonts folder&lt;/td&gt;
-        		&lt;/tr&gt;
-        		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
-        			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;$dc-image-path&lt;/td&gt;
-        			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;String&lt;/td&gt;
-        			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;&quot;../img&quot;&lt;/td&gt;
-        			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;Images folder&lt;/td&gt;
-        		&lt;/tr&gt;
-        	&lt;/tbody&gt;
-        &lt;/table&gt;</code></pre>
-        </div>
+<div class="dc--island-75">
+	Island 75
+</div>
+<div class="dc--island-100">
+	Island 100
+</div>
+<div>
+	<p class="dc--text-left">This text is aligned left</p>
+	<p class="dc--text-center">This text is aligned centered</p>
+	<p class="dc--text-right">This text is aligned right</p>
+</div>
+<div>
+	<p class="dc--text-less-important">
+		This text is less important......
+	</p>
+	<p class="dc--text-small">
+		This text is small
+	</p>
+	<p class="dc--text-success">
+		This is a success text
+	</p>
+	<p class="dc--text-error">
+		This is an error text
+	</p>
+	<p class="dc--text-truncate">
+		This text will be truncated. This text will be truncated. This text will be truncated. This text will be truncated. This text will be truncated. This text will be truncated. This text will be truncated.
+	</p>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;p class&#x3D;&quot;dc--is-important&quot;&gt;This text is important&lt;/p&gt;
+&lt;p class&#x3D;&quot;dc--less-important&quot;&gt;This text is less important&lt;/p&gt;
+&lt;div class&#x3D;&quot;dc--island-50&quot;&gt;
+	Island 50
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;dc--island-75&quot;&gt;
+	Island 75
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;dc--island-100&quot;&gt;
+	Island 100
+&lt;/div&gt;
+&lt;div&gt;
+	&lt;p class&#x3D;&quot;dc--text-left&quot;&gt;This text is aligned left&lt;/p&gt;
+	&lt;p class&#x3D;&quot;dc--text-center&quot;&gt;This text is aligned centered&lt;/p&gt;
+	&lt;p class&#x3D;&quot;dc--text-right&quot;&gt;This text is aligned right&lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+	&lt;p class&#x3D;&quot;dc--text-less-important&quot;&gt;
+		This text is less important......
+	&lt;/p&gt;
+	&lt;p class&#x3D;&quot;dc--text-small&quot;&gt;
+		This text is small
+	&lt;/p&gt;
+	&lt;p class&#x3D;&quot;dc--text-success&quot;&gt;
+		This is a success text
+	&lt;/p&gt;
+	&lt;p class&#x3D;&quot;dc--text-error&quot;&gt;
+		This is an error text
+	&lt;/p&gt;
+	&lt;p class&#x3D;&quot;dc--text-truncate&quot;&gt;
+		This text will be truncated. This text will be truncated. This text will be truncated. This text will be truncated. This text will be truncated. This text will be truncated. This text will be truncated.
+	&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div>
     </div>
 </div>
 

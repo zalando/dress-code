@@ -1,0 +1,1534 @@
+<!doctype html>
+<html class="f-menu-active">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>The Dress Code | Docs</title>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic|Ubuntu+Mono" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="/dress-code/assets/styles/main.css">
+
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <link rel="icon" href="favicon.ico">
+</head>
+<body class="dc-body--demo-breakpoints">
+
+		<header class="f-header">
+			<img class="f-logo" src="/dress-code/assets/img/zalando-logo.svg" alt="Zalando">
+			<div class="f-control f-menu-toggle">
+			    <i class="dc-icon dc-icon--menu"></i>
+			</div>
+			
+			<div class="f-control f-menu-toggle">
+				<a href class="dc-link js-toggle-breakpoints">Breakpoints</a>
+			</div>
+            <div class="f-control">
+                <a class="dc-link" href="https://github.com/zalando/dress-code/" target="_blank">Github</a>
+            </div>
+		</header>
+		<!-- fabricator icons -->
+		<svg class="dc-svg" style="display: none;">
+			<symbol id="f-icon-code" viewBox="0 0 512 512">
+				<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
+			</symbol>
+			<symbol id="f-icon-notes" viewBox="0 0 512 512">
+				<path d="M443.8 0H68.2C30.6 0 0 30.5 0 68v264.2c0 16.6 8.9 29.5 25.9 37.5 15.3 7.2 33.1 8.4 40.1 8.5V512l201.6-134h176.1c37.6 0 68.2-30.3 68.2-67.8V68c.1-37.5-30.5-68-68.1-68zM114 438V330H68.2c-11.1 0-19.2-8.8-19.2-19.8V68c0-11 8.2-20 19.2-20h375.5c11.1 0 19.2 9 19.2 20v242.2c0 11-8.2 19.8-19.2 19.8H244.2L114 438z"/>
+			</symbol>
+			<symbol id="f-icon-labels" viewBox="0 0 512 512">
+				<path d="M304 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM464 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM144 280c0 13.2-10.8 24-24 24H72c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48z"/>
+			</symbol>
+			<symbol id="f-icon-menu" viewBox="0 0 512 512">
+				<path d="M512 100c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 212c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 324c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 436c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24z"/>
+			</symbol>
+			<symbol id="f-icon-settings" viewBox="0 0 512 512">
+				<path d="M256 377.3c-67.5 0-121.6-53.9-121.6-121.3s54-121.3 121.6-121.3S377.6 188.6 377.6 256 323.5 377.3 256 377.3zm0-215.6c-52.7 0-94.6 41.8-94.6 94.3s41.9 94.3 94.6 94.3 94.6-41.8 94.6-94.3-41.9-94.3-94.6-94.3zM293.2 512h-72.9L200 450c-13.5-4-27-9.4-39.2-16.2l-59.4 29.6L50 412.3 79.7 353c-6.8-12.1-12.2-25.6-16.2-39.1L0 292.4v-72.8l62.1-20.2c4.1-13.5 9.5-26.9 16.2-39.1L48.6 101 100 49.9l59.4 29.6c12.2-6.7 25.7-12.1 39.2-16.2L220.2 0h72.9l20.3 62c13.5 4 27 9.4 39.2 16.2L412 48.5l51.3 51.2-29.7 59.3c6.8 12.1 12.2 25.6 16.2 39.1l62.1 20.2V291l-62.1 20.2c-4.1 13.5-9.5 26.9-16.2 39.1l29.7 59.3-51.3 51.2-59.4-29.6c-12.2 6.7-25.7 12.1-39.2 16.2L293.2 512zm-54.1-26.9h35.1l18.9-57.9 6.8-1.3c16.2-4 31.1-10.8 45.9-18.9l6.8-4 54 26.9 24.3-24.3-27-53.9 4.1-6.7c8.1-13.5 14.9-29.6 18.9-45.8l1.4-6.7 58.1-18.9v-35l-58.1-18.9-1.4-6.7c-4.1-16.2-10.8-31-18.9-45.8l-4.1-6.7 27-53.9-24.3-24.3-54 26.9-6.8-4c-14.8-8.2-29.7-14.9-45.9-19l-6.8-1.3L274.2 27h-35.1l-18.9 57.9-6.8 1.3c-16.2 4-31.1 10.8-45.9 18.9l-6.8 4-54-26.9-24.3 24.3 27 53.9-4.1 6.7c-8.1 13.5-14.9 29.6-18.9 45.8l-1.4 6.7-58 18.9v35l58.1 18.9 1.4 6.7c4.1 16.2 10.8 31 18.9 45.8l4.1 6.7-27 53.9 24.3 24.3 54-26.9 6.8 4c14.9 8.1 29.7 14.8 45.9 18.9l6.8 1.3 18.8 58z"/>
+			</symbol>
+		</svg>
+		<!-- /fabricator icons -->
+		<!-- fabricator menu -->
+		<div class="f-menu">
+		
+			<div class="f-controls">
+				<div class="f-control f-global-control" data-f-toggle-control="labels" title="Toggle Labels">
+					<svg class="dc-svg">
+						<use xlink:href="#f-icon-labels" />
+					</svg>
+				</div>
+				<div class="f-control f-global-control" data-f-toggle-control="notes" title="Toggle Notes">
+					<svg class="dc-svg">
+						<use xlink:href="#f-icon-notes" />
+					</svg>
+				</div>
+				<div class="f-control f-global-control" data-f-toggle-control="code" title="Toggle Code">
+					<svg class="dc-svg">
+						<use xlink:href="#f-icon-code" />
+					</svg>
+				</div>
+			</div>
+		
+		    <div class="f-search-materials">
+		        <div class="dc-search-form f-search-form">
+		            <input type="text" id="quick-search"
+		                                            class="dc-input dc-search-form__input" list="search-entries-list"
+		                                            placeholder="Quick search…"
+		                                            data-autofirst="true">
+		            <button class="dc-btn dc-search-form__btn">
+		                <i class="dc-icon dc-icon--search dc-icon--interactive"></i>
+		            </button>
+		            <datalist id="search-entries-list">
+		                <option value="/01-core.html#01-typography.01-getting-the-font">Typography &middot; Getting The Font</option>
+		                <option value="/01-core.html#01-typography.02-font-weights">Typography &middot; Font Weights</option>
+		                <option value="/01-core.html#01-typography.03-font-sizes">Typography &middot; Font Sizes</option>
+		                <option value="/01-core.html#02-colors">Colors</option>
+		                <option value="/01-core.html#03-utilities">Utilities</option>
+		                <option value="/02-structure-and-grid.html#01-page-structure">Page Structure</option>
+		                <option value="/02-structure-and-grid.html#02-grid.02-basic-grid">Grid &middot; Basic Grid</option>
+		                <option value="/02-structure-and-grid.html#02-grid.03-shrink-columns">Grid &middot; Shrink Columns</option>
+		                <option value="/02-structure-and-grid.html#02-grid.04-responsive-grid">Grid &middot; Responsive Grid</option>
+		                <option value="/02-structure-and-grid.html#02-grid.05-grid-column-sizes">Grid &middot; Grid Column Sizes</option>
+		                <option value="/02-structure-and-grid.html#02-grid.06-offset-columns">Grid &middot; Offset Columns</option>
+		                <option value="/02-structure-and-grid.html#02-grid.07-collapse-columns">Grid &middot; Collapse Columns</option>
+		                <option value="/02-structure-and-grid.html#02-grid.08-nested-grid-rows">Grid &middot; Nested Grid Rows</option>
+		                <option value="/02-structure-and-grid.html#02-grid.09-block-grid">Grid &middot; Block Grid</option>
+		                <option value="/02-structure-and-grid.html#02-grid.10-hide-or-show-elements">Grid &middot; Hide Or Show Elements</option>
+		                <option value="/02-structure-and-grid.html#03-horizontal-alignment.01-row-align-centered">Horizontal Alignment &middot; Row Align Centered</option>
+		                <option value="/02-structure-and-grid.html#03-horizontal-alignment.02-row-align-right">Horizontal Alignment &middot; Row Align Right</option>
+		                <option value="/02-structure-and-grid.html#03-horizontal-alignment.03-row-align-spaced">Horizontal Alignment &middot; Row Align Spaced</option>
+		                <option value="/02-structure-and-grid.html#03-horizontal-alignment.04-row-align-justified">Horizontal Alignment &middot; Row Align Justified</option>
+		                <option value="/02-structure-and-grid.html#04-vertical-alignment.01-row-align-top">Vertical Alignment &middot; Row Align Top</option>
+		                <option value="/02-structure-and-grid.html#04-vertical-alignment.02-row-align-middle">Vertical Alignment &middot; Row Align Middle</option>
+		                <option value="/02-structure-and-grid.html#04-vertical-alignment.03-row-align-bottom">Vertical Alignment &middot; Row Align Bottom</option>
+		                <option value="/02-structure-and-grid.html#04-vertical-alignment.04-self-align-columns">Vertical Alignment &middot; Self Align Columns</option>
+		                <option value="/03-atoms.html#buttons.01-button">Buttons &middot; Button</option>
+		                <option value="/03-atoms.html#buttons.02-sizes">Buttons &middot; Sizes</option>
+		                <option value="/03-atoms.html#buttons.03-options">Buttons &middot; Options</option>
+		                <option value="/03-atoms.html#buttons.04-button--block">Buttons &middot; Button  Block</option>
+		                <option value="/03-atoms.html#card">Card</option>
+		                <option value="/03-atoms.html#divider">Divider</option>
+		                <option value="/03-atoms.html#forms.01-checkbox">Forms &middot; Checkbox</option>
+		                <option value="/03-atoms.html#forms.02-checkbox--switch">Forms &middot; Checkbox  Switch</option>
+		                <option value="/03-atoms.html#forms.radio-button">Forms &middot; Radio Button</option>
+		                <option value="/03-atoms.html#forms.select">Forms &middot; Select</option>
+		                <option value="/03-atoms.html#forms.text-input">Forms &middot; Text Input</option>
+		                <option value="/03-atoms.html#forms.textarea">Forms &middot; Textarea</option>
+		                <option value="/03-atoms.html#icons.01-icons">Icons &middot; Icons</option>
+		                <option value="/03-atoms.html#icons.02-interactive-icons">Icons &middot; Interactive Icons</option>
+		                <option value="/03-atoms.html#icons.03-spinning-icons">Icons &middot; Spinning Icons</option>
+		                <option value="/03-atoms.html#icons.04-changing-the-font-location">Icons &middot; Changing The Font Location</option>
+		                <option value="/03-atoms.html#icons.05-svg-icons">Icons &middot; Svg Icons</option>
+		                <option value="/03-atoms.html#link">Link</option>
+		                <option value="/03-atoms.html#lists.01-list">Lists &middot; List</option>
+		                <option value="/03-atoms.html#lists.02-unordered">Lists &middot; Unordered</option>
+		                <option value="/03-atoms.html#lists.03-ordered">Lists &middot; Ordered</option>
+		                <option value="/03-atoms.html#lists.04-scrollable">Lists &middot; Scrollable</option>
+		                <option value="/03-atoms.html#loading-bar">Loading Bar</option>
+		                <option value="/03-atoms.html#paragraph">Paragraph</option>
+		                <option value="/03-atoms.html#spinner">Spinner</option>
+		                <option value="/03-atoms.html#status">Status</option>
+		                <option value="/03-atoms.html#tab">Tab</option>
+		                <option value="/03-atoms.html#tables.01-table-setup">Tables &middot; Table Setup</option>
+		                <option value="/03-atoms.html#tables.02-sortable-headings">Tables &middot; Sortable Headings</option>
+		                <option value="/03-atoms.html#tables.03-spacing-modifiers">Tables &middot; Spacing Modifiers</option>
+		                <option value="/03-atoms.html#tooltip.01-adding-a-tooltip">Tooltip &middot; Adding A Tooltip</option>
+		                <option value="/03-atoms.html#tooltip.02-sizing">Tooltip &middot; Sizing</option>
+		                <option value="/04-molecules.html#01-button-icon.01-button-icon">Button Icon &middot; Button Icon</option>
+		                <option value="/04-molecules.html#01-button-icon.02-button-link-icon">Button Icon &middot; Button Link Icon</option>
+		                <option value="/04-molecules.html#02-button-groups">Button Groups</option>
+		                <option value="/04-molecules.html#03-dropdown">Dropdown</option>
+		                <option value="/04-molecules.html#04-input-groups">Input Groups</option>
+		                <option value="/04-molecules.html#04-input-stack">Input Stack</option>
+		                <option value="/04-molecules.html#05-search-form">Search Form</option>
+		                <option value="/04-molecules.html#07-dialog">Dialog</option>
+		                <option value="/04-molecules.html#08-side-revealer">Side Revealer</option>
+		                <option value="/04-molecules.html#09-toast">Toast</option>
+		                <option value="/04-molecules.html#10-messages">Messages</option>
+		                <option value="/04-molecules.html#11-accordions.01-accordion">Accordions &middot; Accordion</option>
+		                <option value="/04-molecules.html#11-accordions.02-options">Accordions &middot; Options</option>
+		                <option value="/04-molecules.html#11-breadcrumb">Breadcrumb</option>
+		                <option value="/04-molecules.html#12-pagination">Pagination</option>
+		                <option value="/05-guidelines.html#01-date-time-format">Date Time Format</option>
+		                <option value="/05-guidelines.html#02-number-format">Number Format</option>
+		    
+		                <option value="/sass-reference.html#colors">Sass Reference &middot; Colors</option>
+		                <option value="/sass-reference.html#core">Sass Reference &middot; Core</option>
+		                <option value="/sass-reference.html#mixin-dc-everything">Sass Reference &middot; dc-everything (mixin)</option>
+		                <option value="/sass-reference.html#icons">Sass Reference &middot; Icons</option>
+		                <option value="/sass-reference.html#mixin-dc-icon">Sass Reference &middot; dc-icon (mixin)</option>
+		                <option value="/sass-reference.html#function-dc-icon-char">Sass Reference &middot; dc-icon-char (function)</option>
+		                <option value="/sass-reference.html#structure-and-grid">Sass Reference &middot; Structure And Grid</option>
+		                <option value="/sass-reference.html#mixin-dc-grid-row">Sass Reference &middot; dc-grid-row (mixin)</option>
+		                <option value="/sass-reference.html#mixin-dc-grid-column">Sass Reference &middot; dc-grid-column (mixin)</option>
+		                <option value="/sass-reference.html#mixin-dc-block-grid">Sass Reference &middot; dc-block-grid (mixin)</option>
+		                <option value="/sass-reference.html#function-grid-column-flex">Sass Reference &middot; grid-column-flex (function)</option>
+		                <option value="/sass-reference.html#function-grid-column-size">Sass Reference &middot; grid-column-size (function)</option>
+		    
+		            </datalist>
+		        </div>
+		    </div>
+		
+			<ul>
+		
+				<li>
+					<a href="index.html" class="f-menu__heading">The Dress Code</a>
+				</li>
+		
+				<li>
+					<a href="01-core.html" class="f-menu__heading">Core</a>
+					<ul>
+						<li>
+							<a href="01-core.html#01-typography">Typography</a>
+						</li>
+						<li>
+							<a href="01-core.html#02-colors">Colors</a>
+						</li>
+						<li>
+							<a href="01-core.html#03-utilities">Utilities</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="02-structure-and-grid.html" class="f-menu__heading">Structure And Grid</a>
+					<ul>
+						<li>
+							<a href="02-structure-and-grid.html#01-page-structure">Page Structure</a>
+						</li>
+						<li>
+							<a href="02-structure-and-grid.html#02-grid">Grid</a>
+						</li>
+						<li>
+							<a href="02-structure-and-grid.html#03-horizontal-alignment">Horizontal Alignment</a>
+						</li>
+						<li>
+							<a href="02-structure-and-grid.html#04-vertical-alignment">Vertical Alignment</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="03-atoms.html" class="f-menu__heading">Atoms</a>
+					<ul>
+						<li>
+							<a href="03-atoms.html#buttons">Buttons</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#card">Card</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#divider">Divider</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#forms">Forms</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#icons">Icons</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#link">Link</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#lists">Lists</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#loading-bar">Loading Bar</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#paragraph">Paragraph</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#spinner">Spinner</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#status">Status</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#tab">Tab</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#tables">Tables</a>
+						</li>
+						<li>
+							<a href="03-atoms.html#tooltip">Tooltip</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="04-molecules.html" class="f-menu__heading">Molecules</a>
+					<ul>
+						<li>
+							<a href="04-molecules.html#01-button-icon">Button Icon</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#02-button-groups">Button Groups</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#03-dropdown">Dropdown</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#04-input-groups">Input Groups</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#04-input-stack">Input Stack</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#05-search-form">Search Form</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#07-dialog">Dialog</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#08-side-revealer">Side Revealer</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#09-toast">Toast</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#10-messages">Messages</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#11-accordions">Accordions</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#11-breadcrumb">Breadcrumb</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#12-pagination">Pagination</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="05-guidelines.html" class="f-menu__heading">Guidelines</a>
+					<ul>
+						<li>
+							<a href="05-guidelines.html#01-date-time-format">Date Time Format</a>
+						</li>
+						<li>
+							<a href="05-guidelines.html#02-number-format">Number Format</a>
+						</li>
+					</ul>
+				</li>
+		
+		        <li>
+					<a href="sass-reference.html" class="f-menu__heading">Sass Reference</a>
+					<ul>
+						<li>
+							<a href="sass-reference.html#sassdoc-colors">Colors</a>
+						</li>
+						<li>
+							<a href="sass-reference.html#sassdoc-core">Core</a>
+						</li>
+						<li>
+							<a href="sass-reference.html#sassdoc-icons">Icons</a>
+						</li>
+						<li>
+							<a href="sass-reference.html#sassdoc-structure-and-grid">Structure And Grid</a>
+						</li>
+					</ul>
+				</li>
+		
+		
+				<li>
+					<a href="docs.html" class="f-menu__heading">Docs</a>
+					<ul>
+						<li>
+							<a href="docs.html#CODING">Coding</a>
+						</li>
+						<li>
+							<a href="docs.html#CONTRIBUTING">Contributing</a>
+						</li>
+						<li>
+							<a href="docs.html#RELEASING">Releasing</a>
+						</li>
+					</ul>
+				</li>
+		
+			</ul>
+		
+		
+		</div>
+		<!-- /fabricator menu -->
+		<div class="f-container dc-page">
+            <div class="dc-container dc-container--limited">
+
+
+	
+<h1 class="dc-h1 f-dc-h1--view-title" data-f-toggle="labels">Sass Reference</h1>
+
+<div class="dc-card f-item-group">
+    <p class="dc-p">
+        If you are already using Sass in your project, you can import the Dress Code Sass to:
+        <ul class="dc-list dc-list--is-unordered">
+          <li>Customize default dress-code variables</li>
+          <li>Use dress-code variables, mixins, functions and placeholders</li>
+        </ul>
+    </p>
+
+    On this page you will find the Sass reference for the main entities subdivided by group.
+</div>
+
+<div class="dc-card f-item-group">
+    <div class="f-item-group" id="sassdoc-colors">
+        <h2 class="dc-h2 f-item-heading">
+            <a class="dc-link" href="#sassdoc-colors">Colors</a>
+        </h2>
+
+<div class="f-item-heading-group">
+    <h3 class="dc-h3 f-item-heading">
+        variables
+    </h3>
+</div>
+<table class="dc-table sg-sassdoc-variable-table">
+  <thead class="dc-table__thead">
+    <tr class="dc-table__tr">
+      <th class="dc-table__th sg-sassdoc-variable-table__th--name">Name</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--type">Type</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--default-value">Default</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="dc-table__tbody">
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-white</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#fff</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">white
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-black</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#000</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">black
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-gray80</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#f7f7f7</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">gray 80
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-gray70</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#ededed</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">gray 70
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-gray60</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#d1d1d1</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">gray 60
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-gray50</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#b6b6b6</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">gray 50
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-gray40</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#9b9b9b</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">gray 40
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-gray30</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#808080</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">gray 30
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-gray20</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#646464</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">gray 20
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-gray10</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#4a4a4a</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">gray 10
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-blue80</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#e6f4ff</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">blue 80
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-blue70</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#d1ebff</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">blue 70
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-blue60</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#a3d9ff</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">blue 60
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-blue50</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#75c6ff</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">blue 50
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-blue40</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#26aafe</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">blue 40
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-blue30</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#1e87cb</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">blue 30
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-blue20</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#186698</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">blue 20
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-blue10</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#124365</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">blue 10
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-cyan80</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#e8fcff</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">cyan 80
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-cyan70</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#b5f5ff</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">cyan 70
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-cyan60</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#8cf0ff</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">cyan 60
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-cyan50</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#61eaff</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">cyan 50
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-cyan40</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#24e0fe</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">cyan 40
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-cyan30</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#1fb3cb</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">cyan 30
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-cyan20</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#1a8899</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">cyan 20
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-cyan10</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#145b66</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">cyan 10
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-green80</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#e7ffd6</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">green 80
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-green70</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#c6ff9e</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">green 70
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-green60</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#acff70</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">green 60
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-green50</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#8bfa3c</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">green 50
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-green40</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#72e620</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">green 40
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-green30</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#65cb1c</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">green 30
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-green20</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#4a9912</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">green 20
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-green10</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#30660a</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">green 10
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-yellow80</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#fff9d9</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">yellow 80
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-yellow70</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#fff09e</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">yellow 70
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-yellow60</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#ffeb7a</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">yellow 60
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-yellow50</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#ffe347</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">yellow 50
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-yellow40</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#ffda0a</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">yellow 40
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-yellow30</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#ccb116</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">yellow 30
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-yellow20</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#99840e</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">yellow 20
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-yellow10</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#665705</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">yellow 10
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-orange80</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#ffefe0</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">orange 80
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-orange70</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#ffd1a6</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">orange 70
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-orange60</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#ffba7a</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">orange 60
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-orange50</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#ffa54e</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">orange 50
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-orange40</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#ff8e25</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">orange 40
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-orange30</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#cc711d</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">orange 30
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-orange20</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#995516</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">orange 20
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-orange10</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#66380e</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">orange 10
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-red80</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#ffeae6</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">red 80
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-red70</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#ffcabf</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">red 70
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-red60</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#ff9985</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">red 60
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-red50</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#ff6c4f</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">red 50
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-red40</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#ff4a25</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">red 40
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-red30</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#cc3a1d</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">red 30
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-red20</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#992b15</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">red 20
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-red10</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#661d0e</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">red 10
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-magenta80</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#f7e9f7</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">magenta 80
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-magenta70</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#f7c8f7</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">magenta 70
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-magenta60</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#f7b2f6</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">magenta 60
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-magenta50</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#f296f1</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">magenta 50
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-magenta40</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#eb74e9</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">magenta 40
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-magenta30</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#bb5cba</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">magenta 30
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-magenta20</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#8c458b</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">magenta 20
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-magenta10</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#5d2e5c</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">magenta 10
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-purple80</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#f4edff</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">purple 80
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-purple70</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#e1cfff</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">purple 70
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-purple60</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#c8a6ff</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">purple 60
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-purple50</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#ac7afd</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">purple 50
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-purple40</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#9757fd</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">purple 40
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-purple30</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#7845cb</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">purple 30
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-purple20</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#5a3498</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">purple 20
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-purple10</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Color</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>#3c2365</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">purple 10
+</td>
+        </tr>
+  </tbody>
+</table>
+
+
+
+
+    </div>
+</div>
+<div class="dc-card f-item-group">
+    <div class="f-item-group" id="sassdoc-core">
+        <h2 class="dc-h2 f-item-heading">
+            <a class="dc-link" href="#sassdoc-core">Core</a>
+        </h2>
+
+<div class="f-item-heading-group">
+    <h3 class="dc-h3 f-item-heading">
+        variables
+    </h3>
+</div>
+<table class="dc-table sg-sassdoc-variable-table">
+  <thead class="dc-table__thead">
+    <tr class="dc-table__tr">
+      <th class="dc-table__th sg-sassdoc-variable-table__th--name">Name</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--type">Type</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--default-value">Default</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="dc-table__tbody">
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-font-path</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">String</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>&quot;../fonts&quot;</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">Fonts folder
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-image-path</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">String</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>&quot;../img&quot;</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">Images folder
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-tiny-width</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Number</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>0</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">base breakpoint
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-small-width</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Number</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>20em</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">small screens breakpoint 320px {Smartphones}
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-medium-width</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Number</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>37.5em</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">medium screens breakpoint 600px {Tablets}
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-large-width</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Number</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>64em</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">large screens breakpoint 1024px {Desktops}
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-huge-width</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Number</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>80em</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">huge screens breakpoint 1280px {Full HD}
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="true">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-giant-width</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Number</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>80em</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">giant breakpoint 1280px {Full HD}
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="true">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-monstrous-width</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Number</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>100em</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">monstrous breakpoint 1400px
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-breakpoints</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Map</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>(
+    tiny: $dc-tiny-width,
+    small: $dc-small-width,
+    medium: $dc-medium-width,
+    large: $dc-large-width,
+    huge: $dc-huge-width
+)</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">responsive breakpoints map
+</td>
+        </tr>
+  </tbody>
+</table>
+
+<div class="f-item-heading-group">
+    <h3 class="dc-h3 f-item-heading">
+        mixins
+    </h3>
+</div>
+    <div>
+        <div class="sg-sassdoc-anchor-target" id="mixin-dc-everything"></div>
+        <h3 class="dc-h3">dc-everything</h3>
+        <p class="dc-p">Output/include all css selectors.
+</p>
+    </div>
+
+
+
+
+
+    </div>
+</div>
+<div class="dc-card f-item-group">
+    <div class="f-item-group" id="sassdoc-icons">
+        <h2 class="dc-h2 f-item-heading">
+            <a class="dc-link" href="#sassdoc-icons">Icons</a>
+        </h2>
+
+
+<div class="f-item-heading-group">
+    <h3 class="dc-h3 f-item-heading">
+        mixins
+    </h3>
+</div>
+    <div>
+        <div class="sg-sassdoc-anchor-target" id="mixin-dc-icon"></div>
+        <h3 class="dc-h3">dc-icon</h3>
+        <p class="dc-p">base mixin applying DressCodeIcons font to :before pseudo-element
+</p>
+    </div>
+
+
+
+
+<div class="f-item-heading-group">
+    <h3 class="dc-h3 f-item-heading">
+        functions
+    </h3>
+</div>
+<div>
+    <div class="sg-sassdoc-anchor-target" id="function-dc-icon-char"></div>
+    <h3 class="dc-h3">dc-icon-char</h3>
+    <p class="dc-p">Get the character representing a font icon
+</p>
+
+    <div class="dc-p">
+        <strong>Returns</strong><br>
+        <code>string</code>
+        -
+        utf-8 character representing the icon
+    </div>
+
+<table class="dc-table sg-sassdoc-variable-table">
+  <thead class="dc-table__thead">
+    <tr class="dc-table__tr">
+      <th class="dc-table__th sg-sassdoc-variable-table__th--name">Parameter</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--type">Type</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--default-value">Default</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="dc-table__tbody">
+        <tr class="dc-table__tr">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$name</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">string</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">icon name (eg. close)</td>
+        </tr>
+  </tbody>
+</table>
+</div>
+
+    </div>
+</div>
+<div class="dc-card f-item-group">
+    <div class="f-item-group" id="sassdoc-structure-and-grid">
+        <h2 class="dc-h2 f-item-heading">
+            <a class="dc-link" href="#sassdoc-structure-and-grid">Structure And Grid</a>
+        </h2>
+
+<div class="f-item-heading-group">
+    <h3 class="dc-h3 f-item-heading">
+        variables
+    </h3>
+</div>
+<table class="dc-table sg-sassdoc-variable-table">
+  <thead class="dc-table__thead">
+    <tr class="dc-table__tr">
+      <th class="dc-table__th sg-sassdoc-variable-table__th--name">Name</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--type">Type</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--default-value">Default</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="dc-table__tbody">
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-grid-column-count</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Number</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>12</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">The default column count for the grid
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-grid-gutter</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Map</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>(
+    small: 16px,
+    medium: 24px,
+    large: 32px
+)</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">The amount of space between columns at different screen sizes.
+<br>
+To use just one size, set the variable to a number instead of a map.
+</td>
+        </tr>
+        <tr class="dc-table__tr" deprecated="false">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$dc-grid-breakpoints</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Map</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>$dc-breakpoints</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">Grid breakpoints
+</td>
+        </tr>
+  </tbody>
+</table>
+
+<div class="f-item-heading-group">
+    <h3 class="dc-h3 f-item-heading">
+        mixins
+    </h3>
+</div>
+    <div>
+        <div class="sg-sassdoc-anchor-target" id="mixin-dc-grid-row"></div>
+        <h3 class="dc-h3">dc-grid-row</h3>
+        <p class="dc-p">Mixin for creating a row.
+<br>
+Sets the negative right and left margin for the row to align the columns inside a row.
+<br>
+As each column has padding (for gutter), negative margin on row is applied.
+
+</p>
+    </div>
+
+<table class="dc-table sg-sassdoc-variable-table">
+  <thead class="dc-table__thead">
+    <tr class="dc-table__tr">
+      <th class="dc-table__th sg-sassdoc-variable-table__th--name">Parameter</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--type">Type</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--default-value">Default</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="dc-table__tbody">
+        <tr class="dc-table__tr">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$gutter</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Map</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>$dc-grid-gutter</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">A Map of gutter values for different breakpoint sizes</td>
+        </tr>
+  </tbody>
+</table>
+
+    <div>
+        <div class="sg-sassdoc-anchor-target" id="mixin-dc-grid-column"></div>
+        <h3 class="dc-h3">dc-grid-column</h3>
+        <p class="dc-p">Mixin for creating a column.
+<br>
+Sets the flex value for the column.
+<br>
+Sets the padding for column based on the gutter space per breakpoint.
+
+</p>
+    </div>
+
+<table class="dc-table sg-sassdoc-variable-table">
+  <thead class="dc-table__thead">
+    <tr class="dc-table__tr">
+      <th class="dc-table__th sg-sassdoc-variable-table__th--name">Parameter</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--type">Type</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--default-value">Default</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="dc-table__tbody">
+        <tr class="dc-table__tr">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$columns</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Number</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>null</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">Size (or span) of the column.</td>
+        </tr>
+        <tr class="dc-table__tr">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$gutter</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Map</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>$dc-grid-gutter</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">A Map of gutter values for different breakpoint sizes.</td>
+        </tr>
+  </tbody>
+</table>
+
+    <div>
+        <div class="sg-sassdoc-anchor-target" id="mixin-dc-block-grid"></div>
+        <h3 class="dc-h3">dc-block-grid</h3>
+        <p class="dc-p">Mixin for creating a block grid.
+<br>
+Sets the flex value for the child columns
+
+</p>
+    </div>
+
+<table class="dc-table sg-sassdoc-variable-table">
+  <thead class="dc-table__thead">
+    <tr class="dc-table__tr">
+      <th class="dc-table__th sg-sassdoc-variable-table__th--name">Parameter</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--type">Type</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--default-value">Default</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="dc-table__tbody">
+        <tr class="dc-table__tr">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$columns</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Number</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">Number of columns in each row</td>
+        </tr>
+        <tr class="dc-table__tr">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$column-selector</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">String</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>&quot;.dc-column&quot;</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">Selector for column within the row.</td>
+        </tr>
+  </tbody>
+</table>
+
+
+
+<div class="f-item-heading-group">
+    <h3 class="dc-h3 f-item-heading">
+        functions
+    </h3>
+</div>
+<div>
+    <div class="sg-sassdoc-anchor-target" id="function-grid-column-flex"></div>
+    <h3 class="dc-h3">grid-column-flex</h3>
+    <p class="dc-p">Function for calculating flex property value for a column.
+<br>
+Returns flex property value based on the number of columns supplied.
+
+</p>
+
+    <div class="dc-p">
+        <strong>Returns</strong><br>
+        <code>Flex</code>
+        -
+        flex property value based on the number of columns supplied.
+    </div>
+
+<table class="dc-table sg-sassdoc-variable-table">
+  <thead class="dc-table__thead">
+    <tr class="dc-table__tr">
+      <th class="dc-table__th sg-sassdoc-variable-table__th--name">Parameter</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--type">Type</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--default-value">Default</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="dc-table__tbody">
+        <tr class="dc-table__tr">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$columns</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Number</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+<pre class="dc-pre"><code>null</code></pre>
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">Size (or span) of the column.</td>
+        </tr>
+  </tbody>
+</table>
+</div>
+<div>
+    <div class="sg-sassdoc-anchor-target" id="function-grid-column-size"></div>
+    <h3 class="dc-h3">grid-column-size</h3>
+    <p class="dc-p">Calculates the width of a column in percentage.
+<br>
+This is used for calculating flex percentage, max-widths, and offset widths
+
+</p>
+
+    <div class="dc-p">
+        <strong>Returns</strong><br>
+        <code>Width</code>
+        -
+        width in percentage
+    </div>
+
+<table class="dc-table sg-sassdoc-variable-table">
+  <thead class="dc-table__thead">
+    <tr class="dc-table__tr">
+      <th class="dc-table__th sg-sassdoc-variable-table__th--name">Parameter</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--type">Type</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--default-value">Default</th>
+      <th class="dc-table__th sg-sassdoc-variable-table__th--description">Description</th>
+    </tr>
+  </thead>
+  <tbody class="dc-table__tbody">
+        <tr class="dc-table__tr">
+          <td class="dc-table__td sg-sassdoc-variable-table__td--name">$columns</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--type">Number</td>
+          <td class="dc-table__td sg-sassdoc-variable-table__th--default-value">
+          </td>
+          <td class="dc-table__td sg-sassdoc-variable-table__td--description">Number of columns</td>
+        </tr>
+  </tbody>
+</table>
+</div>
+
+    </div>
+</div>
+
+
+		    </div>
+        </div>
+		<div class="dc-grid"></div>
+
+		<script src="/dress-code/assets/scripts/main.js"></script>
+
+</body>
+</html>
