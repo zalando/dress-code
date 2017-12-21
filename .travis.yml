@@ -7,5 +7,12 @@ install:
 - npm install
 script:
 - npm run lint
-- npm run build
+- if [[ "$TRAVIS_BRANCH" == *release ]]; then 
+    git lfs pull; 
+    npm run test:minified; 
+  else 
+    npm run build;
+  fi
 - npm run demo:build
+
+

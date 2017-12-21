@@ -25,7 +25,9 @@ if (casper.cli.has("rebase")) {
             })
             .run(function() {
                 var end = new Date().getTime();
-                console.log("Rebase completed after " + (end - executionStart) + " ms");
+                console.log(
+                    "\nRebase completed after " + (end - executionStart) + " ms"
+                );
 
                 casper.test.done();
             });
@@ -37,10 +39,10 @@ if (casper.cli.has("rebase")) {
 
         casper.then(utils.compareScreenshots).run(function() {
             var end = new Date().getTime();
-            console.log("Comparison finished after " + (end - start) + " ms");
+            console.log("\nComparison finished after " + (end - start) + " ms");
 
             console.log(
-                "Visual regression tests completed after " +
+                "\nVisual regression tests completed after " +
                     (end - executionStart) +
                     " ms"
             );
@@ -65,7 +67,7 @@ function runTests(component) {
 
         casper.run(function() {
             var end = new Date().getTime();
-            console.log("Finished after " + (end - start) + " ms");
+            console.log("\nFinished after " + (end - start) + " ms\n");
 
             casper.test.done();
         });
