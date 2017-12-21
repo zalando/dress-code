@@ -32,9 +32,7 @@ exports.COMPONENTS = [
   { name: "card", files: ["card"] },
   { name: "divider", files: ["divider"] },
   { name: "link", files: ["link"] },
-  { name: "loading-bar", files: ["loading-bar"] },
   { name: "paragraph", files: ["paragraph"] },
-  { name: "spinner", files: ["spinner"] },
   { name: "status", files: ["status"] },
   { name: "tab", files: ["tab"] },
 
