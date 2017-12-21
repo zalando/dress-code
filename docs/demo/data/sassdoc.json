@@ -2375,6 +2375,75 @@
       }
     ]
   },
+  "icons": {
+    "mixins": [
+      {
+        "description": "base mixin applying DressCodeIcons font to :before pseudo-element\n",
+        "commentRange": {
+          "start": 14,
+          "end": 14
+        },
+        "context": {
+          "type": "mixin",
+          "name": "dc-icon",
+          "code": "\n    &:before {\n        font-family: \"DressCodeIcons\";\n        -webkit-font-smoothing: antialiased;\n        -moz-osx-font-smoothing: grayscale;\n        font-style: normal;\n        font-variant: normal;\n        font-weight: normal;\n        // speak: none; // only necessary if not using the private unicode range (firstGlyph option)\n        text-decoration: none;\n        text-transform: none;\n        color: inherit;\n    }\n",
+          "line": {
+            "start": 15,
+            "end": 28
+          }
+        },
+        "group": [
+          "icons"
+        ],
+        "access": "public",
+        "require": [],
+        "file": {
+          "path": "_generated/_icon.scss",
+          "name": "_icon.scss"
+        },
+        "deprecated": false
+      }
+    ],
+    "functions": [
+      {
+        "description": "Get the character representing a font icon\n",
+        "commentRange": {
+          "start": 30,
+          "end": 32
+        },
+        "context": {
+          "type": "function",
+          "name": "dc-icon-char",
+          "code": "\n    $char: \"\";\n    \n    @if $filename == add {\n        $char: \"\\EA01\";\n    }\n    @if $filename == arrow-down {\n        $char: \"\\EA02\";\n    }\n    @if $filename == arrow-left {\n        $char: \"\\EA03\";\n    }\n    @if $filename == arrow-right {\n        $char: \"\\EA04\";\n    }\n    @if $filename == arrow-up {\n        $char: \"\\EA05\";\n    }\n    @if $filename == bar-chart {\n        $char: \"\\EA06\";\n    }\n    @if $filename == check {\n        $char: \"\\EA07\";\n    }\n    @if $filename == clear {\n        $char: \"\\EA08\";\n    }\n    @if $filename == close {\n        $char: \"\\EA09\";\n    }\n    @if $filename == cog {\n        $char: \"\\EA0A\";\n    }\n    @if $filename == contact {\n        $char: \"\\EA0B\";\n    }\n    @if $filename == drag {\n        $char: \"\\EA0C\";\n    }\n    @if $filename == error {\n        $char: \"\\EA0D\";\n    }\n    @if $filename == eye {\n        $char: \"\\EA0E\";\n    }\n    @if $filename == help {\n        $char: \"\\EA0F\";\n    }\n    @if $filename == history {\n        $char: \"\\EA10\";\n    }\n    @if $filename == info {\n        $char: \"\\EA12\";\n    }\n    @if $filename == info-circle {\n        $char: \"\\EA11\";\n    }\n    @if $filename == line-chart {\n        $char: \"\\EA13\";\n    }\n    @if $filename == link {\n        $char: \"\\EA14\";\n    }\n    @if $filename == lock {\n        $char: \"\\EA15\";\n    }\n    @if $filename == menu {\n        $char: \"\\EA16\";\n    }\n    @if $filename == minus {\n        $char: \"\\EA17\";\n    }\n    @if $filename == more {\n        $char: \"\\EA18\";\n    }\n    @if $filename == open-circle {\n        $char: \"\\EA19\";\n    }\n    @if $filename == pencil {\n        $char: \"\\EA1A\";\n    }\n    @if $filename == play {\n        $char: \"\\EA1B\";\n    }\n    @if $filename == pointer {\n        $char: \"\\EA1C\";\n    }\n    @if $filename == redo {\n        $char: \"\\EA1D\";\n    }\n    @if $filename == search {\n        $char: \"\\EA1E\";\n    }\n    @if $filename == spinner {\n        $char: \"\\EA1F\";\n    }\n    @if $filename == success {\n        $char: \"\\EA20\";\n    }\n    @if $filename == trash {\n        $char: \"\\EA21\";\n    }\n    @if $filename == triangle-down {\n        $char: \"\\EA22\";\n    }\n    @if $filename == triangle-up {\n        $char: \"\\EA23\";\n    }\n    @if $filename == undo {\n        $char: \"\\EA24\";\n    }\n    @if $filename == user {\n        $char: \"\\EA25\";\n    }\n    @if $filename == users {\n        $char: \"\\EA26\";\n    }\n    @if $filename == warning {\n        $char: \"\\EA27\";\n    }\n\n    @return $char;\n",
+          "line": {
+            "start": 33,
+            "end": 155
+          }
+        },
+        "parameter": [
+          {
+            "type": "string",
+            "name": "name",
+            "description": "icon name (eg. close)"
+          }
+        ],
+        "return": {
+          "type": "string",
+          "description": "utf-8 character representing the icon"
+        },
+        "group": [
+          "icons"
+        ],
+        "access": "public",
+        "require": [],
+        "file": {
+          "path": "_generated/_icon.scss",
+          "name": "_icon.scss"
+        },
+        "deprecated": false
+      }
+    ]
+  },
   "structure and grid": {
     "mixins": [
       {

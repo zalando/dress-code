@@ -24,7 +24,7 @@
         line-height: 2em;
         text-align: center;
         box-shadow: 0 1px 3px 2px rgba($dc-black, .08);
-        content: "\EA09";
+        content: dc-icon-char(menu);
         cursor: pointer;
     }
 
@@ -40,7 +40,7 @@
         }
 
         &:before {
-            content: "\EA0C";
+            content: dc-icon-char(close);
         }
     }
 }

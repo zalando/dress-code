@@ -19,9 +19,9 @@ fabricator: true
 
 {{#each sassdoc as |group groupName|}}
 <div class="dc-card f-item-group">
-    <div class="f-item-group" id="{{kebabCase groupName}}">
+    <div class="f-item-group" id="sassdoc-{{kebabCase groupName}}">
         <h2 class="dc-h2 f-item-heading">
-            <a class="dc-link" href="#{{kebabCase groupName}}">{{capitalizeall groupName}}</a>
+            <a class="dc-link" href="#sassdoc-{{kebabCase groupName}}">{{capitalizeall groupName}}</a>
         </h2>
 
 {{!-- strip indenting to avoid conflict with displayed code indentation --}}

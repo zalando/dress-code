@@ -6,6 +6,12 @@
 //
 // The template for the generation is located under src/templates/_icon.scss
 //
+
+////
+/// @group icons
+////
+
+/// base mixin applying DressCodeIcons font to :before pseudo-element
 @mixin dc-icon {
     &:before {
         font-family: "DressCodeIcons";
@@ -21,7 +27,9 @@
     }
 }
 
-
+/// Get the character representing a font icon
+/// @param {string} $name - icon name (eg. close)
+/// @returns {string} utf-8 character representing the icon
 @function dc-icon-char($filename) {
     $char: "";
     
