@@ -1,3 +1,20 @@
+<a name="2.4.0"></a>
+# [2.4.0](https://github.com/zalando/dress-code/compare/2.3.0...2.4.0) (2017-12-21)
+
+
+### Features
+
+* **icons:** dc-icon--spin makes any icon rotate in-place ([#417](https://github.com/zalando/dress-code/issues/417)) ([4e21447](https://github.com/zalando/dress-code/commit/4e21447)), closes [#350](https://github.com/zalando/dress-code/issues/350)
+* **tab:** add css selector ([f21a071](https://github.com/zalando/dress-code/commit/f21a071)), closes [#406](https://github.com/zalando/dress-code/issues/406)
+* **tab:** emphasis a tab header ([3f9b3db](https://github.com/zalando/dress-code/commit/3f9b3db))
+* **tab:** make a styling of tab header ([66125bb](https://github.com/zalando/dress-code/commit/66125bb)), closes [#406](https://github.com/zalando/dress-code/issues/406)
+* **tab:** update documentation about tab header ([a4deb92](https://github.com/zalando/dress-code/commit/a4deb92))
+* **tests:** setup visual regression tests ([55fa579](https://github.com/zalando/dress-code/commit/55fa579))
+* **tests:** allow running tests both with local changes and in release ([a9a67cb](https://github.com/zalando/dress-code/commit/a9a67cb))
+* **tests:** set up LFS for storage of tests screenshots ([c63d783](https://github.com/zalando/dress-code/commit/c63d783))
+* **regression:** run regression tests in CI on releases ([8109843](https://github.com/zalando/dress-code/commit/8109843))
+
+
 <a name="2.3.0"></a>
 # [2.3.0](https://github.com/zalando/dress-code/compare/1.1.15...2.3.0) (2017-11-23)
 
