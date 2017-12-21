@@ -187,7 +187,6 @@ gulp.task('demo:sassdoc', function () {
 
 gulp.task('demo:deploy', ['demo:build'], function () {
     return gulp.src(path.join('.tmp/demo', '/**/*'))
-        .pipe()
         .pipe(ghPages({
             push: gutil.env['dry-run'] ? false : true,
             cacheDir: '.tmp/deploy-demo',

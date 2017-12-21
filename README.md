@@ -228,7 +228,7 @@ The distribution build artifacts output to the `dist` directory.
 **Build demo:**
 
 ```
-$ npm run build:demo
+$ npm run demo:build
 ```
 
 Fabricator builds both a static documentation site and optimized CSS and JS toolkit files.
@@ -239,7 +239,7 @@ The demo build artifacts output to the `.tmp/.demo` directory. This can be deplo
 **Deploy demo:**
 
 ```
-$ npm run deploy:demo
+$ npm run demo:deploy
 ```
 
 Publish the demo as github-pages website @ https://zalando.github.io/dress-code
