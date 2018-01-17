@@ -125,7 +125,7 @@ Then you can import the dress-code like so:
 
 Developers interested in contributing should read the following:
 
-- [Contributing Guidelines](docs/guides/CONTRIBUTING.md)
+- [Contributing Guidelines](CONTRIBUTING.md)
 - [Coding Guidelines](docs/guides/CODING.md)
 - [ChangeLog](CHANGELOG.md)
 - [Releasing](docs/guides/RELEASING.md)
